@@ -1,0 +1,613 @@
+id: cap2
+course: capital
+number: 2
+title: Capital projects, impairment and disposal
+summary: How costs build up in construction in progress, how holdbacks and capital grants are handled during a project, when spending is a betterment or a repair, how to write down impaired assets, and how to record disposals and disclose it all.
+refs:
+  - Part III, Section 4433
+  - Part III, Section 4410
+status: ready
+
+concepts:
+  - id: cap2-cip-costs
+    title: What goes into construction in progress
+    summary: Construction in progress collects the directly attributable costs of a capital project, such as contractor progress billings, architect fees, permits, site preparation, project management time spent on the project and interest when capitalizing it is the NPO's policy.
+    ref: Part III, Section 4433
+  - id: cap2-cip-exclusions
+    title: What stays out of the project
+    summary: Costs not directly attributable to building the asset are expensed, such as general administration, capital campaign fundraising, training staff to use the new facility and relocating operations.
+    ref: Part III, Section 4433
+  - id: cap2-cip-no-amortization
+    title: No amortization during construction
+    summary: Construction in progress is not amortized because the asset is not yet available for use. Its net carrying amount is disclosed as an asset not being amortized.
+    ref: Part III, Section 4433
+  - id: cap2-holdbacks
+    title: Holdbacks
+    summary: Alberta construction contracts commonly hold back 10% of each progress billing. The full value of work performed is capitalized as it is done, and the amount held back is recorded as a liability until it is released.
+    ref: Part III, Section 4433
+  - id: cap2-cip-transfer
+    title: Transfer at completion
+    summary: When the project is substantially complete and ready for use, construction in progress is transferred to the specific capital asset accounts, by component, and amortization begins.
+    ref: Part III, Section 4433
+  - id: cap2-capital-grant-timing
+    title: Capital grants during construction
+    summary: Under the deferral method, a capital grant received before or during construction is a deferred capital contribution. Unspent amounts stay deferred, and recognition as revenue starts when the related asset starts being amortized.
+    ref: Part III, Section 4410
+  - id: cap2-betterment-vs-repair
+    title: Betterments and repairs
+    summary: A betterment increases service potential by increasing capacity, lowering operating costs, extending useful life or improving output quality, so it is capitalized. Repairs and maintenance that only keep existing service potential are expensed.
+    ref: Part III, Section 4433
+  - id: cap2-writedown-indicators
+    title: When to write down
+    summary: A tangible capital asset is written down when conditions show it no longer contributes to the NPO's ability to provide goods and services, or its future economic benefits or service potential are worth less than its net carrying amount.
+    ref: Part III, Section 4433
+  - id: cap2-writedown-measure
+    title: Measuring a write-down
+    summary: The asset is written down to its fair value or replacement cost. Partial write-downs are allowed, and the write-down is an expense in the statement of operations.
+    ref: Part III, Section 4433
+  - id: cap2-no-reversal
+    title: Write-downs are not reversed
+    summary: Once a tangible capital asset is written down, the write-down is not reversed, even if conditions later improve.
+    ref: Part III, Section 4433
+  - id: cap2-dcc-writedown
+    title: Deferred capital contributions on a write-down
+    summary: Under the deferral method, when an asset funded by a restricted capital contribution is written down, the related unamortized deferred capital contribution is recognized as revenue, provided the restrictions have been complied with.
+    ref: Part III, Section 4433
+  - id: cap2-disposal-gain-loss
+    title: Gain or loss on disposal
+    summary: On disposal, the asset's cost and accumulated amortization are removed. The difference between proceeds and net carrying amount is a gain or loss in the statement of operations.
+    ref: Part III, Section 4433
+  - id: cap2-dcc-disposal
+    title: Deferred capital contributions on disposal
+    summary: Under the deferral method, the remaining deferred capital contribution related to a disposed asset is recognized as revenue, provided the restrictions have been met.
+    ref: Part III, Section 4433
+  - id: cap2-disclosure
+    title: Capital asset disclosures
+    summary: For each major category, NPOs disclose cost, accumulated amortization including write-downs, and amortization method and period or rate. They also disclose the net carrying amount of assets not being amortized, amortization expense, write-downs and their interest capitalization policy.
+    ref: Part III, Section 4433
+
+lessons:
+  - id: cap2l1
+    title: Construction in progress
+    intro: Capital projects run through construction in progress until the asset is ready to use. This lesson covers what goes in, what stays out, holdbacks and the transfer at completion.
+    questions:
+      - id: cap2l1q01
+        type: classify
+        concept: cap2-cip-costs
+        prompt: A seniors' housing society is building a new residence. Classify each cost.
+        buckets:
+          - Construction in progress
+          - Expense
+        items:
+          - text: Contractor progress billings
+            bucket: 0
+          - text: Architect and engineering fees
+            bucket: 0
+          - text: City of Edmonton building permits
+            bucket: 0
+          - text: Gala costs for the capital campaign
+            bucket: 1
+          - text: Training staff to run the new kitchen
+            bucket: 1
+          - text: Moving residents' belongings into the new building
+            bucket: 1
+        explain: Costs directly attributable to building the asset go to construction in progress. Fundraising, training and relocation costs do not build the asset, so they are expensed.
+        ref: Part III, Section 4433
+      - id: cap2l1q02
+        type: calc
+        concept: cap2-cip-costs
+        prompt: This year a food bank's warehouse project had progress billings of $900,000, design fees of $60,000, permits of $15,000, $25,000 of a project manager's time spent on the project and $40,000 of general office overhead. Enter the construction in progress additions.
+        answer: 1000000
+        unit: $
+        explain: $900,000 + $60,000 + $15,000 + $25,000 = $1,000,000. General office overhead is not directly attributable to the project, so it is expensed.
+        ref: Part III, Section 4433
+      - id: cap2l1q03
+        type: tf
+        concept: cap2-cip-exclusions
+        prompt: The costs of running a capital campaign to raise money for a new arts centre can be added to the centre's construction in progress.
+        answer: false
+        reasons:
+          - Fundraising does not bring the building to working condition, so it is expensed
+          - They can be capitalized if the campaign meets its target
+          - They must be netted against the donations received
+        reason: 0
+        explain: Only costs directly attributable to acquiring or building the asset are capitalized. Fundraising costs are operating expenses even when the money raised pays for the building.
+        ref: Part III, Section 4433
+      - id: cap2l1q04
+        type: je
+        concept: cap2-holdbacks
+        prompt: The general contractor on a community hall project bills $500,000 for work completed this month. The society holds back 10% as required under Alberta's construction lien rules. Record the billing.
+        accounts:
+          - Construction in progress
+          - Accounts payable
+          - Holdback payable
+          - Cash
+          - Capital assets
+          - Interest expense
+        lines:
+          - account: Construction in progress
+            side: dr
+            amount: 500000
+          - account: Accounts payable
+            side: cr
+            amount: 450000
+          - account: Holdback payable
+            side: cr
+            amount: 50000
+        explain: The full $500,000 of work performed is capitalized now. The 10% holdback is still owed, just later, so it is a liability rather than a reduction in cost.
+        ref: Part III, Section 4433
+      - id: cap2l1q05
+        type: calc
+        concept: cap2-holdbacks
+        prompt: A sport association's field house contractor has billed $2,400,000 to date with a 10% holdback on every billing. None of the holdback has been released. Enter the holdback payable balance.
+        answer: 240000
+        unit: $
+        explain: 10% × $2,400,000 = $240,000. It stays a liability until the holdback period ends and it is released to the contractor.
+        ref: Part III, Section 4433
+      - id: cap2l1q06
+        type: mc
+        concept: cap2-cip-no-amortization
+        prompt: At March 31, $3,500,000 sits in construction in progress for a half-built residence. How much amortization is recorded on it for the year?
+        options:
+          - $87,500, using a 40-year life
+          - None, because it is not yet available for use
+          - Half a year of amortization on the full cost
+          - Amortization only on the paid portion
+        answer: 1
+        explain: Amortization begins when an asset is available for use, so construction in progress is not amortized. Its balance is disclosed as an asset not being amortized.
+        ref: Part III, Section 4433
+      - id: cap2l1q07
+        type: je
+        concept: cap2-cip-transfer
+        prompt: The $6,000,000 seniors' residence is substantially complete and residents move in. Transfer the project to capital assets (componentization is tracked in the subledger).
+        accounts:
+          - Capital assets
+          - Construction in progress
+          - Accumulated amortization
+          - Amortization expense
+          - Deferred capital contributions
+          - Net assets invested in capital assets
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 6000000
+          - account: Construction in progress
+            side: cr
+            amount: 6000000
+        explain: At completion the accumulated project cost moves to the specific asset accounts, split by component, and amortization starts from the date the building is available for use.
+        ref: Part III, Section 4433
+      - id: cap2l1q08
+        type: je
+        concept: cap2-capital-grant-timing
+        prompt: Before construction starts, the society (deferral method) receives a $2,400,000 Government of Alberta capital grant restricted to the new residence. Record the receipt.
+        accounts:
+          - Cash
+          - Deferred capital contributions
+          - Contribution revenue
+          - Amortization of deferred capital contributions
+          - Construction in progress
+          - Net assets invested in capital assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 2400000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 2400000
+        explain: A contribution restricted to an amortizable capital asset is deferred. Nothing is recognized as revenue during construction because the building is not yet being amortized.
+        ref: Part III, Section 4410
+      - id: cap2l1q09
+        type: calc
+        concept: cap2-capital-grant-timing
+        prompt: The $2,400,000 grant funded 40% of the $6,000,000 residence. Year 1 amortization on the building is $215,000. Enter the grant revenue recognized in year 1.
+        answer: 86000
+        unit: $
+        explain: Deferred capital contributions are recognized on the same basis as the related asset is amortized. 40% × $215,000 = $86,000.
+        ref: Part III, Section 4410
+
+  - id: cap2l2
+    title: Betterments and repairs
+    intro: After an asset is in service, money keeps going into it. The test is whether the spending improves service potential or just keeps it where it was.
+    questions:
+      - id: cap2l2q01
+        type: classify
+        concept: cap2-betterment-vs-repair
+        prompt: Classify each cost incurred on a community hall.
+        buckets:
+          - Betterment (capitalize)
+          - Repair or maintenance (expense)
+        items:
+          - text: Adding a wing that increases capacity by 100 people
+            bucket: 0
+          - text: Repainting the main hall
+            bucket: 1
+          - text: Installing solar panels that cut power bills by 30%
+            bucket: 0
+          - text: Fixing storm-damaged shingles to their prior condition
+            bucket: 1
+          - text: Replacing the roof structure to extend the building's life by 15 years
+            bucket: 0
+          - text: Annual furnace servicing
+            bucket: 1
+        explain: Spending that increases capacity, lowers operating costs or extends useful life is a betterment. Spending that keeps the asset at its existing service potential is repair or maintenance.
+        ref: Part III, Section 4433
+      - id: cap2l2q02
+        type: match
+        concept: cap2-betterment-vs-repair
+        prompt: Match each improvement to the way it increases service potential.
+        pairs:
+          - left: Second commercial oven in a food bank kitchen
+            right: Increases service capacity
+          - left: LED lighting retrofit
+            right: Lowers associated operating costs
+          - left: Rebuilt foundation on an aging building
+            right: Extends useful life
+          - left: Upgraded diagnostic imaging unit
+            right: Improves quality of output
+        explain: Any of these four effects makes spending a betterment. Spending with none of them maintains existing service potential and is expensed.
+        ref: Part III, Section 4433
+      - id: cap2l2q03
+        type: je
+        concept: cap2-betterment-vs-repair
+        prompt: A seniors' housing society pays $120,000 cash to install a geothermal heating system that will significantly lower its heating costs. Record the payment.
+        accounts:
+          - Capital assets
+          - Cash
+          - Repairs and maintenance expense
+          - Amortization expense
+          - Accumulated amortization
+          - Accounts payable
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 120000
+          - account: Cash
+            side: cr
+            amount: 120000
+        explain: Lowering associated operating costs is a betterment, so the cost is capitalized and amortized over its useful life.
+        ref: Part III, Section 4433
+      - id: cap2l2q04
+        type: je
+        concept: cap2-betterment-vs-repair
+        prompt: The society also receives an $8,000 invoice, due in 30 days, for repairing a broken water heater to its original working condition. Record the invoice.
+        accounts:
+          - Repairs and maintenance expense
+          - Accounts payable
+          - Capital assets
+          - Cash
+          - Construction in progress
+          - Accumulated amortization
+        lines:
+          - account: Repairs and maintenance expense
+            side: dr
+            amount: 8000
+          - account: Accounts payable
+            side: cr
+            amount: 8000
+        explain: The repair only restores existing service potential, so it is an expense of the period.
+        ref: Part III, Section 4433
+      - id: cap2l2q05
+        type: tf
+        concept: cap2-betterment-vs-repair
+        prompt: Any spending on a building over $25,000 must be capitalized as a betterment.
+        answer: false
+        reasons:
+          - The test is whether service potential increases, not the dollar amount
+          - The threshold in Section 4433 is $50,000, not $25,000
+          - All building spending is capitalized regardless of amount
+        reason: 0
+        explain: Section 4433 classifies spending by its effect on service potential. A large repair that only restores the asset is still an expense.
+        ref: Part III, Section 4433
+      - id: cap2l2q06
+        type: mc
+        concept: cap2-betterment-vs-repair
+        prompt: Which of these is a betterment for a sport association's arena?
+        options:
+          - Resurfacing the ice each night
+          - Replacing burnt-out light bulbs
+          - Adding 500 seats to the stands
+          - Patching cracks in the parking lot
+        answer: 2
+        explain: Added seating increases service capacity, so it is capitalized. The others maintain existing service potential and are expensed.
+        ref: Part III, Section 4433
+      - id: cap2l2q07
+        type: calc
+        concept: cap2-betterment-vs-repair
+        prompt: An arts society spends $70,000 on its theatre this year. That includes $45,000 for an accessibility lift that lets wheelchair users reach the balcony, $15,000 for repainting and $10,000 for carpet cleaning and repairs. Enter the amount to capitalize.
+        answer: 45000
+        unit: $
+        explain: The lift increases service capacity, so it is a betterment. Repainting and carpet work only maintain the theatre and are expensed.
+        ref: Part III, Section 4433
+      - id: cap2l2q08
+        type: calc
+        concept: cap2-betterment-vs-repair
+        prompt: A $90,000 betterment to a food bank's warehouse is put into use at the start of the year and amortized straight-line over 15 years with no residual value. Enter the annual amortization on the betterment.
+        answer: 6000
+        unit: $
+        explain: $90,000 ÷ 15 = $6,000. A capitalized betterment is amortized over its own useful life like any other capital asset.
+        ref: Part III, Section 4433
+
+  - id: cap2l3
+    title: Write-downs
+    intro: Sometimes an asset loses service potential suddenly, through a flood, a fire or a change in programs. Section 4433 then requires a write-down that stays written down.
+    questions:
+      - id: cap2l3q01
+        type: mc
+        concept: cap2-writedown-indicators
+        prompt: Which situation most clearly signals that a community hall should be written down?
+        options:
+          - Interest rates on the society's mortgage increase
+          - A flood damages the lower level, which can no longer be used for programs
+          - The board approves a larger maintenance budget
+          - The hall is fully booked for the summer
+        answer: 1
+        explain: A write-down is needed when the asset's service potential falls below its net carrying amount or it no longer contributes to providing services. Flood damage that takes space out of use is a clear indicator.
+        ref: Part III, Section 4433
+      - id: cap2l3q02
+        type: classify
+        concept: cap2-writedown-indicators
+        prompt: Classify each event at an Alberta NPO.
+        buckets:
+          - Indicates a possible write-down
+          - Not a write-down indicator
+        items:
+          - text: A program ends and the specialized equipment is left idle permanently
+            bucket: 0
+          - text: Fire damages half of a group home
+            bucket: 0
+          - text: A new building code makes the second floor unusable
+            bucket: 0
+          - text: The annual amortization charge is recorded
+            bucket: 1
+          - text: The building is repainted on schedule
+            bucket: 1
+        explain: Physical damage, permanent idling and legal changes that reduce service potential are all signs to consider a write-down. Routine amortization and maintenance are not.
+        ref: Part III, Section 4433
+      - id: cap2l3q03
+        type: calc
+        concept: cap2-writedown-measure
+        prompt: A flood-damaged community hall cost $900,000 and has accumulated amortization of $300,000. Its remaining service potential is assessed at a replacement cost of $350,000. Enter the write-down.
+        answer: 250000
+        unit: $
+        explain: Net carrying amount is $900,000 − $300,000 = $600,000. Writing it down to $350,000 gives a $250,000 write-down.
+        ref: Part III, Section 4433
+      - id: cap2l3q04
+        type: je
+        concept: cap2-writedown-measure
+        prompt: Record the $250,000 write-down of the flood-damaged hall, adding it to accumulated amortization.
+        accounts:
+          - Loss on write-down of capital assets
+          - Accumulated amortization
+          - Capital assets
+          - Amortization expense
+          - Repairs and maintenance expense
+          - Net assets invested in capital assets
+        lines:
+          - account: Loss on write-down of capital assets
+            side: dr
+            amount: 250000
+          - account: Accumulated amortization
+            side: cr
+            amount: 250000
+        explain: A write-down is an expense in the statement of operations. Accumulated amortization disclosed by category includes write-downs.
+        ref: Part III, Section 4433
+      - id: cap2l3q05
+        type: tf
+        concept: cap2-writedown-measure
+        prompt: Under Section 4433, an NPO can write down only part of an asset's carrying amount when it still provides some service potential.
+        answer: true
+        reasons:
+          - Partial write-downs are allowed, to fair value or replacement cost
+          - Section 4433 requires write-downs to zero in all cases
+          - Partial write-downs are allowed only for land
+        reason: 0
+        explain: Since the 2019 amendments, an asset can be written down to its fair value or replacement cost rather than to nil.
+        ref: Part III, Section 4433
+      - id: cap2l3q06
+        type: tf
+        concept: cap2-no-reversal
+        prompt: Two years after writing down its flood-damaged hall, the society finds the hall is more useful than expected. It may reverse part of the write-down.
+        answer: false
+        reasons:
+          - Write-downs of tangible capital assets are not reversed
+          - It can reverse only up to the original cost
+          - It must reverse the full write-down
+        reason: 0
+        explain: Section 4433 does not allow write-downs to be reversed, even if conditions later improve.
+        ref: Part III, Section 4433
+      - id: cap2l3q07
+        type: calc
+        concept: cap2-writedown-measure
+        prompt: After the write-down, the hall's net carrying amount is $350,000, amortized straight-line over 14 remaining years with no residual value. Enter the annual amortization going forward.
+        answer: 25000
+        unit: $
+        explain: $350,000 ÷ 14 = $25,000. Amortization after a write-down is based on the new, lower carrying amount.
+        ref: Part III, Section 4433
+      - id: cap2l3q08
+        type: je
+        concept: cap2-dcc-writedown
+        prompt: A food bank's walk-in freezer, fully funded by a restricted capital grant, fails and has no further use. Net carrying amount is $30,000 (cost $80,000) and the related deferred capital contribution balance is $30,000. Restrictions have been met. Record the write-down and the related deferred capital contribution.
+        accounts:
+          - Loss on write-down of capital assets
+          - Accumulated amortization
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Cash
+          - Net assets invested in capital assets
+          - Capital assets
+        lines:
+          - account: Loss on write-down of capital assets
+            side: dr
+            amount: 30000
+          - account: Accumulated amortization
+            side: cr
+            amount: 30000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 30000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 30000
+        explain: Under the deferral method, the unamortized deferred capital contribution related to the written-down asset is recognized as revenue, matching the write-down expense, because the restrictions have been met.
+        ref: Part III, Section 4433
+      - id: cap2l3q09
+        type: mc
+        concept: cap2-writedown-measure
+        prompt: Where is a write-down of a tangible capital asset reported?
+        options:
+          - Directly in the statement of changes in net assets
+          - Only in the notes, with no amount recognized
+          - As a prior period adjustment to opening net assets
+          - As an expense in the statement of operations
+        answer: 3
+        explain: Write-downs are recognized as an expense in the statement of operations and are disclosed.
+        ref: Part III, Section 4433
+
+  - id: cap2l4
+    title: Disposals and disclosure
+    intro: When an asset leaves the organization, its cost and amortization come off the books and any difference shows up as a gain or loss. The notes then tell the full capital asset story.
+    questions:
+      - id: cap2l4q01
+        type: calc
+        concept: cap2-disposal-gain-loss
+        prompt: A seniors' housing society sells a van that cost $60,000, with accumulated amortization of $40,000, for $25,000 cash. Enter the gain on disposal.
+        answer: 5000
+        unit: $
+        explain: Net carrying amount is $60,000 − $40,000 = $20,000. Proceeds of $25,000 exceed it by $5,000, a gain.
+        ref: Part III, Section 4433
+      - id: cap2l4q02
+        type: je
+        concept: cap2-disposal-gain-loss
+        prompt: Record the sale of the van (cost $60,000, accumulated amortization $40,000) for $25,000 cash.
+        accounts:
+          - Cash
+          - Accumulated amortization
+          - Capital assets
+          - Gain on disposal of capital assets
+          - Loss on disposal of capital assets
+          - Amortization expense
+        lines:
+          - account: Cash
+            side: dr
+            amount: 25000
+          - account: Accumulated amortization
+            side: dr
+            amount: 40000
+          - account: Capital assets
+            side: cr
+            amount: 60000
+          - account: Gain on disposal of capital assets
+            side: cr
+            amount: 5000
+        explain: Both cost and accumulated amortization are removed. The $5,000 excess of proceeds over net carrying amount is a gain in the statement of operations.
+        ref: Part III, Section 4433
+      - id: cap2l4q03
+        type: je
+        concept: cap2-disposal-gain-loss
+        prompt: A sport association sells a tractor that cost $50,000, with accumulated amortization of $30,000, for $12,000 cash. Record the sale.
+        accounts:
+          - Cash
+          - Accumulated amortization
+          - Capital assets
+          - Gain on disposal of capital assets
+          - Loss on disposal of capital assets
+          - Loss on write-down of capital assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 12000
+          - account: Accumulated amortization
+            side: dr
+            amount: 30000
+          - account: Loss on disposal of capital assets
+            side: dr
+            amount: 8000
+          - account: Capital assets
+            side: cr
+            amount: 50000
+        explain: Net carrying amount is $20,000 and proceeds are $12,000, so there is an $8,000 loss on disposal. A disposal loss is not a write-down.
+        ref: Part III, Section 4433
+      - id: cap2l4q04
+        type: tf
+        concept: cap2-disposal-gain-loss
+        prompt: A gain on selling a capital asset goes directly to net assets invested in capital assets, bypassing the statement of operations.
+        answer: false
+        explain: Gains and losses on disposal are recognized in the statement of operations. Net assets invested in capital assets is a component of net assets, not a place to record gains.
+        ref: Part III, Section 4433
+      - id: cap2l4q05
+        type: je
+        concept: cap2-dcc-disposal
+        prompt: The society's van was originally funded by a restricted capital grant, and $15,000 of the related deferred capital contribution remains when the van is sold. The restrictions have been met. Record the recognition of the remaining balance (deferral method).
+        accounts:
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Cash
+          - Gain on disposal of capital assets
+          - Net assets invested in capital assets
+          - Capital assets
+        lines:
+          - account: Deferred capital contributions
+            side: dr
+            amount: 15000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 15000
+        explain: Once the asset is gone and the restrictions are met, there is nothing left to match the deferral against, so the remaining deferred capital contribution is recognized as revenue.
+        ref: Part III, Section 4433
+      - id: cap2l4q06
+        type: calc
+        concept: cap2-disposal-gain-loss
+        prompt: An arts society sells sound equipment with a net carrying amount of $18,000 for $11,000 and pays $1,000 to have it removed. Enter the loss on disposal as a positive number.
+        answer: 8000
+        unit: $
+        explain: Net proceeds are $11,000 − $1,000 = $10,000. $18,000 − $10,000 = an $8,000 loss.
+        ref: Part III, Section 4433
+      - id: cap2l4q07
+        type: classify
+        concept: cap2-disclosure
+        prompt: Classify each item for a seniors' housing society's capital asset note.
+        buckets:
+          - Required disclosure under Section 4433
+          - Not required
+        items:
+          - text: Cost and accumulated amortization for each major category
+            bucket: 0
+          - text: Amortization method and rate or period for each category
+            bucket: 0
+          - text: Net carrying amount of construction in progress not being amortized
+            bucket: 0
+          - text: Policy for capitalizing interest
+            bucket: 0
+          - text: Current insured value of each building
+            bucket: 1
+          - text: Names of contractors on the project
+            bucket: 1
+        explain: Section 4433 requires cost, accumulated amortization, methods and rates by category, assets not being amortized, amortization expense, write-downs and the interest capitalization policy. Insured values and contractor names are not required.
+        ref: Part III, Section 4433
+      - id: cap2l4q08
+        type: match
+        concept: cap2-disclosure
+        prompt: Match each event to how it appears in the financial statements.
+        pairs:
+          - left: Sale of a van above net carrying amount
+            right: Gain on disposal in the statement of operations
+          - left: Flood damage write-down
+            right: Expense, included in accumulated amortization by category
+          - left: Half-built residence at year end
+            right: Disclosed as an asset not being amortized
+          - left: Interest on a construction loan, capitalized by policy
+            right: Included in cost, with the policy disclosed
+        explain: Each capital asset event lands in a specific place. Gains, losses and write-downs hit operations, and the notes explain balances not yet amortized and the interest policy.
+        ref: Part III, Section 4433
+      - id: cap2l4q09
+        type: mc
+        concept: cap2-dcc-disposal
+        prompt: Under the deferral method, what happens to the related deferred capital contribution when a grant-funded asset is sold and the restrictions have been met?
+        options:
+          - The remaining balance is recognized as revenue
+          - It is transferred directly to unrestricted net assets
+          - It stays deferred until the grant agreement expires
+          - It is offset against the sale proceeds
+        answer: 0
+        explain: The remaining deferred capital contribution is recognized as revenue, matching the removal of the asset, when the restrictions have been complied with.
+        ref: Part III, Section 4433

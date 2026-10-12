@@ -1,0 +1,561 @@
+id: con1
+course: consolidation
+number: 1
+title: Control and related entities
+summary: How an NPO identifies the entities it is connected to under Section 4450, including control, joint control, significant influence and economic interest, and how to tell an NPO investee from a profit-oriented one.
+refs:
+  - Part III, Section 4450
+  - Part III, Section 4460
+status: ready
+
+concepts:
+  - id: con1-control-definition
+    title: What control is
+    summary: Control is the continuing power to determine another entity's strategic operating, investing and financing policies without needing the co-operation of others.
+    ref: Part III, Section 4450
+  - id: con1-control-judgment
+    title: Control is a judgment
+    summary: No single test settles whether control exists. The reporting NPO weighs all the indicators and the facts of the relationship.
+    ref: Part III, Section 4450
+  - id: con1-board-appointment
+    title: Appointing a majority of the board
+    summary: The right to appoint a majority of another NPO's board of directors is a key indicator that the reporting NPO controls it.
+    ref: Part III, Section 4450
+  - id: con1-integral-purpose
+    title: Purpose integral to the reporting NPO
+    summary: When the other NPO's bylaws or articles say its purpose is integral to the reporting NPO, such as a foundation that exists to raise funds for one hospital, that points to control when other indicators are also present.
+    ref: Part III, Section 4450
+  - id: con1-other-control-indicators
+    title: Other indicators of control
+    summary: Control is also indicated when the reporting NPO can access the other organization's assets, or established and directs the other organization.
+    ref: Part III, Section 4450
+  - id: con1-not-control
+    title: What is not control
+    summary: A funder's power to cancel a grant, or another NPO's economic dependence on the funder, does not by itself give control over strategic policies.
+    ref: Part III, Section 4450
+  - id: con1-profit-control
+    title: Control of a profit-oriented enterprise
+    summary: An NPO usually controls a profit-oriented enterprise by holding a majority of its voting shares.
+    ref: Part III, Section 4450
+  - id: con1-joint-control
+    title: Joint control
+    summary: Joint control exists under a contractual arrangement where no single party can control the strategic policies on its own, and those decisions need the consent of the venturers.
+    ref: Part III, Section 4450
+  - id: con1-significant-influence
+    title: Significant influence
+    summary: Significant influence is the ability to affect another entity's strategic operating, investing and financing policies without controlling them.
+    ref: Part III, Section 4450
+  - id: con1-si-indicators
+    title: Indicators of significant influence
+    summary: Board representation, participation in policy-making, material inter-organization transactions, interchange of managerial personnel and provision of technical information all point to significant influence.
+    ref: Part III, Section 4450
+  - id: con1-economic-interest
+    title: Economic interest
+    summary: An NPO has an economic interest in another NPO when the other holds resources that must be used to produce revenue or provide services for it, or when it is responsible for the other's liabilities.
+    ref: Part III, Section 4450
+  - id: con1-ei-control
+    title: Economic interest with or without control
+    summary: An economic interest can exist together with control or without it, so identifying one does not answer whether the other exists.
+    ref: Part III, Section 4450
+  - id: con1-related-parties
+    title: Relationships make related parties
+    summary: Control, joint control, significant influence and economic interest relationships also make the entities related parties, which brings in the Section 4460 disclosures.
+    ref: Part III, Section 4460
+
+lessons:
+  - id: con1l1
+    title: What control means
+    intro: Every consolidation question starts with one judgment. Does the reporting NPO have the continuing power to set the other entity's strategic policies on its own?
+    questions:
+      - id: con1l1q01
+        type: mc
+        concept: con1-control-definition
+        prompt: Under Section 4450, which description best captures control of another entity?
+        options:
+          - Providing more than half of the other entity's annual funding
+          - Continuing power to set its strategic policies without others' co-operation
+          - Having at least one seat on the other entity's board of directors
+          - Approving the other entity's budget jointly with its other members
+        answer: 1
+        explain: Control is the continuing power to determine the other entity's strategic operating, investing and financing policies without the co-operation of others. Funding, a single seat or shared approval falls short of that.
+        ref: Part III, Section 4450
+      - id: con1l1q02
+        type: mc
+        concept: con1-board-appointment
+        prompt: An Edmonton health society's bylaws give it the right to appoint 7 of the 9 directors of the hospital foundation that raises money for it. What does this most strongly indicate?
+        options:
+          - Significant influence over the foundation
+          - Joint control of the foundation with its donors
+          - Control of the foundation by the health society
+          - An economic interest only, with no other relationship
+        answer: 2
+        explain: The right to appoint a majority of another NPO's board is a key indicator of control. Here the society can direct the foundation's strategic policies through the directors it names.
+        ref: Part III, Section 4450
+      - id: con1l1q03
+        type: tf
+        concept: con1-not-control
+        prompt: A provincial ministry funds 90% of a housing society's budget and can cancel the grant at any time. The ministry therefore controls the housing society.
+        answer: false
+        reasons:
+          - The power to cancel funding, or the other's economic dependence, is not by itself control
+          - Control only exists if the funder owns at least 90% of the assets
+          - A ministry can never control an NPO under any circumstances
+        reason: 0
+        explain: A funder's ability to withdraw a grant does not let it set the society's strategic policies. Economic dependence alone is not control.
+        ref: Part III, Section 4450
+      - id: con1l1q04
+        type: classify
+        concept: con1-other-control-indicators
+        prompt: A health society is assessing its link to a hospital foundation. Sort each fact.
+        buckets:
+          - Points to control
+          - Not control on its own
+        items:
+          - text: The society appoints a majority of the foundation's board
+            bucket: 0
+          - text: The foundation's articles say its purpose is to support the society, alongside other indicators
+            bucket: 0
+          - text: The society can access the foundation's assets
+            bucket: 0
+          - text: The foundation relies on the society for most of its event revenue
+            bucket: 1
+          - text: The society established the foundation and directs its activities
+            bucket: 0
+          - text: The society could stop sharing its donor list at any time
+            bucket: 1
+        explain: Board appointment, integral purpose with other indicators, access to assets and establishing and directing the other organization are all control indicators. Economic dependence and the ability to withdraw support are not control.
+        ref: Part III, Section 4450
+      - id: con1l1q05
+        type: tf
+        concept: con1-integral-purpose
+        prompt: A foundation's articles state that its sole purpose is to raise funds for one Edmonton hospital society. Together with other indicators, this supports a conclusion that the society controls the foundation.
+        answer: true
+        reasons:
+          - An integral purpose in the bylaws or articles is a control indicator when other indicators are present
+          - Any foundation that gives grants to a hospital is controlled by it
+          - The wording of the articles is irrelevant to control
+        reason: 0
+        explain: A purpose written as integral to the reporting NPO is one of the recognized indicators of control. It is weighed together with other indicators, such as board appointment.
+        ref: Part III, Section 4450
+      - id: con1l1q06
+        type: mc
+        concept: con1-control-judgment
+        prompt: How does a reporting NPO decide whether it controls another NPO?
+        options:
+          - It applies a single bright-line test based on share of funding
+          - It controls the other NPO only if it guarantees its debts
+          - It needs written approval from the other NPO's members
+          - It weighs the indicators and facts, because control is a judgment
+        answer: 3
+        explain: Section 4450 sets out indicators rather than one mechanical test. The reporting NPO considers them all and uses judgment about the relationship.
+        ref: Part III, Section 4450
+      - id: con1l1q07
+        type: mc
+        concept: con1-other-control-indicators
+        prompt: A provincial sport body set up a training-centre NPO, directs its programs and can draw on its equipment and cash reserves. It appoints only 2 of 7 directors. What is the best view?
+        options:
+          - It cannot control the centre without a board majority
+          - Other indicators may still support control, so judgment is needed
+          - It has joint control because it shares the board with others
+          - It has no relationship because the centre is a separate NPO
+        answer: 1
+        explain: Board appointment is only one indicator. Establishing and directing the other NPO and being able to access its assets also point to control, so the facts must be weighed as a whole.
+        ref: Part III, Section 4450
+      - id: con1l1q08
+        type: tf
+        concept: con1-control-definition
+        prompt: An NPO that can set another entity's strategic policies only with the agreement of two other organizations has control.
+        answer: false
+        explain: Control means the power to determine strategic policies without the co-operation of others. Needing the agreement of other parties points to joint control or influence, not control.
+        ref: Part III, Section 4450
+      - id: con1l1q09
+        type: match
+        concept: con1-not-control
+        prompt: Match each Alberta fact pattern to the best conclusion.
+        pairs:
+          - left: Society appoints 6 of 8 foundation directors
+            right: Indicator of control
+          - left: City can cancel a youth club's operating grant
+            right: Not control on its own
+          - left: Club depends on one casino licence for its revenue
+            right: Economic dependence, not control
+          - left: Society set up a land trust NPO and directs it
+            right: Indicator of control
+        explain: Control is about the power to set strategic policies. Board appointment and establishing and directing an organization indicate it; grant cancellation and economic dependence do not.
+        ref: Part III, Section 4450
+
+  - id: con1l2
+    title: Joint control and significant influence
+    intro: Not every relationship reaches control. Shared decision-making points to joint control, and a real voice without the final say points to significant influence.
+    questions:
+      - id: con1l2q01
+        type: mc
+        concept: con1-joint-control
+        prompt: What is the defining feature of joint control?
+        options:
+          - One party appoints a majority of the board
+          - A party provides most of the funding
+          - Under a contract, strategic decisions need the venturers' consent
+          - One party is responsible for the other's liabilities
+        answer: 2
+        explain: Joint control rests on a contractual arrangement where no single party can control strategic policies alone. Those decisions require the consent of the venturers.
+        ref: Part III, Section 4450
+      - id: con1l2q02
+        type: mc
+        concept: con1-joint-control
+        prompt: Three Edmonton arts societies sign an agreement to run a shared ticketing NPO. Each appoints two of six directors, and the agreement requires all three to approve the budget and strategic plan. What relationship does each society have?
+        options:
+          - Joint control
+          - Control
+          - Economic interest only
+          - No relationship
+        answer: 0
+        explain: No single society can set the ticketing NPO's strategic policies alone, and the contract requires all three to consent. That is joint control.
+        ref: Part III, Section 4450
+      - id: con1l2q03
+        type: tf
+        concept: con1-significant-influence
+        prompt: Significant influence means the reporting entity can determine the other entity's strategic policies on its own.
+        answer: false
+        reasons:
+          - Significant influence is the ability to affect strategic policies, not control them
+          - Significant influence only applies to government grants
+          - Significant influence means the two entities share a bank account
+        reason: 0
+        explain: Determining strategic policies alone is control. Significant influence is a lesser ability to affect those policies.
+        ref: Part III, Section 4450
+      - id: con1l2q04
+        type: classify
+        concept: con1-si-indicators
+        prompt: A health society holds 2 of 10 seats on a seniors' housing NPO's board. Which facts are indicators of significant influence?
+        buckets:
+          - Indicator of significant influence
+          - Not an indicator
+        items:
+          - text: Its directors take part in setting the housing NPO's policies
+            bucket: 0
+          - text: Its executive director was seconded to run the housing NPO for a year
+            bucket: 0
+          - text: It provides the housing NPO with clinical care protocols
+            bucket: 0
+          - text: Both organizations are registered charities in Alberta
+            bucket: 1
+          - text: Material contracts for nursing services run between the two
+            bucket: 0
+          - text: They share the same auditor
+            bucket: 1
+        explain: Board representation, policy participation, interchange of managerial personnel, technical information and material inter-organization transactions all point to significant influence. Shared charity status or a common auditor do not.
+        ref: Part III, Section 4450
+      - id: con1l2q05
+        type: mc
+        concept: con1-significant-influence
+        prompt: An arts society buys 30% of the voting shares of a Calgary catering company and names 2 of its 7 directors. No other agreement exists. What relationship is this most likely to be?
+        options:
+          - Control, because it is the largest single shareholder
+          - Joint control, because it shares the board with others
+          - An economic interest, because it holds shares
+          - Significant influence over a profit-oriented enterprise
+        answer: 3
+        explain: Holding 30% with two board seats gives the society a voice in strategic policies but not the power to set them alone. That is significant influence over a profit-oriented enterprise.
+        ref: Part III, Section 4450
+      - id: con1l2q06
+        type: classify
+        concept: con1-joint-control
+        prompt: Classify each relationship of a provincial sport body.
+        buckets:
+          - Control
+          - Joint control
+          - Significant influence
+        items:
+          - text: It appoints all directors of its coaching development NPO
+            bucket: 0
+          - text: It runs a tournament NPO with a hockey body; key decisions need both to agree
+            bucket: 1
+          - text: It holds 2 of 9 seats on a multisport centre's board
+            bucket: 2
+          - text: It owns 80% of the voting shares of a merchandise company
+            bucket: 0
+          - text: It lends staff and provides technical guidance to a regional games society, with one board seat
+            bucket: 2
+        explain: Appointing all directors or holding a share majority indicates control. Contractually shared consent is joint control. Board representation, staff interchange and technical help without the power to decide is significant influence.
+        ref: Part III, Section 4450
+      - id: con1l2q07
+        type: match
+        concept: con1-si-indicators
+        prompt: Match each fact to the significant influence indicator it illustrates.
+        pairs:
+          - left: Society nominates 2 of 11 directors
+            right: Representation on the board
+          - left: Society's finance director moves to the other NPO as CEO
+            right: Interchange of managerial personnel
+          - left: Society supplies the other NPO's clinical standards manual
+            right: Provision of technical information
+          - left: Society buys most of its laundry services from the other NPO
+            right: Material inter-organization transactions
+        explain: These are the recognized indicators of significant influence. Each one gives the reporting NPO a way to affect, but not determine, the other's policies.
+        ref: Part III, Section 4450
+      - id: con1l2q08
+        type: tf
+        concept: con1-joint-control
+        prompt: Joint control can exist without a contractual arrangement, as long as two organizations usually agree in practice.
+        answer: false
+        explain: Joint control depends on a contractual arrangement that requires the venturers' consent for strategic decisions. Informal agreement in practice is not enough.
+        ref: Part III, Section 4450
+      - id: con1l2q09
+        type: mc
+        concept: con1-significant-influence
+        prompt: Which statement best separates significant influence from control?
+        options:
+          - Significant influence lets you affect strategic policies; control lets you set them alone
+          - Significant influence applies only to NPOs; control applies only to companies
+          - Significant influence requires a majority of shares; control requires all shares
+          - Significant influence is permanent; control lasts only one fiscal year
+        answer: 0
+        explain: Both relationships concern the same strategic operating, investing and financing policies. The difference is whether the reporting entity can merely affect them or determine them on its own.
+        ref: Part III, Section 4450
+
+  - id: con1l3
+    title: Economic interest
+    intro: An economic interest follows the money rather than the votes. It can sit alongside control or exist completely on its own.
+    questions:
+      - id: con1l3q01
+        type: mc
+        concept: con1-economic-interest
+        prompt: When does a reporting NPO have an economic interest in another NPO?
+        options:
+          - When the two NPOs share office space and a phone system
+          - When it appoints at least one of the other NPO's directors
+          - When the other holds resources for its use or it is responsible for the other's liabilities
+          - When the two NPOs operate in the same city and sector
+        answer: 2
+        explain: An economic interest exists if the other NPO holds resources that must be used to produce revenue or provide services for the reporting NPO, or if the reporting NPO is responsible for the other's liabilities.
+        ref: Part III, Section 4450
+      - id: con1l3q02
+        type: mc
+        concept: con1-economic-interest
+        prompt: A Red Deer housing society guarantees the $3,000,000 mortgage of an unrelated seniors' housing NPO. It appoints none of that NPO's directors and has no other links. What relationship exists?
+        options:
+          - Control, because the guarantee gives it power over the NPO
+          - An economic interest without control
+          - Significant influence, because the guarantee is material
+          - No relationship, because it holds no board seats
+        answer: 1
+        explain: Being responsible for another NPO's liabilities creates an economic interest. Nothing gives the society the power to set the other's strategic policies, so there is no control.
+        ref: Part III, Section 4450
+      - id: con1l3q03
+        type: tf
+        concept: con1-ei-control
+        prompt: An NPO can have an economic interest in another NPO that it does not control.
+        answer: true
+        reasons:
+          - Economic interest can exist with or without control
+          - Economic interest only exists where control also exists
+          - Economic interest is just another name for control
+        reason: 0
+        explain: Economic interest is assessed separately from control. A guarantee or resources held for the NPO's benefit can create one even when the NPO has no power over strategic policies.
+        ref: Part III, Section 4450
+      - id: con1l3q04
+        type: classify
+        concept: con1-economic-interest
+        prompt: Does the Edmonton health society have an economic interest in each NPO?
+        buckets:
+          - Economic interest
+          - No economic interest
+        items:
+          - text: A foundation that holds funds that must be used for the society's programs
+            bucket: 0
+          - text: A clinic NPO whose bank loan the society has guaranteed
+            bucket: 0
+          - text: A charity that buys catering from the society's café at market prices
+            bucket: 1
+          - text: An endowment NPO whose income must fund the society's research
+            bucket: 0
+          - text: A sports club that rents the society's parking lot at market rent
+            bucket: 1
+        explain: Resources held for the society's benefit, or liabilities the society is responsible for, create an economic interest. Ordinary market-rate dealings do not.
+        ref: Part III, Section 4450
+      - id: con1l3q05
+        type: mc
+        concept: con1-ei-control
+        prompt: An Edmonton health society appoints the full board of a hospital foundation whose resources must be used for the society. What relationships exist?
+        options:
+          - Economic interest only, since the foundation is a separate charity
+          - Significant influence only, since the foundation has its own staff
+          - Joint control, since donors also influence the foundation
+          - Control and an economic interest
+        answer: 3
+        explain: Appointing the whole board indicates control, and the foundation holds resources that must be used for the society, which is an economic interest. The two relationships can exist together.
+        ref: Part III, Section 4450
+      - id: con1l3q06
+        type: tf
+        concept: con1-ei-control
+        prompt: Once a reporting NPO finds it has an economic interest in another NPO, it also controls that NPO.
+        answer: false
+        reasons:
+          - Economic interest and control are separate assessments
+          - Economic interest always means joint control instead
+          - An economic interest rules out control
+        reason: 0
+        explain: An economic interest can exist with or without control. Control still has to be assessed on its own indicators.
+        ref: Part III, Section 4450
+      - id: con1l3q07
+        type: match
+        concept: con1-economic-interest
+        prompt: Match each fact to the relationship it most directly shows.
+        pairs:
+          - left: Society guarantees another NPO's line of credit
+            right: Economic interest through liabilities
+          - left: Foundation must use its funds for the society's programs
+            right: Economic interest through resources
+          - left: Society appoints a majority of the other NPO's board
+            right: Indicator of control
+          - left: Society has 1 of 8 board seats and shares staff
+            right: Indicator of significant influence
+        explain: Economic interest follows resources and liabilities. Board appointment and staff interchange speak to control and significant influence instead.
+        ref: Part III, Section 4450
+      - id: con1l3q08
+        type: mc
+        concept: con1-economic-interest
+        prompt: A Lethbridge arts society has no board seats at an independent foundation, but the foundation's trust deed requires all its income to fund the society's concerts. Which relationship exists?
+        options:
+          - No relationship, because there are no board seats
+          - Control, because the society receives all the income
+          - An economic interest, because the foundation holds resources for the society
+          - Joint control, because the trust deed is a contract
+        answer: 2
+        explain: The foundation holds resources that must be used to provide services for the society, which is an economic interest. Without power over strategic policies, it is not control.
+        ref: Part III, Section 4450
+      - id: con1l3q09
+        type: tf
+        concept: con1-related-parties
+        prompt: An NPO with an economic interest in another NPO is related to it for purposes of the related party disclosure rules.
+        answer: true
+        explain: Related parties include entities connected by an economic interest, as well as by control, joint control or significant influence. Section 4460 disclosures then apply to transactions between them.
+        ref: Part III, Section 4460
+
+  - id: con1l4
+    title: Sorting relationships
+    intro: Real groups mix every kind of relationship. This lesson practises naming each one, and noticing whether the other entity is an NPO or a profit-oriented enterprise.
+    questions:
+      - id: con1l4q01
+        type: classify
+        concept: con1-control-judgment
+        prompt: Classify the relationship of a provincial sport body with each entity.
+        buckets:
+          - Control
+          - Significant influence
+          - Economic interest only
+          - Not a reportable relationship
+        items:
+          - text: Regional club whose bylaws let the sport body appoint the whole board
+            bucket: 0
+          - text: Games society where it holds 2 of 12 seats and supplies technical information
+            bucket: 1
+          - text: Club whose arena loan it has guaranteed, with no board rights
+            bucket: 2
+          - text: Equipment supplier it buys from at market prices
+            bucket: 3
+          - text: Coaching NPO it established and directs
+            bucket: 0
+        explain: Appointing the board or establishing and directing an NPO indicates control. Seats plus technical information is significant influence, a guarantee alone is an economic interest, and ordinary supplier dealings are not a reportable relationship.
+        ref: Part III, Section 4450
+      - id: con1l4q02
+        type: mc
+        concept: con1-profit-control
+        prompt: How does an NPO usually obtain control of a profit-oriented enterprise?
+        options:
+          - By holding a majority of its voting shares
+          - By being its largest customer
+          - By lending it start-up funds
+          - By sharing a building with it
+        answer: 0
+        explain: Control over a profit-oriented enterprise is usually exercised through a majority of voting shares. Customer, lender and tenant relationships do not give power over strategic policies.
+        ref: Part III, Section 4450
+      - id: con1l4q03
+        type: mc
+        concept: con1-profit-control
+        prompt: An Edmonton arts society owns 100% of the shares of a café corporation that runs in its theatre lobby and pays dividends to the society. What is the relationship?
+        options:
+          - Significant influence over an NPO
+          - Control of a profit-oriented enterprise
+          - Joint control with the café's customers
+          - Economic interest in an NPO
+        answer: 1
+        explain: Owning all the voting shares gives the society control. The café is a profit-oriented enterprise, not an NPO, which matters for how it is reported.
+        ref: Part III, Section 4450
+      - id: con1l4q04
+        type: classify
+        concept: con1-profit-control
+        prompt: Is each investee of a Calgary housing society an NPO or a profit-oriented enterprise?
+        buckets:
+          - Not-for-profit organization
+          - Profit-oriented enterprise
+        items:
+          - text: A property-holding society that owns buildings for the society's tenants
+            bucket: 0
+          - text: A corporation that sells property management services for profit
+            bucket: 1
+          - text: A charitable foundation that raises funds for affordable housing
+            bucket: 0
+          - text: A construction company that pays dividends to shareholders
+            bucket: 1
+        explain: Companies run to earn profits for their shareholders are profit-oriented enterprises, while societies and foundations serving a charitable purpose are NPOs. The distinction drives the reporting options in the next unit.
+        ref: Part III, Section 4450
+      - id: con1l4q05
+        type: match
+        concept: con1-significant-influence
+        prompt: Match each relationship to its key feature.
+        pairs:
+          - left: Control
+            right: Sets strategic policies without others' co-operation
+          - left: Joint control
+            right: Strategic decisions need the venturers' consent
+          - left: Significant influence
+            right: Can affect strategic policies but not set them
+          - left: Economic interest
+            right: Resources held for it or liabilities it is responsible for
+        explain: Each relationship has its own test. The first three are about power over strategic policies; economic interest is about resources and liabilities.
+        ref: Part III, Section 4450
+      - id: con1l4q06
+        type: mc
+        concept: con1-not-control
+        prompt: A Grande Prairie youth society receives 80% of its revenue from a community foundation. The foundation has no board seats and no rights over the society's policies, but could stop granting next year. What does the foundation have?
+        options:
+          - Control, because the society depends on it
+          - Joint control, shared with the society's members
+          - Significant influence, because of the funding level
+          - No control; dependence on funding is not control
+        answer: 3
+        explain: Economic dependence and the power to stop granting do not give the foundation power over the society's strategic policies. Without other indicators there is no control.
+        ref: Part III, Section 4450
+      - id: con1l4q07
+        type: tf
+        concept: con1-related-parties
+        prompt: A regional sport club controlled by its provincial body is a related party of that body.
+        answer: true
+        reasons:
+          - A control relationship makes the two entities related parties
+          - Clubs are related only if they share a bank
+          - NPOs cannot be related parties of other NPOs
+        reason: 0
+        explain: Related parties exist where one party can exercise control, joint control or significant influence over the other, or where there is an economic interest.
+        ref: Part III, Section 4460
+      - id: con1l4q08
+        type: mc
+        concept: con1-joint-control
+        prompt: A health society and a university agree by contract to run a research institute NPO. Each names half the board and major decisions need both to agree. A drug company donates $500,000 a year to it. Who has joint control?
+        options:
+          - The drug company alone, as the main donor
+          - The health society alone, as the larger partner
+          - The health society and the university
+          - All three, because each is involved
+        answer: 2
+        explain: The contract requires both the society and the university to consent to strategic decisions, which is joint control. A donor's funding does not make it a venturer.
+        ref: Part III, Section 4450
+      - id: con1l4q09
+        type: tf
+        concept: con1-control-definition
+        prompt: A health society that appoints 4 of 9 foundation directors, with the other 5 elected by donors, clearly controls the foundation on board appointment alone.
+        answer: false
+        explain: Four of nine is not a majority, so the board-appointment indicator is not met. The society would need other indicators, weighed with judgment, to conclude it has control.
+        ref: Part III, Section 4450

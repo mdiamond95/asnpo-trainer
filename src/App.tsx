@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react';
 import { findLesson } from './content';
-import type { SessionPlan } from './engine/session';
+import type { Unit } from './content/types';
+import { checkpointSession, type SessionPlan } from './engine/session';
 import { Player, type SessionResult } from './components/Player';
 import {
+  CourseButton,
+  CourseSheet,
+  Guidebook,
   LearnScreen,
   LessonIntro,
   LibraryScreen,
@@ -11,20 +15,21 @@ import {
   StatusStrip,
   SummaryScreen,
 } from './components/Screens';
-import { dueConcepts, useProgress } from './engine/store';
+import { dueConcepts, getProgress, useProgress } from './engine/store';
 
 type Tab = 'learn' | 'review' | 'library' | 'profile';
 type Overlay =
   | { kind: 'intro'; lessonId: string }
+  | { kind: 'guide'; unitId: string }
   | { kind: 'session'; plan: SessionPlan }
   | { kind: 'summary'; result: SessionResult }
   | null;
 
 const TABS: { id: Tab; label: string; icon: string }[] = [
-  { id: 'learn', label: 'Learn', icon: 'M3 17V7l7-4 7 4v10M7 17v-5h6v5' },
-  { id: 'review', label: 'Review', icon: 'M10 3a7 7 0 1 0 7 7h-2a5 5 0 1 1-5-5v3l4-4-4-4z' },
-  { id: 'library', label: 'Library', icon: 'M4 3h4v14H4zM10 3h4v14h-4zM15 4l3 .8-3 12.6-3-.8' },
-  { id: 'profile', label: 'Progress', icon: 'M3 17h14M5 17V10M9 17V6M13 17v-8M17 17V4' },
+  { id: 'learn', label: 'Learn', icon: 'M4 18V9l8-5 8 5v9a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1z' },
+  { id: 'review', label: 'Review', icon: 'M12 4a8 8 0 1 0 8 8h-2.5A5.5 5.5 0 1 1 12 6.5V10l5-4.5L12 1z' },
+  { id: 'library', label: 'Library', icon: 'M4 5c3-1.5 5.5-1.5 8 .5v14c-2.5-2-5-2-8-.5zM20 5c-3-1.5-5.5-1.5-8 .5v14c2.5-2 5-2 8-.5z' },
+  { id: 'profile', label: 'Progress', icon: 'M5 20V12M10 20V7M15 20v-9M20 20V4' },
 ];
 
 function readTab(): Tab {
@@ -35,8 +40,13 @@ function readTab(): Tab {
 export function App() {
   const [tab, setTab] = useState<Tab>(readTab);
   const [overlay, setOverlay] = useState<Overlay>(null);
+  const [courseSheet, setCourseSheet] = useState(false);
   const p = useProgress();
-  const due = dueConcepts(p).length;
+  const due = dueConcepts(p, p.course).length;
+
+  useEffect(() => {
+    document.documentElement.dataset.course = p.course;
+  }, [p.course]);
 
   useEffect(() => {
     try {
@@ -48,7 +58,7 @@ export function App() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [overlay?.kind, tab]);
+  }, [overlay?.kind, tab, p.course]);
 
   if (overlay?.kind === 'session') {
     return (
@@ -60,11 +70,12 @@ export function App() {
       />
     );
   }
-
   if (overlay?.kind === 'summary') {
     return <SummaryScreen result={overlay.result} onContinue={() => setOverlay(null)} />;
   }
-
+  if (overlay?.kind === 'guide') {
+    return <Guidebook unitId={overlay.unitId} onBack={() => setOverlay(null)} />;
+  }
   if (overlay?.kind === 'intro') {
     return (
       <LessonIntro
@@ -85,17 +96,17 @@ export function App() {
   return (
     <div className="shell">
       <header className="topbar">
-        <span className="wordmark">
-          <svg viewBox="0 0 24 24" aria-hidden="true" className="mark">
-            <rect x="3" y="4" width="18" height="16" rx="3" />
-            <path d="M12 4v16M3 10h18" />
-          </svg>
-          Fund Balance
-        </span>
+        <CourseButton onOpen={() => setCourseSheet(true)} />
         <StatusStrip />
       </header>
       <main>
-        {tab === 'learn' && <LearnScreen onOpenLesson={(id) => setOverlay({ kind: 'intro', lessonId: id })} />}
+        {tab === 'learn' && (
+          <LearnScreen
+            onOpenLesson={(id) => setOverlay({ kind: 'intro', lessonId: id })}
+            onOpenGuide={(id) => setOverlay({ kind: 'guide', unitId: id })}
+            onCheckpoint={(unit: Unit) => setOverlay({ kind: 'session', plan: checkpointSession(getProgress(), unit) })}
+          />
+        )}
         {tab === 'review' && <ReviewScreen onStart={(plan) => plan.questions.length && setOverlay({ kind: 'session', plan })} />}
         {tab === 'library' && <LibraryScreen />}
         {tab === 'profile' && <ProfileScreen />}
@@ -109,7 +120,7 @@ export function App() {
             aria-current={tab === t.id ? 'page' : undefined}
             onClick={() => setTab(t.id)}
           >
-            <svg viewBox="0 0 20 20" aria-hidden="true">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
               <path d={t.icon} />
             </svg>
             <span>{t.label}</span>
@@ -117,6 +128,7 @@ export function App() {
           </button>
         ))}
       </nav>
+      {courseSheet && <CourseSheet onClose={() => setCourseSheet(false)} />}
     </div>
   );
 }

@@ -50,8 +50,9 @@ function check(u: Unit, q: Question, where: string) {
   }
 }
 
-for (const file of readdirSync(dir).filter((f) => /^unit-\d+\.yaml$/.test(f)).sort()) {
+for (const file of readdirSync(dir).filter((f) => /^[a-z]+-\d+\.yaml$/.test(f)).sort()) {
   const u = parse(readFileSync(join(dir, file), 'utf8')) as Unit;
+  if (!['basics', 'capital', 'consolidation'].includes(u.course)) problems.push(`${file}: course must be basics, capital or consolidation`);
   for (const l of u.lessons) for (const q of l.questions) {
     check(u, q, `${file} ${l.id}`);
     count++;

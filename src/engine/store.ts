@@ -1,6 +1,8 @@
 import { useSyncExternalStore } from 'react';
 import { createEmptyCard, fsrs, generatorParameters, Rating, type Card } from 'ts-fsrs';
 import { dayKey, daysBetween, weekKey } from './dates';
+import type { CourseId } from '../content/types';
+import { courseOfConcept } from '../content';
 
 export interface StoredCard extends Omit<Card, 'due' | 'last_review'> {
   due: string;
@@ -16,6 +18,7 @@ export interface Attempt {
 
 export interface Progress {
   version: 1;
+  course: CourseId;
   xp: number;
   dailyGoal: number;
   xpByDay: Record<string, number>;
@@ -33,6 +36,7 @@ const scheduler = fsrs(generatorParameters({ enable_fuzz: true }));
 export function freshProgress(): Progress {
   return {
     version: 1,
+    course: 'basics',
     xp: 0,
     dailyGoal: 30,
     xpByDay: {},
@@ -173,18 +177,24 @@ export function reviewConcept(conceptId: string, rating: Rating.Again | Rating.H
   commit({ ...state, cards: { ...state.cards, [conceptId]: stored } });
 }
 
-export function dueConcepts(p: Progress, now = new Date()): string[] {
+export function dueConcepts(p: Progress, course?: CourseId, now = new Date()): string[] {
   return Object.entries(p.cards)
-    .filter(([, c]) => new Date(c.due) <= now)
+    .filter(([id, c]) => new Date(c.due) <= now && (!course || courseOfConcept(id) === course))
     .sort((a, b) => a[1].due.localeCompare(b[1].due))
     .map(([id]) => id);
 }
 
 /** Questions whose latest attempt was wrong. */
-export function mistakeQuestions(p: Progress): string[] {
-  const last = new Map<string, boolean>();
-  for (const a of p.attempts) last.set(a.q, a.ok);
-  return [...last.entries()].filter(([, ok]) => !ok).map(([q]) => q);
+export function mistakeQuestions(p: Progress, course?: CourseId): string[] {
+  const last = new Map<string, { ok: boolean; c: string }>();
+  for (const a of p.attempts) last.set(a.q, { ok: a.ok, c: a.c });
+  return [...last.entries()]
+    .filter(([, v]) => !v.ok && (!course || courseOfConcept(v.c) === course))
+    .map(([q]) => q);
+}
+
+export function setCourse(course: CourseId) {
+  commit({ ...state, course });
 }
 
 export function lastSeen(p: Progress): Map<string, string> {

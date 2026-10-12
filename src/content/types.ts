@@ -76,9 +76,12 @@ export interface Lesson {
   questions: Question[];
 }
 
+export type CourseId = 'basics' | 'capital' | 'consolidation';
+
 export interface Unit {
   id: string;
-  number: number;
+  course: CourseId;
+  number: number; // position within its course, starting at 1
   title: string;
   summary: string;
   refs: string[];

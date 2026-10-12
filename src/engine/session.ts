@@ -1,13 +1,15 @@
-import type { Question } from '../content/types';
+import type { CourseId, Question, Unit } from '../content/types';
+import { courseOfConcept } from '../content';
 import { questionIndex, questionsByConcept } from '../content';
 import { dueConcepts, lastSeen, mistakeQuestions, type Progress } from './store';
 
-export type SessionKind = 'lesson' | 'review' | 'mistakes' | 'practice';
+export type SessionKind = 'lesson' | 'review' | 'mistakes' | 'practice' | 'checkpoint';
 
 export interface SessionPlan {
   kind: SessionKind;
   title: string;
   lessonId?: string;
+  unitId?: string;
   questions: Question[];
 }
 
@@ -35,21 +37,28 @@ function pickPerConcept(p: Progress, conceptIds: string[]): Question[] {
 
 export const REVIEW_SIZE = 12;
 
-export function reviewSession(p: Progress): SessionPlan {
-  return { kind: 'review', title: 'Daily review', questions: pickPerConcept(p, dueConcepts(p).slice(0, REVIEW_SIZE)) };
+export function reviewSession(p: Progress, course: CourseId): SessionPlan {
+  return { kind: 'review', title: 'Daily review', questions: pickPerConcept(p, dueConcepts(p, course).slice(0, REVIEW_SIZE)) };
+}
+
+/** End-of-unit checkpoint: one question per concept, up to 12. */
+export function checkpointSession(p: Progress, unit: Unit): SessionPlan {
+  const ids = shuffle(unit.concepts.map((c) => c.id)).slice(0, 12);
+  return { kind: 'checkpoint', title: `Unit ${unit.number} checkpoint`, unitId: unit.id, questions: pickPerConcept(p, ids) };
 }
 
 /** Practice when nothing is due: the concepts closest to being forgotten. */
-export function practiceSession(p: Progress): SessionPlan {
+export function practiceSession(p: Progress, course: CourseId): SessionPlan {
   const ids = Object.entries(p.cards)
+    .filter(([id]) => courseOfConcept(id) === course)
     .sort((a, b) => a[1].due.localeCompare(b[1].due))
     .slice(0, 10)
     .map(([id]) => id);
   return { kind: 'practice', title: 'Extra practice', questions: pickPerConcept(p, ids) };
 }
 
-export function mistakesSession(p: Progress): SessionPlan {
-  const qs = mistakeQuestions(p)
+export function mistakesSession(p: Progress, course: CourseId): SessionPlan {
+  const qs = mistakeQuestions(p, course)
     .map((id) => questionIndex.get(id)?.question)
     .filter((q): q is Question => !!q);
   return { kind: 'mistakes', title: 'Fix your mistakes', questions: shuffle(qs).slice(0, 15) };

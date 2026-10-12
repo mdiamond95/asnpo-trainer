@@ -1,0 +1,608 @@
+id: con2
+course: consolidation
+number: 2
+title: Consolidate, disclose or equity account
+summary: How an NPO reports each relationship under Section 4450, including the consolidate-or-disclose choice for controlled NPOs, the elimination entries in a consolidation, the equity method for profit-oriented investees, and the related party disclosures in Section 4460.
+refs:
+  - Part III, Section 4450
+  - Part III, Section 4460
+  - Part II, Section 1601
+status: ready
+
+concepts:
+  - id: con2-npo-choice
+    title: Consolidate or disclose a controlled NPO
+    summary: An NPO that controls another NPO may either consolidate it or leave it out of consolidation and disclose information about it instead.
+    ref: Part III, Section 4450
+  - id: con2-consistent-policy
+    title: Apply the choice consistently
+    summary: The consolidate-or-disclose choice is an accounting policy. It is applied consistently, and the policy chosen is disclosed.
+    ref: Part III, Section 4450
+  - id: con2-immaterial-group
+    title: Many individually immaterial controlled NPOs
+    summary: An NPO that controls a large number of individually immaterial NPOs may exclude them from consolidation, disclosing the reasons, the nature of the relationship and related information.
+    ref: Part III, Section 4450
+  - id: con2-nonconsol-disclosure
+    title: Disclosure for a controlled NPO not consolidated
+    summary: When a controlled NPO is not consolidated, the reporting NPO discloses its total assets, liabilities and net assets, its revenues, expenses and cash flows by activity, significant accounting policy differences, and the nature and extent of any restrictions.
+    ref: Part III, Section 4450
+  - id: con2-single-entity
+    title: One reporting entity
+    summary: Consolidated statements combine the organizations line by line and present the group as if it were a single reporting entity.
+    ref: Part II, Section 1601
+  - id: con2-eliminate-balances
+    title: Eliminating inter-organization balances
+    summary: Receivables, payables and loans between members of the group are eliminated, because a group cannot owe money to itself.
+    ref: Part II, Section 1601
+  - id: con2-eliminate-transactions
+    title: Eliminating inter-organization transactions
+    summary: Grants, transfers, management fees, rent and similar transactions inside the group are eliminated, so revenue is counted once and only external donations and funding remain.
+    ref: Part II, Section 1601
+  - id: con2-restrictions-kept
+    title: Restrictions survive consolidation
+    summary: Restricted resources keep their restrictions in the consolidated financial statements; combining the organizations does not release them.
+    ref: Part III, Section 4450
+  - id: con2-controlled-enterprise
+    title: Controlled profit-oriented enterprises
+    summary: An NPO that controls a profit-oriented enterprise either consolidates it or accounts for it using the equity method, with disclosure.
+    ref: Part III, Section 4450
+  - id: con2-equity-method
+    title: Equity method mechanics
+    summary: The investment starts at cost, increases or decreases by the investor's share of the investee's income or loss, and decreases by distributions received. The share of income is recognized in the statement of operations.
+    ref: Part III, Section 4450
+  - id: con2-si-reporting
+    title: Reporting significant influence
+    summary: Significant influence over a profit-oriented enterprise is accounted for using the equity method. Significant influence over an NPO is not equity accounted; the nature and extent of the relationship is disclosed.
+    ref: Part III, Section 4450
+  - id: con2-ei-disclosure
+    title: Disclosing an economic interest
+    summary: When an NPO has an economic interest in another NPO that it does not control, it discloses the nature and extent of that economic interest.
+    ref: Part III, Section 4450
+  - id: con2-related-parties
+    title: Who is a related party
+    summary: Related parties exist when one party can exercise control, joint control or significant influence over another, or has an economic interest in it. Key management personnel and their close family are also related parties.
+    ref: Part III, Section 4460
+  - id: con2-rp-disclosure
+    title: Related party disclosures
+    summary: For related party transactions, the NPO discloses the nature of the relationship, a description and the amounts of the transactions, balances outstanding and their terms.
+    ref: Part III, Section 4460
+
+lessons:
+  - id: con2l1
+    title: "Controlled NPOs: consolidate or disclose"
+    intro: ASNPO gives an NPO a real choice for the NPOs it controls. It can consolidate them or keep them out and disclose the key numbers instead.
+    questions:
+      - id: con2l1q01
+        type: mc
+        concept: con2-npo-choice
+        prompt: An Edmonton health society controls its hospital foundation. What options does Section 4450 give for reporting the foundation?
+        options:
+          - Consolidate it, or use the equity method if the foundation is small
+          - Consolidate it, or not consolidate and disclose information about it
+          - Consolidate it in every case, with no alternative
+          - Disclose only the society's grant income from it
+        answer: 1
+        explain: For a controlled NPO, the reporting NPO chooses either to consolidate it or to disclose specified information about it. The equity method is not an option for a controlled NPO.
+        ref: Part III, Section 4450
+      - id: con2l1q02
+        type: tf
+        concept: con2-npo-choice
+        prompt: Under ASNPO, an NPO must always consolidate every other NPO it controls.
+        answer: false
+        reasons:
+          - It may instead choose not to consolidate and disclose information about the controlled NPO
+          - Consolidation is only allowed for profit-oriented enterprises
+          - Controlled NPOs are never reported or mentioned
+        reason: 0
+        explain: Consolidation is one of two permitted options for controlled NPOs. The other is non-consolidation with disclosure.
+        ref: Part III, Section 4450
+      - id: con2l1q03
+        type: mc
+        concept: con2-consistent-policy
+        prompt: A housing society controls three NPOs. It wants to consolidate the two that improve its debt ratios and only disclose the third. What is the main problem?
+        options:
+          - Consolidation is never allowed for housing NPOs
+          - It must use the equity method for any NPO it does not consolidate
+          - The choice is an accounting policy to be applied consistently, not picked for results
+          - It must consolidate the smallest NPO first
+        answer: 2
+        explain: The consolidate-or-disclose choice is an accounting policy, applied consistently and disclosed. Picking entity by entity to manage ratios undermines that.
+        ref: Part III, Section 4450
+      - id: con2l1q04
+        type: mc
+        concept: con2-immaterial-group
+        prompt: A provincial sport body controls 40 small regional clubs, none material on its own. What does Section 4450 allow?
+        options:
+          - It must consolidate all 40 clubs line by line
+          - It may report the clubs using the equity method
+          - It may ignore the clubs entirely with no disclosure
+          - It may exclude them from consolidation and disclose the reasons and relationship
+        answer: 3
+        explain: Where an NPO controls a large number of individually immaterial NPOs, it may leave them out of consolidation. It still discloses the reasons, the nature of the relationship and related information.
+        ref: Part III, Section 4450
+      - id: con2l1q05
+        type: classify
+        concept: con2-nonconsol-disclosure
+        prompt: A health society chooses not to consolidate its controlled foundation. Which items must it disclose about the foundation?
+        buckets:
+          - Required disclosure
+          - Not required
+        items:
+          - text: Total assets, liabilities and net assets
+            bucket: 0
+          - text: Revenues, expenses and cash flows from operating, investing and financing activities
+            bucket: 0
+          - text: Names of the foundation's ten largest donors
+            bucket: 1
+          - text: Significant differences in accounting policies
+            bucket: 0
+          - text: Nature and extent of any restrictions
+            bucket: 0
+          - text: The foundation's fundraising budget for next year
+            bucket: 1
+        explain: Non-consolidation still requires the key financial totals, cash flows by activity, accounting policy differences and restrictions. Donor names and budgets are not part of the required disclosure.
+        ref: Part III, Section 4450
+      - id: con2l1q06
+        type: tf
+        concept: con2-consistent-policy
+        prompt: Whichever option an NPO picks for its controlled NPOs, it discloses the policy it has chosen.
+        answer: true
+        explain: The choice is an accounting policy, so the NPO discloses it and applies it consistently. Readers need it to understand what the statements include.
+        ref: Part III, Section 4450
+      - id: con2l1q07
+        type: match
+        concept: con2-nonconsol-disclosure
+        prompt: Match each disclosure item to the question it answers for a reader.
+        pairs:
+          - left: Total assets, liabilities and net assets
+            right: How big is the controlled NPO's financial position?
+          - left: Cash flows by activity
+            right: Where did its cash come from and go?
+          - left: Accounting policy differences
+            right: Are its numbers prepared on the same basis?
+          - left: Nature and extent of restrictions
+            right: Which resources are not freely usable?
+        explain: The disclosure package gives readers the essential picture they would otherwise get from consolidation. Each item fills a specific gap.
+        ref: Part III, Section 4450
+      - id: con2l1q08
+        type: tf
+        concept: con2-immaterial-group
+        prompt: An NPO that excludes many individually immaterial controlled NPOs from consolidation does not need to say why.
+        answer: false
+        reasons:
+          - It discloses the reasons, the nature of the relationship and related information
+          - The exclusion is only allowed with the auditor's written consent
+          - It must instead report them using the equity method
+        reason: 0
+        explain: The exclusion is allowed, but it comes with disclosure of the reasons and the relationship. Readers learn that the clubs exist and why they are not consolidated.
+        ref: Part III, Section 4450
+      - id: con2l1q09
+        type: mc
+        concept: con2-nonconsol-disclosure
+        prompt: An arts society does not consolidate a controlled festival NPO that holds $400,000 the province restricted to next year's festival. What should the notes include about this?
+        options:
+          - The nature and extent of the restriction on the festival NPO's resources
+          - Nothing, because the festival NPO is not consolidated
+          - Only the festival NPO's restricted cash balance, with no explanation
+          - A statement that the restriction lapses on non-consolidation
+        answer: 0
+        explain: Disclosure for a controlled NPO that is not consolidated includes the nature and extent of any restrictions. The restriction does not disappear because the entity is left out.
+        ref: Part III, Section 4450
+
+  - id: con2l2
+    title: Consolidation eliminations
+    intro: Consolidating adds everything line by line, then removes what the group did with itself. Grants, fees, rent and balances between members all come out.
+    questions:
+      - id: con2l2q01
+        type: mc
+        concept: con2-single-entity
+        prompt: What do consolidated financial statements of a health society and its controlled foundation present?
+        options:
+          - The society's statements, with the foundation shown in a note
+          - The society's statements, with an equity-method investment in the foundation
+          - Two sets of statements bound together in one report
+          - The society and foundation as a single reporting entity
+        answer: 3
+        explain: Consolidation combines the organizations line by line and presents the group as one reporting entity. That is why dealings between them must be eliminated.
+        ref: Part II, Section 1601
+      - id: con2l2q02
+        type: je
+        concept: con2-eliminate-transactions
+        prompt: The hospital foundation recorded a $2,000,000 grant expense for its grant to the health society that controls it. The society recorded $2,000,000 of grant revenue. Record the consolidation elimination.
+        accounts:
+          - Grant revenue (Society)
+          - Grant expense (Foundation)
+          - Donation revenue (Foundation)
+          - Cash
+          - Deferred contributions
+          - Net assets
+        lines:
+          - account: Grant revenue (Society)
+            side: dr
+            amount: 2000000
+          - account: Grant expense (Foundation)
+            side: cr
+            amount: 2000000
+        explain: The grant is a transfer within the group, so the society's revenue and the foundation's expense are both removed. The donors' original gifts to the foundation stay in consolidated revenue.
+        ref: Part II, Section 1601
+      - id: con2l2q03
+        type: je
+        concept: con2-eliminate-balances
+        prompt: At year end the foundation still owes the health society $500,000 of the approved grant. The society shows a grant receivable and the foundation a grant payable. Record the elimination.
+        accounts:
+          - Grant payable (Foundation)
+          - Grant receivable (Society)
+          - Grant revenue (Society)
+          - Grant expense (Foundation)
+          - Cash
+          - Accounts payable
+        lines:
+          - account: Grant payable (Foundation)
+            side: dr
+            amount: 500000
+          - account: Grant receivable (Society)
+            side: cr
+            amount: 500000
+        explain: A group cannot owe money to itself, so the matching receivable and payable are both eliminated. Only balances with outside parties remain.
+        ref: Part II, Section 1601
+      - id: con2l2q04
+        type: calc
+        concept: con2-eliminate-transactions
+        prompt: "The foundation has $3,000,000 of external donations and $200,000 of investment income. The society has $10,000,000 of provincial funding, $300,000 of parking revenue and $2,000,000 of grant revenue from the foundation. Enter consolidated total revenue."
+        answer: 13500000
+        unit: $
+        explain: Add all revenue ($15,500,000), then eliminate the $2,000,000 inter-organization grant. Consolidated revenue is $13,500,000, so the donated money is counted only once.
+        ref: Part II, Section 1601
+      - id: con2l2q05
+        type: je
+        concept: con2-eliminate-transactions
+        prompt: A housing society charges its controlled property-holding NPO a $120,000 management fee. The society recorded management fee revenue; the property NPO recorded administration expense. Record the elimination.
+        accounts:
+          - Management fee revenue
+          - Administration expense
+          - Rental revenue
+          - Accounts receivable
+          - Cash
+          - Net assets
+        lines:
+          - account: Management fee revenue
+            side: dr
+            amount: 120000
+          - account: Administration expense
+            side: cr
+            amount: 120000
+        explain: The fee moves money from one member of the group to another, so neither the revenue nor the expense exists for the group as a whole. Both are eliminated.
+        ref: Part II, Section 1601
+      - id: con2l2q06
+        type: calc
+        concept: con2-eliminate-balances
+        prompt: The foundation has $150,000 of receivables from outside parties. The society has $900,000 of receivables, of which $500,000 is owed by the foundation. Enter consolidated receivables.
+        answer: 550000
+        unit: $
+        explain: $150,000 + $900,000 − $500,000 inter-organization balance = $550,000. Only amounts owed by parties outside the group remain.
+        ref: Part II, Section 1601
+      - id: con2l2q07
+        type: je
+        concept: con2-eliminate-balances
+        prompt: The hospital foundation lent its controlling health society $400,000 to buy equipment. The loan is outstanding at year end. Record the elimination of the balances.
+        accounts:
+          - Loan payable (Society)
+          - Loan receivable (Foundation)
+          - Equipment
+          - Grant revenue (Society)
+          - Cash
+          - Long-term debt
+        lines:
+          - account: Loan payable (Society)
+            side: dr
+            amount: 400000
+          - account: Loan receivable (Foundation)
+            side: cr
+            amount: 400000
+        explain: An inter-organization loan is a balance within the group, so the loan receivable and loan payable cancel out on consolidation. The equipment the society bought stays.
+        ref: Part II, Section 1601
+      - id: con2l2q08
+        type: classify
+        concept: con2-eliminate-transactions
+        prompt: A health society consolidates its foundation. Which items are eliminated on consolidation?
+        buckets:
+          - Eliminate
+          - Keep in consolidated statements
+        items:
+          - text: Foundation's $2,000,000 grant to the society
+            bucket: 0
+          - text: Donations the foundation received from the public
+            bucket: 1
+          - text: Rent the foundation pays the society for office space
+            bucket: 0
+          - text: Provincial funding the society receives
+            bucket: 1
+          - text: Amount the foundation owes the society at year end
+            bucket: 0
+          - text: Society's payroll costs for nursing staff
+            bucket: 1
+        explain: Transactions and balances between group members are eliminated. Dealings with outside parties, such as donors, the province and employees, remain.
+        ref: Part II, Section 1601
+      - id: con2l2q09
+        type: tf
+        concept: con2-restrictions-kept
+        prompt: When a foundation's resources restricted to cancer research are consolidated with the health society, the restriction no longer applies in the consolidated statements.
+        answer: false
+        reasons:
+          - Restricted resources keep their restrictions in the consolidated statements
+          - Restrictions apply only in the society's own statements
+          - Restrictions are released whenever entities are combined
+        reason: 0
+        explain: Consolidation changes the reporting entity, not the donor's stipulations. The resources remain restricted to cancer research in the consolidated statements.
+        ref: Part III, Section 4450
+      - id: con2l2q10
+        type: mc
+        concept: con2-single-entity
+        prompt: How are a controlled foundation's figures brought into the consolidated statements?
+        options:
+          - Combined line by line with the society's, then inter-organization items are eliminated
+          - As one line showing the foundation's net assets
+          - As a single investment balance measured at cost
+          - Only through note disclosure of the foundation's totals
+        answer: 0
+        explain: Consolidation adds assets, liabilities, revenues and expenses line by line, then removes the effects of dealings within the group.
+        ref: Part II, Section 1601
+
+  - id: con2l3
+    title: Profit-oriented investees and the equity method
+    intro: Companies owned by NPOs follow different reporting rules. Control brings a choice of consolidation or the equity method, and significant influence brings the equity method.
+    questions:
+      - id: con2l3q01
+        type: mc
+        concept: con2-controlled-enterprise
+        prompt: An Edmonton arts society owns 100% of a café corporation run for profit in its lobby. How may it report the café company?
+        options:
+          - Only by disclosing the café's totals in a note
+          - Only at cost, with dividends as revenue
+          - By consolidating it or using the equity method, with disclosure
+          - By consolidating it or disclosing it, like a controlled NPO
+        answer: 2
+        explain: A controlled profit-oriented enterprise is either consolidated or accounted for using the equity method, with disclosure. The disclose-only option applies to controlled NPOs, not companies.
+        ref: Part III, Section 4450
+      - id: con2l3q02
+        type: mc
+        concept: con2-si-reporting
+        prompt: A health society buys 30% of the voting shares of a medical laundry company and names 2 of its 7 directors, giving it significant influence. How does it account for the investment?
+        options:
+          - Using the equity method
+          - By consolidating the company line by line
+          - By disclosing the relationship only
+          - At fair value through net assets
+        answer: 0
+        explain: Significant influence over a profit-oriented enterprise is accounted for using the equity method. Consolidation is for control.
+        ref: Part III, Section 4450
+      - id: con2l3q03
+        type: calc
+        concept: con2-equity-method
+        prompt: An arts society buys 30% of a catering company for $600,000 on January 1. For the year the company earns $200,000 and pays $50,000 in dividends. Using the equity method, enter the investment balance at December 31.
+        answer: 645000
+        unit: $
+        explain: $600,000 cost + $60,000 share of income (30% × $200,000) − $15,000 share of dividends (30% × $50,000) = $645,000.
+        ref: Part III, Section 4450
+      - id: con2l3q04
+        type: je
+        concept: con2-equity-method
+        prompt: Using the same facts, record the arts society's 30% share of the catering company's $200,000 net income.
+        accounts:
+          - Investment in catering company
+          - Equity income from catering company
+          - Dividend revenue
+          - Cash
+          - Unrestricted net assets
+          - Accounts receivable
+        lines:
+          - account: Investment in catering company
+            side: dr
+            amount: 60000
+          - account: Equity income from catering company
+            side: cr
+            amount: 60000
+        explain: Under the equity method the investment grows by the investor's share of income, 30% × $200,000 = $60,000. That share is recognized in the statement of operations.
+        ref: Part III, Section 4450
+      - id: con2l3q05
+        type: je
+        concept: con2-equity-method
+        prompt: The catering company pays $50,000 of dividends, and the arts society receives its 30% share in cash. Record the receipt under the equity method.
+        accounts:
+          - Cash
+          - Investment in catering company
+          - Dividend revenue
+          - Equity income from catering company
+          - Unrestricted net assets
+          - Accounts receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 15000
+          - account: Investment in catering company
+            side: cr
+            amount: 15000
+        explain: Distributions received reduce the investment balance rather than being revenue, because the income was already recognized through the equity pick-up.
+        ref: Part III, Section 4450
+      - id: con2l3q06
+        type: tf
+        concept: con2-si-reporting
+        prompt: A sport body with significant influence over a multisport centre NPO accounts for its interest using the equity method.
+        answer: false
+        reasons:
+          - Significant influence over an NPO is disclosed, not equity accounted
+          - The sport body must consolidate the centre instead
+          - The sport body records its share of the centre's donations as revenue
+        reason: 0
+        explain: The equity method applies to significant influence over a profit-oriented enterprise. For an NPO, the reporting NPO discloses the nature and extent of the relationship.
+        ref: Part III, Section 4450
+      - id: con2l3q07
+        type: calc
+        concept: con2-equity-method
+        prompt: A housing society accounts for its wholly owned property management company using the equity method. The investment opened at $500,000. This year the company lost $80,000 and paid no dividends. Enter the closing investment balance.
+        answer: 420000
+        unit: $
+        explain: The investment decreases by the investor's share of the loss, 100% × $80,000. $500,000 − $80,000 = $420,000.
+        ref: Part III, Section 4450
+      - id: con2l3q08
+        type: classify
+        concept: con2-controlled-enterprise
+        prompt: How may an Alberta NPO report each investee?
+        buckets:
+          - Consolidate or disclose
+          - Consolidate or equity method
+          - Equity method
+          - Disclose the relationship
+        items:
+          - text: A foundation NPO it controls
+            bucket: 0
+          - text: A company in which it holds 100% of the voting shares
+            bucket: 1
+          - text: A company in which it has significant influence
+            bucket: 2
+          - text: An NPO over which it has significant influence
+            bucket: 3
+          - text: A housing NPO it controls through board appointment
+            bucket: 0
+        explain: Controlled NPOs are consolidated or disclosed; controlled companies are consolidated or equity accounted. Significant influence means the equity method for a company and disclosure for an NPO.
+        ref: Part III, Section 4450
+      - id: con2l3q09
+        type: match
+        concept: con2-equity-method
+        prompt: Match each event to its effect on an equity-method investment balance.
+        pairs:
+          - left: Purchase of the shares
+            right: Initial balance at cost
+          - left: Investee reports net income
+            right: Increase by investor's share
+          - left: Investee reports a net loss
+            right: Decrease by investor's share
+          - left: Investee pays a dividend
+            right: Decrease by amount received
+        explain: The equity method starts at cost and tracks the investor's share of the investee's results, less what it receives back as distributions.
+        ref: Part III, Section 4450
+
+  - id: con2l4
+    title: Disclosure and related parties
+    intro: Some relationships never reach the face of the statements, but readers still need to know about them. Economic interests and related party dealings live in the notes.
+    questions:
+      - id: con2l4q01
+        type: mc
+        concept: con2-ei-disclosure
+        prompt: A Red Deer housing society guarantees the $3,000,000 mortgage of a seniors' housing NPO it does not control. What does Section 4450 require?
+        options:
+          - Consolidation of the seniors' NPO
+          - Equity accounting for the seniors' NPO
+          - Disclosure of the nature and extent of the economic interest
+          - No reporting, because there is no control
+        answer: 2
+        explain: An economic interest in an NPO that is not controlled is reported by disclosing its nature and extent. Here the guarantee is the economic interest readers need to see.
+        ref: Part III, Section 4450
+      - id: con2l4q02
+        type: classify
+        concept: con2-ei-disclosure
+        prompt: Choose the reporting for each relationship of an Edmonton health society.
+        buckets:
+          - Consolidate or disclose
+          - Equity method
+          - Disclose nature and extent only
+        items:
+          - text: Hospital foundation whose board it appoints
+            bucket: 0
+          - text: 30% of a laundry company with two board seats
+            bucket: 1
+          - text: Guarantee of an unrelated clinic NPO's loan
+            bucket: 2
+          - text: Two seats on a hospice NPO's board, with shared staff
+            bucket: 2
+          - text: 25% of a pharmacy company with significant influence
+            bucket: 1
+        explain: A controlled NPO is consolidated or disclosed. Significant influence over a company means the equity method, while significant influence over an NPO and an uncontrolled economic interest are disclosed.
+        ref: Part III, Section 4450
+      - id: con2l4q03
+        type: tf
+        concept: con2-related-parties
+        prompt: The executive director of a health society and their spouse are related parties of the society.
+        answer: true
+        reasons:
+          - Key management personnel and their close family are related parties
+          - Only board members can be related parties
+          - Individuals are never related parties of an NPO
+        reason: 0
+        explain: Related parties include key management personnel and their close family members, as well as entities linked by control, joint control, significant influence or economic interest.
+        ref: Part III, Section 4460
+      - id: con2l4q04
+        type: classify
+        concept: con2-rp-disclosure
+        prompt: The health society paid $80,000 for catering to a company owned by its executive director's spouse. Which items does it disclose under Section 4460?
+        buckets:
+          - Disclose
+          - Not required
+        items:
+          - text: The nature of the relationship
+            bucket: 0
+          - text: A description of the catering transactions and the $80,000
+            bucket: 0
+          - text: Any balance still owing at year end
+            bucket: 0
+          - text: The terms of the transactions and balances
+            bucket: 0
+          - text: The spouse's personal income for the year
+            bucket: 1
+        explain: Related party disclosure covers the relationship, the description and amounts of transactions, balances outstanding and their terms. Personal financial details of the individual are not part of it.
+        ref: Part III, Section 4460
+      - id: con2l4q05
+        type: mc
+        concept: con2-related-parties
+        prompt: Which of these is NOT a related party of a provincial sport body?
+        options:
+          - A regional club whose board it appoints
+          - A games society over which it has significant influence
+          - Its chief executive officer
+          - A bank that lends it money at market rates
+        answer: 3
+        explain: Control, significant influence and key management roles make parties related. A lender dealing at market rates with none of those links is not a related party.
+        ref: Part III, Section 4460
+      - id: con2l4q06
+        type: match
+        concept: con2-si-reporting
+        prompt: Match each relationship to how it is reported under Section 4450.
+        pairs:
+          - left: Controlled NPO
+            right: Consolidate, or disclose specified information
+          - left: Controlled profit-oriented enterprise
+            right: Consolidate, or equity method with disclosure
+          - left: Significant influence over a company
+            right: Equity method
+          - left: Significant influence over an NPO
+            right: Disclose the nature and extent of the relationship
+          - left: Economic interest in an uncontrolled NPO
+            right: Disclose the nature and extent of the interest
+        explain: The reporting follows the relationship and whether the investee is an NPO or a profit-oriented enterprise. In every case the policy and relationship are disclosed.
+        ref: Part III, Section 4450
+      - id: con2l4q07
+        type: tf
+        concept: con2-ei-disclosure
+        prompt: An NPO with an economic interest in another NPO it does not control may ignore the relationship if no money changed hands during the year.
+        answer: false
+        explain: The economic interest itself is disclosed, including its nature and extent. A guarantee can matter to readers even in a year with no transactions.
+        ref: Part III, Section 4450
+      - id: con2l4q08
+        type: mc
+        concept: con2-rp-disclosure
+        prompt: A hospital foundation the society does not consolidate grants it $2,000,000, and $500,000 is unpaid at year end. Under Section 4460, what does the society disclose?
+        options:
+          - Only that a related foundation exists
+          - The relationship, the $2,000,000 grant, the $500,000 balance and its terms
+          - Only the $500,000 balance, since the grant is already in revenue
+          - Nothing, because grants between NPOs are exempt
+        answer: 1
+        explain: Related party disclosure covers the nature of the relationship, a description and the amounts of transactions, outstanding balances and their terms.
+        ref: Part III, Section 4460
+      - id: con2l4q09
+        type: tf
+        concept: con2-consistent-policy
+        prompt: An NPO discloses the relationship and its chosen reporting policy for its controlled and related entities, whichever option it uses.
+        answer: true
+        explain: Whatever reporting option applies, the NPO discloses the policy chosen and the nature of the relationship so readers can understand the group.
+        ref: Part III, Section 4450

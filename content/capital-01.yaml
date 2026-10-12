@@ -1,0 +1,547 @@
+id: cap1
+course: capital
+number: 1
+title: Tangible capital assets
+summary: What a tangible capital asset is for an NPO, how to measure its cost (including contributed assets, basket purchases and capitalized interest), how to break it into components, and how to amortize and disclose it.
+refs:
+  - Part III, Section 4433
+  - Part III, Section 4410
+status: ready
+
+concepts:
+  - id: cap1-tca-definition
+    title: What a tangible capital asset is
+    summary: A tangible capital asset is held for providing services, administration, producing goods or maintaining other capital assets. It has a useful life beyond one year, is used on a continuing basis and is not held for sale in the ordinary course of operations.
+    ref: Part III, Section 4433
+  - id: cap1-section-4433
+    title: Section 4433 replaced 4431
+    summary: Section 4433 applies to tangible capital assets held by NPOs for fiscal years beginning on or after January 1, 2019, replacing Section 4431. It brought in componentization and partial write-downs.
+    ref: Part III, Section 4433
+  - id: cap1-small-npo-relief
+    title: Small NPO relief
+    summary: An NPO with average annual revenues under $500,000 for the current and preceding period may limit its application of Section 4433 to disclosure, for example expensing capital purchases and disclosing its policy and information about major categories of assets.
+    ref: Part III, Section 4433
+  - id: cap1-capital-vs-expense
+    title: Capital or expense
+    summary: Spending that creates an asset meeting the definition, with benefits beyond one year, is capitalized. Spending that is used up in the period, such as supplies, rent or routine upkeep, is expensed.
+    ref: Part III, Section 4433
+  - id: cap1-cost-components
+    title: What goes into cost
+    summary: A tangible capital asset is initially measured at cost, which includes the purchase price and other acquisition costs such as freight, installation, site preparation, legal fees and other costs directly attributable to getting the asset ready for use.
+    ref: Part III, Section 4433
+  - id: cap1-self-constructed
+    title: Self-constructed assets
+    summary: When an NPO builds an asset itself, cost includes materials, labour and overhead directly attributable to the construction. General overhead that would be incurred anyway is not capitalized.
+    ref: Part III, Section 4433
+  - id: cap1-interest-capitalization
+    title: Capitalizing interest
+    summary: Interest costs directly attributable to acquiring or constructing an asset may be included in its cost when that is the NPO's accounting policy. The policy is disclosed.
+    ref: Part III, Section 4433
+  - id: cap1-contributed-tca
+    title: Contributed capital assets
+    summary: A donated tangible capital asset is recorded at fair value at the date of contribution, or at nominal value if fair value cannot be reasonably determined.
+    ref: Part III, Section 4433
+  - id: cap1-basket-purchase
+    title: Basket purchases
+    summary: When several assets are bought for one price, the total cost is allocated to each asset based on their relative fair values.
+    ref: Part III, Section 4433
+  - id: cap1-componentization
+    title: Componentization
+    summary: When practicable, the cost of an asset is split into significant component parts with different useful lives, such as structure, roof and HVAC, and each component is amortized separately.
+    ref: Part III, Section 4433
+  - id: cap1-amortization-basis
+    title: Amortization methods
+    summary: Amortization is an expense recognized on a rational and systematic basis over the asset's useful life, using a method such as straight-line, declining balance or units of activity.
+    ref: Part III, Section 4433
+  - id: cap1-residual-value
+    title: Amortizable amount
+    summary: The amount amortized is cost less residual value. Residual value is what the NPO expects to recover at the end of the asset's useful life.
+    ref: Part III, Section 4433
+  - id: cap1-amortization-start
+    title: When amortization starts, and land
+    summary: Amortization begins when the asset is available for use, so construction in progress is not amortized. Land normally has an unlimited life and is not amortized.
+    ref: Part III, Section 4433
+  - id: cap1-change-in-estimate
+    title: Reviewing life and method
+    summary: Useful lives and amortization methods are reviewed regularly. A change is a change in estimate, applied prospectively to the remaining carrying amount over the remaining life.
+    ref: Part III, Section 4433
+
+lessons:
+  - id: cap1l1
+    title: What counts as a capital asset
+    intro: Before you can amortize anything, you need to know whether it is a capital asset at all. This lesson covers the definition, the small NPO relief and where Section 4433 came from.
+    questions:
+      - id: cap1l1q01
+        type: mc
+        concept: cap1-tca-definition
+        prompt: Which of these is a tangible capital asset of a Red Deer seniors' housing society?
+        options:
+          - A year's supply of cleaning products for the residence
+          - A commercial kitchen dishwasher expected to last eight years
+          - Donated used furniture held for resale in its thrift store
+          - Prepaid property insurance covering the next twelve months
+        answer: 1
+        explain: The dishwasher is used continuously to provide services and lasts beyond one year. Supplies are consumed, prepaid insurance is not a physical asset, and goods held for resale are inventory.
+        ref: Part III, Section 4433
+      - id: cap1l1q02
+        type: tf
+        concept: cap1-tca-definition
+        prompt: A food bank buys 50 refurbished laptops to sell at its fundraising auction next month. The laptops are tangible capital assets of the food bank.
+        answer: false
+        reasons:
+          - They are held for sale, not for continuing use in providing services
+          - Laptops never qualify because they are too small
+          - Only assets funded by capital grants can be capital assets
+        reason: 0
+        explain: A tangible capital asset is used on a continuing basis and is not for sale in the ordinary course of operations. Items bought to resell are not capital assets.
+        ref: Part III, Section 4433
+      - id: cap1l1q03
+        type: classify
+        concept: cap1-capital-vs-expense
+        prompt: Classify each purchase by an Edmonton community health centre.
+        buckets:
+          - Capitalize
+          - Expense
+        items:
+          - text: $85,000 dental chair and equipment used for ten years
+            bucket: 0
+          - text: Monthly clinic rent
+            bucket: 1
+          - text: $40,000 accessible van used to drive clients to appointments
+            bucket: 0
+          - text: Medical gloves and swabs used up this month
+            bucket: 1
+          - text: $15,000 server expected to run for five years
+            bucket: 0
+          - text: Annual software subscription fee
+            bucket: 1
+        explain: Assets used on a continuing basis with lives beyond one year are capitalized. Items consumed in the period, or services for the period such as rent and subscriptions, are expenses.
+        ref: Part III, Section 4433
+      - id: cap1l1q04
+        type: mc
+        concept: cap1-section-4433
+        prompt: For which fiscal years does Section 4433 apply to an NPO's tangible capital assets?
+        options:
+          - Fiscal years beginning on or after January 1, 2012
+          - Only for NPOs with revenues over $500,000
+          - Fiscal years beginning on or after January 1, 2019
+          - Fiscal years ending after December 31, 2024
+        answer: 2
+        explain: Section 4433 replaced Section 4431 for fiscal years beginning on or after January 1, 2019. It added componentization and partial write-downs.
+        ref: Part III, Section 4433
+      - id: cap1l1q05
+        type: tf
+        concept: cap1-small-npo-relief
+        prompt: A small arts society with average annual revenues of $300,000 over the current and prior year may choose to expense its capital purchases and disclose information about them instead.
+        answer: true
+        reasons:
+          - NPOs with average annual revenues under $500,000 may limit Section 4433 to disclosure
+          - Every NPO may expense capital assets if its board approves
+          - Arts societies are exempt from capital asset accounting
+        reason: 0
+        explain: Section 4433 offers relief to NPOs with average annual revenues under $500,000. They can limit their application to disclosure of their policy and information about major categories of assets.
+        ref: Part III, Section 4433
+      - id: cap1l1q06
+        type: calc
+        concept: cap1-small-npo-relief
+        prompt: A sport association recognized revenues of $420,000 last year and $610,000 this year. Enter its average annual revenue for the two years used to test the small NPO relief.
+        answer: 515000
+        unit: $
+        explain: ($420,000 + $610,000) ÷ 2 = $515,000. That is above $500,000, so the association no longer qualifies for the relief this year.
+        ref: Part III, Section 4433
+      - id: cap1l1q07
+        type: je
+        concept: cap1-capital-vs-expense
+        prompt: A food bank (full application of Section 4433) pays $55,000 cash for a refrigerated delivery truck it will use for seven years. Record the purchase.
+        accounts:
+          - Cash
+          - Capital assets
+          - Repairs and maintenance expense
+          - Amortization expense
+          - Accounts payable
+          - Net assets invested in capital assets
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 55000
+          - account: Cash
+            side: cr
+            amount: 55000
+        explain: The truck is used on a continuing basis and lasts beyond one year, so it is capitalized at cost. Amortization starts once it is available for use.
+        ref: Part III, Section 4433
+      - id: cap1l1q08
+        type: match
+        concept: cap1-tca-definition
+        prompt: Match each item held by a community hall society to how it is classified.
+        pairs:
+          - left: Folding tables used at every event
+            right: Tangible capital asset
+          - left: Raffle prizes bought for the spring gala
+            right: Expense or inventory, not a capital asset
+          - left: Website domain and custom booking software
+            right: Intangible asset under Section 4434
+          - left: Coffee and paper cups for the month
+            right: Operating expense
+        explain: Tangible capital assets are physical items used continually for more than one year. Software without physical substance is an intangible asset, which Section 4434 handles in a parallel way.
+        ref: Part III, Section 4433
+      - id: cap1l1q09
+        type: mc
+        concept: cap1-section-4433
+        prompt: Which change did Section 4433 introduce compared with the former Section 4431?
+        options:
+          - Capital assets are now always measured at fair value
+          - Land must now be amortized over 40 years
+          - Contributed capital assets can no longer be recognized
+          - Components with different lives are amortized separately when practicable
+        answer: 3
+        explain: Section 4433 brought in componentization and allowed partial write-downs. Assets are still measured at cost, and land is still normally not amortized.
+        ref: Part III, Section 4433
+
+  - id: cap1l2
+    title: Measuring cost
+    intro: Every capital asset starts life at cost. The trick is knowing which costs belong in it and how to handle donated assets and bundled purchases.
+    questions:
+      - id: cap1l2q01
+        type: calc
+        concept: cap1-cost-components
+        prompt: A community health centre buys an X-ray unit for $85,000, pays $3,000 freight, $7,000 for installation, $2,000 to train staff to use it and $4,000 for a one-year service contract. Enter the cost to capitalize.
+        answer: 95000
+        unit: $
+        explain: $85,000 + $3,000 + $7,000 = $95,000. Training and the service contract are not needed to bring the unit to working condition, so they are expensed.
+        ref: Part III, Section 4433
+      - id: cap1l2q02
+        type: classify
+        concept: cap1-cost-components
+        prompt: A sport association buys land and a used arena. Classify each cost.
+        buckets:
+          - Include in cost
+          - Expense
+        items:
+          - text: Legal fees to close the purchase
+            bucket: 0
+          - text: Land title registration fees
+            bucket: 0
+          - text: Grading and site preparation before use
+            bucket: 0
+          - text: Grand opening reception for members
+            bucket: 1
+          - text: Utilities for the first month of operations
+            bucket: 1
+        explain: Costs directly attributable to acquiring the asset and getting it ready for use are capitalized. Celebrations and running costs after the asset is in use are expenses.
+        ref: Part III, Section 4433
+      - id: cap1l2q03
+        type: calc
+        concept: cap1-self-constructed
+        prompt: A food bank builds a storage shed with its own crew. Materials cost $40,000, crew labour $25,000 and directly attributable equipment rental $5,000. An $8,000 share of executive office costs is also allocated to the project. Enter the shed's cost.
+        answer: 70000
+        unit: $
+        explain: $40,000 + $25,000 + $5,000 = $70,000. General administration costs that are not directly attributable to building the shed stay in expenses.
+        ref: Part III, Section 4433
+      - id: cap1l2q04
+        type: je
+        concept: cap1-contributed-tca
+        prompt: A local dealership donates a 12-passenger van with a fair value of $45,000 to a seniors' housing society that uses the deferral method. Record the contribution.
+        accounts:
+          - Capital assets
+          - Deferred capital contributions
+          - Donation revenue
+          - Cash
+          - Net assets invested in capital assets
+          - Amortization expense
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 45000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 45000
+        explain: A contributed capital asset is recorded at fair value at the date of contribution. Under the deferral method, a donated amortizable asset is deferred and recognized as revenue as the van is amortized.
+        ref: Part III, Section 4433
+      - id: cap1l2q05
+        type: mc
+        concept: cap1-contributed-tca
+        prompt: An arts society receives a donated antique printing press. No reliable market exists and no appraiser can reasonably estimate its fair value. How is it recorded?
+        options:
+          - At nominal value
+          - At the donor's original cost
+          - At the insured value the society chooses
+          - It is not recorded or disclosed at all
+        answer: 0
+        explain: Contributed capital assets are recorded at fair value, but if fair value cannot be reasonably determined they are recorded at nominal value.
+        ref: Part III, Section 4433
+      - id: cap1l2q06
+        type: calc
+        concept: cap1-basket-purchase
+        prompt: A seniors' housing society pays $1,500,000 for a property. Appraised fair values are land $400,000 and building $1,200,000. Enter the cost allocated to the building.
+        answer: 1125000
+        unit: $
+        explain: The building is $1,200,000 ÷ $1,600,000 = 75% of total fair value, so it gets 75% × $1,500,000 = $1,125,000. Land gets the remaining $375,000.
+        ref: Part III, Section 4433
+      - id: cap1l2q07
+        type: tf
+        concept: cap1-basket-purchase
+        prompt: In a basket purchase of land and a building, the NPO may put the whole price into the building so that all of it is amortized.
+        answer: false
+        reasons:
+          - The price must be allocated using the relative fair values of each asset
+          - The whole price must go to land because it is acquired first
+          - The NPO must split the price evenly between the two assets
+        reason: 0
+        explain: The total cost is allocated based on relative fair values. Separating land matters because land is normally not amortized.
+        ref: Part III, Section 4433
+      - id: cap1l2q08
+        type: mc
+        concept: cap1-interest-capitalization
+        prompt: A seniors' housing society borrows to build a new residence. When can it include interest incurred during construction in the building's cost?
+        options:
+          - Never, because interest is always a financing expense
+          - Only if the lender requires it under the loan terms
+          - When capitalizing such interest is its accounting policy, which it discloses
+          - Only if the building is funded entirely by a capital grant
+        answer: 2
+        explain: Interest directly attributable to acquiring or constructing an asset may be capitalized when that is the NPO's policy. The policy must be disclosed.
+        ref: Part III, Section 4433
+      - id: cap1l2q09
+        type: je
+        concept: cap1-interest-capitalization
+        prompt: The society's policy is to capitalize interest on construction loans. It pays $30,000 of interest on its construction loan while the residence is being built. Record the payment.
+        accounts:
+          - Construction in progress
+          - Interest expense
+          - Cash
+          - Capital assets
+          - Accounts payable
+          - Amortization expense
+        lines:
+          - account: Construction in progress
+            side: dr
+            amount: 30000
+          - account: Cash
+            side: cr
+            amount: 30000
+        explain: Under a policy of capitalizing interest, interest attributable to construction becomes part of the asset's cost. Without that policy, it would be interest expense.
+        ref: Part III, Section 4433
+
+  - id: cap1l3
+    title: Componentization
+    intro: A building is not one asset with one life. Section 4433 asks you to split significant components when practicable, which will feel familiar from project accounting.
+    questions:
+      - id: cap1l3q01
+        type: mc
+        concept: cap1-componentization
+        prompt: Why does Section 4433 ask NPOs to componentize a building when practicable?
+        options:
+          - So the building can be measured at fair value each year
+          - Because significant parts with different useful lives should be amortized separately
+          - So the roof can be expensed when purchased
+          - Because land and building must always be combined
+        answer: 1
+        explain: Components such as a roof or HVAC wear out faster than the structure. Amortizing each over its own life gives a better picture of how service potential is consumed.
+        ref: Part III, Section 4433
+      - id: cap1l3q02
+        type: calc
+        concept: cap1-componentization
+        prompt: A seniors' housing society completes a $6,000,000 residence, componentized as structure $4,200,000 (40 years), roof $600,000 (20 years) and HVAC $1,200,000 (15 years). Straight-line, no residual value. Enter year 1 amortization for the structure.
+        answer: 105000
+        unit: $
+        explain: $4,200,000 ÷ 40 = $105,000. Each component is amortized over its own useful life.
+        ref: Part III, Section 4433
+      - id: cap1l3q03
+        type: calc
+        concept: cap1-componentization
+        prompt: Using the same residence (structure $4,200,000 over 40 years, roof $600,000 over 20 years, HVAC $1,200,000 over 15 years, straight-line, no residual), enter total year 1 amortization for the building.
+        answer: 215000
+        unit: $
+        explain: $105,000 structure + $30,000 roof + $80,000 HVAC = $215,000.
+        ref: Part III, Section 4433
+      - id: cap1l3q04
+        type: calc
+        concept: cap1-componentization
+        prompt: If the society had not componentized and instead amortized the whole $6,000,000 residence over 40 years, enter the annual amortization.
+        answer: 150000
+        unit: $
+        explain: $6,000,000 ÷ 40 = $150,000, which understates amortization by $65,000 a year compared with the componentized $215,000.
+        ref: Part III, Section 4433
+      - id: cap1l3q05
+        type: je
+        concept: cap1-componentization
+        prompt: Record year 1 amortization of $215,000 on the componentized residence (structure $105,000, roof $30,000, HVAC $80,000) as a single entry.
+        accounts:
+          - Amortization expense
+          - Accumulated amortization
+          - Capital assets
+          - Repairs and maintenance expense
+          - Deferred capital contributions
+          - Cash
+        lines:
+          - account: Amortization expense
+            side: dr
+            amount: 215000
+          - account: Accumulated amortization
+            side: cr
+            amount: 215000
+        explain: Each component is calculated separately, but the entry still debits amortization expense and credits accumulated amortization. Subledgers track the components.
+        ref: Part III, Section 4433
+      - id: cap1l3q06
+        type: match
+        concept: cap1-componentization
+        prompt: Match each component of an Edmonton recreation centre to a reasonable useful life.
+        pairs:
+          - left: Concrete and steel structure
+            right: 40 years
+          - left: Membrane roof
+            right: 20 years
+          - left: HVAC system
+            right: 15 years
+          - left: Fitness equipment
+            right: 7 years
+        explain: Components wear out at different rates, so each gets its own life. Actual lives are estimates based on the NPO's experience and the asset's condition.
+        ref: Part III, Section 4433
+      - id: cap1l3q07
+        type: tf
+        concept: cap1-componentization
+        prompt: Componentization is required for every capital asset, even when the cost of tracking components would be impractical.
+        answer: false
+        explain: Section 4433 calls for componentization when practicable. For many smaller assets, a single useful life is reasonable.
+        ref: Part III, Section 4433
+      - id: cap1l3q08
+        type: classify
+        concept: cap1-componentization
+        prompt: An arts society buys a theatre. Classify each part as a separate component worth tracking or part of a larger component.
+        buckets:
+          - Separate significant component
+          - Part of another component
+        items:
+          - text: Building structure
+            bucket: 0
+          - text: Elevator
+            bucket: 0
+          - text: Stage rigging and lighting system
+            bucket: 0
+          - text: Interior door handles
+            bucket: 1
+          - text: Washroom paper towel dispensers
+            bucket: 1
+        explain: Significant parts with different useful lives are split out. Minor parts are not significant on their own and stay with a larger component.
+        ref: Part III, Section 4433
+      - id: cap1l3q09
+        type: calc
+        concept: cap1-componentization
+        prompt: A community hall's HVAC component cost $360,000 and is amortized straight-line over 15 years with no residual value. Enter its net carrying amount after 5 years.
+        answer: 240000
+        unit: $
+        explain: $360,000 ÷ 15 = $24,000 a year, so five years of amortization is $120,000. $360,000 − $120,000 = $240,000.
+        ref: Part III, Section 4433
+
+  - id: cap1l4
+    title: Amortization
+    intro: Amortization spreads cost over the years an asset provides service. Pick a rational method, start when the asset is ready, and adjust prospectively when estimates change.
+    questions:
+      - id: cap1l4q01
+        type: calc
+        concept: cap1-residual-value
+        prompt: A food bank buys a delivery truck for $60,000. It expects to sell it for $10,000 after 5 years. Using straight-line, enter the annual amortization.
+        answer: 10000
+        unit: $
+        explain: The amortizable amount is cost less residual value, $60,000 − $10,000 = $50,000. $50,000 ÷ 5 = $10,000 a year.
+        ref: Part III, Section 4433
+      - id: cap1l4q02
+        type: calc
+        concept: cap1-amortization-basis
+        prompt: A community health centre buys computers for $30,000 and amortizes them at 30% declining balance. Enter amortization for year 2.
+        answer: 6300
+        unit: $
+        explain: Year 1 is 30% × $30,000 = $9,000, leaving $21,000. Year 2 is 30% × $21,000 = $6,300.
+        ref: Part III, Section 4433
+      - id: cap1l4q03
+        type: calc
+        concept: cap1-amortization-basis
+        prompt: A sport association buys an ice resurfacer for $120,000, expected to run 6,000 hours with no residual value. It runs 900 hours this year. Using units of activity, enter this year's amortization.
+        answer: 18000
+        unit: $
+        explain: $120,000 ÷ 6,000 hours = $20 per hour. 900 hours × $20 = $18,000.
+        ref: Part III, Section 4433
+      - id: cap1l4q04
+        type: match
+        concept: cap1-amortization-basis
+        prompt: Match each amortization method to the asset it suits best.
+        pairs:
+          - left: Straight-line
+            right: Building structure that wears evenly
+          - left: Declining balance
+            right: Computers that lose service potential fastest early on
+          - left: Units of activity
+            right: Ice resurfacer whose wear depends on hours used
+        explain: The method should reflect how the asset's service potential is used up. Any rational and systematic basis is acceptable.
+        ref: Part III, Section 4433
+      - id: cap1l4q05
+        type: mc
+        concept: cap1-amortization-start
+        prompt: A seniors' housing society is building a residence. Construction started in May 2025 and the building was ready for residents in September 2026. When does amortization begin?
+        options:
+          - May 2025, when construction started
+          - The fiscal year end after construction started
+          - When the final holdback is paid
+          - September 2026, when the building was available for use
+        answer: 3
+        explain: Amortization begins when the asset is available for use. Costs sit in construction in progress, unamortized, until then.
+        ref: Part III, Section 4433
+      - id: cap1l4q06
+        type: tf
+        concept: cap1-amortization-start
+        prompt: An NPO that buys a lot for a future community garden should amortize the land over 40 years.
+        answer: false
+        reasons:
+          - Land normally has an unlimited life, so it is not amortized
+          - Land must be amortized over 20 years, not 40
+          - Land is expensed when bought
+        reason: 0
+        explain: Land is normally not amortized because its service potential is not used up over time. Buildings and improvements on the land are amortized.
+        ref: Part III, Section 4433
+      - id: cap1l4q07
+        type: calc
+        concept: cap1-change-in-estimate
+        prompt: Kitchen equipment cost $200,000, no residual, 10-year straight-line life. After 4 years (net carrying amount $120,000), the society decides it has only 4 years left. Enter amortization for year 5.
+        answer: 30000
+        unit: $
+        explain: A change in useful life is a change in estimate applied prospectively. The $120,000 remaining is spread over the 4 remaining years, giving $30,000 a year. Prior years are not restated.
+        ref: Part III, Section 4433
+      - id: cap1l4q08
+        type: tf
+        concept: cap1-change-in-estimate
+        prompt: When an NPO shortens an asset's useful life, it restates prior years' amortization as if the new life had always applied.
+        answer: false
+        explain: A revised useful life is a change in estimate, accounted for prospectively over the remaining life. Prior periods are left as they were.
+        ref: Part III, Section 4433
+      - id: cap1l4q09
+        type: je
+        concept: cap1-amortization-basis
+        prompt: Record the $18,000 of amortization on the sport association's ice resurfacer for the year.
+        accounts:
+          - Amortization expense
+          - Accumulated amortization
+          - Capital assets
+          - Repairs and maintenance expense
+          - Cash
+          - Amortization of deferred capital contributions
+        lines:
+          - account: Amortization expense
+            side: dr
+            amount: 18000
+          - account: Accumulated amortization
+            side: cr
+            amount: 18000
+        explain: Amortization is an expense, and the asset is reduced through accumulated amortization rather than by crediting the capital asset account directly.
+        ref: Part III, Section 4433
+      - id: cap1l4q10
+        type: mc
+        concept: cap1-amortization-basis
+        prompt: For each major category of tangible capital assets, which set of items does Section 4433 require an NPO to disclose?
+        options:
+          - Insured value, replacement cost and location
+          - Cost, accumulated amortization, and the amortization method and period or rate
+          - Fair value and the name of the supplier
+          - Budgeted additions for the next three years
+        answer: 1
+        explain: For each major category, NPOs disclose cost, accumulated amortization including write-downs, and the amortization method used with its period or rate. The amount of amortization expensed is also disclosed.
+        ref: Part III, Section 4433

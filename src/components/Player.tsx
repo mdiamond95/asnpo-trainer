@@ -15,12 +15,14 @@ import {
   useProgress,
 } from '../engine/store';
 import { CorrectAnswer, QuestionBody, typeLabel } from './Questions';
+import { Icon } from './Art';
 
 export interface SessionResult {
   plan: SessionPlan;
   firstTry: number;
   total: number;
   xp: number;
+  bestCombo: number;
 }
 
 interface Props {
@@ -41,6 +43,8 @@ export function Player({ plan, onExit, onDone }: Props) {
   const [firstTry, setFirstTry] = useState<Record<string, boolean>>({});
   const [xp, setXp] = useState(0);
   const [confirmQuit, setConfirmQuit] = useState(false);
+  const [combo, setCombo] = useState(0);
+  const [bestCombo, setBestCombo] = useState(0);
 
   const q = queue[pos];
   const total = plan.questions.length;
@@ -52,6 +56,9 @@ export function Player({ plan, onExit, onDone }: Props) {
     const ok = grade(q, answer);
     setResult(ok);
     if (ok) setSolved((s) => new Set(s).add(q.id));
+    const nextCombo = ok ? combo + 1 : 0;
+    setCombo(nextCombo);
+    setBestCombo((b) => Math.max(b, nextCombo));
     recordAttempt(q.id, q.concept, ok);
     if (!isRetry) setFirstTry((f) => ({ ...f, [q.id]: ok }));
     const gained = ok ? (isRetry ? 1 : 2) : 0;
@@ -83,10 +90,12 @@ export function Player({ plan, onExit, onDone }: Props) {
       const cards = getProgress().cards;
       for (const [c, ok] of byConcept) if (!cards[c]) reviewConcept(c, ok ? Rating.Good : Rating.Hard);
     } else {
-      bonus = 3;
+      bonus = plan.kind === 'checkpoint' ? 10 : 3;
+      if (plan.kind === 'checkpoint' && plan.unitId)
+        finishLesson(`${plan.unitId}-checkpoint`, Math.round((firstCount / total) * 100));
     }
     addXp(bonus);
-    onDone({ plan, firstTry: firstCount, total, xp: xp + bonus });
+    onDone({ plan, firstTry: firstCount, total, xp: xp + bonus, bestCombo });
   }
 
   if (!q) return null;
@@ -110,7 +119,17 @@ export function Player({ plan, onExit, onDone }: Props) {
         >
           <span style={{ width: `${(solved.size / total) * 100}%` }} />
         </div>
-        <span className="xp-pill num">+{xp} XP</span>
+        {combo >= 3 ? (
+          <span className="combo-pill num" key={combo}>
+            {Icon.flame}
+            {combo}
+          </span>
+        ) : (
+          <span className="xp-pill num">
+            {Icon.bolt}
+            {xp}
+          </span>
+        )}
       </header>
 
       <main className="player-body" key={`${q.id}-${pos}`}>
@@ -132,7 +151,8 @@ export function Player({ plan, onExit, onDone }: Props) {
       ) : (
         <footer className="feedback" data-ok={result} role="status">
           <div className="feedback-head">
-            <strong>{result ? praise : 'Not quite'}</strong>
+            <span className="fb-icon">{result ? Icon.check : Icon.cross}</span>
+            <strong>{result ? (combo >= 3 ? `${combo} in a row!` : praise) : 'Not quite'}</strong>
             <button
               type="button"
               className="flag"

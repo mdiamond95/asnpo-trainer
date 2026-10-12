@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
-import type { Lesson, Unit } from '../content/types';
-import { conceptIndex, lessonConcepts, questionIndex, units } from '../content';
+import type { CourseId, Lesson, Unit } from '../content/types';
+import { conceptIndex, lessonConcepts, questionIndex, units, unitsFor } from '../content';
+import { courseById, courses } from '../content/courses';
 import { dayKey } from '../engine/dates';
 import { mistakesSession, practiceSession, reviewSession, REVIEW_SIZE, type SessionPlan } from '../engine/session';
 import {
@@ -11,11 +12,14 @@ import {
   importProgress,
   mistakeQuestions,
   resetProgress,
+  setCourse,
   setDailyGoal,
   toggleFlag,
   useProgress,
   type Progress,
 } from '../engine/store';
+import { Emblem, Icon } from './Art';
+import { Confetti } from './Confetti';
 import type { SessionResult } from './Player';
 
 // ---------- shared bits ----------
@@ -25,118 +29,220 @@ export function StatusStrip() {
   const today = p.xpByDay[dayKey()] ?? 0;
   const pct = Math.min(1, today / p.dailyGoal);
   const streak = currentStreak(p);
-  const due = dueConcepts(p).length;
   return (
     <div className="status-strip">
-      <span className="stat" title="Day streak">
-        <svg viewBox="0 0 16 16" aria-hidden="true" className="stat-icon streak-icon">
-          <path d="M8 1c.6 2.4 4 4.2 4 8a4 4 0 0 1-8 0c0-1.7.8-2.9 1.7-3.8.2 1.2.8 2 1.6 2.3C6.9 5.2 7.4 3 8 1z" />
-        </svg>
+      <span className="stat streak" data-lit={streak > 0} title="Day streak">
+        {Icon.flame}
         <b className="num">{streak}</b>
         <span className="sr">day streak</span>
       </span>
-      <span className="stat" title={`${today} of ${p.dailyGoal} XP today`}>
-        <svg viewBox="0 0 20 20" aria-hidden="true" className="ring">
-          <circle cx="10" cy="10" r="8" className="ring-track" />
+      <span className="stat goal-stat" title={`${today} of ${p.dailyGoal} XP today`}>
+        <svg viewBox="0 0 24 24" aria-hidden="true" className="ring">
+          <circle cx="12" cy="12" r="9.5" className="ring-track" />
           <circle
-            cx="10"
-            cy="10"
-            r="8"
+            cx="12"
+            cy="12"
+            r="9.5"
             className="ring-fill"
-            strokeDasharray={`${pct * 50.27} 50.27`}
-            transform="rotate(-90 10 10)"
+            strokeDasharray={`${pct * 59.7} 59.7`}
+            transform="rotate(-90 12 12)"
           />
         </svg>
-        <b className="num">
-          {today}/{p.dailyGoal}
-        </b>
-        <span className="sr">XP today</span>
-      </span>
-      <span className="stat" title="Concepts due for review">
-        <svg viewBox="0 0 16 16" aria-hidden="true" className="stat-icon">
-          <path d="M8 2a6 6 0 1 0 6 6h-1.6A4.4 4.4 0 1 1 8 3.6V6l3.2-3.2L8 0z" />
-        </svg>
-        <b className="num">{due}</b>
-        <span className="sr">due</span>
+        <b className="num">{today}</b>
+        <span className="sr">of {p.dailyGoal} XP today</span>
       </span>
     </div>
   );
 }
 
-function nextLesson(p: Progress): { lesson: Lesson; unit: Unit } | undefined {
-  for (const unit of units) for (const lesson of unit.lessons) if (!p.lessons[lesson.id]) return { lesson, unit };
+export function courseStats(p: Progress, course: CourseId) {
+  const lessons = unitsFor(course).flatMap((u) => u.lessons);
+  const done = lessons.filter((l) => p.lessons[l.id]).length;
+  return { done, total: lessons.length };
+}
+
+export function CourseButton({ onOpen }: { onOpen: () => void }) {
+  const p = useProgress();
+  const c = courseById.get(p.course)!;
+  return (
+    <button type="button" className="course-btn" onClick={onOpen} aria-label={`Course: ${c.name}. Switch course`}>
+      <Emblem course={c.id} size={30} />
+      <span>{c.short}</span>
+      {Icon.chevron}
+    </button>
+  );
+}
+
+export function CourseSheet({ onClose }: { onClose: () => void }) {
+  const p = useProgress();
+  return (
+    <div className="sheet-backdrop top" role="dialog" aria-modal="true" aria-labelledby="course-title" onClick={onClose}>
+      <div className="sheet course-sheet" onClick={(e) => e.stopPropagation()}>
+        <h3 id="course-title">Choose a course</h3>
+        <ul className="course-list">
+          {courses.map((c) => {
+            const s = courseStats(p, c.id);
+            const due = dueConcepts(p, c.id).length;
+            return (
+              <li key={c.id}>
+                <button
+                  type="button"
+                  className="course-card"
+                  data-course={c.id}
+                  aria-current={p.course === c.id}
+                  onClick={() => {
+                    setCourse(c.id);
+                    onClose();
+                  }}
+                >
+                  <Emblem course={c.id} size={52} />
+                  <span className="course-card-text">
+                    <b>{c.name}</b>
+                    <span>{c.tagline}</span>
+                    <span className="course-card-bar" aria-hidden="true">
+                      <span style={{ width: `${s.total ? (s.done / s.total) * 100 : 0}%` }} />
+                    </span>
+                    <span className="course-card-meta num">
+                      {s.done}/{s.total} lessons{due ? ` · ${due} due` : ''}
+                    </span>
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+function nextLesson(p: Progress, course: CourseId): { lesson: Lesson; unit: Unit } | undefined {
+  for (const unit of unitsFor(course)) for (const lesson of unit.lessons) if (!p.lessons[lesson.id]) return { lesson, unit };
   return undefined;
 }
 
+// Zigzag offsets for path nodes, in px.
+const SWAY = [0, 46, 70, 46, 0, -46, -70, -46];
+
 // ---------- Learn ----------
 
-export function LearnScreen({ onOpenLesson }: { onOpenLesson: (lessonId: string) => void }) {
+export function LearnScreen({
+  onOpenLesson,
+  onOpenGuide,
+  onCheckpoint,
+}: {
+  onOpenLesson: (lessonId: string) => void;
+  onOpenGuide: (unitId: string) => void;
+  onCheckpoint: (unit: Unit) => void;
+}) {
   const p = useProgress();
-  const upNext = nextLesson(p);
+  const course = courseById.get(p.course)!;
+  const list = unitsFor(p.course);
+  const upNext = nextLesson(p, p.course);
+  const s = courseStats(p, p.course);
   return (
-    <div className="screen">
-      {upNext && (
-        <button type="button" className="up-next" onClick={() => onOpenLesson(upNext.lesson.id)}>
-          <span className="eyebrow">Up next · Unit {upNext.unit.number}</span>
-          <span className="up-next-title">{upNext.lesson.title}</span>
-          <span className="up-next-meta">{upNext.lesson.questions.length} questions · about 5 minutes</span>
-        </button>
-      )}
-      <ol className="path">
-        {units.map((unit) => {
-          const doneCount = unit.lessons.filter((l) => p.lessons[l.id]).length;
+    <div className="screen learn">
+      <section className="course-hero">
+        <Emblem course={course.id} size={64} />
+        <div>
+          <p className="eyebrow">Course</p>
+          <h1>{course.name}</h1>
+          <p className="course-hero-meta num">
+            {s.done}/{s.total} lessons complete
+          </p>
+        </div>
+      </section>
+      {list.map((unit) => {
+        const doneCount = unit.lessons.filter((l) => p.lessons[l.id]).length;
+        const allDone = unit.lessons.length > 0 && doneCount === unit.lessons.length;
+        const checkpoint = p.lessons[`${unit.id}-checkpoint`];
+        if (unit.status !== 'ready')
           return (
-            <li key={unit.id} className="unit" data-status={unit.status}>
-              <div className="unit-head">
-                <span className="unit-no num">{String(unit.number).padStart(2, '0')}</span>
-                <div className="unit-text">
-                  <h2>{unit.title}</h2>
-                  <p>{unit.summary}</p>
-                  <p className="refs">Sections {unit.refs.map((r) => r.replace(/^(Part III, )?Section /, '')).join(' · ')}</p>
-                </div>
+            <section key={unit.id} className="unit-banner planned">
+              <div className="unit-banner-text">
+                <p className="eyebrow">Unit {unit.number} · Coming soon</p>
+                <h2>{unit.title}</h2>
+                <p>{unit.summary}</p>
               </div>
-              {unit.status === 'ready' ? (
-                <>
-                  <div className="unit-meter" aria-label={`${doneCount} of ${unit.lessons.length} lessons done`}>
-                    <span style={{ width: `${(doneCount / unit.lessons.length) * 100}%` }} />
-                  </div>
-                  <ol className="lessons">
-                    {unit.lessons.map((l, i) => {
-                      const rec = p.lessons[l.id];
-                      const isNext = upNext?.lesson.id === l.id;
-                      return (
-                        <li key={l.id}>
-                          <button
-                            type="button"
-                            className="lesson-node"
-                            data-state={rec ? 'done' : isNext ? 'next' : 'open'}
-                            onClick={() => onOpenLesson(l.id)}
-                          >
-                            <span className="node-dot num" aria-hidden="true">
-                              {rec ? '✓' : i + 1}
-                            </span>
-                            <span className="node-text">
-                              <span className="node-title">{l.title}</span>
-                              <span className="node-meta">
-                                {rec
-                                  ? `Best ${rec.bestPct}% first try${rec.completions > 1 ? ` · done ${rec.completions}×` : ''}`
-                                  : `${l.questions.length} questions`}
-                              </span>
-                            </span>
-                          </button>
-                        </li>
-                      );
-                    })}
-                  </ol>
-                </>
-              ) : (
-                <p className="coming">Lessons coming in a later update</p>
-              )}
-            </li>
+              <span className="lock-badge">{Icon.lock}</span>
+            </section>
           );
-        })}
-      </ol>
+        return (
+          <section key={unit.id} className="unit-block">
+            <header className="unit-banner">
+              <div className="unit-banner-text">
+                <p className="eyebrow">
+                  Unit {unit.number} · {doneCount}/{unit.lessons.length} lessons
+                </p>
+                <h2>{unit.title}</h2>
+                <p className="refs">
+                  Sections {unit.refs.map((r) => r.replace(/^(Part (II|III), )?Section /, '')).join(' · ')}
+                </p>
+              </div>
+              <button type="button" className="guide-btn" onClick={() => onOpenGuide(unit.id)}>
+                {Icon.book}
+                <span>Guidebook</span>
+              </button>
+            </header>
+            <ol className="trail">
+              {unit.lessons.map((l, i) => {
+                const rec = p.lessons[l.id];
+                const isNext = upNext?.lesson.id === l.id;
+                const state = rec ? 'done' : isNext ? 'next' : 'open';
+                return (
+                  <li key={l.id} style={{ ['--sway' as string]: `${SWAY[i % SWAY.length]}px` }}>
+                    {isNext && <span className="start-bubble">Start</span>}
+                    <button
+                      type="button"
+                      className="node"
+                      data-state={state}
+                      onClick={() => onOpenLesson(l.id)}
+                      aria-label={`Lesson ${i + 1}: ${l.title}${rec ? ', complete' : ''}`}
+                    >
+                      {rec ? Icon.check : isNext ? Icon.star : <span className="num node-num">{i + 1}</span>}
+                    </button>
+                    <span className="node-label">
+                      {l.title}
+                      {rec && <span className="node-best num">{rec.bestPct}%</span>}
+                    </span>
+                  </li>
+                );
+              })}
+              <li style={{ ['--sway' as string]: `${SWAY[unit.lessons.length % SWAY.length]}px` }}>
+                <button
+                  type="button"
+                  className="node trophy"
+                  data-state={checkpoint ? 'done' : allDone ? 'next' : 'locked'}
+                  disabled={!allDone}
+                  onClick={() => onCheckpoint(unit)}
+                  aria-label={allDone ? 'Unit checkpoint' : 'Unit checkpoint, finish every lesson to unlock'}
+                >
+                  {allDone ? Icon.trophy : Icon.lock}
+                </button>
+                <span className="node-label">
+                  Checkpoint
+                  {checkpoint && <span className="node-best num">{checkpoint.bestPct}%</span>}
+                </span>
+              </li>
+            </ol>
+          </section>
+        );
+      })}
     </div>
+  );
+}
+
+function ConceptList({ items }: { items: { id: string; title: string; summary: string; ref: string }[] }) {
+  return (
+    <ul className="concepts">
+      {items.map((c) => (
+        <li key={c.id}>
+          <b>{c.title}</b>
+          <p>{c.summary}</p>
+          <span className="ref">{c.ref}</span>
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -152,62 +258,101 @@ export function LessonIntro({
   const found = units.flatMap((u) => u.lessons.map((l) => ({ l, u }))).find((x) => x.l.id === lessonId);
   if (!found) return null;
   const { l, u } = found;
-  const concepts = lessonConcepts(l, u);
+  const types = new Set(l.questions.map((q) => q.type));
   return (
     <div className="screen intro">
       <button type="button" className="back" onClick={onBack}>
         ‹ Back
       </button>
-      <p className="eyebrow">
-        Unit {u.number} · Lesson {u.lessons.indexOf(l) + 1} of {u.lessons.length}
-      </p>
-      <h1>{l.title}</h1>
-      <p className="lede">{l.intro}</p>
+      <section className="intro-hero">
+        <Emblem course={u.course} size={72} />
+        <p className="eyebrow">
+          Unit {u.number} · Lesson {u.lessons.indexOf(l) + 1} of {u.lessons.length}
+        </p>
+        <h1>{l.title}</h1>
+        <p className="lede">{l.intro}</p>
+        <p className="intro-meta">
+          {l.questions.length} questions{types.has('je') ? ' · includes journal entries' : ''}
+        </p>
+      </section>
       <h3 className="section-label">Key ideas</h3>
-      <ul className="concepts">
-        {concepts.map((c) => (
-          <li key={c.id}>
-            <b>{c.title}</b>
-            <p>{c.summary}</p>
-            <span className="ref">{c.ref}</span>
-          </li>
-        ))}
-      </ul>
+      <ConceptList items={lessonConcepts(l, u)} />
       <div className="sticky-cta">
         <button type="button" className="btn primary wide" onClick={onStart}>
-          Start lesson · {l.questions.length} questions
+          Start lesson
         </button>
       </div>
     </div>
   );
 }
 
+export function Guidebook({ unitId, onBack }: { unitId: string; onBack: () => void }) {
+  const u = units.find((x) => x.id === unitId);
+  if (!u) return null;
+  return (
+    <div className="screen intro">
+      <button type="button" className="back" onClick={onBack}>
+        ‹ Back
+      </button>
+      <section className="intro-hero">
+        <Emblem course={u.course} size={72} />
+        <p className="eyebrow">Unit {u.number} guidebook</p>
+        <h1>{u.title}</h1>
+        <p className="lede">{u.summary}</p>
+      </section>
+      <ConceptList items={u.concepts} />
+    </div>
+  );
+}
+
+const CHEERS = ['Balanced!', 'Nicely done!', 'In the books!', 'Well posted!'];
+
 export function SummaryScreen({ result, onContinue }: { result: SessionResult; onContinue: () => void }) {
   const p = useProgress();
   const pct = Math.round((result.firstTry / Math.max(1, result.total)) * 100);
+  const cheer = useMemo(() => CHEERS[Math.floor(Math.random() * CHEERS.length)], []);
   const heading =
-    result.plan.kind === 'lesson' ? 'Lesson complete' : result.plan.kind === 'review' ? 'Review done' : 'Session done';
+    result.plan.kind === 'lesson'
+      ? 'Lesson complete'
+      : result.plan.kind === 'checkpoint'
+        ? 'Checkpoint cleared'
+        : result.plan.kind === 'review'
+          ? 'Review done'
+          : 'Session done';
   return (
     <div className="screen summary">
-      <div className="summary-card">
-        <p className="eyebrow">{result.plan.title}</p>
-        <h1>{heading}</h1>
-        <dl className="summary-stats">
-          <div>
-            <dt>First-try accuracy</dt>
-            <dd className="num">{pct}%</dd>
-          </div>
-          <div>
-            <dt>XP earned</dt>
-            <dd className="num">+{result.xp}</dd>
-          </div>
-          <div>
-            <dt>Day streak</dt>
-            <dd className="num">{currentStreak(p)}</dd>
-          </div>
-        </dl>
-        {pct === 100 && <p className="perfect">Perfect run. Every entry balanced the first time.</p>}
+      <Confetti />
+      <div className="summary-art" aria-hidden="true">
+        <Emblem course={p.course} size={120} />
+        <span className="summary-badge">{pct === 100 ? Icon.star : Icon.check}</span>
       </div>
+      <p className="cheer">{pct === 100 ? 'Perfect run!' : cheer}</p>
+      <h1>{heading}</h1>
+      <p className="muted">{result.plan.title}</p>
+      <dl className="tiles">
+        <div className="tile gold">
+          <dt>Total XP</dt>
+          <dd>
+            {Icon.bolt}
+            <span className="num">{result.xp}</span>
+          </dd>
+        </div>
+        <div className="tile good">
+          <dt>{pct >= 90 ? 'Amazing' : pct >= 70 ? 'Good' : 'Accuracy'}</dt>
+          <dd>
+            {Icon.check}
+            <span className="num">{pct}%</span>
+          </dd>
+        </div>
+        <div className="tile flame">
+          <dt>Streak</dt>
+          <dd>
+            {Icon.flame}
+            <span className="num">{currentStreak(p)}</span>
+          </dd>
+        </div>
+      </dl>
+      {result.bestCombo >= 3 && <p className="combo-note">Best combo: {result.bestCombo} in a row</p>}
       <button type="button" className="btn primary wide" onClick={onContinue}>
         Continue
       </button>
@@ -219,47 +364,61 @@ export function SummaryScreen({ result, onContinue }: { result: SessionResult; o
 
 export function ReviewScreen({ onStart }: { onStart: (plan: SessionPlan) => void }) {
   const p = useProgress();
-  const due = dueConcepts(p);
-  const mistakes = mistakeQuestions(p).length;
-  const learned = Object.keys(p.cards).length;
+  const course = courseById.get(p.course)!;
+  const due = dueConcepts(p, p.course);
+  const mistakes = mistakeQuestions(p, p.course).length;
+  const courseUnits = unitsFor(p.course).filter((u) => u.status === 'ready');
+  const learned = courseUnits.flatMap((u) => u.concepts).filter((c) => p.cards[c.id]).length;
   const nextDue = useMemo(() => {
-    const dues = Object.values(p.cards).map((c) => c.due).sort();
+    const ids = new Set(courseUnits.flatMap((u) => u.concepts.map((c) => c.id)));
+    const dues = Object.entries(p.cards)
+      .filter(([id]) => ids.has(id))
+      .map(([, c]) => c.due)
+      .sort();
     return dues.find((d) => new Date(d) > new Date());
-  }, [p.cards]);
+  }, [p.cards, courseUnits]);
 
   return (
     <div className="screen">
       <h1 className="screen-title">Review</h1>
-      <section className="panel review-main">
-        <p className="big num">{due.length}</p>
-        <p>{due.length === 1 ? 'concept is' : 'concepts are'} due for review</p>
+      <p className="muted">{course.name}</p>
+      <section className="review-hero" data-due={due.length > 0}>
+        <div className="review-count">
+          <span className="big num">{due.length}</span>
+          <span>{due.length === 1 ? 'concept due' : 'concepts due'}</span>
+        </div>
         {due.length > 0 ? (
-          <button type="button" className="btn primary wide" onClick={() => onStart(reviewSession(p))}>
+          <button type="button" className="btn primary wide" onClick={() => onStart(reviewSession(p, p.course))}>
             Start review · {Math.min(due.length, REVIEW_SIZE)} questions
           </button>
         ) : learned > 0 ? (
           <>
             <p className="muted">
-              Nothing due right now.
+              You’re all caught up.
               {nextDue ? ` Next review ${formatWhen(nextDue)}`.replace(/\.?$/, '.') : ''}
             </p>
-            <button type="button" className="btn wide" onClick={() => onStart(practiceSession(p))}>
+            <button type="button" className="btn wide" onClick={() => onStart(practiceSession(p, p.course))}>
               Practise anyway
             </button>
           </>
         ) : (
-          <p className="muted">Finish a lesson and its concepts join your review schedule.</p>
+          <p className="muted">Finish a lesson in this course and its concepts join your review schedule.</p>
         )}
       </section>
-      <section className="panel">
-        <h3 className="section-label">Mistakes</h3>
-        <p>
-          {mistakes === 0
-            ? 'No open mistakes. Questions you miss show up here until you get them right.'
-            : `${mistakes} question${mistakes === 1 ? '' : 's'} you last got wrong.`}
-        </p>
+      <section className="panel mistakes-panel">
+        <div className="panel-row">
+          <span className="panel-icon bad">{Icon.cross}</span>
+          <div>
+            <h3>Mistakes</h3>
+            <p className="muted">
+              {mistakes === 0
+                ? 'No open mistakes. Questions you miss land here until you get them right.'
+                : `${mistakes} question${mistakes === 1 ? '' : 's'} you last got wrong.`}
+            </p>
+          </div>
+        </div>
         {mistakes > 0 && (
-          <button type="button" className="btn wide" onClick={() => onStart(mistakesSession(p))}>
+          <button type="button" className="btn wide" onClick={() => onStart(mistakesSession(p, p.course))}>
             Fix mistakes
           </button>
         )}
@@ -267,31 +426,31 @@ export function ReviewScreen({ onStart }: { onStart: (plan: SessionPlan) => void
       <section className="panel">
         <h3 className="section-label">Mastery by unit</h3>
         <ul className="mastery">
-          {units
-            .filter((u) => u.status === 'ready')
-            .map((u) => {
-              const ids = u.concepts.map((c) => c.id);
-              const seen = ids.filter((id) => p.cards[id]).length;
-              const strong = ids.filter((id) => (p.cards[id]?.stability ?? 0) >= 21).length;
-              return (
-                <li key={u.id}>
-                  <div className="mastery-row">
-                    <span>
-                      Unit {u.number}: {u.title}
-                    </span>
-                    <span className="num muted">
-                      {strong}/{ids.length} strong
-                    </span>
-                  </div>
-                  <div className="mastery-bar" aria-hidden="true">
-                    <span className="seen" style={{ width: `${(seen / ids.length) * 100}%` }} />
-                    <span className="strong" style={{ width: `${(strong / ids.length) * 100}%` }} />
-                  </div>
-                </li>
-              );
-            })}
+          {courseUnits.map((u) => {
+            const ids = u.concepts.map((c) => c.id);
+            const seen = ids.filter((id) => p.cards[id]).length;
+            const strong = ids.filter((id) => (p.cards[id]?.stability ?? 0) >= 21).length;
+            return (
+              <li key={u.id}>
+                <div className="mastery-row">
+                  <span>
+                    Unit {u.number}: {u.title}
+                  </span>
+                  <span className="num muted">
+                    {strong}/{ids.length}
+                  </span>
+                </div>
+                <div className="mastery-bar" aria-hidden="true">
+                  <span className="seen" style={{ width: `${(seen / ids.length) * 100}%` }} />
+                  <span className="strong" style={{ width: `${(strong / ids.length) * 100}%` }} />
+                </div>
+              </li>
+            );
+          })}
         </ul>
-        <p className="fine">Strong means you’re expected to remember it for at least three weeks.</p>
+        <p className="fine">
+          The darker bar shows concepts you’re expected to remember for at least three weeks.
+        </p>
       </section>
     </div>
   );
@@ -308,8 +467,10 @@ function formatWhen(iso: string): string {
 // ---------- Library ----------
 
 export function LibraryScreen() {
+  const p = useProgress();
   const [query, setQuery] = useState('');
   const q = query.trim().toLowerCase();
+  const list = q ? units : unitsFor(p.course);
   return (
     <div className="screen">
       <h1 className="screen-title">Library</h1>
@@ -317,11 +478,11 @@ export function LibraryScreen() {
         id="library-search"
         className="search"
         type="search"
-        placeholder="Search concepts, e.g. endowment"
+        placeholder="Search all courses, e.g. endowment"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
       />
-      {units
+      {list
         .filter((u) => u.status === 'ready')
         .map((u) => {
           const items = u.concepts.filter(
@@ -329,19 +490,14 @@ export function LibraryScreen() {
           );
           if (!items.length) return null;
           return (
-            <section key={u.id} className="library-unit">
-              <h3 className="section-label">
-                Unit {u.number} · {u.title}
+            <section key={u.id} className="library-unit" data-course={u.course}>
+              <h3 className="library-head">
+                <Emblem course={u.course} size={28} />
+                <span>
+                  {courseById.get(u.course)?.short} · Unit {u.number}: {u.title}
+                </span>
               </h3>
-              <ul className="concepts">
-                {items.map((c) => (
-                  <li key={c.id}>
-                    <b>{c.title}</b>
-                    <p>{c.summary}</p>
-                    <span className="ref">{c.ref}</span>
-                  </li>
-                ))}
-              </ul>
+              <ConceptList items={items} />
             </section>
           );
         })}
@@ -392,28 +548,41 @@ export function ProfileScreen() {
   const flagText = flagged
     .map(([id, f]) => {
       const info = questionIndex.get(id);
-      return `${id} (Unit ${info?.unit.number}, ${info?.lesson.title}): ${info?.question.prompt}${f.note ? `\n  Note: ${f.note}` : ''}`;
+      return `${id} (${info ? courseById.get(info.unit.course)?.short : ''} unit ${info?.unit.number}, ${info?.lesson.title}): ${info?.question.prompt}${f.note ? `\n  Note: ${f.note}` : ''}`;
     })
     .join('\n\n');
 
   return (
     <div className="screen">
       <h1 className="screen-title">Progress</h1>
+      <dl className="tiles">
+        <div className="tile flame">
+          <dt>Day streak</dt>
+          <dd>
+            {Icon.flame}
+            <span className="num">{currentStreak(p)}</span>
+          </dd>
+        </div>
+        <div className="tile gold">
+          <dt>Total XP</dt>
+          <dd>
+            {Icon.bolt}
+            <span className="num">{p.xp}</span>
+          </dd>
+        </div>
+        <div className="tile ice">
+          <dt>Freezes</dt>
+          <dd>
+            <svg viewBox="0 0 24 24" aria-hidden="true" className="ic">
+              <path d="M12 3v18M4.2 7.5l15.6 9M19.8 7.5l-15.6 9" />
+            </svg>
+            <span className="num">{freezesLeft(p)}</span>
+          </dd>
+        </div>
+      </dl>
+
       <section className="panel">
-        <dl className="profile-stats">
-          <div>
-            <dt>Day streak</dt>
-            <dd className="num">{currentStreak(p)}</dd>
-          </div>
-          <div>
-            <dt>Total XP</dt>
-            <dd className="num">{p.xp}</dd>
-          </div>
-          <div>
-            <dt>Streak freezes</dt>
-            <dd className="num">{freezesLeft(p)}</dd>
-          </div>
-        </dl>
+        <h3 className="section-label">This week</h3>
         <div className="week" role="img" aria-label="XP earned over the last 7 days">
           {week.map((w) => (
             <div key={w.k} className="week-col" data-today={w.k === dayKey()}>
@@ -424,9 +593,34 @@ export function ProfileScreen() {
               <span className="week-day">{w.label}</span>
             </div>
           ))}
-          <span className="goal-line" style={{ bottom: `calc(1.5rem + ${(p.dailyGoal / maxXp) * 72}px)` }} />
+          <span className="goal-line" style={{ bottom: `calc(1.5rem + 4px + ${(p.dailyGoal / maxXp) * 72}px)` }} />
         </div>
-        <p className="fine">You get one streak freeze a week. It covers a single missed day automatically.</p>
+        <p className="fine">The dashed line is your daily goal. One streak freeze a week covers a missed day.</p>
+      </section>
+
+      <section className="panel">
+        <h3 className="section-label">Courses</h3>
+        <ul className="course-progress">
+          {courses.map((c) => {
+            const s = courseStats(p, c.id);
+            return (
+              <li key={c.id} data-course={c.id}>
+                <Emblem course={c.id} size={40} />
+                <div>
+                  <div className="mastery-row">
+                    <b>{c.name}</b>
+                    <span className="num muted">
+                      {s.done}/{s.total}
+                    </span>
+                  </div>
+                  <div className="course-card-bar" aria-hidden="true">
+                    <span style={{ width: `${s.total ? (s.done / s.total) * 100 : 0}%` }} />
+                  </div>
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </section>
 
       <section className="panel">
@@ -443,7 +637,7 @@ export function ProfileScreen() {
               onClick={() => setDailyGoal(g.xp)}
             >
               <b>{g.label}</b>
-              <span className="num">{g.xp} XP</span>
+              <span className="num">{g.xp} XP a day</span>
             </button>
           ))}
         </div>
@@ -475,11 +669,8 @@ export function ProfileScreen() {
             <button
               type="button"
               className="btn wide"
-              onClick={async (e) => {
-                const ok = await copy(
-                  flagText,
-                  (e.currentTarget.previousElementSibling as HTMLTextAreaElement) ?? null,
-                );
+              onClick={async () => {
+                const ok = await copy(flagText, document.getElementById('flag-text') as HTMLTextAreaElement | null);
                 setMsg(ok ? 'Flagged questions copied.' : 'Text selected. Use Copy from the menu.');
               }}
             >
@@ -491,9 +682,7 @@ export function ProfileScreen() {
 
       <section className="panel">
         <h3 className="section-label">Backup</h3>
-        <p className="muted">
-          Progress is stored on this phone only. Copy a backup now and then, and keep it in Notes.
-        </p>
+        <p className="muted">Progress is stored on this phone only. Copy a backup now and then, and keep it in Notes.</p>
         <button
           type="button"
           className="btn wide"
@@ -535,7 +724,7 @@ export function ProfileScreen() {
       <section className="panel">
         <h3 className="section-label">Install on iPhone</h3>
         <ol className="steps">
-          <li>Open this app’s web address in Safari.</li>
+          <li>Open mdiamond95.github.io/asnpo-trainer in Safari.</li>
           <li>Tap the Share button, then Add to Home Screen.</li>
           <li>Open Fund Balance from the new home-screen icon. It works offline.</li>
         </ol>

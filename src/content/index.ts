@@ -1,14 +1,18 @@
-import type { Concept, Lesson, Question, Unit } from './types';
+import type { Concept, CourseId, Lesson, Question, Unit } from './types';
 import { plannedUnits } from './planned';
 
-const files = import.meta.glob<Unit>('../../content/unit-*.yaml', { eager: true, import: 'default' });
+const files = import.meta.glob<Unit>('../../content/*.yaml', { eager: true, import: 'default' });
 
 const readyUnits = Object.values(files).map((u) => ({ ...u, status: 'ready' as const }));
-const readyNumbers = new Set(readyUnits.map((u) => u.number));
+const readyKeys = new Set(readyUnits.map((u) => `${u.course}-${u.number}`));
 
-export const units: Unit[] = [...readyUnits, ...plannedUnits.filter((u) => !readyNumbers.has(u.number))].sort(
+export const units: Unit[] = [...readyUnits, ...plannedUnits.filter((u) => !readyKeys.has(`${u.course}-${u.number}`))].sort(
   (a, b) => a.number - b.number,
 );
+
+export function unitsFor(course: CourseId): Unit[] {
+  return units.filter((u) => u.course === course);
+}
 
 export interface QuestionInfo {
   question: Question;
@@ -32,6 +36,10 @@ for (const unit of units) {
   }
 }
 
+export function courseOfConcept(conceptId: string): CourseId | undefined {
+  return conceptIndex.get(conceptId)?.unit.course;
+}
+
 export function findLesson(id: string): { lesson: Lesson; unit: Unit } | undefined {
   for (const unit of units) {
     const lesson = unit.lessons.find((l) => l.id === id);
@@ -44,5 +52,3 @@ export function lessonConcepts(lesson: Lesson, unit: Unit): Concept[] {
   const ids = new Set(lesson.questions.map((q) => q.concept));
   return unit.concepts.filter((c) => ids.has(c.id));
 }
-
-export const totalQuestions = questionIndex.size;

@@ -1,0 +1,717 @@
+id: con4
+course: consolidation
+number: 4
+title: Profit-oriented entities and joint control
+summary: How an NPO reports companies it controls or significantly influences and the joint ventures it shares, under Section 4450 with the equity method from Section 3051. Covers consolidating or equity accounting a business subsidiary, non-controlling interests, proportionate consolidation, unrealized profits, losses beyond the investment, impairment, economic interest disclosures and how foundations and business subsidiaries of a charity are presented.
+refs:
+  - Part III, Section 4450
+  - Part II, Section 3051
+  - Part II, Section 3056
+  - Part II, Section 1601
+  - Part II, Section 1602
+status: ready
+
+concepts:
+  - id: con4-enterprise-options
+    title: Reporting a controlled company
+    summary: An NPO reports each controlled profit-oriented enterprise either by consolidating it or by using the equity method with specified disclosures. If it consolidates, the company's accounting policies are adjusted to the NPO's.
+    ref: Part III, Section 4450
+  - id: con4-enterprise-similar
+    title: Similar companies, same treatment
+    summary: An NPO may consolidate some controlled companies and equity account others, but similar enterprises must be reported the same way.
+    ref: Part III, Section 4450
+  - id: con4-enterprise-disclosure
+    title: Disclosures under the equity method
+    summary: When a controlled company is equity accounted, the NPO discloses its total assets, liabilities and shareholders' equity, its revenues, expenses, net income and cash flows by activity, plus the disclosures Section 3051 requires.
+    ref: Part III, Section 4450
+  - id: con4-relationship-disclosure
+    title: Disclosures under either method
+    summary: Whether it consolidates or equity accounts a controlled company, the NPO discloses its reporting policy, the relationship, and how the company's operations relate to or complement its own, along with related party disclosures.
+    ref: Part III, Section 4450
+  - id: con4-nci
+    title: Non-controlling interest
+    summary: When an NPO consolidates a company it owns less than 100% of, the other shareholders' share of the company's net assets and results is shown as a non-controlling interest, separate from the NPO's own net assets.
+    ref: Part II, Section 1602
+  - id: con4-business-sub
+    title: A charity's business subsidiary
+    summary: Consolidated, a business subsidiary's sales, costs and income taxes appear line by line in the group's statements. Equity accounted, it appears as one investment balance and one line of income or loss.
+    ref: Part III, Section 4450
+  - id: con4-jv-options
+    title: Reporting a joint venture
+    summary: Section 4450 lets an NPO report each joint venture interest by proportionate consolidation or by the equity method with disclosures. This differs from Part II, which no longer offers proportionate consolidation to private enterprises.
+    ref: Part III, Section 4450
+  - id: con4-proportionate
+    title: Proportionate consolidation mechanics
+    summary: Under proportionate consolidation the NPO adds its share of each of the joint venture's assets, liabilities, revenues and expenses to its own lines, and eliminates its share of balances, transactions and unrealized gains with the venture.
+    ref: Part III, Section 4450
+  - id: con4-jv-disclosure
+    title: Joint venture disclosures
+    summary: For any joint venture the NPO discloses its policy and the relationship. Under the equity method it also discloses its share of the venture's assets, liabilities, net assets, revenues, expenses and cash flows by activity, and significant policy differences.
+    ref: Part III, Section 4450
+  - id: con4-si-equity
+    title: Significant influence over a company
+    summary: Section 4450 requires an NPO to use the equity method for a profit-oriented enterprise it significantly influences. The equity-or-cost choice that Section 3051 gives private enterprises is not available.
+    ref: Part III, Section 4450
+  - id: con4-equity-income
+    title: Equity income and distributions
+    summary: The investment starts at cost, increases or decreases by the NPO's share of post-acquisition income or loss, and decreases by distributions received or receivable. The share of income is presented separately.
+    ref: Part II, Section 3051
+  - id: con4-unrealized
+    title: Unrealized profits with the investee
+    summary: Profits on sales between the NPO and the investee that are still held in inventory or assets are removed from equity income to the extent of the NPO's interest, and recognized when the asset is sold outside or used.
+    ref: Part II, Section 3051
+  - id: con4-losses
+    title: Losses beyond the investment
+    summary: Once the NPO's share of losses reduces the investment to zero, it stops recognizing losses unless it has guaranteed the investee's obligations or committed to further support. Later income is recognized only after it covers the unrecognized losses.
+    ref: Part II, Section 3051
+  - id: con4-impairment
+    title: Impairment of an equity investment
+    summary: If there are indicators of impairment and a significant adverse change in expected cash flows, the investment is written down to the higher of the present value of expected cash flows and the amount realizable by selling it. The loss goes to net income and may be reversed later, but not above the unimpaired amount.
+    ref: Part II, Section 3051
+  - id: con4-ei-disclosure
+    title: Economic interest disclosures
+    summary: An NPO discloses the nature and extent of an economic interest in another NPO it neither controls nor significantly influences. Indicators include funds raised in its name, resources held for its benefit, integral functions and guarantees of liabilities.
+    ref: Part III, Section 4450
+  - id: con4-foundation-presentation
+    title: Presenting a foundation
+    summary: A foundation the NPO controls is consolidated or disclosed. One it significantly influences, or in which it only has an economic interest, is disclosed. The foundation's grants are eliminated only when it is consolidated.
+    ref: Part III, Section 4450
+
+lessons:
+  - id: con4l1
+    title: Controlled companies
+    intro: When a charity owns a business, ASNPO gives two routes. Consolidate it line by line, or carry it as one equity-method investment and tell readers what is inside.
+    questions:
+      - id: con4l1q01
+        type: mc
+        concept: con4-enterprise-options
+        prompt: A Banff museum society owns 100% of a taxable corporation that runs its gift shop and café. How may it report the corporation?
+        options:
+          - Consolidate it, or use the equity method with the specified disclosures
+          - Consolidate it, or disclose its key figures without recognizing it
+          - At cost, with dividends as revenue
+          - Only by proportionate consolidation
+        answer: 0
+        explain: For a controlled profit-oriented enterprise, Section 4450 permits consolidation or the equity method with disclosure. The disclose-only route is for controlled NPOs, and proportionate consolidation is for joint ventures.
+        ref: Part III, Section 4450
+      - id: con4l1q02
+        type: classify
+        concept: con4-enterprise-disclosure
+        prompt: The museum society equity accounts its café corporation. Which items must it disclose about the corporation?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: Total assets, liabilities and shareholders' equity at year end
+            bucket: 0
+          - text: Revenues, expenses and net income for the year
+            bucket: 0
+          - text: Cash flows from operating, investing and financing activities
+            bucket: 0
+          - text: How the café's operations relate to or complement the society's
+            bucket: 0
+          - text: Salaries of each café employee
+            bucket: 1
+          - text: The café's sales forecast for next year
+            bucket: 1
+        explain: Equity accounting shows one line, so the notes supply the company's key totals and cash flows. The relationship and how the operations fit the mission are disclosed under either method.
+        ref: Part III, Section 4450
+      - id: con4l1q03
+        type: tf
+        concept: con4-enterprise-similar
+        prompt: A Calgary arts society owns two similar parking companies. It may consolidate one and equity account the other.
+        answer: false
+        reasons:
+          - Similar controlled enterprises must be reported the same way
+          - Controlled companies must always be consolidated
+          - The equity method is only for joint ventures
+        reason: 0
+        explain: An NPO can mix methods across its controlled companies, but not for similar ones. Two parking companies must be treated alike. A dissimilar company could be treated differently.
+        ref: Part III, Section 4450
+      - id: con4l1q04
+        type: mc
+        concept: con4-enterprise-options
+        prompt: The society consolidates its café corporation, which values inventory using a method different from the society's. What is required?
+        options:
+          - Nothing, because the café is a separate taxable entity
+          - Disclose the difference only
+          - Adjust the café's figures to the society's accounting policies
+          - Switch the society to the café's policy
+        answer: 2
+        explain: When a controlled company is consolidated, its accounting policies are adjusted to the reporting NPO's, so the consolidated statements use one set of policies.
+        ref: Part III, Section 4450
+      - id: con4l1q05
+        type: calc
+        concept: con4-business-sub
+        prompt: The society consolidates its café corporation. Society revenue is $4,000,000, including $200,000 of rent from the café. Café revenue is $1,500,000, including $50,000 of catering sold to the society, which the society expensed. Enter consolidated revenue.
+        answer: 5250000
+        unit: $
+        explain: Combined revenue is $5,500,000. The $200,000 rent and $50,000 catering are internal, so $250,000 is eliminated with the matching expenses, leaving $5,250,000.
+        ref: Part III, Section 4450
+      - id: con4l1q06
+        type: calc
+        concept: con4-business-sub
+        prompt: The society instead uses the equity method for the café corporation, which it owns 100%. The café's net income after tax is $120,000, after paying the society $200,000 of rent. There are no unrealized profits. Enter the amount the café adds to the society's excess of revenue over expenses through equity income.
+        answer: 120000
+        unit: $
+        explain: The society picks up 100% of the café's net income, $120,000, as one line. The rent is real revenue for the society, which is a separate reporting entity under the equity method, and the café's income is already after that rent.
+        ref: Part II, Section 3051
+      - id: con4l1q07
+        type: je
+        concept: con4-nci
+        prompt: A Red Deer health society owns 80% of a laundry company and consolidates it. The company's net income for the year is $150,000. Record the worksheet entry that allocates the other shareholders' share of income.
+        accounts:
+          - Non-controlling interest in net income
+          - Non-controlling interest
+          - Equity income from laundry company
+          - Unrestricted net assets
+          - Investment in laundry company
+          - Dividends paid
+        lines:
+          - account: Non-controlling interest in net income
+            side: dr
+            amount: 30000
+          - account: Non-controlling interest
+            side: cr
+            amount: 30000
+        explain: The company's full results are consolidated, so 20% × $150,000 = $30,000 belongs to the other shareholders. It is allocated to the non-controlling interest, shown separately from the society's own net assets.
+        ref: Part II, Section 1602
+      - id: con4l1q08
+        type: mc
+        concept: con4-business-sub
+        prompt: The consolidated café corporation incurs $30,000 of income tax expense. The society itself is a tax-exempt charity. How does the tax appear in the consolidated statements?
+        options:
+          - It is eliminated, because the group is tax exempt
+          - As an expense in the consolidated statement of operations
+          - As a direct charge to net assets
+          - Only in the notes, since charities do not pay income tax
+        answer: 1
+        explain: Consolidation brings in the company's expenses line by line, and its income tax is a real cost paid outside the group. Under the equity method the tax would instead be buried in the single line of equity income.
+        ref: Part III, Section 4450
+      - id: con4l1q09
+        type: tf
+        concept: con4-relationship-disclosure
+        prompt: A society that consolidates its café corporation still discloses its reporting policy, the relationship and related party information about the café.
+        answer: true
+        explain: These disclosures apply under either method. Consolidation shows the numbers, but readers still need to know what the company is, why the society owns it and how its operations fit with the society's.
+        ref: Part III, Section 4450
+      - id: con4l1q10
+        type: mc
+        concept: con4-enterprise-disclosure
+        prompt: Why does Section 4450 require a controlled company's cash flows by activity when the NPO uses the equity method?
+        options:
+          - Because the equity method records the company's cash flows in the NPO's cash flow statement
+          - Because cash flows determine the share of income
+          - Because the equity method is only allowed for companies with positive cash flow
+          - Because the NPO's own cash flow statement shows only cash moving between it and the company, not the company's own cash flows
+        answer: 3
+        explain: Under the equity method, the NPO's cash flow statement shows only investments in and distributions from the company. The disclosure fills that gap so readers can see the company's operating, investing and financing cash flows.
+        ref: Part III, Section 4450
+
+  - id: con4l2
+    title: Equity method in depth
+    intro: The equity method looks simple until profits sit in inventory, losses exceed the investment or the investment loses value. This lesson works through each.
+    questions:
+      - id: con4l2q01
+        type: calc
+        concept: con4-equity-income
+        prompt: A Lethbridge community society paid $400,000 for 40% of a company and has significant influence. Year 1 net income $150,000, dividends $50,000. Year 2 net loss $80,000, dividends $20,000. Enter the investment balance at the end of year 2.
+        answer: 400000
+        unit: $
+        explain: $400,000 + $60,000 (40% × $150,000) − $20,000 (40% × $50,000) − $32,000 (40% × $80,000) − $8,000 (40% × $20,000) = $400,000. Dividends reduce the investment even in a loss year.
+        ref: Part II, Section 3051
+      - id: con4l2q02
+        type: je
+        concept: con4-unrealized
+        prompt: An arts society holds 25% of a printing company with significant influence. The company earned $200,000. During the year it sold the society merchandise for $80,000 at a $20,000 profit, and the society still holds all of it. Record the society's equity income entry for the year.
+        accounts:
+          - Investment in printing company
+          - Equity income from printing company
+          - Inventory
+          - Dividend revenue
+          - Cost of goods sold
+          - Cash
+        lines:
+          - account: Investment in printing company
+            side: dr
+            amount: 45000
+          - account: Equity income from printing company
+            side: cr
+            amount: 45000
+        explain: The share of income is 25% × $200,000 = $50,000. The society's share of the profit still in its inventory, 25% × $20,000 = $5,000, is not yet realized, so equity income is $45,000.
+        ref: Part II, Section 3051
+      - id: con4l2q03
+        type: calc
+        concept: con4-unrealized
+        prompt: Next year the society sells all of that merchandise to outside customers. The printing company earns $160,000. Enter the society's equity income for the year.
+        answer: 45000
+        unit: $
+        explain: 25% × $160,000 = $40,000, plus the $5,000 of profit deferred last year, which is now realized because the goods left the society. $40,000 + $5,000 = $45,000.
+        ref: Part II, Section 3051
+      - id: con4l2q04
+        type: je
+        concept: con4-losses
+        prompt: A St. Albert society holds 40% of a social enterprise company, carried at $60,000 under the equity method. The company loses $200,000. The society has not guaranteed any of its obligations or committed further support. Record the society's share of the loss.
+        accounts:
+          - Equity loss from social enterprise
+          - Investment in social enterprise
+          - Obligation for investee losses
+          - Unrestricted net assets
+          - Cash
+        lines:
+          - account: Equity loss from social enterprise
+            side: dr
+            amount: 60000
+          - account: Investment in social enterprise
+            side: cr
+            amount: 60000
+        explain: The society's share is 40% × $200,000 = $80,000, but the investment is only $60,000. With no guarantee or commitment, losses stop at zero, and the other $20,000 is tracked off the books.
+        ref: Part II, Section 3051
+      - id: con4l2q05
+        type: calc
+        concept: con4-losses
+        prompt: The following year the social enterprise earns $100,000. Enter the equity income the society recognizes.
+        answer: 20000
+        unit: $
+        explain: The society's share is 40% × $100,000 = $40,000. The first $20,000 covers last year's unrecognized losses, so only $20,000 is recognized and the investment goes from $0 to $20,000.
+        ref: Part II, Section 3051
+      - id: con4l2q06
+        type: mc
+        concept: con4-losses
+        prompt: Change one fact. The society had guaranteed the social enterprise's bank loan. How does that affect the $80,000 share of loss?
+        options:
+          - The society recognizes its full share, carrying the shortfall below zero as an obligation
+          - The society still stops at zero; guarantees are only disclosed
+          - The society must switch to consolidation
+          - The society recognizes the whole $200,000 loss
+        answer: 0
+        explain: A guarantee or commitment to further support means the society keeps recognizing its share of losses below zero. The guarantee is also an economic interest and a related party matter to disclose.
+        ref: Part II, Section 3051
+      - id: con4l2q07
+        type: tf
+        concept: con4-equity-income
+        prompt: Under the equity method, dividends the society receives from its investee are recognized as investment income.
+        answer: false
+        reasons:
+          - They reduce the investment, because the society already recognized its share of the income
+          - Dividends from investees are recorded directly in net assets
+          - Dividends are deferred until the investment is sold
+        reason: 0
+        explain: Recognizing dividends as revenue would count the same profit twice. The share of income goes through the statement of operations; distributions only convert part of the investment to cash.
+        ref: Part II, Section 3051
+      - id: con4l2q08
+        type: calc
+        concept: con4-impairment
+        prompt: A society's equity investment in a company is carried at $500,000. There are impairment indicators and a significant adverse change in expected cash flows. The present value of expected cash flows is $320,000 and the investment could be sold for $350,000 at year end. Enter the impairment loss.
+        answer: 150000
+        unit: $
+        explain: The investment is written down to the higher of $320,000 and $350,000, which is $350,000. The loss is $500,000 − $350,000 = $150,000, recognized in the statement of operations.
+        ref: Part II, Section 3051
+      - id: con4l2q09
+        type: tf
+        concept: con4-impairment
+        prompt: If the company recovers next year, the society may reverse the impairment, but not to more than the carrying amount the investment would have had with no impairment.
+        answer: true
+        explain: Reversals are permitted to the extent of the improvement, capped at the unimpaired carrying amount. The reversal is recognized in the statement of operations.
+        ref: Part II, Section 3051
+      - id: con4l2q10
+        type: match
+        concept: con4-equity-income
+        prompt: Match each event to its effect on an equity-method investment.
+        pairs:
+          - left: Investee earns income
+            right: Increase by the investor's share
+          - left: Investee declares a dividend
+            right: Decrease by the investor's share
+          - left: Investee's profit still in the investor's inventory
+            right: Remove the investor's share from equity income
+          - left: Share of losses exceeds the investment, no guarantee
+            right: Stop at zero and track the excess
+        explain: Each adjustment keeps the single investment line consistent with what the investor's share of the company is really worth on a consolidation basis.
+        ref: Part II, Section 3051
+
+  - id: con4l3
+    title: Joint control
+    intro: When no venturer can act alone, Section 4450 gives NPOs a choice that Part II no longer offers companies. You can proportionately consolidate or use the equity method.
+    questions:
+      - id: con4l3q01
+        type: mc
+        concept: con4-jv-options
+        prompt: Two Edmonton seniors' societies jointly run a meals program under a contract that requires both to agree on all strategic decisions. How may each report its interest?
+        options:
+          - Consolidate it in full
+          - Disclose it only
+          - By proportionate consolidation or the equity method with disclosures
+          - At cost, with distributions as revenue
+        answer: 2
+        explain: The contract gives joint control, so this is a joint venture. Section 4450 lets each venturer use proportionate consolidation or the equity method with disclosures.
+        ref: Part III, Section 4450
+      - id: con4l3q02
+        type: tf
+        concept: con4-jv-options
+        prompt: Because Part II, Section 3056 no longer offers proportionate consolidation for interests in jointly controlled enterprises, an NPO reporting under ASNPO cannot use it either.
+        answer: false
+        reasons:
+          - Section 4450 sets the NPO's options for joint ventures and still permits proportionate consolidation
+          - Part II overrides Part III for joint ventures
+          - Proportionate consolidation is permitted only for joint ventures between companies
+        reason: 0
+        explain: Section 4450 deals with joint ventures directly, so its options govern NPOs. Part II's equity-or-cost choice for private enterprises does not replace them.
+        ref: Part III, Section 4450
+      - id: con4l3q03
+        type: calc
+        concept: con4-proportionate
+        prompt: A society holds 50% of a joint venture and uses proportionate consolidation. The society's own assets are $10,000,000, including a $200,000 receivable from the venture. The venture's assets are $3,000,000, and its liabilities include the $200,000 payable to the society. Enter total assets in the society's statements.
+        answer: 11400000
+        unit: $
+        explain: $10,000,000 + 50% × $3,000,000 = $11,500,000. The society eliminates its own 50% share of the balance, $100,000. The other $100,000 is effectively owed by the other venturer's share and stays, for a total of $11,400,000.
+        ref: Part III, Section 4450
+      - id: con4l3q04
+        type: je
+        concept: con4-proportionate
+        prompt: Same 50% venture. The society charged the venture an $80,000 management fee, recorded as Management fee revenue. The society's proportionate share of the venture's administration expense includes 50% of that fee. Record the proportionate consolidation elimination.
+        accounts:
+          - Management fee revenue
+          - Administration expense
+          - Investment in joint venture
+          - Accounts receivable
+          - Equity income from joint venture
+        lines:
+          - account: Management fee revenue
+            side: dr
+            amount: 40000
+          - account: Administration expense
+            side: cr
+            amount: 40000
+        explain: Only the society's own 50% share is internal. The half charged to the other venturer's share is a real transaction with an outside party, so $40,000 is eliminated and $40,000 of fee revenue stays.
+        ref: Part III, Section 4450
+      - id: con4l3q05
+        type: calc
+        concept: con4-proportionate
+        prompt: On January 1 the society sold equipment with a $200,000 carrying amount to the 50% joint venture for $300,000. Ignoring amortization, enter the gain the society can recognize this year under proportionate consolidation.
+        answer: 50000
+        unit: $
+        explain: The $100,000 gain is realized only to the extent of the other venturer's 50% interest. The society's own 50% share, $50,000, is unrealized and eliminated, and is realized as the venture amortizes or sells the equipment.
+        ref: Part III, Section 4450
+      - id: con4l3q06
+        type: calc
+        concept: con4-jv-options
+        prompt: Two community leagues each hold 50% of an arena joint venture. One league uses the equity method; its investment opened at $2,000,000. The venture's excess of revenue over expenses for the year is $300,000, and it made no distributions. Enter the closing investment balance.
+        answer: 2150000
+        unit: $
+        explain: $2,000,000 + 50% × $300,000 = $2,150,000. The league's statement of operations shows one line of $150,000 income from the joint venture.
+        ref: Part III, Section 4450
+      - id: con4l3q07
+        type: classify
+        concept: con4-jv-disclosure
+        prompt: The league equity accounts its 50% arena venture. Which items must it disclose?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The reporting policy and a description of the relationship
+            bucket: 0
+          - text: Its share of the venture's assets, liabilities and net assets
+            bucket: 0
+          - text: Its share of revenues, expenses and cash flows by activity
+            bucket: 0
+          - text: Significant differences in accounting policies
+            bucket: 0
+          - text: The other league's own complete financial statements
+            bucket: 1
+        explain: Under the equity method the league discloses its share of the venture's key figures and any significant policy differences. The policy and the relationship are disclosed under either method.
+        ref: Part III, Section 4450
+      - id: con4l3q08
+        type: tf
+        concept: con4-jv-options
+        prompt: An NPO with two joint ventures may use proportionate consolidation for one and the equity method for the other.
+        answer: true
+        explain: Section 4450 allows different reporting policies for different joint venture interests. Each choice is disclosed.
+        ref: Part III, Section 4450
+      - id: con4l3q09
+        type: mc
+        concept: con4-jv-options
+        prompt: Three Camrose NPOs each hold one third of a daycare operation. The contract lets the NPO that supplies the building appoint four of seven board members, who make all strategic decisions by majority. What is the building NPO's relationship to the daycare?
+        options:
+          - Joint control, because there are three participants
+          - Control, because it can set strategic policy without the others' consent
+          - Significant influence only, because it holds one third
+          - No relationship, because ownership is equal
+        answer: 1
+        explain: Joint control needs strategic decisions to require the consent of the venturers. Here one party's board majority decides alone, so it controls the daycare, whatever the equal shares suggest.
+        ref: Part III, Section 4450
+      - id: con4l3q10
+        type: match
+        concept: con4-proportionate
+        prompt: Match each reporting method to how the investee appears in the NPO's statement of financial position.
+        pairs:
+          - left: Full consolidation
+            right: 100% of each asset and liability, line by line
+          - left: Proportionate consolidation
+            right: The NPO's share of each asset and liability, line by line
+          - left: Equity method
+            right: One investment line
+          - left: Disclosure only
+            right: Nothing recognized; figures in the notes
+        explain: The methods differ in how much of the investee reaches the face of the statements. Proportionate consolidation sits between full consolidation and the one-line equity method.
+        ref: Part III, Section 4450
+
+  - id: con4l4
+    title: Significant influence, economic interest and foundations
+    intro: Not every relationship involves control. Here the rules turn on whether the other party is a company or an NPO, and on whether money is held for your benefit.
+    questions:
+      - id: con4l4q01
+        type: mc
+        concept: con4-si-equity
+        prompt: An Alberta health charity has significant influence over a medical supply company. A private company in the same position under Part II could choose the equity method or the cost method. What may the charity do?
+        options:
+          - Choose between the equity method and the cost method, like the private company
+          - Use fair value through the statement of operations
+          - Use the equity method
+          - Disclose the relationship only
+        answer: 2
+        explain: Section 4450 requires an NPO to account for a significantly influenced profit-oriented enterprise using the equity method. The cost option in Section 3051 is not open to it.
+        ref: Part III, Section 4450
+      - id: con4l4q02
+        type: tf
+        concept: con4-si-equity
+        prompt: An NPO with significant influence over a company may carry the investment at cost as long as the company's shares are not quoted in an active market.
+        answer: false
+        reasons:
+          - Section 4450 requires the equity method for significantly influenced profit-oriented enterprises
+          - Cost is required for every unquoted investment
+          - Significant influence over a company is only disclosed
+        reason: 0
+        explain: That cost option exists for private enterprises under Section 3051, not for NPOs, because Section 4450 specifies the equity method for this relationship.
+        ref: Part III, Section 4450
+      - id: con4l4q03
+        type: je
+        concept: con4-si-equity
+        prompt: The charity holds 30% of the medical supply company. This year the company earned $150,000 and paid $40,000 of dividends, which the charity received in cash. Record one entry for the year's equity income and dividend.
+        accounts:
+          - Cash
+          - Investment in medical supply company
+          - Equity income from medical supply company
+          - Dividend revenue
+          - Accounts receivable
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 12000
+          - account: Investment in medical supply company
+            side: dr
+            amount: 33000
+          - account: Equity income from medical supply company
+            side: cr
+            amount: 45000
+        explain: Equity income is 30% × $150,000 = $45,000. The dividend received, 30% × $40,000 = $12,000, comes out of the investment, so the investment rises by a net $33,000.
+        ref: Part II, Section 3051
+      - id: con4l4q04
+        type: mc
+        concept: con4-foundation-presentation
+        prompt: A Fort McMurray hospital society names two of nine directors of an independent hospital foundation and has significant influence over it, but not control. How does it report the foundation?
+        options:
+          - Equity method
+          - Disclose the relationship, the foundation's purpose, community of service, tax status, legal form and the society's economic interest
+          - Consolidate or disclose, as it chooses
+          - No reporting, because it lacks control
+        answer: 1
+        explain: Significant influence over an NPO is not equity accounted. The society discloses the relationship and the foundation's key characteristics, plus the nature and extent of any economic interest and related party information.
+        ref: Part III, Section 4450
+      - id: con4l4q05
+        type: classify
+        concept: con4-ei-disclosure
+        prompt: Which facts indicate that a Medicine Hat seniors' society has an economic interest in a separate fundraising NPO?
+        buckets:
+          - Indicates economic interest
+          - Does not indicate it
+        items:
+          - text: The NPO raises funds in the society's name, and substantially all must go to the society
+            bucket: 0
+          - text: The society transferred significant resources to the NPO to hold for the society's benefit
+            bucket: 0
+          - text: The NPO carries out functions integral to the society's objectives
+            bucket: 0
+          - text: The society guarantees the NPO's significant liabilities
+            bucket: 0
+          - text: The NPO buys office supplies from the same vendor as the society
+            bucket: 1
+          - text: Some donors give to both organizations
+            bucket: 1
+        explain: Economic interest exists when the other NPO holds resources for the society, or when the society answers for its liabilities. Shared vendors or overlapping donors do neither.
+        ref: Part III, Section 4450
+      - id: con4l4q06
+        type: tf
+        concept: con4-ei-disclosure
+        prompt: The seniors' society neither controls nor significantly influences the fundraising NPO, but has an economic interest in it. It must disclose the nature and extent of that interest.
+        answer: true
+        explain: An economic interest can exist without control or significant influence, and on its own it triggers disclosure of the nature and extent of the interest.
+        ref: Part III, Section 4450
+      - id: con4l4q07
+        type: match
+        concept: con4-foundation-presentation
+        prompt: Match each foundation relationship of a hospital society to its reporting.
+        pairs:
+          - left: Society appoints the majority of the foundation's board
+            right: Consolidate, or disclose specified information
+          - left: Society has significant influence over the foundation
+            right: Disclose relationship, purpose, status and economic interest
+          - left: Foundation raises money only for the society, no control or influence
+            right: Disclose the nature and extent of the economic interest
+          - left: Unrelated community foundation that once gave a grant
+            right: No Section 4450 reporting
+        explain: Reporting follows the relationship. Only a controlled foundation can be consolidated, and only then are its grants to the society eliminated.
+        ref: Part III, Section 4450
+      - id: con4l4q08
+        type: mc
+        concept: con4-foundation-presentation
+        prompt: The society does not consolidate its controlled foundation. The foundation granted it $1,000,000 this year. How does the grant appear in the society's statements?
+        options:
+          - Eliminated, because the foundation is controlled
+          - Netted against the foundation's donation revenue in the notes
+          - As an equity-method investment income
+          - As revenue in the society's statements, with related party disclosure
+        answer: 3
+        explain: Eliminations happen only in consolidated statements. Without consolidation, the grant is the society's revenue, recognized under its contribution method, and disclosed as a related party transaction.
+        ref: Part III, Section 4450
+      - id: con4l4q09
+        type: mc
+        concept: con4-enterprise-options
+        prompt: An Edmonton Friendship Centre owns 45% of a catering company's shares, but a shareholder agreement lets it appoint five of seven directors, who set all strategic policy. How does it report the company?
+        options:
+          - Equity method, because it owns less than 50%
+          - Cost method, because it lacks a majority of shares
+          - Consolidate it or use the equity method with the controlled-enterprise disclosures
+          - Disclose it only
+        answer: 2
+        explain: Control turns on the power to set strategic policy without others' co-operation, not only on share ownership. With control, the controlled-enterprise options and their disclosures apply.
+        ref: Part III, Section 4450
+
+  - id: con4l5
+    title: Integrated cases
+    intro: These cases combine judgement and numbers. Decide the relationship, pick the method, then compute.
+    questions:
+      - id: con4l5q01
+        type: calc
+        concept: con4-equity-income
+        prompt: A Grande Prairie arts society equity accounts its wholly owned theatre rental company. The investment opened at $800,000. The company earned $220,000 and paid the society $100,000 of dividends. There are no internal unrealized profits. Enter the closing investment balance.
+        answer: 920000
+        unit: $
+        explain: $800,000 + $220,000 share of income − $100,000 dividends = $920,000. With 100% ownership, the society picks up all of the company's income.
+        ref: Part II, Section 3051
+      - id: con4l5q02
+        type: je
+        concept: con4-equity-income
+        prompt: Record the society's receipt of the $100,000 dividend from the theatre rental company.
+        accounts:
+          - Cash
+          - Investment in theatre rental company
+          - Dividend revenue
+          - Equity income from theatre rental company
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 100000
+          - account: Investment in theatre rental company
+            side: cr
+            amount: 100000
+        explain: The dividend is a return of part of the investment. Its income was already picked up as equity income, so it is not revenue again.
+        ref: Part II, Section 3051
+      - id: con4l5q03
+        type: tf
+        concept: con4-business-sub
+        prompt: With no unrealized internal profits, and with the company already using the society's accounting policies, the arts society's total net assets are the same whether it consolidates the wholly owned theatre company or equity accounts it.
+        answer: true
+        explain: The equity method is often called one-line consolidation. Net assets and the excess of revenue over expenses match. What changes is the gross presentation of the company's assets, liabilities, revenues and expenses.
+        ref: Part III, Section 4450
+      - id: con4l5q04
+        type: je
+        concept: con4-unrealized
+        prompt: On January 1 a hockey association paid $750,000 cash for 25% of an equipment company and gained significant influence. This year the company earned $400,000 and paid $120,000 of dividends. It sold the association equipment inventory with a $40,000 profit, all still held. Record one entry for the year's equity income and dividend received.
+        accounts:
+          - Investment in equipment company
+          - Cash
+          - Equity income from equipment company
+          - Dividend revenue
+          - Inventory
+          - Cost of goods sold
+        lines:
+          - account: Investment in equipment company
+            side: dr
+            amount: 60000
+          - account: Cash
+            side: dr
+            amount: 30000
+          - account: Equity income from equipment company
+            side: cr
+            amount: 90000
+        explain: Share of income is 25% × $400,000 = $100,000, less 25% × $40,000 = $10,000 of unrealized profit, for $90,000. The $30,000 dividend (25% × $120,000) reduces the investment, so it rises by a net $60,000.
+        ref: Part II, Section 3051
+      - id: con4l5q05
+        type: calc
+        concept: con4-unrealized
+        prompt: Enter the hockey association's investment in the equipment company at year end.
+        answer: 810000
+        unit: $
+        explain: $750,000 cost + $90,000 equity income − $30,000 dividends = $810,000.
+        ref: Part II, Section 3051
+      - id: con4l5q06
+        type: calc
+        concept: con4-proportionate
+        prompt: "A society holds 40% of a joint venture and proportionately consolidates it. Society revenue is $6,000,000, including a $100,000 fee charged to the venture. The venture's revenue is $2,000,000, and its expenses include the $100,000 fee. Enter total revenue in the society's statements."
+        answer: 6760000
+        unit: $
+        explain: $6,000,000 + 40% × $2,000,000 = $6,800,000. The society eliminates its own 40% share of the fee, $40,000, from revenue and from the venture's expenses. $6,800,000 − $40,000 = $6,760,000.
+        ref: Part III, Section 4450
+      - id: con4l5q07
+        type: calc
+        concept: con4-nci
+        prompt: The Red Deer health society consolidates its 80% owned laundry company. The non-controlling interest opened at $200,000. This year the company earned $150,000 and paid $50,000 of dividends to all shareholders. Enter the closing non-controlling interest.
+        answer: 220000
+        unit: $
+        explain: For the other shareholders' 20% share, $200,000 + $30,000 of income − $10,000 of dividends paid to them = $220,000. The society's own 80% of the dividend is internal and eliminated.
+        ref: Part II, Section 1602
+      - id: con4l5q08
+        type: calc
+        concept: con4-losses
+        prompt: "A Camrose society holds 40% of a social enterprise company, carried at $30,000, with no guarantee or commitment. Year 1 loss $150,000. Year 2 income $50,000. Year 3 income $100,000. Enter the investment balance at the end of year 3."
+        answer: 30000
+        unit: $
+        explain: Year 1 share of loss is $60,000; $30,000 is recognized and $30,000 is unrecognized. Year 2 share of income, $20,000, reduces the unrecognized loss to $10,000 and nothing is recognized. Year 3 share is $40,000; $10,000 covers the rest, so $30,000 is recognized and the balance is $30,000.
+        ref: Part II, Section 3051
+      - id: con4l5q09
+        type: mc
+        concept: con4-enterprise-similar
+        prompt: A Calgary Friendship Centre consolidates its controlled foundation. It also controls a for-profit catering company. Must it consolidate the catering company too?
+        options:
+          - Yes, because once one controlled entity is consolidated all must be
+          - No, it may consolidate or equity account the company, provided similar companies are treated alike
+          - No, it must disclose the company only
+          - Yes, unless the company is less than 10% of group revenue
+        answer: 1
+        explain: Controlled NPOs and controlled companies have separate sets of options. The centre can equity account the catering company with the required disclosures, as long as any similar companies get the same treatment.
+        ref: Part III, Section 4450
+      - id: con4l5q10
+        type: classify
+        concept: con4-si-equity
+        prompt: Choose the reporting for each relationship of a Lethbridge health charity.
+        buckets:
+          - Consolidate or equity method
+          - Proportionate consolidation or equity method
+          - Equity method only
+          - Disclosure only
+        items:
+          - text: 100% of a parking company
+            bucket: 0
+          - text: Equal partner with another charity in a jointly controlled clinic, all decisions unanimous
+            bucket: 1
+          - text: 30% of a pharmacy company, with two board seats and significant influence
+            bucket: 2
+          - text: Significant influence over a hospice NPO
+            bucket: 3
+          - text: Guarantee of an unrelated NPO's mortgage
+            bucket: 3
+        explain: A controlled company is consolidated or equity accounted, a joint venture is proportionately consolidated or equity accounted, and a significantly influenced company is equity accounted. Significant influence over an NPO and an economic interest alone are disclosed.
+        ref: Part III, Section 4450

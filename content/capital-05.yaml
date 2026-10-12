@@ -1,0 +1,949 @@
+id: cap5
+course: capital
+number: 5
+title: Capital cases under both methods
+summary: Full capital projects tracked over several years. Capital campaigns and pledges, partly spent grants, construction in progress and holdbacks, mortgage-funded and contributed land and buildings, the continuity of net assets invested in capital assets, the same project under the deferral and restricted fund methods, write-downs and disposals of grant-funded assets, and redirecting restricted capital money.
+refs:
+  - Part III, Section 4410
+  - Part III, Section 4433
+  - Part III, Section 4400
+  - Part III, Section 4420
+status: ready
+
+concepts:
+  - id: cap5-pledge-recognition
+    title: Capital campaign pledges
+    summary: A pledge is recognized as a contribution receivable only when the amount can be reasonably estimated and ultimate collection is reasonably assured. Pledges that fail either test are recognized when received. Under the deferral method a recognized capital pledge is deferred, not taken to revenue.
+    ref: Part III, Section 4420
+  - id: cap5-unspent-deferred
+    title: Unspent capital money stays deferred
+    summary: Under the deferral method, a restricted capital contribution stays deferred until the related asset starts being amortized. Spending the money on construction does not by itself create revenue. Externally restricted investment income earned on unspent capital money is treated the same way.
+    ref: Part III, Section 4410
+  - id: cap5-cip-holdback
+    title: Construction in progress and holdbacks
+    summary: The full value of work performed is added to construction in progress as it is billed. The portion the owner withholds is a liability until it is released. Agreed reductions in the contract price reduce the asset's cost.
+    ref: Part III, Section 4433
+  - id: cap5-dcc-matching
+    title: Matching deferred capital contributions to amortization
+    summary: Deferred capital contributions are recognized as revenue on the same basis as the amortization of the asset they funded. If contributions funded only part of the asset, only that share of amortization is matched, and a componentized asset is matched component by component.
+    ref: Part III, Section 4410
+  - id: cap5-land-building
+    title: Land and building funding
+    summary: Under the deferral method, restricted contributions for capital assets that will not be amortized, such as land, are direct increases in net assets. Contributions for the building are deferred capital contributions. A gift of land and a building is split between the two.
+    ref: Part III, Section 4410
+  - id: cap5-debt-repayment
+    title: Contributions to repay debt
+    summary: Under the deferral method, a contribution restricted to repaying debt is treated as restricted for whatever the debt financed. Debt for future-period expenses gives a deferral matched to those expenses, debt for non-amortized capital assets gives a direct increase in net assets, and a lump sum to repay debt on an amortizable asset is deferred and recognized as that asset is amortized. Contributions for debt used for other purposes, such as a past deficit, are revenue in the current period.
+    ref: Part III, Section 4410
+  - id: cap5-naica-composition
+    title: What net assets invested in capital assets holds
+    summary: In common practice, net assets invested in capital assets equals the net carrying amount of capital assets less the related unamortized deferred capital contributions and less the debt used to finance them. It is the part of the capital base the NPO has funded from its own resources.
+    ref: Part III, Section 4400
+  - id: cap5-naica-continuity
+    title: Continuity of net assets invested in capital assets
+    summary: The balance falls with asset amortization, write-downs and the carrying amount of disposals net of their deferred contributions. It rises with deferred capital contribution amortization, purchases funded internally, debt principal repaid from the NPO's own money and restricted contributions for land. Purchases funded by grants or new debt leave it unchanged.
+    ref: Part III, Section 4400
+  - id: cap5-transfers
+    title: Internal funding is a transfer
+    summary: When unrestricted resources pay for capital assets or debt principal, the amount moves between net asset classes. It is shown in the statement of changes in net assets, never as revenue or expense.
+    ref: Part III, Section 4400
+  - id: cap5-rfm-capital-fund
+    title: Capital fund under the restricted fund method
+    summary: Under the restricted fund method, a capital contribution is revenue of the capital fund when received or receivable. Capital assets and their amortization are commonly carried in that fund, so there are no deferred capital contributions for those assets.
+    ref: Part III, Section 4410
+  - id: cap5-rfm-no-fund
+    title: No matching fund
+    summary: An NPO using the restricted fund method that has no capital fund accounts for capital contributions in the general fund under the deferral method, so they become deferred capital contributions there.
+    ref: Part III, Section 4410
+  - id: cap5-method-comparison
+    title: Same project, two methods
+    summary: Both methods recognize the same total revenue over the life of a capital project. The deferral method spreads it to match amortization, while the restricted fund method front-loads it in the capital fund, so annual results and net asset balances differ in timing.
+    ref: Part III, Section 4410
+  - id: cap5-dcc-writedown
+    title: Write-downs of grant-funded assets
+    summary: When an asset funded by restricted contributions is written off, the related unamortized deferred capital contribution is recognized as revenue, provided all restrictions have been complied with. If the funding agreement instead requires repayment, the amount is a liability, not revenue.
+    ref: Part III, Section 4433
+  - id: cap5-dcc-disposal
+    title: Disposals of grant-funded assets
+    summary: On disposal, cost and accumulated amortization are removed and a gain or loss is recognized. The remaining deferred capital contribution for that asset is recognized as revenue in the period of disposal when restrictions have been met.
+    ref: Part III, Section 4433
+  - id: cap5-repurpose-external
+    title: Redirecting external restrictions
+    summary: Only the contributor can change an external restriction. With the contributor's consent, unspent capital money can be reclassified to a new restricted purpose or released as unrestricted revenue. The board cannot do this alone.
+    ref: Part III, Section 4410
+  - id: cap5-repurpose-internal
+    title: Redirecting internal restrictions
+    summary: A board-designated capital reserve is an internal restriction. The board can release or redirect it at any time by a transfer between net asset classes, which never creates revenue.
+    ref: Part III, Section 4400
+  - id: cap5-dcc-disclosure
+    title: Disclosing deferred contribution changes
+    summary: An NPO using the deferral method discloses the changes in its deferred contribution balances for the period, such as contributions received, amounts recognized as revenue and other adjustments.
+    ref: Part III, Section 4410
+
+lessons:
+  - id: cap5l1
+    title: Campaigns, grants and the build
+    intro: A Grande Prairie arts society builds a $9 million arts centre with a foundation grant, a capital campaign and a mortgage, using the deferral method. Follow it from the first pledge to the building's first year of service.
+    questions:
+      - id: cap5l1q01
+        type: mc
+        concept: cap5-pledge-recognition
+        prompt: The arts society's capital campaign collects $2.4 million of signed pledges payable over three years. Which pledges may it recognize as contributions receivable at year end?
+        options:
+          - All of them, because a signed pledge is a legal promise
+          - Only those whose amount can be reasonably estimated and whose collection is reasonably assured
+          - None, because capital pledges are recognized only when the building is complete
+          - Only those the board has approved as part of the capital budget
+        answer: 1
+        explain: Pledges are recognized when the amount can be reasonably estimated and ultimate collection is reasonably assured. A pledge is often not enforced in practice, so many NPOs look at the donor's history and the society's own collection record. Pledges that fail the tests are recognized when the cash arrives.
+        ref: Part III, Section 4420
+      - id: cap5l1q02
+        type: je
+        concept: cap5-pledge-recognition
+        prompt: The society concludes that $1,800,000 of the pledges, all restricted to building the arts centre, meet the recognition criteria. It uses the deferral method and records all capital contributions, spent or not, in one deferred capital contributions account. Record the pledges.
+        accounts:
+          - Contributions receivable
+          - Deferred capital contributions
+          - Contribution revenue
+          - Deferred contributions
+          - Cash
+          - Net assets invested in capital assets
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 1800000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 1800000
+        explain: Recognizing the receivable does not make the pledge revenue. The money is restricted to an amortizable asset, so it is deferred. Some NPOs hold unspent capital money in a separate deferred contributions account and move it to deferred capital contributions when spent. Either way, nothing reaches revenue yet.
+        ref: Part III, Section 4420
+      - id: cap5l1q03
+        type: classify
+        concept: cap5-unspent-deferred
+        prompt: During construction, sort each of the arts society's year 1 items by where it lands under the deferral method.
+        buckets:
+          - Statement of financial position only
+          - Statement of operations this year
+        items:
+          - text: $3,000,000 foundation grant received, restricted to construction
+            bucket: 0
+          - text: $1,200,000 contractor progress billing for work performed
+            bucket: 0
+          - text: Costs of the campaign launch gala and printed brochures
+            bucket: 1
+          - text: Interest earned on unspent grant money that the grant agreement says must be spent on the project
+            bucket: 0
+          - text: Interest earned on the society's unrestricted reserves
+            bucket: 1
+          - text: Amortization of the old rented studio's leasehold improvements, still in use
+            bucket: 1
+        explain: Restricted capital money, including restricted income earned on it, sits in deferred capital contributions until the asset is amortized. Construction costs go to construction in progress. Fundraising costs are expenses as incurred, and unrestricted income and ongoing amortization hit operations normally.
+        ref: Part III, Section 4410
+      - id: cap5l1q04
+        type: calc
+        concept: cap5-unspent-deferred
+        prompt: In year 1 the society received the $3,000,000 construction grant, recognized $1,800,000 of capital pledges (of which $700,000 was collected), received $200,000 restricted to next year's youth programs and $50,000 of unrestricted donations, and spent $1,900,000 on construction. Ignore investment income. Enter the deferred capital contributions balance at the end of year 1, including unspent amounts.
+        answer: 4800000
+        unit: $
+        explain: $3,000,000 + $1,800,000 = $4,800,000. Collecting a pledge only turns a receivable into cash, and spending on construction does not trigger revenue. The program money is a deferred operating contribution, and the unrestricted donations are revenue.
+        ref: Part III, Section 4410
+      - id: cap5l1q05
+        type: je
+        concept: cap5-cip-holdback
+        prompt: The contractor bills $1,200,000 for work performed to date. The contract withholds 10% until the lien period ends. Ignore GST. Record the billing and payment.
+        accounts:
+          - Construction in progress
+          - Cash
+          - Holdback payable
+          - Accounts payable
+          - Deferred capital contributions
+          - Repairs and maintenance expense
+        lines:
+          - account: Construction in progress
+            side: dr
+            amount: 1200000
+          - account: Cash
+            side: cr
+            amount: 1080000
+          - account: Holdback payable
+            side: cr
+            amount: 120000
+        explain: The asset grows by the full value of work performed. The 10% withheld is still owed, so it is a liability until it is released, not a reduction in cost.
+        ref: Part III, Section 4433
+      - id: cap5l1q06
+        type: je
+        concept: cap5-unspent-deferred
+        prompt: Unspent grant money earns $45,000 of interest. The grant agreement requires that interest to be spent on the arts centre. Record the interest under the deferral method.
+        accounts:
+          - Cash
+          - Deferred capital contributions
+          - Investment income
+          - Deferred contributions
+          - Construction in progress
+          - Net assets invested in capital assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 45000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 45000
+        explain: Externally restricted investment income is recognized the same way as a contribution with that restriction. Because it must be spent on an amortizable building, it is deferred along with the grant and will be recognized as the building is amortized.
+        ref: Part III, Section 4410
+      - id: cap5l1q07
+        type: tf
+        concept: cap5-dcc-matching
+        prompt: By the end of year 2 the society has spent all $5.4 million of its restricted capital money on construction. It may now recognize the $5.4 million as revenue because spending it met the donors' restriction.
+        answer: false
+        reasons:
+          - Contributions for amortizable assets are recognized as the asset is amortized, which starts when it is available for use
+          - The revenue can only be recognized once the mortgage is repaid
+          - Capital contributions are never recognized as revenue under the deferral method
+        reason: 0
+        explain: For an amortizable capital asset, the restriction is treated as being met over the asset's life. Revenue matches amortization, and amortization begins only when the building is available for use.
+        ref: Part III, Section 4410
+      - id: cap5l1q08
+        type: je
+        concept: cap5-cip-holdback
+        prompt: The arts centre opens at the start of year 3. Construction in progress totals $9,000,000, componentized as structure $6,000,000, roof $900,000 and mechanical systems $2,100,000. Record the transfer.
+        accounts:
+          - Building - structure
+          - Building - roof
+          - Building - mechanical systems
+          - Construction in progress
+          - Deferred capital contributions
+          - Amortization expense
+          - Holdback payable
+        lines:
+          - account: Building - structure
+            side: dr
+            amount: 6000000
+          - account: Building - roof
+            side: dr
+            amount: 900000
+          - account: Building - mechanical systems
+            side: dr
+            amount: 2100000
+          - account: Construction in progress
+            side: cr
+            amount: 9000000
+        explain: At substantial completion the accumulated cost moves out of construction in progress into component accounts, each with its own useful life. Amortization starts now, and so does recognition of the deferred capital contributions.
+        ref: Part III, Section 4433
+      - id: cap5l1q09
+        type: je
+        concept: cap5-cip-holdback
+        prompt: After the lien period, the society releases holdbacks of $780,000. The contractor has agreed to a $30,000 reduction in the contract price for mechanical work that never met specification, deducted from the holdback. Record the settlement.
+        accounts:
+          - Holdback payable
+          - Cash
+          - Building - mechanical systems
+          - Construction in progress
+          - Gain on settlement
+          - Repairs and maintenance expense
+          - Accounts payable
+        lines:
+          - account: Holdback payable
+            side: dr
+            amount: 780000
+          - account: Cash
+            side: cr
+            amount: 750000
+          - account: Building - mechanical systems
+            side: cr
+            amount: 30000
+        explain: The liability is settled in full. An agreed price reduction lowers what the society actually paid for the asset, so it reduces the mechanical systems component, not income. Construction in progress was already closed out, so the component itself is credited.
+        ref: Part III, Section 4433
+      - id: cap5l1q10
+        type: calc
+        concept: cap5-dcc-matching
+        prompt: "Use the opening figures, before the holdback adjustment: structure $6,000,000 over 40 years, roof $900,000 over 20 years and mechanical $2,100,000 over 15 years, straight-line, no residual value. Restricted contributions of $5,400,000 funded the building pro rata across all components, and the rest came from a mortgage and the society's own money. Enter the amortization of deferred capital contributions for year 3."
+        answer: 201000
+        unit: $
+        explain: Amortization is $150,000 + $45,000 + $140,000 = $335,000. Contributions funded $5,400,000 ÷ $9,000,000 = 60% of the building, so 60% × $335,000 = $201,000 of deferred capital contributions is recognized. The mortgage-funded and internally funded share has nothing to match.
+        ref: Part III, Section 4410
+      - id: cap5l1q11
+        type: mc
+        concept: cap5-dcc-matching
+        prompt: The society's auditor asks why it did not amortize the deferred capital contributions straight-line over 40 years, the structure's life. What is the best answer?
+        options:
+          - Deferred capital contributions must always be amortized over 20 years
+          - Revenue must match the amortization of the funded asset, and the funded asset includes shorter-lived components
+          - The society chose a faster pattern to show a surplus in the first years
+          - A 40-year pattern is only allowed under the restricted fund method
+        answer: 1
+        explain: The deferral is recognized on the same basis as the amortization of the asset it funded. Because the roof and mechanical systems are amortized faster, matching component by component recognizes more revenue in early years than a single 40-year pattern would.
+        ref: Part III, Section 4410
+
+  - id: cap5l2
+    title: Land, buildings and mortgages
+    intro: A Camrose seniors' housing society buys a property with a capital grant, a mortgage and its own reserves. Land and building money behave differently, and so do contributions to repay debt.
+    questions:
+      - id: cap5l2q01
+        type: calc
+        concept: cap5-land-building
+        prompt: The society pays $4,000,000 for a lodge. Appraised values are land $1,000,000 and building $4,000,000. Enter the cost allocated to the building.
+        answer: 3200000
+        unit: $
+        explain: The building is $4,000,000 ÷ $5,000,000 = 80% of total fair value, so 80% × $4,000,000 = $3,200,000. Land gets $800,000. The split matters because land is not amortized and its funding is treated differently.
+        ref: Part III, Section 4433
+      - id: cap5l2q02
+        type: je
+        concept: cap5-naica-composition
+        prompt: The society pays $1,600,000 cash and takes a $2,400,000 mortgage for the lodge (land $800,000, building $3,200,000). Record the purchase.
+        accounts:
+          - Land
+          - Building
+          - Cash
+          - Mortgage payable
+          - Deferred capital contributions
+          - Net assets invested in capital assets
+          - Construction in progress
+        lines:
+          - account: Land
+            side: dr
+            amount: 800000
+          - account: Building
+            side: dr
+            amount: 3200000
+          - account: Cash
+            side: cr
+            amount: 1600000
+          - account: Mortgage payable
+            side: cr
+            amount: 2400000
+        explain: The cost is split between land and building using relative fair values. How the purchase is financed does not change the cost of the assets.
+        ref: Part III, Section 4433
+      - id: cap5l2q03
+        type: je
+        concept: cap5-land-building
+        prompt: A provincial capital grant of $1,200,000 paid part of the cash. The agreement assigns $240,000 to the land and $960,000 to the building. Record the grant under the deferral method.
+        accounts:
+          - Cash
+          - Deferred capital contributions
+          - Net assets invested in capital assets
+          - Contribution revenue
+          - Deferred contributions
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 1200000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 960000
+          - account: Net assets invested in capital assets
+            side: cr
+            amount: 240000
+        explain: The building portion is deferred and recognized as the building is amortized. The land will never be amortized, so its portion is a direct increase in net assets, shown in the statement of changes in net assets rather than as revenue.
+        ref: Part III, Section 4410
+      - id: cap5l2q04
+        type: mc
+        concept: cap5-land-building
+        prompt: Why is the land portion of the grant a direct increase in net assets rather than a deferred capital contribution?
+        options:
+          - Land grants are always unrestricted
+          - Land is not amortized, so there is no amortization to match the deferral against
+          - The province requires it in the grant agreement
+          - Direct increases are optional, and the society chose them to boost revenue
+        answer: 1
+        explain: Deferral works by matching revenue to amortization. With no amortization, a deferral would sit forever, so the deferral method sends restricted contributions for non-amortized assets straight to net assets.
+        ref: Part III, Section 4410
+      - id: cap5l2q05
+        type: calc
+        concept: cap5-naica-composition
+        prompt: Right after the purchase and grant, enter the society's net assets invested in capital assets, calculated as capital assets less unamortized deferred capital contributions less the mortgage.
+        answer: 640000
+        unit: $
+        explain: $4,000,000 − $960,000 − $2,400,000 = $640,000. That is the $400,000 the society paid from its own reserves plus the $240,000 land grant that went directly to net assets.
+        ref: Part III, Section 4400
+      - id: cap5l2q06
+        type: mc
+        concept: cap5-debt-repayment
+        prompt: A donor gives the society a one-time lump sum of $100,000 restricted to paying down the mortgage. The mortgage financed the building only. How is the gift treated under the deferral method?
+        options:
+          - Deferred and recognized as the building is amortized
+          - Recognized directly in net assets invested in capital assets
+          - Recognized as revenue in the current period
+          - Recorded as a liability until the mortgage is fully repaid
+        answer: 0
+        explain: A contribution restricted to repaying debt is treated as restricted for the same purpose as the debt. The mortgage paid for an amortizable building, so a lump-sum gift to repay it is deferred and recognized over the building's remaining useful life, just like a contribution to buy the building. Contributions that fund regular mortgage payments as they fall due may be recognized when received, because that can approximate the amortization pattern.
+        ref: Part III, Section 4410
+      - id: cap5l2q07
+        type: classify
+        concept: cap5-debt-repayment
+        prompt: Each contribution is restricted to repaying a loan. Classify it by what the loan financed, under the deferral method.
+        buckets:
+          - Revenue this period
+          - Deferred
+          - Direct increase in net assets
+        items:
+          - text: Loan that bought the land under a community garden
+            bucket: 2
+          - text: Loan that paid for next year's summer camp program
+            bucket: 1
+          - text: Loan that bought a 15-year boiler
+            bucket: 1
+          - text: Loan that covered last winter's operating deficit
+            bucket: 0
+          - text: Loan that bought a vacant lot to be held for a future building
+            bucket: 2
+        explain: The gift follows the purpose of the debt. Debt for future expenses gives a deferral matched to those expenses, and debt for an amortizable asset such as the boiler gives a deferral recognized as the asset is amortized. Debt for assets that are never amortized gives a direct increase in net assets. Debt for other purposes, such as a past deficit, is revenue now.
+        ref: Part III, Section 4410
+      - id: cap5l2q08
+        type: je
+        concept: cap5-transfers
+        prompt: The society makes its first mortgage payment of $150,000 from unrestricted cash, of which $90,000 is interest. It also records the matching reallocation between net asset classes in the same entry. Record it.
+        accounts:
+          - Mortgage payable
+          - Interest expense
+          - Cash
+          - Unrestricted net assets
+          - Net assets invested in capital assets
+          - Deferred capital contributions
+          - Amortization expense
+        lines:
+          - account: Mortgage payable
+            side: dr
+            amount: 60000
+          - account: Interest expense
+            side: dr
+            amount: 90000
+          - account: Cash
+            side: cr
+            amount: 150000
+          - account: Unrestricted net assets
+            side: dr
+            amount: 60000
+          - account: Net assets invested in capital assets
+            side: cr
+            amount: 60000
+        explain: Interest is an expense. Principal reduces the liability, and because it was paid with unrestricted money, $60,000 moves from unrestricted net assets to net assets invested in capital assets. Many NPOs record that reallocation only at year end, but it is always shown in the statement of changes in net assets.
+        ref: Part III, Section 4400
+      - id: cap5l2q09
+        type: calc
+        concept: cap5-naica-continuity
+        prompt: "Year 1 facts: opening net assets invested in capital assets $640,000, building $3,200,000 amortized straight-line over 40 years, deferred capital contribution $960,000 matched to it, and $60,000 of mortgage principal repaid from unrestricted cash. Enter net assets invested in capital assets at the end of year 1."
+        answer: 644000
+        unit: $
+        explain: Amortization is $80,000 and amortization of deferred capital contributions is $24,000. $640,000 − $80,000 + $24,000 + $60,000 = $644,000. Check it from the balances, $3,920,000 − $936,000 − $2,340,000 = $644,000.
+        ref: Part III, Section 4400
+      - id: cap5l2q10
+        type: tf
+        concept: cap5-transfers
+        prompt: The $60,000 of mortgage principal the society repays from unrestricted cash is reported as an expense, because it uses up operating money.
+        answer: false
+        reasons:
+          - Principal repayment settles a liability, and the shift of funding is a transfer between net asset classes
+          - Principal is an expense only in the first year of a mortgage
+          - It is an expense under the deferral method but not under the restricted fund method
+        reason: 0
+        explain: The building's cost is expensed through amortization. Treating principal as an expense would count it twice. The change in funding source shows only in the statement of changes in net assets.
+        ref: Part III, Section 4400
+      - id: cap5l2q11
+        type: calc
+        concept: cap5-land-building
+        prompt: A donor gives a Medicine Hat food bank a warehouse on its own lot. Fair values are land $350,000 and building $1,050,000, and the building has a 35-year life. The food bank uses the deferral method. Enter the total increase in net assets from the gift by the end of year 1, after year 1 amortization.
+        answer: 350000
+        unit: $
+        explain: The land portion is a direct increase in net assets of $350,000. The building portion is deferred, and in year 1 its $30,000 amortization is exactly offset by $30,000 of deferred capital contribution revenue, so it adds nothing to net assets.
+        ref: Part III, Section 4410
+
+  - id: cap5l3
+    title: Net assets invested in capital assets, year by year
+    intro: A St. Albert recreation society needs a full continuity of net assets invested in capital assets for its year-end statements. Build it line by line, then prove it from the closing balances.
+    questions:
+      - id: cap5l3q01
+        type: mc
+        concept: cap5-naica-composition
+        prompt: Which calculation most commonly produces the balance of net assets invested in capital assets?
+        options:
+          - Cost of capital assets less accumulated amortization
+          - Net carrying amount of capital assets less unamortized deferred capital contributions and the debt that financed them
+          - Total net assets less unrestricted net assets
+          - Deferred capital contributions plus the mortgage balance
+        answer: 1
+        explain: The class shows how much of the capital base the NPO has funded itself. Assets funded by contributions still to be amortized, or by debt still owed, are taken out. Internally restricted and endowment balances are separate classes, so total less unrestricted is not the same thing.
+        ref: Part III, Section 4400
+      - id: cap5l3q02
+        type: calc
+        concept: cap5-naica-composition
+        prompt: At the start of the year the society has capital assets with a net carrying amount of $5,200,000 (including land of $600,000), unamortized deferred capital contributions of $2,300,000 and a mortgage of $1,500,000 that financed the arena. Enter opening net assets invested in capital assets.
+        answer: 1400000
+        unit: $
+        explain: $5,200,000 − $2,300,000 − $1,500,000 = $1,400,000. Land stays in the capital asset total even though it is not amortized.
+        ref: Part III, Section 4400
+      - id: cap5l3q03
+        type: classify
+        concept: cap5-naica-continuity
+        prompt: Classify each event by its effect on net assets invested in capital assets.
+        buckets:
+          - Increases
+          - Decreases
+          - No effect
+        items:
+          - text: Amortization of capital assets
+            bucket: 1
+          - text: Amortization of deferred capital contributions
+            bucket: 0
+          - text: Equipment bought with a new capital grant
+            bucket: 2
+          - text: Equipment bought with unrestricted cash
+            bucket: 0
+          - text: Mortgage principal repaid from unrestricted cash
+            bucket: 0
+          - text: A zamboni bought entirely with a new bank loan
+            bucket: 2
+          - text: Write-down of an internally funded asset
+            bucket: 1
+        explain: Asset amortization and write-downs shrink the self-funded base, and deferred contribution amortization offsets the share that donors funded. Grant-funded or debt-funded purchases add the same amount to assets and to deferrals or debt. Internal funding and principal repayment shift amounts in from unrestricted net assets.
+        ref: Part III, Section 4400
+      - id: cap5l3q04
+        type: calc
+        concept: cap5-naica-continuity
+        prompt: "During the year: amortization of capital assets $260,000, purchases of equipment $180,000, and the sale of a vehicle with a net carrying amount of $25,000. Opening net carrying amount was $5,200,000. Enter the closing net carrying amount of capital assets."
+        answer: 5095000
+        unit: $
+        explain: $5,200,000 − $260,000 + $180,000 − $25,000 = $5,095,000.
+        ref: Part III, Section 4433
+      - id: cap5l3q05
+        type: calc
+        concept: cap5-dcc-disclosure
+        prompt: "Opening deferred capital contributions were $2,300,000. During the year: $120,000 of the equipment was funded by a new capital grant, regular amortization of deferred capital contributions was $115,000, and $10,000 of unamortized contribution related to the sold vehicle was recognized because its restrictions were met. Enter the closing balance for the deferred capital contributions note."
+        answer: 2295000
+        unit: $
+        explain: $2,300,000 + $120,000 − $115,000 − $10,000 = $2,295,000. This is the continuity the society discloses for its deferred contributions. Contributions received, amounts recognized as revenue and disposal adjustments each appear as a line.
+        ref: Part III, Section 4410
+      - id: cap5l3q06
+        type: calc
+        concept: cap5-naica-continuity
+        prompt: "Pull it together. Opening net assets invested in capital assets $1,400,000. Amortization $260,000, amortization of deferred capital contributions $115,000, equipment of $180,000 funded $120,000 by grant and $60,000 from unrestricted cash, mortgage principal of $90,000 repaid from unrestricted cash, and the vehicle sold (carrying amount $25,000, related deferred contribution $10,000). Enter closing net assets invested in capital assets."
+        answer: 1390000
+        unit: $
+        explain: $1,400,000 − $260,000 + $115,000 + $60,000 + $90,000 − ($25,000 − $10,000) = $1,390,000. Proof from balances, $5,095,000 − $2,295,000 − $1,410,000 = $1,390,000.
+        ref: Part III, Section 4400
+      - id: cap5l3q07
+        type: je
+        concept: cap5-dcc-disposal
+        prompt: The society sells the vehicle (cost $70,000, accumulated amortization $45,000) for $32,000 cash, which is unrestricted. The $10,000 of related unamortized deferred capital contribution is recognized because the grant's restrictions have been met. Record the sale in one entry.
+        accounts:
+          - Cash
+          - Accumulated amortization
+          - Deferred capital contributions
+          - Vehicles
+          - Gain on disposal of capital assets
+          - Amortization of deferred capital contributions
+          - Loss on disposal of capital assets
+          - Net assets invested in capital assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 32000
+          - account: Accumulated amortization
+            side: dr
+            amount: 45000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 10000
+          - account: Vehicles
+            side: cr
+            amount: 70000
+          - account: Gain on disposal of capital assets
+            side: cr
+            amount: 7000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 10000
+        explain: The gain is $32,000 − $25,000 = $7,000. The remaining deferral has nothing left to match, so it is recognized in the period of disposal. Note that the gain and the deferral are separate lines, not netted.
+        ref: Part III, Section 4433
+      - id: cap5l3q08
+        type: calc
+        concept: cap5-naica-continuity
+        prompt: Using the same year (amortization $260,000, regular amortization of deferred capital contributions $115,000, vehicle gain $7,000 and $10,000 of deferral recognized on the sale), enter the net reduction in excess of revenues over expenses from these capital items, as a positive number.
+        answer: 128000
+        unit: $
+        explain: −$260,000 + $115,000 + $7,000 + $10,000 = −$128,000. The internally funded purchase and the principal repayment do not touch operations at all.
+        ref: Part III, Section 4400
+      - id: cap5l3q09
+        type: tf
+        concept: cap5-transfers
+        prompt: The board approves using $60,000 of unrestricted cash to fund part of the equipment purchase. The $60,000 is shown as an expense in the statement of operations, with a note explaining the board's decision.
+        answer: false
+        explain: Buying a capital asset is not an expense. The $60,000 is a transfer from unrestricted net assets to net assets invested in capital assets, shown in the statement of changes in net assets. The equipment reaches operations later through amortization.
+        ref: Part III, Section 4400
+      - id: cap5l3q10
+        type: calc
+        concept: cap5-naica-continuity
+        prompt: Suppose the $60,000 internally funded share of the equipment had instead been financed by a new bank term loan. All other facts are unchanged. Enter closing net assets invested in capital assets.
+        answer: 1330000
+        unit: $
+        explain: A debt-funded purchase adds equally to assets and debt, so it does not increase the class. Closing is $1,390,000 − $60,000 = $1,330,000. The unrestricted class is $60,000 higher instead.
+        ref: Part III, Section 4400
+      - id: cap5l3q11
+        type: mc
+        concept: cap5-dcc-disclosure
+        prompt: A board member says the deferred capital contributions note is optional because the balance already appears on the statement of financial position. What is the best response?
+        options:
+          - Correct, a single balance is enough
+          - Only NPOs using the restricted fund method disclose changes in deferrals
+          - The changes in deferred contribution balances for the period must be disclosed
+          - The note is needed only if a deferral was recognized on a disposal
+        answer: 2
+        explain: Deferral method users disclose the changes in their deferred contribution balances. Users need to see contributions received, amounts recognized as revenue and other movements to understand how much funding is still committed to capital assets.
+        ref: Part III, Section 4410
+
+  - id: cap5l4
+    title: One project, two methods
+    intro: A Lethbridge minor hockey association raises $800,000 in year 1 and spends it at the start of year 2 on a rink expansion with a 20-year life. Run the project under the deferral method and under the restricted fund method with a capital fund.
+    questions:
+      - id: cap5l4q01
+        type: je
+        concept: cap5-method-comparison
+        prompt: Deferral method. Record the $800,000 of campaign cash received in year 1, all restricted to the rink expansion.
+        accounts:
+          - Cash
+          - Deferred capital contributions
+          - Contribution revenue
+          - Contribution revenue - capital fund
+          - Net assets invested in capital assets
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 800000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 800000
+        explain: Under the deferral method the money is deferred and will be recognized as the expansion is amortized.
+        ref: Part III, Section 4410
+      - id: cap5l4q02
+        type: je
+        concept: cap5-rfm-capital-fund
+        prompt: Restricted fund method with a capital fund. Record the same $800,000 received in year 1.
+        accounts:
+          - Cash - capital fund
+          - Contribution revenue - capital fund
+          - Deferred capital contributions
+          - Cash - general fund
+          - Contribution revenue - general fund
+          - Interfund transfer in - capital fund
+        lines:
+          - account: Cash - capital fund
+            side: dr
+            amount: 800000
+          - account: Contribution revenue - capital fund
+            side: cr
+            amount: 800000
+        explain: When a matching restricted fund exists, the contribution is revenue of that fund in the period received or receivable. No deferral is set up.
+        ref: Part III, Section 4410
+      - id: cap5l4q03
+        type: calc
+        concept: cap5-method-comparison
+        prompt: Ignoring all other activity, enter the difference in year 1 total excess of revenues over expenses (all funds combined) between the restricted fund method and the deferral method.
+        answer: 800000
+        unit: $
+        explain: The restricted fund method shows $800,000 of capital fund revenue in year 1. The deferral method shows nothing until amortization starts. Readers comparing two associations must check which method each uses.
+        ref: Part III, Section 4410
+      - id: cap5l4q04
+        type: calc
+        concept: cap5-dcc-matching
+        prompt: Deferral method, year 2. The $800,000 expansion is amortized straight-line over 20 years with no residual. Enter the campaign revenue recognized in year 2.
+        answer: 40000
+        unit: $
+        explain: $800,000 ÷ 20 = $40,000 of amortization, matched by $40,000 of amortization of deferred capital contributions. The net effect on year 2 results is nil.
+        ref: Part III, Section 4410
+      - id: cap5l4q05
+        type: je
+        concept: cap5-rfm-capital-fund
+        prompt: Restricted fund method, year 2. The expansion is carried in the capital fund. Record the year's amortization.
+        accounts:
+          - Amortization expense - capital fund
+          - Accumulated amortization
+          - Amortization expense - general fund
+          - Amortization of deferred capital contributions
+          - Deferred capital contributions
+          - Contribution revenue - capital fund
+        lines:
+          - account: Amortization expense - capital fund
+            side: dr
+            amount: 40000
+          - account: Accumulated amortization
+            side: cr
+            amount: 40000
+        explain: The asset and its amortization are commonly reported in the capital fund. There is no deferred capital contribution to amortize, because the contribution was already revenue in year 1. The capital fund shows a $40,000 deficiency in year 2.
+        ref: Part III, Section 4410
+      - id: cap5l4q06
+        type: calc
+        concept: cap5-rfm-capital-fund
+        prompt: Restricted fund method. Enter the capital fund balance at the end of year 2.
+        answer: 760000
+        unit: $
+        explain: $800,000 of year 1 revenue less $40,000 of year 2 amortization = $760,000, equal to the expansion's net carrying amount.
+        ref: Part III, Section 4410
+      - id: cap5l4q07
+        type: calc
+        concept: cap5-method-comparison
+        prompt: Deferral method. Enter net assets invested in capital assets for the expansion at the end of year 2.
+        answer: 0
+        unit: $
+        explain: The asset's carrying amount is $760,000 and its unamortized deferred capital contribution is also $760,000, so the class holds nothing for a fully donor-funded asset. Under the restricted fund method, the same $760,000 sits in the capital fund balance instead.
+        ref: Part III, Section 4400
+      - id: cap5l4q08
+        type: mc
+        concept: cap5-method-comparison
+        prompt: Compare the two methods over the full 20-year life, assuming no other activity. Which statement is true?
+        options:
+          - The restricted fund method recognizes more total revenue over the life
+          - Total revenue over the life is the same, and only its timing differs
+          - The deferral method recognizes revenue only when the asset is sold
+          - Total net assets at the end of the asset's life are higher under the deferral method
+        answer: 1
+        explain: Both methods recognize $800,000 in total. The deferral method spreads it at $40,000 a year, and the restricted fund method takes it all in year 1. Because amortization runs from year 2 to year 21, both show the same total net assets once the expansion is fully amortized at the end of year 21.
+        ref: Part III, Section 4410
+      - id: cap5l4q09
+        type: tf
+        concept: cap5-rfm-no-fund
+        prompt: An association that uses the restricted fund method but has no capital fund records a capital campaign as general fund revenue when it is received.
+        answer: false
+        reasons:
+          - With no matching restricted fund, the general fund applies the deferral method to that contribution
+          - It must open a capital fund immediately, without any accounting consequence
+          - Capital campaigns cannot be accepted by NPOs that use the restricted fund method
+        reason: 0
+        explain: Restricted contributions with no matching fund go through the general fund using the deferral method, so the capital money becomes deferred capital contributions and is recognized as the rink expansion is amortized.
+        ref: Part III, Section 4410
+      - id: cap5l4q10
+        type: classify
+        concept: cap5-rfm-no-fund
+        prompt: The association uses the restricted fund method with a general fund, a capital fund and an endowment fund, but no program fund. Classify each year 1 receipt.
+        buckets:
+          - Capital fund revenue
+          - General fund revenue now
+          - General fund deferred contribution
+          - Endowment fund revenue
+        items:
+          - text: Campaign gifts restricted to the rink expansion
+            bucket: 0
+          - text: Unrestricted donations from a bottle drive
+            bucket: 1
+          - text: A grant restricted to next season's goalie clinic
+            bucket: 2
+          - text: A gift the donor requires to be held permanently, with income for bursaries
+            bucket: 3
+          - text: Registration fees for this season
+            bucket: 1
+        explain: Restricted contributions with a matching fund are revenue of that fund. The goalie clinic has no fund, so its grant is deferred in the general fund. Unrestricted donations and this season's fees are general fund revenue.
+        ref: Part III, Section 4410
+      - id: cap5l4q11
+        type: je
+        concept: cap5-transfers
+        prompt: Restricted fund method. The expansion runs over budget and the board moves $150,000 of unrestricted money from the general fund to the capital fund to finish it. Record both sides of the interfund transfer.
+        accounts:
+          - Interfund transfer out - general fund
+          - Cash - general fund
+          - Cash - capital fund
+          - Interfund transfer in - capital fund
+          - Contribution revenue - capital fund
+          - Amortization expense - capital fund
+        lines:
+          - account: Interfund transfer out - general fund
+            side: dr
+            amount: 150000
+          - account: Cash - general fund
+            side: cr
+            amount: 150000
+          - account: Cash - capital fund
+            side: dr
+            amount: 150000
+          - account: Interfund transfer in - capital fund
+            side: cr
+            amount: 150000
+        explain: An interfund transfer moves resources between funds. It is shown in the statement of changes in fund balances, not as revenue of the capital fund or an expense of the general fund.
+        ref: Part III, Section 4400
+
+  - id: cap5l5
+    title: Write-downs, disposals and changed plans
+    intro: The capstone. Grant-funded assets are lost, campaigns raise too much, and boards change their minds. Decide who has the power to act, then compute and record the result.
+    questions:
+      - id: cap5l5q01
+        type: je
+        concept: cap5-dcc-writedown
+        prompt: A flood destroys a Calgary daycare society's playground (cost $240,000, accumulated amortization $96,000). The unamortized deferred capital contribution for it is $108,000 and all restrictions have been met. There is no insurance. Record the write-off in one entry.
+        accounts:
+          - Loss on write-down of capital assets
+          - Accumulated amortization
+          - Playground equipment
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Due to grantor
+          - Insurance proceeds receivable
+        lines:
+          - account: Loss on write-down of capital assets
+            side: dr
+            amount: 144000
+          - account: Accumulated amortization
+            side: dr
+            amount: 96000
+          - account: Playground equipment
+            side: cr
+            amount: 240000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 108000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 108000
+        explain: The $144,000 carrying amount is written off as an expense. With the asset gone and the restrictions met, the $108,000 deferral is recognized as revenue at the same time, so the net hit to operations is $36,000.
+        ref: Part III, Section 4433
+      - id: cap5l5q02
+        type: calc
+        concept: cap5-dcc-writedown
+        prompt: Same flood, but now the society's insurer agrees to pay $100,000 of unrestricted insurance proceeds for the playground. Enter the net increase in excess of revenues over expenses from the flood items (loss on the playground, insurance recovery and the deferral recognized).
+        answer: 64000
+        unit: $
+        explain: −$144,000 + $100,000 + $108,000 = +$64,000. Because the grant-funded share of the asset's carrying amount is recognized as revenue, the insurance money produces a net surplus. Net assets invested in capital assets falls by $36,000 while unrestricted net assets rise by $100,000.
+        ref: Part III, Section 4433
+      - id: cap5l5q03
+        type: je
+        concept: cap5-dcc-writedown
+        prompt: Different facts. The grant agreement requires the society to repay the unamortized grant if the playground stops being used within 10 years, and the funder confirms it will collect the $108,000. Record the write-off and the repayment obligation in one entry (no insurance).
+        accounts:
+          - Loss on write-down of capital assets
+          - Accumulated amortization
+          - Playground equipment
+          - Deferred capital contributions
+          - Due to grantor
+          - Amortization of deferred capital contributions
+          - Contribution revenue
+        lines:
+          - account: Loss on write-down of capital assets
+            side: dr
+            amount: 144000
+          - account: Accumulated amortization
+            side: dr
+            amount: 96000
+          - account: Playground equipment
+            side: cr
+            amount: 240000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 108000
+          - account: Due to grantor
+            side: cr
+            amount: 108000
+        explain: The deferral can only become revenue if the restrictions have been complied with. Here the terms were not met, and the society owes the money back, so the deferral becomes a liability. The full $144,000 loss hits operations.
+        ref: Part III, Section 4433
+      - id: cap5l5q04
+        type: tf
+        concept: cap5-rfm-capital-fund
+        prompt: An NPO using the restricted fund method carries a grant-funded van in its capital fund. When the van is written off, it recognizes the van's unamortized deferred capital contribution as revenue.
+        answer: false
+        reasons:
+          - The grant was capital fund revenue when received, so no deferral exists for the van
+          - Deferred capital contributions are recognized only when the van is sold, not written off
+          - Write-downs are not allowed under the restricted fund method
+        reason: 0
+        explain: Under the restricted fund method with a capital fund, the grant was recognized in full when received. The write-off is simply an expense of the capital fund, which reduces its balance.
+        ref: Part III, Section 4410
+      - id: cap5l5q05
+        type: mc
+        concept: cap5-repurpose-external
+        prompt: A Red Deer museum's capital campaign for a new gallery raised $300,000 more than the project cost. The board wants to use the surplus to cover an operating deficit. What must happen first?
+        options:
+          - A board resolution, recorded in the minutes
+          - Nothing, because the project is finished and the restriction has lapsed
+          - The consent of the contributors, or a release under the terms they agreed to
+          - Approval by the museum's auditor
+        answer: 2
+        explain: The restriction was imposed by the donors, so only they can change it. Finishing the project does not release surplus money. Without consent, the museum must hold it for the restricted purpose or return it if the gift terms say so.
+        ref: Part III, Section 4410
+      - id: cap5l5q06
+        type: je
+        concept: cap5-repurpose-external
+        prompt: The museum holds the $300,000 surplus in deferred capital contributions (unspent). Donors of $180,000 agree in writing that their gifts may fund next year's education programs. Donors of $120,000 remove all restrictions. Record the change under the deferral method.
+        accounts:
+          - Deferred capital contributions
+          - Deferred contributions
+          - Contribution revenue
+          - Unrestricted net assets
+          - Internally restricted net assets
+          - Net assets invested in capital assets
+        lines:
+          - account: Deferred capital contributions
+            side: dr
+            amount: 300000
+          - account: Deferred contributions
+            side: cr
+            amount: 180000
+          - account: Contribution revenue
+            side: cr
+            amount: 120000
+        explain: Money redirected to next year's programs is still externally restricted, so it moves to deferred operating contributions and will be recognized when those programs run. Money released from all restrictions is unrestricted and is recognized as revenue now.
+        ref: Part III, Section 4410
+      - id: cap5l5q07
+        type: je
+        concept: cap5-repurpose-internal
+        prompt: The museum's board had earlier set aside $250,000 of unrestricted net assets as a building replacement reserve. It now cancels the reserve to fund operations. Record the change.
+        accounts:
+          - Internally restricted net assets
+          - Unrestricted net assets
+          - Contribution revenue
+          - Deferred capital contributions
+          - Cash
+          - Net assets invested in capital assets
+        lines:
+          - account: Internally restricted net assets
+            side: dr
+            amount: 250000
+          - account: Unrestricted net assets
+            side: cr
+            amount: 250000
+        explain: An internal restriction is the board's own designation, so the board can reverse it. It is a transfer between net asset classes in the statement of changes in net assets and never creates revenue.
+        ref: Part III, Section 4400
+      - id: cap5l5q08
+        type: classify
+        concept: cap5-repurpose-external
+        prompt: A Banff arts foundation wants to redirect each of these amounts. Classify who must agree.
+        buckets:
+          - The board can redirect it
+          - The contributor must consent
+        items:
+          - text: A board-designated roof replacement reserve
+            bucket: 0
+          - text: Unspent money from a provincial capital grant for a studio
+            bucket: 1
+          - text: A bequest the will restricts to the building fund
+            bucket: 1
+          - text: Investment income on unrestricted reserves that the board earmarked for equipment
+            bucket: 0
+          - text: Campaign gifts solicited with written materials promising use for the new studio
+            bucket: 1
+        explain: Internal designations belong to the board. External restrictions come from grantors, testators and donors, including restrictions created by the terms of the solicitation, and only they can release them.
+        ref: Part III, Section 4410
+      - id: cap5l5q09
+        type: calc
+        concept: cap5-naica-continuity
+        prompt: "Capstone continuity for an Edmonton community health centre. Opening net assets invested in capital assets $2,000,000. Amortization $300,000. Amortization of deferred capital contributions $140,000. Partial write-down of an internally funded asset $50,000. Full write-off of a grant-funded asset with carrying amount $80,000 and unamortized deferral $80,000, restrictions met. Purchases of $400,000, of which $250,000 came from a capital grant and $150,000 from unrestricted cash. Mortgage principal repaid from unrestricted cash $70,000. A restricted contribution of $200,000 used to buy land. Enter closing net assets invested in capital assets."
+        answer: 2210000
+        unit: $
+        explain: $2,000,000 − $300,000 + $140,000 − $50,000 − ($80,000 − $80,000) + $150,000 + $70,000 + $200,000 = $2,210,000. The fully grant-funded write-off nets to zero, and the grant-funded purchases have no effect. The land contribution goes directly into the class.
+        ref: Part III, Section 4400
+      - id: cap5l5q10
+        type: calc
+        concept: cap5-dcc-disposal
+        prompt: A Fort McMurray Friendship Centre sells a bus (cost $180,000, accumulated amortization $120,000) for $45,000. The bus was 50% funded by a capital grant whose restrictions have been met, and the related unamortized deferral is $30,000. Enter the net increase in excess of revenues over expenses from the sale.
+        answer: 15000
+        unit: $
+        explain: The carrying amount is $60,000, so the sale gives a $15,000 loss. The $30,000 deferral is recognized as revenue, so the net effect is −$15,000 + $30,000 = +$15,000.
+        ref: Part III, Section 4433
+      - id: cap5l5q11
+        type: mc
+        concept: cap5-dcc-writedown
+        prompt: An auditor reviews the health centre's $80,000 write-off of a grant-funded asset and the $80,000 of deferral recognized as revenue. Which condition must the auditor confirm before accepting the revenue?
+        options:
+          - That the grant was received in cash rather than as a pledge
+          - That the asset was componentized
+          - That all restrictions attached to the grant have been complied with
+          - That the board approved the write-off at a meeting
+        answer: 2
+        explain: The unamortized deferral is recognized on a write-down or disposal only when the restrictions have been met. If the grant terms require repayment or reinvestment, the balance is a liability or stays deferred.
+        ref: Part III, Section 4433

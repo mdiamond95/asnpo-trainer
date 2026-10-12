@@ -1,0 +1,822 @@
+id: b4
+course: basics
+number: 4
+title: Expenses, allocations and related parties
+summary: When Section 4470 applies and what an NPO discloses about allocated fundraising and general support expenses, how allocations are calculated, who is a related party of an NPO, what Section 4460 requires to be disclosed, and how Part II Section 3840 decides between exchange amount and carrying amount, with full numerical cases.
+refs:
+  - Part III, Section 4470
+  - Part III, Section 4460
+  - Part II, Section 3840
+status: ready
+
+concepts:
+  - id: b4-4470-scope
+    title: When Section 4470 applies
+    summary: Section 4470 applies when an NPO classifies its expenses by function and allocates expenses to the functions they relate to. It does not require anyone to allocate; it only sets the disclosures for those who do.
+    ref: Part III, Section 4470
+  - id: b4-functions
+    title: Fundraising and general support
+    summary: Fundraising costs are incurred to solicit contributions. General support costs are governance and administration costs that are not directly tied to one program, such as finance, the audit and the board.
+    ref: Part III, Section 4470
+  - id: b4-direct-vs-allocated
+    title: Direct charges are not allocations
+    summary: Costs that clearly belong to one function are charged to it directly. Section 4470 concerns costs spread across several functions, which involves judgement, and it asks for specific amounts allocated out of fundraising and general support.
+    ref: Part III, Section 4470
+  - id: b4-policy-disclosure
+    title: Disclosing the allocation policy
+    summary: An NPO that allocates discloses its policies for allocating expenses among functions, the nature of the expenses being allocated and the basis used for the allocations.
+    ref: Part III, Section 4470
+  - id: b4-amount-disclosure
+    title: Disclosing allocated amounts
+    summary: The NPO discloses the amounts allocated out of its fundraising function and out of its general support function, and the amounts and functions they were allocated to. Readers can then undo the allocation.
+    ref: Part III, Section 4470
+  - id: b4-allocation-bases
+    title: Choosing allocation bases
+    summary: ASNPO does not prescribe bases. In practice NPOs use drivers such as time records, full-time equivalents, floor area or direct costs, choosing the one that best reflects how each cost is consumed.
+    ref: Part III, Section 4470
+  - id: b4-allocation-calc
+    title: Calculating allocations
+    summary: Each cost pool is spread in proportion to its driver. The share of a function is the pool times that function's driver divided by the total driver.
+    ref: Part III, Section 4470
+  - id: b4-rp-relationships
+    title: Control, significant influence and economic interest
+    summary: Parties are related when one can control, jointly control or significantly influence the other, or when both are under common control or significant influence. Separately, Section 4450 treats an NPO's economic interest in another NPO as a relationship it must disclose.
+    ref: Part III, Section 4460
+  - id: b4-rp-management
+    title: Management and immediate family
+    summary: Management, meaning those with authority and responsibility for planning, directing and controlling the NPO, includes directors and officers. They and their immediate family are related parties, as are entities they control.
+    ref: Part II, Section 3840
+  - id: b4-rp-not-related
+    title: Not necessarily related
+    summary: Some relationships do not by themselves create related parties, such as two organizations with a single director in common, or a lender, government funder or major supplier dealing with the NPO in the ordinary way. The test is control, joint control or significant influence, or a management or family link.
+    ref: Part II, Section 3840
+  - id: b4-rp-scope
+    title: What 3840 measurement does not cover
+    summary: Management compensation arrangements, expense allowances and similar payments to individuals in the normal course are outside Section 3840. Financial instruments with related parties are measured under Section 3856, not Section 3840.
+    ref: Part II, Section 3840
+  - id: b4-rp-disclosures
+    title: Related party disclosures
+    summary: The NPO discloses the relationship, a description of the transactions including those at no or nominal amount, the recorded amounts by financial statement category, the measurement basis, balances outstanding with their terms, and contractual obligations and contingencies with related parties.
+    ref: Part III, Section 4460
+  - id: b4-normal-course
+    title: Transactions in the normal course
+    summary: A related party transaction in the normal course of operations is measured at the exchange amount, the amount agreed by the parties, when it is monetary or non-monetary with commercial substance.
+    ref: Part II, Section 3840
+  - id: b4-not-normal-course
+    title: Transactions outside the normal course
+    summary: A transaction outside the normal course is measured at the exchange amount only if the change in ownership interest (or the benefit of a service) is substantive and the exchange amount is supported by independent evidence. Otherwise it is measured at carrying amount.
+    ref: Part II, Section 3840
+  - id: b4-commercial-substance
+    title: Commercial substance
+    summary: A non-monetary related party transaction without commercial substance is measured at carrying amount. A transaction has commercial substance when the NPO's future cash flows are expected to change significantly as a result.
+    ref: Part II, Section 3840
+  - id: b4-carrying-difference
+    title: Where the difference goes
+    summary: When a transaction is measured at carrying amount, any difference between the consideration and the carrying amount is recorded directly in net assets, not as a gain or loss. When the exchange amount is used, a gain or loss goes to the statement of operations.
+    ref: Part II, Section 3840
+
+lessons:
+  - id: b4l1
+    title: Section 4470 scope and disclosures
+    intro: Allocations change how efficient an NPO looks. This lesson covers when Section 4470 applies, what counts as fundraising and general support, and what must be disclosed.
+    questions:
+      - id: b4l1q01
+        type: tf
+        concept: b4-4470-scope
+        prompt: A Camrose food bank presents expenses by object (salaries, rent, supplies) and makes no allocations. It must still give the Section 4470 disclosures.
+        answer: false
+        reasons:
+          - Section 4470 applies only when expenses are classified by function and allocated
+          - Every NPO must disclose allocations
+          - Only registered charities give 4470 disclosures
+        reason: 0
+        explain: Section 4470 is triggered by classifying expenses by function and allocating them among functions. An object presentation with no allocation has nothing to disclose under it.
+        ref: Part III, Section 4470
+      - id: b4l1q02
+        type: tf
+        concept: b4-4470-scope
+        prompt: Once an NPO presents its expenses by function, ASNPO requires it to allocate fundraising and general support costs to its programs.
+        answer: false
+        reasons:
+          - Allocation is optional; Section 4470 sets disclosures only for NPOs that allocate
+          - Allocation is mandatory for functional presentation
+          - Allocation is prohibited
+        reason: 0
+        explain: Many NPOs present program, fundraising and general support lines without allocating anything. If they do allocate, Section 4470 disclosures follow.
+        ref: Part III, Section 4470
+      - id: b4l1q03
+        type: classify
+        concept: b4-functions
+        prompt: An Edmonton health charity classifies expenses by function. Classify each cost before any allocation.
+        buckets:
+          - Program
+          - Fundraising
+          - General support
+        items:
+          - text: Nurses delivering the home care program
+            bucket: 0
+          - text: Donor database licence
+            bucket: 1
+          - text: Annual audit fee
+            bucket: 2
+          - text: Board meeting costs
+            bucket: 2
+          - text: Spring gala venue and catering
+            bucket: 1
+          - text: Finance department salaries
+            bucket: 2
+          - text: Medical supplies used by clients
+            bucket: 0
+        explain: Fundraising costs are spent soliciting contributions. General support covers governance and administration not tied to one program. Program costs deliver the mission directly.
+        ref: Part III, Section 4470
+      - id: b4l1q04
+        type: classify
+        concept: b4-policy-disclosure
+        prompt: A Red Deer arts society allocates general support costs to programs. Which items does Section 4470 require it to disclose?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: Its policies for allocating expenses among functions
+            bucket: 0
+          - text: The nature of the expenses being allocated
+            bucket: 0
+          - text: The bases used to make the allocations
+            bucket: 0
+          - text: The amounts allocated out of general support and the functions they went to
+            bucket: 0
+          - text: A comparison with other arts societies' ratios
+            bucket: 1
+          - text: The names of staff whose time was allocated
+            bucket: 1
+        explain: Section 4470 asks for the policy, nature of the costs, bases and the amounts allocated from each of fundraising and general support with their destinations. Benchmarks and names are not required.
+        ref: Part III, Section 4470
+      - id: b4l1q05
+        type: mc
+        concept: b4-amount-disclosure
+        prompt: Why does Section 4470 require disclosure of the amounts allocated out of fundraising and general support?
+        options:
+          - So readers can reverse the allocation and see the costs before allocation
+          - So the CRA can calculate the disbursement quota
+          - Because allocated amounts are not included in total expenses
+          - So the auditor can sign the statements
+        answer: 0
+        explain: Allocations can make fundraising and administration look smaller. Disclosing the amounts moved, and where they went, lets readers rebuild the unallocated picture and compare NPOs on a like basis.
+        ref: Part III, Section 4470
+      - id: b4l1q06
+        type: mc
+        concept: b4-direct-vs-allocated
+        prompt: A Lethbridge youth society's literacy coordinator works only on the literacy program. How is their salary handled in a functional presentation?
+        options:
+          - Charged directly to the literacy program, with no 4470 allocation disclosure needed for it
+          - Recorded in general support and then allocated to literacy
+          - Recorded in fundraising
+          - Split equally across all functions
+        answer: 0
+        explain: A cost that clearly belongs to one function is a direct charge. Section 4470 is about spreading fundraising and general support costs across functions, which needs judgement and therefore disclosure.
+        ref: Part III, Section 4470
+      - id: b4l1q07
+        type: tf
+        concept: b4-4470-scope
+        prompt: A foundation allocates general support costs to programs but does not allocate any fundraising costs. Section 4470 disclosures still apply to the general support allocation.
+        answer: true
+        reasons:
+          - Allocating either fundraising or general support costs triggers the disclosures for what is allocated
+          - Disclosure applies only if both are allocated
+          - General support allocations never need disclosure
+        reason: 0
+        explain: The disclosure covers whatever the NPO allocates out of fundraising and general support. Allocating only one of them still requires the policy, bases and amounts for that one.
+        ref: Part III, Section 4470
+      - id: b4l1q08
+        type: match
+        concept: b4-functions
+        prompt: Match each term to its meaning.
+        pairs:
+          - left: Fundraising expenses
+            right: Costs of soliciting contributions
+          - left: General support expenses
+            right: Governance and administration not tied to one program
+          - left: Allocation basis
+            right: The driver used to spread a cost pool
+          - left: Direct charge
+            right: Cost that clearly belongs to a single function
+        explain: These terms structure every functional presentation. Section 4470 focuses on how fundraising and general support costs are moved onto other functions.
+        ref: Part III, Section 4470
+      - id: b4l1q09
+        type: calc
+        concept: b4-amount-disclosure
+        prompt: A Banff mountain safety society's note says it allocated $48,000 of general support to its avalanche education program, $36,000 to its rescue training program and $6,000 to fundraising. General support before allocation was $130,000. Enter general support shown on the statement of operations after allocation.
+        answer: 40000
+        unit: $
+        explain: $48,000 + $36,000 + $6,000 = $90,000 was allocated out. $130,000 − $90,000 = $40,000 remains in general support. The disclosure lets readers rebuild the $130,000.
+        ref: Part III, Section 4470
+      - id: b4l1q10
+        type: tf
+        concept: b4-allocation-bases
+        prompt: Section 4470 prescribes floor area as the allocation basis for occupancy costs.
+        answer: false
+        reasons:
+          - ASNPO leaves bases to the NPO and requires them to be disclosed
+          - Floor area is mandatory for all costs
+          - Bases must be approved by the CRA
+        reason: 0
+        explain: Section 4470 is a disclosure standard. It does not set bases; the NPO picks reasonable drivers and tells readers what they are.
+        ref: Part III, Section 4470
+
+  - id: b4l2
+    title: Allocation calculations
+    intro: Now do the arithmetic. These questions spread cost pools by drivers, chain allocations together and show how much the presentation can move key ratios.
+    questions:
+      - id: b4l2q01
+        type: calc
+        concept: b4-allocation-calc
+        prompt: A Calgary arts society records $120,000 of occupancy costs in general support. It allocates them by floor area. The gallery uses 600 m², the education program 300 m² and fundraising 100 m². Enter the amount allocated to the education program.
+        answer: 36000
+        unit: $
+        explain: Total area is 1,000 m². $120,000 × 300 ÷ 1,000 = $36,000.
+        ref: Part III, Section 4470
+      - id: b4l2q02
+        type: je
+        concept: b4-allocation-calc
+        prompt: Record the reclassification that allocates the full $120,000 of occupancy costs out of general support (gallery 600 m², education 300 m², fundraising 100 m²).
+        accounts:
+          - Program expense - gallery
+          - Program expense - education
+          - Fundraising expense
+          - General support expense
+          - Rent payable
+          - Unrestricted net assets
+        lines:
+          - account: Program expense - gallery
+            side: dr
+            amount: 72000
+          - account: Program expense - education
+            side: dr
+            amount: 36000
+          - account: Fundraising expense
+            side: dr
+            amount: 12000
+          - account: General support expense
+            side: cr
+            amount: 120000
+        explain: Gallery $120,000 × 60% = $72,000, education 30% = $36,000, fundraising 10% = $12,000. Total expenses do not change; only the functions move. These amounts are what the 4470 note discloses.
+        ref: Part III, Section 4470
+      - id: b4l2q03
+        type: calc
+        concept: b4-allocation-calc
+        prompt: A Medicine Hat Friendship Centre's executive director earns $150,000. Time records show 50% on programs, 20% on fundraising and 30% on administration. Enter the salary allocated to fundraising.
+        answer: 30000
+        unit: $
+        explain: $150,000 × 20% = $30,000. Time records are a common and defensible basis for staff who work across functions.
+        ref: Part III, Section 4470
+      - id: b4l2q04
+        type: classify
+        concept: b4-allocation-bases
+        prompt: Classify each cost pool by the most defensible driver.
+        buckets:
+          - Floor area
+          - Time records or FTEs
+          - Number of transactions processed
+        items:
+          - text: Building rent and utilities
+            bucket: 0
+          - text: Executive director's salary
+            bucket: 1
+          - text: Payment processing fees charged per transaction
+            bucket: 2
+          - text: Janitorial contract
+            bucket: 0
+          - text: Human resources staff costs
+            bucket: 1
+        explain: A good driver reflects what causes the cost. Space drives occupancy, staff time drives management and HR costs, and transaction volume drives processing costs. ASNPO does not prescribe these; it requires the bases to be disclosed.
+        ref: Part III, Section 4470
+      - id: b4l2q05
+        type: calc
+        concept: b4-allocation-calc
+        prompt: A Fort McMurray health charity allocates $180,000 of general support by FTEs. Program A has 12 FTEs, Program B has 6 and fundraising has 2. Enter the amount allocated to Program B.
+        answer: 54000
+        unit: $
+        explain: Total FTEs are 20. $180,000 × 6 ÷ 20 = $54,000. Program A gets $108,000 and fundraising $18,000.
+        ref: Part III, Section 4470
+      - id: b4l2q06
+        type: calc
+        concept: b4-allocation-calc
+        prompt: A St. Albert seniors' society first allocates $100,000 of occupancy by floor area, with programs 700 m², administration 200 m² and fundraising 100 m². Administration then totals its $80,000 of salaries plus its occupancy share, and allocates 75% of that total to programs. Enter the administration cost allocated to programs in the second step.
+        answer: 75000
+        unit: $
+        explain: Administration's occupancy share is $100,000 × 200 ÷ 1,000 = $20,000. Its pool is $80,000 + $20,000 = $100,000. 75% × $100,000 = $75,000. Step-down allocations like this must be explained in the policy note.
+        ref: Part III, Section 4470
+      - id: b4l2q07
+        type: calc
+        concept: b4-amount-disclosure
+        prompt: A Grande Prairie food bank has total expenses of $1,000,000, including $80,000 of fundraising. It allocates $20,000 of fundraising costs to its nutrition education program because a mail campaign included educational content. Enter fundraising as a percentage of total expenses after the allocation, to the nearest whole percent.
+        answer: 6
+        unit: '%'
+        tolerance: 0.5
+        explain: Fundraising falls to $80,000 − $20,000 = $60,000. $60,000 ÷ $1,000,000 = 6%, down from 8%. That two-point swing is why the allocated amounts must be disclosed.
+        ref: Part III, Section 4470
+      - id: b4l2q08
+        type: je
+        concept: b4-allocation-calc
+        prompt: Record the food bank's reclassification of $20,000 from fundraising to the nutrition education program.
+        accounts:
+          - Program expense - nutrition education
+          - Fundraising expense
+          - General support expense
+          - Deferred contributions
+          - Contribution revenue
+          - Accounts payable
+        lines:
+          - account: Program expense - nutrition education
+            side: dr
+            amount: 20000
+          - account: Fundraising expense
+            side: cr
+            amount: 20000
+        explain: The entry moves cost between functions without changing total expenses. The note must disclose the $20,000 allocated out of fundraising, the function it went to and the basis used.
+        ref: Part III, Section 4470
+      - id: b4l2q09
+        type: mc
+        concept: b4-policy-disclosure
+        prompt: A board member asks why the food bank's fundraising ratio dropped from 8% to 6% although fundraising activity did not change. What is the best answer?
+        options:
+          - Fundraising became more efficient
+          - The food bank began allocating part of a joint mail campaign to a program, which the allocation note explains
+          - An accounting error must have occurred
+          - Total revenue increased
+        answer: 1
+        explain: The ratio moved because of a presentation choice, not performance. The 4470 disclosures exist so readers can see this and compare on a consistent basis.
+        ref: Part III, Section 4470
+      - id: b4l2q10
+        type: calc
+        concept: b4-allocation-calc
+        prompt: A Lethbridge arts council pays $36,000 for a shared IT contract. It allocates by computer count. Programs have 14 computers, fundraising 4 and administration 6. Enter the share allocated to fundraising.
+        answer: 6000
+        unit: $
+        explain: Total computers are 24. $36,000 × 4 ÷ 24 = $6,000. Programs get $21,000 and administration $9,000.
+        ref: Part III, Section 4470
+
+  - id: b4l3
+    title: Who is a related party
+    intro: Related party rules turn on relationships, not on whether a deal looks fair. This lesson sorts the people and entities around an NPO into related and not necessarily related.
+    questions:
+      - id: b4l3q01
+        type: classify
+        concept: b4-rp-relationships
+        prompt: Classify each party in relation to a Calgary hospital society.
+        buckets:
+          - Related party
+          - Not necessarily related
+        items:
+          - text: A foundation the society controls
+            bucket: 0
+          - text: The society's board chair
+            bucket: 0
+          - text: A company wholly owned by the executive director's spouse
+            bucket: 0
+          - text: A chartered bank lending to the society at market rates
+            bucket: 1
+          - text: A medical supply company that sells the society 40% of its supplies, with no other links
+            bucket: 1
+        explain: Control, management roles, their immediate family and entities those people control create related party relationships. Lenders and major suppliers dealing normally are not related just because of the volume of business.
+        ref: Part III, Section 4460
+      - id: b4l3q02
+        type: tf
+        concept: b4-rp-management
+        prompt: Members of an NPO's board of directors are related parties of the NPO, even though they are unpaid volunteers.
+        answer: true
+        reasons:
+          - Management includes directors, who have authority over planning, directing and controlling
+          - Only paid staff can be related parties
+          - Directors are related only if they make a donation
+        reason: 0
+        explain: Directors have authority and responsibility for the NPO's direction, so they fall within management. Being unpaid does not change that.
+        ref: Part II, Section 3840
+      - id: b4l3q03
+        type: mc
+        concept: b4-rp-management
+        prompt: Which of these is a related party of a Red Deer community league because of a family tie?
+        options:
+          - The spouse of the league's treasurer
+          - A neighbour of the league's treasurer
+          - A former coworker of the league's treasurer
+          - A volunteer who coaches the treasurer's child's team
+        answer: 0
+        explain: The immediate family of management, such as a spouse, are related parties. Neighbours, coworkers and other volunteers are not related merely by their acquaintance.
+        ref: Part II, Section 3840
+      - id: b4l3q04
+        type: tf
+        concept: b4-rp-not-related
+        prompt: Two Edmonton NPOs that share a single director are automatically related parties.
+        answer: false
+        reasons:
+          - One common director does not by itself give control or significant influence
+          - Any shared director makes them related
+          - NPOs can never be related to each other
+        reason: 0
+        explain: A single director in common does not on its own let either organization control or significantly influence the other. The facts must be examined; other links could still make them related.
+        ref: Part II, Section 3840
+      - id: b4l3q05
+        type: mc
+        concept: b4-rp-relationships
+        prompt: A Lethbridge museum foundation exists solely to raise funds for a museum society. Neither controls or significantly influences the other. What relationship does the society have with the foundation?
+        options:
+          - None that ASNPO addresses
+          - An economic interest, which Section 4450 requires the society to disclose
+          - Control, because the foundation's funds can be used only for the society
+          - Significant influence, because they share a bank
+        answer: 1
+        explain: An economic interest exists when another NPO holds resources that must be used for the reporting NPO, or the reporting NPO is responsible for the other's liabilities. It is not control, but Section 4450 requires it to be disclosed.
+        ref: Part III, Section 4450
+      - id: b4l3q06
+        type: tf
+        concept: b4-rp-relationships
+        prompt: Two local hockey associations both controlled by the same provincial association are related to each other.
+        answer: true
+        reasons:
+          - Parties under common control are related
+          - They are related only if they trade with each other
+          - Sister organizations are never related
+        reason: 0
+        explain: Common control makes sister organizations related, even if neither controls the other. Transactions between them are related party transactions.
+        ref: Part III, Section 4460
+      - id: b4l3q07
+        type: match
+        concept: b4-rp-relationships
+        prompt: Match each relationship to an example for a Grande Prairie Friendship Centre.
+        pairs:
+          - left: Control
+            right: The centre appoints all directors of a housing NPO
+          - left: Significant influence
+            right: The centre appoints two of nine directors of a cultural society and takes part in its policy decisions
+          - left: Economic interest
+            right: A foundation holds funds that can be used only for the centre
+          - left: Management
+            right: The centre's executive director
+        explain: Control and significant influence turn on governance power, and management on the people running the NPO; each makes the parties related. An economic interest turns on resources or obligations and is a relationship Section 4450 requires to be disclosed.
+        ref: Part III, Section 4460
+      - id: b4l3q08
+        type: tf
+        concept: b4-rp-scope
+        prompt: The executive director's normal salary and benefits must be measured and disclosed as a related party transaction under Sections 3840 and 4460.
+        answer: false
+        reasons:
+          - Management compensation arrangements in the normal course are outside the related party section
+          - Salaries must always be disclosed by individual
+          - Salaries are measured at carrying amount
+        reason: 0
+        explain: Management compensation, expense allowances and similar payments in the normal course are excluded. Other rules or legislation may require pay disclosure, but not this section.
+        ref: Part II, Section 3840
+      - id: b4l3q09
+        type: tf
+        concept: b4-rp-scope
+        prompt: A board member lends an arts society $50,000 interest-free. The loan's measurement is governed by Section 3840.
+        answer: false
+        reasons:
+          - Financial instruments with related parties are measured under Section 3856, with Section 4460 disclosures
+          - Loans from individuals are never recorded
+          - Section 3840 always measures loans at the exchange amount
+        reason: 0
+        explain: Section 3840 covers non-financial items. A related party loan is a financial instrument, measured under Section 3856. The related party disclosures still apply.
+        ref: Part II, Section 3840
+      - id: b4l3q10
+        type: mc
+        concept: b4-rp-not-related
+        prompt: The Government of Alberta provides 70% of a Camrose agency's funding through standard grant agreements and has no power over its board. What is the relationship?
+        options:
+          - Related party, because of economic dependence
+          - The government controls the agency
+          - Not necessarily related; economic dependence alone does not create a related party
+          - Related only in years when funding exceeds 50%
+        answer: 2
+        explain: A government department dealing with an NPO in the ordinary way is not a related party just because the NPO depends on it. Economic dependence may need its own disclosure, but it is not the related party test.
+        ref: Part II, Section 3840
+
+  - id: b4l4
+    title: Disclosure and the measurement decision tree
+    intro: Section 4460 says what to disclose; Section 3840 says at what amount to record. This lesson walks through each branch of the decision tree.
+    questions:
+      - id: b4l4q01
+        type: classify
+        concept: b4-rp-disclosures
+        prompt: An Edmonton seniors' society bought $90,000 of catering from a company owned by a director. Which items does it disclose?
+        buckets:
+          - Disclose
+          - Not required
+        items:
+          - text: The nature of the relationship with the company
+            bucket: 0
+          - text: A description of the catering transactions
+            bucket: 0
+          - text: The $90,000 recorded, by financial statement category
+            bucket: 0
+          - text: The measurement basis used
+            bucket: 0
+          - text: The balance owing at year end and its terms
+            bucket: 0
+          - text: The director's personal income
+            bucket: 1
+        explain: Related party disclosure covers the relationship, the transactions, the recorded amounts, the measurement basis, balances and terms, plus contractual obligations and contingencies with related parties. Personal finances are not part of it.
+        ref: Part III, Section 4460
+      - id: b4l4q02
+        type: tf
+        concept: b4-rp-disclosures
+        prompt: A director's company lets a Red Deer hockey association use storage space for free. Because no amount is recorded, nothing needs to be disclosed.
+        answer: false
+        reasons:
+          - Transactions at no or nominal amounts are still described
+          - Free items are never related party transactions
+          - Only cash transactions are disclosed
+        reason: 0
+        explain: The disclosures include transactions with no or nominal consideration. Readers need to know the association depends on a related party's free space.
+        ref: Part III, Section 4460
+      - id: b4l4q03
+        type: mc
+        concept: b4-normal-course
+        prompt: What is the first question in the Section 3840 measurement decision tree?
+        options:
+          - Is the amount material?
+          - Is the transaction in the normal course of operations?
+          - Is the related party an individual?
+          - Was the transaction approved by the board?
+        answer: 1
+        explain: The tree first asks whether the transaction is in the normal course. The answer decides which further conditions must be met before the exchange amount can be used.
+        ref: Part II, Section 3840
+      - id: b4l4q04
+        type: je
+        concept: b4-normal-course
+        prompt: A Calgary food bank buys $14,000 of produce on account from a farm owned by its board chair, on the same terms as other buyers. Purchasing food is part of its normal operations. Record the purchase.
+        accounts:
+          - Food program expense
+          - Accounts payable
+          - Unrestricted net assets
+          - Contribution revenue
+          - Program revenue
+          - Cash
+        lines:
+          - account: Food program expense
+            side: dr
+            amount: 14000
+          - account: Accounts payable
+            side: cr
+            amount: 14000
+        explain: A monetary transaction in the normal course is measured at the exchange amount, $14,000. The relationship, the amount, the balance owing and the measurement basis are disclosed.
+        ref: Part II, Section 3840
+      - id: b4l4q05
+        type: tf
+        concept: b4-not-normal-course
+        prompt: A transaction outside the normal course can be measured at the exchange amount if the change in ownership interest is substantive and the exchange amount is supported by independent evidence.
+        answer: true
+        reasons:
+          - Both conditions must be met for the exchange amount
+          - Either condition alone is enough
+          - Transactions outside the normal course are always at carrying amount
+        reason: 0
+        explain: Both tests must be passed. If either fails, the transaction is measured at the carrying amount in the transferor's records.
+        ref: Part II, Section 3840
+      - id: b4l4q06
+        type: mc
+        concept: b4-not-normal-course
+        prompt: Which is the best example of independent evidence supporting an exchange amount for land a museum sells to a director's company?
+        options:
+          - The director's own estimate of value
+          - A recent appraisal by an independent qualified appraiser
+          - The price the museum paid for the land 30 years ago
+          - A board resolution approving the price
+        answer: 1
+        explain: Independent evidence comes from outside the related parties, such as an independent appraisal or quoted prices. Estimates and approvals by the parties themselves are not independent.
+        ref: Part II, Section 3840
+      - id: b4l4q07
+        type: tf
+        concept: b4-commercial-substance
+        prompt: A hockey association swaps one practice-ice time block for an equivalent block with a related association, in the normal course. Its future cash flows will not change significantly. The swap is measured at carrying amount.
+        answer: true
+        reasons:
+          - A non-monetary transaction without commercial substance is measured at carrying amount
+          - All normal course transactions use exchange amount
+          - Swaps between NPOs are not recorded
+        reason: 0
+        explain: Even in the normal course, a non-monetary exchange without commercial substance is recorded at carrying amount. Commercial substance means the NPO's future cash flows are expected to change significantly.
+        ref: Part II, Section 3840
+      - id: b4l4q08
+        type: classify
+        concept: b4-not-normal-course
+        prompt: Sort each related party transaction by its measurement.
+        buckets:
+          - Exchange amount
+          - Carrying amount
+        items:
+          - text: Normal course, monetary
+            bucket: 0
+          - text: Normal course, non-monetary without commercial substance
+            bucket: 1
+          - text: Outside normal course, substantive change and independent evidence
+            bucket: 0
+          - text: Outside normal course, no independent evidence
+            bucket: 1
+        explain: These are the main branches of the decision tree. Outside the normal course, the exchange amount needs both a substantive change in ownership and independent evidence.
+        ref: Part II, Section 3840
+      - id: b4l4q09
+        type: mc
+        concept: b4-carrying-difference
+        prompt: When a related party transaction is measured at carrying amount, where does the difference between the consideration and the carrying amount go for an NPO?
+        options:
+          - To a gain or loss in the statement of operations
+          - Directly to net assets, the NPO's equivalent of equity
+          - To deferred contributions
+          - It is ignored
+        answer: 1
+        explain: Section 3840 charges or credits the difference to equity, which for an NPO means net assets in the statement of changes in net assets. No gain or loss is reported, because the price was not shown to be arm's length.
+        ref: Part II, Section 3840
+      - id: b4l4q10
+        type: classify
+        concept: b4-normal-course
+        prompt: A Medicine Hat seniors' housing society has these related party transactions. Classify the likely measurement.
+        buckets:
+          - Exchange amount
+          - Carrying amount
+        items:
+          - text: Rent charged to a resident who is a director's spouse, at standard rates
+            bucket: 0
+          - text: Sale of a surplus lot to a director's company with no appraisal
+            bucket: 1
+          - text: Monthly snow removal from a director's company at quoted market rates
+            bucket: 0
+          - text: Sale of an old van to the executive director with no outside valuation
+            bucket: 1
+        explain: Routine monetary transactions in the normal course are at exchange amount. Disposals of surplus assets are outside the normal course, and without independent evidence they fall back to carrying amount.
+        ref: Part II, Section 3840
+
+  - id: b4l5
+    title: Integrated cases
+    intro: These cases combine identification, measurement, entries and disclosure. Decide the branch of the decision tree before you compute anything.
+    questions:
+      - id: b4l5q01
+        type: je
+        concept: b4-not-normal-course
+        prompt: "Case: a Red Deer seniors' housing society sells surplus land, carrying amount $150,000, to a company controlled by a director for $400,000 cash. Land sales are not part of its normal operations. An independent appraisal supports $400,000 and the change in ownership is substantive. Record the sale."
+        accounts:
+          - Cash
+          - Land
+          - Gain on sale of land
+          - Unrestricted net assets
+          - Deferred capital contributions
+          - Due to related party
+        lines:
+          - account: Cash
+            side: dr
+            amount: 400000
+          - account: Land
+            side: cr
+            amount: 150000
+          - account: Gain on sale of land
+            side: cr
+            amount: 250000
+        explain: Both conditions for a transaction outside the normal course are met, so it is measured at the $400,000 exchange amount. The $250,000 gain goes to the statement of operations, and the relationship and measurement basis are disclosed.
+        ref: Part II, Section 3840
+      - id: b4l5q02
+        type: je
+        concept: b4-carrying-difference
+        prompt: "Case variation: same sale, but there is no appraisal or other independent evidence of value. Record the sale."
+        accounts:
+          - Cash
+          - Land
+          - Gain on sale of land
+          - Unrestricted net assets
+          - Deferred capital contributions
+          - Due to related party
+        lines:
+          - account: Cash
+            side: dr
+            amount: 400000
+          - account: Land
+            side: cr
+            amount: 150000
+          - account: Unrestricted net assets
+            side: cr
+            amount: 250000
+        explain: Without independent evidence, the transaction is measured at carrying amount. The $250,000 excess is credited directly to net assets and shown in the statement of changes in net assets, not reported as a gain.
+        ref: Part II, Section 3840
+      - id: b4l5q03
+        type: calc
+        concept: b4-carrying-difference
+        prompt: "Case continued: enter the difference between the excess of revenues over expenses reported under the appraisal scenario and the no-appraisal scenario."
+        answer: 250000
+        unit: $
+        explain: With the appraisal the $250,000 gain is in operations. Without it, the $250,000 goes straight to net assets. Total net assets end up the same, but the operating result differs by $250,000.
+        ref: Part II, Section 3840
+      - id: b4l5q04
+        type: je
+        concept: b4-carrying-difference
+        prompt: "Case: a Lethbridge youth society buys a used bus from a company owned by its treasurer for $45,000 cash. Buying buses is not part of its normal course. The company carried the bus at $30,000 and there is no independent evidence of value. Record the purchase."
+        accounts:
+          - Vehicles
+          - Cash
+          - Unrestricted net assets
+          - Loss on related party purchase
+          - Accounts payable
+          - Deferred capital contributions
+        lines:
+          - account: Vehicles
+            side: dr
+            amount: 30000
+          - account: Unrestricted net assets
+            side: dr
+            amount: 15000
+          - account: Cash
+            side: cr
+            amount: 45000
+        explain: Without independent evidence, the bus is recorded at the transferor's carrying amount of $30,000. The extra $15,000 paid is charged directly to net assets, which shows readers value went to a related party.
+        ref: Part II, Section 3840
+      - id: b4l5q05
+        type: calc
+        concept: b4-carrying-difference
+        prompt: "Case continued: the society amortizes the bus straight-line over five years with no residual value. Enter the annual amortization."
+        answer: 6000
+        unit: $
+        explain: The bus is recorded at $30,000, so $30,000 ÷ 5 = $6,000. Had the $45,000 price been supported, amortization would have been $9,000.
+        ref: Part II, Section 3840
+      - id: b4l5q06
+        type: je
+        concept: b4-commercial-substance
+        prompt: "Case: a Calgary hockey association swaps a parcel of land (carrying amount $80,000, fair value $200,000) with a related association for a similar parcel next door. Both will be used for parking and the association's cash flows will not change significantly. Record the swap."
+        accounts:
+          - Land - new parcel
+          - Land - old parcel
+          - Gain on exchange of land
+          - Unrestricted net assets
+          - Cash
+          - Deferred capital contributions
+        lines:
+          - account: Land - new parcel
+            side: dr
+            amount: 80000
+          - account: Land - old parcel
+            side: cr
+            amount: 80000
+        explain: A non-monetary exchange without commercial substance is measured at carrying amount. The new parcel takes over the $80,000 carrying amount and no gain is recognized, even though fair value is $200,000.
+        ref: Part II, Section 3840
+      - id: b4l5q07
+        type: mc
+        concept: b4-rp-disclosures
+        prompt: "Case variation: in the appraised land sale, the director's company paid $300,000 in cash and still owes $100,000 at year end under a two-year, non-interest-bearing note. Which disclosure package is complete?"
+        options:
+          - The gain only
+          - The relationship, a description of the sale, the amounts recorded, that it was measured at exchange amount, and the $100,000 balance with its terms
+          - The director's name and the land's address only
+          - Nothing, because the sale was at appraised value
+        answer: 1
+        explain: An arm's length price does not remove the disclosure. Readers need the relationship, the transaction, amounts, measurement basis and the outstanding balance with its terms.
+        ref: Part III, Section 4460
+      - id: b4l5q08
+        type: calc
+        concept: b4-allocation-calc
+        prompt: "Case: a Fort McMurray health charity has direct fundraising costs of $70,000. It allocates $180,000 of general support by FTEs (Program A 12, Program B 6, fundraising 2). Enter total fundraising expense reported after allocation."
+        answer: 88000
+        unit: $
+        explain: Fundraising's share of general support is $180,000 × 2 ÷ 20 = $18,000. $70,000 + $18,000 = $88,000. The note discloses the $180,000 allocated and its destinations.
+        ref: Part III, Section 4470
+      - id: b4l5q09
+        type: classify
+        concept: b4-rp-management
+        prompt: "Case: a Banff arts society reviews its year. Classify each transaction."
+        buckets:
+          - Related party transaction to disclose
+          - Not a related party transaction
+        items:
+          - text: Printing bought from a company owned by the board chair's spouse
+            bucket: 0
+          - text: Ticket sales to the general public
+            bucket: 1
+          - text: Grant received from a controlled foundation
+            bucket: 0
+          - text: Insurance bought from an unrelated broker at market rates
+            bucket: 1
+        explain: The spouse's company and the controlled foundation are related parties. Ticket sales to the public and insurance from an unrelated broker involve no related party.
+        ref: Part III, Section 4460
+      - id: b4l5q10
+        type: calc
+        concept: b4-not-normal-course
+        prompt: "Case: a Camrose community league sells used rink boards (carrying amount $12,000) to the executive director for $20,000. This is outside the normal course. An independent dealer quote supports $20,000 and the change in ownership is substantive. Enter the gain reported in the statement of operations."
+        answer: 8000
+        unit: $
+        explain: Both conditions are met, so the exchange amount is used. $20,000 − $12,000 = $8,000 gain in operations, with the related party disclosures.
+        ref: Part II, Section 3840
+      - id: b4l5q11
+        type: classify
+        concept: b4-normal-course
+        prompt: "Case: a St. Albert food bank's board chair owns a trucking company. Classify how each transaction is measured."
+        buckets:
+          - Exchange amount
+          - Carrying amount
+        items:
+          - text: Weekly delivery runs at the company's standard posted rates
+            bucket: 0
+          - text: Sale of the food bank's old truck to the company, outside the normal course, with no outside valuation
+            bucket: 1
+          - text: Purchase of fuel from the company's card lock at pump prices
+            bucket: 0
+          - text: Swap of two similar forklifts with no change in expected cash flows
+            bucket: 1
+        explain: Normal course monetary transactions use the exchange amount. The truck sale fails the independent evidence test and the forklift swap lacks commercial substance, so both are at carrying amount.
+        ref: Part II, Section 3840

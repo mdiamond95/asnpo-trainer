@@ -1,0 +1,808 @@
+id: con3
+course: consolidation
+number: 3
+title: Preparing consolidated statements
+summary: The mechanics of consolidating a controlled NPO under Section 4450, including line-by-line combination, eliminating balances, grants and internal charges, restricted grants passed through the group, unrealized gains on capital asset transfers, conforming accounting policies and contribution methods, different reporting dates, endowments and restrictions, and the disclosures that come with consolidation.
+refs:
+  - Part III, Section 4450
+  - Part III, Section 4410
+  - Part III, Section 4400
+  - Part II, Section 1601
+status: ready
+
+concepts:
+  - id: con3-line-by-line
+    title: Combining line by line
+    summary: Consolidation adds the controlled NPO's assets, liabilities, revenues and expenses to the reporting NPO's, line by line. Because control of an NPO usually comes from board appointment rather than ownership, there is normally no investment account to eliminate, so the net assets of both are simply combined.
+    ref: Part II, Section 1601
+  - id: con3-worksheet
+    title: Eliminations live in the worksheet
+    summary: Consolidation adjustments are made on a worksheet each year, never in either organization's own books. Balances are eliminated afresh every year, and adjustments from earlier years flow through opening consolidated net assets.
+    ref: Part II, Section 1601
+  - id: con3-eliminate-balances
+    title: Eliminating and reconciling balances
+    summary: Receivables, payables and loans between group members are eliminated. When the two sides do not agree, for example because of cash in transit or a one-sided entry, the difference is resolved before the elimination is made.
+    ref: Part III, Section 4450
+  - id: con3-internal-charges
+    title: Internal fees, rent and cost recoveries
+    summary: Management fees, rent, interest and shared-cost recoveries between group members are eliminated. The elimination must match how each side actually recorded the item, which may be a revenue, an expense recovery or an expense.
+    ref: Part III, Section 4450
+  - id: con3-eliminate-grants
+    title: Eliminating grants between group members
+    summary: A grant from a controlled foundation to the reporting NPO is a transfer inside the group. Both the grant revenue and the grant expense are removed, so only the original external contributions remain as revenue.
+    ref: Part III, Section 4450
+  - id: con3-restricted-passthrough
+    title: Restricted resources passed through the group
+    summary: When a foundation passes donor-restricted money to the reporting NPO, the group as a whole received an externally restricted contribution. Under the deferral method the group recognizes it as the restriction is met by the group, or defers and amortizes it if it funded a capital asset.
+    ref: Part III, Section 4410
+  - id: con3-internal-not-external
+    title: Group members cannot restrict the group
+    summary: A stipulation one group member places on resources it gives another is an internal matter for the group. It cannot create an external restriction or an endowment contribution in the consolidated statements.
+    ref: Part III, Section 4410
+  - id: con3-unrealized-gain
+    title: Unrealized gains on capital asset transfers
+    summary: A gain one group member records on selling a capital asset to another is not realized by the group. It is eliminated and the asset is restated to the group's original carrying amount.
+    ref: Part II, Section 1601
+  - id: con3-gain-realization
+    title: How the eliminated gain is realized
+    summary: For an amortizable asset the eliminated gain is realized gradually through lower amortization. For land it stays eliminated until the land is sold outside the group.
+    ref: Part II, Section 1601
+  - id: con3-conform-policies
+    title: Conforming accounting policies
+    summary: When a controlled organization is consolidated, its accounting policies are adjusted to match the reporting organization's, so the consolidated statements use one set of policies.
+    ref: Part III, Section 4450
+  - id: con3-contribution-method
+    title: Different contribution methods
+    summary: If the controlled NPO uses the restricted fund method and the reporting NPO uses the deferral method, the controlled NPO's restricted contributions are restated, deferring unspent amounts and moving endowment contributions to direct increases in net assets.
+    ref: Part III, Section 4410
+  - id: con3-reporting-dates
+    title: Different reporting dates
+    summary: When fiscal periods do not substantially coincide, information is taken from the other entity's most recent reporting date, its reporting period is disclosed, and significant events in the intervening period are disclosed.
+    ref: Part III, Section 4450
+  - id: con3-restrictions-presentation
+    title: Restrictions in consolidated statements
+    summary: Consolidated statements present information about the major categories of restrictions on the group's resources. External restrictions that require a controlled organization's resources to flow to the reporting NPO, or that prohibit such transfers, are disclosed.
+    ref: Part III, Section 4450
+  - id: con3-endowments
+    title: Endowments of a controlled NPO
+    summary: A consolidated foundation's endowments are part of the group's net assets restricted for endowment. Under the deferral method, endowment contributions and income the donor requires to be capitalized go directly to net assets, not through the statement of operations.
+    ref: Part III, Section 4400
+  - id: con3-standard-disclosures
+    title: Disclosures whether or not consolidated
+    summary: For each controlled NPO the reporting NPO discloses its reporting policy, a description of the relationship, the controlled NPO's purpose, intended community of service, income tax status and legal form, and the nature and extent of its economic interest.
+    ref: Part III, Section 4450
+  - id: con3-mixed-policy
+    title: Consolidating some, disclosing others
+    summary: Similar types of controlled organizations are reported the same way, but different types may be reported differently. Transactions with a controlled NPO that is not consolidated are not eliminated and appear as related party transactions.
+    ref: Part III, Section 4450
+
+lessons:
+  - id: con3l1
+    title: Building the consolidation worksheet
+    intro: Consolidation starts by adding two sets of statements together. The skill is in the eliminations, which must mirror exactly how each side recorded its dealings with the other.
+    questions:
+      - id: con3l1q01
+        type: mc
+        concept: con3-worksheet
+        prompt: A Calgary health society consolidates its controlled foundation. Where are the elimination entries recorded?
+        options:
+          - In the society's general ledger, reversed on the first day of the next year
+          - In the foundation's general ledger, since it is the controlled entity
+          - Half in each organization's ledger, so each set of books balances
+          - Only on the consolidation worksheet, never in either organization's books
+        answer: 3
+        explain: Each organization keeps its own books as a separate legal entity. Eliminations exist only on the consolidation worksheet, and the worksheet starts again from the two sets of separate statements each year.
+        ref: Part II, Section 1601
+      - id: con3l1q02
+        type: mc
+        concept: con3-line-by-line
+        prompt: When a company consolidates a subsidiary it eliminates its investment account against the subsidiary's equity. Why is there usually no such step when the health society consolidates its foundation?
+        options:
+          - The foundation's net assets are always restricted, so they are excluded
+          - Control comes from appointing the board, not from owning shares, so the society holds no investment account
+          - NPOs eliminate the foundation's net assets against the society's unrestricted net assets
+          - The society records an investment equal to the foundation's net assets each year
+        answer: 1
+        explain: Control of an NPO usually rests on board appointment or similar rights, not on an ownership interest the society paid for. With no investment account, the two organizations' net assets are simply combined, subject to the effect of eliminations.
+        ref: Part II, Section 1601
+      - id: con3l1q03
+        type: calc
+        concept: con3-line-by-line
+        prompt: The society's total assets are $6,500,000, including a $300,000 receivable from the foundation. The foundation's total assets are $4,200,000, and its liabilities include the matching $300,000 payable to the society. Enter consolidated total assets.
+        answer: 10400000
+        unit: $
+        explain: $6,500,000 + $4,200,000 = $10,700,000 combined. The $300,000 the group owes itself is removed, leaving $10,400,000. Consolidated liabilities fall by the same $300,000.
+        ref: Part II, Section 1601
+      - id: con3l1q04
+        type: je
+        concept: con3-internal-charges
+        prompt: The society charged the foundation $90,000 for shared administrative staff. The society credited the recovery directly to its Salaries and benefits expense. The foundation recorded Administration expense. Record the consolidation elimination.
+        accounts:
+          - Salaries and benefits expense
+          - Administration expense
+          - Cost recovery revenue
+          - Management fee revenue
+          - Accounts receivable
+          - Cash
+        lines:
+          - account: Salaries and benefits expense
+            side: dr
+            amount: 90000
+          - account: Administration expense
+            side: cr
+            amount: 90000
+        explain: The elimination mirrors how each side recorded the charge. The society's recovery reduced its salaries line, so the elimination restores it. The foundation's administration expense comes out. Total expenses are unchanged, but the group's salaries are now shown in full under salaries.
+        ref: Part III, Section 4450
+      - id: con3l1q05
+        type: je
+        concept: con3-internal-charges
+        prompt: The foundation rents office space from the society for $48,000 a year. At year end $4,000 of rent is unpaid. The society uses Rental revenue and Accounts receivable; the foundation uses Rent expense and Accounts payable. Record all eliminations for the rent.
+        accounts:
+          - Rental revenue
+          - Rent expense
+          - Accounts payable
+          - Accounts receivable
+          - Deferred revenue
+          - Prepaid expenses
+        lines:
+          - account: Rental revenue
+            side: dr
+            amount: 48000
+          - account: Rent expense
+            side: cr
+            amount: 48000
+          - account: Accounts payable
+            side: dr
+            amount: 4000
+          - account: Accounts receivable
+            side: cr
+            amount: 4000
+        explain: Two things are removed. The $48,000 of revenue and expense for the year are eliminated, and the $4,000 the foundation owes the society is eliminated from both receivables and payables.
+        ref: Part III, Section 4450
+      - id: con3l1q06
+        type: je
+        concept: con3-eliminate-balances
+        prompt: The society shows a $500,000 grant receivable from the foundation. The foundation shows a $450,000 grant payable, because it mailed a $50,000 cheque on December 30 that the society had not received at year end. Record the worksheet entry that deals with the full difference and eliminates the balances.
+        accounts:
+          - Cash
+          - Grant payable (Foundation)
+          - Grant receivable (Society)
+          - Grant revenue (Society)
+          - Grant expense (Foundation)
+          - Accounts payable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 50000
+          - account: Grant payable (Foundation)
+            side: dr
+            amount: 450000
+          - account: Grant receivable (Society)
+            side: cr
+            amount: 500000
+        explain: The cheque in transit is cash the group owns, so it is brought into consolidated cash. The remaining $450,000 matches on both sides and is eliminated. Reconcile first, then eliminate.
+        ref: Part III, Section 4450
+      - id: con3l1q07
+        type: calc
+        concept: con3-eliminate-grants
+        prompt: Society expenses are $8,400,000. Foundation expenses are $2,600,000, which include a $2,000,000 grant to the society and $48,000 of rent paid to the society. The society recorded both as revenue. Enter consolidated total expenses.
+        answer: 8952000
+        unit: $
+        explain: Combined expenses are $11,000,000. The $2,000,000 grant and the $48,000 rent are internal, so $2,048,000 is eliminated, leaving $8,952,000. The matching revenue comes out as well.
+        ref: Part III, Section 4450
+      - id: con3l1q08
+        type: tf
+        concept: con3-worksheet
+        prompt: Once a receivable between the society and the foundation was eliminated in last year's consolidation, it does not need to be eliminated again this year if it is still outstanding.
+        answer: false
+        reasons:
+          - The worksheet starts from the separate books each year, and the balance is still in both sets of books
+          - The receivable becomes an external balance after twelve months
+          - Prior-year eliminations are posted to the society's ledger, so they carry forward
+        reason: 0
+        explain: Eliminations are never booked in either ledger. Each year's worksheet starts from the separate statements, where the balance still sits, so it is eliminated again.
+        ref: Part II, Section 1601
+      - id: con3l1q09
+        type: classify
+        concept: con3-internal-charges
+        prompt: Sort these items in the society and foundation consolidation.
+        buckets:
+          - Eliminate
+          - Keep
+        items:
+          - text: Interest the society pays the foundation on an internal loan
+            bucket: 0
+          - text: Interest the society pays its bank on a mortgage
+            bucket: 1
+          - text: Management fee the society charges the foundation
+            bucket: 0
+          - text: A donor's gift received directly by the society
+            bucket: 1
+          - text: The foundation's grant payable to the society
+            bucket: 0
+          - text: Fees the foundation pays an outside investment manager
+            bucket: 1
+        explain: Anything one group member owes, pays or charges another comes out. Dealings with banks, donors and outside managers are real transactions of the group and stay.
+        ref: Part III, Section 4450
+      - id: con3l1q10
+        type: calc
+        concept: con3-eliminate-balances
+        prompt: The foundation's board approved a $500,000 grant to the society on December 15. The society recorded grant revenue and a receivable. The foundation, in error, recorded nothing, so the cash is still in its bank account. Society net assets are $3,000,000 and foundation net assets are $5,500,000. Enter consolidated net assets.
+        answer: 8000000
+        unit: $
+        explain: The $500,000 is counted twice, once as the society's receivable and once as the foundation's cash. Eliminating the society's grant revenue and receivable gives $3,000,000 + $5,500,000 − $500,000 = $8,000,000. A grant inside the group never changes group net assets.
+        ref: Part III, Section 4450
+
+  - id: con3l2
+    title: Grants and restricted transfers inside the group
+    intro: A foundation's grant to the society is not a contribution to the group. The donors who gave to the foundation are the group's contributors, and their restrictions decide when the group recognizes revenue.
+    questions:
+      - id: con3l2q01
+        type: mc
+        concept: con3-eliminate-grants
+        prompt: In consolidated statements of a Red Deer hospital society and its foundation, who are the contributors whose gifts appear as revenue?
+        options:
+          - The foundation, because it granted the money to the society
+          - The outside donors who gave to the foundation and to the society
+          - Both the foundation and the outside donors, since each made a transfer
+          - Only donors who gave directly to the society
+        answer: 1
+        explain: For the group, the foundation's grant is money moving from one pocket to another. The external contributors are the donors, so their gifts are the revenue and the internal grant is eliminated.
+        ref: Part III, Section 4450
+      - id: con3l2q02
+        type: je
+        concept: con3-restricted-passthrough
+        prompt: Both organizations use the deferral method. The foundation received $600,000 from donors restricted to the society's cardiac program and granted all of it to the society. The foundation recognized $600,000 of donation revenue and $600,000 of grant expense. The society spent $450,000 on the program, recognized $450,000 of grant revenue and deferred $150,000. Record the elimination so consolidated revenue is $450,000 of donations.
+        accounts:
+          - Grant revenue (Society)
+          - Donation revenue (Foundation)
+          - Grant expense (Foundation)
+          - Deferred contributions
+          - Program expense
+          - Cash
+        lines:
+          - account: Grant revenue (Society)
+            side: dr
+            amount: 450000
+          - account: Donation revenue (Foundation)
+            side: dr
+            amount: 150000
+          - account: Grant expense (Foundation)
+            side: cr
+            amount: 600000
+        explain: The group received $600,000 restricted to the cardiac program and spent $450,000, so it recognizes $450,000 and defers $150,000. The society's deferral of $150,000 is already the right group balance. Removing the grant expense, the society's grant revenue and $150,000 of the foundation's donation revenue leaves $450,000 of donation revenue.
+        ref: Part III, Section 4410
+      - id: con3l2q03
+        type: calc
+        concept: con3-restricted-passthrough
+        prompt: "Using the cardiac program facts, enter the consolidated deferred contributions balance for the program at year end."
+        answer: 150000
+        unit: $
+        explain: The group has $600,000 of externally restricted money and has spent $450,000 on the purpose. The unspent $150,000 stays deferred until the group incurs the program expenses.
+        ref: Part III, Section 4410
+      - id: con3l2q04
+        type: je
+        concept: con3-restricted-passthrough
+        prompt: The foundation received $900,000 from donors restricted to buying an MRI machine for the society and granted it to the society. Under the deferral method the foundation recognized $900,000 of donation revenue and $900,000 of grant expense. The society bought the MRI on January 1, recorded $900,000 of deferred capital contributions and recognized $90,000 of amortization of them. Record the elimination.
+        accounts:
+          - Donation revenue (Foundation)
+          - Grant expense (Foundation)
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Equipment
+          - Grant revenue (Society)
+        lines:
+          - account: Donation revenue (Foundation)
+            side: dr
+            amount: 900000
+          - account: Grant expense (Foundation)
+            side: cr
+            amount: 900000
+        explain: From the group's view, donors gave $900,000 restricted to a capital asset. That belongs in deferred capital contributions, amortized with the MRI, which is exactly what the society recorded. Only the foundation's revenue and grant expense need to come out.
+        ref: Part III, Section 4410
+      - id: con3l2q05
+        type: calc
+        concept: con3-restricted-passthrough
+        prompt: Using the MRI facts, how much consolidated revenue does the group recognize this year from the $900,000 of donations?
+        answer: 90000
+        unit: $
+        explain: The group recognizes restricted capital contributions on the same basis as the asset is amortized. This year that is $90,000, the amortization of deferred capital contributions.
+        ref: Part III, Section 4410
+      - id: con3l2q06
+        type: je
+        concept: con3-eliminate-balances
+        prompt: On December 20 the foundation approved a $300,000 unrestricted grant to the society and recorded grant expense and a grant payable. Following its policy, the society records grants only when the cash arrives in January, so it recorded nothing. Record the worksheet elimination.
+        accounts:
+          - Grant payable (Foundation)
+          - Grant expense (Foundation)
+          - Grant receivable (Society)
+          - Grant revenue (Society)
+          - Cash
+          - Unrestricted net assets
+        lines:
+          - account: Grant payable (Foundation)
+            side: dr
+            amount: 300000
+          - account: Grant expense (Foundation)
+            side: cr
+            amount: 300000
+        explain: Only one side exists, so the elimination removes only that side. The group owes nothing to anyone outside and has no expense. Note that the inconsistent recognition policies are themselves a conforming issue for the worksheet.
+        ref: Part III, Section 4450
+      - id: con3l2q07
+        type: mc
+        concept: con3-internal-not-external
+        prompt: The society's board transfers $200,000 of unrestricted cash to its controlled foundation, stipulating that the foundation must keep it permanently invested for the society. In the foundation's own statements this is an endowment contribution. How does it appear in the consolidated statements?
+        options:
+          - As an endowment contribution, a direct increase in net assets restricted for endowment
+          - As contribution revenue in the statement of operations
+          - As a deferred contribution recognized over 10 years
+          - Eliminated as an internal transfer, so it is not an endowment contribution of the group
+        answer: 3
+        explain: For the group, the restriction was imposed by one of its own members, so it is internal. Only stipulations from outside contributors create external restrictions or endowments. The transfer is eliminated, and any board designation would be shown as internally restricted, not as endowment.
+        ref: Part III, Section 4410
+      - id: con3l2q08
+        type: tf
+        concept: con3-eliminate-grants
+        prompt: When the foundation passes unrestricted donations to the society as a grant, the consolidated statements recognize the donations as revenue when the foundation received them, not when the grant was paid.
+        answer: true
+        explain: The group received the donations when the foundation did. The later grant to the society is internal and eliminated, so it has no effect on when consolidated revenue is recognized.
+        ref: Part III, Section 4450
+      - id: con3l2q09
+        type: match
+        concept: con3-restricted-passthrough
+        prompt: Under the deferral method, match each internal transfer to its consolidated result.
+        pairs:
+          - left: Foundation grants unrestricted donations to the society
+            right: Donations are revenue when the foundation received them; the grant is eliminated
+          - left: Foundation grants donations restricted to a society program
+            right: Revenue as the group incurs the program expenses; unspent amount deferred
+          - left: Foundation grants donations restricted to buying equipment
+            right: Deferred capital contributions amortized with the equipment
+          - left: Society gives the foundation money to invest permanently
+            right: Eliminated; no external endowment contribution
+        explain: Eliminating the internal grant is only half the job. The external donor's restriction then drives when the group recognizes the contribution.
+        ref: Part III, Section 4410
+      - id: con3l2q10
+        type: calc
+        concept: con3-eliminate-grants
+        prompt: Both organizations use the deferral method. The foundation received $1,200,000 of unrestricted donations and the $600,000 of cardiac donations, all granted on to the society, which spent $450,000 of the cardiac money. The society also received a $5,000,000 provincial operating grant and an $800,000 unrestricted grant from the foundation. Enter consolidated contribution revenue.
+        answer: 6650000
+        unit: $
+        explain: Count only external contributions as the group earns them. $1,200,000 unrestricted donations + $450,000 of cardiac donations spent + $5,000,000 provincial grant = $6,650,000. The $800,000 grant and the internal cardiac grant are eliminated.
+        ref: Part III, Section 4410
+
+  - id: con3l3
+    title: Capital asset transfers and unrealized gains
+    intro: When one group member sells a building or land to another, the group has not made a gain. You eliminate it, restate the asset and then unwind the gain as the asset is used or sold outside the group.
+    questions:
+      - id: con3l3q01
+        type: je
+        concept: con3-unrealized-gain
+        prompt: On January 1 an Edmonton seniors' society sold a building to its controlled housing NPO for $1,500,000. The society's cost was $2,000,000 with $900,000 of accumulated amortization, so it recorded a $400,000 gain. The housing NPO recorded the building at $1,500,000. Record the elimination at the date of sale, restating the building to the society's original cost and accumulated amortization.
+        accounts:
+          - Gain on sale of building
+          - Building
+          - Accumulated amortization
+          - Amortization expense
+          - Deferred capital contributions
+          - Unrestricted net assets
+        lines:
+          - account: Gain on sale of building
+            side: dr
+            amount: 400000
+          - account: Building
+            side: dr
+            amount: 500000
+          - account: Accumulated amortization
+            side: cr
+            amount: 900000
+        explain: The gain is removed. The building goes from $1,500,000 back to $2,000,000 cost, and the $900,000 of accumulated amortization is reinstated. The net carrying amount becomes $1,100,000, the group's carrying amount before the internal sale.
+        ref: Part II, Section 1601
+      - id: con3l3q02
+        type: calc
+        concept: con3-gain-realization
+        prompt: The housing NPO amortizes the building straight-line over its remaining 20-year life with no residual value. By how much does it overstate the group's amortization expense each year?
+        answer: 20000
+        unit: $
+        explain: The housing NPO charges $1,500,000 ÷ 20 = $75,000. The group should charge $1,100,000 ÷ 20 = $55,000. The $20,000 difference is the portion of the gain realized each year as the building is used.
+        ref: Part II, Section 1601
+      - id: con3l3q03
+        type: je
+        concept: con3-gain-realization
+        prompt: Record the year 1 worksheet entry that corrects amortization of the building to the group's basis.
+        accounts:
+          - Accumulated amortization
+          - Amortization expense
+          - Gain on sale of building
+          - Building
+          - Unrestricted net assets
+        lines:
+          - account: Accumulated amortization
+            side: dr
+            amount: 20000
+          - account: Amortization expense
+            side: cr
+            amount: 20000
+        explain: Reducing amortization by $20,000 increases the group's excess of revenue over expenses. Over 20 years these adjustments add back the full $400,000, which is how the eliminated gain is realized through use.
+        ref: Part II, Section 1601
+      - id: con3l3q04
+        type: calc
+        concept: con3-worksheet
+        prompt: In year 2 the worksheet again starts from the separate books, where the society's net assets include the full $400,000 gain. By how much must opening consolidated net assets be reduced for this building?
+        answer: 380000
+        unit: $
+        explain: Of the $400,000 gain, $20,000 was realized through lower amortization in year 1. The remaining $380,000 is still unrealized, so opening consolidated net assets are reduced by that amount.
+        ref: Part II, Section 1601
+      - id: con3l3q05
+        type: calc
+        concept: con3-unrealized-gain
+        prompt: Enter the building's net carrying amount in the consolidated statement of financial position at the end of year 1.
+        answer: 1045000
+        unit: $
+        explain: Group carrying amount at the sale date was $1,100,000, less one year of group amortization of $55,000, gives $1,045,000. This is $380,000 below the housing NPO's own $1,425,000, which is the unrealized gain left.
+        ref: Part II, Section 1601
+      - id: con3l3q06
+        type: tf
+        concept: con3-gain-realization
+        prompt: The society's gain on the building becomes realized for the group as soon as the housing NPO pays the full price in cash.
+        answer: false
+        reasons:
+          - The cash stays in the group; the gain is realized only through use or a sale outside the group
+          - Gains between group members are never realized
+          - The gain is realized only when the society winds up
+        reason: 0
+        explain: Cash moving between group members changes nothing for the group. The gain is realized as the asset is amortized or when the asset leaves the group.
+        ref: Part II, Section 1601
+      - id: con3l3q07
+        type: mc
+        concept: con3-gain-realization
+        prompt: The society sold land with a carrying amount of $500,000 to its controlled foundation for $750,000. When is the $250,000 gain recognized in the consolidated statements?
+        options:
+          - Evenly over 40 years
+          - In the year of the internal sale
+          - When the land is sold to a party outside the group
+          - Never, since land is not amortized
+        answer: 2
+        explain: Land is not amortized, so there is no use-based realization. The gain stays eliminated year after year until the land leaves the group.
+        ref: Part II, Section 1601
+      - id: con3l3q08
+        type: calc
+        concept: con3-gain-realization
+        prompt: Years later the foundation sells the land to an outside developer for $900,000. The foundation's carrying amount is the $750,000 it paid the society. The society's original carrying amount was $500,000. Enter the gain in the consolidated statement of operations for that year.
+        answer: 400000
+        unit: $
+        explain: The group measures the gain against its own carrying amount of $500,000. $900,000 − $500,000 = $400,000. That is the foundation's $150,000 gain plus the $250,000 that was held back since the internal sale.
+        ref: Part II, Section 1601
+      - id: con3l3q09
+        type: je
+        concept: con3-unrealized-gain
+        prompt: The society gave equipment with a carrying amount of $60,000 to its controlled food bank NPO for no consideration. The society recorded $60,000 of grant expense. The food bank recorded the equipment at its $80,000 fair value with $80,000 of deferred capital contributions. Record the elimination at the transfer date, reducing the equipment's recorded cost to the group's $60,000 carrying amount.
+        accounts:
+          - Deferred capital contributions
+          - Equipment
+          - Grant expense
+          - Contribution revenue
+          - Amortization of deferred capital contributions
+          - Accumulated amortization
+        lines:
+          - account: Deferred capital contributions
+            side: dr
+            amount: 80000
+          - account: Equipment
+            side: cr
+            amount: 20000
+          - account: Grant expense
+            side: cr
+            amount: 60000
+        explain: There is no outside contributor, so the group has no deferred capital contribution and no grant expense. The equipment stays at the group's $60,000 carrying amount, so it is written back down by $20,000.
+        ref: Part II, Section 1601
+      - id: con3l3q10
+        type: mc
+        concept: con3-worksheet
+        prompt: In later years the food bank amortizes the equipment based on $80,000 and recognizes amortization of the deferred capital contributions. What does the consolidation worksheet need each year?
+        options:
+          - Nothing further, because the transfer date elimination covers all years
+          - Eliminate the amortization of deferred capital contributions and reduce amortization expense to the $60,000 basis
+          - Only remove the amortization of deferred capital contributions
+          - Restate the equipment to $80,000 in the society's books
+        answer: 1
+        explain: Both effects of the food bank's entries carry on. The amortization of deferred capital contributions is revenue the group never earned, and amortization expense must follow the group's $60,000 carrying amount.
+        ref: Part II, Section 1601
+
+  - id: con3l4
+    title: Conforming policies and reporting dates
+    intro: Two NPOs can account for the same gift very differently. Before combining, the controlled NPO's figures are restated to the reporting NPO's policies, including its contribution method.
+    questions:
+      - id: con3l4q01
+        type: mc
+        concept: con3-conform-policies
+        prompt: A Lethbridge arts society uses the deferral method. Its controlled foundation uses the restricted fund method. The society consolidates the foundation. What does Section 4450 require?
+        options:
+          - Adjust the foundation's figures to the society's accounting policies before combining
+          - Combine the figures as reported and disclose the difference in methods
+          - Convert the society to the restricted fund method, since the foundation holds the restricted money
+          - Present two columns, one for each method, with no total
+        answer: 0
+        explain: When a controlled organization is consolidated, its accounting policies are adjusted to match the reporting organization's. The consolidated statements use one set of policies, here the deferral method.
+        ref: Part III, Section 4450
+      - id: con3l4q02
+        type: je
+        concept: con3-contribution-method
+        prompt: Under the restricted fund method, the foundation recognized $400,000 of donations restricted to research as revenue in its research fund. It spent $250,000 on research this year. Record the worksheet entry to conform to the society's deferral method.
+        accounts:
+          - Contribution revenue (Research fund)
+          - Deferred contributions
+          - Research expense
+          - Net assets restricted for endowment
+          - Deferred capital contributions
+          - Cash
+        lines:
+          - account: Contribution revenue (Research fund)
+            side: dr
+            amount: 150000
+          - account: Deferred contributions
+            side: cr
+            amount: 150000
+        explain: Under the deferral method, restricted contributions are recognized as the related expenses are incurred. Only $250,000 has been spent, so $150,000 of the revenue is moved to deferred contributions.
+        ref: Part III, Section 4410
+      - id: con3l4q03
+        type: je
+        concept: con3-contribution-method
+        prompt: Under the restricted fund method, the foundation recognized a $1,000,000 endowment gift as revenue of its endowment fund. Record the worksheet entry to conform to the deferral method.
+        accounts:
+          - Contribution revenue (Endowment fund)
+          - Endowment contributions (statement of changes in net assets)
+          - Deferred contributions
+          - Investment income
+          - Unrestricted net assets
+        lines:
+          - account: Contribution revenue (Endowment fund)
+            side: dr
+            amount: 1000000
+          - account: Endowment contributions (statement of changes in net assets)
+            side: cr
+            amount: 1000000
+        explain: Under the deferral method, endowment contributions are direct increases in net assets, reported in the statement of changes in net assets. They never pass through the statement of operations.
+        ref: Part III, Section 4410
+      - id: con3l4q04
+        type: calc
+        concept: con3-contribution-method
+        prompt: "The society (deferral method) reports revenue of $7,000,000, including a $300,000 grant from the foundation. The foundation (restricted fund method) reports general fund revenue of $800,000 from unrestricted donations, research fund revenue of $400,000 ($250,000 spent) and endowment fund revenue of $1,000,000 from new endowment gifts. Enter consolidated revenue."
+        answer: 7750000
+        unit: $
+        explain: Society $7,000,000 − $300,000 internal grant = $6,700,000. Foundation $800,000 + $250,000 research recognized = $1,050,000. The $150,000 unspent is deferred and the $1,000,000 endowment goes to net assets. $6,700,000 + $1,050,000 = $7,750,000.
+        ref: Part III, Section 4410
+      - id: con3l4q05
+        type: tf
+        concept: con3-conform-policies
+        prompt: A society that consolidates its foundation may leave the foundation's figures on the restricted fund method, as long as the note on accounting policies describes both methods.
+        answer: false
+        reasons:
+          - The controlled organization's policies are adjusted to the reporting organization's on consolidation
+          - Each group member's own policy always prevails
+          - Disclosure replaces adjustment only for endowments
+        reason: 0
+        explain: Disclosing policy differences is the treatment for a controlled NPO that is not consolidated. Consolidation requires adjusting to the reporting organization's policies.
+        ref: Part III, Section 4450
+      - id: con3l4q06
+        type: mc
+        concept: con3-conform-policies
+        prompt: The same society chooses not to consolidate the foundation and gives the disclosures instead. What happens to the difference in contribution methods?
+        options:
+          - The foundation's figures must be restated to the deferral method in the note
+          - The society must switch to the restricted fund method
+          - The society discloses significant differences between the foundation's accounting policies and its own
+          - Nothing, because policies matter only on consolidation
+        answer: 2
+        explain: Without consolidation, the foundation's figures are presented as they are, and significant differences in accounting policies are disclosed so readers can interpret them.
+        ref: Part III, Section 4450
+      - id: con3l4q07
+        type: je
+        concept: con3-conform-policies
+        prompt: The society's policy is to elect fair value measurement for all its equity investments, including shares not quoted in an active market. The foundation carries its unrestricted portfolio of private company shares, bought this year and not quoted in an active market, at its $2,000,000 cost. Fair value at year end is $2,150,000. Record the worksheet entry to conform the foundation's figures.
+        accounts:
+          - Investments
+          - Unrealized gain on investments
+          - Investment income
+          - Deferred contributions
+          - Unrestricted net assets
+        lines:
+          - account: Investments
+            side: dr
+            amount: 150000
+          - account: Unrealized gain on investments
+            side: cr
+            amount: 150000
+        explain: The group's policy is fair value, so the foundation's portfolio is remeasured. Because the portfolio is unrestricted, the gain goes to the statement of operations. A restricted portfolio's gain would follow the restriction instead.
+        ref: Part III, Section 4450
+      - id: con3l4q08
+        type: classify
+        concept: con3-reporting-dates
+        prompt: A Medicine Hat society with a March 31 year end does not consolidate its controlled foundation, which has a December 31 year end. Which disclosures follow from the different reporting dates?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: Use the foundation's figures as at its most recent reporting date, December 31
+            bucket: 0
+          - text: Disclose the reporting period the foundation's figures cover
+            bucket: 0
+          - text: Disclose significant events or transactions between January 1 and March 31
+            bucket: 0
+          - text: Commission a full audit of the foundation as at March 31
+            bucket: 1
+          - text: Restate the foundation's figures to the deferral method
+            bucket: 1
+        explain: When fiscal periods do not substantially coincide, the foundation's most recent reporting date is used, its period is disclosed, and significant events in the gap are disclosed. No special audit or restatement is required for the disclosure option.
+        ref: Part III, Section 4450
+      - id: con3l4q09
+        type: match
+        concept: con3-conform-policies
+        prompt: The society consolidates its foundation. Match each policy difference to the worksheet adjustment.
+        pairs:
+          - left: Foundation uses the restricted fund method
+            right: Defer unspent restricted gifts and move endowment gifts to net assets
+          - left: Foundation carries investments at cost; society uses fair value
+            right: Remeasure the foundation's investments to fair value
+          - left: Foundation expenses equipment; society capitalizes
+            right: Capitalize the equipment and amortize it
+          - left: Foundation records grants when paid; society when approved
+            right: Restate grants to the approval basis before eliminating
+        explain: Each difference is restated to the reporting organization's policy. Only then do the internal balances and transactions match and eliminate cleanly.
+        ref: Part III, Section 4450
+      - id: con3l4q10
+        type: mc
+        concept: con3-reporting-dates
+        prompt: The society's year end is March 31 and the foundation's is December 31. On February 10 the foundation paid the society a $200,000 grant. What makes this a trap when the society uses the foundation's December figures?
+        options:
+          - The grant must be restated to US dollars
+          - The grant is outside both fiscal years, so it is ignored
+          - The foundation must recognize the grant as revenue
+          - The society has recorded the grant, but the foundation's December figures do not show it, so a simple elimination will not match
+        answer: 3
+        explain: Different dates mean internal transactions in the gap appear on one side only. The worksheet must deal with them so nothing is double counted or left half-eliminated, and significant events in the gap are disclosed.
+        ref: Part III, Section 4450
+
+  - id: con3l5
+    title: Net assets, presentation and integrated cases
+    intro: The last step is the statement of changes in net assets and the notes. Endowments, restrictions and the disclosures about each controlled NPO all have to survive the combination intact.
+    questions:
+      - id: con3l5q01
+        type: mc
+        concept: con3-endowments
+        prompt: A Grande Prairie hospice society consolidates its foundation, which holds $4,000,000 of donor endowments. How are these shown in the consolidated statements?
+        options:
+          - As net assets restricted for endowment of the consolidated group
+          - As a deferred contribution liability, because the society has not received them
+          - As unrestricted net assets, because consolidation removes the foundation's restrictions
+          - In a note only, outside the consolidated net assets
+        answer: 0
+        explain: The donors' restrictions bind the group. The foundation's endowments become part of the group's net assets restricted for endowment.
+        ref: Part III, Section 4400
+      - id: con3l5q02
+        type: calc
+        concept: con3-endowments
+        prompt: "Both organizations follow the deferral method after conforming adjustments. Society endowment: opening $1,000,000, new endowment gifts $100,000. Foundation endowment: opening $4,000,000, new endowment gifts $500,000, and $120,000 of investment income the donors require to be added to capital. Enter consolidated net assets restricted for endowment at year end."
+        answer: 5720000
+        unit: $
+        explain: $1,000,000 + $100,000 + $4,000,000 + $500,000 + $120,000 = $5,720,000. Endowment gifts and income the donor requires to be capitalized are direct increases in net assets under the deferral method.
+        ref: Part III, Section 4400
+      - id: con3l5q03
+        type: classify
+        concept: con3-standard-disclosures
+        prompt: Which items does the society disclose about its controlled foundation whether or not it consolidates it?
+        buckets:
+          - Required either way
+          - Not required
+        items:
+          - text: The reporting policy used for the foundation
+            bucket: 0
+          - text: A description of the relationship
+            bucket: 0
+          - text: The foundation's purpose and intended community of service
+            bucket: 0
+          - text: The foundation's income tax status and legal form
+            bucket: 0
+          - text: The nature and extent of the society's economic interest
+            bucket: 0
+          - text: The name of the foundation's investment manager
+            bucket: 1
+        explain: Consolidating does not remove these disclosures. Readers still need to know what the foundation is, why it is in the group and what the society's economic interest in it is.
+        ref: Part III, Section 4450
+      - id: con3l5q04
+        type: mc
+        concept: con3-restrictions-presentation
+        prompt: The consolidated foundation holds $2,000,000 that donors restricted to scholarships the foundation awards itself, and its terms bar transferring it to the society. What does the consolidated reporting need?
+        options:
+          - Nothing, because the money is in the consolidated balance sheet
+          - Disclose the external restriction that prohibits transfer of these resources to the society
+          - Eliminate the $2,000,000 because it cannot reach the society
+          - Equity account the scholarship fund
+        answer: 1
+        explain: Combining the figures hides the fact that some resources cannot move to the reporting NPO. External restrictions that prohibit transfers to it, or require transfers to it, are disclosed.
+        ref: Part III, Section 4450
+      - id: con3l5q05
+        type: tf
+        concept: con3-mixed-policy
+        prompt: A Camrose health society may consolidate its hospital foundation and give disclosures instead of consolidating its controlled seniors' housing NPO, which is a different type of organization.
+        answer: true
+        reasons:
+          - Different types of controlled organizations may be reported differently; similar types are reported the same way
+          - Every controlled NPO must be treated the same way
+          - The housing NPO must be equity accounted
+        reason: 0
+        explain: Section 4450 allows different reporting policies for different types of controlled organizations. What it does not allow is treating similar organizations differently.
+        ref: Part III, Section 4450
+      - id: con3l5q06
+        type: tf
+        concept: con3-mixed-policy
+        prompt: The same society controls two nearly identical hospital foundations. It may consolidate one and only disclose the other.
+        answer: false
+        explain: Similar types of controlled organizations are reported in the same manner. Two hospital foundations with the same role must both be consolidated or both disclosed.
+        ref: Part III, Section 4450
+      - id: con3l5q07
+        type: mc
+        concept: con3-mixed-policy
+        prompt: The society consolidates its foundation but not its housing NPO. The housing NPO paid the society $60,000 of management fees. How do the fees appear?
+        options:
+          - Eliminated, as for any controlled NPO
+          - Eliminated only if the housing NPO is material
+          - Equity accounted through a share of the housing NPO's results
+          - Kept as revenue of the consolidated group and disclosed as a related party transaction
+        answer: 3
+        explain: Only transactions between entities inside the consolidated statements are eliminated. The housing NPO is outside them, so the fees stay, and Section 4460 related party disclosure applies.
+        ref: Part III, Section 4450
+      - id: con3l5q08
+        type: je
+        concept: con3-eliminate-grants
+        prompt: Integrated case. During the year the foundation paid the society a $700,000 unrestricted grant. The society also charged the foundation a $60,000 management fee, recorded as Management fee revenue and Administration expense, of which $15,000 is unpaid at year end. Record one worksheet entry eliminating all of it.
+        accounts:
+          - Grant revenue (Society)
+          - Grant expense (Foundation)
+          - Management fee revenue
+          - Administration expense
+          - Accounts payable
+          - Accounts receivable
+          - Donation revenue (Foundation)
+          - Cash
+        lines:
+          - account: Grant revenue (Society)
+            side: dr
+            amount: 700000
+          - account: Grant expense (Foundation)
+            side: cr
+            amount: 700000
+          - account: Management fee revenue
+            side: dr
+            amount: 60000
+          - account: Administration expense
+            side: cr
+            amount: 60000
+          - account: Accounts payable
+            side: dr
+            amount: 15000
+          - account: Accounts receivable
+            side: cr
+            amount: 15000
+        explain: Three internal items come out. The grant and the fee are removed from both revenue and expense, and the unpaid $15,000 is removed from receivables and payables. The foundation's donations from the public stay.
+        ref: Part III, Section 4450
+      - id: con3l5q09
+        type: calc
+        concept: con3-unrealized-gain
+        prompt: "Integrated case. The society (deferral method) reports excess of revenue over expenses of $250,000, which includes a $40,000 gain on selling equipment to the foundation on January 1. The foundation amortizes that equipment over 4 years. The foundation (restricted fund method) reports excess of $900,000, which includes $300,000 of unspent research donations and $500,000 of endowment gifts recognized as revenue. All other internal items net to zero. Enter the consolidated excess of revenue over expenses."
+        answer: 320000
+        unit: $
+        explain: Start with $1,150,000. Remove the $40,000 gain and add back $10,000 of excess amortization ($40,000 ÷ 4). Defer the $300,000 of unspent research donations and move the $500,000 of endowment gifts to net assets. $1,150,000 − $40,000 + $10,000 − $300,000 − $500,000 = $320,000.
+        ref: Part II, Section 1601
+      - id: con3l5q10
+        type: mc
+        concept: con3-restrictions-presentation
+        prompt: What must consolidated statements present about restrictions on the group's resources?
+        options:
+          - Nothing beyond the restrictions of the reporting NPO itself
+          - A separate balance sheet for each restricted fund of each group member
+          - Information about the major categories of restrictions on the group's resources
+          - Only restrictions that exceed 10% of total assets
+        answer: 2
+        explain: Restrictions do not disappear in a combination. The consolidated statements present information about the major categories of restrictions, and disclose external restrictions that require or prohibit transfers to the reporting NPO.
+        ref: Part III, Section 4450

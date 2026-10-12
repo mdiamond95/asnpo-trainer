@@ -1,0 +1,869 @@
+id: p2u3
+course: part2
+number: 3
+title: Changes, contingencies and subsequent events
+summary: How an NPO handles accounting policy changes, changes in estimates and error corrections under Part II Section 1506, contingent losses, gains and guarantees under Section 3290, subsequent events under Section 3820, and the going concern assessment in Part III Section 1401, with full restatement calculations and entries.
+refs:
+  - Part II, Section 1506
+  - Part II, Section 3290
+  - Part II, Section 3820
+  - Part III, Section 1401
+  - Part III, Section 1101
+status: ready
+
+concepts:
+  - id: p2u3-where-standards-sit
+    title: Where these rules live for an NPO
+    summary: Part III has no sections of its own on accounting changes, contingencies or subsequent events, so an NPO applies Part II Sections 1506, 3290 and 3820. Going concern is different, because Part III Section 1401 carries its own general presentation standards, including the going concern requirements.
+    ref: Part III, Section 1101
+  - id: p2u3-policy-change-criteria
+    title: When a policy may change
+    summary: Accounting policies are presumed to stay the same from period to period. An NPO changes a policy only when a primary source of GAAP requires it, or when the change gives reliable and more relevant information. A short list of Part II policy choices is exempt from the more relevant test.
+    ref: Part II, Section 1506
+  - id: p2u3-not-a-policy-change
+    title: What is not a policy change
+    summary: Applying a policy to transactions that differ in substance from earlier ones, or adopting a policy for transactions that did not occur before or were immaterial, is not a change in accounting policy. Revising an estimate or fixing a mistake is not a policy change either.
+    ref: Part II, Section 1506
+  - id: p2u3-npo-policy-choices
+    title: Policy changes NPOs commonly make
+    summary: Typical NPO policy changes include switching between the deferral and restricted fund methods, starting or stopping recognition of contributed materials and services, and changing which revenues and expenses are reported in a particular fund. Each is a voluntary change that must meet the reliable and more relevant test and is applied retrospectively.
+    ref: Part III, Section 4410
+  - id: p2u3-retrospective
+    title: Retrospective application
+    summary: A voluntary policy change is applied as if the new policy had always been used. Comparative figures are restated and the opening net assets of the earliest period presented absorb the cumulative effect of earlier years.
+    ref: Part II, Section 1506
+  - id: p2u3-impracticable
+    title: When retrospective application is impracticable
+    summary: Impracticable means the NPO cannot apply the change after making every reasonable effort, not that it is costly or tedious. If period-specific effects cannot be found, the policy is applied from the start of the earliest practicable period. If even the cumulative effect cannot be found, it is applied prospectively from the earliest practicable date.
+    ref: Part II, Section 1506
+  - id: p2u3-policy-disclosure
+    title: Disclosing a policy change
+    summary: For a voluntary change, the NPO discloses the nature of the change, why the new policy gives reliable and more relevant information, the adjustment to each affected line item for the periods presented, the adjustment to periods before those presented, and, if applicable, why full retrospective application was impracticable.
+    ref: Part II, Section 1506
+  - id: p2u3-estimate-change
+    title: Changes in estimates
+    summary: A change in an estimate comes from new information or new developments, such as a revised useful life. It is applied prospectively, in the period of change and future periods, with no restatement of comparatives. The nature and amount of a change affecting the current period are disclosed.
+    ref: Part II, Section 1506
+  - id: p2u3-error-correction
+    title: Correcting prior period errors
+    summary: A prior period error comes from failing to use, or misusing, reliable information that was available when the statements were prepared. A material error is corrected retrospectively by restating the comparatives, or the opening net assets of the earliest period presented when the error is older.
+    ref: Part II, Section 1506
+  - id: p2u3-error-disclosure
+    title: Disclosing an error correction
+    summary: The NPO discloses the nature of the error, the amount of the correction for each line item in each prior period presented, and the amount of the correction at the start of the earliest period presented. Comparatives are labelled as restated.
+    ref: Part II, Section 1506
+  - id: p2u3-contingent-loss-accrual
+    title: Accruing a contingent loss
+    summary: A contingent loss is accrued when it is likely that a future event will confirm a liability or impairment existed at year end and the amount can be reasonably estimated. If no amount in a range is a better estimate than another, the minimum of the range is accrued.
+    ref: Part II, Section 3290
+  - id: p2u3-contingent-loss-disclosure
+    title: Disclosing a contingent loss
+    summary: A contingent loss is disclosed when it is likely but cannot be estimated, when it is accrued but exposure exceeds the accrual, or when its likelihood is not determinable. The note gives the nature of the contingency and an estimate, or a statement that no estimate can be made.
+    ref: Part II, Section 3290
+  - id: p2u3-contingent-gain
+    title: Contingent gains
+    summary: A contingent gain is never accrued. It is disclosed when it is likely that a future event will confirm an asset was acquired or a liability reduced, with its nature and an estimate or a statement that no estimate can be made.
+    ref: Part II, Section 3290
+  - id: p2u3-guarantees
+    title: Guarantees given by an NPO
+    summary: An NPO that guarantees another entity's debt discloses the guarantee even when payment is unlikely, including its nature, the maximum potential future payments, any recourse or collateral, and any amount carried as a liability. A loss is accrued only when payment becomes likely and estimable.
+    ref: Part II, Section 3290
+  - id: p2u3-subsequent-adjusting
+    title: Adjusting subsequent events
+    summary: An event after year end that gives further evidence about conditions that existed at year end, such as settlement of a claim for an earlier accident, is reflected by adjusting the financial statements.
+    ref: Part II, Section 3820
+  - id: p2u3-subsequent-nonadjusting
+    title: Non-adjusting subsequent events
+    summary: An event that reflects conditions arising after year end, such as a flood or a cancelled future grant, is not adjusted for. If it significantly affects assets or liabilities or future operations, the NPO discloses its nature and an estimate of its financial effect, or states that no estimate can be made.
+    ref: Part II, Section 3820
+  - id: p2u3-completion-date
+    title: The subsequent events window
+    summary: The window runs from year end to the date the financial statements are completed. Statements are complete when a full set with notes is prepared, all final adjustments are made, no further changes are expected, and they have been approved through the organization's finalization process.
+    ref: Part II, Section 3820
+  - id: p2u3-going-concern
+    title: Going concern for NPOs
+    summary: Management assesses whether the NPO can continue as a going concern, looking at least, but not limited to, twelve months from year end. Material uncertainties are disclosed. If the going concern basis is not appropriate, the NPO discloses that fact, the reasons and the basis it used instead.
+    ref: Part III, Section 1401
+
+lessons:
+  - id: p2u3l1
+    title: Changing accounting policies
+    intro: NPOs change policies more often than you might think, switching contribution methods or starting to record donated goods. This lesson covers when a change is allowed, how retrospective application works and what to disclose.
+    questions:
+      - id: p2u3l1q01
+        type: mc
+        concept: p2u3-where-standards-sit
+        prompt: A Calgary arts society reporting under ASNPO discovers a prior year error. Where does it find the rules for correcting it?
+        options:
+          - Part III, because every NPO matter has a dedicated Part III section
+          - Part II Section 1506, because Part III has no section on accounting changes and directs NPOs to Part II for such matters
+          - Part I (IFRS), because errors are always handled under international standards
+          - Nowhere, because NPOs simply record corrections in the current year
+        answer: 1
+        explain: Part III covers NPO-specific topics. For matters it does not address, such as accounting changes, contingencies and subsequent events, an NPO applies the Part II standards. Going concern is the exception, because Part III Section 1401 has its own presentation standards.
+        ref: Part III, Section 1101
+      - id: p2u3l1q02
+        type: tf
+        concept: p2u3-policy-change-criteria
+        prompt: The board of a Camrose museum may switch from the deferral method to the restricted fund method simply because the new treasurer finds fund accounting easier to maintain.
+        answer: false
+        reasons:
+          - A voluntary change must result in reliable and more relevant information, not just convenience
+          - Contribution methods can never be changed once chosen
+          - Only the auditor can approve a change in contribution method
+        reason: 0
+        explain: Policies are presumed to be consistent. A voluntary change is allowed only when it gives users reliable and more relevant information. Bookkeeping convenience is not a reason the NPO could defend in its disclosure.
+        ref: Part II, Section 1506
+      - id: p2u3l1q03
+        type: classify
+        concept: p2u3-not-a-policy-change
+        prompt: Classify each item for an Edmonton community services society.
+        buckets:
+          - Change in accounting policy
+          - Not a change in accounting policy
+        items:
+          - text: Switching from the restricted fund method to the deferral method
+            bucket: 0
+          - text: Starting to recognize donated food it has received for years but never recorded
+            bucket: 0
+          - text: Recording donated software the first time anyone has ever given it a contributed asset of that kind
+            bucket: 1
+          - text: Reporting casino proceeds in a new capital fund instead of the operating fund, with no change in the underlying transactions
+            bucket: 0
+          - text: Shortening the estimated useful life of its accessible van
+            bucket: 1
+          - text: Applying its existing grant policy to a new type of agreement that differs in substance from past grants
+            bucket: 1
+        explain: A policy change is a change in the principles applied to the same kind of transaction. Adopting a policy for transactions that never happened before, or that differ in substance, is not a change. A revised useful life is an estimate. Under ASNPO, changing which revenues and expenses a fund reports is a policy change unless the transactions are clearly different or new.
+        ref: Part II, Section 1506
+      - id: p2u3l1q04
+        type: mc
+        concept: p2u3-npo-policy-choices
+        prompt: A Red Deer hockey association has always reported tournament revenue in its general fund. This year it starts reporting the same tournament revenue in its restricted equipment fund. How is this treated under ASNPO?
+        options:
+          - As an interfund transfer only, with no other consequence
+          - As a change in estimate, applied prospectively
+          - As a change in accounting policy, because the revenue reported in a fund changed while the transactions did not
+          - As an error correction, because the old presentation must have been wrong
+        answer: 2
+        explain: ASNPO requires each fund to be presented consistently. Changing the revenues and expenses reported in a particular fund is a change in accounting policy, unless it comes from clearly different transactions or transactions occurring for the first time. It therefore needs the reliable and more relevant justification and retrospective application.
+        ref: Part III, Section 4400
+      - id: p2u3l1q05
+        type: calc
+        concept: p2u3-retrospective
+        prompt: A Grande Prairie community league prepares 2025 statements with 2024 comparatives and switches from the restricted fund method to the deferral method. At January 1, 2024, its restricted funds held $42,000 of unspent externally restricted operating contributions and an endowment fund of $100,000. Enter the decrease in total net assets at January 1, 2024 caused by the change.
+        answer: 42000
+        unit: $
+        explain: Under the deferral method, unspent restricted operating contributions are a liability (deferred contributions) until the related expenses are incurred, so $42,000 moves out of net assets. Endowment contributions are direct increases in net assets under both methods, so the $100,000 stays put. The earliest period presented is 2024, so its opening balance absorbs the cumulative effect.
+        ref: Part II, Section 1506
+      - id: p2u3l1q06
+        type: je
+        concept: p2u3-retrospective
+        prompt: Continuing the community league case, the 2024 books are closed. Unspent restricted operating contributions at January 1, 2025 were $35,000, all held in the externally restricted fund. Record the entry in the 2025 books that brings the opening balances onto the deferral method.
+        accounts:
+          - Externally restricted net assets
+          - Deferred contributions
+          - Contribution revenue
+          - Endowment net assets
+          - Deferred capital contributions
+          - Unrestricted net assets
+        lines:
+          - account: Externally restricted net assets
+            side: dr
+            amount: 35000
+          - account: Deferred contributions
+            side: cr
+            amount: 35000
+        explain: The cumulative effect up to the start of the current year goes through opening net assets, not 2025 revenue. The comparative statements show the same reclassification at each date presented. When the expenses are incurred in 2025, the league will recognize the deferred contributions as revenue.
+        ref: Part II, Section 1506
+      - id: p2u3l1q07
+        type: calc
+        concept: p2u3-npo-policy-choices
+        prompt: A Lethbridge food bank decides in 2025 to start recognizing the donated food it receives and distributes, and applies the change retrospectively with 2024 comparatives. Fair values are reliably determinable. Donated food on hand was $28,000 at January 1, 2024. In 2024 it received donated food worth $910,000 and distributed food worth $890,000. Enter the increase in net assets at December 31, 2024 as restated.
+        answer: 48000
+        unit: $
+        explain: Opening 2024 net assets rise by the $28,000 of inventory on hand. In 2024, contribution revenue of $910,000 and distribution expense of $890,000 add $20,000. $28,000 + $20,000 = $48,000, which equals the donated food on hand at year end. Much of the effect is a gross-up of revenues and expenses, but inventory on hand changes net assets.
+        ref: Part III, Section 4410
+      - id: p2u3l1q08
+        type: mc
+        concept: p2u3-impracticable
+        prompt: A St. Albert seniors' society switches contribution methods. Its records let it compute the effect at January 1, 2025, but after every reasonable effort it cannot determine the period-specific effect on 2024. What does it do?
+        options:
+          - Apply the new policy from January 1, 2025, adjusting opening net assets of that period, and explain why earlier application is impracticable
+          - Abandon the change, because full retrospective application is required
+          - Estimate the 2024 effect by taking half of the 2025 effect
+          - Record the entire cumulative effect in 2025 revenue
+        answer: 0
+        explain: When period-specific effects cannot be determined, the new policy is applied to carrying amounts at the start of the earliest period for which that is practicable, with the matching adjustment to opening net assets of that period. The NPO discloses why and how it applied the change.
+        ref: Part II, Section 1506
+      - id: p2u3l1q09
+        type: tf
+        concept: p2u3-impracticable
+        prompt: Restating 2024 would take the finance team about three extra weeks of work. That alone makes retrospective application impracticable.
+        answer: false
+        reasons:
+          - Impracticable means the NPO cannot apply it after every reasonable effort, not that it is costly or time-consuming
+          - Any restatement that takes more than one week is impracticable
+          - NPOs are always exempt from restating comparatives
+        reason: 0
+        explain: The impracticability relief is narrow. Extra effort or cost is not enough. It applies when the data cannot be obtained or reconstructed, or the restatement would need hindsight-driven assumptions about management's intent in that earlier period.
+        ref: Part II, Section 1506
+      - id: p2u3l1q10
+        type: match
+        concept: p2u3-policy-disclosure
+        prompt: A Banff arts foundation voluntarily changes a policy. Match each disclosure to what it tells the reader.
+        pairs:
+          - left: Nature of the change
+            right: Which policy was dropped and which was adopted
+          - left: Reason for the change
+            right: Why the new policy gives reliable and more relevant information
+          - left: Adjustment to each affected line item for periods presented
+            right: How each comparative figure moved
+          - left: Adjustment relating to periods before those presented
+            right: How much the opening net assets of the earliest period changed
+        explain: The disclosures let a reader trace every restated amount and judge whether the change was justified. If full retrospective application was impracticable, the NPO also explains why and how the change was applied.
+        ref: Part II, Section 1506
+      - id: p2u3l1q11
+        type: mc
+        concept: p2u3-policy-change-criteria
+        prompt: The AcSB issues an amendment to a standard that an Edmonton NPO applies. The amendment has its own transitional provisions. How does the NPO apply it?
+        options:
+          - Always fully retrospectively, ignoring the transitional provisions
+          - Only prospectively, because mandatory changes are never restated
+          - In accordance with the specific transitional provisions, with disclosure of the new standard and its effect
+          - Only if the board agrees the change is more relevant
+        answer: 2
+        explain: A change required by a primary source of GAAP follows that source's transitional provisions. Only when there are none is the change applied retrospectively. A required change does not need the reliable and more relevant justification, but it still needs disclosure.
+        ref: Part II, Section 1506
+
+  - id: p2u3l2
+    title: Estimates and errors
+    intro: A revised useful life and a misused number look similar on a trial balance but are fixed very differently. This lesson separates them and works through prospective changes and full restatements.
+    questions:
+      - id: p2u3l2q01
+        type: classify
+        concept: p2u3-error-correction
+        prompt: Classify each item at a Medicine Hat community health centre.
+        buckets:
+          - Change in estimate
+          - Prior period error
+          - Change in accounting policy
+        items:
+          - text: Shortening a bus's life from ten to seven years after a new route survey
+            bucket: 0
+          - text: Last year's amortization used the wrong cost because of a keying mistake
+            bucket: 1
+          - text: Raising the allowance for uncollectible pledges after collection rates fell this year
+            bucket: 0
+          - text: A grant was recognized as revenue last year although the eligible expenses had not been incurred and the agreement was on file
+            bucket: 1
+          - text: Moving from the deferral method to the restricted fund method
+            bucket: 2
+          - text: A lawsuit accrued at a reasonable estimate last year settled for more this year
+            bucket: 0
+        explain: Estimates change because new information or developments arrive. Errors come from failing to use, or misusing, information that was available at the time. A settlement that differs from a reasonable accrual is new information, not an error.
+        ref: Part II, Section 1506
+      - id: p2u3l2q02
+        type: calc
+        concept: p2u3-estimate-change
+        prompt: A Camrose seniors' society bought an accessible van on January 1, 2022 for $72,000, amortized straight-line over eight years with no residual value. On January 1, 2025, it concludes the van will last only three more years and will have a residual value of $6,000. Enter 2025 amortization expense.
+        answer: 13000
+        unit: $
+        explain: Accumulated amortization at the end of 2024 is 3 x $9,000 = $27,000, so the carrying amount is $45,000. New annual amortization is ($45,000 - $6,000) / 3 = $13,000. Earlier years are not touched.
+        ref: Part II, Section 1506
+      - id: p2u3l2q03
+        type: je
+        concept: p2u3-estimate-change
+        prompt: A Medicine Hat housing society bought a bus on January 1, 2021 for $120,000, fully funded by a restricted capital contribution under the deferral method. It was amortized straight-line over ten years, and deferred capital contributions are amortized on the same basis. On January 1, 2025, the remaining life is revised to three years. Record 2025 amortization of the bus and of the related deferred capital contributions.
+        accounts:
+          - Amortization expense
+          - Accumulated amortization
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Unrestricted net assets
+          - Capital assets
+        lines:
+          - account: Amortization expense
+            side: dr
+            amount: 24000
+          - account: Accumulated amortization
+            side: cr
+            amount: 24000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 24000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 24000
+        explain: After four years at $12,000, the carrying amount is $72,000 and the deferred capital contribution balance is also $72,000. Both are spread over the new three-year remaining life, $24,000 a year. No catch-up goes to net assets because a change in estimate is prospective.
+        ref: Part II, Section 1506
+      - id: p2u3l2q04
+        type: tf
+        concept: p2u3-estimate-change
+        prompt: When an NPO revises the useful life of its building, it restates the comparative amortization figures so both years use the new life.
+        answer: false
+        reasons:
+          - A change in estimate is applied prospectively, in the current and future periods only
+          - Comparatives are restated only when the auditor requests it
+          - Useful life changes are treated as policy changes under ASNPO
+        reason: 0
+        explain: Changes in estimates reflect new information, so earlier figures were right when prepared. The NPO discloses the nature and amount of a change that affects the current period.
+        ref: Part II, Section 1506
+      - id: p2u3l2q05
+        type: mc
+        concept: p2u3-error-correction
+        prompt: Which situation is a prior period error for a Fort McMurray Friendship Centre?
+        options:
+          - A pledge recorded as receivable at a reasonable estimate was later only partly collected
+          - The centre revised the useful life of its kitchen equipment after an engineering report
+          - Last year's statements omitted a signed invoice for December repairs that was sitting in the finance office before the statements were completed
+          - A court awarded more damages this year than the centre's lawyer reasonably expected at year end
+        answer: 2
+        explain: The invoice was reliable information available when the statements were prepared, and it was not used. That is an error. The other cases are outcomes or new information that differ from a reasonable estimate made at the time.
+        ref: Part II, Section 1506
+      - id: p2u3l2q06
+        type: calc
+        concept: p2u3-error-correction
+        prompt: A Calgary food bank bought a walk-in freezer for $60,000 on January 1, 2024 and wrongly expensed it. The freezer has a ten-year life and no residual value. Reported 2024 excess of revenues over expenses was $15,000. Enter the restated 2024 excess of revenues over expenses.
+        answer: 69000
+        unit: $
+        explain: Remove the $60,000 expense and add one year of amortization of $6,000. $15,000 + $60,000 - $6,000 = $69,000. The 2024 comparative column is labelled restated.
+        ref: Part II, Section 1506
+      - id: p2u3l2q07
+        type: je
+        concept: p2u3-error-correction
+        prompt: Continuing the freezer case, the error is found in 2025 after the 2024 books were closed. The food bank reports one unrestricted net asset balance. Record the correcting entry in the 2025 books, before 2025 amortization.
+        accounts:
+          - Capital assets
+          - Accumulated amortization
+          - Unrestricted net assets
+          - Amortization expense
+          - Equipment expense
+          - Deferred capital contributions
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 60000
+          - account: Accumulated amortization
+            side: cr
+            amount: 6000
+          - account: Unrestricted net assets
+            side: cr
+            amount: 54000
+        explain: The 2024 expense and amortization are closed into net assets, so the correction to them goes through opening net assets, not 2025 expenses. The carrying amount at January 1, 2025 becomes $54,000, and 2025 amortization of $6,000 is recorded normally.
+        ref: Part II, Section 1506
+      - id: p2u3l2q08
+        type: calc
+        concept: p2u3-error-correction
+        prompt: An Edmonton arts society prepares 2025 statements with 2024 comparatives. It finds that an $18,000 December 2023 utilities invoice was not accrued at December 31, 2023 and was expensed when paid in 2024. Unrestricted net assets at January 1, 2024 were reported as $240,000. Enter the restated January 1, 2024 balance.
+        answer: 222000
+        unit: $
+        explain: The missing liability overstated net assets at the end of 2023 by $18,000. $240,000 - $18,000 = $222,000. The error is older than the comparative year, so the earliest opening balance presented absorbs it.
+        ref: Part II, Section 1506
+      - id: p2u3l2q09
+        type: tf
+        concept: p2u3-error-correction
+        prompt: In the utilities case, net assets at December 31, 2024 must also be restated downward by $18,000.
+        answer: false
+        reasons:
+          - The error reversed itself in 2024, when the expense was recorded on payment, so the December 31, 2024 balance is already right
+          - Net assets are never restated after the opening balance
+          - The adjustment goes to 2025 revenue instead
+        reason: 0
+        explain: 2024 expenses were overstated by the same $18,000 that 2023 expenses were understated. Restated 2024 shows lower expenses and a lower opening balance, which net to no change at year end. Self-reversing errors still need restatement of the comparatives when material.
+        ref: Part II, Section 1506
+      - id: p2u3l2q10
+        type: match
+        concept: p2u3-error-disclosure
+        prompt: Match each part of an error correction disclosure to its content.
+        pairs:
+          - left: Nature of the error
+            right: What went wrong, such as a capital purchase that was expensed
+          - left: Line item corrections for each prior period presented
+            right: The change to expenses, assets and other affected lines in the comparative year
+          - left: Correction at the start of the earliest period presented
+            right: The adjustment to opening net assets
+          - left: Restated label
+            right: Signals to readers that comparative figures differ from those previously issued
+        explain: Readers who hold last year's statements need to reconcile them to the new comparatives. The disclosure gives the cause, the line-by-line effect and the opening balance effect.
+        ref: Part II, Section 1506
+      - id: p2u3l2q11
+        type: mc
+        concept: p2u3-error-disclosure
+        prompt: A Lethbridge museum finds a material error that arose in 2021. It is preparing 2025 statements with 2024 comparatives. Where does the cumulative correction go?
+        options:
+          - Into 2025 excess of revenues over expenses
+          - Into opening net assets at January 1, 2024, with the 2024 comparatives restated as needed
+          - Into opening net assets at January 1, 2025, leaving 2024 untouched
+          - Nowhere, because errors over three years old are not corrected
+        answer: 1
+        explain: Correction is retrospective. When the error predates the periods presented, the cumulative effect goes to opening net assets of the earliest period presented, and any comparative line items it affects are restated.
+        ref: Part II, Section 1506
+
+  - id: p2u3l3
+    title: Contingencies and guarantees
+    intro: Lawsuits, claims and guarantees of a related society's mortgage are everyday NPO exposures. This lesson applies the likely, unlikely and not determinable framework and the guarantee disclosures.
+    questions:
+      - id: p2u3l3q01
+        type: match
+        concept: p2u3-contingent-loss-accrual
+        prompt: Match each contingent loss assessment to its treatment.
+        pairs:
+          - left: Likely and reasonably estimable
+            right: Accrue, and disclose any exposure above the accrual
+          - left: Likely but not reasonably estimable
+            right: Disclose, stating that no estimate can be made
+          - left: Not determinable
+            right: Disclose, no accrual
+          - left: Unlikely, and not a guarantee
+            right: No accrual, and generally no disclosure
+        explain: Accrual needs both a likely outcome and a reasonable estimate. Disclosure fills the gap when only one condition is met or the likelihood cannot be judged. Guarantees are the main case where an unlikely loss is still disclosed.
+        ref: Part II, Section 3290
+      - id: p2u3l3q02
+        type: je
+        concept: p2u3-contingent-loss-accrual
+        prompt: A Red Deer recreation society is being sued over an injury at its pool last fall. Counsel says losing is likely and the loss will be between $80,000 and $200,000, with no amount in the range more likely than another. Record the year end entry.
+        accounts:
+          - Legal claims expense
+          - Accrued liabilities
+          - Cash
+          - Unrestricted net assets
+          - Insurance recoverable
+          - Internally restricted net assets
+        lines:
+          - account: Legal claims expense
+            side: dr
+            amount: 80000
+          - account: Accrued liabilities
+            side: cr
+            amount: 80000
+        explain: When no amount in a range is better than any other, the minimum of the range is accrued. The society then discloses the additional exposure. Setting aside internally restricted net assets for the claim would not replace the accrual.
+        ref: Part II, Section 3290
+      - id: p2u3l3q03
+        type: calc
+        concept: p2u3-contingent-loss-disclosure
+        prompt: In the pool case, enter the amount of exposure to loss in excess of the accrual that the society discloses.
+        answer: 120000
+        unit: $
+        explain: $200,000 - $80,000 = $120,000. When an accrual is made but exposure above it exists, that exposure is disclosed along with the nature of the contingency.
+        ref: Part II, Section 3290
+      - id: p2u3l3q04
+        type: calc
+        concept: p2u3-contingent-loss-accrual
+        prompt: Change one fact in the pool case. Counsel now says the loss will be between $80,000 and $200,000, and $150,000 is the most likely amount within that range. Enter the amount to accrue.
+        answer: 150000
+        unit: $
+        explain: When one amount within the range is a better estimate than any other, that amount is accrued. The remaining $50,000 of exposure up to $200,000 is disclosed.
+        ref: Part II, Section 3290
+      - id: p2u3l3q05
+        type: tf
+        concept: p2u3-contingent-gain
+        prompt: A Grande Prairie Friendship Centre is suing a roofing contractor for faulty work, and counsel says a $150,000 award is likely. The centre should accrue a receivable and a gain at year end.
+        answer: false
+        reasons:
+          - Contingent gains are never accrued; a likely gain is disclosed with its nature and estimate
+          - Gains are accrued once counsel puts a probability on them
+          - Lawsuit gains are recorded directly in net assets
+        reason: 0
+        explain: The standard treats gains and losses asymmetrically. Even a likely contingent gain is not recognized until it is realized. The centre may disclose the claim and its estimate.
+        ref: Part II, Section 3290
+      - id: p2u3l3q06
+        type: classify
+        concept: p2u3-contingent-loss-disclosure
+        prompt: Classify the treatment of each item at a Calgary youth services society's year end.
+        buckets:
+          - Accrue
+          - Disclose only
+          - Neither accrue nor disclose
+        items:
+          - text: Wrongful dismissal claim that counsel says is likely to cost about $45,000
+            bucket: 0
+          - text: Likely loss on a funder dispute, but no reasonable estimate can be made
+            bucket: 1
+          - text: Claim where counsel cannot say whether the society is likely to lose
+            bucket: 1
+          - text: Nuisance claim that counsel considers unlikely to succeed
+            bucket: 2
+          - text: Likely recovery from an insurer in a dispute over a past claim
+            bucket: 1
+          - text: Guarantee of a related society's mortgage where default is unlikely
+            bucket: 1
+        explain: Read carefully. Contingent gains are disclosed, never accrued. Guarantees are disclosed even when payment is unlikely. The nuisance claim is the trap. It belongs in the third bucket, because an unlikely contingent loss other than a guarantee is generally neither accrued nor disclosed.
+        ref: Part II, Section 3290
+      - id: p2u3l3q07
+        type: mc
+        concept: p2u3-guarantees
+        prompt: A Lethbridge foundation guarantees the $500,000 bank mortgage of a seniors' housing society it controls but does not consolidate. Default is considered unlikely. Which disclosure is required?
+        options:
+          - None, because payment is unlikely
+          - The nature of the guarantee, the maximum potential future payments, any recourse or collateral, and the carrying amount of any related liability
+          - Only the foundation's estimate of the probability of default
+          - Only a general statement that the foundation has commitments
+        answer: 1
+        explain: Guarantee disclosures apply even when the chance of payment is slight. Readers need to know the size of the exposure and what the foundation could recover. The relationship and guarantee are also related party information.
+        ref: Part II, Section 3290
+      - id: p2u3l3q08
+        type: tf
+        concept: p2u3-guarantees
+        prompt: Because the default is unlikely, the foundation records the guarantee as a $500,000 liability at year end.
+        answer: false
+        reasons:
+          - A loss under a guarantee is accrued only when payment is likely and estimable; otherwise the guarantee is disclosed
+          - Guarantees are always recorded at their maximum amount
+          - Guarantees between related parties are offset in net assets
+        reason: 0
+        explain: The guarantee is a contingency. It is accrued only when it becomes likely the foundation will pay and the amount can be estimated. Until then it is disclosed.
+        ref: Part II, Section 3290
+      - id: p2u3l3q09
+        type: calc
+        concept: p2u3-guarantees
+        prompt: A year later the housing society defaults. The mortgage balance is $420,000. The bank expects to realize $300,000 by selling the building held as collateral, and will call on the foundation's guarantee for the shortfall. Payment is now likely. Enter the loss the foundation accrues.
+        answer: 120000
+        unit: $
+        explain: $420,000 - $300,000 = $120,000. The foundation accrues its likely and estimable payment, not the full balance. It continues to disclose the guarantee, including the remaining exposure if the collateral realizes less.
+        ref: Part II, Section 3290
+      - id: p2u3l3q10
+        type: je
+        concept: p2u3-guarantees
+        prompt: Record the foundation's accrual from the previous question.
+        accounts:
+          - Loss on guarantee
+          - Liability under guarantee
+          - Due from related party
+          - Grant expense
+          - Cash
+          - Mortgage payable
+        lines:
+          - account: Loss on guarantee
+            side: dr
+            amount: 120000
+          - account: Liability under guarantee
+            side: cr
+            amount: 120000
+        explain: The foundation is not the borrower, so it does not record the mortgage. It records only its own obligation under the guarantee. Any right to recover from the housing society is assessed separately and is not netted here.
+        ref: Part II, Section 3290
+      - id: p2u3l3q11
+        type: mc
+        concept: p2u3-guarantees
+        prompt: Apart from Section 3290, why else must the foundation describe its guarantee of the housing society's mortgage?
+        options:
+          - The guarantee is a related party transaction, so its terms and amounts are disclosed under Section 4460
+          - It must be presented as a separate restricted fund
+          - It converts the housing society into a profit-oriented enterprise
+          - It requires the foundation to consolidate the society
+        answer: 0
+        explain: The foundation controls the society, so they are related parties. Guarantees between them are related party transactions that need description, amounts and terms. If the society is not consolidated, the Section 4450 disclosures about it also apply.
+        ref: Part III, Section 4460
+
+  - id: p2u3l4
+    title: Subsequent events and going concern
+    intro: What happens between year end and the date the statements are completed can change the numbers, the notes or even the basis of preparation. This lesson sorts adjusting from non-adjusting events and covers going concern.
+    questions:
+      - id: p2u3l4q01
+        type: classify
+        concept: p2u3-subsequent-adjusting
+        prompt: A Banff arts centre has a March 31, 2026 year end and completes its statements on June 10, 2026. Classify each event.
+        buckets:
+          - Adjusting
+          - Non-adjusting
+        items:
+          - text: In May, a claim from a February patron fall is settled for more than the amount accrued
+            bucket: 0
+          - text: In April, a flood destroys the centre's costume warehouse
+            bucket: 1
+          - text: In May, the province says it will not renew the operating grant for next year
+            bucket: 1
+          - text: In April, a funder's audit finds that $40,000 of grant money spent before year end went to ineligible costs and must be repaid
+            bucket: 0
+          - text: In May, a sponsor that was already in financial trouble at year end files for bankruptcy, and its receivable will not be collected
+            bucket: 0
+          - text: In April, the market value of the centre's investments falls sharply
+            bucket: 1
+        explain: The question is when the condition existed. The fall, the ineligible spending and the sponsor's distress all existed at March 31. The flood, the funding decision and the market drop are new conditions arising after year end.
+        ref: Part II, Section 3820
+      - id: p2u3l4q02
+        type: je
+        concept: p2u3-subsequent-adjusting
+        prompt: In the Banff case, $60,000 was accrued at March 31 for the patron's claim. The claim settles in May for $95,000. Record the adjustment to the March 31, 2026 statements.
+        accounts:
+          - Legal claims expense
+          - Accrued liabilities
+          - Cash
+          - Unrestricted net assets
+          - Deferred contributions
+          - Prepaid expenses
+        lines:
+          - account: Legal claims expense
+            side: dr
+            amount: 35000
+          - account: Accrued liabilities
+            side: cr
+            amount: 35000
+        explain: The settlement is better evidence of the obligation that existed at year end, so the accrual is increased by $95,000 - $60,000 = $35,000. The cash payment is recorded in May, in the next fiscal year.
+        ref: Part II, Section 3820
+      - id: p2u3l4q03
+        type: je
+        concept: p2u3-subsequent-adjusting
+        prompt: In the Banff case, the centre uses the deferral method and recognized the grant as revenue as it incurred expenses. The funder's April audit requires repayment of $40,000 spent on ineligible costs before year end. Record the year end adjustment.
+        accounts:
+          - Government grant revenue
+          - Grant repayable
+          - Deferred contributions
+          - Program expenses
+          - Cash
+          - Contributions receivable
+        lines:
+          - account: Government grant revenue
+            side: dr
+            amount: 40000
+          - account: Grant repayable
+            side: cr
+            amount: 40000
+        explain: The ineligible spending happened before year end, so the obligation to repay existed at March 31. Revenue recognized on those costs is reversed and a liability recorded. The costs stay as expenses because they were incurred.
+        ref: Part II, Section 3820
+      - id: p2u3l4q04
+        type: mc
+        concept: p2u3-subsequent-nonadjusting
+        prompt: For the April flood, which disclosure meets the minimum requirement?
+        options:
+          - No disclosure, because the flood happened after year end
+          - A restatement of the warehouse carrying amount at March 31
+          - The nature of the event and an estimate of its financial effect, or a statement that no estimate can be made
+          - A general note that the centre faces natural hazards
+        answer: 2
+        explain: The flood is non-adjusting, so the March 31 figures stay as they are. Because it significantly affects assets and future operations, the centre discloses what happened and its estimated effect, or says that an estimate cannot be made.
+        ref: Part II, Section 3820
+      - id: p2u3l4q05
+        type: mc
+        concept: p2u3-completion-date
+        prompt: When are an NPO's financial statements complete for subsequent events purposes?
+        options:
+          - On the fiscal year end date
+          - When the auditor starts fieldwork
+          - At the annual general meeting where members receive them
+          - When a full set with notes is prepared, final adjustments are made, no further changes are expected, and they are approved through the organization's finalization process
+        answer: 3
+        explain: All four conditions must be met. For many NPOs, approval happens at a board or finance committee meeting before the AGM. Events after that date are outside the window.
+        ref: Part II, Section 3820
+      - id: p2u3l4q06
+        type: tf
+        concept: p2u3-completion-date
+        prompt: The board of a Camrose hockey association approved its statements on May 20. A lawsuit settled on June 5, before the members' AGM on June 15. The association must adjust the approved statements for the settlement.
+        answer: false
+        reasons:
+          - The settlement falls after the completion date, so it is outside the subsequent events window
+          - Every event before the AGM must be adjusted
+          - Lawsuit settlements are never adjusting events
+        reason: 0
+        explain: Once the statements are complete, later events are not reflected in them. The settlement is accounted for in the next fiscal year. Management may still choose to inform members at the AGM.
+        ref: Part II, Section 3820
+      - id: p2u3l4q07
+        type: mc
+        concept: p2u3-where-standards-sit
+        prompt: Where are an NPO's going concern requirements found?
+        options:
+          - Part III Section 1401, the NPO version of the general presentation standards
+          - Part II Section 3820 only
+          - Part II Section 3290, as a type of contingency
+          - Nowhere, because NPOs are assumed to continue indefinitely
+        answer: 0
+        explain: Part III has its own general presentation standards for NPOs in Section 1401, which include the going concern requirements. Part II Section 1400 is the profit-oriented version and is not the NPO's source.
+        ref: Part III, Section 1401
+      - id: p2u3l4q08
+        type: tf
+        concept: p2u3-going-concern
+        prompt: An NPO's going concern assessment looks at least, but is not limited to, twelve months from the year end date.
+        answer: true
+        explain: Management considers all available information about the future, covering at least twelve months from year end. Known events beyond that, such as a major grant expiring in month fourteen, also count.
+        ref: Part III, Section 1401
+      - id: p2u3l4q09
+        type: mc
+        concept: p2u3-going-concern
+        prompt: A Red Deer food bank has a March 31 year end. In May it learns its largest funder will end support next year. Management has a credible plan, but significant doubt remains about whether the food bank can continue. Which treatment is right?
+        options:
+          - Prepare on a liquidation basis immediately
+          - Prepare on a going concern basis and disclose the material uncertainty about the food bank's ability to continue
+          - Prepare on a going concern basis with no disclosure, because the decision came after year end
+          - Restate revenue for the year to remove the funder's grant
+        answer: 1
+        explain: The going concern basis remains appropriate unless management intends, or has no realistic alternative but, to liquidate or stop operating. Information received up to completion feeds the assessment. Material uncertainties are disclosed. The funder's decision does not change revenue already earned.
+        ref: Part III, Section 1401
+      - id: p2u3l4q10
+        type: mc
+        concept: p2u3-going-concern
+        prompt: In June, before its statements are complete, the board of a Medicine Hat museum votes to wind up operations in September because it has no realistic way to fund them. What follows for the year end statements?
+        options:
+          - Nothing, because the vote is a non-adjusting subsequent event
+          - Only a short note describing the vote
+          - The going concern basis is not appropriate, so the museum discloses that fact, the reasons and the basis of preparation used
+          - The museum consolidates with its foundation
+        answer: 2
+        explain: Going concern is the exception to the normal subsequent events logic. If management intends to liquidate or has no realistic alternative by the time the statements are completed, they are not prepared on a going concern basis, and the museum discloses that and the basis it used.
+        ref: Part III, Section 1401
+      - id: p2u3l4q11
+        type: match
+        concept: p2u3-subsequent-nonadjusting
+        prompt: Match each post-year-end event at a St. Albert community league to the right response.
+        pairs:
+          - left: Fire destroys the clubhouse in April
+            right: Disclose the event and its estimated effect
+          - left: Settlement of a claim for an injury in January
+            right: Adjust the year end accrual
+          - left: Board decides in May to buy a new ice resurfacer next year
+            right: Disclose only if significant; no adjustment
+          - left: Event occurring after the statements were approved
+            right: Not reflected in these statements
+        explain: Ask whether the condition existed at year end, and whether the event fell inside the window that ends at completion. Significant non-adjusting events are disclosed, never booked into the year just ended.
+        ref: Part II, Section 3820
+
+  - id: p2u3l5
+    title: Integrated restatement cases
+    intro: Real files mix policy changes, errors, estimates and subsequent events. Work each case in order, decide what kind of change you face, and then compute.
+    questions:
+      - id: p2u3l5q01
+        type: calc
+        concept: p2u3-error-correction
+        prompt: An Edmonton seniors' centre uses the deferral method. On January 1, 2024 it received a $60,000 restricted capital grant and bought a freezer with it, amortized over ten years. It capitalized the freezer correctly but recognized the full $60,000 grant as 2024 revenue. Enter the overstatement of net assets at December 31, 2024.
+        answer: 54000
+        unit: $
+        explain: Under the deferral method, 2024 revenue should have been only the $6,000 amortization of deferred capital contributions, leaving $54,000 deferred. The centre recognized $60,000, so net assets are overstated by $60,000 - $6,000 = $54,000.
+        ref: Part II, Section 1506
+      - id: p2u3l5q02
+        type: je
+        concept: p2u3-error-correction
+        prompt: The centre finds the error in 2025 after the 2024 books are closed, and reports one unrestricted net asset balance. Record the correcting entry in the 2025 books.
+        accounts:
+          - Unrestricted net assets
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Contribution revenue
+          - Capital assets
+          - Deferred contributions
+        lines:
+          - account: Unrestricted net assets
+            side: dr
+            amount: 54000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 54000
+        explain: The capital asset side was right, so only the contribution side changes. Opening net assets fall by $54,000 and deferred capital contributions are set up at their January 1, 2025 balance. In 2025, $6,000 is amortized into revenue as usual.
+        ref: Part II, Section 1506
+      - id: p2u3l5q03
+        type: calc
+        concept: p2u3-error-disclosure
+        prompt: The centre originally reported a 2024 excess of revenues over expenses of $85,000. Enter the restated 2024 excess shown in the comparative column.
+        answer: 31000
+        unit: $
+        explain: Remove the $60,000 grant revenue and add $6,000 of amortization of deferred capital contributions. $85,000 - $60,000 + $6,000 = $31,000. The note shows this line item change and the restated label.
+        ref: Part II, Section 1506
+      - id: p2u3l5q04
+        type: je
+        concept: p2u3-npo-policy-choices
+        prompt: Return to the Lethbridge food bank that starts recognizing donated food. The 2024 books are closed, and donated food on hand at December 31, 2024 was $48,000. Record the 2025 entry that brings opening balances onto the new policy.
+        accounts:
+          - Inventory of donated food
+          - Unrestricted net assets
+          - Contributed materials revenue
+          - Food distribution expense
+          - Deferred contributions
+          - Cash
+        lines:
+          - account: Inventory of donated food
+            side: dr
+            amount: 48000
+          - account: Unrestricted net assets
+            side: cr
+            amount: 48000
+        explain: The cumulative effect to the start of 2025 goes to opening net assets, not 2025 revenue. In the comparative column, 2024 revenue and expenses are grossed up by $910,000 and $890,000, and opening 2024 net assets rise by $28,000.
+        ref: Part II, Section 1506
+      - id: p2u3l5q05
+        type: calc
+        concept: p2u3-retrospective
+        prompt: The food bank had originally reported a 2024 deficiency of revenues over expenses of $12,000. Using the earlier facts (2024 donated food received $910,000, distributed $890,000), enter the restated 2024 result. Use a negative number for a deficiency.
+        answer: 8000
+        unit: $
+        explain: -$12,000 + $910,000 - $890,000 = $8,000 excess. A policy change about in-kind goods can flip a reported deficiency to an excess, which is why the disclosure of line-item effects matters to readers and funders.
+        ref: Part II, Section 1506
+      - id: p2u3l5q06
+        type: je
+        concept: p2u3-subsequent-adjusting
+        prompt: A Fort McMurray Friendship Centre has a March 31, 2026 year end. At that date a wrongful dismissal claim for a firing in January was assessed as not determinable, so nothing was accrued. In May, before the statements are complete, the centre settles the claim for $70,000. Record the adjustment.
+        accounts:
+          - Legal claims expense
+          - Accrued liabilities
+          - Unrestricted net assets
+          - Salaries and benefits
+          - Cash
+          - Internally restricted net assets
+        lines:
+          - account: Legal claims expense
+            side: dr
+            amount: 70000
+          - account: Accrued liabilities
+            side: cr
+            amount: 70000
+        explain: The dismissal happened before year end, so the obligation existed at March 31. The settlement removes the uncertainty and is an adjusting event, so the year end statements record the liability and the note moves from a contingency disclosure to an accrual. This is not an error, because the earlier assessment was reasonable.
+        ref: Part II, Section 3820
+      - id: p2u3l5q07
+        type: calc
+        concept: p2u3-estimate-change
+        prompt: A Calgary hockey association bought a van on January 1, 2022 for $90,000, ten-year life, no residual value. The bookkeeper forgot to record 2024 amortization, a material error. On January 1, 2025, the remaining life is revised to four years. Enter 2025 amortization expense.
+        answer: 15750
+        unit: $
+        explain: Fix the error first. Correct accumulated amortization at December 31, 2024 is 3 x $9,000 = $27,000, so the carrying amount is $63,000. Then apply the estimate change prospectively. $63,000 / 4 = $15,750. Using the uncorrected $72,000 would give $18,000 and bury the error in future amortization.
+        ref: Part II, Section 1506
+      - id: p2u3l5q08
+        type: je
+        concept: p2u3-error-correction
+        prompt: Record the 2025 entry that corrects the missed 2024 amortization in the hockey association case. The 2024 books are closed and it reports one unrestricted net asset balance.
+        accounts:
+          - Unrestricted net assets
+          - Accumulated amortization
+          - Amortization expense
+          - Capital assets
+          - Deferred capital contributions
+          - Repairs and maintenance expense
+        lines:
+          - account: Unrestricted net assets
+            side: dr
+            amount: 9000
+          - account: Accumulated amortization
+            side: cr
+            amount: 9000
+        explain: The missing 2024 amortization belongs to the comparative year, so it goes through opening net assets, and the 2024 column is restated. Debiting 2025 amortization expense would misstate the current year.
+        ref: Part II, Section 1506
+      - id: p2u3l5q09
+        type: calc
+        concept: p2u3-npo-policy-choices
+        prompt: A Banff arts society switches from the deferral method to the restricted fund method and sets up a capital fund and a program fund that match all of its restrictions. At January 1, 2024, the earliest date presented, it had deferred contributions for unspent program grants of $64,000 and deferred capital contributions of $300,000. Enter the increase in total net assets at January 1, 2024.
+        answer: 364000
+        unit: $
+        explain: Under the restricted fund method, restricted contributions are recognized as revenue in the matching restricted fund when received or receivable, so both deferred balances become fund balances. $64,000 + $300,000 = $364,000. If a restriction had no matching fund, that contribution would stay on the deferral method in the general fund.
+        ref: Part III, Section 4410
+      - id: p2u3l5q10
+        type: mc
+        concept: p2u3-policy-disclosure
+        prompt: In the Banff case, which justification would best support the change in the society's disclosure?
+        options:
+          - The new auditor is more familiar with fund accounting
+          - The society's major funders and board track resources by restriction, and fund-based statements give them reliable and more relevant information about how restricted resources are used
+          - The change increases total net assets by $364,000
+          - The restricted fund method requires fewer journal entries
+        answer: 1
+        explain: The note must explain why the new policy gives reliable and more relevant information to users. A better-looking balance sheet, convenience or auditor preference are not acceptable reasons.
+        ref: Part II, Section 1506
+      - id: p2u3l5q11
+        type: match
+        concept: p2u3-going-concern
+        prompt: A Grande Prairie seniors' housing society finalizes its statements in June. Match each finding to its treatment.
+        pairs:
+          - left: Major operating grant cancelled in May, board plans cuts, significant doubt remains
+            right: Going concern basis with disclosure of material uncertainty
+          - left: Last year's statements omitted a known capital lease
+            right: Retrospective restatement as an error
+          - left: Engineers say the boiler will last five more years, not eight
+            right: Prospective change in estimate
+          - left: Board resolves to start recognizing donated volunteer services it can measure
+            right: Retrospective voluntary policy change, if reliable and more relevant
+        explain: The skill is classifying before computing. Uncertainty about survival goes to the going concern note, misused information is an error, new information is an estimate, and a new principle for the same transactions is a policy change.
+        ref: Part III, Section 1401

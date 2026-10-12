@@ -1,0 +1,854 @@
+id: rev1
+course: revenue
+number: 1
+title: The deferral method in depth
+summary: Where a contribution ends and an exchange begins, how external restrictions differ from board designations, and how the deferral method times revenue for operating, capital, land and endowment contributions, investment income and changed restrictions, with the related presentation and disclosure.
+refs:
+  - Part III, Section 4410
+  - Part III, Section 4400
+status: ready
+
+concepts:
+  - id: rev1-contribution-def
+    title: What makes a transfer a contribution
+    summary: A contribution is a non-reciprocal transfer of cash or other assets to an NPO, or a non-reciprocal settlement or cancellation of its liabilities. The contributor gets nothing of equal value back. Section 4410 treats government funding to an NPO as a contribution.
+    ref: Part III, Section 4410
+  - id: rev1-exchange
+    title: Exchange transactions
+    summary: In an exchange, the NPO gives goods or services of roughly equal value in return, as with program fees, ticket sales, rent or sales of goods. Exchange revenue is recognized when earned under the general revenue rules in Part II, not under the contribution rules.
+    ref: Part III, Section 4410
+  - id: rev1-mixed
+    title: Part contribution, part exchange
+    summary: Gala tickets, memberships and sponsorships often blend the two. The part that buys a benefit of commensurate value is exchange revenue, and only the amount given beyond that benefit is in substance a contribution. Judgement about the value of the benefit drives the split.
+    ref: Part III, Section 4410
+  - id: rev1-explicit-implied
+    title: Explicit and implied restrictions
+    summary: A restriction is a stipulation imposed from outside the NPO on how a contribution is used. It can be stated in writing, or implied by the circumstances, such as gifts received in response to an appeal for a specific purpose.
+    ref: Part III, Section 4410
+  - id: rev1-internal-designation
+    title: Board designations are not restrictions
+    summary: Amounts the board sets aside are internally restricted. They do not change how a contribution is recognized, and they are shown as transfers within net assets, which the board can reverse.
+    ref: Part III, Section 4400
+  - id: rev1-purpose-time
+    title: Purpose and time restrictions
+    summary: A restriction can specify what the money is for (a program, a capital asset) or when it may be used (next year, over three years). A contribution that may only be used in a future period is a restricted contribution for expenses of future periods.
+    ref: Part III, Section 4410
+  - id: rev1-unrestricted
+    title: Recognizing unrestricted contributions
+    summary: Unrestricted contributions are revenue in the period received or receivable, provided the amount can be reasonably estimated and ultimate collection is reasonably assured.
+    ref: Part III, Section 4410
+  - id: rev1-current-period
+    title: Restricted for current-period expenses
+    summary: A restricted contribution for expenses of the current period is revenue in that period. There is nothing to defer because the related expenses are already incurred.
+    ref: Part III, Section 4410
+  - id: rev1-future-period
+    title: Restricted for future-period expenses
+    summary: A restricted contribution for expenses of future periods is deferred and recognized as revenue in the periods the related expenses are incurred. A restricted receivable is matched by deferred contributions, not revenue.
+    ref: Part III, Section 4410
+  - id: rev1-dcc
+    title: Deferred capital contributions
+    summary: A restricted contribution to buy an amortizable capital asset is deferred and recognized as revenue on the same basis as the asset is amortized. Amounts received but not yet spent stay deferred, and recognition starts when amortization of the asset starts.
+    ref: Part III, Section 4410
+  - id: rev1-land
+    title: Contributions for land and other non-amortized assets
+    summary: A restricted contribution to buy a capital asset that will not be amortized, such as land, is recognized as a direct increase in net assets. It never passes through revenue.
+    ref: Part III, Section 4410
+  - id: rev1-endowment
+    title: Endowment contributions
+    summary: Under the deferral method, endowment contributions are recognized as direct increases in net assets in the period received or receivable. They are shown in the statement of changes in net assets, not the statement of operations.
+    ref: Part III, Section 4410
+  - id: rev1-investment-income
+    title: Restricted investment income
+    summary: Investment income is treated like a contribution of the same kind. Unrestricted income is revenue when earned, income restricted to future expenses is deferred, and income that must be added to endowment principal is a direct increase in net assets.
+    ref: Part III, Section 4410
+  - id: rev1-restriction-changes
+    title: Changes and lapses of restrictions
+    summary: When a contributor lifts a restriction, the remaining deferred balance is no longer tied to future expenses and is recognized as revenue. When a restriction cannot be met and the money must be returned, the NPO has a liability to repay rather than deferred revenue.
+    ref: Part III, Section 4410
+  - id: rev1-disclosure
+    title: Disclosing deferred balances
+    summary: An NPO using the deferral method discloses its policy and the nature and amount of changes in its deferred contribution balances, typically a continuity showing the opening balance, amounts received, amounts recognized as revenue and the closing balance, with capital contributions shown separately.
+    ref: Part III, Section 4410
+  - id: rev1-presentation
+    title: Where each item lands in the statements
+    summary: Revenue items appear in the statement of operations. Endowment contributions and contributions for land appear in the statement of changes in net assets, and net assets restricted for endowment are shown as a separate class. Deferred contributions sit outside net assets in the statement of financial position.
+    ref: Part III, Section 4400
+
+lessons:
+  - id: rev1l1
+    title: Contribution or exchange?
+    intro: Everything in Section 4410 depends on first deciding that a receipt is a contribution at all. This lesson works through the grey areas that trip up experienced preparers.
+    questions:
+      - id: rev1l1q01
+        type: mc
+        concept: rev1-contribution-def
+        prompt: Which feature is essential for a receipt to be a contribution under Section 4410?
+        options:
+          - It is documented in a signed agreement
+          - The NPO gives nothing of approximately equal value back to the contributor
+          - It comes from an individual rather than a government
+          - It is eligible for a charitable donation receipt
+        answer: 1
+        explain: A contribution is non-reciprocal. Paperwork, the type of contributor and tax receipting are irrelevant. Many contributions come from governments, and many contributions are not receipted.
+        ref: Part III, Section 4410
+      - id: rev1l1q02
+        type: tf
+        concept: rev1-contribution-def
+        prompt: A Grande Prairie family resource society receives an annual operating grant from a provincial ministry and reports quarterly on service outcomes. Because the ministry receives reports, the grant is an exchange transaction.
+        answer: false
+        reasons:
+          - Section 4410 treats government funding to an NPO as a contribution, and reporting is not a benefit of equal value
+          - Reporting requirements always make a grant an exchange
+          - Grants under one year are always exchanges
+        reason: 0
+        explain: Section 4410 treats government funding to an NPO as a contribution. Accountability reports do not give the ministry goods or services of commensurate value.
+        ref: Part III, Section 4410
+      - id: rev1l1q03
+        type: classify
+        concept: rev1-exchange
+        prompt: A Camrose community league receives the following. Classify each receipt.
+        buckets:
+          - Contribution
+          - Exchange revenue
+        items:
+          - text: Registration fees for a ten-week youth soccer program
+            bucket: 1
+          - text: A municipal grant toward operating the community hall
+            bucket: 0
+          - text: Rental fees for the hall from a wedding party
+            bucket: 1
+          - text: A cash gift from a local business with no benefits attached
+            bucket: 0
+          - text: Concession sales at the outdoor rink
+            bucket: 1
+          - text: Forgiveness of a $5,000 supplier invoice as a goodwill gesture
+            bucket: 0
+        explain: Fees, rentals and sales give the payer something of equal value, so they are exchanges. Grants, gifts and the cancellation of a liability are non-reciprocal and are contributions.
+        ref: Part III, Section 4410
+      - id: rev1l1q04
+        type: calc
+        concept: rev1-mixed
+        prompt: A Banff arts society sells gala tickets for $250 each. Each ticket includes a dinner and show with a fair value of $90. It sold 400 tickets. Enter the total amount that is in substance a contribution.
+        answer: 64000
+        unit: $
+        explain: Each ticket includes $250 - $90 = $160 given beyond the benefit received. 400 × $160 = $64,000. The other $36,000 is the price of a dinner and show, which is exchange revenue.
+        ref: Part III, Section 4410
+      - id: rev1l1q05
+        type: mc
+        concept: rev1-mixed
+        prompt: A Calgary hockey association receives $30,000 from a car dealership. In return, the dealership gets rink-board advertising for two seasons, logo placement on jerseys and 20 season passes, together worth about the full $30,000. How should the association treat it?
+        options:
+          - As an exchange, recognized over the two seasons as the advertising and passes are provided
+          - As a contribution, recognized in full when received
+          - As a restricted contribution deferred until the jerseys are bought
+          - As a direct increase in net assets
+        answer: 0
+        explain: The sponsor receives benefits of commensurate value, so this is an exchange. Revenue is recognized as the association delivers the advertising and passes. A sponsorship that brings only a thank-you would be a contribution.
+        ref: Part III, Section 4410
+      - id: rev1l1q06
+        type: match
+        concept: rev1-mixed
+        prompt: Match each receipt of a St. Albert seniors' centre to its most likely treatment.
+        pairs:
+          - left: $40 annual membership giving members discounted classes and meals worth more than $40
+            right: Exchange revenue over the membership year
+          - left: $25 "friends of the centre" membership with only a newsletter
+            right: Contribution
+          - left: $150 dinner ticket where the meal is worth $60
+            right: $60 exchange and $90 contribution in substance
+          - left: Logo on a banner in return for a gift, with no other benefits
+            right: Contribution with a token acknowledgement
+        explain: The test is always whether the payer receives something of commensurate value. Token acknowledgements and newsletters do not make a payment an exchange. Real benefits do, to the extent of their value.
+        ref: Part III, Section 4410
+      - id: rev1l1q07
+        type: je
+        concept: rev1-exchange
+        prompt: On September 1, a Red Deer music school collects $36,000 cash in tuition for a ten-month program running September to June. Its year end is December 31. Record the collection.
+        accounts:
+          - Cash
+          - Deferred revenue
+          - Deferred contributions
+          - Tuition revenue
+          - Contribution revenue
+          - Contributions receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 36000
+          - account: Deferred revenue
+            side: cr
+            amount: 36000
+        explain: Tuition is an exchange. Revenue is earned as the lessons are delivered, so the cash is unearned revenue at first. It is not a deferred contribution, which is a different balance under Section 4410.
+        ref: Part III, Section 4410
+      - id: rev1l1q08
+        type: calc
+        concept: rev1-exchange
+        prompt: Continue the music school case. The $36,000 covers ten equal months. Enter the tuition revenue recognized for the year ended December 31.
+        answer: 14400
+        unit: $
+        explain: $36,000 ÷ 10 = $3,600 a month. September to December is four months, so 4 × $3,600 = $14,400. The other $21,600 stays as deferred revenue.
+        ref: Part III, Section 4410
+      - id: rev1l1q09
+        type: tf
+        concept: rev1-contribution-def
+        prompt: A Lethbridge food bank's landlord forgives three months of rent owing, $9,000, as a gift. Under Section 4410 this is a contribution even though no cash changes hands.
+        answer: true
+        reasons:
+          - A non-reciprocal cancellation of a liability is a contribution
+          - Only cash transfers can be contributions
+          - It is a gain on settlement of debt under Part II
+        reason: 0
+        explain: The definition covers non-reciprocal settlement or cancellation of an NPO's liabilities as well as transfers of assets. The food bank records a contribution and removes the payable.
+        ref: Part III, Section 4410
+      - id: rev1l1q10
+        type: je
+        concept: rev1-mixed
+        prompt: An Edmonton health charity's golf tournament brings in $48,000 cash from 160 golfers at $300 each. Green fees and lunch worth $110 per golfer are provided. The charity splits the receipts between their exchange and contribution elements. Record the receipts.
+        accounts:
+          - Cash
+          - Fundraising event revenue
+          - Contribution revenue
+          - Deferred contributions
+          - Fundraising expenses
+          - Deferred revenue
+        lines:
+          - account: Cash
+            side: dr
+            amount: 48000
+          - account: Fundraising event revenue
+            side: cr
+            amount: 17600
+          - account: Contribution revenue
+            side: cr
+            amount: 30400
+        explain: 160 × $110 = $17,600 pays for green fees and lunch, which is exchange revenue. The remaining 160 × $190 = $30,400 is non-reciprocal. The cost of the green fees and lunch is still reported as an expense; revenue and expenses are presented gross.
+        ref: Part III, Section 4410
+
+  - id: rev1l2
+    title: Restrictions, designations and timing
+    intro: A restriction must come from outside the NPO, but it does not have to be written down. This lesson sorts real restrictions from board choices and separates purpose from time.
+    questions:
+      - id: rev1l2q01
+        type: mc
+        concept: rev1-explicit-implied
+        prompt: A Medicine Hat museum runs a mail and online appeal titled "Help us replace our roof." Donors give $70,000 with no written terms. How are the gifts treated?
+        options:
+          - Unrestricted, because no donor wrote a restriction
+          - Internally restricted, because the board launched the appeal
+          - Restricted by implication from the appeal, for a capital purpose
+          - Endowment contributions, because roofs last many years
+        answer: 2
+        explain: A restriction can be implied by the circumstances of the gift. Money given in answer to a specific appeal carries that purpose. The museum would recognize the gifts as restricted capital contributions.
+        ref: Part III, Section 4410
+      - id: rev1l2q02
+        type: tf
+        concept: rev1-internal-designation
+        prompt: The board of a Fort McMurray Friendship Centre resolves that an unrestricted $100,000 bequest will be used only for a future youth centre. Under the deferral method, the bequest is deferred until the youth centre is built.
+        answer: false
+        reasons:
+          - A board designation is internal, so the bequest is revenue now and may be shown as internally restricted net assets
+          - Bequests are always endowments
+          - Board resolutions are external restrictions once minuted
+        reason: 0
+        explain: Only restrictions imposed from outside the NPO affect recognition. The bequest is revenue when received. The board may transfer the amount into internally restricted net assets, which it can later reverse.
+        ref: Part III, Section 4400
+      - id: rev1l2q03
+        type: classify
+        concept: rev1-explicit-implied
+        prompt: Classify each stipulation on gifts to a Calgary women's shelter.
+        buckets:
+          - External restriction
+          - Not a restriction
+        items:
+          - text: A foundation grant letter that limits use to counselling staff salaries
+            bucket: 0
+          - text: The board's policy to reserve all bequests for a building fund
+            bucket: 1
+          - text: Gifts received in response to a "Winter Coats for Kids" appeal
+            bucket: 0
+          - text: Management's internal budget allocating a gift to IT upgrades
+            bucket: 1
+          - text: A donor's email saying the gift may only be used next fiscal year
+            bucket: 0
+          - text: A donor's non-binding wish that the shelter "think about" a garden
+            bucket: 1
+        explain: Restrictions come from contributors, explicitly in writing or implied by the solicitation. Board policies, management budgets and non-binding wishes are not external restrictions.
+        ref: Part III, Section 4410
+      - id: rev1l2q04
+        type: match
+        concept: rev1-purpose-time
+        prompt: Match each stipulation to its kind.
+        pairs:
+          - left: For the after-school literacy program
+            right: Purpose restriction
+          - left: To be spent in the fiscal year starting next April
+            right: Time restriction
+          - left: To buy a wheelchair-accessible bus
+            right: Purpose restriction for a capital asset
+          - left: Principal to be held permanently
+            right: Endowment restriction
+        explain: Purpose restrictions say what the money is for, time restrictions say when it may be used, and an endowment restriction requires the principal to be maintained permanently.
+        ref: Part III, Section 4410
+      - id: rev1l2q05
+        type: je
+        concept: rev1-purpose-time
+        prompt: In December, a donor gives a Lethbridge food bank (deferral method, December 31 year end) $15,000 cash with a written stipulation that it may only be used for operations in the following calendar year. Record the gift.
+        accounts:
+          - Cash
+          - Deferred contributions
+          - Contribution revenue
+          - Internally restricted net assets
+          - Deferred revenue
+          - Contributions receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 15000
+          - account: Deferred contributions
+            side: cr
+            amount: 15000
+        explain: A pure time restriction makes this a restricted contribution for expenses of a future period. It is deferred and recognized next year when the operating expenses are incurred.
+        ref: Part III, Section 4410
+      - id: rev1l2q06
+        type: tf
+        concept: rev1-unrestricted
+        prompt: A Red Deer hospice receives a written unrestricted pledge of $20,000 from a long-time corporate donor with a strong payment history. It is payable in 60 days. Under the deferral method, the hospice may recognize the $20,000 as revenue now.
+        answer: true
+        reasons:
+          - The amount is known and collection is reasonably assured, so the unrestricted pledge is recognized when receivable
+          - Pledges are only recognized when cash is received
+          - Unrestricted pledges are deferred until collected
+        reason: 0
+        explain: Unrestricted contributions are recognized when received or receivable if the amount can be reasonably estimated and collection is reasonably assured. Both conditions are met here.
+        ref: Part III, Section 4410
+      - id: rev1l2q07
+        type: je
+        concept: rev1-current-period
+        prompt: A Camrose community health society receives $42,000 from a foundation restricted to its diabetes education program. By year end it has already spent $42,000 on that program in the current year. Record the receipt.
+        accounts:
+          - Cash
+          - Contribution revenue
+          - Deferred contributions
+          - Program expenses
+          - Unrestricted net assets
+          - Contributions receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 42000
+          - account: Contribution revenue
+            side: cr
+            amount: 42000
+        explain: A restricted contribution for expenses of the current period is revenue in that period. Recording it in deferred contributions and immediately releasing it gives the same result, but there is no need to defer.
+        ref: Part III, Section 4410
+      - id: rev1l2q08
+        type: je
+        concept: rev1-future-period
+        prompt: A Grande Prairie seniors' society (deferral method) receives a signed, reasonably assured $60,000 commitment from a community foundation, restricted to a falls-prevention program starting next year. No cash has arrived. Record the commitment.
+        accounts:
+          - Contributions receivable
+          - Deferred contributions
+          - Contribution revenue
+          - Cash
+          - Accounts receivable
+          - Deferred revenue
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 60000
+          - account: Deferred contributions
+            side: cr
+            amount: 60000
+        explain: The receivable meets the recognition criteria, so it is recorded. Because the money is restricted to future expenses, the credit goes to deferred contributions, not revenue.
+        ref: Part III, Section 4410
+      - id: rev1l2q09
+        type: mc
+        concept: rev1-internal-designation
+        prompt: Where does a board's transfer of $50,000 of unrestricted net assets into an internally restricted reserve appear?
+        options:
+          - As an expense in the statement of operations
+          - As deferred contributions in liabilities
+          - In the notes only
+          - As a transfer between classes in the statement of changes in net assets
+        answer: 3
+        explain: Internal restrictions and interfund transfers are movements within net assets. They are shown in the statement of changes in net assets, never as revenue or expense.
+        ref: Part III, Section 4400
+      - id: rev1l2q10
+        type: calc
+        concept: rev1-unrestricted
+        prompt: In its year, an Edmonton arts society receives $180,000 unrestricted cash, a $25,000 unrestricted pledge from a reliable donor collected after year end, and an unrestricted pledge of $40,000 from a new donor where collection is not reasonably assured. Enter unrestricted contribution revenue for the year.
+        answer: 205000
+        unit: $
+        explain: $180,000 + $25,000 = $205,000. The reliable pledge is recognized when receivable. The uncertain $40,000 pledge fails the collectibility test and is recognized only when received.
+        ref: Part III, Section 4410
+
+  - id: rev1l3
+    title: Operating contributions across years
+    intro: The deferral method matches restricted revenue to the expenses it pays for. Here you will track balances over several years, deal with restrictions that change and build the continuity a reader expects.
+    questions:
+      - id: rev1l3q01
+        type: calc
+        concept: rev1-future-period
+        prompt: In year 1, a Calgary literacy society receives a $240,000 grant restricted to a three-year adult literacy program. It spends $50,000 in year 1, $110,000 in year 2 and $80,000 in year 3 on the program. Enter the deferred contributions balance at the end of year 2.
+        answer: 80000
+        unit: $
+        explain: Revenue follows spending. $240,000 - $50,000 - $110,000 = $80,000 still deferred at the end of year 2. It will be recognized in year 3 as the last $80,000 is spent.
+        ref: Part III, Section 4410
+      - id: rev1l3q02
+        type: je
+        concept: rev1-future-period
+        prompt: Continue the literacy case. Record the year 2 recognition of revenue from the grant.
+        accounts:
+          - Deferred contributions
+          - Contribution revenue
+          - Program expenses
+          - Cash
+          - Unrestricted net assets
+          - Deferred capital contributions
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 110000
+          - account: Contribution revenue
+            side: cr
+            amount: 110000
+        explain: In year 2 the society incurs $110,000 of program expenses, so it releases the same amount from deferred contributions to revenue. The expenses themselves were recorded separately as they were paid.
+        ref: Part III, Section 4410
+      - id: rev1l3q03
+        type: tf
+        concept: rev1-future-period
+        prompt: Under the deferral method, a restricted operating grant is recognized as revenue on a straight-line basis over the grant term, regardless of when the related expenses are incurred.
+        answer: false
+        reasons:
+          - Revenue is recognized in the periods the related expenses are incurred
+          - Revenue is recognized when the final report is accepted
+          - Revenue is recognized when cash is received
+        reason: 0
+        explain: The deferral method matches revenue to the related expenses. If spending is uneven, revenue is uneven too. Straight-line recognition only fits capital contributions where the asset is amortized straight-line.
+        ref: Part III, Section 4410
+      - id: rev1l3q04
+        type: je
+        concept: rev1-restriction-changes
+        prompt: A Banff wildlife education society holds $35,000 of deferred contributions restricted to a bear-awareness program. Midway through the year, the donor writes to remove the restriction and lets the society use the money for any purpose. None of it has been spent. Record the change.
+        accounts:
+          - Deferred contributions
+          - Contribution revenue
+          - Internally restricted net assets
+          - Unrestricted net assets
+          - Grants repayable
+          - Cash
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 35000
+          - account: Contribution revenue
+            side: cr
+            amount: 35000
+        explain: Once the donor lifts the restriction, the money is unrestricted and no longer relates to future expenses. The deferred balance is recognized as revenue now. The board could then designate it internally if it wishes.
+        ref: Part III, Section 4410
+      - id: rev1l3q05
+        type: je
+        concept: rev1-restriction-changes
+        prompt: A St. Albert youth society has $18,000 left in deferred contributions from a federal grant for a summer jobs program. The program has ended and the agreement requires unspent funds to be returned. The society has not yet paid. Record the adjustment.
+        accounts:
+          - Deferred contributions
+          - Grants repayable
+          - Contribution revenue
+          - Cash
+          - Program expenses
+          - Unrestricted net assets
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 18000
+          - account: Grants repayable
+            side: cr
+            amount: 18000
+        explain: The restriction can no longer be met and the money must go back, so the balance is no longer deferred revenue. It becomes a liability to repay. Nothing is recognized as revenue.
+        ref: Part III, Section 4410
+      - id: rev1l3q06
+        type: mc
+        concept: rev1-restriction-changes
+        prompt: A grant restricted to a Red Deer counselling program allows the society to use any unspent balance for general operations once the program has run for two years. The two years end with $12,000 unspent. What happens to the $12,000?
+        options:
+          - It stays deferred until the next grant arrives
+          - It is recognized as revenue because the restriction has lapsed and it is now unrestricted
+          - It is a direct increase in net assets
+          - It is reclassified to grants repayable
+        answer: 1
+        explain: When a time-limited purpose restriction lapses and the money can be used freely, nothing ties it to future expenses. The remaining deferred balance is recognized as revenue.
+        ref: Part III, Section 4410
+      - id: rev1l3q07
+        type: calc
+        concept: rev1-disclosure
+        prompt: A Lethbridge family services agency had operating deferred contributions of $95,000 at the start of the year. During the year it received $310,000 of restricted operating contributions, recognized $285,000 as revenue and reclassified $8,000 to grants repayable. Enter the closing deferred contributions balance for the continuity note.
+        answer: 112000
+        unit: $
+        explain: $95,000 + $310,000 - $285,000 - $8,000 = $112,000. A continuity like this lets readers see the nature and amount of changes in deferred balances, which the deferral method requires to be disclosed.
+        ref: Part III, Section 4410
+      - id: rev1l3q08
+        type: mc
+        concept: rev1-disclosure
+        prompt: Which disclosure is most clearly expected of an NPO that uses the deferral method?
+        options:
+          - The names of individual donors over $10,000
+          - A forecast of next year's contributions
+          - The nature and amount of changes in deferred contribution balances for the period
+          - The fair value of all pledges not recognized
+        answer: 2
+        explain: Section 4410 expects users to see how deferred balances moved, which is why practitioners present a continuity schedule. Donor names and forecasts are not required.
+        ref: Part III, Section 4410
+      - id: rev1l3q09
+        type: calc
+        concept: rev1-future-period
+        prompt: A Medicine Hat theatre receives a $90,000 grant on July 1 restricted to running a touring program from July 1 to June 30 next year. Its year end is March 31. Program costs are incurred evenly. Enter the deferred contributions balance at March 31.
+        answer: 22500
+        unit: $
+        explain: Costs are even, so $7,500 a month. July 1 to March 31 is nine months, so $67,500 is recognized and $90,000 - $67,500 = $22,500 is still deferred for April to June.
+        ref: Part III, Section 4410
+      - id: rev1l3q10
+        type: je
+        concept: rev1-current-period
+        prompt: A Fort McMurray food bank uses the deferral method. During the year it receives $75,000 cash restricted to its emergency hamper program and spends $52,000 on hampers. Record the receipt and the year-end recognition as one combined entry (ignore the expense entry).
+        accounts:
+          - Cash
+          - Deferred contributions
+          - Contribution revenue
+          - Program expenses
+          - Grants repayable
+          - Internally restricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 75000
+          - account: Contribution revenue
+            side: cr
+            amount: 52000
+          - account: Deferred contributions
+            side: cr
+            amount: 23000
+        explain: The part spent this year relates to current-period expenses and is revenue now. The unspent $23,000 relates to future expenses and stays deferred.
+        ref: Part III, Section 4410
+
+  - id: rev1l4
+    title: Capital, land and endowments
+    intro: Capital and endowment contributions are where the deferral method looks least like the cash flow. Some are amortized into revenue, and some never touch revenue at all.
+    questions:
+      - id: rev1l4q01
+        type: calc
+        concept: rev1-dcc
+        prompt: A Camrose seniors' housing society receives a $360,000 provincial grant restricted to installing an elevator. The elevator costs $480,000, is available for use at the start of the year and is amortized straight-line over 20 years with no residual value. Enter the amortization of deferred capital contributions recognized as revenue each year.
+        answer: 18000
+        unit: $
+        explain: The deferred capital contribution is recognized on the same basis as the asset. $360,000 ÷ 20 = $18,000 a year, while the elevator's amortization expense is $480,000 ÷ 20 = $24,000.
+        ref: Part III, Section 4410
+      - id: rev1l4q02
+        type: je
+        concept: rev1-dcc
+        prompt: Continue the elevator case. Record the year 1 amortization of the deferred capital contribution.
+        accounts:
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Amortization expense
+          - Accumulated amortization
+          - Deferred contributions
+          - Net assets invested in capital assets
+        lines:
+          - account: Deferred capital contributions
+            side: dr
+            amount: 18000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 18000
+        explain: Each year $18,000 moves from the deferred balance into revenue. The $6,000 gap between amortization expense and this revenue is the part of the elevator funded by the society's own resources.
+        ref: Part III, Section 4410
+      - id: rev1l4q03
+        type: tf
+        concept: rev1-dcc
+        prompt: A capital grant received this year for a building that is still under construction at year end starts being recognized as revenue this year, because the cash has been received.
+        answer: false
+        reasons:
+          - Recognition follows amortization, which starts only when the asset is available for use
+          - Capital grants are always revenue when received
+          - Capital grants are recognized directly in net assets
+        reason: 0
+        explain: Under the deferral method, a capital contribution stays deferred until the asset starts being amortized. Construction in progress is not amortized, so nothing is recognized yet.
+        ref: Part III, Section 4410
+      - id: rev1l4q04
+        type: calc
+        concept: rev1-dcc
+        prompt: A Lethbridge museum receives a $300,000 grant restricted to a climate-control system costing exactly $300,000. The system is amortized at 20% declining balance. Enter the deferred capital contribution balance at the end of year 2.
+        answer: 192000
+        unit: $
+        explain: The contribution follows the asset's pattern. Year 1 revenue is 20% × $300,000 = $60,000, leaving $240,000. Year 2 is 20% × $240,000 = $48,000, leaving $192,000.
+        ref: Part III, Section 4410
+      - id: rev1l4q05
+        type: je
+        concept: rev1-land
+        prompt: A Red Deer community league (deferral method) receives a $250,000 cash gift restricted to buying land for a new outdoor rink. Record the gift.
+        accounts:
+          - Cash
+          - Externally restricted net assets
+          - Deferred capital contributions
+          - Contribution revenue
+          - Deferred contributions
+          - Land
+        lines:
+          - account: Cash
+            side: dr
+            amount: 250000
+          - account: Externally restricted net assets
+            side: cr
+            amount: 250000
+        explain: Land is not amortized, so there is no expense to match. A restricted contribution for a non-amortized capital asset goes directly to net assets and appears in the statement of changes in net assets. Once the land is bought, the amount is commonly reclassified to net assets invested in capital assets.
+        ref: Part III, Section 4410
+      - id: rev1l4q06
+        type: classify
+        concept: rev1-land
+        prompt: A Calgary health charity uses the deferral method. Classify each contribution by where it is first recorded.
+        buckets:
+          - Revenue now
+          - Deferred contributions or deferred capital contributions
+          - Direct increase in net assets
+        items:
+          - text: Grant restricted to buying a parking lot (land)
+            bucket: 2
+          - text: Gift restricted to next year's research grants
+            bucket: 1
+          - text: Gift to be held permanently, income for research
+            bucket: 2
+          - text: Grant restricted to buying an MRI machine
+            bucket: 1
+          - text: Unrestricted bequest received in cash
+            bucket: 0
+          - text: Grant restricted to this year's nurse salaries, already paid
+            bucket: 0
+        explain: Land and endowment contributions are direct increases in net assets. Future-period and amortizable capital contributions are deferred. Unrestricted and current-period restricted contributions are revenue now.
+        ref: Part III, Section 4410
+      - id: rev1l4q07
+        type: je
+        concept: rev1-endowment
+        prompt: An Edmonton community foundation (deferral method) receives a $500,000 bequest with instructions that the capital be kept permanently and the income used for bursaries. Record the receipt.
+        accounts:
+          - Cash
+          - Endowment net assets
+          - Contribution revenue
+          - Deferred contributions
+          - Investment income
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 500000
+          - account: Endowment net assets
+            side: cr
+            amount: 500000
+        explain: Endowment contributions are recognized as direct increases in net assets under the deferral method. They never appear in the statement of operations, which keeps operating results free of permanent capital.
+        ref: Part III, Section 4410
+      - id: rev1l4q08
+        type: je
+        concept: rev1-investment-income
+        prompt: The foundation's endowment earns $30,000 of interest and dividends this year. The donor requires $5,000 a year to be added to endowment principal, and the rest must be used for bursaries. Bursaries of $16,000 are paid this year from it. Record the investment income received in cash.
+        accounts:
+          - Cash
+          - Endowment net assets
+          - Investment income
+          - Deferred contributions
+          - Bursary expense
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 30000
+          - account: Endowment net assets
+            side: cr
+            amount: 5000
+          - account: Investment income
+            side: cr
+            amount: 16000
+          - account: Deferred contributions
+            side: cr
+            amount: 9000
+        explain: Income that must be added to principal is a direct increase in endowment net assets. Income restricted to bursaries is revenue as bursaries are expensed ($16,000), and the unspent $9,000 is deferred.
+        ref: Part III, Section 4410
+      - id: rev1l4q09
+        type: mc
+        concept: rev1-presentation
+        prompt: Under the deferral method, where would a reader find this year's $500,000 endowment gift and $250,000 land contribution?
+        options:
+          - In the statement of changes in net assets
+          - In contribution revenue in the statement of operations
+          - In deferred capital contributions
+          - Only in the notes
+        answer: 0
+        explain: Both are direct increases in net assets. They appear in the statement of changes in net assets, and the endowment amount builds the net assets restricted for endowment class.
+        ref: Part III, Section 4400
+      - id: rev1l4q10
+        type: je
+        concept: rev1-dcc
+        prompt: A Banff mountain rescue society receives $90,000 of restricted capital gifts in year 1 for a new rescue snowmobile fleet. It recorded them in deferred contributions while it waited for delivery. In year 2 it buys the fleet for $120,000 cash. Reclassify the capital gifts when the fleet is bought.
+        accounts:
+          - Deferred contributions
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Contribution revenue
+          - Equipment
+          - Net assets invested in capital assets
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 90000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 90000
+        explain: Unspent capital gifts are commonly carried as deferred contributions until spent, then moved to deferred capital contributions once the asset is acquired. Either way they stay deferred until amortization of the fleet begins.
+        ref: Part III, Section 4410
+      - id: rev1l4q11
+        type: tf
+        concept: rev1-presentation
+        prompt: Under the deferral method, the unamortized balance of deferred capital contributions is part of net assets invested in capital assets.
+        answer: false
+        reasons:
+          - It is a deferred credit presented outside net assets, and net assets invested in capital assets excludes the externally funded part
+          - Deferred capital contributions are always included in unrestricted net assets
+          - Deferred capital contributions are reported as revenue in full
+        reason: 0
+        explain: Deferred capital contributions are presented outside net assets in the statement of financial position. Net assets invested in capital assets is usually the carrying amount of capital assets less related debt and less unamortized deferred capital contributions.
+        ref: Part III, Section 4400
+
+  - id: rev1l5
+    title: Integrated deferral cases
+    intro: These cases combine several contributions, several years and a judgement before any numbers. Decide the type of each item first, then compute.
+    questions:
+      - id: rev1l5q01
+        type: calc
+        concept: rev1-dcc
+        prompt: "A Grande Prairie Friendship Centre buys a building for $1,200,000 on the first day of year 1. A capital grant paid $800,000 of it. The building is amortized straight-line over 40 years. In year 6 the centre also receives $60,000 restricted to a roof component replacement, which is installed at the start of year 7 and amortized over 15 years. Enter total amortization of deferred capital contributions in year 7."
+        answer: 24000
+        unit: $
+        explain: The building grant gives $800,000 ÷ 40 = $20,000 a year. The roof gift starts when the roof is available for use in year 7, giving $60,000 ÷ 15 = $4,000. Total $24,000.
+        ref: Part III, Section 4410
+      - id: rev1l5q02
+        type: calc
+        concept: rev1-dcc
+        prompt: Continue the Friendship Centre case. Enter the unamortized balance of the building grant (excluding the roof) at the end of year 7.
+        answer: 660000
+        unit: $
+        explain: Seven years at $20,000 is $140,000 recognized. $800,000 - $140,000 = $660,000 remains deferred.
+        ref: Part III, Section 4410
+      - id: rev1l5q03
+        type: calc
+        concept: rev1-presentation
+        prompt: "An Edmonton seniors' society (deferral method) has these year 1 items: unrestricted donations $210,000; a grant of $80,000 restricted to a program, of which $50,000 was spent; a $150,000 grant for a van bought on day 1 and amortized over 5 years; a $100,000 endowment gift; and a $40,000 gift restricted to buying land. Enter total revenue recognized in the statement of operations from these items."
+        answer: 290000
+        unit: $
+        explain: $210,000 unrestricted + $50,000 of the program grant + $150,000 ÷ 5 = $30,000 of the van grant = $290,000. The endowment and land gifts go directly to net assets and the unspent $30,000 program money is deferred.
+        ref: Part III, Section 4400
+      - id: rev1l5q04
+        type: calc
+        concept: rev1-presentation
+        prompt: Same Edmonton seniors' society. Enter the total deferred contributions and deferred capital contributions at the end of year 1.
+        answer: 150000
+        unit: $
+        explain: Program money not yet spent is $30,000 and the van grant still deferred is $150,000 - $30,000 = $120,000. Total $150,000. The endowment and land gifts are in net assets, not deferred.
+        ref: Part III, Section 4400
+      - id: rev1l5q05
+        type: je
+        concept: rev1-dcc
+        prompt: "A Medicine Hat arts centre bought a $100,000 kiln with a restricted grant of the same amount, amortized straight-line over 10 years. At the end of year 4, the kiln is sold for $50,000 cash. The grant's conditions have been fully met. Record the sale, including the deferred capital contribution."
+        accounts:
+          - Cash
+          - Accumulated amortization
+          - Equipment
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Gain on disposal of equipment
+          - Loss on disposal of equipment
+          - Grants repayable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 50000
+          - account: Accumulated amortization
+            side: dr
+            amount: 40000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 60000
+          - account: Equipment
+            side: cr
+            amount: 100000
+          - account: Loss on disposal of equipment
+            side: dr
+            amount: 10000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 60000
+        explain: Carrying amount is $100,000 - $40,000 = $60,000, so selling for $50,000 is a $10,000 loss. The $60,000 unamortized deferred capital contribution is recognized as revenue because the restrictions have been met and the asset is gone.
+        ref: Part III, Section 4410
+      - id: rev1l5q06
+        type: mc
+        concept: rev1-restriction-changes
+        prompt: A donor gave $200,000 to a Calgary food bank as an endowment. Years later, the donor formally releases the food bank from the permanent restriction. Under the deferral method, why should the food bank be careful about running the $200,000 through revenue?
+        options:
+          - Released endowments must be returned to the donor
+          - The gift was never revenue. It already went directly to net assets, so recognizing it as revenue now would count the same $200,000 as an increase in net assets twice
+          - Endowment releases are prohibited under ASNPO
+          - It must be recorded as a deferred capital contribution
+        answer: 1
+        explain: Under the deferral method the endowment was a direct increase in net assets. A release is normally shown as a reclassification from endowment to unrestricted net assets in the statement of changes in net assets, with disclosure, rather than as new revenue. ASNPO does not address releases explicitly, so the policy should be disclosed.
+        ref: Part III, Section 4400
+      - id: rev1l5q07
+        type: je
+        concept: rev1-investment-income
+        prompt: "A Lethbridge scholarship society's year 1 investment income is $24,000 cash: $6,000 on unrestricted reserves, $14,000 on an endowment whose terms restrict income to scholarships, and $4,000 on that endowment that the donor requires to be capitalized. It awards $10,000 of scholarships this year. Record the investment income."
+        accounts:
+          - Cash
+          - Investment income
+          - Deferred contributions
+          - Endowment net assets
+          - Scholarship expense
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 24000
+          - account: Investment income
+            side: cr
+            amount: 16000
+          - account: Deferred contributions
+            side: cr
+            amount: 4000
+          - account: Endowment net assets
+            side: cr
+            amount: 4000
+        explain: Unrestricted income of $6,000 is revenue. Of the $14,000 restricted to scholarships, $10,000 matches this year's awards and is revenue, and $4,000 is deferred. The $4,000 to be capitalized is a direct increase in endowment net assets. Revenue is $6,000 + $10,000 = $16,000.
+        ref: Part III, Section 4410
+      - id: rev1l5q08
+        type: calc
+        concept: rev1-disclosure
+        prompt: "Prepare the deferred capital contributions continuity for a Red Deer hockey association. Opening balance $420,000. A $90,000 restricted gift for a Zamboni bought this year. Amortization of deferred capital contributions $38,000. A grant-funded scoreboard disposed of, with $12,000 of unamortized deferred capital contribution recognized. Enter the closing balance."
+        answer: 460000
+        unit: $
+        explain: $420,000 + $90,000 - $38,000 - $12,000 = $460,000. The continuity discloses contributions received, amounts amortized to revenue and amounts recognized on disposal.
+        ref: Part III, Section 4410
+      - id: rev1l5q09
+        type: mc
+        concept: rev1-mixed
+        prompt: "A St. Albert library foundation receives $500,000 from a credit union: the branch gets naming rights to the children's wing, but no other benefits. The foundation judges the naming rights to have no commercial value of a similar size. The gift is restricted to fitting out the wing, which will be amortized. How is it recorded?"
+        options:
+          - As exchange revenue for the naming rights, earned over 10 years
+          - As a direct increase in net assets
+          - As a restricted capital contribution, deferred and amortized with the wing's fit-out
+          - As unrestricted contribution revenue when received
+        answer: 2
+        explain: Naming recognition without commensurate benefits does not make a gift an exchange. The gift is restricted to an amortizable capital purpose, so it is a deferred capital contribution amortized on the same basis as the fit-out. Where naming rights carry substantial commercial value, judgement is needed about an exchange component.
+        ref: Part III, Section 4410
+      - id: rev1l5q10
+        type: calc
+        concept: rev1-future-period
+        prompt: "A Fort McMurray mental health society receives a two-year grant of $200,000 on April 1, year 1 (year end March 31), restricted to a counselling program. Year 1 program spending is $70,000. In year 2 the funder lifts the restriction on $30,000 and lets it be used for general operations, and program spending is $85,000. The rest must be returned. Enter total revenue from the grant in year 2."
+        answer: 115000
+        unit: $
+        explain: After year 1, $130,000 is deferred. In year 2, $85,000 is recognized as expenses are incurred and the $30,000 freed from restriction is recognized as revenue, for $115,000. The remaining $15,000 is reclassified to grants repayable, not revenue.
+        ref: Part III, Section 4410

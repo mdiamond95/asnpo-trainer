@@ -1,0 +1,846 @@
+id: b3
+course: basics
+number: 3
+title: Presenting the statements in depth
+summary: What each required NPO statement must show, how the net asset classes are built and how they move, internal restrictions, gross presentation, fund accounting presentation with interfund transfers and loans, expense classification, the NPO cash flow statement and accounting policy disclosure, ending with integrated statement of changes in net assets cases.
+refs:
+  - Part III, Section 4400
+  - Part III, Section 1401
+  - Part II, Section 1540
+  - Part II, Section 1505
+status: ready
+
+concepts:
+  - id: b3-statement-set
+    title: The required statements
+    summary: An NPO presents a statement of financial position, a statement of operations, a statement of changes in net assets and a statement of cash flows, with notes and schedules. Operations and changes in net assets may be combined into one statement.
+    ref: Part III, Section 4400
+  - id: b3-org-description
+    title: Describing the organization
+    summary: The statements include a clear and concise description of the NPO's purpose, the community it serves, its income tax status and its legal form. Readers need this to judge what the numbers mean.
+    ref: Part III, Section 4400
+  - id: b3-general-standards
+    title: Basis, going concern and comparatives
+    summary: Statements prepared under ASNPO say so prominently in the notes. They are prepared on a going concern basis with material uncertainties disclosed, and they present comparative figures unless those are not meaningful.
+    ref: Part III, Section 1401
+  - id: b3-gross-presentation
+    title: Gross or net
+    summary: When the NPO acts as principal, it reports revenues and the related expenses at their gross amounts. When it is not the principal, for example when it only earns a commission or fee, it reports just the net amount it earns.
+    ref: Part III, Section 4400
+  - id: b3-net-asset-classes
+    title: Net asset classes on the balance sheet
+    summary: The statement of financial position shows net assets restricted for endowment, other restricted net assets, unrestricted net assets and the total. The point is to show how much of the net assets is free for the board to use.
+    ref: Part III, Section 4400
+  - id: b3-invested-capital
+    title: Invested in capital assets (optional)
+    summary: Many NPOs choose to present net assets invested in capital assets as a separate category. It is generally capital assets net of amortization, less the related debt and less unamortized deferred capital contributions. ASNPO does not require it.
+    ref: Part III, Section 4400
+  - id: b3-ica-movements
+    title: How invested in capital assets moves
+    summary: Amortization of capital assets reduces it and amortization of deferred capital contributions increases it. Buying capital assets or repaying capital debt with unrestricted resources is a transfer from unrestricted net assets into it. Assets financed by debt or capital contributions do not change it at purchase.
+    ref: Part III, Section 4400
+  - id: b3-endowment-net-assets
+    title: Endowment net assets
+    summary: Net assets that donors require to be maintained permanently are shown separately from other restricted net assets. Under the deferral method, endowment contributions go straight to endowment net assets in the statement of changes in net assets, not through operations.
+    ref: Part III, Section 4400
+  - id: b3-internal-restrictions
+    title: Internal restrictions
+    summary: Amounts the board sets aside are internally restricted. The statement of changes in net assets shows internally restricted net assets separately from externally restricted ones, and the board can reverse its own restriction.
+    ref: Part III, Section 4400
+  - id: b3-changes-statement
+    title: Statement of changes in net assets
+    summary: This statement shows the changes in endowment, internally restricted, externally restricted and unrestricted net assets, and the total. Items recognized directly in net assets, such as defined benefit remeasurements, appear here as separate lines.
+    ref: Part III, Section 4400
+  - id: b3-fund-description
+    title: Describing each fund
+    summary: Fund accounting is a policy choice. An NPO that uses it describes the purpose of each fund, the types of revenues and expenses it reports and the extent to which it holds restricted resources, and keeps each fund's content consistent from year to year.
+    ref: Part III, Section 4400
+  - id: b3-fund-totals
+    title: Multi-column format and totals
+    summary: Funds may be shown in a multi-column format or in another format that presents the organization as a whole. The statement of financial position presents a total covering all funds for each item, and under the deferral method so does the statement of operations.
+    ref: Part III, Section 4400
+  - id: b3-interfund-transfers
+    title: Interfund transfers
+    summary: Transfers between funds or net asset classes are presented in the statement of changes in net assets, never as revenue or expense. The amount and purpose of each transfer during the period are disclosed.
+    ref: Part III, Section 4400
+  - id: b3-interfund-loans
+    title: Interfund loans
+    summary: Loans between funds are not transfers. The amounts, terms and conditions of loans outstanding at the reporting date are disclosed. In a multi-column format they appear in the individual funds and are eliminated in the total column.
+    ref: Part III, Section 4400
+  - id: b3-expense-classification
+    title: Classifying expenses
+    summary: Expenses may be classified by object, by function or by program, whichever is most meaningful to readers. Similar items are grouped. If fundraising and general support costs are allocated to functions, Section 4470 disclosures follow.
+    ref: Part III, Section 4400
+  - id: b3-cash-flow-classes
+    title: Cash flow classification for NPOs
+    summary: The cash flow statement follows Section 1540 as adapted by Section 4400. Unrestricted and operating-restricted contributions are operating. Cash contributions for endowment and contributions restricted to buying capital assets are commonly presented as financing, though practice varies, so the NPO applies its chosen presentation consistently. Buying capital assets and investments is investing.
+    ref: Part III, Section 4400
+  - id: b3-cash-flow-indirect
+    title: Indirect method adjustments
+    summary: Under the indirect method, the excess of revenues over expenses is adjusted for non-cash items. Amortization of capital assets is added back and amortization of deferred capital contributions is deducted, because neither moved cash.
+    ref: Part II, Section 1540
+  - id: b3-policy-disclosure
+    title: Disclosing accounting policies
+    summary: Significant accounting policies are disclosed, especially where ASNPO allows a choice. For an NPO that includes the contribution method, fund accounting, contributed materials and services, capital assets and allocation of expenses.
+    ref: Part II, Section 1505
+
+lessons:
+  - id: b3l1
+    title: The statement set and what each shows
+    intro: You know the four statements. This lesson tests what each must actually contain, what can be combined, and when revenue is shown gross or net.
+    questions:
+      - id: b3l1q01
+        type: mc
+        concept: b3-statement-set
+        prompt: A Grande Prairie food bank wants to shorten its statements. Which change does ASNPO permit?
+        options:
+          - Dropping the statement of changes in net assets if net assets did not change
+          - Combining the statement of operations and the statement of changes in net assets into one statement
+          - Replacing the statement of cash flows with a schedule of bank balances
+          - Presenting the statement of operations only in the notes
+        answer: 1
+        explain: ASNPO lets an NPO combine operations and changes in net assets into one statement. The other statements remain required with equal prominence, and none can be pushed into the notes.
+        ref: Part III, Section 4400
+      - id: b3l1q02
+        type: classify
+        concept: b3-org-description
+        prompt: An Edmonton Friendship Centre is drafting its first note. Which items must the description of the organization cover?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: Its purpose
+            bucket: 0
+          - text: The community it serves
+            bucket: 0
+          - text: Its income tax status, such as registered charity
+            bucket: 0
+          - text: Its legal form, such as a society under the Societies Act
+            bucket: 0
+          - text: Names of its board members
+            bucket: 1
+          - text: Its five-year strategic plan targets
+            bucket: 1
+        explain: Section 4400 asks for a clear description of purpose, community served, tax status and legal form. Board names and strategic targets may appear in an annual report, but they are not part of the required description.
+        ref: Part III, Section 4400
+      - id: b3l1q03
+        type: tf
+        concept: b3-general-standards
+        prompt: A Camrose museum society's statements state compliance with ASNPO only in the auditor's report. That is enough, since the auditor's report is attached.
+        answer: false
+        reasons:
+          - The basis of presentation must be stated prominently in the notes themselves
+          - Compliance never needs to be stated for an NPO
+          - Only the board chair's letter may state compliance
+        reason: 0
+        explain: The financial statements themselves must say they were prepared under ASNPO, prominently in the notes. The auditor's report is a separate document and does not satisfy the requirement.
+        ref: Part III, Section 1401
+      - id: b3l1q04
+        type: mc
+        concept: b3-general-standards
+        prompt: A Fort McMurray youth society has lost its main provincial grant, and the board doubts it can operate past next spring. What does ASNPO require in the statements?
+        options:
+          - Switch immediately to a liquidation basis without any disclosure
+          - Nothing, because going concern applies only to profit-oriented enterprises
+          - Prepare on a going concern basis and disclose the material uncertainty
+          - Record a provision for all future program costs
+        answer: 2
+        explain: Unless management intends to wind up or has no realistic alternative, the statements stay on a going concern basis. Material uncertainties that cast significant doubt on continuing are disclosed.
+        ref: Part III, Section 1401
+      - id: b3l1q05
+        type: classify
+        concept: b3-gross-presentation
+        prompt: A Calgary arts society has several revenue streams. Classify how each is presented.
+        buckets:
+          - Gross revenue and gross expenses
+          - Net amount only
+        items:
+          - text: Gala it organizes, sets prices for and bears the costs of
+            bucket: 0
+          - text: Commission it earns selling member artists' works, with the artists setting prices and keeping title
+            bucket: 1
+          - text: Theatre school it runs with its own instructors
+            bucket: 0
+          - text: Fee for processing ticket sales on behalf of another festival
+            bucket: 1
+        explain: When the society is principal, it reports the full revenue and the related costs. When it only earns a commission or fee, it reports just that net amount, because the rest belongs to someone else.
+        ref: Part III, Section 4400
+      - id: b3l1q06
+        type: calc
+        concept: b3-gross-presentation
+        prompt: A Banff arts society sells consigned paintings at its gallery. Sales this year were $90,000. Artists set prices, keep title until sale and receive 70% of the price. The society keeps 30%. Enter the revenue the society reports from these sales.
+        answer: 27000
+        unit: $
+        explain: The society acts as agent, so it reports only its commission, 30% × $90,000 = $27,000. Reporting $90,000 of revenue and $63,000 of expense would overstate its activity.
+        ref: Part III, Section 4400
+      - id: b3l1q07
+        type: tf
+        concept: b3-gross-presentation
+        prompt: A Red Deer hockey association's casino night raised $120,000 and cost $45,000. Showing only "Casino, net $75,000" on the statement of operations is acceptable because the board tracks the event on a net basis.
+        answer: false
+        reasons:
+          - The association is principal, so revenue and expenses are reported gross
+          - Fundraising events are always shown net
+          - Only government funding must be shown gross
+        reason: 0
+        explain: The association runs the event and bears its costs, so it is principal and reports $120,000 of revenue and $45,000 of expense. Internal management reporting does not change the presentation.
+        ref: Part III, Section 4400
+      - id: b3l1q08
+        type: match
+        concept: b3-statement-set
+        prompt: Match each question a reader asks to the statement that answers it.
+        pairs:
+          - left: How much is restricted for endowment at year end?
+            right: Statement of financial position
+          - left: Did revenues cover expenses this year?
+            right: Statement of operations
+          - left: How much did the board move into the capital reserve?
+            right: Statement of changes in net assets
+          - left: How much cash came from endowment gifts?
+            right: Statement of cash flows
+        explain: Year-end balances sit on the statement of financial position. Results go through operations. Transfers between classes appear only in changes in net assets. Cash flows by activity are on the cash flow statement.
+        ref: Part III, Section 4400
+      - id: b3l1q09
+        type: mc
+        concept: b3-general-standards
+        prompt: A St. Albert community league presents only current-year figures, arguing it is a small NPO. What is the issue?
+        options:
+          - There is none, because comparatives are optional for NPOs
+          - Comparatives are needed only if the league is audited
+          - Comparative figures are presented unless they are not meaningful, and size is not an exemption
+          - Comparatives are needed only for the statement of financial position
+        answer: 2
+        explain: Comparative figures for the prior period are presented whenever they are meaningful, and that applies to every NPO. Being small does not remove the requirement.
+        ref: Part III, Section 1401
+      - id: b3l1q10
+        type: tf
+        concept: b3-org-description
+        prompt: A Lethbridge health charity's description of the organization should say that it is a registered charity exempt from income tax.
+        answer: true
+        reasons:
+          - Income tax status is part of the required description
+          - Tax status belongs only in the T3010 return
+          - Only taxable NPOs mention tax status
+        reason: 0
+        explain: Tax status is one of the four required elements of the description, alongside purpose, community served and legal form. Readers use it to understand why there is no income tax expense.
+        ref: Part III, Section 4400
+
+  - id: b3l2
+    title: Net asset classes and how they move
+    intro: Net assets are split so readers can see what the board is free to spend. Here you will build the classes, including the optional invested in capital assets line, and trace how they change.
+    questions:
+      - id: b3l2q01
+        type: classify
+        concept: b3-net-asset-classes
+        prompt: A Medicine Hat seniors' housing society uses the deferral method. Classify each balance.
+        buckets:
+          - Endowment net assets
+          - Other externally restricted net assets
+          - Internally restricted net assets
+          - Unrestricted net assets
+        items:
+          - text: Bequest whose principal the donor requires to be kept permanently
+            bucket: 0
+          - text: Board-designated reserve for elevator replacement
+            bucket: 2
+          - text: Accumulated surpluses with no restriction
+            bucket: 3
+          - text: Accumulated income on an endowment that the donor requires to be added permanently to principal
+            bucket: 0
+          - text: Board-approved contingency reserve equal to three months of operating costs
+            bucket: 2
+        explain: Permanent donor restrictions are endowment. Board designations are internal. Note that under the deferral method most other externally restricted amounts sit in deferred contributions, a liability, not in net assets.
+        ref: Part III, Section 4400
+      - id: b3l2q02
+        type: tf
+        concept: b3-invested-capital
+        prompt: An NPO with significant capital assets must present net assets invested in capital assets as a separate category.
+        answer: false
+        reasons:
+          - It is an optional category that many NPOs choose to present
+          - It is required for all NPOs with capital assets
+          - It is prohibited under ASNPO
+        reason: 0
+        explain: Section 4400 requires endowment, other restricted, unrestricted and total net assets. Invested in capital assets is a common optional split that shows how much of net assets is tied up in illiquid assets.
+        ref: Part III, Section 4400
+      - id: b3l2q03
+        type: calc
+        concept: b3-invested-capital
+        prompt: A Calgary community league reports capital assets of $1,400,000 less accumulated amortization of $500,000. It owes $180,000 on a mortgage used to buy its hall and has $320,000 of unamortized deferred capital contributions. Enter net assets invested in capital assets.
+        answer: 400000
+        unit: $
+        explain: Net capital assets are $1,400,000 − $500,000 = $900,000. Subtract the related debt and the unamortized capital contributions, $900,000 − $180,000 − $320,000 = $400,000. That is the portion funded by the league's own resources.
+        ref: Part III, Section 4400
+      - id: b3l2q04
+        type: classify
+        concept: b3-ica-movements
+        prompt: The league presents invested in capital assets. Classify the effect of each event on that category.
+        buckets:
+          - Increases it
+          - Decreases it
+          - No change
+        items:
+          - text: Amortization of the hall
+            bucket: 1
+          - text: Amortization of deferred capital contributions
+            bucket: 0
+          - text: Buying a $20,000 furnace with unrestricted cash
+            bucket: 0
+          - text: Repaying $15,000 of mortgage principal from unrestricted cash
+            bucket: 0
+          - text: Buying equipment fully funded by a restricted capital grant already received
+            bucket: 2
+          - text: Buying a van financed entirely with a new bank loan
+            bucket: 2
+        explain: Asset amortization reduces the category and capital contribution amortization offsets it. Using unrestricted resources to buy assets or repay capital debt moves value in. Purchases funded entirely by debt or capital contributions add equal amounts on both sides, so there is no change at purchase.
+        ref: Part III, Section 4400
+      - id: b3l2q05
+        type: je
+        concept: b3-ica-movements
+        prompt: The community league buys a $20,000 furnace with unrestricted cash and repays $15,000 of mortgage principal from unrestricted cash. The asset purchase and repayment are already recorded. Record the year-end entry between net asset classes.
+        accounts:
+          - Unrestricted net assets
+          - Net assets invested in capital assets
+          - Internally restricted net assets
+          - Deferred capital contributions
+          - Capital assets
+          - Mortgage payable
+        lines:
+          - account: Unrestricted net assets
+            side: dr
+            amount: 35000
+          - account: Net assets invested in capital assets
+            side: cr
+            amount: 35000
+        explain: The league used $35,000 of its own resources to acquire and pay for capital assets. That is shown as a transfer from unrestricted net assets to invested in capital assets in the statement of changes in net assets. It is not an expense.
+        ref: Part III, Section 4400
+      - id: b3l2q06
+        type: calc
+        concept: b3-ica-movements
+        prompt: A Red Deer arts society presents invested in capital assets. This year, amortization of capital assets was $60,000 and amortization of deferred capital contributions was $38,000. Enter the net effect of these two items on invested in capital assets (a decrease is a negative number).
+        answer: -22000
+        unit: $
+        explain: $38,000 − $60,000 = −$22,000. In the statement of changes in net assets, this part of the excess of revenues over expenses is shown in the invested in capital assets column, and the remainder in unrestricted.
+        ref: Part III, Section 4400
+      - id: b3l2q07
+        type: tf
+        concept: b3-endowment-net-assets
+        prompt: A Camrose foundation uses the deferral method. A $200,000 endowment gift received this year appears in the statement of changes in net assets as a direct increase to endowment net assets.
+        answer: true
+        reasons:
+          - Under the deferral method, endowment contributions bypass the statement of operations
+          - Endowment gifts are always revenue in the general fund
+          - Endowment gifts are deferred contributions until spent
+        reason: 0
+        explain: The deferral method recognizes endowment contributions directly in net assets. Under the restricted fund method they are revenue of the endowment fund instead.
+        ref: Part III, Section 4400
+      - id: b3l2q08
+        type: mc
+        concept: b3-internal-restrictions
+        prompt: A Lethbridge food bank's board sets aside $80,000 for a new warehouse and later, in the same year, releases $30,000 of it to cover an operating shortfall. How is this presented?
+        options:
+          - Two transfers in the statement of changes in net assets, from unrestricted to internally restricted, then $30,000 back
+          - $80,000 expense in the statement of operations and $30,000 revenue
+          - $80,000 deferred contributions liability, reduced to $50,000
+          - Only the closing $50,000 in a note, with no movements shown
+        answer: 0
+        explain: Internal restrictions move net assets between classes, so both the designation and the release are transfers in the statement of changes in net assets. They never touch revenue, expense or liabilities.
+        ref: Part III, Section 4400
+      - id: b3l2q09
+        type: tf
+        concept: b3-internal-restrictions
+        prompt: The statement of changes in net assets may lump internally restricted amounts together with externally restricted amounts, since both are restricted.
+        answer: false
+        reasons:
+          - Internally restricted net assets are shown separately from externally restricted ones
+          - Internal restrictions are not shown at all
+          - Internal restrictions must be shown as liabilities
+        reason: 0
+        explain: Section 4400 separates them because they mean very different things. The board can lift an internal restriction at any time, while an external restriction binds the NPO.
+        ref: Part III, Section 4400
+      - id: b3l2q10
+        type: match
+        concept: b3-changes-statement
+        prompt: Match each item to where an NPO using the deferral method presents it.
+        pairs:
+          - left: Remeasurements on a defined benefit pension plan
+            right: Separate line in the statement of changes in net assets
+          - left: Endowment contribution received
+            right: Direct increase to endowment net assets
+          - left: Board designation of a reserve
+            right: Transfer between net asset classes
+          - left: Program salaries
+            right: Expense in the statement of operations
+        explain: Defined benefit remeasurements and other items recognized directly in net assets get their own lines in the statement of changes in net assets. Transfers are there too. Ordinary costs go through operations.
+        ref: Part III, Section 4400
+      - id: b3l2q11
+        type: mc
+        concept: b3-net-asset-classes
+        prompt: Why do readers care about the split between restricted and unrestricted net assets?
+        options:
+          - It shows how much income tax the NPO owes
+          - It shows how much of the net assets the board is actually free to use
+          - It replaces the need for a cash flow statement
+          - It determines the NPO's audit fee
+        answer: 1
+        explain: Total net assets can look healthy while almost all of it is endowment or tied up in capital assets. The split reveals the resources the board can deploy.
+        ref: Part III, Section 4400
+
+  - id: b3l3
+    title: Fund accounting presentation
+    intro: Fund accounting is a choice, but once made it brings presentation and disclosure rules. This lesson covers multi-column statements, fund descriptions, transfers and interfund loans.
+    questions:
+      - id: b3l3q01
+        type: tf
+        concept: b3-fund-description
+        prompt: An NPO using the deferral method can still choose to use fund accounting.
+        answer: true
+        reasons:
+          - Fund accounting is a policy choice separate from the contribution method
+          - Fund accounting is only for the restricted fund method
+          - The deferral method prohibits funds
+        reason: 0
+        explain: Using fund accounting is an accounting policy choice. A deferral method NPO may present, for example, an operating fund and a capital fund. The restricted fund method simply requires certain funds.
+        ref: Part III, Section 4400
+      - id: b3l3q02
+        type: classify
+        concept: b3-fund-description
+        prompt: A Grande Prairie museum reports an operating fund, a capital fund and a collections fund. Which items must its fund descriptions cover?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The purpose of each fund
+            bucket: 0
+          - text: The types of revenues and expenses each fund reports
+            bucket: 0
+          - text: The extent to which each fund holds restricted resources
+            bucket: 0
+          - text: The board member responsible for each fund
+            bucket: 1
+          - text: The bank account number used for each fund
+            bucket: 1
+        explain: Readers need to know what each fund is for, what it records and how much of it is restricted. Governance and banking details are not part of the requirement.
+        ref: Part III, Section 4400
+      - id: b3l3q03
+        type: mc
+        concept: b3-fund-description
+        prompt: Starting this year, a museum begins recording its gift shop sales in the operating fund instead of a separate enterprise fund. How is this treated?
+        options:
+          - As a change in estimate, applied prospectively
+          - As an interfund transfer
+          - As a change in accounting policy, unless the underlying events are clearly different
+          - It needs no special treatment
+        answer: 2
+        explain: Each fund must be presented consistently. Changing which revenues or expenses a fund reports is a change in accounting policy, with the usual retrospective treatment and disclosure.
+        ref: Part III, Section 4400
+      - id: b3l3q04
+        type: tf
+        concept: b3-fund-totals
+        prompt: A deferral method NPO presents an operating fund and a capital fund in columns. It may omit a total column, since readers can add the columns themselves.
+        answer: false
+        reasons:
+          - Under the deferral method, both statements present totals for each item across all funds
+          - A total column is prohibited
+          - Totals are needed only in the notes
+        reason: 0
+        explain: The statement of financial position always presents a total for each item that includes all funds, and a deferral method NPO's statement of operations does the same. Readers need the organization-wide picture, not just the pieces.
+        ref: Part III, Section 4400
+      - id: b3l3q05
+        type: mc
+        concept: b3-interfund-transfers
+        prompt: A Calgary sport association's general fund transfers $50,000 to its capital fund to fund a scoreboard. Where does the transfer appear?
+        options:
+          - As an expense in the general fund and revenue in the capital fund
+          - In the statement of changes in net assets, with its amount and purpose disclosed
+          - Only in the cash flow statement
+          - As a reduction of capital assets
+        answer: 1
+        explain: Interfund transfers are presented in the statement of changes in net assets, and the amount and purpose are disclosed. Treating them as revenue and expense would double count activity.
+        ref: Part III, Section 4400
+      - id: b3l3q06
+        type: je
+        concept: b3-interfund-transfers
+        prompt: Record the $50,000 transfer of resources from the general fund to the capital fund, using fund balance accounts.
+        accounts:
+          - General fund balance
+          - Capital fund balance
+          - Transfer expense
+          - Contribution revenue
+          - Due to capital fund
+          - Endowment fund balance
+        lines:
+          - account: General fund balance
+            side: dr
+            amount: 50000
+          - account: Capital fund balance
+            side: cr
+            amount: 50000
+        explain: A transfer moves net assets between funds and is recorded directly in fund balances. No revenue or expense is recognized, and nothing is owed back.
+        ref: Part III, Section 4400
+      - id: b3l3q07
+        type: classify
+        concept: b3-interfund-loans
+        prompt: Classify each movement between a Red Deer society's funds.
+        buckets:
+          - Interfund transfer
+          - Interfund loan
+        items:
+          - text: General fund moves $40,000 to the capital fund permanently to fund a roof
+            bucket: 0
+          - text: Capital fund advances $25,000 to the general fund, to be repaid within 18 months
+            bucket: 1
+          - text: Board moves $10,000 into the internally restricted building fund
+            bucket: 0
+          - text: General fund covers capital fund bills of $8,000, repayable when a grant arrives
+            bucket: 1
+        explain: A transfer is permanent and changes fund balances. A loan creates a receivable and payable between funds, so it is disclosed with its amount, terms and conditions.
+        ref: Part III, Section 4400
+      - id: b3l3q08
+        type: mc
+        concept: b3-interfund-loans
+        prompt: The society presents its funds in a multi-column format. How is the $25,000 interfund loan outstanding at year end shown?
+        options:
+          - Omitted entirely, because it nets to zero
+          - Shown in the individual fund columns and eliminated in the total column, with amounts, terms and conditions disclosed
+          - Shown as revenue of the general fund
+          - Shown only in the total column
+        answer: 1
+        explain: In a multi-column format, the receivable and payable appear in the individual funds and are eliminated in the total column. In a single-column format, the loan is disclosed in the notes only. Either way, terms and conditions are disclosed.
+        ref: Part III, Section 4400
+      - id: b3l3q09
+        type: tf
+        concept: b3-interfund-loans
+        prompt: At year end, the general fund still owes the capital fund for externally restricted cash it borrowed to cover payroll. Because the loan will be repaid early next year, it is an internal matter that needs no disclosure.
+        answer: false
+        reasons:
+          - Interfund loans outstanding at year end must be disclosed with their terms, and borrowing restricted resources raises questions readers need to see
+          - Interfund loans are never disclosed
+          - The loan must be recorded as revenue of the general fund
+        reason: 0
+        explain: Loans outstanding at the reporting date are disclosed with their amounts, terms and conditions. Using restricted resources for operations is exactly the kind of thing readers want to know about.
+        ref: Part III, Section 4400
+      - id: b3l3q10
+        type: je
+        concept: b3-interfund-loans
+        prompt: The capital fund lends $25,000 cash to the general fund, repayable in 18 months. Record the entry from the general fund's side.
+        accounts:
+          - Cash
+          - Due to capital fund
+          - Due from general fund
+          - General fund balance
+          - Capital fund balance
+          - Contribution revenue
+        lines:
+          - account: Cash
+            side: dr
+            amount: 25000
+          - account: Due to capital fund
+            side: cr
+            amount: 25000
+        explain: The general fund receives cash and owes it back, so it records a payable to the capital fund. The capital fund records a matching receivable. Fund balances do not change.
+        ref: Part III, Section 4400
+      - id: b3l3q11
+        type: calc
+        concept: b3-interfund-loans
+        prompt: In a multi-column statement of financial position, the general fund shows accounts receivable of $42,000 and due from capital fund of $15,000. The capital fund shows accounts receivable of $8,000 and due to general fund of $15,000. Enter total receivables (all kinds) in the total column.
+        answer: 50000
+        unit: $
+        explain: The interfund balances are eliminated in the total column, leaving only external receivables, $42,000 + $8,000 = $50,000. The organization as a whole cannot owe money to itself.
+        ref: Part III, Section 4400
+
+  - id: b3l4
+    title: Expenses, cash flows and policies
+    intro: How you classify expenses and cash flows changes what readers conclude. This lesson covers the choices and where NPO-specific items land on the cash flow statement.
+    questions:
+      - id: b3l4q01
+        type: classify
+        concept: b3-expense-classification
+        prompt: Sort these expense captions from a Banff arts society by classification approach.
+        buckets:
+          - By object
+          - By function or program
+        items:
+          - text: Salaries and benefits
+            bucket: 0
+          - text: Artist residency program
+            bucket: 1
+          - text: Rent and utilities
+            bucket: 0
+          - text: Fundraising
+            bucket: 1
+          - text: Amortization
+            bucket: 0
+          - text: Community outreach program
+            bucket: 1
+        explain: Object captions describe what was bought. Function or program captions describe what the money achieved. ASNPO allows either, whichever is most meaningful.
+        ref: Part III, Section 4400
+      - id: b3l4q02
+        type: tf
+        concept: b3-expense-classification
+        prompt: An NPO that classifies expenses by function must allocate its general support and fundraising costs to programs.
+        answer: false
+        reasons:
+          - Allocation is a choice; Section 4470 disclosures apply only if the NPO allocates
+          - Allocation is mandatory once expenses are presented by function
+          - Section 4470 prohibits any allocation
+        reason: 0
+        explain: ASNPO does not require allocation. If an NPO classifies by function and does allocate fundraising and general support costs, Section 4470 requires disclosure of its policies, bases and amounts.
+        ref: Part III, Section 4400
+      - id: b3l4q03
+        type: classify
+        concept: b3-cash-flow-classes
+        prompt: An Edmonton health charity using the deferral method prepares its cash flow statement. Classify each cash flow.
+        buckets:
+          - Operating
+          - Investing
+          - Financing
+        items:
+          - text: Unrestricted donations received
+            bucket: 0
+          - text: Grant received restricted to next year's program costs
+            bucket: 0
+          - text: Purchase of the clinic building
+            bucket: 1
+          - text: Purchase of investments with endowment cash
+            bucket: 1
+          - text: Repayment of mortgage principal
+            bucket: 2
+        explain: Contributions for operations, restricted or not, are operating. Buying assets and investments is investing, and repaying debt is financing. Endowment and capital-restricted gifts are left out here because their presentation is a policy choice where practice varies.
+        ref: Part III, Section 4400
+      - id: b3l4q04
+        type: calc
+        concept: b3-cash-flow-indirect
+        prompt: A Calgary food bank's excess of revenues over expenses was $60,000. Amortization of capital assets was $45,000, amortization of deferred capital contributions was $30,000, deferred contributions for operations rose by $12,000 and receivables rose by $8,000. Enter cash from operating activities under the indirect method.
+        answer: 79000
+        unit: $
+        explain: $60,000 + $45,000 − $30,000 + $12,000 − $8,000 = $79,000. Amortization of deferred capital contributions is non-cash revenue, so it is deducted. Restricted operating cash received but not yet recognized as revenue is added through the change in deferred contributions.
+        ref: Part II, Section 1540
+      - id: b3l4q05
+        type: tf
+        concept: b3-cash-flow-indirect
+        prompt: Under the indirect method, amortization of deferred capital contributions is added back to the excess of revenues over expenses.
+        answer: false
+        reasons:
+          - It is non-cash revenue, so it is deducted
+          - It is a cash inflow, so it is added
+          - It is ignored because it is a balance sheet item
+        reason: 0
+        explain: The amortization increased revenue without any cash coming in. The cash came in earlier, when the capital contribution was received, and was reported in the cash flow statement then. So it is deducted to avoid counting it twice.
+        ref: Part II, Section 1540
+      - id: b3l4q06
+        type: calc
+        concept: b3-cash-flow-classes
+        prompt: In the same year, the food bank received $40,000 restricted to buying capital assets and $25,000 of cash endowment gifts. Its policy, a common one, is to present both endowment gifts and capital-restricted contributions as financing. It repaid $10,000 of mortgage principal and spent $70,000 buying capital assets. Enter net cash from financing activities.
+        answer: 55000
+        unit: $
+        explain: $40,000 + $25,000 − $10,000 = $55,000. The $70,000 asset purchase is investing, not financing. Because practice varies for endowment and capital-restricted contributions, the policy chosen should be applied consistently and be clear from the statement.
+        ref: Part III, Section 4400
+      - id: b3l4q07
+        type: mc
+        concept: b3-cash-flow-classes
+        prompt: A foundation earns $18,000 of cash interest on endowment investments. The income is unrestricted and is spent on operations. Where does it belong on the cash flow statement?
+        options:
+          - Financing, because it relates to the endowment
+          - Investing, because it comes from investments
+          - Operating, as part of the cash flows from the NPO's activities
+          - It is excluded because it is non-cash
+        answer: 2
+        explain: Whatever policy the NPO uses for the endowment contributions themselves, the income they earn is a different cash flow. Unrestricted investment income is part of the cash generated by operations, as Section 1540 normally treats interest received.
+        ref: Part II, Section 1540
+      - id: b3l4q08
+        type: classify
+        concept: b3-policy-disclosure
+        prompt: A Lethbridge Friendship Centre is drafting its significant accounting policies note. Which items belong there?
+        buckets:
+          - Policy to disclose
+          - Not a policy disclosure
+        items:
+          - text: Whether it uses the deferral or restricted fund method
+            bucket: 0
+          - text: Whether it recognizes contributed materials and services
+            bucket: 0
+          - text: Its amortization methods and rates for capital assets
+            bucket: 0
+          - text: How it allocates fundraising and general support costs
+            bucket: 0
+          - text: Its executive director's biography
+            bucket: 1
+          - text: The amount of cash on hand at year end
+            bucket: 1
+        explain: Policy disclosure focuses on choices that affect how the numbers are measured and presented. Balances and biographies are not policies.
+        ref: Part II, Section 1505
+      - id: b3l4q09
+        type: mc
+        concept: b3-policy-disclosure
+        prompt: Two Red Deer hockey associations with identical cash receipts report very different revenue. What should a reader check first?
+        options:
+          - The auditor's name
+          - The accounting policies note on contribution recognition and fund accounting
+          - The number of board members
+          - The cash flow statement only
+        answer: 1
+        explain: The deferral and restricted fund methods recognize restricted contributions at different times. The policies note tells the reader which choice each NPO made, which is why policy disclosure matters where choices exist.
+        ref: Part II, Section 1505
+      - id: b3l4q10
+        type: match
+        concept: b3-expense-classification
+        prompt: Match each presentation choice to the disclosure or rule it triggers.
+        pairs:
+          - left: Classifying expenses by function with allocated support costs
+            right: Section 4470 allocation disclosures
+          - left: Using fund accounting
+            right: Description of each fund's purpose and content
+          - left: Combining operations and changes in net assets
+            right: Permitted, with all required information still shown
+          - left: Presenting invested in capital assets
+            right: Optional category of net assets
+        explain: Each choice carries its own requirements. Functional allocation brings Section 4470, funds bring fund descriptions, and the combined statement must still show all the information both statements would.
+        ref: Part III, Section 4400
+      - id: b3l4q11
+        type: tf
+        concept: b3-cash-flow-classes
+        prompt: A deferral method NPO buys a capital asset entirely with a capital grant it received last year. The purchase is an investing outflow this year even though no new contribution was received.
+        answer: true
+        reasons:
+          - The asset purchase is investing whenever it occurs; the grant was classified separately when received
+          - It is excluded because the grant was already counted
+          - It is a financing outflow
+        reason: 0
+        explain: Receipt of the restricted capital cash was an inflow last year, commonly presented as financing. Spending it on a capital asset is an investing outflow this year. Each cash movement is classified on its own.
+        ref: Part III, Section 4400
+
+  - id: b3l5
+    title: Integrated cases
+    intro: Now put it together. These cases make you build columns of the statement of changes in net assets from several facts, then check your totals.
+    questions:
+      - id: b3l5q01
+        type: classify
+        concept: b3-changes-statement
+        prompt: "Case: a Camrose community league uses the deferral method and presents invested in capital assets, internally restricted, endowment and unrestricted columns. Classify where each item appears in its statement of changes in net assets."
+        buckets:
+          - Invested in capital assets column
+          - Unrestricted column
+          - Endowment column
+          - Internally restricted column (with an offset elsewhere)
+        items:
+          - text: Amortization of capital assets, $45,000
+            bucket: 0
+          - text: Amortization of deferred capital contributions, $30,000
+            bucket: 0
+          - text: Rest of the excess of revenues over expenses
+            bucket: 1
+          - text: Endowment contributions, $25,000
+            bucket: 2
+          - text: Board designation of $20,000 for a future rink
+            bucket: 3
+        explain: The capital asset amortization and capital contribution amortization go to invested in capital assets. The rest of the year's result is unrestricted. Endowment gifts go straight to endowment. The board designation is a transfer from unrestricted into internally restricted.
+        ref: Part III, Section 4400
+      - id: b3l5q02
+        type: calc
+        concept: b3-ica-movements
+        prompt: "Case continued: the league's excess of revenues over expenses was $60,000, including amortization of capital assets of $45,000 and amortization of deferred capital contributions of $30,000. Enter the share of the excess shown in the unrestricted column."
+        answer: 75000
+        unit: $
+        explain: The invested in capital assets column takes $30,000 − $45,000 = −$15,000. The unrestricted column gets the rest, $60,000 − (−$15,000) = $75,000. Unrestricted operations did better than the headline result because amortization is a non-cash capital item.
+        ref: Part III, Section 4400
+      - id: b3l5q03
+        type: calc
+        concept: b3-ica-movements
+        prompt: "Case continued: invested in capital assets opened at $400,000. The league bought $70,000 of capital assets, $40,000 funded by a restricted capital grant and $30,000 from unrestricted cash. It repaid $10,000 of mortgage principal from unrestricted cash. Using the −$15,000 from operations, enter closing invested in capital assets."
+        answer: 425000
+        unit: $
+        explain: The unrestricted-funded purchase and repayment are transfers in, $30,000 + $10,000 = $40,000. The grant-funded $40,000 adds equal assets and deferred capital contributions, so no change. $400,000 − $15,000 + $40,000 = $425,000.
+        ref: Part III, Section 4400
+      - id: b3l5q04
+        type: je
+        concept: b3-internal-restrictions
+        prompt: "Case continued: the board designates $20,000 of unrestricted net assets for a future rink. Record the designation."
+        accounts:
+          - Unrestricted net assets
+          - Internally restricted net assets
+          - Deferred contributions
+          - Endowment net assets
+          - Cash
+          - Net assets invested in capital assets
+        lines:
+          - account: Unrestricted net assets
+            side: dr
+            amount: 20000
+          - account: Internally restricted net assets
+            side: cr
+            amount: 20000
+        explain: A board designation moves net assets between classes. No cash moves and no liability arises, because the board can lift its own restriction.
+        ref: Part III, Section 4400
+      - id: b3l5q05
+        type: calc
+        concept: b3-changes-statement
+        prompt: "Case continued: unrestricted net assets opened at $120,000. Using the $75,000 share of the excess, the $40,000 transfer to invested in capital assets and the $20,000 board designation, enter closing unrestricted net assets."
+        answer: 135000
+        unit: $
+        explain: $120,000 + $75,000 − $40,000 − $20,000 = $135,000. Both transfers reduce unrestricted net assets but neither is an expense.
+        ref: Part III, Section 4400
+      - id: b3l5q06
+        type: calc
+        concept: b3-changes-statement
+        prompt: "Case continued: opening balances were invested in capital assets $400,000, internally restricted $50,000, endowment $300,000 and unrestricted $120,000. With the $60,000 excess of revenues over expenses and $25,000 of endowment contributions, enter closing total net assets."
+        answer: 955000
+        unit: $
+        explain: Opening total is $870,000. Transfers net to zero across columns, so total changes only by the excess and the endowment gifts, $870,000 + $60,000 + $25,000 = $955,000. Check by column, $425,000 + $70,000 + $325,000 + $135,000 = $955,000.
+        ref: Part III, Section 4400
+      - id: b3l5q07
+        type: calc
+        concept: b3-fund-totals
+        prompt: "Case: a Lethbridge museum uses the restricted fund method. Its capital fund opened at $600,000. This year the capital fund recognized $200,000 of capital campaign contributions and $50,000 of amortization, and the general fund transferred $25,000 to it to repay debt. Enter the capital fund's closing balance."
+        answer: 775000
+        unit: $
+        explain: The capital fund's excess is $200,000 − $50,000 = $150,000. Add the transfer in, $600,000 + $150,000 + $25,000 = $775,000. Under the restricted fund method, capital contributions are revenue of the capital fund when received.
+        ref: Part III, Section 4400
+      - id: b3l5q08
+        type: calc
+        concept: b3-interfund-transfers
+        prompt: "Case continued: the museum's general fund opened at $90,000 and had an excess of revenues over expenses of $40,000. It transferred $25,000 to the capital fund and lent the capital fund another $15,000, repayable next year. Enter the general fund's closing balance."
+        answer: 105000
+        unit: $
+        explain: $90,000 + $40,000 − $25,000 = $105,000. The $15,000 loan does not change the fund balance; it creates a receivable from the capital fund that is disclosed with its terms.
+        ref: Part III, Section 4400
+      - id: b3l5q09
+        type: je
+        concept: b3-endowment-net-assets
+        prompt: "Case continued: the museum receives a $100,000 cash gift whose principal must be kept permanently. Record it in the museum's records under the restricted fund method."
+        accounts:
+          - Cash - endowment fund
+          - Contribution revenue - endowment fund
+          - Endowment net assets
+          - Deferred contributions
+          - Contribution revenue - general fund
+          - Capital fund balance
+        lines:
+          - account: Cash - endowment fund
+            side: dr
+            amount: 100000
+          - account: Contribution revenue - endowment fund
+            side: cr
+            amount: 100000
+        explain: Under the restricted fund method, endowment contributions are revenue of the endowment fund in the statement of operations. Under the deferral method the same gift would go directly to endowment net assets instead.
+        ref: Part III, Section 4400
+      - id: b3l5q10
+        type: mc
+        concept: b3-changes-statement
+        prompt: "Case: a Fort McMurray social services agency's defined benefit plan produced a $35,000 remeasurement loss this year. The draft statement of operations includes it in salaries and benefits. What is the correction?"
+        options:
+          - None, since remeasurements are part of benefit cost
+          - Move it to a separately identified line in the statement of changes in net assets
+          - Defer it as an asset and amortize it
+          - Show it only in the notes
+        answer: 1
+        explain: Remeasurements and other items from defined benefit plans are recognized directly in net assets and presented as a separate line in the statement of changes in net assets. Including them in operations distorts the year's operating result.
+        ref: Part III, Section 4400
+      - id: b3l5q11
+        type: calc
+        concept: b3-invested-capital
+        prompt: "Case: a St. Albert seniors' society had invested in capital assets of $310,000. Net capital assets are $1,050,000 and unamortized deferred capital contributions are $560,000. What is the related mortgage balance? Enter it in dollars."
+        answer: 180000
+        unit: $
+        explain: Invested in capital assets equals net capital assets less related debt less unamortized deferred capital contributions. $1,050,000 − $560,000 − $310,000 = $180,000 of mortgage.
+        ref: Part III, Section 4400

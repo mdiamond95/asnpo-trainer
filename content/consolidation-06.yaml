@@ -1,0 +1,856 @@
+id: con6
+course: consolidation
+number: 6
+title: Integrated cases
+summary: Capstone cases that combine Sections 4450, 4449, 4410, 4433, 4460 and 4400 with the Part II standards an NPO borrows for groups. Each lesson follows one Alberta organization through control, contributions, combinations, consolidation or disclosure, and related parties.
+refs:
+  - Part III, Section 4450
+  - Part III, Section 4449
+  - Part III, Section 4410
+  - Part III, Section 4433
+  - Part III, Section 4460
+  - Part III, Section 4400
+  - Part II, Section 1582
+  - Part II, Section 1601
+  - Part II, Section 3051
+
+concepts:
+  - id: con6-foundation-control
+    title: A fundraising foundation is usually controlled
+    summary: When an NPO appoints a majority of a foundation's board and the foundation exists to support it, the NPO controls the foundation. It usually also has an economic interest, because the foundation holds resources for its benefit.
+    ref: Part III, Section 4450
+  - id: con6-grants-in-group
+    title: Grants inside a group are still contributions
+    summary: In its own statements, an NPO accounts for a grant from a controlled foundation as a contribution under Section 4410, using its normal method. Being related changes the disclosure, not the revenue recognition.
+    ref: Part III, Section 4410
+  - id: con6-group-view
+    title: Restrictions viewed from the group
+    summary: On consolidation, a restriction is judged from the group's point of view. A foundation's recognition of restricted revenue when it passes funds to a group member is removed, and the external restriction is reflected only where the group actually meets it.
+    ref: Part II, Section 1601
+  - id: con6-nonconsol-package
+    title: The full package for a non-consolidated NPO
+    summary: When a controlled NPO is not consolidated, the reporting NPO combines the Section 4450 disclosures, including the financial totals, cash flows, restrictions and policy differences, with the description of the relationship, the economic interest and the Section 4460 related party disclosures.
+    ref: Part III, Section 4450
+  - id: con6-policy-consistency
+    title: Similar entities, same treatment
+    summary: The reporting choice for controlled entities is an accounting policy. Similar controlled entities are reported the same way, and the policy is disclosed.
+    ref: Part III, Section 4450
+  - id: con6-profit-acq
+    title: Buying a business
+    summary: An NPO that acquires a profit-oriented enterprise applies Section 1582, not Section 4449. Goodwill can arise, and acquisition-related costs are expensed.
+    ref: Part II, Section 1582
+  - id: con6-equity-method
+    title: Equity method for a controlled enterprise
+    summary: An NPO may account for a controlled profit-oriented enterprise with the equity method instead of consolidating. Its share of income is computed as consolidation would compute it, including amortization of fair value increments, and distributions reduce the investment.
+    ref: Part III, Section 4450
+  - id: con6-unrealized
+    title: Unrealized gains inside a group
+    summary: A gain on an asset sold between group members is not realized from the group's point of view until the asset is used up or sold outside. It is removed on consolidation, or from equity method income, and released as the asset is amortized.
+    ref: Part II, Section 1601
+  - id: con6-merger-methods
+    title: Merging NPOs that use different contribution methods
+    summary: When merging NPOs used different contribution methods, the combined organization conforms them. Moving to the deferral method shifts unspent restricted grants and unamortized capital grants out of net assets and into deferred contributions.
+    ref: Part III, Section 4449
+  - id: con6-merger-comparatives
+    title: Conformed combined comparatives
+    summary: Because policies are conformed generally retrospectively and the merged parties are presented as if always combined, the comparative figures are each party's prior results restated to the common policies and added together.
+    ref: Part III, Section 4449
+  - id: con6-capital-after-combination
+    title: Capital assets after a combination
+    summary: After a merger, capital assets and deferred capital contributions continue at carrying amounts with their remaining lives. After an acquisition, acquisition-date fair value becomes the cost that is amortized under Section 4433.
+    ref: Part III, Section 4433
+  - id: con6-net-asset-presentation
+    title: Net assets after a combination
+    summary: Under Section 4400, the statement of changes in net assets shows the categories of net assets. An acquisition difference is presented there as a separate line, not inside the excess of revenue over expenses.
+    ref: Part III, Section 4400
+  - id: con6-rp-group
+    title: Related party transactions in a group
+    summary: Transactions with controlled entities, entities under common control and key management personnel and their close family are related party transactions. When they are not eliminated by consolidation, the NPO discloses the relationship, the transactions, the amounts, balances and terms.
+    ref: Part III, Section 4460
+  - id: con6-guarantee
+    title: Guarantees create an economic interest
+    summary: Being responsible for another NPO's liabilities, for example by guaranteeing its mortgage, is an economic interest. The guarantee is disclosed, along with the relationship.
+    ref: Part III, Section 4450
+  - id: con6-acq-case
+    title: An acquisition from start to finish
+    summary: A full acquisition case needs a classification, an acquirer and date, fair values with the exceptions, the difference in net assets, expensed costs, measurement period adjustments and later measurement under the usual sections.
+    ref: Part III, Section 4449
+  - id: con6-standard-selection
+    title: Picking the right standard
+    summary: Combinations of NPOs go to Section 4449, purchases of businesses to Section 1582, gifts to Section 4410, collections to Section 4441, joint ventures and investees to Section 4450, and transactions inside a consolidated group are eliminated.
+    ref: Part III, Section 4450
+
+lessons:
+  - id: con6l1
+    title: A hospice society and its foundation
+    intro: "A Grande Prairie hospice society appoints all seven directors of a foundation whose bylaws say it exists to raise money for the hospice. Both use the deferral method and have December 31 year ends. This year the foundation granted $600,000 for the new wing from donations it had deferred last year, and $300,000 of unrestricted funds."
+    questions:
+      - id: con6l1q01
+        type: mc
+        concept: con6-foundation-control
+        prompt: How should the hospice society describe its relationship with the foundation?
+        options:
+          - Significant influence, because the foundation has its own charitable registration
+          - Economic interest only, because the foundation raises money for it
+          - Control, which here comes with an economic interest
+          - Joint control, because the foundation's donors also have a say
+        answer: 2
+        explain: The right to appoint a majority of the board is presumed to give control, and the foundation's purpose backs that up. The foundation also holds resources for the society, which is an economic interest. The two exist together.
+        ref: Part III, Section 4450
+      - id: con6l1q02
+        type: je
+        concept: con6-grants-in-group
+        prompt: The society receives both grants in cash in February. It records capital grants directly in deferred capital contributions. Record the receipt in the society's own records.
+        accounts:
+          - Cash
+          - Deferred capital contributions
+          - Grant revenue from foundation
+          - Deferred contributions
+          - Due from foundation
+          - Net assets – internally restricted
+        lines:
+          - account: Cash
+            side: dr
+            amount: 900000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 600000
+          - account: Grant revenue from foundation
+            side: cr
+            amount: 300000
+        explain: In its own statements the society treats the grants like any other contributions. The capital grant is deferred and the unrestricted grant is revenue at once. The relationship adds disclosure, not a different recognition rule.
+        ref: Part III, Section 4410
+      - id: con6l1q03
+        type: calc
+        concept: con6-grants-in-group
+        prompt: The society spent the $600,000 on the wing, which came into use on July 1 with a 25-year life and no residual value. Enter the total revenue the society recognizes this year from the foundation's two grants.
+        answer: 312000
+        unit: $
+        explain: The unrestricted grant gives $300,000. Amortization of deferred capital contributions is $600,000 ÷ 25 × 6/12 = $12,000, matching the wing's amortization. $300,000 + $12,000 = $312,000.
+        ref: Part III, Section 4410
+      - id: con6l1q04
+        type: tf
+        concept: con6-grants-in-group
+        prompt: Because the foundation is a controlled related party, the society should not recognize the foundation's grants as contributions in its own non-consolidated statements.
+        answer: false
+        reasons:
+          - A transfer without consideration from a related NPO is still a contribution. The relationship is handled by disclosure
+          - Grants from related parties are recorded directly in net assets
+          - Grants from related parties are only recognized when consolidated
+        reason: 0
+        explain: Section 4410 does not exclude contributions from related parties. Section 4460 then requires the relationship and the amounts to be disclosed.
+        ref: Part III, Section 4410
+      - id: con6l1q05
+        type: je
+        concept: con6-group-view
+        prompt: Now the society consolidates the foundation. When the foundation made the grants, it recognized $600,000 of its deferred contributions as contribution revenue and recorded $900,000 of grant expense. Record the consolidation elimination for the year.
+        accounts:
+          - Contribution revenue (Foundation)
+          - Grant revenue from foundation (Society)
+          - Grant expense (Foundation)
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Deferred contributions
+        lines:
+          - account: Contribution revenue (Foundation)
+            side: dr
+            amount: 600000
+          - account: Grant revenue from foundation (Society)
+            side: dr
+            amount: 300000
+          - account: Grant expense (Foundation)
+            side: cr
+            amount: 900000
+        explain: From the group's point of view, the donors' capital restriction was not met by passing cash to the society. It is met as the wing is used, which the society's deferred capital contributions already capture. So the foundation's $600,000 recognition is removed, along with the $300,000 internal grant and the matching expense.
+        ref: Part II, Section 1601
+      - id: con6l1q06
+        type: calc
+        concept: con6-group-view
+        prompt: "The group's other revenue this year is $450,000 of unrestricted donations to the foundation and $2,000,000 of provincial operating funding to the society. Enter consolidated total revenue, including the amortization of deferred capital contributions for the wing."
+        answer: 2462000
+        unit: $
+        explain: Combined revenue before eliminations is $450,000 + $600,000 + $2,000,000 + $300,000 + $12,000 = $3,362,000. Removing $900,000 leaves $2,462,000, which is external donations, external funding and the wing's capital contributions recognized as it is used.
+        ref: Part II, Section 1601
+      - id: con6l1q07
+        type: calc
+        concept: con6-group-view
+        prompt: Enter the consolidated deferred capital contributions balance for the wing at December 31.
+        answer: 588000
+        unit: $
+        explain: $600,000 less $12,000 amortized for July to December gives $588,000. The consolidated balance equals the society's balance, because the society already applies the group's view to the wing.
+        ref: Part II, Section 1601
+      - id: con6l1q08
+        type: classify
+        concept: con6-nonconsol-package
+        prompt: Suppose the society's policy is not to consolidate the foundation. Which items must its notes include?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The policy applied and a description of the relationship
+            bucket: 0
+          - text: The foundation's purpose, community served, tax status and legal form
+            bucket: 0
+          - text: The foundation's total assets, liabilities and net assets
+            bucket: 0
+          - text: Its revenues, expenses and operating, investing and financing cash flows
+            bucket: 0
+          - text: Restrictions on its resources by major category, including the endowment
+            bucket: 0
+          - text: The $900,000 of grants received, with terms and any balance owing
+            bucket: 0
+          - text: The names of the foundation's largest donors
+            bucket: 1
+          - text: The foundation's investment manager's fee schedule
+            bucket: 1
+        explain: Non-consolidation trades line-by-line figures for a substantial disclosure package. Section 4450 supplies the relationship, financial totals, cash flows and restrictions, and Section 4460 adds the related party transactions.
+        ref: Part III, Section 4450
+      - id: con6l1q09
+        type: mc
+        concept: con6-nonconsol-package
+        prompt: The foundation holds a $3,000,000 endowment whose terms prohibit using the capital for anything, including transfers to the society. Why does this matter for the society's reporting?
+        options:
+          - It does not matter, because the endowment belongs to the foundation
+          - External restrictions that prohibit transfers to the reporting NPO, or require them, are disclosed
+          - The endowment must be equity accounted
+          - The society can recognize the endowment as its own restricted net assets
+        answer: 1
+        explain: Readers need to know which group resources can actually flow to the society. Section 4450 calls for disclosure of external restrictions that require or prohibit transfers to the reporting organization.
+        ref: Part III, Section 4450
+      - id: con6l1q10
+        type: mc
+        concept: con6-policy-consistency
+        prompt: The society also sets up a second foundation for a palliative care endowment, appointing all of its directors. It wants to consolidate the first foundation, which flatters its net assets, and only disclose the second, which has a deficit. What is the best response?
+        options:
+          - Acceptable, because the choice is made entity by entity
+          - Not acceptable. The second foundation must be equity accounted
+          - The choice is a policy. Similar controlled foundations should be reported the same way
+          - Not acceptable. Every controlled NPO must always be consolidated
+        answer: 2
+        explain: The consolidate-or-disclose choice is an accounting policy. Two fundraising foundations with the same relationship are similar entities, so selecting the treatment by result is not appropriate.
+        ref: Part III, Section 4450
+      - id: con6l1q11
+        type: tf
+        concept: con6-foundation-control
+        prompt: If the foundation's board were fully independent, the society could still have an economic interest that must be disclosed, even without control.
+        answer: true
+        explain: An economic interest exists when another NPO holds resources that must be used for the reporting NPO. It does not need control, and on its own it calls for disclosure of its nature and extent.
+        ref: Part III, Section 4450
+
+  - id: con6l2
+    title: A charity buys a social enterprise
+    intro: "On January 1 a Red Deer employment charity pays $900,000 cash for all the shares of a bakery company that trains its program participants. The bakery's carrying net assets are $550,000. Its equipment is worth $150,000 more than carrying amount and has five years of life left. The charity pays $30,000 of legal fees."
+    questions:
+      - id: con6l2q01
+        type: mc
+        concept: con6-profit-acq
+        prompt: Which standard governs the initial accounting for the purchase?
+        options:
+          - Section 4449, as an acquisition of an NPO
+          - Section 1582, because the bakery is a profit-oriented enterprise
+          - Section 4410, as a contribution
+          - Section 3051 only
+        answer: 1
+        explain: Section 4449 excludes an NPO acquiring a profit-oriented enterprise. Section 1582 applies, so this is a business combination with possible goodwill.
+        ref: Part II, Section 1582
+      - id: con6l2q02
+        type: calc
+        concept: con6-profit-acq
+        prompt: Assume no other fair value differences. Enter the goodwill on the acquisition.
+        answer: 200000
+        unit: $
+        explain: Fair value of identifiable net assets is $550,000 + $150,000 = $700,000. Goodwill is $900,000 − $700,000 = $200,000. Unlike an NPO acquisition, the excess is goodwill, not a charge to net assets.
+        ref: Part II, Section 1582
+      - id: con6l2q03
+        type: tf
+        concept: con6-profit-acq
+        prompt: If the charity consolidates the bakery, the $30,000 of legal fees is added to goodwill.
+        answer: false
+        reasons:
+          - Acquisition-related costs are expensed under Section 1582
+          - They are added to the equipment
+          - They are charged directly to net assets
+        reason: 0
+        explain: Section 1582 expenses acquisition-related costs as incurred. Goodwill is consideration less identifiable net assets, with nothing else added.
+        ref: Part II, Section 1582
+      - id: con6l2q04
+        type: mc
+        concept: con6-equity-method
+        prompt: How may the charity report the bakery after acquiring it?
+        options:
+          - Consolidate it, or use the equity method, with disclosure
+          - Consolidate it, or disclose it without recording anything
+          - Only the cost method
+          - Only proportionate consolidation
+        answer: 0
+        explain: For a controlled profit-oriented enterprise, Section 4450 allows consolidation or the equity method. The non-consolidation disclosure route is for controlled NPOs.
+        ref: Part III, Section 4450
+      - id: con6l2q05
+        type: calc
+        concept: con6-equity-method
+        prompt: The charity uses the equity method. The bakery reports net income of $120,000 for the year. Enter the charity's equity income, taking into account amortization of the equipment increment straight-line over five years.
+        answer: 90000
+        unit: $
+        explain: The increment amortizes at $150,000 ÷ 5 = $30,000 a year. $120,000 − $30,000 = $90,000. Goodwill is not amortized, so it does not reduce income unless impaired.
+        ref: Part III, Section 4450
+      - id: con6l2q06
+        type: je
+        concept: con6-equity-method
+        prompt: Record the charity's share of the bakery's income for the year and a $40,000 cash dividend received from the bakery.
+        accounts:
+          - Investment in bakery
+          - Equity income from bakery
+          - Cash
+          - Dividend revenue
+          - Goodwill
+          - Contribution revenue
+        lines:
+          - account: Investment in bakery
+            side: dr
+            amount: 90000
+          - account: Equity income from bakery
+            side: cr
+            amount: 90000
+          - account: Cash
+            side: dr
+            amount: 40000
+          - account: Investment in bakery
+            side: cr
+            amount: 40000
+        explain: Equity income increases the investment. A dividend is a return of part of the investment, so it reduces the carrying amount instead of being revenue.
+        ref: Part III, Section 4450
+      - id: con6l2q07
+        type: calc
+        concept: con6-equity-method
+        prompt: Assume the legal fees were expensed. Enter the carrying amount of the investment in the bakery at year end.
+        answer: 950000
+        unit: $
+        explain: $900,000 + $90,000 − $40,000 = $950,000. Income adds to the investment and the dividend takes it back out.
+        ref: Part III, Section 4450
+      - id: con6l2q08
+        type: mc
+        concept: con6-unrealized
+        prompt: During the year the bakery sold $60,000 of baked goods, at its normal markup, to the charity's meal program, which used all of it. What adjustment does this need under the equity method?
+        options:
+          - Remove the bakery's full profit on the sales from equity income
+          - No adjustment to income, because the goods were consumed, but the transactions are disclosed as related party transactions
+          - Reduce the investment by $60,000
+          - Record the $60,000 as a contribution from the bakery
+        answer: 1
+        explain: Profit is unrealized only while the goods are still inside the group. Once the meal program has used them, nothing is left to defer. The sales are still related party transactions to disclose.
+        ref: Part III, Section 4460
+      - id: con6l2q09
+        type: classify
+        concept: con6-equity-method
+        prompt: Which disclosures apply to the bakery under the equity method?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The reporting policy for the controlled enterprise
+            bucket: 0
+          - text: How the bakery's operations relate to the charity's programs
+            bucket: 0
+          - text: The bakery's total assets, liabilities and shareholders' equity
+            bucket: 0
+          - text: Its revenues, expenses, net income and cash flows
+            bucket: 0
+          - text: The $60,000 of sales to the meal program
+            bucket: 0
+          - text: The wages of each trainee
+            bucket: 1
+        explain: An equity-accounted controlled enterprise brings disclosure of the policy, the relationship and condensed financial information. Section 4460 adds the transactions between them.
+        ref: Part III, Section 4450
+      - id: con6l2q10
+        type: mc
+        concept: con6-standard-selection
+        prompt: "Contrast: suppose the bakery were an NPO social enterprise and the charity obtained control of it at no cost, the bakery's identifiable net assets having a fair value of $700,000. What would the charity recognize, if it consolidates its controlled NPOs?"
+        options:
+          - Goodwill of $700,000
+          - Contribution revenue of $700,000
+          - A $700,000 increase presented separately in the statement of changes in net assets
+          - Nothing, because no consideration was paid
+        answer: 2
+        explain: An NPO combination falls under Section 4449. As an acquisition, the difference between consideration of nil and net identifiable assets of $700,000 is presented separately in the statement of changes in net assets.
+        ref: Part III, Section 4449
+      - id: con6l2q11
+        type: calc
+        concept: con6-profit-acq
+        prompt: If the charity consolidated the bakery instead, enter the carrying amount of the equipment increment in the consolidated statements at the end of year 1.
+        answer: 120000
+        unit: $
+        explain: $150,000 less one year of amortization of $30,000 is $120,000. The equity method and consolidation give the same net income, so the increment's amortization appears in both, either as a line item or inside equity income.
+        ref: Part II, Section 1601
+
+  - id: con6l3
+    title: Two community leagues merge
+    intro: "Two Edmonton community leagues merge on April 1, 2026, with March 31 year ends. Elm Park uses the deferral method. Aspen Ridge uses the restricted fund method. Each league names half the new board, both purposes are kept and no programs close. The combined league adopts the deferral method."
+    questions:
+      - id: con6l3q01
+        type: classify
+        concept: con6-merger-methods
+        prompt: Sort each fact. The last one is a what-if that did not happen in this case.
+        buckets:
+          - Consistent with a merger
+          - Points to an acquisition
+        items:
+          - text: The leagues share legal fees of $24,000
+            bucket: 0
+          - text: The joint board chose the new executive director
+            bucket: 0
+          - text: The city keeps paying its usual operating grant to the combined league
+            bucket: 0
+          - text: The combined objects cover both leagues' neighbourhoods
+            bucket: 0
+          - text: "What if: one league's bank had required the combination as a condition of not calling its loan"
+            bucket: 1
+        explain: Transaction costs and an ongoing government grant are not consideration to a third party, and joint selection of management and kept purposes fit a merger. A league acting under its lender's pressure could not really negotiate, which would point to an acquisition. On the actual facts, this is a merger.
+        ref: Part III, Section 4449
+      - id: con6l3q02
+        type: calc
+        concept: con6-merger-methods
+        prompt: "At April 1, Elm Park has net assets of $205,000. Aspen Ridge has net assets of $528,000: operating fund $48,000, restricted fund $30,000 (an unspent provincial grant for a summer program) and capital fund $450,000. A playground built three years ago for $300,000, fully funded by an external capital grant and amortized over 15 years, is part of the capital fund. Enter combined net assets at the merger date."
+        answer: 463000
+        unit: $
+        explain: The playground's carrying amount is $300,000 × 12/15 = $240,000, which becomes deferred capital contributions. The $30,000 becomes deferred contributions. Aspen Ridge's net assets fall to $528,000 − $270,000 = $258,000, and $205,000 + $258,000 = $463,000.
+        ref: Part III, Section 4449
+      - id: con6l3q03
+        type: je
+        concept: con6-merger-methods
+        prompt: Record the conforming adjustment to Aspen Ridge's balances at the merger date.
+        accounts:
+          - Net assets – restricted fund (Aspen Ridge)
+          - Net assets – capital fund (Aspen Ridge)
+          - Net assets – operating fund (Aspen Ridge)
+          - Deferred contributions
+          - Deferred capital contributions
+          - Capital assets
+          - Contribution revenue
+        lines:
+          - account: Net assets – restricted fund (Aspen Ridge)
+            side: dr
+            amount: 30000
+          - account: Net assets – capital fund (Aspen Ridge)
+            side: dr
+            amount: 240000
+          - account: Deferred contributions
+            side: cr
+            amount: 30000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 240000
+        explain: Only the externally restricted amounts move. The rest of the capital fund ($210,000) is capital assets funded by the league's own resources and stays in net assets, as invested in capital assets.
+        ref: Part III, Section 4449
+      - id: con6l3q04
+        type: calc
+        concept: con6-capital-after-combination
+        prompt: Elm Park's hall has a carrying amount of $500,000 and deferred capital contributions of $350,000. Aspen Ridge's capital assets total $450,000. Enter net assets invested in capital assets for the combined league at April 1.
+        answer: 360000
+        unit: $
+        explain: Capital assets are $500,000 + $450,000 = $950,000. Deferred capital contributions are $350,000 + $240,000 = $590,000. $950,000 − $590,000 = $360,000.
+        ref: Part III, Section 4400
+      - id: con6l3q05
+        type: calc
+        concept: con6-merger-comparatives
+        prompt: "For the year ended March 31, 2026, Elm Park reported revenue of $310,000. Aspen Ridge reported $260,000 under the restricted fund method, including the $30,000 summer program grant received that year and unspent. The playground grant was received three years ago. Enter the combined comparative revenue on the conformed basis."
+        answer: 560000
+        unit: $
+        explain: On the deferral method, Aspen Ridge's unspent $30,000 grant is not revenue, and amortization of the playground's deferred capital contributions of $300,000 ÷ 15 = $20,000 is. Its revenue becomes $260,000 − $30,000 + $20,000 = $250,000, and $310,000 + $250,000 = $560,000.
+        ref: Part III, Section 4449
+      - id: con6l3q06
+        type: calc
+        concept: con6-capital-after-combination
+        prompt: Elm Park's hall deferred capital contributions of $350,000 are amortized over the hall's remaining 20 years. Enter total amortization of deferred capital contributions for the combined league for the year ended March 31, 2027.
+        answer: 37500
+        unit: $
+        explain: The hall gives $350,000 ÷ 20 = $17,500 and the playground $300,000 ÷ 15 = $20,000. In a merger both continue on their existing carrying amounts and lives, for a total of $37,500.
+        ref: Part III, Section 4433
+      - id: con6l3q07
+        type: je
+        concept: con6-merger-methods
+        prompt: In July 2026 the combined league runs the summer program and spends the $30,000 provincial grant. Record the recognition of the grant revenue.
+        accounts:
+          - Deferred contributions
+          - Contribution revenue
+          - Net assets – restricted fund (Aspen Ridge)
+          - Deferred capital contributions
+          - Cash
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 30000
+          - account: Contribution revenue
+            side: cr
+            amount: 30000
+        explain: Because the merger moved the grant into deferred contributions, it is now recognized when the expenses are incurred. Under Aspen Ridge's old method it would have been revenue a year earlier, which is why the comparatives were restated.
+        ref: Part III, Section 4410
+      - id: con6l3q08
+        type: mc
+        concept: con6-net-asset-presentation
+        prompt: How does the combined league's statement of changes in net assets for the year ended March 31, 2027 show the merger?
+        options:
+          - A line for net assets acquired in combination of $463,000
+          - Opening balances on the combined, conformed basis, with comparatives labelled as combined
+          - A gain on merger in excess of revenue over expenses
+          - Elm Park's opening net assets only, with Aspen Ridge added as a contribution
+        answer: 1
+        explain: A merger presents the parties as always combined, so no acquisition difference arises. Opening net assets are the conformed combined amounts by category, and the notes give each party's net assets at the merger date.
+        ref: Part III, Section 4400
+      - id: con6l3q09
+        type: tf
+        concept: con6-capital-after-combination
+        prompt: Because the combined league's revenue is much larger than either league's alone, it must remeasure the hall and playground to fair value at the merger date.
+        answer: false
+        reasons:
+          - Merger accounting uses carrying amounts. Size does not trigger fair value
+          - It must remeasure only the playground
+          - Fair value is required whenever combined revenue exceeds $500,000
+        reason: 0
+        explain: Merger accounting never remeasures to fair value. Size matters only for whether a small NPO capital asset relief still applies under the common policies.
+        ref: Part III, Section 4449
+      - id: con6l3q10
+        type: calc
+        concept: con6-merger-comparatives
+        prompt: The combined league's unrestricted net assets at April 1 are Elm Park's $55,000 plus Aspen Ridge's operating fund. Enter combined unrestricted net assets.
+        answer: 103000
+        unit: $
+        explain: $55,000 + $48,000 = $103,000. Together with $360,000 invested in capital assets, that reconciles to total net assets of $463,000.
+        ref: Part III, Section 4400
+
+  - id: con6l4
+    title: A housing group that does not consolidate
+    intro: "A Calgary seniors' housing society appoints every director of a lodge society. Its policy is not to consolidate controlled NPOs. It also owns all the shares of a property services company, which it reports by the equity method. It lends the lodge $500,000 interest-free, repayable on demand, and guarantees the lodge's $2,000,000 mortgage."
+    questions:
+      - id: con6l4q01
+        type: mc
+        concept: con6-nonconsol-package
+        prompt: What is the housing society's starting point for reporting the lodge?
+        options:
+          - Equity method, because it is a controlled entity
+          - It may not consolidate, but must give the Section 4450 non-consolidation disclosures and the related party disclosures
+          - It can omit the lodge entirely, because the lodge has its own audited statements
+          - It must consolidate, because it guarantees the mortgage
+        answer: 1
+        explain: The guarantee does not override the policy choice. Not consolidating is allowed for a controlled NPO, but it brings the full disclosure package plus Section 4460.
+        ref: Part III, Section 4450
+      - id: con6l4q02
+        type: mc
+        concept: con6-guarantee
+        prompt: What does the mortgage guarantee add to the analysis?
+        options:
+          - Nothing, because guarantees are off balance sheet
+          - It turns control into joint control
+          - It is an economic interest, since the society is responsible for the lodge's liabilities, and the guarantee is disclosed
+          - It requires the society to record the $2,000,000 mortgage as its own liability
+        answer: 2
+        explain: Responsibility for another NPO's liabilities is an economic interest. Its nature and extent are disclosed, along with the guarantee itself. A liability is recorded only if a loss becomes likely and measurable under Section 3290.
+        ref: Part III, Section 4450
+      - id: con6l4q03
+        type: match
+        concept: con6-rp-group
+        prompt: Match each part of the related party disclosure for the $500,000 loan to its content.
+        pairs:
+          - left: Relationship
+            right: The lodge is controlled by the society
+          - left: Description of the transaction
+            right: An advance of funds to the lodge
+          - left: Amount and balance outstanding
+            right: $500,000 owing at year end
+          - left: Terms
+            right: Non-interest-bearing and repayable on demand
+        explain: Section 4460 disclosure covers who the party is, what happened, how much and on what terms. Interest-free, on-demand terms matter because they differ from an arm's-length loan.
+        ref: Part III, Section 4460
+      - id: con6l4q04
+        type: classify
+        concept: con6-rp-group
+        prompt: Which are related party transactions of the housing society to disclose?
+        buckets:
+          - Related party transaction
+          - Not a related party transaction
+        items:
+          - text: The $500,000 loan to the lodge
+            bucket: 0
+          - text: Management fees of $90,000 the society pays the property services company
+            bucket: 0
+          - text: A $40,000 bookkeeping contract with a close family member of the executive director
+            bucket: 0
+          - text: Property taxes paid to the City of Calgary
+            bucket: 1
+          - text: Groceries bought from an unrelated supplier on normal terms
+            bucket: 1
+        explain: Controlled entities and close family of key management personnel are related parties. A government that only levies taxes, and an unrelated supplier, are not.
+        ref: Part III, Section 4460
+      - id: con6l4q05
+        type: calc
+        concept: con6-unrealized
+        prompt: On January 1 the property services company sold a van to the housing society for $60,000. Its carrying amount was $45,000 and it has five years of life left. The company's net income of $200,000 includes the $15,000 gain. Enter the society's equity income for the year.
+        answer: 188000
+        unit: $
+        explain: The $15,000 gain is unrealized for the group, so it is removed. One-fifth of it, $3,000, is realized this year as the society uses the van. $200,000 − $15,000 + $3,000 = $188,000.
+        ref: Part III, Section 4450
+      - id: con6l4q06
+        type: je
+        concept: con6-equity-method
+        prompt: Record the society's equity income of $188,000 and a $50,000 dividend received in cash from the property services company.
+        accounts:
+          - Investment in property services company
+          - Equity income from property services company
+          - Cash
+          - Dividend revenue
+          - Vehicles
+          - Gain on sale of van
+        lines:
+          - account: Investment in property services company
+            side: dr
+            amount: 188000
+          - account: Equity income from property services company
+            side: cr
+            amount: 188000
+          - account: Cash
+            side: dr
+            amount: 50000
+          - account: Investment in property services company
+            side: cr
+            amount: 50000
+        explain: The unrealized gain is dealt with inside equity income, so the van stays at $60,000 in the society's records. The dividend reduces the investment.
+        ref: Part III, Section 4450
+      - id: con6l4q07
+        type: calc
+        concept: con6-equity-method
+        prompt: The investment was $1,000,000 at the start of the year. Enter its carrying amount at year end.
+        answer: 1138000
+        unit: $
+        explain: $1,000,000 + $188,000 − $50,000 = $1,138,000. The remaining $12,000 of unrealized gain stays out of the investment until the van is amortized.
+        ref: Part III, Section 4450
+      - id: con6l4q08
+        type: je
+        concept: con6-unrealized
+        prompt: Suppose the society consolidated the property services company instead. Record the year-end consolidation adjustment for the van.
+        accounts:
+          - Gain on sale of van
+          - Vehicles
+          - Accumulated amortization – vehicles
+          - Amortization expense
+          - Investment in property services company
+          - Net assets – unrestricted
+        lines:
+          - account: Gain on sale of van
+            side: dr
+            amount: 15000
+          - account: Vehicles
+            side: cr
+            amount: 15000
+          - account: Accumulated amortization – vehicles
+            side: dr
+            amount: 3000
+          - account: Amortization expense
+            side: cr
+            amount: 3000
+        explain: The group still owns the van, so its cost goes back to $45,000 and the gain is removed. Amortization drops from $12,000 to $9,000 a year, releasing $3,000 of the gain this year. Net income ends up the same as under the equity method.
+        ref: Part II, Section 1601
+      - id: con6l4q09
+        type: tf
+        concept: con6-nonconsol-package
+        prompt: Because the lodge is not consolidated, the society does not need to disclose its loan to the lodge or the guarantee as related party matters.
+        answer: false
+        reasons:
+          - Non-consolidated controlled NPOs are related parties, and the transactions are not eliminated, so they are disclosed
+          - Only consolidated entities are related parties
+          - Loans to controlled NPOs are disclosed only if interest is charged
+        reason: 0
+        explain: Not consolidating makes disclosure more important, not less. The loan and guarantee appear in both the Section 4450 and the Section 4460 disclosures.
+        ref: Part III, Section 4460
+      - id: con6l4q10
+        type: mc
+        concept: con6-policy-consistency
+        prompt: The society's year end is March 31 and the lodge's is December 31. How does it handle the difference in its non-consolidation disclosures?
+        options:
+          - It cannot give the disclosures until the year ends match
+          - It uses the lodge's financial information at its most recent reporting date and discloses the period covered and significant events in between
+          - It must consolidate the lodge instead
+          - It prorates the lodge's figures to March 31 without disclosure
+        answer: 1
+        explain: When fiscal periods differ, the reporting NPO may use the other entity's most recent information, disclosing the period it covers and any significant intervening events or transactions.
+        ref: Part III, Section 4450
+      - id: con6l4q11
+        type: mc
+        concept: con6-guarantee
+        prompt: Late in the year the lodge misses two mortgage payments and the lender demands payment from the society. The society expects to pay about $300,000. What is the right response?
+        options:
+          - Disclose only, because the lodge is not consolidated
+          - Recognize a liability and loss for the likely, measurable payment under the guarantee, and keep the disclosures
+          - Consolidate the lodge from that date
+          - Reduce the $500,000 loan receivable by $300,000
+        answer: 1
+        explain: Once a loss under the guarantee is likely and can be estimated, Section 3290 requires recognition. The non-consolidation policy does not shield the society from its own obligation. The loan's collectability also needs a separate impairment assessment.
+        ref: Part II, Section 3290
+
+  - id: con6l5
+    title: "Capstone: a museum takes over a rail society"
+    intro: "A Medicine Hat museum society consolidates the NPOs it controls, records collections at cost and has a December 31 year end. On September 1, 2026, after the rail heritage society's board resigned in the face of insolvency, the museum appointed all of its directors and paid $100,000 to a tourism company to release its rights over the rail society's operations."
+    questions:
+      - id: con6l5q01
+        type: mc
+        concept: con6-acq-case
+        prompt: How is the combination classified, and why?
+        options:
+          - Merger, because the rail society keeps its purpose
+          - Acquisition, because the rail society could not negotiate and value went to a third party, so merger criteria fail
+          - Outside Section 4449, because the rail society still exists legally
+          - Merger, because the museum paid only a modest amount
+        answer: 1
+        explain: An insolvent party whose board resigned cannot take part in setting the terms, and the $100,000 payment benefits a third party. Either failure makes it an acquisition, with the museum as acquirer from September 1.
+        ref: Part III, Section 4449
+      - id: con6l5q02
+        type: calc
+        concept: con6-acq-case
+        prompt: "At September 1 the rail society has gift shop inventory $15,000, a rolling stock collection whose cost is deemed to be its fair value of $200,000, a station with a provisional fair value of $480,000, equipment $35,000, accounts payable $40,000, a bank overdraft $120,000 and a lawsuit that is a present obligation with a fair value of $18,000. Its donor list is valued at $25,000. Enter the difference, as a positive number."
+        answer: 452000
+        unit: $
+        explain: Net identifiable assets are $15,000 + $200,000 + $480,000 + $35,000 − $40,000 − $120,000 − $18,000 = $552,000. The donor list is excluded. $552,000 − $100,000 = $452,000, an increase in net assets.
+        ref: Part III, Section 4449
+      - id: con6l5q03
+        type: je
+        concept: con6-acq-case
+        prompt: Record the acquisition as it enters the consolidated statements, including the $100,000 cash payment.
+        accounts:
+          - Inventory
+          - Collections
+          - Buildings
+          - Equipment
+          - Accounts payable
+          - Bank indebtedness
+          - Provision for claims
+          - Cash
+          - Net assets acquired in combination
+          - Goodwill
+          - Donor list
+          - Contribution revenue
+        lines:
+          - account: Inventory
+            side: dr
+            amount: 15000
+          - account: Collections
+            side: dr
+            amount: 200000
+          - account: Buildings
+            side: dr
+            amount: 480000
+          - account: Equipment
+            side: dr
+            amount: 35000
+          - account: Accounts payable
+            side: cr
+            amount: 40000
+          - account: Bank indebtedness
+            side: cr
+            amount: 120000
+          - account: Provision for claims
+            side: cr
+            amount: 18000
+          - account: Cash
+            side: cr
+            amount: 100000
+          - account: Net assets acquired in combination
+            side: cr
+            amount: 452000
+        explain: Every identifiable item comes in at its acquisition-date amount, collections under Section 4441 at deemed cost. The $452,000 balance is a separate line in the statement of changes in net assets, never goodwill or revenue.
+        ref: Part III, Section 4449
+      - id: con6l5q04
+        type: je
+        concept: con6-acq-case
+        prompt: The museum pays $12,000 for valuations and $20,000 of legal fees on the acquisition, in cash. Record them.
+        accounts:
+          - Acquisition costs expense
+          - Cash
+          - Net assets acquired in combination
+          - Buildings
+          - Collections
+        lines:
+          - account: Acquisition costs expense
+            side: dr
+            amount: 32000
+          - account: Cash
+            side: cr
+            amount: 32000
+        explain: Acquisition-related costs are expensed as incurred. They do not reduce the difference or add to the station's cost.
+        ref: Part III, Section 4449
+      - id: con6l5q05
+        type: calc
+        concept: con6-capital-after-combination
+        prompt: The station has 30 years of remaining life, no residual value, straight-line. Using the provisional fair value, enter amortization for September 1 to December 31, 2026. Round to the nearest dollar.
+        answer: 5333
+        tolerance: 1
+        unit: $
+        explain: $480,000 ÷ 30 = $16,000 a year, and four months is $16,000 × 4/12 = $5,333. Fair value at acquisition is the station's cost for Section 4433.
+        ref: Part III, Section 4433
+      - id: con6l5q06
+        type: calc
+        concept: con6-acq-case
+        prompt: In May 2027 the final appraisal puts the station at $540,000 at September 1, 2026. Enter the revised acquisition difference.
+        answer: 512000
+        unit: $
+        explain: The change is within the one-year measurement period, so it is applied retrospectively. Net identifiable assets rise by $60,000, giving $452,000 + $60,000 = $512,000. The 2026 comparatives are revised.
+        ref: Part III, Section 4449
+      - id: con6l5q07
+        type: calc
+        concept: con6-capital-after-combination
+        prompt: Enter the revised 2026 station amortization shown in the comparatives after the May 2027 adjustment.
+        answer: 6000
+        unit: $
+        explain: $540,000 ÷ 30 × 4/12 = $6,000. Retrospective adjustment means amortization is recomputed from the acquisition date, not just changed going forward.
+        ref: Part III, Section 4433
+      - id: con6l5q08
+        type: calc
+        concept: con6-acq-case
+        prompt: At December 31, 2026, the lawsuit is unresolved and the amount Section 3290 would now require is $25,000. Enter the carrying amount of the provision.
+        answer: 25000
+        unit: $
+        explain: A contingent liability recognized in an acquisition is carried at the higher of the Section 3290 amount and the amount first recognized. $25,000 is higher than $18,000, so the provision rises and the $7,000 increase is an expense.
+        ref: Part III, Section 4449
+      - id: con6l5q09
+        type: mc
+        concept: con6-net-asset-presentation
+        prompt: Where does the $512,000 appear in the museum's 2026 consolidated statements, once revised?
+        options:
+          - In revenue, as a contribution of net assets
+          - As a separate line in the statement of changes in net assets
+          - As negative goodwill on the statement of financial position
+          - Only in the notes
+        answer: 1
+        explain: Section 4449 presents the difference separately in the statement of changes in net assets, which Section 4400 requires. It stays out of the excess of revenue over expenses, so a takeover does not look like a fundraising success.
+        ref: Part III, Section 4400
+      - id: con6l5q10
+        type: classify
+        concept: con6-standard-selection
+        prompt: Which treatment governs each of the museum's other events this year?
+        buckets:
+          - Section 4449 combination
+          - Contribution under Sections 4410 and 4441
+          - Equity method
+          - Eliminated on consolidation
+        items:
+          - text: A collector donates a vintage locomotive to the museum's collection
+            bucket: 1
+          - text: The museum buys 30% of a for-profit tour operator and gets two of seven board seats
+            bucket: 2
+          - text: After September 1, the rail society grants $50,000 to the museum
+            bucket: 3
+          - text: The museum obtains control of a small Brooks heritage society with no payment
+            bucket: 0
+          - text: The rail society pays the museum $8,000 for exhibit design services
+            bucket: 3
+        explain: Gifts of collection items are contributions, measured under the collections section. Significant influence over a profit-oriented enterprise uses the equity method. Transactions with a consolidated controlled NPO are eliminated. A new NPO takeover is another Section 4449 acquisition.
+        ref: Part III, Section 4450
+      - id: con6l5q11
+        type: tf
+        concept: con6-acq-case
+        prompt: Had the museum's policy been not to consolidate controlled NPOs, it would still record the rail society's net assets and the $452,000 difference in its own statements.
+        answer: false
+        reasons:
+          - A non-consolidating acquirer identifies the acquirer and date and gives the acquisition disclosures, but records no net assets
+          - It would record them using the equity method
+          - It would record the difference as an expense
+        reason: 0
+        explain: Without consolidation there is nothing to measure in the museum's statements. It discloses the acquiree, the date and the reasons, and gives the Section 4450 non-consolidation disclosures.
+        ref: Part III, Section 4449

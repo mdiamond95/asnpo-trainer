@@ -1,0 +1,726 @@
+id: p2u4
+course: part2
+number: 4
+title: Choosing and adopting ASNPO
+summary: Which NPOs may use ASNPO and which must use public sector standards, how Part III, Part II and other sources rank in the GAAP hierarchy, how Section 1501 governs first-time adoption, how to move between frameworks and policies, and which reliefs are open to small NPOs.
+refs:
+  - Part III, Introduction to Part III
+  - Part III, Section 1101
+  - Part III, Section 1501
+  - Part II, Section 1506
+  - Part III, Section 4433
+status: ready
+
+concepts:
+  - id: p2u4-private-scope
+    title: ASNPO is for private-sector NPOs
+    summary: Part III is available to not-for-profit organizations in the private sector. An entity that pays financial returns to members or has transferable ownership interests is not an NPO and looks to Part II or Part I instead.
+    ref: Part III, Introduction to Part III
+  - id: p2u4-ifrs-option
+    title: The IFRS alternative
+    summary: A private-sector NPO may choose IFRS in Part I instead of ASNPO. It cannot choose public sector standards. IFRS has no general standard for donations, so NPOs that choose it must build policies for contributions themselves.
+    ref: Part III, Introduction to Part III
+  - id: p2u4-government-npo
+    title: Government NPOs
+    summary: An NPO controlled by a government, including a municipality, is a government not-for-profit organization. It follows the Public Sector Accounting Handbook, where it currently may apply the PS 4200 series of NPO standards, and it cannot use ASNPO.
+    ref: Part III, Introduction to Part III
+  - id: p2u4-control-test
+    title: Control decides the sector
+    summary: Whether an NPO is a government NPO depends on whether a government controls it, for example by appointing a majority of the board. Heavy dependence on government funding does not on its own make an NPO a government NPO, and status can change when control changes.
+    ref: Part III, Introduction to Part III
+  - id: p2u4-part3-first
+    title: Part III first, Part II for the rest
+    summary: An NPO applies the Part III standards and, for matters Part III does not address, the Part II standards. Some Part II sections are replaced by NPO versions, such as Sections 1001, 1101, 1401 and 1501 in place of 1000, 1100, 1400 and 1500. Others build on a Part II section. Section 4433 directs NPOs to apply Section 3061, with NPO-specific rules for contributed assets, write-downs and the small NPO relief.
+    ref: Part III, Section 1101
+  - id: p2u4-hierarchy
+    title: The NPO GAAP hierarchy
+    summary: Section 1101 sets out the primary sources of GAAP for NPOs, which are the Part III standards, the applicable Part II standards and the Accounting Guidelines. An NPO must follow a primary source that deals with a matter.
+    ref: Part III, Section 1101
+  - id: p2u4-other-sources
+    title: When the primary sources are silent
+    summary: If no primary source deals with a matter, the NPO develops a policy consistent with the primary sources and the concepts in Section 1001, using professional judgement. It may look to other sources, such as IFRS or other standard setters, but these cannot override a primary source.
+    ref: Part III, Section 1101
+  - id: p2u4-1501-scope
+    title: Who applies Section 1501
+    summary: Section 1501 applies to an NPO's first financial statements prepared under ASNPO. An NPO that applied ASNPO before, but whose most recent statements were not under ASNPO, may either apply Section 1501 or apply Section 1506 as if it had never stopped.
+    ref: Part III, Section 1501
+  - id: p2u4-transition-date
+    title: Date of transition
+    summary: The date of transition is the beginning of the earliest period for which the NPO presents full comparative information under ASNPO. An opening ASNPO statement of financial position is prepared at that date.
+    ref: Part III, Section 1501
+  - id: p2u4-retrospective
+    title: Retrospective application
+    summary: The NPO uses the same policies in its opening statement and for all periods presented, and they must comply with the standards in effect at the end of its first ASNPO reporting period. Adjustments at the date of transition are recognized directly in net assets.
+    ref: Part III, Section 1501
+  - id: p2u4-exemptions
+    title: Optional exemptions
+    summary: Section 1501 offers optional exemptions from full retrospective application, including business combinations, fair value as deemed cost, employee future benefits, financial instruments, asset retirement obligations, collections and revenue. The NPO picks the ones it wants and discloses them.
+    ref: Part III, Section 1501
+  - id: p2u4-exceptions
+    title: Mandatory exceptions
+    summary: Retrospective application is prohibited for derecognition of financial assets and liabilities, hedge accounting, estimates and non-controlling interests. In particular, estimates at transition stay consistent with earlier estimates unless there is evidence they were in error, so hindsight is not allowed.
+    ref: Part III, Section 1501
+  - id: p2u4-1501-disclosure
+    title: Explaining the transition
+    summary: In its first ASNPO statements, the NPO discloses each adjustment to net assets at the date of transition and its reason, reconciles the excess of revenues over expenses previously reported for the latest period to the ASNPO figure, explains material adjustments to the cash flow statement and lists the exemptions used.
+    ref: Part III, Section 1501
+  - id: p2u4-policy-change
+    title: Changes within ASNPO
+    summary: Moving between the deferral and restricted fund methods, or creating a new restricted fund, is a change in accounting policy under Section 1506, applied retrospectively. A voluntary change is allowed only if it gives reliable and more relevant information.
+    ref: Part II, Section 1506
+  - id: p2u4-other-transitions
+    title: Leaving ASNPO
+    summary: An NPO that moves from ASNPO to IFRS applies IFRS 1. One that becomes a government NPO applies the public sector first-time adoption standard, PS 2125. Moving into ASNPO from any other basis uses Section 1501.
+    ref: Part III, Section 1501
+  - id: p2u4-small-relief
+    title: The $500,000 reliefs
+    summary: An NPO whose average annual revenues for the current and preceding period are under $500,000 may limit Sections 4433 and 4434 to disclosure. Revenues of controlled entities count in the test, and once an NPO must apply the full standard it keeps applying it even if revenues later fall.
+    ref: Part III, Section 4433
+  - id: p2u4-open-choices
+    title: Choices open to every NPO
+    summary: Other simplifications are policy choices available regardless of size, such as recognizing contributed materials and services or not, disclosing rather than consolidating controlled NPOs, choosing the contribution method, and measuring collections at cost or nominal value.
+    ref: Part III, Section 4410
+
+lessons:
+  - id: p2u4l1
+    title: Who may use ASNPO
+    intro: The first judgement is not how to apply ASNPO but whether you may apply it at all. Sector, control and the NPO definition decide which Handbook an Alberta organization follows.
+    questions:
+      - id: p2u4l1q01
+        type: classify
+        concept: p2u4-government-npo
+        prompt: Sort each Alberta organization by the framework family it must look to.
+        buckets:
+          - ASNPO or IFRS (private sector)
+          - Public sector standards
+        items:
+          - text: A Friendship Centre with a board elected by its members, funded mostly by provincial grants
+            bucket: 0
+          - text: A seniors' lodge foundation whose board is appointed by the province's housing minister
+            bucket: 1
+          - text: A museum society the City of Lethbridge controls through board appointments
+            bucket: 1
+          - text: A Red Deer community league that receives a city operating grant but elects its own board
+            bucket: 0
+          - text: A hockey association run by volunteer parents
+            bucket: 0
+        explain: The test is government control, not government money. A municipality is a government for this purpose, so a city-controlled society is a government NPO. Grant-dependent NPOs with independent boards stay in the private sector.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q02
+        type: tf
+        concept: p2u4-control-test
+        prompt: A Calgary food bank receives 70% of its revenue from Government of Alberta grants. That dependence makes it a government NPO that must use public sector standards.
+        answer: false
+        reasons:
+          - Economic dependence is not control, so the food bank stays in the private sector unless a government controls it
+          - Only NPOs with more than 90% government funding are government NPOs
+          - It may choose either framework because it is a charity
+        reason: 0
+        explain: Funding dependence alone does not give a government power over the food bank's financial and operating policies. The food bank would disclose its economic dependence, but it still reports under ASNPO or IFRS.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q03
+        type: mc
+        concept: p2u4-control-test
+        prompt: A Grande Prairie seniors' housing society signs a new funding agreement that gives the province the right to appoint a majority of its board. What is the reporting consequence?
+        options:
+          - None, because the society is still a registered charity
+          - It becomes a government NPO and moves to public sector standards
+          - It may keep ASNPO as long as it discloses the agreement
+          - It must move to IFRS because its control has changed
+        answer: 1
+        explain: Board appointment rights are the clearest sign of control. Once the province controls the society, it is a government NPO and must report under the Public Sector Accounting Handbook, applying that Handbook's first-time adoption standard.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q04
+        type: tf
+        concept: p2u4-ifrs-option
+        prompt: A private-sector arts society that likes the public sector capital asset model may elect to follow public sector accounting standards instead of ASNPO.
+        answer: false
+        explain: A private-sector NPO chooses between ASNPO and IFRS. Public sector standards are for governments and government organizations. The society can borrow ideas only where ASNPO is silent, through the GAAP hierarchy.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q05
+        type: mc
+        concept: p2u4-ifrs-option
+        prompt: An Edmonton relief agency is the Canadian member of an international federation that prepares IFRS group statements. Its board asks whether to adopt IFRS. Which point is most important for the board to weigh?
+        options:
+          - IFRS is cheaper to apply than ASNPO for NPOs
+          - IFRS lets it use the restricted fund method
+          - IFRS aligns with the federation's reporting, but IFRS has no general standard for donations, so the agency must develop and justify its own contribution policies
+          - IFRS is mandatory for any NPO with international affiliates
+        answer: 2
+        explain: IFRS is an option, never a requirement, for a private-sector NPO. It brings consistency with the group but not ASNPO's tailored contributions model, so the agency takes on more judgement and usually more cost.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q06
+        type: mc
+        concept: p2u4-private-scope
+        prompt: A Camrose grain handling co-operative distributes patronage returns to its members each year and calls itself non-profit. Which framework family applies?
+        options:
+          - ASNPO, because it describes itself as non-profit
+          - Public sector standards, because co-operatives are regulated by the province
+          - ASPE or IFRS, because members receive financial returns, so it is not an NPO
+          - ASNPO, as long as its average revenues are under $500,000
+        answer: 2
+        explain: An NPO's members and contributors receive no financial return from it in that capacity. Patronage returns are a financial return, so the co-operative is a profit-oriented enterprise for reporting purposes, whatever it calls itself.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q07
+        type: tf
+        concept: p2u4-government-npo
+        prompt: In 2026, a government NPO may apply the Public Sector Accounting Handbook including the PS 4200 series of standards written for government NPOs.
+        answer: true
+        explain: The PS 4200 series remains available to government NPOs. The Public Sector Accounting Board is gradually folding it into the main public sector standards, beginning with capital assets and collections, but that does not open ASNPO to government NPOs.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q08
+        type: match
+        concept: p2u4-government-npo
+        prompt: Match each entity to the standards it reports under.
+        pairs:
+          - left: Private-sector food bank that has made no election
+            right: ASNPO, Part III with Part II
+          - left: Private-sector NPO that elects to align with an international parent
+            right: IFRS, Part I
+          - left: Foundation controlled by a provincial health authority
+            right: Public Sector Accounting Handbook
+          - left: Privately owned fitness club company
+            right: ASPE, Part II, or IFRS
+        explain: Sector and the NPO definition decide the framework family. Within the private sector, an NPO chooses ASNPO or IFRS, and a profit-oriented private company chooses ASPE or IFRS.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l1q09
+        type: tf
+        concept: p2u4-small-relief
+        prompt: A small Banff hiking club with average revenues of $60,000 is exempt from ASNPO and may present cash-basis statements that it calls GAAP statements.
+        answer: false
+        explain: ASNPO has no size exemption from GAAP as a whole. Small NPOs get targeted reliefs, such as limiting the capital asset and intangible asset standards to disclosure. Statements prepared on a cash basis are a special purpose framework, not ASNPO.
+        ref: Part III, Section 4433
+      - id: p2u4l1q10
+        type: mc
+        concept: p2u4-control-test
+        prompt: A Medicine Hat arts council was created by the city decades ago. Today its bylaws let members elect the whole board, and the city has no veto or appointment rights, though it still provides a grant. Which framework family applies?
+        options:
+          - Public sector, because the city created it
+          - Public sector, because it receives a city grant
+          - Private sector, because the city does not now control it
+          - Either, at the council's choice
+        answer: 2
+        explain: Control is assessed on present facts. Historic creation by a government and ongoing grants do not amount to control. The council is a private-sector NPO and may use ASNPO or IFRS.
+        ref: Part III, Introduction to Part III
+
+  - id: p2u4l2
+    title: The GAAP hierarchy
+    intro: Part III is short on purpose. Most of the accounting an NPO does comes from Part II, and some comes from your own judgement. Section 1101 tells you in what order to look.
+    questions:
+      - id: p2u4l2q01
+        type: mc
+        concept: p2u4-hierarchy
+        prompt: Which Part III section sets out the sources of generally accepted accounting principles for NPOs?
+        options:
+          - Section 1001
+          - Section 1101
+          - Section 1401
+          - Section 4400
+        answer: 1
+        explain: Section 1101 is the NPO counterpart of Part II Section 1100. Section 1001 holds the NPO financial statement concepts, 1401 general presentation standards and 4400 financial statement presentation.
+        ref: Part III, Section 1101
+      - id: p2u4l2q02
+        type: classify
+        concept: p2u4-hierarchy
+        prompt: For an Alberta NPO applying ASNPO, classify each source.
+        buckets:
+          - Primary source of GAAP
+          - Other source, for judgement only
+        items:
+          - text: Part III, Section 4410 on contributions
+            bucket: 0
+          - text: Part II, Section 3856 on financial instruments
+            bucket: 0
+          - text: An Accounting Guideline in the Handbook
+            bucket: 0
+          - text: IFRS 15 on revenue from contracts with customers
+            bucket: 1
+          - text: A public sector standard on tangible capital assets
+            bucket: 1
+          - text: An accounting firm's ASNPO practice guide
+            bucket: 1
+        explain: Primary sources are the Part III standards, the Part II standards that apply to NPOs and the Accounting Guidelines. Other frameworks and practice guides can help when the primary sources are silent, but they carry no authority on their own.
+        ref: Part III, Section 1101
+      - id: p2u4l2q03
+        type: match
+        concept: p2u4-part3-first
+        prompt: Match each Part II section to the Part III section an NPO applies in its place.
+        pairs:
+          - left: Part II, Section 1100, GAAP
+            right: Part III, Section 1101
+          - left: Part II, Section 1500, first-time adoption
+            right: Part III, Section 1501
+          - left: Part II, Section 1000, financial statement concepts
+            right: Part III, Section 1001
+          - left: Part II, Section 1400, general presentation standards
+            right: Part III, Section 1401
+        explain: Where Part III has an NPO-specific version of a general section, the NPO applies it instead of the Part II section. Some Part III sections work differently. Section 4433, for example, does not replace Section 3061 but tells NPOs to apply it with NPO-specific modifications. For everything else Part III does not address, Part II applies directly.
+        ref: Part III, Section 1101
+      - id: p2u4l2q04
+        type: tf
+        concept: p2u4-part3-first
+        prompt: An NPO's new accessible van is accounted for under Part II, Section 3061 alone, and no Part III section affects it.
+        answer: false
+        reasons:
+          - Part III Section 4433 directs NPOs to apply Section 3061 but adds NPO-specific rules, such as for contributed assets, write-downs and the small NPO relief
+          - Vans are always expensed by NPOs
+          - Section 3061 never applies to NPOs
+        reason: 0
+        explain: Section 4433 brings Section 3061 into NPO accounting for recognition, measurement and amortization, then modifies it where NPOs differ. So the van follows Section 3061 as modified by Section 4433, not Section 3061 alone.
+        ref: Part III, Section 1101
+      - id: p2u4l2q05
+        type: mc
+        concept: p2u4-part3-first
+        prompt: A Calgary theatre society sells season tickets. Which standard governs that revenue?
+        options:
+          - Part III, Section 4410, because all NPO revenue is a contribution
+          - Part II, Section 3400, because ticket sales are exchange transactions that Part III does not address
+          - IFRS 15, because Part III is silent
+          - None, the society can choose any rational policy
+        answer: 1
+        explain: Section 4410 covers contributions, which are non-reciprocal. Ticket sales are exchanges, so the society applies the Part II revenue standard. Only if the primary sources were silent would it consider other sources.
+        ref: Part III, Section 1101
+      - id: p2u4l2q06
+        type: mc
+        concept: p2u4-other-sources
+        prompt: A Lethbridge foundation receives a type of asset that no Part III or Part II standard specifically addresses. How should it set its accounting policy?
+        options:
+          - Pick the policy that gives the best surplus
+          - Copy the policy of the largest charity in Alberta
+          - Develop a policy consistent with the primary sources and the concepts in Section 1001, using judgement and, if helpful, other frameworks
+          - Leave the asset off the statements until a standard is issued
+        answer: 2
+        explain: When the primary sources are silent, the NPO uses judgement to build a policy that fits the primary sources and the NPO concepts. Other frameworks, such as IFRS, can inform that judgement but do not bind it.
+        ref: Part III, Section 1101
+      - id: p2u4l2q07
+        type: tf
+        concept: p2u4-other-sources
+        prompt: An NPO's controller prefers an IFRS treatment for a contribution that conflicts with Section 4410. Because IFRS is a recognized framework, the NPO may follow it under ASNPO as long as it discloses the policy.
+        answer: false
+        reasons:
+          - Other sources are used only when the primary sources do not deal with a matter, and they cannot override them
+          - It may, but only with board approval
+          - It may, but only if it is a large NPO
+        reason: 0
+        explain: Section 4410 is a primary source that deals with contributions. Disclosure does not cure a departure from a primary source. Other frameworks are only tools for gaps.
+        ref: Part III, Section 1101
+      - id: p2u4l2q08
+        type: mc
+        concept: p2u4-hierarchy
+        prompt: Where does an NPO find the financial statement concepts that guide its judgement when the standards are silent?
+        options:
+          - Part II, Section 1000, without modification
+          - Part III, Section 1001
+          - The PS 1000 public sector conceptual framework
+          - The IFRS Conceptual Framework
+        answer: 1
+        explain: Part III has its own concepts section, Section 1001, written for NPOs. It replaces Part II, Section 1000 for them.
+        ref: Part III, Section 1101
+      - id: p2u4l2q09
+        type: mc
+        concept: p2u4-part3-first
+        prompt: An Edmonton community health centre has a fixed-rate term deposit and an operating line of credit. Where does it look for recognition and measurement?
+        options:
+          - Part III, Section 4410
+          - Part II, Section 3856, because Part III does not address financial instruments
+          - Part III, Section 4400
+          - IFRS 9, because Part II applies only to private enterprises
+        answer: 1
+        explain: Part III has no financial instruments standard, so the NPO applies Section 3856 in Part II. That is why so much NPO accounting is really Part II accounting.
+        ref: Part III, Section 1101
+      - id: p2u4l2q10
+        type: tf
+        concept: p2u4-hierarchy
+        prompt: Accounting Guidelines in the Handbook are part of the primary sources of GAAP for an NPO applying ASNPO.
+        answer: true
+        explain: Section 1101 includes the Accounting Guidelines in the primary sources along with the Part III and applicable Part II standards. They rank ahead of any source outside the Handbook.
+        ref: Part III, Section 1101
+
+  - id: p2u4l3
+    title: First-time adoption under Section 1501
+    intro: An organization that has never reported under ASNPO must restate as if it always had, subject to a short list of exemptions and exceptions. Work through dates, adjustments and the disclosures that explain them.
+    questions:
+      - id: p2u4l3q01
+        type: mc
+        concept: p2u4-1501-scope
+        prompt: Which situation calls for Section 1501?
+        options:
+          - An NPO already on ASNPO switches from the restricted fund method to the deferral method
+          - A Fort McMurray society that has only ever issued cash-basis statements prepares its first ASNPO statements
+          - An NPO on ASNPO adopts a newly issued Part II standard
+          - An NPO on ASNPO corrects a prior-period error
+        answer: 1
+        explain: Section 1501 governs the first statements under ASNPO. Changes in policy, new standards and error corrections inside ASNPO fall under Section 1506 or the new standard's own transition rules.
+        ref: Part III, Section 1501
+      - id: p2u4l3q02
+        type: mc
+        concept: p2u4-transition-date
+        prompt: A St. Albert society's first ASNPO statements are for the year ending March 31, 2027, with one year of comparatives. What is its date of transition?
+        options:
+          - April 1, 2026
+          - March 31, 2026
+          - April 1, 2025
+          - March 31, 2027
+        answer: 2
+        explain: The date of transition is the start of the earliest period with full comparative information. The comparative year runs from April 1, 2025 to March 31, 2026, so the opening statement of financial position is at April 1, 2025.
+        ref: Part III, Section 1501
+      - id: p2u4l3q03
+        type: tf
+        concept: p2u4-retrospective
+        prompt: The society must apply the ASNPO standards in effect at March 31, 2027 to its opening statement, the comparative year and the current year, even if a standard was amended during the comparative year.
+        answer: true
+        explain: All periods use the same policies, and those policies must comply with the standards in effect at the end of the first ASNPO reporting period. Earlier versions of amended standards are not used for the comparative year.
+        ref: Part III, Section 1501
+      - id: p2u4l3q04
+        type: classify
+        concept: p2u4-exemptions
+        prompt: Classify each item in Section 1501.
+        buckets:
+          - Optional exemption
+          - Mandatory exception
+        items:
+          - text: Fair value as deemed cost
+            bucket: 0
+          - text: Estimates
+            bucket: 1
+          - text: Employee future benefits
+            bucket: 0
+          - text: Derecognition of financial assets and financial liabilities
+            bucket: 1
+          - text: Asset retirement obligations
+            bucket: 0
+          - text: Hedge accounting
+            bucket: 1
+          - text: Collections
+            bucket: 0
+        explain: Exemptions are choices that ease the cost of restating. Exceptions are prohibitions on looking back, designed to stop hindsight and avoid reopening completed transactions.
+        ref: Part III, Section 1501
+      - id: p2u4l3q05
+        type: mc
+        concept: p2u4-exceptions
+        prompt: At the date of transition, a Red Deer society's previous statements estimated uncollectible pledges at $40,000 on a reasonable basis. By the time it prepares its ASNPO statements, it knows $70,000 proved uncollectible. What allowance goes in the opening statement?
+        options:
+          - $70,000, because ASNPO requires the best information available
+          - $40,000, because estimates at transition stay consistent with earlier estimates unless they were in error
+          - $55,000, the average of the two
+          - Nil, because pledges are not recognized under ASNPO
+        answer: 1
+        explain: The estimates exception forbids using hindsight. The $30,000 later loss reflects events after the transition date and belongs in the period it arose, unless the original estimate was an error.
+        ref: Part III, Section 1501
+      - id: p2u4l3q06
+        type: calc
+        concept: p2u4-exemptions
+        prompt: "An Edmonton arts society previously expensed all capital purchases. At transition it elects fair value as deemed cost for its building, appraised at $2,100,000. It restates its equipment retrospectively, which cost $300,000 four years before transition and is amortized straight-line over 10 years. It also finds a $90,000 restricted operating grant, unspent at transition, that its old basis took to revenue and the deferral method must defer. Enter the net increase in net assets at the date of transition."
+        answer: 2190000
+        unit: $
+        explain: Building $2,100,000 plus equipment carrying amount $300,000 − $120,000 = $180,000, less the $90,000 deferral. $2,100,000 + $180,000 − $90,000 = $2,190,000, recognized directly in net assets.
+        ref: Part III, Section 1501
+      - id: p2u4l3q07
+        type: je
+        concept: p2u4-retrospective
+        prompt: Record the arts society's transition adjustments. Assign the capital asset adjustments to net assets invested in capital assets and the grant deferral to unrestricted net assets.
+        accounts:
+          - Building
+          - Equipment
+          - Accumulated amortization
+          - Deferred contributions
+          - Net assets invested in capital assets
+          - Unrestricted net assets
+          - Contribution revenue
+          - Amortization expense
+        lines:
+          - account: Building
+            side: dr
+            amount: 2100000
+          - account: Equipment
+            side: dr
+            amount: 300000
+          - account: Accumulated amortization
+            side: cr
+            amount: 120000
+          - account: Deferred contributions
+            side: cr
+            amount: 90000
+          - account: Unrestricted net assets
+            side: dr
+            amount: 90000
+          - account: Net assets invested in capital assets
+            side: cr
+            amount: 2280000
+        explain: Transition adjustments go directly to net assets, not through revenue or expense. The building enters at deemed cost with no accumulated amortization, while the equipment is restated as if Section 4433 had always applied.
+        ref: Part III, Section 1501
+      - id: p2u4l3q08
+        type: calc
+        concept: p2u4-1501-disclosure
+        prompt: "The arts society's last statements under its old basis reported an excess of revenues over expenses of $150,000 for the comparative year. Under ASNPO, $60,000 of equipment purchases that year are capitalized instead of expensed, amortization of $45,000 is added, and the deferral method defers $50,000 of restricted grants received that year while recognizing $30,000 deferred from earlier years. Enter the ASNPO excess of revenues over expenses for the reconciliation."
+        answer: 145000
+        unit: $
+        explain: $150,000 + $60,000 − $45,000 − $50,000 + $30,000 = $145,000. This reconciliation, from the previously reported figure to the ASNPO figure, is a required transition disclosure.
+        ref: Part III, Section 1501
+      - id: p2u4l3q09
+        type: mc
+        concept: p2u4-1501-disclosure
+        prompt: Which set of disclosures does Section 1501 require in the first ASNPO statements?
+        options:
+          - Only a statement that the NPO now complies with ASNPO
+          - Each adjustment to net assets at transition and its reason, a reconciliation of the latest previously reported excess of revenues over expenses, an explanation of material cash flow adjustments, and the exemptions used
+          - A full restatement of the previous five years
+          - The fair value of every capital asset at the transition date
+        answer: 1
+        explain: Readers must be able to see how moving to ASNPO changed financial position, results and cash flows. The NPO also lists each exemption it elected.
+        ref: Part III, Section 1501
+      - id: p2u4l3q10
+        type: tf
+        concept: p2u4-retrospective
+        prompt: The arts society's transition adjustments are reported in the comparative year's statement of operations so readers can see their effect on results.
+        answer: false
+        explain: Transition adjustments are recognized directly in net assets at the date of transition. They are explained in the notes and the reconciliations, not run through the statement of operations.
+        ref: Part III, Section 1501
+      - id: p2u4l3q11
+        type: mc
+        concept: p2u4-1501-scope
+        prompt: A Calgary foundation applied ASNPO until 2023, then switched to IFRS for two years at its former international parent's request. It now returns to ASNPO. What are its options?
+        options:
+          - It must apply Section 1501 as a first-time adopter
+          - It may apply Section 1501, or apply Section 1506 as if it had never stopped using ASNPO
+          - It must restate under IFRS 1 first
+          - It may simply resume ASNPO prospectively with no restatement
+        answer: 1
+        explain: A returning NPO has a choice. Section 1501 offers the exemptions, while Section 1506 lets it pick up its old ASNPO policies as if it had never left, restating retrospectively.
+        ref: Part III, Section 1501
+
+  - id: p2u4l4
+    title: Moving between frameworks and policies
+    intro: Organizations change sector, change parents and change their minds. The trick is matching each move to the right transition standard and knowing which moves are just accounting policy changes.
+    questions:
+      - id: p2u4l4q01
+        type: classify
+        concept: p2u4-other-transitions
+        prompt: Match each move to the guidance that governs it.
+        buckets:
+          - Part III, Section 1501
+          - Part II, Section 1506
+          - IFRS 1
+          - PS 2125
+        items:
+          - text: A private company converts to a not-for-profit and moves from ASPE to ASNPO
+            bucket: 0
+          - text: An NPO on ASNPO adopts the restricted fund method
+            bucket: 1
+          - text: An NPO on ASNPO moves to IFRS
+            bucket: 2
+          - text: An NPO on ASNPO comes under provincial control
+            bucket: 3
+          - text: A former government NPO, now independent, adopts ASNPO
+            bucket: 0
+        explain: Entering ASNPO from any other basis uses Section 1501. Leaving ASNPO uses the destination framework's first-time adoption standard. Changing policies within ASNPO is a Section 1506 accounting change.
+        ref: Part III, Section 1501
+      - id: p2u4l4q02
+        type: tf
+        concept: p2u4-policy-change
+        prompt: An NPO that switches from the deferral method to the restricted fund method applies Section 1501, because it is adopting a new contributions framework.
+        answer: false
+        reasons:
+          - Both methods are part of ASNPO, so the switch is a change in accounting policy under Section 1506
+          - The switch is applied prospectively only
+          - The switch is not allowed once a method is chosen
+        reason: 0
+        explain: The method choice sits inside Section 4410. Switching is a voluntary change in accounting policy, applied retrospectively under Section 1506, with the related disclosures.
+        ref: Part II, Section 1506
+      - id: p2u4l4q03
+        type: tf
+        concept: p2u4-policy-change
+        prompt: An NPO using the restricted fund method has received capital contributions for years and, having no capital fund, deferred them in its general fund. It now creates a restricted capital fund and reports those contributions there. This is a change in accounting policy applied retrospectively.
+        answer: true
+        explain: The same kind of contribution moves from the deferral method in the general fund to revenue of the new capital fund. A change in the revenues and expenses reported in a fund is a change in accounting policy unless the transactions are clearly different or new, so prior periods are restated.
+        ref: Part II, Section 1506
+      - id: p2u4l4q04
+        type: mc
+        concept: p2u4-policy-change
+        prompt: When may an NPO make a voluntary change in accounting policy under ASNPO?
+        options:
+          - Whenever the board approves it
+          - Only when the change results in reliable and more relevant information
+          - Only in the year it first adopts ASNPO
+          - Only when its auditor changes
+        answer: 1
+        explain: A voluntary change must give reliable and more relevant information. The board should document why the new policy is better for users, for example readers who compare it with peers using the other method.
+        ref: Part II, Section 1506
+      - id: p2u4l4q05
+        type: mc
+        concept: p2u4-other-transitions
+        prompt: A Lethbridge seniors' society on ASNPO comes under the control of a regional health authority. Which first-time adoption standard will it apply?
+        options:
+          - Part III, Section 1501
+          - IFRS 1
+          - PS 2125, first-time adoption by government organizations
+          - Part II, Section 1506
+        answer: 2
+        explain: The society is now a government organization that is an NPO, so it reports under the Public Sector Accounting Handbook. Its first statements under that Handbook follow PS 2125.
+        ref: Part III, Section 1501
+      - id: p2u4l4q06
+        type: mc
+        concept: p2u4-ifrs-option
+        prompt: A corporate foundation set up by an Alberta energy company has its own independent mission and meets the NPO definition. The parent reports under IFRS and wants the foundation's figures for its group notes. What is the best advice?
+        options:
+          - The foundation must use IFRS because its founder does
+          - The foundation must use ASPE because it was created by a business
+          - It may use ASNPO or IFRS, and should weigh the parent's needs against the cost and the loss of ASNPO's contributions model
+          - It must use public sector standards because it is a registered charity
+        answer: 2
+        explain: The parent's framework does not dictate the foundation's. As a private-sector NPO, the foundation chooses. IFRS may suit the parent, while ASNPO may suit donors and grantors better, and the parent can still convert figures for its own purposes.
+        ref: Part III, Introduction to Part III
+      - id: p2u4l4q07
+        type: tf
+        concept: p2u4-other-transitions
+        prompt: A government NPO that becomes independent of government and adopts ASNPO may carry over its public sector balances without adjustment, because both frameworks are Canadian.
+        answer: false
+        explain: Moving into ASNPO uses Section 1501, with retrospective application subject to its exemptions and exceptions. Public sector and ASNPO measurements can differ, so balances must be restated where the frameworks differ.
+        ref: Part III, Section 1501
+      - id: p2u4l4q08
+        type: mc
+        concept: p2u4-exemptions
+        prompt: A first-time adopter has an old building whose original cost records were destroyed in a fire. Which Section 1501 tool is most useful?
+        options:
+          - The estimates exception
+          - The fair value as deemed cost exemption
+          - The hedge accounting exception
+          - Section 1506 prospective application
+        answer: 1
+        explain: Measuring the building at fair value at the date of transition and using that as deemed cost avoids reconstructing decades of cost and amortization. The election must be disclosed.
+        ref: Part III, Section 1501
+      - id: p2u4l4q09
+        type: match
+        concept: p2u4-exceptions
+        prompt: Match each first-time adoption rule to what it prevents or allows.
+        pairs:
+          - left: Estimates exception
+            right: Prevents using hindsight to revise estimates at transition
+          - left: Derecognition exception
+            right: Prevents bringing back financial assets already derecognized under the old basis
+          - left: Fair value exemption
+            right: Allows a fresh deemed cost for a capital asset at transition
+          - left: Disclosure of exemptions used
+            right: Tells readers which shortcuts the NPO took
+        explain: Exceptions protect against hindsight and reopening completed transactions. Exemptions reduce cost, and disclosure keeps them transparent.
+        ref: Part III, Section 1501
+      - id: p2u4l4q10
+        type: calc
+        concept: p2u4-transition-date
+        prompt: A Camrose museum society moves to ASNPO for its first statements for the year ending December 31, 2027, and chooses to present two years of comparatives. Enter how many years before the end of 2027 its date of transition falls.
+        answer: 3
+        unit: years
+        explain: With two comparative years, the earliest period presented starts January 1, 2025. That is three years before December 31, 2027 (the end of the first ASNPO year).
+        ref: Part III, Section 1501
+
+  - id: p2u4l5
+    title: Small NPO reliefs and other choices
+    intro: Part III spreads its simplifications across several sections. Some depend on size, most are open to any NPO, and each has consequences that outlast the year it is chosen.
+    questions:
+      - id: p2u4l5q01
+        type: calc
+        concept: p2u4-small-relief
+        prompt: A Grande Prairie youth society recognized revenues of $380,000 last year and $410,000 this year. A foundation it controls recognized $70,000 last year and $90,000 this year. Enter the average annual revenue used for the $500,000 test.
+        answer: 475000
+        unit: $
+        explain: Revenues of controlled entities are included. Last year $380,000 + $70,000 = $450,000, this year $410,000 + $90,000 = $500,000, so the average is $475,000 and the society qualifies.
+        ref: Part III, Section 4433
+      - id: p2u4l5q02
+        type: calc
+        concept: p2u4-small-relief
+        prompt: A Camrose choir society has revenues of $499,000 last year and $501,000 this year, and no controlled entities. Enter its average annual revenue.
+        answer: 500000
+        unit: $
+        explain: The average is exactly $500,000. The relief requires an average under $500,000, so the society does not qualify this year.
+        ref: Part III, Section 4433
+      - id: p2u4l5q03
+        type: tf
+        concept: p2u4-small-relief
+        prompt: A society that had to start applying Section 4433 in full because its average revenue passed $500,000 may return to the disclosure-only relief when its average later falls below $500,000.
+        answer: false
+        explain: Once an NPO must apply the full standard, it continues to apply it even if its average revenues later drop below the threshold. This stops organizations flipping between treatments.
+        ref: Part III, Section 4433
+      - id: p2u4l5q04
+        type: mc
+        concept: p2u4-small-relief
+        prompt: A qualifying small NPO expenses its capital purchases under the relief. What must it still disclose?
+        options:
+          - Nothing, because the relief removes all capital asset requirements
+          - Its capital asset policy, information about major categories of assets not recorded, and the amount expensed in the period if it expenses them
+          - The fair value of all its assets
+          - A five-year capital plan
+        answer: 1
+        explain: The relief limits the standard to disclosure, not to nothing. Readers still learn the policy, what assets the NPO uses that are not on its statement of financial position, and how much it spent.
+        ref: Part III, Section 4433
+      - id: p2u4l5q05
+        type: tf
+        concept: p2u4-small-relief
+        prompt: The same $500,000 average revenue relief applies to intangible assets under Section 4434.
+        answer: true
+        explain: Section 4434 mirrors Section 4433. A qualifying NPO may limit its intangible asset accounting to the same disclosures, such as its policy and the amount expensed.
+        ref: Part III, Section 4434
+      - id: p2u4l5q06
+        type: classify
+        concept: p2u4-open-choices
+        prompt: Classify each simplification by whether it depends on the $500,000 revenue test.
+        buckets:
+          - Depends on the revenue test
+          - Open to any NPO
+        items:
+          - text: Expensing tangible capital assets and disclosing them instead
+            bucket: 0
+          - text: Expensing intangible assets and disclosing them instead
+            bucket: 0
+          - text: Not recognizing contributed volunteer services
+            bucket: 1
+          - text: Disclosing rather than consolidating a controlled NPO
+            bucket: 1
+          - text: Measuring collections at nominal value
+            bucket: 1
+          - text: Using the deferral method instead of fund accounting
+            bucket: 1
+        explain: Only the capital and intangible asset reliefs are size-based. The others are policy choices in Sections 4410, 4441 and 4450 available to every NPO, and each must be disclosed and applied consistently.
+        ref: Part III, Section 4410
+      - id: p2u4l5q07
+        type: mc
+        concept: p2u4-open-choices
+        prompt: A Red Deer food bank wants to recognize the value of donated food and volunteer warehouse hours. When may it do so?
+        options:
+          - Always, at the donor's stated value
+          - When fair value can be reasonably estimated and the materials and services are used in normal operations and would otherwise have been bought
+          - Only if its average revenues are under $500,000
+          - Never, because contributed services are prohibited
+        answer: 1
+        explain: Recognizing contributed materials and services is a choice, but only for items that meet those conditions. Many NPOs choose not to recognize volunteer time because it is hard to measure.
+        ref: Part III, Section 4410
+      - id: p2u4l5q08
+        type: tf
+        concept: p2u4-open-choices
+        prompt: An NPO may measure some of its collections at cost and others at nominal value, choosing collection by collection.
+        answer: false
+        explain: Section 4441 requires one method, cost or nominal value, for all collections. The only mixing allowed is for an NPO that uses cost. Contributed items whose cost cannot be reasonably determined are recorded at nominal value.
+        ref: Part III, Section 4441
+      - id: p2u4l5q09
+        type: mc
+        concept: p2u4-small-relief
+        prompt: A Lethbridge drop-in centre with average revenues of $300,000 is preparing its first ASNPO statements under Section 1501. Its board asks whether it must put its furniture and equipment on the statement of financial position.
+        options:
+          - Yes, all first-time adopters must record all capital assets
+          - No, it may use the small NPO relief and limit Section 4433 to disclosure, as long as it qualifies
+          - No, because first-time adopters are exempt from Section 4433 for three years
+          - Yes, unless it elects fair value as deemed cost
+        answer: 1
+        explain: Section 1501 applies the ASNPO standards in effect at the end of the first reporting period, and those standards include the small NPO relief. If the centre qualifies, it can expense capital assets and disclose them.
+        ref: Part III, Section 4433
+      - id: p2u4l5q10
+        type: mc
+        concept: p2u4-open-choices
+        prompt: A Fort McMurray NPO controls a small fundraising society and chooses to disclose information about it rather than consolidate. What is its main ongoing obligation?
+        options:
+          - It must switch to consolidation if its revenues reach $500,000
+          - It must apply the policy consistently and give the required disclosures about the controlled NPO
+          - It must obtain the controlled society's consent each year
+          - Nothing further, the choice has no disclosure requirements
+        answer: 1
+        explain: The consolidate-or-disclose choice for controlled NPOs is not size-based. Whichever policy is chosen must be applied consistently, and an NPO that does not consolidate discloses information about the controlled entity, such as its total assets, liabilities, revenues and expenses.
+        ref: Part III, Section 4450

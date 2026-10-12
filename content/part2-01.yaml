@@ -1,0 +1,851 @@
+id: p2u1
+course: part2
+number: 1
+title: Financial instruments
+summary: How NPOs apply Part II, Section 3856. Recognition, fair value and related party measurement at initial recognition, amortized cost and the fair value election, transaction costs, impairment and derecognition, below-market loans and their contribution element, foundation investment portfolios, and risk disclosures.
+refs:
+  - Part II, Section 3856
+  - Part III, Section 4410
+  - Part III, Section 4460
+status: ready
+
+concepts:
+  - id: p2u1-scope
+    title: Section 3856 applies to NPOs
+    summary: Part III has no financial instruments standard of its own, so NPOs apply Part II, Section 3856. Section 3856 itself contains a few requirements specific to NPOs, for example on the forgiveness of related party instruments, because an NPO has net assets and a statement of operations instead of equity and net income.
+    ref: Part II, Section 3856
+  - id: p2u1-recognition
+    title: When to recognize
+    summary: A financial asset or liability is recognized when the NPO becomes a party to the contractual provisions of the instrument. A pledge that is not legally enforceable is not a financial instrument because there is no contract; pledges are dealt with under Section 4410.
+    ref: Part II, Section 3856
+  - id: p2u1-initial-arms-length
+    title: Initial measurement at arm's length
+    summary: An instrument from an arm's length transaction is first measured at fair value. When the cash exchanged differs from fair value, the difference is something else, such as a contribution or a grant, and is accounted for according to its nature.
+    ref: Part II, Section 3856
+  - id: p2u1-related-party-initial
+    title: Related party instruments at cost
+    summary: Since the related party amendments (fiscal years beginning on or after January 1, 2021), most related party instruments are first measured at cost. With repayment terms, cost is the undiscounted cash flows excluding interest, less any impairment the transferor recognized; without repayment terms, cost is based on the consideration.
+    ref: Part II, Section 3856
+  - id: p2u1-related-party-exceptions
+    title: Related party exceptions
+    summary: Some related party instruments are still measured at fair value, namely equity and debt instruments quoted in an active market, debt instruments whose significant fair value inputs are observable, and derivatives. A party whose only relationship is as management is treated as unrelated for this purpose.
+    ref: Part II, Section 3856
+  - id: p2u1-subsequent
+    title: Subsequent measurement
+    summary: Arm's length instruments are generally carried at amortized cost. Equity instruments quoted in an active market and most derivatives are carried at fair value, with changes in the statement of operations. Unquoted equity instruments are carried at cost less impairment.
+    ref: Part II, Section 3856
+  - id: p2u1-fv-election
+    title: The fair value election
+    summary: An NPO may irrevocably designate any arm's length financial instrument to be measured at fair value, at initial recognition. It may also elect fair value for an equity instrument when that instrument stops being quoted in an active market.
+    ref: Part II, Section 3856
+  - id: p2u1-transaction-costs
+    title: Transaction costs
+    summary: Transaction costs on an instrument that will be carried at fair value are expensed when incurred. For any other instrument they adjust its initial carrying amount and are amortized over its life.
+    ref: Part II, Section 3856
+  - id: p2u1-amortized-cost
+    title: Amortized cost and the interest method
+    summary: Premiums, discounts and transaction costs are amortized over the expected life of an instrument. Section 3856 allows the effective interest method or the straight-line method, so the policy is a choice that should be applied consistently and disclosed.
+    ref: Part II, Section 3856
+  - id: p2u1-impairment-indicators
+    title: Impairment indicators
+    summary: Assets at cost or amortized cost are assessed for impairment when there are indicators, such as the borrower's significant financial difficulty, default, concessions, likely bankruptcy, or adverse conditions. A fall in fair value caused only by higher market interest rates, or a credit downgrade on its own, is not necessarily an indicator.
+    ref: Part II, Section 3856
+  - id: p2u1-impairment-measurement
+    title: Measuring an impairment
+    summary: An impaired asset is written down to the highest of the present value of expected cash flows at a current market rate, the amount realizable by selling it at the balance sheet date, and the net amount realizable from collateral. A related party debt instrument at cost uses undiscounted expected cash flows instead of the present value.
+    ref: Part II, Section 3856
+  - id: p2u1-impairment-reversal
+    title: Reversing an impairment
+    summary: When the impairment later improves, the write-down is reversed through the statement of operations. The reversal cannot raise the carrying amount above what it would have been had no impairment been recognized.
+    ref: Part II, Section 3856
+  - id: p2u1-derecognition
+    title: Derecognition
+    summary: A financial asset is derecognized when the rights to its cash flows expire or it is transferred and control is surrendered. A liability is derecognized when it is extinguished, meaning paid, cancelled or expired. The difference between the carrying amount and the consideration goes to the statement of operations.
+    ref: Part II, Section 3856
+  - id: p2u1-loan-received
+    title: Below-market loans received
+    summary: An interest-free or low-rate loan from an arm's length lender is recorded at its fair value, the present value at a market rate. The benefit, cash received less fair value, is in substance a contribution and is accounted for under Section 4410 like any other contribution, deferred if it is restricted.
+    ref: Part III, Section 4410
+  - id: p2u1-loan-made
+    title: Below-market loans made
+    summary: When an NPO lends at below-market rates to further its mission, the loan receivable is recorded at fair value. The difference between the cash advanced and fair value is a program or grant expense when the loan is made, and interest income then accretes at the market rate.
+    ref: Part II, Section 3856
+  - id: p2u1-related-party-npo
+    title: Related party loans in NPO groups
+    summary: Loans between related NPOs, such as a foundation and the society it supports, are usually measured at cost, so no contribution element is split out. Forgiveness of a related party financial asset goes to the statement of operations, and a related party liability extinguished in a nonreciprocal transaction is accounted for as a contribution under Section 4410.
+    ref: Part III, Section 4460
+  - id: p2u1-portfolios
+    title: Foundation investment portfolios
+    summary: Foundations often hold quoted equities, bonds and pooled funds. Quoted equities must be at fair value, and many foundations elect fair value for the rest so the whole portfolio is on one basis. Investment income, including unrealized gains, follows the contribution method for any restrictions on it.
+    ref: Part II, Section 3856
+  - id: p2u1-risk-disclosures
+    title: Risk disclosures
+    summary: An NPO discloses its significant financial instrument risks, such as credit, liquidity, currency, interest rate and other price risk, including concentrations and changes in exposure from the prior period. It also discloses the carrying amounts of financial assets and liabilities by measurement basis and its accounting policies.
+    ref: Part II, Section 3856
+
+lessons:
+  - id: p2u1l1
+    title: Scope, recognition and initial measurement
+    intro: Section 3856 starts with a single question for every instrument. Is it arm's length or related party? The answer drives the initial measurement.
+    questions:
+      - id: p2u1l1q01
+        type: mc
+        concept: p2u1-scope
+        prompt: An Edmonton food bank holds term deposits and a bank loan. Where does it find the recognition and measurement requirements for these items?
+        options:
+          - Part III, Section 4410, because the loan funds contributions
+          - Part II, Section 3856, because Part III has no financial instruments standard
+          - Part I (IFRS), because Part III does not cover debt
+          - Nowhere; the food bank chooses its own policy
+        answer: 1
+        explain: NPOs apply the Part II standards for topics Part III does not address. Financial instruments come from Section 3856, which also contains a few requirements specific to NPOs, such as how forgiveness of a related party instrument is recognized.
+        ref: Part II, Section 3856
+      - id: p2u1l1q02
+        type: classify
+        concept: p2u1-recognition
+        prompt: A Lethbridge arts society reviews its balance sheet. Classify each item.
+        buckets:
+          - Financial instrument under Section 3856
+          - Not a financial instrument
+        items:
+          - text: Term deposit at a credit union
+            bucket: 0
+          - text: Accounts payable to suppliers
+            bucket: 0
+          - text: Prepaid insurance
+            bucket: 1
+          - text: A donor's verbal pledge with no enforceable agreement
+            bucket: 1
+          - text: Mortgage on the gallery building
+            bucket: 0
+          - text: Deferred contributions
+            bucket: 1
+        explain: A financial instrument is a contract that gives one party a financial asset and another a financial liability. Prepaids give a right to services, not cash. Deferred contributions are not an obligation to pay cash. A pledge without an enforceable contract is not a receivable under Section 3856; it is recognized, if at all, under Section 4410.
+        ref: Part II, Section 3856
+      - id: p2u1l1q03
+        type: tf
+        concept: p2u1-recognition
+        prompt: On March 1 a Red Deer hockey association orders $8,000 of goalie equipment on account. The supplier delivers on April 15. The association recognizes an account payable on March 1.
+        answer: false
+        reasons:
+          - Until delivery the order is an unperformed contract, so no payable exists yet
+          - Payables are recognized only when they are paid
+          - NPOs never recognize payables for equipment
+        reason: 0
+        explain: A financial liability is recognized when the NPO becomes a party to the contractual provisions and has an obligation to pay. An order for goods neither side has performed creates no payable. The payable arises on April 15 when the equipment is delivered.
+        ref: Part II, Section 3856
+      - id: p2u1l1q04
+        type: mc
+        concept: p2u1-initial-arms-length
+        prompt: A Calgary community league borrows $200,000 from a chartered bank at the bank's normal 6% commercial rate. How is the loan measured when first recognized?
+        options:
+          - At the undiscounted repayments including interest
+          - At nil until the first payment is made
+          - At its fair value, which here equals the $200,000 received
+          - At cost determined under the related party rules
+        answer: 2
+        explain: An arm's length instrument is first measured at fair value. When the rate is a market rate and there are no fees, fair value equals the cash received, so the loan starts at $200,000.
+        ref: Part II, Section 3856
+      - id: p2u1l1q05
+        type: mc
+        concept: p2u1-related-party-initial
+        prompt: A Grande Prairie seniors' housing society receives a $300,000 interest-free loan from a foundation that is a related party under Section 4460. It is repayable in five annual instalments of $60,000. How is the loan first measured?
+        options:
+          - At $300,000, the undiscounted repayments excluding interest
+          - At the present value of the instalments at a market rate
+          - At fair value, with the interest benefit recognized as a contribution
+          - At nil, because the foundation will probably forgive it
+        answer: 0
+        explain: A related party loan with repayment terms is measured at cost, which is the undiscounted cash flows excluding interest. No discount and no contribution element are recorded. This is a key difference from an arm's length interest-free loan.
+        ref: Part II, Section 3856
+      - id: p2u1l1q06
+        type: classify
+        concept: p2u1-related-party-exceptions
+        prompt: A health charity acquires instruments from related parties. Classify the initial measurement of each.
+        buckets:
+          - Fair value
+          - Cost
+        items:
+          - text: Shares of a related company listed on the TSX
+            bucket: 0
+          - text: An interest rate swap entered into with a related entity
+            bucket: 0
+          - text: An unsecured loan to a related NPO with fixed repayment dates
+            bucket: 1
+          - text: Shares of a related private company that are not quoted
+            bucket: 1
+          - text: Publicly traded bonds issued by a related entity
+            bucket: 0
+        explain: Related party instruments are generally at cost. The exceptions measured at fair value are equity and debt instruments quoted in an active market, debt instruments whose significant inputs are observable, and derivatives.
+        ref: Part II, Section 3856
+      - id: p2u1l1q07
+        type: calc
+        concept: p2u1-related-party-initial
+        prompt: A related party transfers to an Alberta museum society a receivable from a third party. The receivable has face value of $80,000 with 5% annual interest. The transferor had recognized a $12,000 impairment on it. Enter the museum's initial cost of the receivable.
+        answer: 68000
+        unit: $
+        explain: For a related party instrument with repayment terms, cost is the undiscounted cash flows excluding interest ($80,000) less any impairment the transferor recognized ($12,000). Interest is excluded, so cost is $68,000.
+        ref: Part II, Section 3856
+      - id: p2u1l1q08
+        type: tf
+        concept: p2u1-related-party-exceptions
+        prompt: A St. Albert community society lends $40,000 to its executive director, whose only connection with the society is their management role. Under Section 3856, the loan is treated as an arm's length instrument and first measured at fair value.
+        answer: true
+        reasons:
+          - A party whose only relationship is in a management capacity is treated as unrelated for measuring the instrument
+          - All loans to employees are measured at cost
+          - Loans to individuals are outside Section 3856
+        reason: 0
+        explain: Section 3856 treats parties related only through management as unrelated when measuring the instrument. If the loan is at a below-market rate, the difference between cash advanced and fair value is generally employee compensation. The relationship still has to be disclosed under Section 4460.
+        ref: Part II, Section 3856
+      - id: p2u1l1q09
+        type: je
+        concept: p2u1-initial-arms-length
+        prompt: A Medicine Hat food bank lends $25,000 to an unrelated partner charity at a 7% market rate for three years. Record the loan.
+        accounts:
+          - Loan receivable
+          - Cash
+          - Grant expense
+          - Interest revenue
+          - Contribution revenue
+          - Deferred contributions
+        lines:
+          - account: Loan receivable
+            side: dr
+            amount: 25000
+          - account: Cash
+            side: cr
+            amount: 25000
+        explain: The loan is arm's length at a market rate, so its fair value is the cash advanced. No grant element arises. Interest revenue is recognized as it accrues.
+        ref: Part II, Section 3856
+      - id: p2u1l1q10
+        type: match
+        concept: p2u1-related-party-initial
+        prompt: Match each related party instrument with how its cost is determined.
+        pairs:
+          - left: A loan with fixed repayment dates
+            right: Undiscounted cash flows excluding interest, less transferor impairment
+          - left: Unquoted shares received with no repayment terms
+            right: Based on the consideration transferred or received
+          - left: Bonds traded on an active market
+            right: Not at cost; fair value applies
+          - left: An interest rate swap
+            right: Not at cost; derivatives are at fair value
+        explain: The repayment terms decide how cost is measured. Quoted instruments and derivatives are carved out of the cost rule and measured at fair value even between related parties.
+        ref: Part II, Section 3856
+
+  - id: p2u1l2
+    title: Subsequent measurement and amortized cost
+    intro: After day one, most NPO instruments sit at amortized cost, quoted equities sit at fair value, and the fair value election lets an NPO move almost anything to fair value. This lesson works the numbers.
+    questions:
+      - id: p2u1l2q01
+        type: classify
+        concept: p2u1-subsequent
+        prompt: A Camrose community foundation has made no fair value elections. Classify the subsequent measurement of each arm's length holding.
+        buckets:
+          - Fair value
+          - Amortized cost
+          - Cost less impairment
+        items:
+          - text: Shares of a bank listed on the TSX
+            bucket: 0
+          - text: A five-year GIC
+            bucket: 1
+          - text: Government of Canada bonds held as an investment
+            bucket: 1
+          - text: Shares of a private local company not quoted in any market
+            bucket: 2
+          - text: Accounts receivable from program fees
+            bucket: 1
+          - text: A foreign exchange forward contract (no hedge accounting)
+            bucket: 0
+        explain: Equity instruments quoted in an active market must be at fair value, and derivatives are at fair value unless hedge accounting applies. Unquoted equities are at cost less impairment. Everything else, including quoted bonds, defaults to amortized cost unless the NPO elects fair value.
+        ref: Part II, Section 3856
+      - id: p2u1l2q02
+        type: tf
+        concept: p2u1-fv-election
+        prompt: A Banff arts foundation bought bonds two years ago and carried them at amortized cost. It may now elect to measure them at fair value because its board prefers market values.
+        answer: false
+        reasons:
+          - The election is made at initial recognition and is irrevocable
+          - Bonds can never be measured at fair value
+          - The election needs the donor's consent
+        reason: 0
+        explain: The fair value election is made when the instrument is first recognized. It cannot be added later for instruments already held. The only later opportunity is for an equity instrument that stops being quoted in an active market. A foundation that wants a fair value portfolio should designate new purchases at fair value from the start.
+        ref: Part II, Section 3856
+      - id: p2u1l2q03
+        type: calc
+        concept: p2u1-amortized-cost
+        prompt: On January 1 an Edmonton foundation buys a 3-year, $100,000 bond paying 4% interest annually on December 31 when the market rate is 5%. Enter the price, which is the present value of the cash flows at 5%. Round to the nearest dollar.
+        answer: 97277
+        unit: $
+        tolerance: 2
+        explain: Present value of the principal is $100,000 ÷ 1.05^3 = $86,384. Present value of the $4,000 coupons is $4,000 × 2.72325 = $10,893. The total is $97,277. The bond sells at a discount because its coupon is below the market rate.
+        ref: Part II, Section 3856
+      - id: p2u1l2q04
+        type: je
+        concept: p2u1-amortized-cost
+        prompt: Using the bond bought for $97,277, the foundation uses the effective interest method. Record the receipt of the first $4,000 coupon on December 31. Round to the nearest dollar.
+        accounts:
+          - Cash
+          - Investments
+          - Investment income
+          - Unrealized gain on investments
+          - Interest receivable
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 4000
+          - account: Investments
+            side: dr
+            amount: 864
+          - account: Investment income
+            side: cr
+            amount: 4864
+        explain: Interest income is the carrying amount times the market rate at purchase, $97,277 × 5% = $4,864. The $864 above the cash coupon accretes the discount, raising the carrying amount to $98,141. The bond reaches $100,000 at maturity.
+        ref: Part II, Section 3856
+      - id: p2u1l2q05
+        type: calc
+        concept: p2u1-amortized-cost
+        prompt: Continue the bond case. Enter the investment income for year 2 under the effective interest method. Round to the nearest dollar.
+        answer: 4907
+        unit: $
+        tolerance: 1
+        explain: The carrying amount at the start of year 2 is $97,277 + $864 = $98,141. Income is $98,141 × 5% = $4,907, of which $907 is discount accretion. Income rises each year because it is earned on a growing carrying amount.
+        ref: Part II, Section 3856
+      - id: p2u1l2q06
+        type: calc
+        concept: p2u1-amortized-cost
+        prompt: Suppose instead the foundation's policy is straight-line amortization of discounts. Enter year 1 investment income on the same bond (price $97,277, face $100,000, 4% coupon, 3 years). Round to the nearest dollar.
+        answer: 4908
+        unit: $
+        tolerance: 1
+        explain: The $2,723 discount is spread evenly, $2,723 ÷ 3 = $908 a year. Income is the $4,000 coupon plus $908 = $4,908. Section 3856 permits straight-line as well as the effective interest method, and the totals over the bond's life are the same.
+        ref: Part II, Section 3856
+      - id: p2u1l2q07
+        type: je
+        concept: p2u1-transaction-costs
+        prompt: A Lethbridge community league borrows $400,000 from an unrelated lender, repayable in 4 years with interest at 5%. It pays $8,000 of legal and appraisal fees directly attributable to the loan. The loan is carried at amortized cost. Record the loan and the fees together.
+        accounts:
+          - Cash
+          - Long-term debt
+          - Professional fees expense
+          - Interest expense
+          - Prepaid expenses
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 392000
+          - account: Long-term debt
+            side: cr
+            amount: 392000
+        explain: For an instrument not carried at fair value, transaction costs reduce the initial carrying amount of a liability. The $8,000 is amortized into interest expense over the 4-year term, so the debt accretes back to $400,000 by maturity.
+        ref: Part II, Section 3856
+      - id: p2u1l2q08
+        type: calc
+        concept: p2u1-transaction-costs
+        prompt: The league in the previous question amortizes the $8,000 of fees straight-line over the 4-year term. Enter total interest expense for year 1.
+        answer: 22000
+        unit: $
+        explain: Cash interest is $400,000 × 5% = $20,000. Fee amortization adds $8,000 ÷ 4 = $2,000. Interest expense is $22,000, and the debt's carrying amount rises from $392,000 to $394,000.
+        ref: Part II, Section 3856
+      - id: p2u1l2q09
+        type: je
+        concept: p2u1-transaction-costs
+        prompt: A Calgary foundation buys 2,000 TSX-listed shares at $25 each and pays a $200 commission. Record the purchase.
+        accounts:
+          - Investments
+          - Investment management fees expense
+          - Cash
+          - Unrealized gain on investments
+          - Investment income
+          - Accounts payable
+        lines:
+          - account: Investments
+            side: dr
+            amount: 50000
+          - account: Investment management fees expense
+            side: dr
+            amount: 200
+          - account: Cash
+            side: cr
+            amount: 50200
+        explain: Quoted equities are carried at fair value, so transaction costs are expensed when incurred. Capitalizing the $200 would only produce a $200 loss at the next remeasurement.
+        ref: Part II, Section 3856
+      - id: p2u1l2q10
+        type: je
+        concept: p2u1-subsequent
+        prompt: At year end the 2,000 shares trade at $27.50. Their carrying amount is $50,000 and the gain is not restricted. Record the remeasurement.
+        accounts:
+          - Investments
+          - Unrealized gain on investments
+          - Deferred contributions
+          - Unrestricted net assets
+          - Cash
+          - Investment management fees expense
+        lines:
+          - account: Investments
+            side: dr
+            amount: 5000
+          - account: Unrealized gain on investments
+            side: cr
+            amount: 5000
+        explain: Fair value is 2,000 × $27.50 = $55,000. The $5,000 change goes to the statement of operations. It is not a direct entry to net assets; ASNPO has no other comprehensive income.
+        ref: Part II, Section 3856
+      - id: p2u1l2q11
+        type: mc
+        concept: p2u1-fv-election
+        prompt: A Red Deer foundation invests in units of pooled funds that are not traded on an exchange but are priced daily by the manager. Why do many foundations elect fair value for such units at purchase?
+        options:
+          - Because cost less impairment would be prohibited for pooled funds
+          - So the whole portfolio is on one measurement basis that tracks market value, with transaction costs expensed
+          - Because elected instruments are exempt from risk disclosures
+          - Because the election lets gains go directly to net assets
+        answer: 1
+        explain: Without the election, units that are not equity instruments quoted in an active market could end up at cost or amortized cost while listed shares are at fair value. Electing fair value keeps the portfolio consistent. Changes still go through the statement of operations, and risk disclosures still apply.
+        ref: Part II, Section 3856
+
+  - id: p2u1l3
+    title: Impairment and derecognition
+    intro: Impairment under Section 3856 is indicator-based and has a three-way measurement test. This lesson also covers getting instruments off the balance sheet.
+    questions:
+      - id: p2u1l3q01
+        type: classify
+        concept: p2u1-impairment-indicators
+        prompt: A Fort McMurray foundation holds loans and bonds at amortized cost. Classify each event.
+        buckets:
+          - Impairment indicator
+          - Not by itself an indicator
+        items:
+          - text: A borrower misses two interest payments
+            bucket: 0
+          - text: Bond fair values fall because market interest rates rose 1%
+            bucket: 1
+          - text: A borrowing charity files for creditor protection
+            bucket: 0
+          - text: The foundation grants a borrower a payment holiday because of their cash crisis
+            bucket: 0
+          - text: A credit rating agency downgrades an issuer one notch, with no other bad news
+            bucket: 1
+          - text: The market for a bond disappears because the issuer is in financial difficulty
+            bucket: 0
+        explain: Indicators point to a credit problem, such as default, concessions, likely bankruptcy, or loss of a market due to financial difficulty. A fair value drop from rising rates does not change the expected cash flows of a held bond, and a downgrade alone is not conclusive.
+        ref: Part II, Section 3856
+      - id: p2u1l3q02
+        type: calc
+        concept: p2u1-impairment-measurement
+        prompt: "A Camrose foundation's loan to a community league has a carrying amount of $120,000. The league is in serious financial difficulty. Estimates: present value of expected cash flows at a current market rate $70,000; amount realizable by selling the loan now $65,000; net proceeds from the collateral $80,000. Enter the impairment loss."
+        answer: 40000
+        unit: $
+        explain: The loan is written down to the highest of the three amounts, which is the $80,000 collateral value. The loss is $120,000 − $80,000 = $40,000. Using the highest amount stops the write-down from going further than the best realistic recovery.
+        ref: Part II, Section 3856
+      - id: p2u1l3q03
+        type: je
+        concept: p2u1-impairment-measurement
+        prompt: Record the $40,000 impairment using an allowance account.
+        accounts:
+          - Impairment loss on loans receivable
+          - Allowance for impairment
+          - Loan receivable
+          - Unrestricted net assets
+          - Bad debt recovery
+          - Deferred contributions
+        lines:
+          - account: Impairment loss on loans receivable
+            side: dr
+            amount: 40000
+          - account: Allowance for impairment
+            side: cr
+            amount: 40000
+        explain: The loss goes to the statement of operations. Section 3856 allows the write-down either directly against the asset or through an allowance account.
+        ref: Part II, Section 3856
+      - id: p2u1l3q04
+        type: calc
+        concept: p2u1-impairment-reversal
+        prompt: "A year later the league's finances recover and the collateral is now worth $135,000 net. Had no impairment been recorded, the loan's carrying amount would be $120,000. The impaired carrying amount is $80,000. Enter the reversal to recognize."
+        answer: 40000
+        unit: $
+        explain: The improvement would support $135,000, but a reversal cannot take the carrying amount above the $120,000 it would have been without the impairment. The reversal is $120,000 − $80,000 = $40,000, recognized in the statement of operations.
+        ref: Part II, Section 3856
+      - id: p2u1l3q05
+        type: calc
+        concept: p2u1-impairment-measurement
+        prompt: "A society holds a $200,000 interest-free loan to a related NPO, measured at cost. The borrower is struggling. Estimates: undiscounted expected repayments $150,000; present value of those repayments at a market rate $118,000; amount realizable by selling the loan $90,000; no collateral. Enter the carrying amount after impairment."
+        answer: 150000
+        unit: $
+        explain: A related party debt instrument measured at cost uses undiscounted expected cash flows in the test, not their present value. The highest amount is $150,000, so the loss is $50,000. Discounting would be inconsistent with measuring the loan at undiscounted cost in the first place.
+        ref: Part II, Section 3856
+      - id: p2u1l3q06
+        type: tf
+        concept: p2u1-impairment-indicators
+        prompt: An NPO's quoted equity portfolio falls 20% in value. It must run a separate impairment test on the shares in addition to remeasuring them.
+        answer: false
+        reasons:
+          - Assets at fair value already recognize every change in value in the statement of operations
+          - Equity investments are never impaired
+          - Impairment is tested only every three years
+        reason: 0
+        explain: Impairment testing applies to instruments at cost, amortized cost or cost less impairment. Fair value measurement already captures the decline in the statement of operations.
+        ref: Part II, Section 3856
+      - id: p2u1l3q07
+        type: je
+        concept: p2u1-derecognition
+        prompt: An Edmonton foundation sells a bond carried at amortized cost of $98,141 for $98,600 cash, just after collecting a coupon. Record the sale.
+        accounts:
+          - Cash
+          - Investments
+          - Gain on sale of investments
+          - Unrealized gain on investments
+          - Unrestricted net assets
+          - Investment income
+        lines:
+          - account: Cash
+            side: dr
+            amount: 98600
+          - account: Investments
+            side: cr
+            amount: 98141
+          - account: Gain on sale of investments
+            side: cr
+            amount: 459
+        explain: The bond is derecognized because the foundation transferred it and gave up control. The $459 difference between proceeds and carrying amount goes to the statement of operations.
+        ref: Part II, Section 3856
+      - id: p2u1l3q08
+        type: mc
+        concept: p2u1-derecognition
+        prompt: A Calgary health charity sells $50,000 of receivables to a factor but must buy back any receivable that is not collected within 90 days. It also keeps the right to repurchase the whole pool. What is the most likely result?
+        options:
+          - Derecognize the receivables and recognize a gain or loss
+          - Recognize the receivables as contribution revenue
+          - Keep the receivables and record the cash as a liability, because control has not been surrendered
+          - Write the receivables off as impaired
+        answer: 2
+        explain: A transfer is a sale only when the transferor surrenders control. The recourse obligation alone would not necessarily prevent a sale, but keeping the ability to unilaterally reclaim the receivables means the charity keeps effective control. The transaction is a secured borrowing, so the receivables stay on the balance sheet and the cash is a liability.
+        ref: Part II, Section 3856
+      - id: p2u1l3q09
+        type: tf
+        concept: p2u1-derecognition
+        prompt: A Grande Prairie arts society repays its $60,000 bank loan in full. The loan is derecognized because the obligation has been discharged.
+        answer: true
+        explain: A financial liability is derecognized when it is extinguished, which means the obligation is discharged, cancelled or expires. Repayment in full discharges it.
+        ref: Part II, Section 3856
+      - id: p2u1l3q10
+        type: mc
+        concept: p2u1-impairment-measurement
+        prompt: Which of these is NOT one of the amounts compared when measuring an impairment of an arm's length loan at amortized cost?
+        options:
+          - Present value of expected cash flows at a current market rate
+          - Amount realizable by selling the asset at the balance sheet date
+          - Net amount expected from exercising rights to collateral
+          - The original principal advanced, discounted at the original effective rate
+        answer: 3
+        explain: The test compares the three amounts that reflect current recovery prospects and takes the highest. The original principal tells you nothing about what the NPO can now recover.
+        ref: Part II, Section 3856
+
+  - id: p2u1l4
+    title: Below-market loans and related parties
+    intro: NPOs often borrow and lend on generous terms. The question is whether there is a hidden contribution or grant, and that depends on who the counterparty is.
+    questions:
+      - id: p2u1l4q01
+        type: calc
+        concept: p2u1-loan-received
+        prompt: A Fort McMurray Friendship Centre receives a $500,000 interest-free loan from an unrelated provincial housing agency. It is repayable in one payment after 5 years. The market rate for similar borrowing is 6%. Enter the loan's fair value at initial recognition. Round to the nearest dollar.
+        answer: 373629
+        unit: $
+        tolerance: 2
+        explain: Fair value is the present value of the repayment at a market rate, $500,000 ÷ 1.06^5 = $373,629. The centre received $500,000 in cash, so $126,371 is the benefit of the interest-free terms.
+        ref: Part II, Section 3856
+      - id: p2u1l4q02
+        type: je
+        concept: p2u1-loan-received
+        prompt: The loan agreement places no restriction on the benefit of the interest-free terms; the cash may be used for general operations. Record receipt of the $500,000 (fair value $373,629).
+        accounts:
+          - Cash
+          - Long-term debt
+          - Contribution revenue
+          - Deferred contributions
+          - Deferred capital contributions
+          - Interest expense
+        lines:
+          - account: Cash
+            side: dr
+            amount: 500000
+          - account: Long-term debt
+            side: cr
+            amount: 373629
+          - account: Contribution revenue
+            side: cr
+            amount: 126371
+        explain: The interest saved is a non-reciprocal transfer of value from the agency, so it is a contribution. Being unrestricted, it is recognized as revenue now under either method. The debt then accretes to $500,000 through interest expense at 6%.
+        ref: Part III, Section 4410
+      - id: p2u1l4q03
+        type: je
+        concept: p2u1-loan-received
+        prompt: Record year 1 interest on the Friendship Centre's loan using the effective interest method at 6%. Round to the nearest dollar.
+        accounts:
+          - Interest expense
+          - Long-term debt
+          - Cash
+          - Contribution revenue
+          - Accrued interest payable
+          - Deferred contributions
+        lines:
+          - account: Interest expense
+            side: dr
+            amount: 22418
+          - account: Long-term debt
+            side: cr
+            amount: 22418
+        explain: Interest is $373,629 × 6% = $22,418. No cash is paid, so the whole amount increases the debt, to $396,047. Over 5 years the interest expense adds up to the $126,371 contribution recognized at the start.
+        ref: Part II, Section 3856
+      - id: p2u1l4q04
+        type: calc
+        concept: p2u1-loan-received
+        prompt: "Change the facts: the agency lends the $500,000 interest-free only to buy a building, and the centre uses the deferral method. The $126,371 benefit is therefore a deferred capital contribution. The building is amortized straight-line over 25 years. Enter the year 1 amortization of the deferred capital contribution. Round to the nearest dollar."
+        answer: 5055
+        unit: $
+        tolerance: 1
+        explain: A contribution restricted to buying an amortizable capital asset is deferred and recognized on the same basis as the asset is amortized, $126,371 ÷ 25 = $5,055. Interest expense still accretes the debt at 6%, so revenue and expense no longer offset year by year.
+        ref: Part III, Section 4410
+      - id: p2u1l4q05
+        type: calc
+        concept: p2u1-loan-made
+        prompt: A Calgary foundation runs a newcomer microloan program. It advances $60,000 interest-free, repayable in one payment after 3 years. The market rate for such loans is 7%. Enter the program expense recognized when the loans are made. Round to the nearest dollar.
+        answer: 11022
+        unit: $
+        tolerance: 2
+        explain: The receivable's fair value is $60,000 ÷ 1.07^3 = $48,978. The $11,022 difference is the value given away to further the mission, so it is a program or grant expense when the loans are made.
+        ref: Part II, Section 3856
+      - id: p2u1l4q06
+        type: je
+        concept: p2u1-loan-made
+        prompt: Record the advance of the $60,000 of microloans (fair value $48,978).
+        accounts:
+          - Loans receivable
+          - Program expense - microloan subsidy
+          - Cash
+          - Interest revenue
+          - Contribution revenue
+          - Allowance for impairment
+        lines:
+          - account: Loans receivable
+            side: dr
+            amount: 48978
+          - account: Program expense - microloan subsidy
+            side: dr
+            amount: 11022
+          - account: Cash
+            side: cr
+            amount: 60000
+        explain: The receivable starts at fair value. The subsidy is expensed at once instead of being hidden in the loan balance. Interest revenue then accretes at 7%, $48,978 × 7% = $3,428 in year 1.
+        ref: Part II, Section 3856
+      - id: p2u1l4q07
+        type: tf
+        concept: p2u1-related-party-npo
+        prompt: A Red Deer hospice society receives a $300,000 interest-free loan from its related foundation, repayable in fixed instalments. As with an arm's length interest-free loan, it should record a contribution for the interest benefit.
+        answer: false
+        reasons:
+          - Related party loans with repayment terms are measured at undiscounted cost, so no benefit is separated
+          - Contributions can only come from individuals
+          - The benefit is recorded directly in net assets
+        reason: 0
+        explain: The related party cost rule measures the loan at $300,000, the undiscounted repayments. No discount is recorded, so no contribution element arises. The terms are disclosed under Section 4460.
+        ref: Part II, Section 3856
+      - id: p2u1l4q08
+        type: je
+        concept: p2u1-related-party-npo
+        prompt: The related foundation later forgives $100,000 of the hospice society's loan, with no conditions, as a nonreciprocal transfer. The society uses the deferral method and the forgiveness is unrestricted. Record the forgiveness in the society's books.
+        accounts:
+          - Long-term debt
+          - Contribution revenue
+          - Deferred contributions
+          - Unrestricted net assets
+          - Gain on extinguishment of debt
+          - Cash
+        lines:
+          - account: Long-term debt
+            side: dr
+            amount: 100000
+          - account: Contribution revenue
+            side: cr
+            amount: 100000
+        explain: When a related party liability is extinguished in a nonreciprocal transaction, an NPO accounts for it as a contribution under Section 4410. Being unrestricted, it is revenue now. A private enterprise might record a related party gain like this in equity; an NPO applies Section 4410 instead.
+        ref: Part III, Section 4410
+      - id: p2u1l4q09
+        type: mc
+        concept: p2u1-related-party-npo
+        prompt: The foundation, in its own books, forgives the $100,000 loan receivable from the hospice society. Where does it report the forgiveness?
+        options:
+          - In the statement of operations, after first assessing impairment
+          - Directly in unrestricted net assets
+          - In the statement of changes in net assets as an interfund transfer
+          - Only in the notes, because the parties are related
+        answer: 0
+        explain: The holder first recognizes any impairment, then recognizes the forgiveness. NPOs recognize forgiveness of a related party financial asset in the statement of operations, typically as a grant expense.
+        ref: Part II, Section 3856
+      - id: p2u1l4q10
+        type: classify
+        concept: p2u1-loan-received
+        prompt: An Edmonton supportive housing society receives several interest-free loans. Classify how each is first measured.
+        buckets:
+          - Fair value, with a contribution for the benefit
+          - Cost, no contribution separated
+        items:
+          - text: Loan from an unrelated municipal housing program
+            bucket: 0
+          - text: Loan from a foundation the society controls
+            bucket: 1
+          - text: Loan from an unrelated private donor, with fixed repayment dates
+            bucket: 0
+          - text: Loan from a sister society under common control
+            bucket: 1
+        explain: Arm's length loans start at fair value, and the interest benefit is a contribution under Section 4410. Related party loans with repayment terms start at undiscounted cost, so no benefit is separated.
+        ref: Part II, Section 3856
+
+  - id: p2u1l5
+    title: Portfolios, disclosures and integrated cases
+    intro: Foundations combine Section 3856 measurement with the contribution method for restricted investment income. Finish with risk disclosures and multi-step cases.
+    questions:
+      - id: p2u1l5q01
+        type: je
+        concept: p2u1-portfolios
+        prompt: "A Grande Prairie foundation uses the deferral method. The donor restricted income on a $2,000,000 endowment to scholarships. This year the endowment earns $30,000 of interest and $20,000 of dividends (both received in cash) and a $50,000 unrealized gain on quoted equities. Record the year's investment income."
+        accounts:
+          - Cash
+          - Investments
+          - Deferred contributions
+          - Investment income
+          - Net assets restricted for endowment
+          - Unrealized gain on investments
+        lines:
+          - account: Cash
+            side: dr
+            amount: 50000
+          - account: Investments
+            side: dr
+            amount: 50000
+          - account: Deferred contributions
+            side: cr
+            amount: 100000
+        explain: Restricted investment income, including unrealized gains on investments at fair value, is a restricted contribution. Under the deferral method it is deferred until the scholarships are expensed.
+        ref: Part III, Section 4410
+      - id: p2u1l5q02
+        type: je
+        concept: p2u1-portfolios
+        prompt: The foundation awards and expenses $60,000 of scholarships this year from the restricted income. Record the recognition of revenue.
+        accounts:
+          - Deferred contributions
+          - Investment income
+          - Scholarship expense
+          - Cash
+          - Net assets restricted for endowment
+          - Unrealized gain on investments
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 60000
+          - account: Investment income
+            side: cr
+            amount: 60000
+        explain: Deferred restricted income is recognized as revenue in the period the related expenses are incurred. The other $40,000 stays deferred until more scholarships are awarded.
+        ref: Part III, Section 4410
+      - id: p2u1l5q03
+        type: tf
+        concept: p2u1-portfolios
+        prompt: An unrealized loss on a foundation's quoted equities may be kept out of the statement of operations and taken directly to net assets, because the foundation intends to hold the shares for the long term.
+        answer: false
+        reasons:
+          - Changes in fair value are recognized in the statement of operations, or in deferred contributions if restricted under the deferral method
+          - Intent to hold allows gains and losses to bypass the statement of operations
+          - Unrealized amounts are disclosed but never recognized
+        reason: 0
+        explain: Section 3856 has no other comprehensive income. Fair value changes go to the statement of operations, unless the contribution method treats restricted investment income differently, such as deferral or a direct increase to endowment net assets when the donor requires the income to be capitalized.
+        ref: Part II, Section 3856
+      - id: p2u1l5q04
+        type: calc
+        concept: p2u1-portfolios
+        prompt: "A Banff arts foundation's year-end portfolio, with no fair value elections: TSX equities cost $400,000, fair value $430,000. Government bonds at amortized cost $300,000, fair value $290,000 after market rates rose; the issuer is sound. Shares of an unquoted private company cost $50,000; the company is in bankruptcy proceedings and the shares could be sold for $20,000. Enter the total carrying amount of the portfolio."
+        answer: 750000
+        unit: $
+        explain: Quoted equities are at fair value, $430,000. Bonds stay at amortized cost of $300,000 because a rate-driven decline is not an impairment indicator. The unquoted shares are impaired to the amount realizable by sale, $20,000. The total is $750,000.
+        ref: Part II, Section 3856
+      - id: p2u1l5q05
+        type: match
+        concept: p2u1-risk-disclosures
+        prompt: Match each exposure of a Calgary foundation to the risk it creates.
+        pairs:
+          - left: Large grants receivable from three government funders
+            right: Credit risk, with a concentration
+          - left: Fixed-rate bonds held in the endowment
+            right: Interest rate risk (fair value)
+          - left: Floating-rate mortgage on its office
+            right: Interest rate risk (cash flow)
+          - left: U.S.-listed equities in the portfolio
+            right: Currency risk and other price risk
+          - left: Mortgage balloon payment due next year with little cash on hand
+            right: Liquidity risk
+        explain: Section 3856 requires disclosure of significant risks from financial instruments, including concentrations and how exposures changed from the prior period. Fixed-rate instruments carry fair value interest risk; floating-rate instruments carry cash flow interest risk.
+        ref: Part II, Section 3856
+      - id: p2u1l5q06
+        type: mc
+        concept: p2u1-risk-disclosures
+        prompt: Which of these is a required financial instrument disclosure for an NPO under Section 3856?
+        options:
+          - A sensitivity analysis showing the effect of a 1% rate change on every instrument
+          - The carrying amounts of financial assets and liabilities by measurement category, and significant risk exposures with changes from the prior period
+          - The fair value of every instrument carried at amortized cost
+          - A three-level fair value hierarchy table for all investments
+        answer: 1
+        explain: Section 3856 disclosures are lighter than IFRS. They include carrying amounts by measurement category, policies, and a description of significant risks and changes in them. Sensitivity analyses and fair value hierarchy tables are IFRS requirements, not ASNPO requirements.
+        ref: Part II, Section 3856
+      - id: p2u1l5q07
+        type: calc
+        concept: p2u1-loan-made
+        prompt: Return to the Calgary microloan program. The $60,000 of interest-free loans were recorded at $48,978 using a 7% market rate. Enter the carrying amount of the loans at the end of year 2, before any impairment. Round to the nearest dollar.
+        answer: 56074
+        unit: $
+        tolerance: 2
+        explain: Year 1 interest is $48,978 × 7% = $3,428, giving $52,406. Year 2 interest is $52,406 × 7% = $3,668, giving $56,074. In year 3 the balance accretes to $60,000.
+        ref: Part II, Section 3856
+      - id: p2u1l5q08
+        type: je
+        concept: p2u1-impairment-reversal
+        prompt: "A Medicine Hat society wrote a $90,000 loan receivable down to $50,000 last year through an allowance. This year the borrower restructures with new funding, and the highest recoverable measure is now $75,000. Without the impairment the carrying amount would be $90,000. Record the change."
+        accounts:
+          - Allowance for impairment
+          - Impairment loss on loans receivable
+          - Recovery of impairment loss
+          - Loan receivable
+          - Unrestricted net assets
+          - Cash
+        lines:
+          - account: Allowance for impairment
+            side: dr
+            amount: 25000
+          - account: Recovery of impairment loss
+            side: cr
+            amount: 25000
+        explain: The improvement raises the carrying amount from $50,000 to $75,000, which is below the $90,000 cap. The $25,000 reversal goes to the statement of operations.
+        ref: Part II, Section 3856
+      - id: p2u1l5q09
+        type: calc
+        concept: p2u1-fv-election
+        prompt: "A St. Albert foundation buys a $200,000 corporate bond at par and pays a $2,000 commission. Enter the amount expensed on purchase if (a) it carries the bond at amortized cost, plus the amount expensed if (b) it elects fair value. Enter the total of (a) and (b)."
+        answer: 2000
+        unit: $
+        explain: Under (a) the commission is added to the bond's carrying amount and amortized, so nothing is expensed on purchase. Under (b) the bond is at fair value, so the $2,000 is expensed at once. The total is $0 + $2,000 = $2,000.
+        ref: Part II, Section 3856
+      - id: p2u1l5q10
+        type: mc
+        concept: p2u1-related-party-exceptions
+        prompt: "A hospital foundation buys, on a stock exchange, $250,000 of listed bonds issued by a related health authority. The foundation's policy is amortized cost for bonds. What is the initial measurement and what may it elect?"
+        options:
+          - Cost under the related party rules, with no election available
+          - Fair value, because the bonds are quoted in an active market; it may also elect to carry them at fair value
+          - Undiscounted principal of $250,000 regardless of the price paid
+          - Nil, because related party bonds are eliminated
+        answer: 1
+        explain: Quoted debt is an exception to the related party cost rule and is first measured at fair value. Related party debt that is quoted, or whose significant inputs are observable, is also eligible for the fair value election at initial recognition.
+        ref: Part II, Section 3856

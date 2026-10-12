@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { join } from 'node:path';
 import { parse } from 'yaml';
 import type { Question, Unit } from '../src/content/types';
+import { courses } from '../src/content/courses';
 
 const dir = join(import.meta.dirname, '..', 'content');
 const problems: string[] = [];
@@ -19,6 +20,7 @@ function check(u: Unit, q: Question, where: string) {
   switch (q.type) {
     case 'mc':
       if (q.options?.length !== 4) fail('needs exactly 4 options');
+      if (new Set(q.options).size !== q.options?.length) fail('duplicate options');
       if (!(q.answer >= 0 && q.answer < (q.options?.length ?? 0))) fail('answer index out of range');
       break;
     case 'tf':
@@ -27,6 +29,7 @@ function check(u: Unit, q: Question, where: string) {
       break;
     case 'classify':
       if (!q.buckets?.length || !q.items?.length) fail('needs buckets and items');
+      if (new Set(q.items?.map((it) => it.text)).size !== q.items?.length) fail('duplicate items');
       q.items?.forEach((it, i) => {
         if (!(it.bucket >= 0 && it.bucket < q.buckets.length)) fail(`item ${i} bucket out of range`);
       });
@@ -36,6 +39,7 @@ function check(u: Unit, q: Question, where: string) {
       const cr = q.lines.filter((l) => l.side === 'cr').reduce((s, l) => s + l.amount, 0);
       if (Math.abs(dr - cr) > 0.001) fail(`entry doesn't balance (Dr ${dr}, Cr ${cr})`);
       for (const l of q.lines) if (!q.accounts.includes(l.account)) fail(`account "${l.account}" not in choices`);
+      if (new Set(q.accounts).size !== q.accounts.length) fail('duplicate account choices');
       if (q.lines.some((l) => l.side !== 'dr' && l.side !== 'cr')) fail('side must be dr or cr');
       break;
     }
@@ -44,15 +48,17 @@ function check(u: Unit, q: Question, where: string) {
       break;
     case 'match':
       if (!(q.pairs?.length >= 3)) fail('needs at least 3 pairs');
+      if (new Set(q.pairs.map((x) => x.left)).size !== q.pairs.length) fail('left side has duplicates');
+      if (new Set(q.pairs.map((x) => x.right)).size !== q.pairs.length) fail('right side has duplicates (the learner cannot tell them apart)');
       break;
     default:
       fail(`unknown type ${(q as Question).type}`);
   }
 }
 
-for (const file of readdirSync(dir).filter((f) => /^[a-z]+-\d+\.yaml$/.test(f)).sort()) {
+for (const file of readdirSync(dir).filter((f) => /^[a-z0-9]+-\d+\.yaml$/.test(f)).sort()) {
   const u = parse(readFileSync(join(dir, file), 'utf8')) as Unit;
-  if (!['basics', 'capital', 'consolidation'].includes(u.course)) problems.push(`${file}: course must be basics, capital or consolidation`);
+  if (!courses.some((c) => c.id === u.course)) problems.push(`${file}: course must be one of ${courses.map((c) => c.id).join(', ')}`);
   for (const l of u.lessons) for (const q of l.questions) {
     check(u, q, `${file} ${l.id}`);
     count++;

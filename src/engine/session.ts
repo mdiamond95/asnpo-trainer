@@ -1,9 +1,9 @@
 import type { CourseId, Question, Unit } from '../content/types';
 import { courseOfConcept } from '../content';
-import { questionIndex, questionsByConcept } from '../content';
+import { questionIndex, questionsByConcept, questionsBySection, sectionName } from '../content';
 import { dueConcepts, lastSeen, mistakeQuestions, type Progress } from './store';
 
-export type SessionKind = 'lesson' | 'review' | 'mistakes' | 'practice' | 'checkpoint';
+export type SessionKind = 'lesson' | 'review' | 'mistakes' | 'practice' | 'checkpoint' | 'section';
 
 export interface SessionPlan {
   kind: SessionKind;
@@ -62,4 +62,15 @@ export function mistakesSession(p: Progress, course: CourseId): SessionPlan {
     .map((id) => questionIndex.get(id)?.question)
     .filter((q): q is Question => !!q);
   return { kind: 'mistakes', title: 'Fix your mistakes', questions: shuffle(qs).slice(0, 15) };
+}
+
+export const SECTION_SIZE = 12;
+
+/** Drill one Handbook section across every course, least recently seen questions first. */
+export function sectionSession(p: Progress, section: string): SessionPlan {
+  const seen = lastSeen(p);
+  const pool = shuffle(questionsBySection.get(section) ?? []).sort((a, b) =>
+    (seen.get(a.id) ?? '').localeCompare(seen.get(b.id) ?? ''),
+  );
+  return { kind: 'section', title: `Section ${section}: ${sectionName(section)}`, questions: shuffle(pool.slice(0, SECTION_SIZE)) };
 }

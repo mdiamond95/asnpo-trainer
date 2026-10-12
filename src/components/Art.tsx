@@ -17,6 +17,18 @@ export function Emblem({ course, size = 56 }: { course: CourseId; size?: number 
           <path d="M43 45l2 2 4-4" className="em-tick" />
         </g>
       )}
+      {course === 'revenue' && (
+        <g>
+          {/* open hand receiving a gift */}
+          <path d="M10 44h8l10 4h12c3 0 4-4 1-5l-9-2" className="em-spine" />
+          <path d="M18 40h6l12 3" className="em-spine" />
+          <path d="M10 52h10l14 2 18-8c2-1 1-4-2-4l-14 4" className="em-spine" />
+          <rect x="24" y="16" width="20" height="16" rx="3" className="em-paper" />
+          <path d="M34 16v16M24 22h20" className="em-line" />
+          <circle cx="44" cy="15" r="6" className="em-accent" />
+          <path d="M41.5 15h5M44 12.5v5" className="em-tick" />
+        </g>
+      )}
       {course === 'capital' && (
         <g>
           {/* building going up under a crane */}
@@ -39,6 +51,17 @@ export function Emblem({ course, size = 56 }: { course: CourseId; size?: number 
           <circle cx="44" cy="44" r="0" />
           <circle cx="32" cy="45" r="6" className="em-accent" />
           <path d="M29 45h6M32 42v6" className="em-tick" />
+        </g>
+      )}
+      {course === 'part2' && (
+        <g>
+          {/* standards binder with a rising chart */}
+          <rect x="14" y="14" width="26" height="34" rx="3" className="em-light" />
+          <rect x="20" y="18" width="28" height="34" rx="3" className="em-paper" />
+          <path d="M25 26h18M25 31h12" className="em-line" />
+          <path d="M25 46l6-6 5 3 7-8" className="em-line" />
+          <circle cx="46" cy="44" r="7" className="em-accent" />
+          <path d="M43 44h6M46 41v6" className="em-tick" />
         </g>
       )}
     </svg>

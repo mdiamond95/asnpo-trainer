@@ -1,9 +1,26 @@
 import { useMemo, useState } from 'react';
 import type { CourseId, Lesson, Unit } from '../content/types';
-import { conceptIndex, lessonConcepts, questionIndex, units, unitsFor } from '../content';
+import {
+  conceptIndex,
+  lessonConcepts,
+  lessonSections,
+  questionIndex,
+  questionsBySection,
+  sectionName,
+  units,
+  unitsFor,
+} from '../content';
 import { courseById, courses } from '../content/courses';
 import { dayKey } from '../engine/dates';
-import { mistakesSession, practiceSession, reviewSession, REVIEW_SIZE, type SessionPlan } from '../engine/session';
+import {
+  mistakesSession,
+  practiceSession,
+  reviewSession,
+  REVIEW_SIZE,
+  SECTION_SIZE,
+  sectionSession,
+  type SessionPlan,
+} from '../engine/session';
 import {
   currentStreak,
   dueConcepts,
@@ -23,6 +40,19 @@ import { Confetti } from './Confetti';
 import type { SessionResult } from './Player';
 
 // ---------- shared bits ----------
+
+export function SectionTags({ sections, small }: { sections: string[]; small?: boolean }) {
+  if (!sections.length) return null;
+  return (
+    <span className={small ? 'sec-tags small' : 'sec-tags'}>
+      {sections.map((s) => (
+        <span key={s} className="sec-tag num" title={sectionName(s)}>
+          §{s}
+        </span>
+      ))}
+    </span>
+  );
+}
 
 export function StatusStrip() {
   const p = useProgress();
@@ -203,6 +233,7 @@ export function LearnScreen({
                     </button>
                     <span className="node-label">
                       {l.title}
+                      <SectionTags sections={lessonSections(l)} small />
                       {rec && <span className="node-best num">{rec.bestPct}%</span>}
                     </span>
                   </li>
@@ -271,6 +302,7 @@ export function LessonIntro({
         </p>
         <h1>{l.title}</h1>
         <p className="lede">{l.intro}</p>
+        <SectionTags sections={lessonSections(l)} />
         <p className="intro-meta">
           {l.questions.length} questions{types.has('je') ? ' · includes journal entries' : ''}
         </p>
@@ -362,6 +394,57 @@ export function SummaryScreen({ result, onContinue }: { result: SessionResult; o
 
 // ---------- Review ----------
 
+function SectionReview({ onStart }: { onStart: (plan: SessionPlan) => void }) {
+  const p = useProgress();
+  const [all, setAll] = useState(false);
+  const rows = useMemo(
+    () =>
+      [...questionsBySection.entries()]
+        .sort((a, b) => a[0].localeCompare(b[0]))
+        .map(([section, qs]) => ({
+          section,
+          count: qs.length,
+          courses: courses.filter((c) => qs.some((q) => questionIndex.get(q.id)?.unit.course === c.id)).map((c) => c.id),
+        })),
+    [],
+  );
+  const shown = all ? rows : rows.slice(0, 6);
+  return (
+    <section className="panel">
+      <h3 className="section-label">By section</h3>
+      <p className="muted">Drill one Handbook section with questions from every course.</p>
+      <ul className="sections">
+        {shown.map((r) => (
+          <li key={r.section}>
+            <button type="button" className="section-row" onClick={() => onStart(sectionSession(p, r.section))}>
+              <span className="section-num num">{r.section}</span>
+              <span className="section-text">
+                <span className="section-name">{sectionName(r.section)}</span>
+                <span className="section-meta">
+                  {r.courses.map((c) => (
+                    <span key={c} className="course-dot" data-course={c} title={courseById.get(c)!.name} />
+                  ))}
+                  <span className="num">
+                    {Math.min(r.count, SECTION_SIZE)} of {r.count} questions
+                  </span>
+                </span>
+              </span>
+              <span className="chev" aria-hidden="true">
+                {Icon.chevron}
+              </span>
+            </button>
+          </li>
+        ))}
+      </ul>
+      {rows.length > 6 && (
+        <button type="button" className="btn wide" onClick={() => setAll(!all)}>
+          {all ? 'Show fewer' : `Show all ${rows.length} sections`}
+        </button>
+      )}
+    </section>
+  );
+}
+
 export function ReviewScreen({ onStart }: { onStart: (plan: SessionPlan) => void }) {
   const p = useProgress();
   const course = courseById.get(p.course)!;
@@ -423,6 +506,7 @@ export function ReviewScreen({ onStart }: { onStart: (plan: SessionPlan) => void
           </button>
         )}
       </section>
+      <SectionReview onStart={onStart} />
       <section className="panel">
         <h3 className="section-label">Mastery by unit</h3>
         <ul className="mastery">

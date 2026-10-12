@@ -1,0 +1,801 @@
+id: con5
+course: consolidation
+number: 5
+title: Combinations of NPOs
+summary: How Section 4449 sorts a combination of NPOs into a merger or an acquisition, how each is measured and presented, what happens to costs and to the difference in an acquisition, and what must be disclosed.
+refs:
+  - Part III, Section 4449
+  - Part III, Section 4450
+  - Part III, Section 4410
+  - Part II, Section 1582
+status: ready
+
+concepts:
+  - id: con5-scope
+    title: What a combination is
+    summary: Section 4449 applies when two or more NPOs combine, whether they were unrelated or related before. Every combination in scope is accounted for either as a merger or as an acquisition.
+    ref: Part III, Section 4449
+  - id: con5-exclusions
+    title: What is outside Section 4449
+    summary: An NPO acquiring a profit-oriented enterprise follows Section 1582. A for-profit enterprise contributed to an NPO, a gift of assets that do not make up an NPO, and the formation of a joint venture are also outside the section.
+    ref: Part III, Section 4449
+  - id: con5-common-control
+    title: Common control means merger
+    summary: A combination of NPOs that are under common control is always accounted for as a merger, whatever the relative sizes or who leads the combined organization.
+    ref: Part III, Section 4449
+  - id: con5-five-criteria
+    title: The five merger criteria
+    summary: Any other combination is a merger only if all five criteria are met. No party is cast as acquirer or acquiree, all governing bodies set the terms, no significant consideration goes to a third party, the combined organization keeps every party's purposes, and no client community served by only some parties faces a significant decline.
+    ref: Part III, Section 4449
+  - id: con5-criteria-evidence
+    title: Applying the criteria
+    summary: Board minutes, press releases and agreements are all evidence. A party under financial duress or forced by legislation cannot really negotiate terms, and a third party that is made better off by the deal points to consideration flowing out. Failing any one criterion makes the combination an acquisition.
+    ref: Part III, Section 4449
+  - id: con5-merger-carrying
+    title: Merger at carrying amounts
+    summary: In a merger the combined organization picks up the assets, liabilities and net assets of each party at their carrying amounts at the merger date. Nothing is remeasured to fair value, and assets the parties never recognized, such as internally developed intangibles, are not added.
+    ref: Part III, Section 4449
+  - id: con5-merger-policies
+    title: Conforming accounting policies
+    summary: The combined organization applies one set of accounting policies, so the parties' carrying amounts are adjusted to conform, generally retrospectively. A switch from the restricted fund method to the deferral method is a typical adjustment.
+    ref: Part III, Section 4449
+  - id: con5-merger-presentation
+    title: Presenting a merger
+    summary: The combined organization presents its statements on a combined basis, with prior-period figures shown as if the parties had always been combined and labelled as combined. If year ends differ, comparatives cover the 12 months before the chosen reporting period.
+    ref: Part III, Section 4449
+  - id: con5-acquirer
+    title: Identifying the acquirer
+    summary: In an acquisition, the acquirer is the party that obtains control, judged with the control guidance in Section 4450. The right to appoint a majority of the board is presumed to give control.
+    ref: Part III, Section 4449
+  - id: con5-combination-date
+    title: Acquisition date
+    summary: The acquisition date is the date the acquirer obtains control. It can differ from the legal closing date in the agreement.
+    ref: Part III, Section 4449
+  - id: con5-acq-measurement
+    title: Measuring what is acquired
+    summary: The acquirer recognizes the identifiable assets acquired and liabilities assumed at acquisition-date fair value. It may recognize items the acquiree never recorded, but excludes separate transactions and future exit or restructuring costs, which are not liabilities at that date.
+    ref: Part III, Section 4449
+  - id: con5-acq-exceptions
+    title: Recognition and measurement exceptions
+    summary: Donor and member lists are not recognized. Contingent liabilities are recognized when they are present obligations with a reliable fair value. Collections, assets held for sale, retirement obligations, employee benefits, indemnification assets and assets covered by the small NPO capital asset relief follow their own sections.
+    ref: Part III, Section 4449
+  - id: con5-difference
+    title: The difference goes to net assets
+    summary: The difference between the fair value of the consideration transferred and the net identifiable assets acquired is presented separately in the statement of changes in net assets. There is no goodwill, no bargain purchase gain and no contribution revenue.
+    ref: Part III, Section 4449
+  - id: con5-measurement-period
+    title: Provisional amounts and the measurement period
+    summary: If the accounting is incomplete at year end, provisional amounts are used. They are adjusted retrospectively, through the difference, for up to one year after the acquisition date. Later changes are only error corrections.
+    ref: Part III, Section 4449
+  - id: con5-costs
+    title: Combination costs
+    summary: Transaction costs of a merger and acquisition-related costs of an acquisition, such as legal, advisory and valuation fees, are expensed as incurred. They are never capitalized or added to the difference.
+    ref: Part III, Section 4449
+  - id: con5-merger-disclosure
+    title: Merger disclosures
+    summary: In the merger year the combined organization discloses the parties, the date and the reasons, a split of the current period's operations before and after the merger, each party's financial position at the merger date and for the comparative period, each party's net assets by category, and significant policy adjustments.
+    ref: Part III, Section 4449
+  - id: con5-acq-disclosure
+    title: Acquisition disclosures
+    summary: For each material acquisition the acquirer discloses the acquiree, the date and the reasons. If it consolidates the acquiree, it also discloses the consideration by class, a condensed statement of the assets and liabilities acquired, indemnification arrangements and the difference recognized in net assets.
+    ref: Part III, Section 4449
+  - id: con5-not-consolidated
+    title: Acquiring an NPO that will not be consolidated
+    summary: When the acquirer's policy under Section 4450 is not to consolidate controlled NPOs, it identifies the acquirer and the acquisition date and gives the acquisition disclosures, but does not record the acquiree's net assets.
+    ref: Part III, Section 4450
+
+lessons:
+  - id: con5l1
+    title: Is it a combination, and which kind?
+    intro: Before any numbers, you have to decide whether Section 4449 applies at all, then whether you have a merger or an acquisition. That classification drives everything that follows.
+    questions:
+      - id: con5l1q01
+        type: classify
+        concept: con5-exclusions
+        prompt: A Calgary youth charity is involved in each event below. Which standard governs the initial accounting?
+        buckets:
+          - Section 4449
+          - Section 1582
+          - Section 4410
+          - Section 4450
+        items:
+          - text: It takes control of a smaller youth NPO by appointing all of its directors
+            bucket: 0
+          - text: It buys all the shares of a for-profit print shop
+            bucket: 1
+          - text: A dissolving society transfers its last $80,000 of cash to the charity
+            bucket: 2
+          - text: It forms a jointly controlled day camp with a city sport association under a contract
+            bucket: 3
+          - text: Two youth NPOs controlled by the charity amalgamate with each other
+            bucket: 0
+        explain: Section 4449 is for combinations of NPOs. Buying a business is a Section 1582 acquisition. Cash from a society winding up does not make up an NPO, so it is a contribution under Section 4410. Forming a joint venture is a Section 4450 matter.
+        ref: Part III, Section 4449
+      - id: con5l1q02
+        type: mc
+        concept: con5-common-control
+        prompt: A Medicine Hat community foundation appoints 60% of the board of two small social service agencies. The agencies amalgamate. The larger agency's executive director runs the new organization and its staff dominate the management team. How is the combination accounted for?
+        options:
+          - As an acquisition by the larger agency, because its management takes over
+          - As a merger, because the agencies are under common control
+          - As an acquisition by the foundation
+          - As a merger only if all five merger criteria are also met
+        answer: 1
+        explain: Combinations of NPOs under common control are always mergers. You do not apply the five criteria, so who leads the new organization does not matter.
+        ref: Part III, Section 4449
+      - id: con5l1q03
+        type: tf
+        concept: con5-five-criteria
+        prompt: Two Red Deer arts societies that are not under common control combine. Four of the five merger criteria are clearly met, and the fifth is met only in part. The combination can still be a merger because most of the criteria are met.
+        answer: false
+        reasons:
+          - All five criteria must be met. Failing any one makes it an acquisition
+          - A majority of the criteria is enough if the boards agree
+          - The fifth criterion is optional when both parties are charities
+        reason: 0
+        explain: The criteria are cumulative. Unless the parties are under common control, a combination that fails any criterion is accounted for as an acquisition.
+        ref: Part III, Section 4449
+      - id: con5l1q04
+        type: match
+        concept: con5-five-criteria
+        prompt: Match each fact to the merger criterion it puts in doubt.
+        pairs:
+          - left: The press release says the Banff society is "acquiring" the Canmore society
+            right: No party is cast as acquirer or acquiree
+          - left: One party's board was replaced by a receiver and could not negotiate
+            right: All governing bodies set the terms
+          - left: A former landlord receives $150,000 to release one party from its lease
+            right: No significant consideration to a third party
+          - left: The combined body will close the only program serving rural seniors in one party's area
+            right: No significant decline in a client community served by only some parties
+        explain: Each fact attacks a different criterion. Documents that describe an acquirer, a party that cannot negotiate, value flowing to an outsider and a planned decline in one party's clients each point to an acquisition.
+        ref: Part III, Section 4449
+      - id: con5l1q05
+        type: mc
+        concept: con5-criteria-evidence
+        prompt: A Grande Prairie food bank and a smaller pantry combine. The pantry was months from insolvency and its bank required it to combine or repay its loan. The food bank wrote the terms and the pantry's board signed them. Which conclusion is best supported?
+        options:
+          - Merger, because the pantry's board signed the agreement
+          - Merger, because both organizations serve the same purpose
+          - Acquisition, because the pantry could not really take part in setting the terms
+          - Neither, because a combination needs a payment to occur
+        answer: 2
+        explain: Signing an agreement is not the same as jointly setting the terms. A party under financial duress cannot really negotiate, so the governance criterion fails and the combination is an acquisition by the party that obtains control.
+        ref: Part III, Section 4449
+      - id: con5l1q06
+        type: tf
+        concept: con5-criteria-evidence
+        prompt: A decline in clients that affects every combining organization equally causes the client community criterion to fail.
+        answer: false
+        reasons:
+          - The criterion targets a decline in a community served by some, but not all, of the parties
+          - Any decline in clients always fails the criterion
+          - Client numbers are never relevant to the classification
+        reason: 0
+        explain: The concern is one party's clients losing out to the others. A general decline across all the combining organizations does not make the combination an acquisition.
+        ref: Part III, Section 4449
+      - id: con5l1q07
+        type: classify
+        concept: con5-five-criteria
+        prompt: For a combination of two unrelated St. Albert seniors' societies, sort each fact.
+        buckets:
+          - Consistent with a merger
+          - Points to an acquisition
+        items:
+          - text: The new board has eight directors from each party
+            bucket: 0
+          - text: Legal and advisory fees of $45,000 are paid to outside firms
+            bucket: 0
+          - text: One society's board minutes describe the other as the target
+            bucket: 1
+          - text: The combined society's objects include both parties' original objects
+            bucket: 0
+          - text: One party's chief executive alone chose the new management team
+            bucket: 1
+          - text: The combined society pays $200,000 to one party's founding member to give up its rights
+            bucket: 1
+        explain: Transaction costs are not consideration to a third party. A payment that makes an outsider better off is. Documents naming a target and one side alone choosing management also point to an acquisition.
+        ref: Part III, Section 4449
+      - id: con5l1q08
+        type: mc
+        concept: con5-scope
+        prompt: An Edmonton museum society and a Camrose heritage society were related before they combined, because each had significant influence over the other. How does that affect the scope of Section 4449?
+        options:
+          - The section applies whether or not the parties were related
+          - The section does not apply to related NPOs
+          - Related NPOs must use the equity method instead
+          - The combination is automatically a merger
+        answer: 0
+        explain: Section 4449 covers combinations of unrelated and related NPOs. Only common control forces merger accounting. Significant influence does not, so the five criteria still decide.
+        ref: Part III, Section 4449
+      - id: con5l1q09
+        type: mc
+        concept: con5-exclusions
+        prompt: A retiring owner gives all the shares of a profitable landscaping company to a Lethbridge horticultural society. Which statement is correct?
+        options:
+          - It is a combination under Section 4449, accounted for as an acquisition
+          - It is outside Section 4449. The assets follow the contribution guidance in Section 4410, while the liabilities and any goodwill follow Section 1582
+          - It is outside every standard, so the society only discloses it
+          - It is a merger because no consideration was paid
+        answer: 1
+        explain: A contributed profit-oriented enterprise is excluded from Section 4449. The society measures the contributed assets under Section 4410 and looks to Section 1582 for the liabilities and goodwill. It then decides how to report the company under Section 4450.
+        ref: Part III, Section 4449
+      - id: con5l1q10
+        type: tf
+        concept: con5-common-control
+        prompt: When two NPOs under common control combine, the combined organization may choose acquisition accounting if one party is clearly the dominant partner.
+        answer: false
+        explain: There is no choice. Common control requires merger accounting at carrying amounts, so no fair values and no difference in net assets arise.
+        ref: Part III, Section 4449
+
+  - id: con5l2
+    title: Merger accounting
+    intro: A merger brings the parties together at carrying amounts, conforms their policies and presents the result as if they had always been one. The numbers are simple once you resist the urge to use fair values.
+    questions:
+      - id: con5l2q01
+        type: mc
+        concept: con5-merger-carrying
+        prompt: Two Calgary seniors' agencies merge. One agency's building has a carrying amount of $900,000 and a fair value of $1,500,000. At what amount does the combined organization recognize the building?
+        options:
+          - $1,500,000, the fair value at the merger date
+          - $900,000, the carrying amount at the merger date
+          - $1,200,000, the average of the two
+          - $1,500,000, with $600,000 credited to net assets
+        answer: 1
+        explain: Merger accounting carries forward the parties' carrying amounts. Nothing is remeasured, so the building comes in at $900,000 with its existing accumulated amortization.
+        ref: Part III, Section 4449
+      - id: con5l2q02
+        type: tf
+        concept: con5-merger-carrying
+        prompt: In a merger, the combined organization should recognize a donor database that one party developed internally and expensed, since it clearly has value.
+        answer: false
+        reasons:
+          - A merger does not recognize assets the parties had not already recognized
+          - It is recognized at fair value with a credit to revenue
+          - It is recognized as goodwill
+        reason: 0
+        explain: A merger uses carrying amounts only. Internally developed items that a party never recognized stay unrecognized.
+        ref: Part III, Section 4449
+      - id: con5l2q03
+        type: calc
+        concept: con5-merger-policies
+        prompt: Two Calgary seniors' agencies merge. Agency A uses the deferral method and has net assets of $830,000. Agency B uses the restricted fund method and has net assets of $520,000. B's net assets include $40,000 of an unspent restricted program grant and $250,000 of capital grants matching the unamortized part of the assets they funded. The combined organization adopts the deferral method. Enter the combined net assets at the merger date.
+        answer: 1060000
+        unit: $
+        explain: Before conforming, net assets are $830,000 + $520,000 = $1,350,000. Under the deferral method B's $40,000 becomes deferred contributions and its $250,000 becomes deferred capital contributions. $1,350,000 − $290,000 = $1,060,000.
+        ref: Part III, Section 4449
+      - id: con5l2q04
+        type: je
+        concept: con5-merger-policies
+        prompt: Using the same facts, record the conforming adjustment that moves Agency B's balances onto the deferral method at the merger date.
+        accounts:
+          - Net assets – restricted fund (Agency B)
+          - Net assets – capital fund (Agency B)
+          - Deferred contributions
+          - Deferred capital contributions
+          - Contribution revenue
+          - Capital assets
+          - Net assets – unrestricted
+        lines:
+          - account: Net assets – restricted fund (Agency B)
+            side: dr
+            amount: 40000
+          - account: Net assets – capital fund (Agency B)
+            side: dr
+            amount: 250000
+          - account: Deferred contributions
+            side: cr
+            amount: 40000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 250000
+        explain: Under the deferral method, unspent restricted grants and the unamortized part of capital grants are deferred, not held in net assets. The capital assets themselves do not change, and no revenue is recorded for an adjustment of opening balances.
+        ref: Part III, Section 4449
+      - id: con5l2q05
+        type: mc
+        concept: con5-merger-presentation
+        prompt: Two Lethbridge arts societies with March 31 year ends merge on October 1, 2026. How does the combined society present its statement of operations for the year ended March 31, 2027?
+        options:
+          - Only the six months after October 1, with no comparatives
+          - The full year on a combined basis, with comparatives presented as if the societies had always been combined and labelled as combined
+          - The larger society's full year plus the smaller society's results from October 1
+          - Two separate statements, one for each society
+        answer: 1
+        explain: Merger accounting presents the parties as though they had always been one organization. The current and prior periods are both combined, and the comparatives are labelled as combined figures. Notes split the current year before and after the merger.
+        ref: Part III, Section 4449
+      - id: con5l2q06
+        type: calc
+        concept: con5-merger-presentation
+        prompt: For the merger on October 1, 2026, Society A had revenue of $700,000 and Society B $300,000 from April 1 to September 30. The combined society earned $1,100,000 from October 1 to March 31, 2027. Enter total revenue on the statement of operations for the year ended March 31, 2027.
+        answer: 2100000
+        unit: $
+        explain: The year is presented on a combined basis, so revenue is $700,000 + $300,000 + $1,100,000 = $2,100,000. The split before and after the merger goes in the notes.
+        ref: Part III, Section 4449
+      - id: con5l2q07
+        type: tf
+        concept: con5-merger-presentation
+        prompt: When the merging parties had different year ends, the comparative information covers the 12 months before the reporting period the combined organization chooses.
+        answer: true
+        explain: The combined organization picks a year end. Each party's comparatives are then drawn for the 12 months preceding that reporting period, so the combined comparatives line up.
+        ref: Part III, Section 4449
+      - id: con5l2q08
+        type: calc
+        concept: con5-merger-carrying
+        prompt: At the merger date, Agency A has capital assets with cost $1,400,000 and accumulated amortization $500,000. Agency B has cost $650,000 and accumulated amortization $250,000. Fair values total $2,300,000. Enter the net carrying amount of capital assets on the combined statement of financial position.
+        answer: 1300000
+        unit: $
+        explain: ($1,400,000 − $500,000) + ($650,000 − $250,000) = $900,000 + $400,000 = $1,300,000. Fair values are ignored in a merger.
+        ref: Part III, Section 4449
+      - id: con5l2q09
+        type: mc
+        concept: con5-merger-policies
+        prompt: One merging party measures its bond investments at amortized cost, while the other elected fair value for the same kind of bonds. The combined organization chooses fair value. What happens?
+        options:
+          - The first party's investments stay at cost until sold
+          - The difference is recognized as investment income in the merger year
+          - The first party's carrying amounts are adjusted to conform to the fair value policy
+          - The combined organization must use cost because one party used it
+        answer: 2
+        explain: The combined organization applies uniform policies, so carrying amounts are conformed, generally retrospectively. The adjustment is part of opening balances, not income of the year.
+        ref: Part III, Section 4449
+      - id: con5l2q10
+        type: je
+        concept: con5-costs
+        prompt: The merging Lethbridge arts societies pay $38,000 of legal and advisory fees and $12,000 to relocate one society's office, all in cash. Record the costs.
+        accounts:
+          - Merger transaction costs expense
+          - Cash
+          - Net assets – unrestricted
+          - Capital assets
+          - Deferred charges
+        lines:
+          - account: Merger transaction costs expense
+            side: dr
+            amount: 50000
+          - account: Cash
+            side: cr
+            amount: 50000
+        explain: Both amounts are expensed as incurred. The legal and advisory fees are merger transaction costs, and relocation is a cost of operating the combined society after the merger. Neither can be capitalized or charged directly to net assets.
+        ref: Part III, Section 4449
+
+  - id: con5l3
+    title: Acquisition accounting
+    intro: An acquisition is measured at fair value from the acquirer's point of view. Watch the exceptions and remember where the difference goes, because it is never goodwill.
+    questions:
+      - id: con5l3q01
+        type: mc
+        concept: con5-acquirer
+        prompt: A Lethbridge food bank and a community pantry combine. Afterwards the food bank appoints six of the pantry's nine directors, and the pantry keeps its legal identity. Which party is the acquirer?
+        options:
+          - The pantry, because it keeps its legal identity
+          - The food bank, because the right to appoint a majority of the board is presumed to give control
+          - Neither, because the pantry still exists
+          - Whichever party has more assets
+        answer: 1
+        explain: The acquirer is the party that obtains control, judged with the Section 4450 guidance. Appointing a majority of the board is presumed to give control.
+        ref: Part III, Section 4449
+      - id: con5l3q02
+        type: mc
+        concept: con5-combination-date
+        prompt: The food bank's agreement closes legally on August 31, but its nominees took over the pantry's board on July 1 under an interim arrangement that gave them full authority. What is the acquisition date?
+        options:
+          - July 1, when control was obtained
+          - August 31, the legal closing date
+          - The food bank's year end
+          - The date the agreement was first signed
+        answer: 0
+        explain: The acquisition date is when the acquirer obtains control. It can come before or after the legal closing.
+        ref: Part III, Section 4449
+      - id: con5l3q03
+        type: classify
+        concept: con5-acq-exceptions
+        prompt: On July 1 the food bank acquires the pantry. How is each item treated at the acquisition date?
+        buckets:
+          - Recognized at fair value
+          - Recognized under a specific exception
+          - Not recognized
+        items:
+          - text: Warehouse building
+            bucket: 0
+          - text: The pantry's list of regular donors
+            bucket: 2
+          - text: A slip-and-fall claim that is a present obligation with a reliable fair value of $30,000
+            bucket: 1
+          - text: Refrigeration equipment
+            bucket: 0
+          - text: Severance the food bank plans to pay pantry staff it will lay off in the autumn
+            bucket: 2
+          - text: A delivery van the pantry had already classified as held for sale
+            bucket: 1
+        explain: Most items are measured at fair value. Donor lists are never recognized. A contingent liability that is a present obligation with a reliable fair value is recognized, even if not likely. A held-for-sale asset follows Section 3475. Planned severance is a future cost, not a liability at the acquisition date.
+        ref: Part III, Section 4449
+      - id: con5l3q04
+        type: calc
+        concept: con5-difference
+        prompt: "At July 1 the pantry's identifiable items at acquisition-date amounts are: short-term investments $40,000, warehouse $650,000, equipment $50,000, accounts payable $70,000, mortgage $400,000 and the $30,000 claim. Its donor list is worth an estimated $80,000. The food bank pays $60,000 to a regional society that held rights over the pantry. Enter the difference to be recognized, as a positive number."
+        answer: 180000
+        unit: $
+        explain: Net identifiable assets are $40,000 + $650,000 + $50,000 − $70,000 − $400,000 − $30,000 = $240,000. The donor list is not recognized. $240,000 − $60,000 consideration = $180,000, an increase presented separately in the statement of changes in net assets.
+        ref: Part III, Section 4449
+      - id: con5l3q05
+        type: je
+        concept: con5-difference
+        prompt: The food bank consolidates the NPOs it controls. Using the same facts, record the acquisition as it enters the food bank's consolidated statements on July 1.
+        accounts:
+          - Short-term investments
+          - Buildings
+          - Equipment
+          - Accounts payable
+          - Mortgage payable
+          - Provision for claims
+          - Cash
+          - Net assets acquired in combination
+          - Goodwill
+          - Contribution revenue
+          - Donor list
+        lines:
+          - account: Short-term investments
+            side: dr
+            amount: 40000
+          - account: Buildings
+            side: dr
+            amount: 650000
+          - account: Equipment
+            side: dr
+            amount: 50000
+          - account: Accounts payable
+            side: cr
+            amount: 70000
+          - account: Mortgage payable
+            side: cr
+            amount: 400000
+          - account: Provision for claims
+            side: cr
+            amount: 30000
+          - account: Cash
+            side: cr
+            amount: 60000
+          - account: Net assets acquired in combination
+            side: cr
+            amount: 180000
+        explain: Identifiable items go in at fair value, with the building and equipment recorded at fair value as their new cost and no accumulated amortization. The $180,000 balancing amount goes to net assets and is shown separately in the statement of changes in net assets. It is not contribution revenue and not a gain.
+        ref: Part III, Section 4449
+      - id: con5l3q06
+        type: tf
+        concept: con5-difference
+        prompt: If a Calgary hockey association pays more for an acquired NPO than the net identifiable assets are worth, it recognizes the excess as goodwill.
+        answer: false
+        reasons:
+          - The excess reduces net assets and is presented separately in the statement of changes in net assets
+          - The excess is expensed as an acquisition cost
+          - The excess is a deferred charge amortized over ten years
+        reason: 0
+        explain: Section 4449 recognizes no goodwill and no bargain purchase gain. Whichever way the difference runs, it is presented separately in the statement of changes in net assets.
+        ref: Part III, Section 4449
+      - id: con5l3q07
+        type: calc
+        concept: con5-difference
+        prompt: Suppose instead the food bank paid $300,000 for the pantry, whose net identifiable assets are $240,000. Enter the decrease in net assets to present separately, as a positive number.
+        answer: 60000
+        unit: $
+        explain: $300,000 − $240,000 = $60,000. The excess consideration reduces net assets rather than creating goodwill.
+        ref: Part III, Section 4449
+      - id: con5l3q08
+        type: mc
+        concept: con5-acq-measurement
+        prompt: Before the combination the pantry had expensed a custom inventory-tracking system it built. The food bank can measure its fair value reliably at $25,000. Which statement is correct?
+        options:
+          - It cannot be recognized because the pantry expensed it
+          - It may be recognized at fair value because an acquisition can recognize items the acquiree never recorded
+          - It is included in goodwill
+          - It is recognized at the pantry's original cost
+        answer: 1
+        explain: Unlike a merger, an acquisition can bring in identifiable assets the acquiree never recognized, such as an internally generated intangible, measured at fair value.
+        ref: Part III, Section 4449
+      - id: con5l3q09
+        type: mc
+        concept: con5-acq-exceptions
+        prompt: A Fort McMurray heritage society acquires a smaller museum society. Combined average annual revenue is below $500,000, and the acquirer expenses capital asset purchases under the small NPO relief. How are the acquired exhibits building and display cases handled?
+        options:
+          - They must be measured at fair value and capitalized in every case
+          - The relief still applies, so their fair values need not be measured
+          - They are recognized as goodwill
+          - They are capitalized at the acquiree's carrying amounts
+        answer: 1
+        explain: Assets covered by the small NPO relief are an exception to fair value measurement. If the acquirer still qualifies for the relief, it need not measure their fair values.
+        ref: Part III, Section 4449
+      - id: con5l3q10
+        type: calc
+        concept: con5-acq-measurement
+        prompt: The food bank records the acquired warehouse at its $650,000 fair value on July 1 and amortizes it straight-line over a 25-year remaining life with no residual value. Its year end is December 31. Enter amortization for the period July 1 to December 31.
+        answer: 13000
+        unit: $
+        explain: $650,000 ÷ 25 = $26,000 a year, and six months is $13,000. The pantry's old carrying amount and its accumulated amortization are irrelevant after an acquisition.
+        ref: Part III, Section 4449
+
+  - id: con5l4
+    title: Costs, measurement period and disclosure
+    intro: Getting the entry right is half the job. Costs, provisional amounts and disclosure carry their own traps, especially when the acquirer does not consolidate.
+    questions:
+      - id: con5l4q01
+        type: classify
+        concept: con5-costs
+        prompt: The Lethbridge food bank incurred each cost on the pantry acquisition. How is each one handled?
+        buckets:
+          - Expense as incurred
+          - Part of the acquisition accounting
+        items:
+          - text: Legal fees for the combination agreement, $22,000
+            bucket: 0
+          - text: Building appraisal fee, $6,000
+            bucket: 0
+          - text: Staff time spent on due diligence, $9,000
+            bucket: 0
+          - text: The $60,000 paid to the regional society that held rights over the pantry
+            bucket: 1
+          - text: The pantry's accounts payable taken over by the food bank
+            bucket: 1
+        explain: Acquisition-related costs are expensed, never capitalized or added to the difference. Consideration paid and liabilities assumed are part of the acquisition accounting.
+        ref: Part III, Section 4449
+      - id: con5l4q02
+        type: je
+        concept: con5-costs
+        prompt: Record the food bank's $22,000 legal fee and $6,000 appraisal fee, both paid in cash.
+        accounts:
+          - Acquisition costs expense
+          - Cash
+          - Net assets acquired in combination
+          - Buildings
+          - Goodwill
+        lines:
+          - account: Acquisition costs expense
+            side: dr
+            amount: 28000
+          - account: Cash
+            side: cr
+            amount: 28000
+        explain: Both are acquisition-related costs and are expensed when incurred. Adding them to the building or to the difference in net assets would be wrong.
+        ref: Part III, Section 4449
+      - id: con5l4q03
+        type: calc
+        concept: con5-measurement-period
+        prompt: The food bank used a provisional $650,000 for the warehouse at its December 31 year end. In March the final appraisal shows $620,000 at July 1. The original difference was a $180,000 increase in net assets. Enter the revised difference.
+        answer: 150000
+        unit: $
+        explain: The adjustment falls within the one-year measurement period, so it is made retrospectively. Net identifiable assets fall by $30,000, so the difference becomes $180,000 − $30,000 = $150,000, and the comparatives are revised.
+        ref: Part III, Section 4449
+      - id: con5l4q04
+        type: tf
+        concept: con5-measurement-period
+        prompt: Eighteen months after the acquisition, the food bank learns the warehouse's fair value at the acquisition date was higher than recorded, and it was not an error in the original estimate. It adjusts the difference retrospectively.
+        answer: false
+        reasons:
+          - The measurement period is at most one year. After that, only errors are corrected
+          - Any new information can be applied retrospectively at any time
+          - The change is recorded as a gain in the current year
+        reason: 0
+        explain: Provisional amounts can be adjusted for up to one year. After that the accounting is closed, and only corrections of errors under Section 1506 change it.
+        ref: Part III, Section 4449
+      - id: con5l4q05
+        type: calc
+        concept: con5-acq-exceptions
+        prompt: The $30,000 slip-and-fall claim was recognized at the acquisition date. At year end, the amount Section 3290 would require is $20,000 and the claim is unresolved. Enter the carrying amount of the provision at year end.
+        answer: 30000
+        unit: $
+        explain: After the acquisition, a recognized contingent liability is carried at the higher of the amount Section 3290 would require and the amount first recognized, until it is settled, cancelled or expires. The higher figure is $30,000.
+        ref: Part III, Section 4449
+      - id: con5l4q06
+        type: classify
+        concept: con5-merger-disclosure
+        prompt: Two Camrose seniors' societies merged during the year. Which items must the combined society disclose?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The names of the parties, the merger date and the main reasons
+            bucket: 0
+          - text: Principal components of operations for the current period, before and after the merger
+            bucket: 0
+          - text: Each party's net assets at the merger date by category
+            bucket: 0
+          - text: The fair value of each party's capital assets at the merger date
+            bucket: 1
+          - text: The nature and amount of significant adjustments to conform policies
+            bucket: 0
+          - text: Goodwill arising on the merger
+            bucket: 1
+        explain: Merger disclosures explain who combined, why and what each brought, at carrying amounts. Fair values are not measured in a merger, and no goodwill arises.
+        ref: Part III, Section 4449
+      - id: con5l4q07
+        type: mc
+        concept: con5-not-consolidated
+        prompt: A Calgary health charity's policy under Section 4450 is not to consolidate controlled NPOs. It obtains control of a small hospice society, which keeps operating as a separate legal entity. What must it do under Section 4449?
+        options:
+          - Measure the hospice's assets at fair value and record the difference in net assets
+          - Identify the acquirer and the acquisition date and give the acquisition disclosures, without recording the hospice's net assets
+          - Use the equity method for the hospice
+          - Nothing, because the hospice is not consolidated
+        answer: 1
+        explain: An acquirer that does not consolidate still identifies itself as acquirer, sets the acquisition date and discloses the acquiree, the date and the reasons. Its Section 4450 disclosures for the non-consolidated NPO also apply.
+        ref: Part III, Section 4450
+      - id: con5l4q08
+        type: classify
+        concept: con5-acq-disclosure
+        prompt: The Lethbridge food bank consolidates the NPOs it controls. Which disclosures does its pantry acquisition require?
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The pantry's name, a description, the acquisition date and the main reasons
+            bucket: 0
+          - text: Fair value of the total consideration and of each major class of it
+            bucket: 0
+          - text: A condensed statement of the assets acquired and liabilities assumed, by major class
+            bucket: 0
+          - text: The difference and that it is presented in the statement of changes in net assets
+            bucket: 0
+          - text: The fair value of the unrecognized donor list
+            bucket: 1
+          - text: A ten-year projection of the pantry's operations
+            bucket: 1
+        explain: A consolidating acquirer gives the full set, including the consideration, the condensed balance sheet and the difference. Unrecognized donor lists and forecasts are not required.
+        ref: Part III, Section 4449
+      - id: con5l4q09
+        type: tf
+        concept: con5-acq-disclosure
+        prompt: A Red Deer charity made five small acquisitions this year. None is material on its own, but together they are. It needs no disclosure because each is immaterial.
+        answer: false
+        reasons:
+          - Acquisitions that are material in aggregate need disclosure, such as the number of acquirees and a brief description of each
+          - Each one must be disclosed in full regardless of materiality
+          - Only acquisitions with cash consideration are disclosed
+        reason: 0
+        explain: Individually immaterial acquisitions that are material together still require summary disclosure, including the number and a description and, for consolidated acquirees, the total consideration.
+        ref: Part III, Section 4449
+      - id: con5l4q10
+        type: mc
+        concept: con5-merger-disclosure
+        prompt: Two St. Albert youth societies merge three weeks after one society's year end, before its statements are finished. What does that society disclose?
+        options:
+          - Nothing, because the merger happened after year end
+          - The parties and their operations, the merger date and the main reasons
+          - A full restatement of the year on a combined basis
+          - The fair value of the other society's net assets
+        answer: 1
+        explain: A merger after year end but before the statements are complete calls for the parties, the nature of their operations, the date and the reasons. The merger accounting itself starts in the following period.
+        ref: Part III, Section 4449
+
+  - id: con5l5
+    title: Combination cases
+    intro: These cases make you classify the combination, then measure and present it. Read every fact before you compute.
+    questions:
+      - id: con5l5q01
+        type: mc
+        concept: con5-criteria-evidence
+        prompt: A Medicine Hat museum and a Brooks heritage society combine. Each board sends six directors to a new twelve-member board and they jointly chose the executive team. The new society pays off the Brooks society's $90,000 bank loan, and the bank is a third party. Both purposes are kept and no programs close. How should you approach classification?
+        options:
+          - It is an acquisition, because any debt repayment is consideration to a third party
+          - Judge whether repaying the loan makes the bank better off. Simply settling an assumed liability on normal terms usually does not, so a merger is still possible
+          - It is a merger, because the boards are equal
+          - It is outside Section 4449 because a loan was repaid
+        answer: 1
+        explain: Whether paying off debt counts as consideration to a third party depends on the facts. Settling a liability the combined organization takes over, at face value, does not usually enrich the lender. A premium or a forgiven shortfall would point the other way.
+        ref: Part III, Section 4449
+      - id: con5l5q02
+        type: calc
+        concept: con5-merger-carrying
+        prompt: "Two Edmonton community leagues merge. League A (deferral method) has net assets of $180,000. League B (restricted fund method) has net assets of $410,000, made up of an operating fund of $30,000, a restricted fund of $20,000 holding an unspent program grant, and a capital fund of $360,000. Of B's capital assets, $240,000 of carrying amount was funded by an external capital grant. The combined league uses the deferral method. Enter combined net assets at the merger date."
+        answer: 330000
+        unit: $
+        explain: B's $20,000 becomes deferred contributions and $240,000 becomes deferred capital contributions, so B's net assets fall to $150,000. $180,000 + $150,000 = $330,000.
+        ref: Part III, Section 4449
+      - id: con5l5q03
+        type: calc
+        concept: con5-merger-policies
+        prompt: For the merged league, League A had deferred capital contributions of $280,000 and capital assets of $420,000. League B has capital assets of $360,000, with the $240,000 grant-funded portion. Enter net assets invested in capital assets for the combined league at the merger date.
+        answer: 260000
+        unit: $
+        explain: Capital assets of $420,000 + $360,000 = $780,000, less deferred capital contributions of $280,000 + $240,000 = $520,000, gives $260,000.
+        ref: Part III, Section 4449
+      - id: con5l5q04
+        type: calc
+        concept: con5-difference
+        prompt: "A Banff arts foundation obtains control of a dance society, which is wound into the foundation. Acquisition-date amounts are: cash $25,000, studio equipment $60,000, a costume collection of $40,000 (the foundation records collections at cost, which in an acquisition is deemed to be fair value), accounts payable $35,000 and deferred revenue for prepaid classes $18,000. The foundation pays nothing. Enter the difference to present in the statement of changes in net assets."
+        answer: 72000
+        unit: $
+        explain: $25,000 + $60,000 + $40,000 − $35,000 − $18,000 = $72,000. With no consideration, the whole amount increases net assets. Collections follow Section 4441, with cost deemed to be acquisition-date fair value. Prepaid classes are a real obligation and are a liability.
+        ref: Part III, Section 4449
+      - id: con5l5q05
+        type: je
+        concept: con5-difference
+        prompt: Record the Banff foundation's acquisition of the dance society using the amounts in the previous question.
+        accounts:
+          - Cash
+          - Equipment
+          - Collections
+          - Accounts payable
+          - Deferred revenue
+          - Net assets acquired in combination
+          - Contribution revenue
+          - Gain on acquisition
+        lines:
+          - account: Cash
+            side: dr
+            amount: 25000
+          - account: Equipment
+            side: dr
+            amount: 60000
+          - account: Collections
+            side: dr
+            amount: 40000
+          - account: Accounts payable
+            side: cr
+            amount: 35000
+          - account: Deferred revenue
+            side: cr
+            amount: 18000
+          - account: Net assets acquired in combination
+            side: cr
+            amount: 72000
+        explain: Even when nothing is paid, the difference is not contribution revenue or a gain. It is presented separately in the statement of changes in net assets, so a combination does not inflate the year's operating results.
+        ref: Part III, Section 4449
+      - id: con5l5q06
+        type: mc
+        concept: con5-acquirer
+        prompt: Two Grande Prairie sport bodies combine into a newly formed society. The criteria for a merger are not met. The new society's board is appointed by the larger body's members, and the larger body's documents describe the other as being taken over. Who is the acquirer?
+        options:
+          - The newly formed society, always
+          - The larger body, because it obtains control of the combined operations
+          - Neither, so merger accounting applies by default
+          - The smaller body, because its net assets are remeasured
+        answer: 1
+        explain: Forming a new legal entity does not make it the acquirer. You look through to the party that obtains control, here the larger body, and measure the other party's assets and liabilities at fair value.
+        ref: Part III, Section 4449
+      - id: con5l5q07
+        type: tf
+        concept: con5-acq-measurement
+        prompt: In an acquisition, the acquirer records a liability at the acquisition date for the cost of closing one of the acquiree's offices next year, because the closure plan was approved at the same board meeting that approved the combination.
+        answer: false
+        reasons:
+          - Future exit and restructuring costs are not liabilities of the acquiree at the acquisition date
+          - It is recorded as part of the difference in net assets
+          - It is recorded as goodwill
+        reason: 0
+        explain: Only items that meet the definition of a liability at the acquisition date are recognized. A plan to restructure later creates no present obligation, so those costs are expensed when incurred.
+        ref: Part III, Section 4449
+      - id: con5l5q08
+        type: calc
+        concept: con5-measurement-period
+        prompt: A Red Deer health charity acquires a support society on September 1, recording a provisional $480,000 for its building with 30 years of remaining life. The final appraisal received within the measurement period gives $450,000. Year end is December 31. Enter the revised building amortization for September 1 to December 31. Round to the nearest dollar.
+        answer: 5000
+        tolerance: 1
+        unit: $
+        explain: The revised fair value is applied from the acquisition date. $450,000 ÷ 30 = $15,000 a year, and four months is $5,000. The provisional figure would have given about $5,333, so that amount is revised retrospectively too.
+        ref: Part III, Section 4449
+      - id: con5l5q09
+        type: match
+        concept: con5-merger-carrying
+        prompt: Match each item to how it is handled in a merger versus an acquisition.
+        pairs:
+          - left: Merger, capital assets
+            right: Carrying amounts at the merger date
+          - left: Acquisition, capital assets
+            right: Fair value at the acquisition date
+          - left: Acquisition, consideration above net assets
+            right: Decrease presented separately in the statement of changes in net assets
+          - left: Either, legal and advisory fees
+            right: Expensed as incurred
+        explain: The measurement basis is the main difference between the two methods. Costs are expensed in both, and neither method recognizes goodwill.
+        ref: Part III, Section 4449
+      - id: con5l5q10
+        type: mc
+        concept: con5-five-criteria
+        prompt: Two Calgary seniors' societies combine. Every merger criterion is met except that the combined society will close the only day program in one party's neighbourhood and move it 20 km away, which most of those clients cannot reach. What is the result?
+        options:
+          - Merger, because the closure is an operating decision made afterwards
+          - Acquisition, because a client community served by only one party faces a significant planned decline
+          - Merger, because the purposes are kept
+          - Outside Section 4449
+        answer: 1
+        explain: A planned significant decline in a client community served by some but not all parties fails a criterion. Since all five must be met, the combination is an acquisition.
+        ref: Part III, Section 4449

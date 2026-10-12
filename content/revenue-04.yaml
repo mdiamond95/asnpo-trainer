@@ -1,0 +1,844 @@
+id: rev4
+course: revenue
+number: 4
+title: Endowments, investment income and exchange revenue
+summary: How endowment income and fair value gains and losses flow under each method, what to do when an endowment falls below its original gift or the board creates its own endowment, how to handle government funding that must be repaid, and how fees, tuition, tickets and memberships are recognized under Section 3400.
+refs:
+  - Part III, Section 4410
+  - Part III, Section 4400
+  - Part II, Section 3856
+  - Part II, Section 3400
+  - Part II, Section 3290
+status: ready
+
+concepts:
+  - id: rev4-endowment-nature
+    title: Principal versus income
+    summary: An endowment's principal must be maintained permanently. What happens to the income it earns depends entirely on the donor's terms, which can leave it unrestricted, restrict it to a purpose, or require some of it to be added to principal.
+    ref: Part III, Section 4410
+  - id: rev4-capitalized-income
+    title: Income that must be added to principal
+    summary: Investment income that the donor requires to be added to the endowment is treated like an endowment contribution. Under the deferral method it is a direct increase in endowment net assets; under the restricted fund method it is revenue of the endowment fund.
+    ref: Part III, Section 4410
+  - id: rev4-income-purpose
+    title: Income restricted to a purpose
+    summary: Endowment income restricted to a purpose follows the restricted contribution rules. The deferral method defers it until the related expenses are incurred. The restricted fund method reports it in a matching restricted fund, or in the general fund using the deferral method if no such fund exists.
+    ref: Part III, Section 4410
+  - id: rev4-3856-measurement
+    title: Measuring endowment investments
+    summary: Equity investments quoted in an active market are measured at fair value, with changes recognized in the period. Other investments, such as bonds, are measured at amortized cost unless the NPO elects fair value when it first recognizes them.
+    ref: Part II, Section 3856
+  - id: rev4-gains
+    title: Where fair value changes go
+    summary: Realized and unrealized gains and losses are part of investment income and follow the same restriction as the income. They can land in revenue, in deferred contributions, or directly in endowment net assets, depending on the donor's terms and the method.
+    ref: Part III, Section 4410
+  - id: rev4-transaction-costs
+    title: Transaction costs
+    summary: Transaction costs on investments measured at fair value are expensed when incurred. For investments at amortized cost they are added to the carrying amount.
+    ref: Part II, Section 3856
+  - id: rev4-deficiency
+    title: Endowments below their original gift
+    summary: When losses take an endowment's fair value below the amount contributed, nothing is recorded to restore it. A board may choose to top it up with unrestricted resources, which is a transfer within net assets, and good disclosure explains the shortfall and the plan.
+    ref: Part III, Section 4400
+  - id: rev4-encroachment
+    title: Encroachment
+    summary: Spending endowment principal is only possible when the donor's terms or a legal variation allow it. ASNPO does not address encroachment directly; the usual approach is a reclassification from endowment net assets in the statement of changes in net assets, with disclosure of the policy.
+    ref: Part III, Section 4400
+  - id: rev4-quasi
+    title: Internally restricted endowments
+    summary: Resources the board chooses to invest for the long term are internally restricted, not endowments. The gifts that funded them were unrestricted revenue, the income is unrestricted, and the board can reverse the designation.
+    ref: Part III, Section 4400
+  - id: rev4-disclosure
+    title: Endowment income disclosure
+    summary: An NPO discloses the net investment income earned on resources held for endowment, separately showing the amounts recognized as revenue, the amounts deferred and the amounts recognized directly in net assets.
+    ref: Part III, Section 4410
+  - id: rev4-gov-contribution
+    title: Government funding is a contribution
+    summary: Section 4410 treats government funding to an NPO as a contribution, so it follows the contribution rules rather than Part II Section 3800 on government assistance. Reporting requirements and stipulations do not turn it into an exchange.
+    ref: Part III, Section 4410
+  - id: rev4-repayable
+    title: Unspent funding that must be returned
+    summary: When an agreement requires unspent funds to be returned and the obligation arises, the amount becomes a liability. Under the deferral method it comes out of deferred contributions. Under the restricted fund method it was already revenue, so the repayment is a charge in the period the obligation arises.
+    ref: Part III, Section 4410
+  - id: rev4-breach
+    title: Repayments for breached terms
+    summary: When a funder may claw back money already spent, for example on ineligible costs, the NPO applies the contingency rules. It accrues a liability when repayment is likely and the amount can be reasonably estimated, and otherwise discloses it.
+    ref: Part II, Section 3290
+  - id: rev4-3400-criteria
+    title: Exchange revenue under Section 3400
+    summary: Revenue from fees, tuition, tickets and sales is recognized when performance is achieved, the amount is reasonably measurable and collection is reasonably assured. Services delivered over time are recognized as they are performed.
+    ref: Part II, Section 3400
+  - id: rev4-deferred-revenue
+    title: Deferred revenue versus deferred contributions
+    summary: Deferred revenue is an obligation to deliver goods or services already paid for. Deferred contributions are restricted gifts waiting for the related expenses. They arise under different standards and mean different things to a reader.
+    ref: Part II, Section 3400
+  - id: rev4-memberships
+    title: Memberships
+    summary: A membership fee that buys benefits of commensurate value is exchange revenue recognized over the membership period. A fee well above the value of the benefits is part contribution, and the excess is a contribution.
+    ref: Part III, Section 4410
+  - id: rev4-multiple-element
+    title: Bundled services
+    summary: When one fee covers several deliverables with value on their own, the consideration is allocated among them based on their relative values and each part is recognized when it is delivered.
+    ref: Part II, Section 3400
+  - id: rev4-mixed
+    title: Sponsorships and other mixed transactions
+    summary: When a payment buys some benefits and is partly a gift, the benefit portion is exchange revenue under Section 3400 and the excess is a contribution under Section 4410. Each part follows its own timing.
+    ref: Part III, Section 4410
+
+lessons:
+  - id: rev4l1
+    title: Endowment principal and income
+    intro: The gift is permanent, but the income it earns can go three different ways. This lesson follows endowment income through both methods.
+    questions:
+      - id: rev4l1q01
+        type: mc
+        concept: rev4-endowment-nature
+        prompt: What determines whether income on an endowment is revenue, deferred, or added to principal?
+        options:
+          - The board's investment policy
+          - The terms the donor imposed on the endowment and its income
+          - Whether the investments are held in a separate bank account
+          - The size of the endowment
+        answer: 1
+        explain: Only external stipulations create restrictions. If the donor said nothing about the income, it is unrestricted even though the principal is permanent. A board policy to reinvest income is an internal designation.
+        ref: Part III, Section 4410
+      - id: rev4l1q02
+        type: je
+        concept: rev4-capitalized-income
+        prompt: "An Edmonton community foundation (deferral method) holds a $1,500,000 endowment. The terms require 2% of opening principal to be added to principal each year to protect against inflation, and the rest of the income is restricted to bursaries. This year the endowment earns $60,000 in cash. No bursaries have been awarded yet. Record the income."
+        accounts:
+          - Cash
+          - Endowment net assets
+          - Deferred contributions
+          - Investment income
+          - Bursary expense
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 60000
+          - account: Endowment net assets
+            side: cr
+            amount: 30000
+          - account: Deferred contributions
+            side: cr
+            amount: 30000
+        explain: 2% × $1,500,000 = $30,000 must be capitalized, so it is a direct increase in endowment net assets. The other $30,000 is restricted to bursaries and is deferred until bursaries are awarded.
+        ref: Part III, Section 4410
+      - id: rev4l1q03
+        type: calc
+        concept: rev4-income-purpose
+        prompt: Continue the Edmonton case. Next year the foundation awards $22,000 of bursaries from the $30,000 deferred. Ignoring next year's income, enter the deferred contributions balance left from this pool.
+        answer: 8000
+        unit: $
+        explain: $22,000 is recognized as revenue to match the bursary expense, leaving $30,000 − $22,000 = $8,000 deferred for future bursaries.
+        ref: Part III, Section 4410
+      - id: rev4l1q04
+        type: je
+        concept: rev4-capitalized-income
+        prompt: "Now assume the Edmonton foundation uses the restricted fund method. It has an Endowment Fund but no fund for bursaries. Record the same $60,000 of income: $30,000 must be added to principal and $30,000 is restricted to bursaries not yet awarded."
+        accounts:
+          - Cash (Endowment fund)
+          - Cash (General fund)
+          - Investment income (Endowment fund)
+          - Deferred contributions (General fund)
+          - Investment income (General fund)
+          - Endowment net assets
+        lines:
+          - account: Cash (Endowment fund)
+            side: dr
+            amount: 30000
+          - account: Cash (General fund)
+            side: dr
+            amount: 30000
+          - account: Investment income (Endowment fund)
+            side: cr
+            amount: 30000
+          - account: Deferred contributions (General fund)
+            side: cr
+            amount: 30000
+        explain: Under the restricted fund method, income that must be added to principal is revenue of the Endowment Fund. Restricted income with no matching restricted fund is recognized in the General Fund using the deferral method.
+        ref: Part III, Section 4410
+      - id: rev4l1q05
+        type: mc
+        concept: rev4-income-purpose
+        prompt: The same foundation later creates a Bursary Fund, a restricted fund for bursary resources. Under the restricted fund method, how is the $30,000 of income restricted to bursaries now treated?
+        options:
+          - Deferred in the General Fund until bursaries are awarded
+          - Added to the Endowment Fund
+          - Recognized as revenue of the Bursary Fund when earned
+          - Credited directly to the Bursary Fund balance without passing through revenue
+        answer: 2
+        explain: Once a matching restricted fund exists, restricted income is revenue of that fund when earned. The restricted fund method does not defer within a matching fund.
+        ref: Part III, Section 4410
+      - id: rev4l1q06
+        type: tf
+        concept: rev4-endowment-nature
+        prompt: Under the deferral method, unrestricted income earned on an endowment is a direct increase in endowment net assets because it was earned on endowment investments.
+        answer: false
+        reasons:
+          - Unrestricted investment income is revenue when earned, wherever it comes from
+          - All income on endowment investments is part of principal
+          - It is deferred until the board decides how to use it
+        reason: 0
+        explain: The source of income does not decide its treatment; the donor's terms do. If the donor did not restrict the income, it is revenue in the statement of operations.
+        ref: Part III, Section 4410
+      - id: rev4l1q07
+        type: calc
+        concept: rev4-income-purpose
+        prompt: "A Calgary foundation (deferral method) holds two endowments. Endowment A, $800,000, has unrestricted income. Endowment B, $1,200,000, has income restricted to scholarships, with $10,000 deferred at the start of the year. Each earns 5% in cash this year, and $50,000 of scholarships are awarded. Enter the total investment income recognized as revenue from the two endowments."
+        answer: 90000
+        unit: $
+        explain: A earns $40,000, all revenue. B earns $60,000, which is deferred, and $50,000 of the deferred balance is recognized to match scholarships. Revenue is $40,000 + $50,000 = $90,000.
+        ref: Part III, Section 4410
+      - id: rev4l1q08
+        type: calc
+        concept: rev4-income-purpose
+        prompt: Same Calgary foundation. Enter deferred contributions for Endowment B's scholarship income at year end.
+        answer: 20000
+        unit: $
+        explain: $10,000 opening + $60,000 earned − $50,000 recognized = $20,000.
+        ref: Part III, Section 4410
+      - id: rev4l1q09
+        type: match
+        concept: rev4-capitalized-income
+        prompt: Under the deferral method, match each endowment income term to where the income goes.
+        pairs:
+          - left: Donor requires all income to be reinvested permanently
+            right: Statement of changes in net assets, endowment net assets
+          - left: Donor restricts income to palliative care equipment repairs
+            right: Deferred contributions until the costs are incurred
+          - left: Donor says nothing about the income
+            right: Revenue in the statement of operations
+          - left: Board resolves to reinvest income the donor left unrestricted
+            right: Revenue, then a board transfer within net assets
+        explain: Donor terms drive the accounting. A board resolution changes the presentation within net assets but cannot turn unrestricted income into an endowment contribution.
+        ref: Part III, Section 4410
+      - id: rev4l1q10
+        type: classify
+        concept: rev4-capitalized-income
+        prompt: A Red Deer hospice foundation uses the restricted fund method with a General Fund, a Patient Care Fund and an Endowment Fund. Classify where each item of endowment income is recognized.
+        buckets:
+          - Endowment Fund revenue
+          - Patient Care Fund revenue
+          - General Fund revenue
+        items:
+          - text: Income the donor requires to be added to principal
+            bucket: 0
+          - text: Income the donor restricts to patient care
+            bucket: 1
+          - text: Income with no donor restriction
+            bucket: 2
+          - text: Unrealized gains that the donor's terms add to principal
+            bucket: 0
+        explain: Each piece follows its restriction to the matching fund. Gains and losses follow the same terms as the rest of the income.
+        ref: Part III, Section 4410
+
+  - id: rev4l2
+    title: Fair value and unrealized gains
+    intro: Endowments hold investments, and Section 3856 decides how those are measured. This lesson traces gains and losses through to each method's statements.
+    questions:
+      - id: rev4l2q01
+        type: mc
+        concept: rev4-3856-measurement
+        prompt: An Edmonton foundation's endowment holds TSX-listed shares, a portfolio of Government of Canada bonds and a GIC. It has made no fair value elections. Which are measured at fair value?
+        options:
+          - All three
+          - The TSX-listed shares only
+          - The bonds and the GIC only
+          - None; endowment investments are always at cost
+        answer: 1
+        explain: Equity investments quoted in an active market are measured at fair value. Bonds and GICs are measured at amortized cost unless the NPO elected fair value when it first recognized them.
+        ref: Part II, Section 3856
+      - id: rev4l2q02
+        type: tf
+        concept: rev4-3856-measurement
+        prompt: A foundation may elect to measure its bond portfolio at fair value, so long as it makes the election when it first recognizes the bonds.
+        answer: true
+        explain: Section 3856 lets an entity designate financial instruments to be measured at fair value at initial recognition. Many foundations do this so the whole endowment portfolio reflects current values.
+        ref: Part II, Section 3856
+      - id: rev4l2q03
+        type: calc
+        concept: rev4-gains
+        prompt: "A Lethbridge foundation's endowment holds TSX-listed shares (fair value $540,000 at the start of the year and $585,000 at the end, no purchases or sales) and bonds at amortized cost of $300,000. It earns $15,000 of dividends and $12,000 of interest in cash. The bonds' fair value rose $8,000. No fair value election was made. Enter the total investment return recognized for the year."
+        answer: 72000
+        unit: $
+        explain: Dividends $15,000 + interest $12,000 + unrealized gain on shares $45,000 = $72,000. The $8,000 increase in the bonds' fair value is not recognized because the bonds are at amortized cost.
+        ref: Part II, Section 3856
+      - id: rev4l2q04
+        type: je
+        concept: rev4-gains
+        prompt: The Lethbridge foundation uses the deferral method and its endowment terms add all investment return, including gains and losses, to principal. Record the year's $72,000 return ($27,000 in cash and $45,000 unrealized gain on the shares).
+        accounts:
+          - Cash
+          - Investments
+          - Endowment net assets
+          - Investment income
+          - Deferred contributions
+          - Unrealized gain on investments
+        lines:
+          - account: Cash
+            side: dr
+            amount: 27000
+          - account: Investments
+            side: dr
+            amount: 45000
+          - account: Endowment net assets
+            side: cr
+            amount: 72000
+        explain: The donor requires the whole return to be added to principal, so all of it, unrealized gain included, is a direct increase in endowment net assets. None of it touches the statement of operations.
+        ref: Part III, Section 4410
+      - id: rev4l2q05
+        type: je
+        concept: rev4-gains
+        prompt: "The next year the shares fall by $60,000, and the endowment earns $14,000 of dividends and $12,000 of interest in cash. Assume instead that the donor's terms make all investment return, including gains and losses, unrestricted. Under the deferral method, record the year's return."
+        accounts:
+          - Cash
+          - Unrealized loss on investments
+          - Investments
+          - Investment income
+          - Endowment net assets
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 26000
+          - account: Unrealized loss on investments
+            side: dr
+            amount: 60000
+          - account: Investments
+            side: cr
+            amount: 60000
+          - account: Investment income
+            side: cr
+            amount: 26000
+        explain: Unrestricted return, positive or negative, flows through the statement of operations. Revenues and losses are shown gross, so the net loss of $34,000 hits the year's excess of revenue over expenses even though the endowment principal is untouched.
+        ref: Part III, Section 4410
+      - id: rev4l2q06
+        type: mc
+        concept: rev4-gains
+        prompt: An endowment's terms add all gains to principal. Where does an unrealized gain on its shares appear under each method?
+        options:
+          - Deferral method, statement of operations; restricted fund method, statement of changes in net assets
+          - Deferral method, statement of changes in net assets; restricted fund method, Endowment Fund column of the statement of operations
+          - Both methods, deferred contributions
+          - Both methods, the notes only
+        answer: 1
+        explain: Under the deferral method, income added to principal is a direct increase in endowment net assets. Under the restricted fund method it is revenue of the Endowment Fund, so it appears in that fund's column of the statement of operations.
+        ref: Part III, Section 4410
+      - id: rev4l2q07
+        type: classify
+        concept: rev4-gains
+        prompt: A Calgary health foundation uses the deferral method. Classify where each unrealized gain is recognized.
+        buckets:
+          - Statement of operations
+          - Deferred contributions
+          - Endowment net assets directly
+        items:
+          - text: Gain on an endowment whose terms add all return to principal
+            bucket: 2
+          - text: Gain on an endowment whose return is restricted to cancer research not yet carried out
+            bucket: 1
+          - text: Gain on an endowment whose return is unrestricted
+            bucket: 0
+          - text: Gain on a board-designated long-term reserve
+            bucket: 0
+        explain: Gains follow the restriction on the return. Board-designated reserves carry no external restriction, so their gains are revenue even if the board intends to keep them invested.
+        ref: Part III, Section 4410
+      - id: rev4l2q08
+        type: calc
+        concept: rev4-gains
+        prompt: "A Banff mountain research society (deferral method) holds an endowment whose return, including gains and losses, is restricted to field research. Deferred contributions for this return were $40,000 at the start of the year. This year it earns $25,000 of interest and dividends, has an unrealized loss of $35,000 on its shares, and spends $18,000 on field research. Enter deferred contributions at year end."
+        answer: 12000
+        unit: $
+        explain: Restricted return, including losses, runs through deferred contributions. $40,000 + $25,000 − $35,000 − $18,000 = $12,000. Revenue of $18,000 matches the research spending.
+        ref: Part III, Section 4410
+      - id: rev4l2q09
+        type: je
+        concept: rev4-gains
+        prompt: For the Banff society, record the year's investment return only ($25,000 cash income and a $35,000 unrealized loss on shares), before recognizing any research revenue.
+        accounts:
+          - Cash
+          - Deferred contributions
+          - Investments
+          - Investment income
+          - Unrealized loss on investments
+          - Endowment net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 25000
+          - account: Deferred contributions
+            side: dr
+            amount: 10000
+          - account: Investments
+            side: cr
+            amount: 35000
+        explain: The net restricted return is a $10,000 loss, which reduces deferred contributions. Nothing goes to the statement of operations until research spending triggers recognition.
+        ref: Part III, Section 4410
+      - id: rev4l2q10
+        type: tf
+        concept: rev4-transaction-costs
+        prompt: Brokerage commissions paid to buy TSX-listed shares for an endowment, measured at fair value, are added to the cost of the shares.
+        answer: false
+        reasons:
+          - Transaction costs on items measured at fair value are expensed when incurred
+          - They must be deducted from endowment net assets directly
+          - They are deferred and amortized over five years
+        reason: 0
+        explain: For financial assets measured at fair value, transaction costs are recognized in the period incurred. Only items at amortized cost carry transaction costs in their carrying amount.
+        ref: Part II, Section 3856
+      - id: rev4l2q11
+        type: mc
+        concept: rev4-disclosure
+        prompt: Which disclosure about endowment investment income does Section 4410 call for?
+        options:
+          - The names of the endowment's investment managers
+          - Net investment income on endowment resources, split between amounts recognized as revenue, deferred and recognized directly in net assets
+          - A ten-year history of returns compared with a benchmark
+          - Only the dividends received, since unrealized gains are not income
+        answer: 1
+        explain: Because endowment income can land in three different places, readers need the split to see the whole return. Unrealized gains and losses on investments at fair value are part of net investment income.
+        ref: Part III, Section 4410
+
+  - id: rev4l3
+    title: Deficiencies, encroachment and board endowments
+    intro: Markets fall, boards borrow from endowments, and some endowments are endowments in name only. This lesson handles each.
+    questions:
+      - id: rev4l3q01
+        type: calc
+        concept: rev4-deficiency
+        prompt: "A St. Albert library foundation (deferral method) received a $1,000,000 endowment whose terms add all investment return, including losses, to principal. Earlier years added $50,000 of net gains. This year the portfolio loses $130,000. Enter the amount by which endowment net assets now fall short of the original gift."
+        answer: 80000
+        unit: $
+        explain: Endowment net assets were $1,050,000 and fall to $920,000. That is $80,000 below the $1,000,000 originally given. Because the donor's terms send losses to principal, the shortfall shows up in endowment net assets.
+        ref: Part III, Section 4410
+      - id: rev4l3q02
+        type: mc
+        concept: rev4-deficiency
+        prompt: The St. Albert board decides to transfer $80,000 of unrestricted net assets to restore the endowment to its original value. How is this shown?
+        options:
+          - As an $80,000 expense in the statement of operations
+          - As a transfer between net asset classes in the statement of changes in net assets, with disclosure
+          - As endowment contribution revenue
+          - As a receivable from the general fund
+        answer: 1
+        explain: The board's top-up is an internal decision moving resources between classes, not a transaction with an outside party. It is presented as a transfer within net assets. The policy and the reason belong in the notes.
+        ref: Part III, Section 4400
+      - id: rev4l3q03
+        type: tf
+        concept: rev4-deficiency
+        prompt: When an endowment's investments fall below the original gift, ASNPO requires the NPO to record a liability for the shortfall.
+        answer: false
+        reasons:
+          - No external party is owed anything; the loss is simply reflected in net assets, and a board may choose to top it up
+          - ASNPO requires an immediate cash transfer from operations
+          - The shortfall is recorded as a receivable from the donor
+        reason: 0
+        explain: Investment losses reduce the investments and the net asset class the terms point to. There is no obligation to an outside party, so no liability. Clear disclosure of the shortfall helps readers.
+        ref: Part III, Section 4400
+      - id: rev4l3q04
+        type: mc
+        concept: rev4-encroachment
+        prompt: A Medicine Hat museum's endowment agreement has no clause allowing spending of principal. The board wants to use $50,000 of principal to fix a leaking roof. What is the position?
+        options:
+          - The board may spend it, since it controls the investments
+          - It may spend it if it shows the withdrawal as an expense
+          - It cannot use the principal without the donor's consent or a legal variation of the terms; doing so would breach the restriction
+          - It may spend it if it repays it within five years
+        answer: 2
+        explain: The permanent restriction is external. Only the donor, or a court or other legal authority, can vary it. A board vote alone does not.
+        ref: Part III, Section 4410
+      - id: rev4l3q05
+        type: je
+        concept: rev4-encroachment
+        prompt: A Camrose seniors' society's endowment agreement allows the board to spend up to 10% of principal on emergency building repairs. The society (deferral method) spends $40,000 of endowment cash on emergency furnace repairs, recorded as repairs expense. Record the related reclassification of net assets.
+        accounts:
+          - Endowment net assets
+          - Unrestricted net assets
+          - Donation revenue
+          - Repairs and maintenance expense
+          - Deferred contributions
+          - Internally restricted net assets
+        lines:
+          - account: Endowment net assets
+            side: dr
+            amount: 40000
+          - account: Unrestricted net assets
+            side: cr
+            amount: 40000
+        explain: The endowment never passed through revenue, so it is not recognized as revenue now. The usual approach is a reclassification in the statement of changes in net assets to fund the expense. ASNPO does not address encroachment directly, so the policy is disclosed.
+        ref: Part III, Section 4400
+      - id: rev4l3q06
+        type: je
+        concept: rev4-quasi
+        prompt: An Edmonton arts society (deferral method) has recognized a $250,000 unrestricted bequest as revenue. The board then resolves to invest it permanently as a board endowment and spend only the income. Record the board's designation.
+        accounts:
+          - Unrestricted net assets
+          - Internally restricted net assets
+          - Endowment net assets
+          - Bequest revenue
+          - Deferred contributions
+          - Investments
+        lines:
+          - account: Unrestricted net assets
+            side: dr
+            amount: 250000
+          - account: Internally restricted net assets
+            side: cr
+            amount: 250000
+        explain: A board-created endowment is an internal restriction. The bequest stays in revenue, and the designation is a transfer within net assets that the board can reverse. It is not part of net assets restricted for endowment.
+        ref: Part III, Section 4400
+      - id: rev4l3q07
+        type: tf
+        concept: rev4-quasi
+        prompt: Income earned on the arts society's board endowment, which the board requires to be reinvested, is revenue in the statement of operations.
+        answer: true
+        reasons:
+          - The income carries no external restriction, so it is revenue; the board's reinvestment is a transfer within net assets
+          - It is a direct increase in endowment net assets
+          - It is deferred until the board decides to spend it
+        reason: 0
+        explain: Only donors create restrictions. Income on internally restricted resources is unrestricted revenue, and the board's decision to reinvest it is shown as a transfer.
+        ref: Part III, Section 4410
+      - id: rev4l3q08
+        type: classify
+        concept: rev4-quasi
+        prompt: Classify each fund held by a Grande Prairie community foundation.
+        buckets:
+          - True endowment
+          - Internally restricted (board) endowment
+        items:
+          - text: A gift whose donor requires the capital to be kept permanently
+            bucket: 0
+          - text: Surplus the board resolved to invest, spending 4% a year
+            bucket: 1
+          - text: Gifts received in response to an appeal for a permanent legacy fund
+            bucket: 0
+          - text: A fund the board can release by resolution to cover a deficit
+            bucket: 1
+        explain: Permanence imposed by donors, explicitly or implied by an appeal, makes a true endowment. Anything the board created and can undo is internally restricted.
+        ref: Part III, Section 4400
+      - id: rev4l3q09
+        type: calc
+        concept: rev4-quasi
+        prompt: "A Fort McMurray Friendship Centre's board endowment (internally restricted net assets) starts the year at $600,000. Its investments earn $36,000, all recognized as revenue, and the board transfers that amount into the reserve. The board then releases $50,000 to fund a roof replacement. Enter the internally restricted balance at year end."
+        answer: 586000
+        unit: $
+        explain: $600,000 + $36,000 transferred in − $50,000 released = $586,000. Both movements are transfers in the statement of changes in net assets; the $36,000 itself was revenue.
+        ref: Part III, Section 4400
+      - id: rev4l3q10
+        type: mc
+        concept: rev4-quasi
+        prompt: How should a board endowment be presented in the statement of financial position?
+        options:
+          - Within net assets restricted for endowment, since it is invested permanently
+          - As internally restricted net assets, separate from net assets restricted for endowment
+          - As deferred contributions
+          - It is not shown separately at all
+        answer: 1
+        explain: Mixing board designations with donor endowments would overstate what is externally restricted. Internally restricted amounts are shown separately, and readers know the board can change them.
+        ref: Part III, Section 4400
+
+  - id: rev4l4
+    title: Government funding and repayment
+    intro: Government money arrives with conditions and claw-backs. This lesson works through returned funds under both methods and repayments for breached terms.
+    questions:
+      - id: rev4l4q01
+        type: mc
+        concept: rev4-gov-contribution
+        prompt: An Alberta ministry funds a Lethbridge family services agency's home visiting program with detailed eligibility rules, quarterly reports and a requirement to return unspent funds. How does the agency account for the funding under ASNPO?
+        options:
+          - As exchange revenue under Section 3400, because the ministry receives reports
+          - As government assistance under Part II Section 3800
+          - As a restricted contribution under Section 4410
+          - As a loan until the program ends
+        answer: 2
+        explain: Section 4410 treats government funding to an NPO as a contribution. Reporting requirements alone do not create a restriction, but the stipulations on how the money must be spent, backed by the duty to return unspent funds, make it a restricted contribution. The agency does not turn to Section 3800 because Part III deals with government funding directly.
+        ref: Part III, Section 4410
+      - id: rev4l4q02
+        type: tf
+        concept: rev4-gov-contribution
+        prompt: An NPO applying ASNPO accounts for a provincial operating grant by following Part II Section 3800 on government assistance.
+        answer: false
+        reasons:
+          - Section 4410 deals with government funding to NPOs as contributions, so Part II is not needed for it
+          - Section 3800 applies to all government money received by any entity
+          - Government grants are outside every Handbook section
+        reason: 0
+        explain: NPOs use Part II only for matters Part III does not address. Government funding to an NPO is addressed in Section 4410 as a contribution.
+        ref: Part III, Section 4410
+      - id: rev4l4q03
+        type: calc
+        concept: rev4-repayable
+        prompt: "A Calgary settlement agency (deferral method, March 31 year end) receives a $150,000 federal grant on April 1, year 1 for an 18-month language program. Unspent funds must be returned. It spends $90,000 in year 1 and $45,000 in year 2 before the program ends on September 30, year 2. Enter grant revenue recognized in year 2."
+        answer: 45000
+        unit: $
+        explain: Revenue matches eligible spending. Year 1 recognized $90,000 and year 2 recognizes $45,000. The remaining $15,000 is not revenue; it must be returned.
+        ref: Part III, Section 4410
+      - id: rev4l4q04
+        type: je
+        concept: rev4-repayable
+        prompt: Continue the Calgary case. Record the obligation to return the $15,000 unspent when the program ends.
+        accounts:
+          - Deferred contributions
+          - Grants repayable
+          - Contribution revenue
+          - Cash
+          - Grant repayment expense
+          - Unrestricted net assets
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 15000
+          - account: Grants repayable
+            side: cr
+            amount: 15000
+        explain: The unspent amount was sitting in deferred contributions. Once it must be returned, it is a liability owed to the funder, not a deferral waiting for expenses.
+        ref: Part III, Section 4410
+      - id: rev4l4q05
+        type: je
+        concept: rev4-repayable
+        prompt: "A Red Deer youth agency uses the restricted fund method and records a $200,000 provincial program grant as revenue of its Youth Program Fund in year 1. In year 2 the program ends with $30,000 unspent, which the agreement requires the agency to return. Record the obligation in year 2."
+        accounts:
+          - Grant repayment expense (Youth Program fund)
+          - Grants repayable (Youth Program fund)
+          - Deferred contributions (General fund)
+          - Contribution revenue (Youth Program fund)
+          - Cash (Youth Program fund)
+          - Interfund transfer out (General fund balance)
+        lines:
+          - account: Grant repayment expense (Youth Program fund)
+            side: dr
+            amount: 30000
+          - account: Grants repayable (Youth Program fund)
+            side: cr
+            amount: 30000
+        explain: Under the restricted fund method the whole grant was revenue in year 1, so there is no deferral to reverse. The repayment is a charge in the fund in the year the obligation arises. Last year's statements are not restated.
+        ref: Part III, Section 4410
+      - id: rev4l4q06
+        type: je
+        concept: rev4-breach
+        prompt: A Grande Prairie health society (deferral method) recognized a federal grant as revenue last year. This year the funder's audit finds $22,000 of the costs were ineligible and issues a formal demand for repayment, which the society accepts. Record the obligation.
+        accounts:
+          - Grant repayment expense
+          - Grants repayable
+          - Deferred contributions
+          - Contribution revenue
+          - Unrestricted net assets
+          - Cash
+        lines:
+          - account: Grant repayment expense
+            side: dr
+            amount: 22000
+          - account: Grants repayable
+            side: cr
+            amount: 22000
+        explain: The revenue was properly recognized last year. The repayment arises from a new event, the funder's finding, so it is a current-year charge and a liability. It is not a prior-period error.
+        ref: Part II, Section 3290
+      - id: rev4l4q07
+        type: mc
+        concept: rev4-breach
+        prompt: At year end the funder's audit is still in progress. Management and legal counsel judge that repayment of some costs is likely but cannot yet estimate the amount. What is the treatment?
+        options:
+          - Accrue a liability for the full grant
+          - Disclose the contingency in the notes without accruing
+          - Do nothing until the audit is final
+          - Reverse last year's revenue by restating
+        answer: 1
+        explain: A contingent loss is accrued when it is likely and reasonably estimable. When it is likely but cannot be estimated, it is disclosed instead, along with the fact that no estimate can be made.
+        ref: Part II, Section 3290
+      - id: rev4l4q08
+        type: calc
+        concept: rev4-repayable
+        prompt: "A Medicine Hat mental health society's operating deferred contributions were $80,000 at the start of the year. It received $300,000 of restricted government funding, recognized $310,000 as revenue, and reclassified $12,000 of unspent funds to grants repayable when a program ended. Enter deferred contributions at year end."
+        answer: 58000
+        unit: $
+        explain: $80,000 + $300,000 − $310,000 − $12,000 = $58,000. The continuity in the notes should show the reclassification to a liability as its own line, not hide it within revenue.
+        ref: Part III, Section 4410
+      - id: rev4l4q09
+        type: classify
+        concept: rev4-repayable
+        prompt: A Camrose community health society (deferral method) holds the following government funding balances at year end. Classify each.
+        buckets:
+          - Deferred contributions
+          - Grants repayable
+          - Recognized as revenue
+        items:
+          - text: Unspent provincial grant for a program that runs until next September
+            bucket: 0
+          - text: Unspent grant for a program that ended in February; the agreement requires return
+            bucket: 1
+          - text: Grant spent on eligible program costs this year
+            bucket: 2
+          - text: Advance received in March, restricted to next year's operations
+            bucket: 0
+          - text: Amount the funder has formally demanded back for ineligible costs
+            bucket: 1
+        explain: Deferred contributions hold restricted money still waiting for its expenses. Once money must be given back, it is a liability. Money spent as the funder intended is revenue.
+        ref: Part III, Section 4410
+      - id: rev4l4q10
+        type: tf
+        concept: rev4-breach
+        prompt: A provincial capital grant for a Banff seniors' residence must be repaid if the building is sold within 15 years. The society has no plans to sell. It should record the whole grant as a liability until the 15 years pass.
+        answer: false
+        reasons:
+          - Repayment is not likely, so the grant is a deferred capital contribution and the clause is disclosed
+          - Any grant with a repayment clause is a loan under ASNPO
+          - It should recognize the whole grant as revenue immediately
+        reason: 0
+        explain: A claw-back that depends on an unlikely future event does not make the grant a liability. The society accounts for it as a capital contribution and describes the clause in the notes. If a sale becomes likely, the liability is then recognized.
+        ref: Part II, Section 3290
+
+  - id: rev4l5
+    title: Exchange revenue and mixed transactions
+    intro: Fees, tickets, tuition and memberships follow Section 3400, not the contribution rules. The hard cases are the ones that are partly both.
+    questions:
+      - id: rev4l5q01
+        type: classify
+        concept: rev4-3400-criteria
+        prompt: An Edmonton theatre society has a December 31 year end. Classify each item at year end.
+        buckets:
+          - Revenue this year
+          - Deferred revenue
+        items:
+          - text: Tickets sold in November for a February performance
+            bucket: 1
+          - text: Tickets sold and used for the December holiday show
+            bucket: 0
+          - text: Fees for a summer acting camp that ran in July
+            bucket: 0
+          - text: Fees collected in December for a spring acting course
+            bucket: 1
+        explain: Exchange revenue is recognized when the service is performed. Cash received before the performance or course is deferred revenue, a liability for services still owed.
+        ref: Part II, Section 3400
+      - id: rev4l5q02
+        type: calc
+        concept: rev4-3400-criteria
+        prompt: A Calgary theatre sells 1,200 season subscriptions at $240 each for a six-show season. Shows are of equal value. By its December 31 year end, two shows have been performed. Enter subscription revenue for the year.
+        answer: 96000
+        unit: $
+        explain: Total subscriptions are 1,200 × $240 = $288,000. Two of six shows performed gives $288,000 × 2/6 = $96,000. The other $192,000 stays in deferred revenue.
+        ref: Part II, Section 3400
+      - id: rev4l5q03
+        type: je
+        concept: rev4-deferred-revenue
+        prompt: The theatre recorded all $288,000 of subscription cash as deferred revenue when it was collected. Record the year-end adjustment for the two shows performed.
+        accounts:
+          - Deferred revenue
+          - Ticket revenue
+          - Deferred contributions
+          - Donation revenue
+          - Cash
+          - Accounts receivable
+        lines:
+          - account: Deferred revenue
+            side: dr
+            amount: 96000
+          - account: Ticket revenue
+            side: cr
+            amount: 96000
+        explain: As each show is performed, the theatre's obligation is satisfied and that share of deferred revenue becomes revenue. Deferred contributions are for restricted gifts, not prepaid tickets.
+        ref: Part II, Section 3400
+      - id: rev4l5q04
+        type: mc
+        concept: rev4-deferred-revenue
+        prompt: What is the essential difference between deferred revenue and deferred contributions?
+        options:
+          - There is none; both are timing differences and can be combined
+          - Deferred revenue is an obligation to deliver goods or services already paid for; deferred contributions are restricted gifts awaiting the expenses they fund
+          - Deferred revenue is only used under the restricted fund method
+          - Deferred contributions are always current and deferred revenue is always long-term
+        answer: 1
+        explain: Deferred revenue arises under Section 3400 from a promise to perform for the payer. Deferred contributions arise under Section 4410 from external restrictions. If a ticket buyer cancels, a refund may be owed; a donor's restricted gift works differently. Combining them hides that.
+        ref: Part II, Section 3400
+      - id: rev4l5q05
+        type: calc
+        concept: rev4-memberships
+        prompt: A Red Deer museum sells 1,500 annual memberships at $120 on October 1. Each gives unlimited admission and discounts worth about $120 over twelve months. Its year end is December 31. Enter membership revenue for the year.
+        answer: 45000
+        unit: $
+        explain: The benefits are commensurate with the fee, so this is exchange revenue recognized over the membership period. 1,500 × $120 × 3/12 = $45,000.
+        ref: Part II, Section 3400
+      - id: rev4l5q06
+        type: calc
+        concept: rev4-memberships
+        prompt: "The same museum also sells 200 patron memberships at $500 on October 1. Patrons get the same benefits as regular members, worth $120, and nothing else. The excess is unrestricted. Enter total revenue from patron memberships for the year ended December 31."
+        answer: 82000
+        unit: $
+        explain: Each patron gives $380 more than the value received. That $76,000 (200 × $380) is an unrestricted contribution, revenue on receipt. The exchange part, 200 × $120 = $24,000, is earned over twelve months, so $6,000 is recognized. Total $82,000.
+        ref: Part III, Section 4410
+      - id: rev4l5q07
+        type: je
+        concept: rev4-memberships
+        prompt: Record the receipt of the $100,000 from 200 patron memberships on October 1.
+        accounts:
+          - Cash
+          - Donation revenue
+          - Deferred revenue
+          - Membership revenue
+          - Deferred contributions
+          - Accounts receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 100000
+          - account: Donation revenue
+            side: cr
+            amount: 76000
+          - account: Deferred revenue
+            side: cr
+            amount: 24000
+        explain: The contribution part is unrestricted and recognized at once. The exchange part is deferred revenue and moves to membership revenue as the year of benefits passes.
+        ref: Part III, Section 4410
+      - id: rev4l5q08
+        type: calc
+        concept: rev4-3400-criteria
+        prompt: "A Lethbridge tutoring society charges $4,800 for an eight-month program, September to April, collected in advance from 50 students. Fees are refundable pro rata for months not yet started. Five students withdraw at the start of November and are refunded for the six remaining months. Enter tuition revenue for the year ended December 31."
+        answer: 114000
+        unit: $
+        explain: "Monthly fee is $600. The five who left earned 2 months each: 5 × $600 × 2 = $6,000. The 45 who stayed earned 4 months: 45 × $600 × 4 = $108,000. Total $114,000. Refunds are $18,000 and deferred revenue is $108,000, so $240,000 is fully accounted for."
+        ref: Part II, Section 3400
+      - id: rev4l5q09
+        type: calc
+        concept: rev4-multiple-element
+        prompt: "A Medicine Hat hockey association charges $900 per player. The fee covers a full equipment kit handed out at registration (stand-alone value $120) and an eight-month ice program from September to April (stand-alone value $1,080). Allocate the fee on relative values. With 300 players and a December 31 year end, enter registration revenue for the year."
+        answer: 148500
+        unit: $
+        explain: The kit is $120 ÷ $1,200 = 10% of the fee, $90, earned on delivery. The program is $810, earned evenly, so 4/8 × $810 = $405 by December 31. Per player $495, × 300 = $148,500.
+        ref: Part II, Section 3400
+      - id: rev4l5q10
+        type: je
+        concept: rev4-mixed
+        prompt: "In December, a Calgary credit union pays a children's charity $25,000 to sponsor its February gala. In return it gets ten gala tickets (fair value $250 each) and logo advertising with a fair value of $7,500, both delivered at the gala. The rest is a gift with no restrictions. The charity has a December 31 year end. Record the receipt."
+        accounts:
+          - Cash
+          - Deferred revenue
+          - Donation revenue
+          - Sponsorship revenue
+          - Deferred contributions
+          - Accounts receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 25000
+          - account: Deferred revenue
+            side: cr
+            amount: 10000
+          - account: Donation revenue
+            side: cr
+            amount: 15000
+        explain: The benefits are worth $2,500 + $7,500 = $10,000. That exchange part is earned at the February gala, so it is deferred revenue. The $15,000 excess is an unrestricted contribution, recognized now.
+        ref: Part III, Section 4410
+      - id: rev4l5q11
+        type: mc
+        concept: rev4-3400-criteria
+        prompt: A St. Albert community league runs an after-school program for which a partner agency is billed monthly. The agency is in financial distress and has paid nothing for five months. How should the league treat new monthly billings?
+        options:
+          - Recognize revenue as billed and fully provide for it as bad debt expense
+          - Recognize revenue only when collection becomes reasonably assured, which may mean as cash is received
+          - Treat the amounts as contributions to the agency
+          - Defer the billings until the program ends
+        answer: 1
+        explain: Section 3400 requires collection to be reasonably assured before revenue is recognized. When it is not reasonably assured at the time of the service, revenue waits until it is, which is different from recognizing revenue and later providing for a doubtful account.
+        ref: Part II, Section 3400

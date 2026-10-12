@@ -1,0 +1,896 @@
+id: rev3
+course: revenue
+number: 3
+title: Pledges, bequests and gifts in kind
+summary: When a promise to give becomes an asset, how to handle multi-year pledges, allowances, conditional promises and bequests in probate, and when contributed materials, services, capital assets and event gifts are recognized, measured and disclosed.
+refs:
+  - Part III, Section 4410
+  - Part III, Section 4420
+  - Part III, Section 4433
+status: ready
+
+concepts:
+  - id: rev3-receivable-criteria
+    title: Recognizing contributions receivable
+    summary: A contribution receivable, such as a pledge or a bequest, is recognized as an asset only when the amount can be reasonably estimated and ultimate collection is reasonably assured. When both conditions are met, recognition is required, not optional.
+    ref: Part III, Section 4420
+  - id: rev3-pledge-practice
+    title: Why many pledges stay off the books
+    summary: Most pledges are not legally enforceable, and many NPOs lack the collection history to judge them. When collection is not reasonably assured, the pledge is recognized only as cash arrives. That is a judgement about the criteria, not a free policy choice.
+    ref: Part III, Section 4420
+  - id: rev3-pledge-portfolio
+    title: Estimating collectible pledges
+    summary: When an NPO has a reliable history for a large group of similar pledges, it can estimate the collectible portion and recognize that amount, carrying an allowance for the part it does not expect to collect.
+    ref: Part III, Section 4420
+  - id: rev3-multiyear
+    title: Multi-year pledges
+    summary: A pledge paid over several years is recognized in full when the criteria are met. If its terms tie each instalment to the activities of a particular year, the instalments for future years are restricted contributions that the deferral method defers.
+    ref: Part III, Section 4410
+  - id: rev3-writeoffs
+    title: Allowances and write-offs
+    summary: A pledge that later proves uncollectible is written off against the allowance, or charged to expense if no allowance exists. A restricted pledge still sitting in deferred contributions is reversed against the deferral, because no revenue was ever recognized.
+    ref: Part III, Section 4420
+  - id: rev3-conditional
+    title: Conditions versus restrictions
+    summary: A restriction governs how a gift is used. A condition makes the gift itself depend on a future, uncertain event, such as a matching target. Until the condition is met, collection is not reasonably assured and nothing is recognized.
+    ref: Part III, Section 4410
+  - id: rev3-bequests
+    title: Bequests
+    summary: A bequest is a contribution receivable once the amount can be reasonably estimated and collection is reasonably assured. That is rarely true while an estate is in probate, under challenge or without an executor's accounting, so most bequests are recognized late or on receipt.
+    ref: Part III, Section 4420
+  - id: rev3-life-insurance
+    title: Gifts of life insurance
+    summary: When a donor makes the NPO both owner and beneficiary of a policy with a cash surrender value, the NPO recognizes the contribution at the cash surrender value. Merely being named a beneficiary on a policy the donor still owns gives the NPO nothing to record.
+    ref: Part III, Section 4410
+  - id: rev3-securities
+    title: Gifts of securities
+    summary: Donated shares and other investments are recorded at fair value on the date of the contribution. The donor's original cost is irrelevant.
+    ref: Part III, Section 4410
+  - id: rev3-materials-criteria
+    title: Contributed materials, the policy choice
+    summary: An NPO may choose to recognize contributed materials. If it does, it recognizes them only when fair value can be reasonably estimated and the materials are used in the normal course of operations and would otherwise have been purchased. The policy is applied consistently.
+    ref: Part III, Section 4410
+  - id: rev3-materials-distribution
+    title: Materials held for distribution or sale
+    summary: Food banks, thrift stores and relief agencies receive goods they pass on or sell rather than use. Many conclude the goods would not otherwise have been purchased or that fair value cannot be reasonably estimated, so they do not recognize them and recognize sales proceeds instead.
+    ref: Part III, Section 4410
+  - id: rev3-services-criteria
+    title: Contributed services
+    summary: Contributed services follow the same optional policy and the same three conditions as materials. When recognized, they are shown as revenue and as the expense (or asset) the NPO would otherwise have paid for.
+    ref: Part III, Section 4410
+  - id: rev3-volunteers
+    title: Why volunteer time is rarely recognized
+    summary: Most volunteer work, such as board service, canvassing and sorting donations, would not otherwise be purchased and is hard to value reliably, so it fails the conditions. Volunteer hours are often reported outside the financial statements instead.
+    ref: Part III, Section 4410
+  - id: rev3-contributed-tca
+    title: Contributed capital assets are not optional
+    summary: Donated tangible capital assets must be recognized at fair value at the date of contribution, or at nominal value when fair value cannot be reasonably determined. The policy choice for materials and services does not apply to them. The only relief is the small-NPO option in Section 4433 for organizations with average annual revenues under $500,000.
+    ref: Part III, Section 4433
+  - id: rev3-event-gifts
+    title: Gifts in kind for fundraising events
+    summary: Donated venues, catering and prizes used to run an event can meet the conditions when the NPO would otherwise have paid for them. Donated auction items are usually not recognized until sold, and the proceeds are fundraising revenue reported gross.
+    ref: Part III, Section 4410
+  - id: rev3-fv-not-estimable
+    title: When fair value cannot be estimated
+    summary: Contributed materials and services whose fair value cannot be reasonably estimated are not recognized at all. Only contributed capital assets fall back to nominal value.
+    ref: Part III, Section 4410
+  - id: rev3-disclosure
+    title: Disclosures
+    summary: An NPO discloses its method of accounting for contributions, its policy for contributed materials and services, and the nature and amount of contributed materials and services it recognized.
+    ref: Part III, Section 4410
+
+lessons:
+  - id: rev3l1
+    title: Pledges and contributions receivable
+    intro: A promise to give is not cash. This lesson tests when a pledge becomes an asset, how to estimate the collectible part of a pledge portfolio, and how to unwind pledges that go bad.
+    questions:
+      - id: rev3l1q01
+        type: classify
+        concept: rev3-receivable-criteria
+        prompt: At year end, a Calgary children's charity holds the following promises. Classify each by whether it is recognized as a contribution receivable now.
+        buckets:
+          - Recognize a receivable now
+          - Recognize only when received
+        items:
+          - text: A signed three-year pledge from a foundation that has paid every past pledge on schedule
+            bucket: 0
+          - text: Telethon phone pledges from a first-ever telethon, with no history to estimate how many will be paid
+            bucket: 1
+          - text: Telethon pledges where ten years of records show a stable 92% collection rate
+            bucket: 0
+          - text: A verbal promise from a first-time guest at the spring gala
+            bucket: 1
+          - text: A signed municipal operating grant for the current year, with cash due next month
+            bucket: 0
+        explain: Recognition needs a reasonably estimable amount and reasonably assured collection. A strong payment history or a signed agreement supports both. Where a stable history exists for a group of pledges, the collectible portion can be estimated and recognized. Without history, collection is not reasonably assured.
+        ref: Part III, Section 4420
+      - id: rev3l1q02
+        type: tf
+        concept: rev3-pledge-practice
+        prompt: An NPO may adopt a policy of never recording pledges until cash arrives, even for pledges that clearly meet both recognition conditions.
+        answer: false
+        reasons:
+          - When both conditions are met, the contribution receivable is recognized; there is no policy choice
+          - ASNPO requires every pledge to be recorded when made, whatever the risk
+          - Pledges may only be recorded under the restricted fund method
+        reason: 0
+        explain: Many NPOs record pledges on receipt because they conclude collection is not reasonably assured. That is a judgement about the criteria. Once a pledge does meet both conditions, the receivable is recognized.
+        ref: Part III, Section 4420
+      - id: rev3l1q03
+        type: mc
+        concept: rev3-pledge-practice
+        prompt: Why do so many Alberta charities record most pledges only when the cash is received?
+        options:
+          - CRA rules forbid recording a pledge before a receipt is issued
+          - Pledges are usually not legally enforceable and the charity cannot show collection is reasonably assured
+          - Section 4420 bans recognition of pledges payable beyond one year
+          - Auditors cannot confirm any pledge balance
+        answer: 1
+        explain: Donors can walk away from most pledges without consequence. Unless history or a signed agreement gives reasonable assurance of collection, the recognition conditions are not met. Tax receipting has no bearing on accounting recognition.
+        ref: Part III, Section 4420
+      - id: rev3l1q04
+        type: calc
+        concept: rev3-pledge-portfolio
+        prompt: An Edmonton hospital foundation's annual radiothon raises $400,000 of unrestricted pledges. Ten years of records show a consistent 8% are never paid. Enter the net carrying amount of the pledges receivable (gross receivable less allowance) right after the radiothon, before any are collected.
+        answer: 368000
+        unit: $
+        explain: The collectible portion can be reasonably estimated from a stable history, so the net asset is $400,000 × 92% = $368,000. The $32,000 the foundation does not expect to collect sits in an allowance. Whether the $32,000 is shown as reduced revenue or as bad debt expense is a presentation choice; the net receivable is the same either way.
+        ref: Part III, Section 4420
+      - id: rev3l1q05
+        type: je
+        concept: rev3-pledge-portfolio
+        prompt: Record the radiothon pledges ($400,000 gross, 8% expected to be uncollectible, unrestricted) so that revenue reflects only the amount expected to be collected.
+        accounts:
+          - Contributions receivable
+          - Allowance for uncollectible pledges
+          - Donation revenue
+          - Deferred contributions
+          - Bad debt expense
+          - Cash
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 400000
+          - account: Allowance for uncollectible pledges
+            side: cr
+            amount: 32000
+          - account: Donation revenue
+            side: cr
+            amount: 368000
+        explain: The receivable is carried gross with a contra allowance, and revenue is the $368,000 expected to be collected. Some NPOs instead record $400,000 of revenue and $32,000 of bad debt expense. The net asset and the excess for the year are the same; the prompt asks for the net-revenue presentation, which shows only what donors are expected to give.
+        ref: Part III, Section 4420
+      - id: rev3l1q06
+        type: je
+        concept: rev3-multiyear
+        prompt: A Lethbridge museum (deferral method) signs a $90,000 pledge with a long-time foundation donor at the start of year 1. It is payable $30,000 a year for three years, and the agreement says each instalment funds that year's school program. Collection is reasonably assured. Record the pledge at signing, before any program costs are incurred.
+        accounts:
+          - Contributions receivable
+          - Deferred contributions
+          - Donation revenue
+          - Cash
+          - Endowment net assets
+          - Allowance for uncollectible pledges
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 90000
+          - account: Deferred contributions
+            side: cr
+            amount: 90000
+        explain: The whole pledge meets the criteria, so the full $90,000 is a receivable. Each instalment is restricted to a particular year's program, so it is deferred and recognized as that year's program costs are incurred.
+        ref: Part III, Section 4410
+      - id: rev3l1q07
+        type: calc
+        concept: rev3-multiyear
+        prompt: Continue the museum case. In year 1 the museum collects the first $30,000 and spends $34,000 on the school program. Enter the deferred contributions balance for this pledge at the end of year 1.
+        answer: 60000
+        unit: $
+        explain: Only the $30,000 tied to year 1 can be recognized, even though spending was $34,000. The year 2 and 3 instalments, $60,000, stay deferred. The extra $4,000 of spending is funded from other resources.
+        ref: Part III, Section 4410
+      - id: rev3l1q08
+        type: mc
+        concept: rev3-multiyear
+        prompt: A Red Deer hockey association uses the restricted fund method and has a Capital Fund. A reliable sponsor signs a $50,000 pledge restricted to new rink boards, payable over two years. When is the contribution recognized as revenue?
+        options:
+          - As each instalment is collected, in the General Fund
+          - In the Capital Fund when the pledge is signed and recognized as receivable
+          - Over the useful life of the rink boards, in the General Fund
+          - Never; it goes directly to net assets invested in capital assets
+        answer: 1
+        explain: Under the restricted fund method, a restricted contribution with a matching restricted fund is revenue of that fund when received or receivable. The pledge meets the recognition criteria at signing, so the Capital Fund recognizes it then.
+        ref: Part III, Section 4410
+      - id: rev3l1q09
+        type: je
+        concept: rev3-writeoffs
+        prompt: A Medicine Hat seniors' society (deferral method) recorded a $20,000 pledge from a local company restricted to next year's transportation program. Before any program costs are incurred, the company goes bankrupt and the pledge will not be paid. No allowance was set up for it. Record the write-off.
+        accounts:
+          - Deferred contributions
+          - Contributions receivable
+          - Bad debt expense
+          - Donation revenue
+          - Allowance for uncollectible pledges
+          - Cash
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 20000
+          - account: Contributions receivable
+            side: cr
+            amount: 20000
+        explain: The pledge never reached revenue; it was sitting in deferred contributions. Reversing the deferral removes both sides. Charging bad debt expense would show a loss on a gift that was never recognized as income.
+        ref: Part III, Section 4420
+      - id: rev3l1q10
+        type: je
+        concept: rev3-writeoffs
+        prompt: Back at the Edmonton hospital foundation, $15,000 of last year's radiothon pledges are now confirmed uncollectible. The allowance from last year still holds $32,000. Record the write-off.
+        accounts:
+          - Allowance for uncollectible pledges
+          - Contributions receivable
+          - Bad debt expense
+          - Donation revenue
+          - Deferred contributions
+          - Cash
+        lines:
+          - account: Allowance for uncollectible pledges
+            side: dr
+            amount: 15000
+          - account: Contributions receivable
+            side: cr
+            amount: 15000
+        explain: The loss was anticipated when the allowance was set up, so the write-off uses the allowance and does not touch this year's revenue or expenses. The remaining allowance is reassessed at year end.
+        ref: Part III, Section 4420
+      - id: rev3l1q11
+        type: tf
+        concept: rev3-receivable-criteria
+        prompt: Under the deferral method, the fact that a pledge is restricted to a future program means it cannot be recognized as a receivable until the program begins.
+        answer: false
+        reasons:
+          - The restriction affects when revenue is recognized, not whether the receivable is recognized
+          - Restricted pledges are never recognized under ASNPO
+          - Restricted pledges must go directly to net assets
+        reason: 0
+        explain: Asset recognition depends only on a reasonable estimate and reasonable assurance of collection. The restriction decides where the credit goes; under the deferral method it is deferred contributions until the program costs are incurred.
+        ref: Part III, Section 4420
+
+  - id: rev3l2
+    title: Conditions, bequests and special gifts
+    intro: Conditional promises, estates in probate, life insurance and gifts of shares all test the same two recognition conditions, in different ways. Work through each.
+    questions:
+      - id: rev3l2q01
+        type: classify
+        concept: rev3-conditional
+        prompt: Classify each stipulation in gift agreements received by a St. Albert hockey association.
+        buckets:
+          - Restriction on use
+          - Condition on whether the gift is received
+        items:
+          - text: Must be spent on goalie equipment
+            bucket: 0
+          - text: Paid only if the city approves the arena expansion permit
+            bucket: 1
+          - text: Must be held permanently, with only the income spent
+            bucket: 0
+          - text: Paid only if the association raises a matching amount from other donors
+            bucket: 1
+          - text: May only be used in next year's season
+            bucket: 0
+        explain: A restriction tells the NPO how or when to use a gift it has received. A condition makes the gift itself depend on an uncertain future event. Restricted gifts are recognized when the criteria are met; conditional promises are not, because collection is not reasonably assured until the condition is met.
+        ref: Part III, Section 4410
+      - id: rev3l2q02
+        type: mc
+        concept: rev3-conditional
+        prompt: A donor promises a Banff arts society $100,000 for its new studio, but only if the society raises $100,000 from others by June 30. At the March 31 year end the society has raised $40,000. What does it record for the donor's promise?
+        options:
+          - A $100,000 receivable and deferred capital contributions
+          - A $40,000 receivable, matching what has been raised so far
+          - Nothing, because the gift depends on an uncertain future event
+          - $100,000 directly in net assets
+        answer: 2
+        explain: Collection depends on a matching target that may not be met, so collection is not reasonably assured. Nothing is recognized until the condition is met. The society may describe the promise in the notes if it is significant.
+        ref: Part III, Section 4410
+      - id: rev3l2q03
+        type: je
+        concept: rev3-conditional
+        prompt: Continue the Banff case. In May the society reaches its $100,000 matching target, and the donor confirms payment in 30 days. The gift is restricted to building the studio, which will be amortized, and the society uses the deferral method. Record the donor's promise.
+        accounts:
+          - Contributions receivable
+          - Deferred capital contributions
+          - Donation revenue
+          - Endowment net assets
+          - Cash
+          - Amortization of deferred capital contributions
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 100000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 100000
+        explain: Once the condition is met, collection is reasonably assured and the receivable is recognized. The gift is restricted to an amortizable capital asset, so it is deferred and later recognized on the same basis as the studio is amortized.
+        ref: Part III, Section 4410
+      - id: rev3l2q04
+        type: mc
+        concept: rev3-bequests
+        prompt: A donor died in February, leaving 15% of the residue of their estate to a Camrose hospice. At the hospice's March 31 year end, probate has not been granted, the estate's main asset is a farm not yet appraised, and a relative has filed a claim against the estate. What should the hospice record?
+        options:
+          - 15% of the farm's assessed property tax value
+          - Nothing yet; the amount cannot be reasonably estimated and collection is not reasonably assured
+          - A receivable for 15% of the estate's assets before debts
+          - A nominal receivable of $1
+        answer: 1
+        explain: A residual interest depends on the estate's assets, debts, taxes and any claims. With no valuation, no probate and a live claim, neither recognition condition is met. The hospice records the bequest later, when the amount becomes estimable and collection reasonably assured, or on receipt.
+        ref: Part III, Section 4420
+      - id: rev3l2q05
+        type: calc
+        concept: rev3-bequests
+        prompt: A Grande Prairie food bank is entitled to 25% of the residue of an estate. Probate is complete and the executor's accounting, with no claims outstanding, shows estate assets of $1,200,000, debts and final taxes of $180,000, specific bequests to others of $220,000 and executor fees of $40,000. Enter the bequest receivable the food bank recognizes.
+        answer: 190000
+        unit: $
+        explain: The residue is $1,200,000 − $180,000 − $220,000 − $40,000 = $760,000, and 25% of that is $190,000. With probate done, an executor's accounting and no claims, the amount is reasonably estimable and collection is reasonably assured.
+        ref: Part III, Section 4420
+      - id: rev3l2q06
+        type: je
+        concept: rev3-bequests
+        prompt: The food bank's $190,000 residual bequest is unrestricted, and the food bank uses the deferral method. Record it.
+        accounts:
+          - Contributions receivable
+          - Bequest revenue
+          - Deferred contributions
+          - Endowment net assets
+          - Cash
+          - Allowance for uncollectible pledges
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 190000
+          - account: Bequest revenue
+            side: cr
+            amount: 190000
+        explain: An unrestricted bequest that meets the recognition criteria is revenue when receivable. Had the will required the capital to be kept permanently, it would have gone directly to endowment net assets instead.
+        ref: Part III, Section 4420
+      - id: rev3l2q07
+        type: classify
+        concept: rev3-bequests
+        prompt: Classify each estate situation for a Fort McMurray Friendship Centre with a March 31 year end.
+        buckets:
+          - Recognize a receivable at year end
+          - Do not recognize yet
+        items:
+          - text: The will has been read, but probate has not been applied for and the estate's value is unknown
+            bucket: 1
+          - text: Probate is granted and the executor confirms a specific $25,000 cash bequest from a solvent, liquid estate
+            bucket: 0
+          - text: A residual interest in an estate whose main asset is a property being contested in court
+            bucket: 1
+          - text: The executor's interim accounting shows a reasonably estimable residue, no claims, and distribution expected in two months
+            bucket: 0
+        explain: The question is always whether the amount can be reasonably estimated and collection is reasonably assured. Probate, an executor's accounting and the absence of claims are the usual evidence. A will alone is rarely enough.
+        ref: Part III, Section 4420
+      - id: rev3l2q08
+        type: je
+        concept: rev3-securities
+        prompt: A Calgary community foundation (deferral method) receives a bequest of 2,000 shares of a TSX-listed company, with instructions that the gift be kept permanently as an endowment. The quoted price on the transfer date is $48.50 per share. The deceased paid $30,000 for the shares. Record the gift.
+        accounts:
+          - Investments
+          - Endowment net assets
+          - Bequest revenue
+          - Deferred contributions
+          - Gain on investments
+          - Cash
+        lines:
+          - account: Investments
+            side: dr
+            amount: 97000
+          - account: Endowment net assets
+            side: cr
+            amount: 97000
+        explain: Donated securities are measured at fair value on the contribution date, 2,000 × $48.50 = $97,000. The donor's cost is irrelevant. Under the deferral method an endowment gift is a direct increase in endowment net assets, not revenue.
+        ref: Part III, Section 4410
+      - id: rev3l2q09
+        type: mc
+        concept: rev3-life-insurance
+        prompt: A donor transfers a whole life policy to a Red Deer hospice society, making the society both owner and beneficiary. The policy's cash surrender value is $18,000 and its death benefit is $250,000. How is the contribution measured?
+        options:
+          - At $250,000, the death benefit
+          - At the total premiums the donor has paid
+          - At $18,000, the cash surrender value
+          - It is not recognized until the donor dies
+        answer: 2
+        explain: Amendments to Section 4410 that accompanied AcG-21 measure a contributed policy at its cash surrender value on the date the NPO becomes both owner and beneficiary. The death benefit is not an asset until it is receivable.
+        ref: Part III, Section 4410
+      - id: rev3l2q10
+        type: tf
+        concept: rev3-life-insurance
+        prompt: A donor names a Lethbridge food bank as beneficiary of a life insurance policy the donor continues to own. The food bank records a contribution receivable for the policy's cash surrender value.
+        answer: false
+        reasons:
+          - The donor still owns the policy and can change the beneficiary, so the food bank has no asset
+          - It should record the full death benefit instead
+          - It should record the premiums the donor pays each year
+        reason: 0
+        explain: Being named beneficiary on a policy someone else owns is a revocable expectation. The food bank has nothing to recognize until it becomes the owner or the death benefit becomes receivable.
+        ref: Part III, Section 4410
+
+  - id: rev3l3
+    title: Contributed materials
+    intro: Recognizing donated goods is a policy choice with strict conditions. This lesson covers the conditions, goods held for distribution or sale, and what happens to the bottom line.
+    questions:
+      - id: rev3l3q01
+        type: classify
+        concept: rev3-materials-criteria
+        prompt: A Grande Prairie seniors' centre's policy is to recognize contributed materials when the conditions are met. Classify each donation.
+        buckets:
+          - Recognize
+          - Do not recognize
+        items:
+          - text: Printer paper and toner used in the office, which the centre buys every month
+            bucket: 0
+          - text: Groceries from a supermarket used in the daily lunch program, replacing food the centre normally buys
+            bucket: 0
+          - text: Tickets to a hockey game for a seniors' outing the centre would never have paid for
+            bucket: 1
+          - text: Bags of mixed used clothing handed to residents, with no reliable way to value them
+            bucket: 1
+        explain: All three conditions must hold. Fair value must be reasonably estimable, and the materials must be used in normal operations and be something the centre would otherwise have bought. The tickets fail the would-otherwise-purchase test, and the clothing fails the fair value test.
+        ref: Part III, Section 4410
+      - id: rev3l3q02
+        type: tf
+        concept: rev3-materials-criteria
+        prompt: An NPO may recognize donated materials in years when it wants to show larger program spending and leave them out in other years.
+        answer: false
+        reasons:
+          - Recognizing contributed materials is an accounting policy that is applied consistently and disclosed
+          - Contributed materials must always be recognized
+          - Contributed materials can only be recognized under the restricted fund method
+        reason: 0
+        explain: The choice is made once as an accounting policy and applied consistently. Switching year to year to manage the picture is not permitted.
+        ref: Part III, Section 4410
+      - id: rev3l3q03
+        type: je
+        concept: rev3-materials-criteria
+        prompt: An Edmonton community kitchen recognizes contributed materials. A wholesaler donates groceries worth $8,000 at fair value, which are all used in the meal program during the month. Record the contribution and use.
+        accounts:
+          - Program supplies expense
+          - Contributed materials revenue
+          - Supplies inventory
+          - Donation revenue
+          - Deferred contributions
+          - Cash
+        lines:
+          - account: Program supplies expense
+            side: dr
+            amount: 8000
+          - account: Contributed materials revenue
+            side: cr
+            amount: 8000
+        explain: The gift is unrestricted revenue at fair value, and using it is a program expense. Revenue and expenses rise by the same amount, giving readers the full cost of the program.
+        ref: Part III, Section 4410
+      - id: rev3l3q04
+        type: je
+        concept: rev3-materials-criteria
+        prompt: A Red Deer arts society recognizes contributed materials. An art supplier donates paint and canvas with a fair value of $5,000 for its youth classes, which it would otherwise have bought. By year end $3,200 has been used and the rest is on hand. Record the year's effect in one entry.
+        accounts:
+          - Program supplies expense
+          - Supplies inventory
+          - Contributed materials revenue
+          - Deferred contributions
+          - Donation revenue
+          - Accounts payable
+        lines:
+          - account: Program supplies expense
+            side: dr
+            amount: 3200
+          - account: Supplies inventory
+            side: dr
+            amount: 1800
+          - account: Contributed materials revenue
+            side: cr
+            amount: 5000
+        explain: The unrestricted gift is revenue when received, at fair value. What is used is expensed and what is left is an asset. The materials were not restricted, so there is no deferral.
+        ref: Part III, Section 4410
+      - id: rev3l3q05
+        type: calc
+        concept: rev3-materials-criteria
+        prompt: Using the arts society entry above, enter the effect of the donated materials on the year's excess of revenue over expenses.
+        answer: 1800
+        unit: $
+        explain: Revenue of $5,000 less expense of $3,200 increases the excess by $1,800, the amount of supplies still on hand. Recognizing gifts in kind is only neutral to the bottom line when everything is used in the same period.
+        ref: Part III, Section 4410
+      - id: rev3l3q06
+        type: mc
+        concept: rev3-materials-distribution
+        prompt: A Medicine Hat food bank receives 600,000 kg of donated food for distribution to clients. Why do many food banks choose not to recognize such food?
+        options:
+          - Food is perishable, so it cannot be an asset
+          - They often judge that they would not otherwise purchase food on that scale, or that fair value cannot be reasonably estimated
+          - ASNPO prohibits recognizing any goods given away to clients
+          - The CRA requires food donations to be excluded from revenue
+        answer: 1
+        explain: The conditions are tests of judgement. A food bank that would not buy this volume of food fails the would-otherwise-purchase condition, and valuing mixed donations can be hard. Many report kilograms distributed outside the financial statements instead.
+        ref: Part III, Section 4410
+      - id: rev3l3q07
+        type: calc
+        concept: rev3-materials-distribution
+        prompt: A Calgary food bank's policy is to recognize donated food, using a reasonably estimated average value of $2.50 per kg. This year it receives 500,000 kg and distributes 460,000 kg. It held no inventory at the start of the year. Enter donated food inventory at year end.
+        answer: 100000
+        unit: $
+        explain: 500,000 − 460,000 = 40,000 kg on hand, × $2.50 = $100,000. Revenue is $1,250,000 and the cost of food distributed is $1,150,000, so the policy grosses up both and adds $100,000 to the excess for the year.
+        ref: Part III, Section 4410
+      - id: rev3l3q08
+        type: mc
+        concept: rev3-materials-distribution
+        prompt: A St. Albert charity thrift store receives donated used goods and sells them. It does not recognize the goods when received. What revenue does it report?
+        options:
+          - The donors' estimates of value on their donation forms
+          - Nothing, because the goods were donated
+          - The sales proceeds, recognized when the goods are sold
+          - The retail price of equivalent new goods
+        answer: 2
+        explain: When donated goods held for sale are not recognized on receipt, often because fair value cannot be reasonably estimated, revenue is recognized when they are sold, at the proceeds received.
+        ref: Part III, Section 4410
+      - id: rev3l3q09
+        type: mc
+        concept: rev3-materials-criteria
+        prompt: A tech company donates 20 used laptops to a Camrose literacy society, which would otherwise have bought refurbished laptops for its classes. Each costs $350 refurbished and $1,400 new. The donor asks for a receipt at $1,400 each. The laptops are below the society's capitalization threshold. At what amount are they recognized, if the society's policy is to recognize contributed materials?
+        options:
+          - $28,000, the price of new laptops
+          - $7,000, the fair value of equivalent used laptops
+          - The amount on any tax receipt issued
+          - $20, at nominal value
+        answer: 1
+        explain: Fair value is what equivalent items in their actual condition would cost, 20 × $350 = $7,000. The price of new laptops and the donor's view of the value are not fair value. Tax receipting is a separate question from accounting measurement.
+        ref: Part III, Section 4410
+      - id: rev3l3q10
+        type: tf
+        concept: rev3-fv-not-estimable
+        prompt: When an NPO cannot reasonably estimate the fair value of donated program supplies, it records them at a nominal $1 so the gift still appears in the accounts.
+        answer: false
+        reasons:
+          - Contributed materials without a reasonably estimable fair value are not recognized; nominal value applies only to contributed capital assets
+          - Nominal value is required for every donated item
+          - They must be recorded at the donor's cost
+        reason: 0
+        explain: Fair value that can be reasonably estimated is a condition for recognizing contributed materials. Failing it means no recognition. The nominal value fallback belongs to contributed capital assets.
+        ref: Part III, Section 4410
+      - id: rev3l3q11
+        type: match
+        concept: rev3-materials-distribution
+        prompt: Match each donation to its most likely treatment.
+        pairs:
+          - left: Donated cleaning products used by a seniors' residence that buys them regularly, policy to recognize
+            right: Revenue and expense at fair value
+          - left: Donated books sold at a library society's book sale, value not reasonably estimable
+            right: Sale proceeds recognized when sold
+          - left: Donated pickup truck used to deliver hampers
+            right: Capital asset at fair value
+          - left: Donated clothing given to clients, no reliable value
+            right: Not recognized
+        explain: Goods used in operations can be recognized under the policy. Goods sold are often recognized only as proceeds. Capital assets must be recognized whatever the policy. Goods without an estimable value are not recognized.
+        ref: Part III, Section 4410
+
+  - id: rev3l4
+    title: Services, capital assets and event gifts
+    intro: Volunteer time, donated professional work, donated property and the gifts behind a gala each follow different rules. This lesson separates them.
+    questions:
+      - id: rev3l4q01
+        type: classify
+        concept: rev3-services-criteria
+        prompt: An Edmonton community league's policy is to recognize contributed services when the conditions are met. Classify each.
+        buckets:
+          - Recognize
+          - Do not recognize
+        items:
+          - text: A licensed electrician repairs the hall wiring at no charge; the league would otherwise have hired one at a known rate
+            bucket: 0
+          - text: A CPA firm performs the annual audit free of charge; it bills similar clients $12,000
+            bucket: 0
+          - text: Board members' time at monthly governance meetings
+            bucket: 1
+          - text: Volunteers selling 50/50 tickets at hockey games
+            bucket: 1
+          - text: 2,000 hours of volunteer rink flooding that the league would never have paid staff to do
+            bucket: 1
+        explain: Recognition requires a reasonably estimable fair value and services used in normal operations that would otherwise have been purchased. The electrician and the audit meet all three. Governance, ticket selling and the rink flooding would not otherwise have been bought.
+        ref: Part III, Section 4410
+      - id: rev3l4q02
+        type: mc
+        concept: rev3-volunteers
+        prompt: Why do most NPOs not recognize the time of their general volunteers?
+        options:
+          - ASNPO prohibits recognizing any contributed services
+          - The work would usually not otherwise be purchased and its fair value is hard to estimate reliably
+          - Volunteer time can only be recognized under the restricted fund method
+          - Volunteers must be paid minimum wage before their time can be recognized
+        answer: 1
+        explain: Contributed services can be recognized as a policy choice, but most volunteer work fails the conditions. NPOs often report hours and volunteer counts in their annual report instead.
+        ref: Part III, Section 4410
+      - id: rev3l4q03
+        type: je
+        concept: rev3-services-criteria
+        prompt: The community league recognizes the CPA firm's donated audit at its $12,000 fair value. Record it.
+        accounts:
+          - Professional fees expense
+          - Contributed services revenue
+          - Accounts payable
+          - Donation revenue
+          - Deferred contributions
+          - Prepaid expenses
+        lines:
+          - account: Professional fees expense
+            side: dr
+            amount: 12000
+          - account: Contributed services revenue
+            side: cr
+            amount: 12000
+        explain: The league records revenue and the expense it would otherwise have paid. Both lines are grossed up and the excess is unchanged.
+        ref: Part III, Section 4410
+      - id: rev3l4q04
+        type: tf
+        concept: rev3-volunteers
+        prompt: Because the CRA does not allow charities to issue official donation receipts for donated services, ASNPO prohibits recognizing contributed services.
+        answer: false
+        explain: Tax receipting and accounting recognition are separate. ASNPO lets an NPO choose to recognize contributed services that meet the conditions, whatever the tax rules say about receipts.
+        ref: Part III, Section 4410
+      - id: rev3l4q05
+        type: je
+        concept: rev3-contributed-tca
+        prompt: A Banff museum (deferral method) receives a donated heritage house and its lot for use as a gallery. Appraised fair values are land $300,000 and building $900,000. Record the gift.
+        accounts:
+          - Land
+          - Buildings
+          - Deferred capital contributions
+          - Net assets invested in capital assets
+          - Donation revenue
+          - Endowment net assets
+        lines:
+          - account: Land
+            side: dr
+            amount: 300000
+          - account: Buildings
+            side: dr
+            amount: 900000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 900000
+          - account: Net assets invested in capital assets
+            side: cr
+            amount: 300000
+        explain: Contributed capital assets are recorded at fair value. Under the deferral method, the amortizable building is a deferred capital contribution, and the land, which is not amortized, is a direct increase in net assets.
+        ref: Part III, Section 4433
+      - id: rev3l4q06
+        type: calc
+        concept: rev3-contributed-tca
+        prompt: The museum amortizes the donated building straight-line over 30 years with no residual value. Enter the amortization of deferred capital contributions recognized as revenue each year.
+        answer: 30000
+        unit: $
+        explain: $900,000 ÷ 30 = $30,000. The deferred capital contribution is recognized on the same basis as the building is amortized, so it offsets the $30,000 of amortization expense.
+        ref: Part III, Section 4410
+      - id: rev3l4q07
+        type: tf
+        concept: rev3-contributed-tca
+        prompt: A sport association with average annual revenues of $2 million has a policy of not recognizing contributed materials and services. It may also leave a donated ice resurfacer out of its accounts.
+        answer: false
+        reasons:
+          - Contributed capital assets must be recognized at fair value, or nominal value, whatever the materials and services policy
+          - The policy covers every type of gift in kind
+          - Only assets over $100,000 must be recognized
+        reason: 0
+        explain: The optional policy covers contributed materials and services. Donated tangible capital assets must be recognized under Section 4433. The association is well above the $500,000 average revenue threshold, so the small-NPO relief in Section 4433 is not available.
+        ref: Part III, Section 4433
+      - id: rev3l4q08
+        type: classify
+        concept: rev3-fv-not-estimable
+        prompt: Sort each gift whose fair value cannot be reasonably estimated by its treatment.
+        buckets:
+          - Not recognized
+          - Recorded at nominal value
+        items:
+          - text: Donated office supplies
+            bucket: 0
+          - text: Donated consulting services
+            bucket: 0
+          - text: Donated one-of-a-kind printing press used in operations
+            bucket: 1
+        explain: For contributed materials and services, a reasonably estimable fair value is a condition of recognition, so they drop out. Contributed capital assets must be recognized, so they fall back to nominal value.
+        ref: Part III, Section 4433
+      - id: rev3l4q09
+        type: je
+        concept: rev3-event-gifts
+        prompt: A Calgary health charity holds its annual gala in a hotel ballroom. The hotel waives its normal $15,000 room and service charge as a gift. The charity always rents a venue for the gala and its policy is to recognize contributed services. Record the gift.
+        accounts:
+          - Fundraising event expenses
+          - Contributed services revenue
+          - Fundraising event revenue
+          - Deferred contributions
+          - Accounts payable
+          - Prepaid expenses
+        lines:
+          - account: Fundraising event expenses
+            side: dr
+            amount: 15000
+          - account: Contributed services revenue
+            side: cr
+            amount: 15000
+        explain: The gala is a normal activity and the charity would otherwise have paid for a venue, so the conditions are met. Recording the gift shows the true cost of running the event.
+        ref: Part III, Section 4410
+      - id: rev3l4q10
+        type: mc
+        concept: rev3-event-gifts
+        prompt: At the same gala, local businesses donate 60 auction items. The charity would never buy auction prizes and does not recognize them on receipt. The items sell for $42,000. What does the charity record?
+        options:
+          - $42,000 of fundraising revenue when the items are sold
+          - Contributed materials revenue at the donors' estimated values, plus a gain or loss on sale
+          - Nothing, because the items were donated
+          - $42,000 directly in unrestricted net assets
+        answer: 0
+        explain: Items that are not recognized on receipt produce revenue when sold, at the amount realized. Recording them at donor estimates would ignore the would-otherwise-purchase condition.
+        ref: Part III, Section 4410
+      - id: rev3l4q11
+        type: calc
+        concept: rev3-event-gifts
+        prompt: For the gala, the charity recognizes $80,000 of ticket revenue, $42,000 of auction proceeds and the $15,000 donated venue. Other event costs paid in cash are $30,000. Expenses are shown gross. Enter the total gala revenue reported in the statement of operations.
+        answer: 137000
+        unit: $
+        explain: $80,000 + $42,000 + $15,000 = $137,000 of revenue. Expenses are $15,000 + $30,000 = $45,000, so the net contribution is $92,000. Revenues and expenses are reported gross, with the net shown in the notes or analysis if desired.
+        ref: Part III, Section 4410
+
+  - id: rev3l5
+    title: Integrated cases and disclosure
+    intro: Put it together. These cases mix pledges, bequests and gifts in kind across both methods and years, then test what the notes must say.
+    questions:
+      - id: rev3l5q01
+        type: calc
+        concept: rev3-receivable-criteria
+        prompt: "A Fort McMurray Friendship Centre (deferral method, recognizes contributed materials and services when the conditions are met) has these items this year. (a) Signed unrestricted pledges of $60,000 from long-time corporate supporters, $45,000 collected and the rest due next month. (b) $20,000 of phone pledges from a new campaign with no collection history, $7,000 collected. (c) Donated cultural program supplies with a fair value of $6,000, all used. (d) 2,000 hours from elders who volunteer at drop-in programs. (e) A reliable foundation's signed $25,000 pledge restricted to next summer's youth camp. Enter total contribution revenue for the year."
+        answer: 73000
+        unit: $
+        explain: (a) $60,000 meets the criteria. (b) Only the $7,000 received is recognized. (c) $6,000 is recognized as revenue and expense. (d) Volunteer time is not recognized. (e) $25,000 is deferred to next year. $60,000 + $7,000 + $6,000 = $73,000.
+        ref: Part III, Section 4410
+      - id: rev3l5q02
+        type: calc
+        concept: rev3-receivable-criteria
+        prompt: Using the same Friendship Centre facts, enter contributions receivable at year end.
+        answer: 40000
+        unit: $
+        explain: $15,000 still due on the corporate pledges plus the $25,000 foundation pledge = $40,000. The $13,000 of unpaid phone pledges is not recognized.
+        ref: Part III, Section 4420
+      - id: rev3l5q03
+        type: calc
+        concept: rev3-multiyear
+        prompt: Using the same Friendship Centre facts, enter deferred contributions at year end, assuming no other restricted gifts.
+        answer: 25000
+        unit: $
+        explain: Only the youth camp pledge is restricted to a future period. It is a receivable on one side and deferred contributions on the other.
+        ref: Part III, Section 4410
+      - id: rev3l5q04
+        type: je
+        concept: rev3-bequests
+        prompt: Last year the Grande Prairie food bank recognized a $190,000 unrestricted bequest receivable based on the executor's accounting. This year a late tax reassessment reduces the residue, and the estate pays the food bank $176,500 in full settlement. Record the receipt.
+        accounts:
+          - Cash
+          - Bequest revenue
+          - Contributions receivable
+          - Unrestricted net assets
+          - Allowance for uncollectible pledges
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 176500
+          - account: Bequest revenue
+            side: dr
+            amount: 13500
+          - account: Contributions receivable
+            side: cr
+            amount: 190000
+        explain: The $13,500 shortfall is a change in an estimate, recognized in the current period. Some NPOs show it as a separate loss rather than a reduction of bequest revenue. Prior-year statements are not restated.
+        ref: Part III, Section 4420
+      - id: rev3l5q05
+        type: tf
+        concept: rev3-bequests
+        prompt: Because last year's bequest receivable turned out to be $13,500 too high, the food bank should restate last year's financial statements.
+        answer: false
+        reasons:
+          - The estimate was reasonable when made, so the revision is a change in estimate in the current period
+          - All errors in contributions are restated automatically
+          - Bequests are never revised once recorded
+        reason: 0
+        explain: The executor's accounting was the best information available at the time. New information about the estate's taxes changes the estimate prospectively. Restatement is for errors, not for revised estimates.
+        ref: Part III, Section 4420
+      - id: rev3l5q06
+        type: je
+        concept: rev3-multiyear
+        prompt: "A Lethbridge Friendship Centre uses the restricted fund method with a General Fund and a Youth Programs Fund. A reliable foundation signs a $45,000 pledge: $30,000 restricted to youth programs and $15,000 unrestricted. Collection is reasonably assured. Record the pledge."
+        accounts:
+          - Contributions receivable (Youth Programs fund)
+          - Contributions receivable (General fund)
+          - Contribution revenue (Youth Programs fund)
+          - Contribution revenue (General fund)
+          - Deferred contributions (General fund)
+          - Endowment net assets
+          - Cash (General fund)
+        lines:
+          - account: Contributions receivable (Youth Programs fund)
+            side: dr
+            amount: 30000
+          - account: Contributions receivable (General fund)
+            side: dr
+            amount: 15000
+          - account: Contribution revenue (Youth Programs fund)
+            side: cr
+            amount: 30000
+          - account: Contribution revenue (General fund)
+            side: cr
+            amount: 15000
+        explain: Under the restricted fund method, a restricted gift with a matching fund is revenue of that fund when receivable, and the unrestricted part is General Fund revenue. Nothing is deferred.
+        ref: Part III, Section 4410
+      - id: rev3l5q07
+        type: je
+        concept: rev3-event-gifts
+        prompt: "A Red Deer arts society (deferral method, recognizes contributed materials and services) holds a fundraising concert. A caterer donates the reception, fair value $4,000, which the society would otherwise have paid for. A local brewery donates beer that is sold at the bar for $2,600; the society would not otherwise buy beer and does not recognize it on receipt. Record both gifts in one entry, assuming the bar sales were collected in cash."
+        accounts:
+          - Fundraising event expenses
+          - Contributed services revenue
+          - Fundraising event revenue
+          - Cash
+          - Contributed materials revenue
+          - Supplies inventory
+        lines:
+          - account: Fundraising event expenses
+            side: dr
+            amount: 4000
+          - account: Contributed services revenue
+            side: cr
+            amount: 4000
+          - account: Cash
+            side: dr
+            amount: 2600
+          - account: Fundraising event revenue
+            side: cr
+            amount: 2600
+        explain: The catering meets the conditions and is recorded as revenue and an event expense. The beer is not recognized on receipt, so only the bar proceeds appear, as fundraising revenue.
+        ref: Part III, Section 4410
+      - id: rev3l5q08
+        type: classify
+        concept: rev3-disclosure
+        prompt: A Camrose seniors' society recognizes contributed materials and services. Classify each item by whether ASNPO requires it in the notes.
+        buckets:
+          - Required
+          - Not required
+        items:
+          - text: The policy followed for contributed materials and services
+            bucket: 0
+          - text: The nature and amount of contributed materials and services recognized
+            bucket: 0
+          - text: The method used to account for contributions
+            bucket: 0
+          - text: The number of volunteer hours received
+            bucket: 1
+          - text: The names of donors of gifts in kind
+            bucket: 1
+        explain: The policy, the method and the nature and amount of gifts in kind recognized are required. Volunteer hours are often reported voluntarily, usually outside the financial statements, and donor names are not required.
+        ref: Part III, Section 4410
+      - id: rev3l5q09
+        type: mc
+        concept: rev3-disclosure
+        prompt: A Medicine Hat food bank does not recognize donated food. What is the most useful approach to reporting it, consistent with ASNPO?
+        options:
+          - Record it at nominal value of $1 per shipment
+          - Disclose its policy of not recognizing contributed materials, and consider describing the volume of food distributed outside the statements or in the notes
+          - Show the food's estimated value as revenue but not as an expense
+          - Say nothing, since unrecognized gifts are irrelevant
+        answer: 1
+        explain: The policy for contributed materials is disclosed whatever it is. Many food banks also report kilograms received and distributed so readers understand the scale of operations the statements do not show.
+        ref: Part III, Section 4410
+      - id: rev3l5q10
+        type: mc
+        concept: rev3-conditional
+        prompt: "A Calgary youth charity receives a $200,000 commitment from a foundation, payable only if the charity secures provincial accreditation for a new program by year end. Accreditation is granted two weeks after year end, before the statements are approved. What is the treatment at year end?"
+        options:
+          - Recognize $200,000 at year end, because accreditation came before the statements were approved
+          - Do not recognize at year end, because the condition was not met by year end; recognize when it is met, and consider disclosure
+          - Recognize $100,000, half the commitment
+          - Restate the prior year once the accreditation is granted
+        answer: 1
+        explain: At year end, collection depended on an event that had not happened, so collection was not reasonably assured. The later accreditation is a new event after the reporting date, not evidence of a condition at year end. The charity recognizes the gift next year and may disclose it as a subsequent event.
+        ref: Part III, Section 4410

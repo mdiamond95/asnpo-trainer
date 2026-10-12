@@ -1,0 +1,789 @@
+id: p2u2
+course: part2
+number: 2
+title: Employee future benefits
+summary: How NPOs account for pensions and other employee future benefits under Part II, Section 3462 as modified by Part III, Section 3463. Defined contribution and multi-employer plans, the immediate recognition approach, funding versus accounting valuations, the components of defined benefit cost, the separate net assets line for remeasurements, the asset ceiling, and compensated absences such as sick leave.
+refs:
+  - Part II, Section 3462
+  - Part III, Section 3463
+  - Part III, Section 4400
+status: ready
+
+concepts:
+  - id: p2u2-scope
+    title: Sections 3462 and 3463
+    summary: NPOs apply Part II, Section 3462 to employee future benefits. Part III, Section 3463 changes only where remeasurements and other items are recognized and presented. Everything else, from measurement to most disclosures, follows Section 3462.
+    ref: Part III, Section 3463
+  - id: p2u2-dc-plans
+    title: Defined contribution plans
+    summary: In a defined contribution plan the employer's obligation is limited to the contributions it agreed to make, and employees bear the investment and actuarial risk. The cost for the period is the required contribution for the period, with any unpaid amount accrued.
+    ref: Part II, Section 3462
+  - id: p2u2-db-plans
+    title: Defined benefit plans
+    summary: In a defined benefit plan the employer promises a benefit, often based on salary and years of service, and bears the investment and actuarial risk. Classification follows the economic substance of the plan, not its name.
+    ref: Part II, Section 3462
+  - id: p2u2-multi-employer
+    title: Multi-employer plans
+    summary: A multi-employer plan pools the assets and obligations of several unrelated employers. When an NPO lacks the information to apply defined benefit accounting to its share, it accounts for the plan as a defined contribution plan, expensing its contributions, and discloses that it does so.
+    ref: Part II, Section 3462
+  - id: p2u2-immediate-recognition
+    title: Immediate recognition
+    summary: The balance sheet shows the full funded status of each defined benefit plan, the obligation less plan assets at fair value, adjusted for any valuation allowance on a net asset. Actuarial gains and losses are not deferred or amortized.
+    ref: Part II, Section 3462
+  - id: p2u2-valuation-choice
+    title: Funding or accounting valuation
+    summary: When law, regulation or contract requires a funding valuation for a plan, the NPO chooses as an accounting policy to measure the obligation using either an accounting valuation or the most recently completed funding valuation, and applies the choice to all such plans. When no funding valuation is required, an accounting valuation must be used.
+    ref: Part II, Section 3462
+  - id: p2u2-funding-valuation
+    title: What a funding valuation measures
+    summary: A funding valuation on a going-concern basis measures the amount required to be funded, including every component that must be funded, such as a provision for adverse deviations required by legislation. A solvency or wind-up valuation cannot be used. Plan assets are still measured at fair value at the balance sheet date.
+    ref: Part II, Section 3462
+  - id: p2u2-accounting-valuation
+    title: What an accounting valuation measures
+    summary: An accounting valuation uses management's best estimate assumptions, including future salary increases where benefits depend on them. The discount rate is based on market yields of high-quality debt instruments with cash flows matching the benefits, or the rate inherent in the amount at which the obligation could be settled.
+    ref: Part II, Section 3462
+  - id: p2u2-valuation-frequency
+    title: Valuation frequency and roll-forward
+    summary: An actuarial valuation is needed at least every three years. In between, the obligation is rolled forward for service cost, interest and benefits paid. A significant event such as a plan amendment, settlement or curtailment can require a new valuation.
+    ref: Part II, Section 3462
+  - id: p2u2-service-cost
+    title: Current service cost
+    summary: Current service cost is the actuarial present value of benefits earned by employees in the period, net of any employee contributions. It is an expense in the statement of operations.
+    ref: Part II, Section 3462
+  - id: p2u2-finance-cost
+    title: Finance cost
+    summary: Finance cost is the discount rate applied to the net defined benefit liability or asset. In effect it is the interest cost on the obligation less interest income on plan assets, both at the discount rate. It is an expense in the statement of operations.
+    ref: Part II, Section 3462
+  - id: p2u2-remeasurements
+    title: Remeasurements and other items
+    summary: Remeasurements and other items include actuarial gains and losses, the difference between the actual return on plan assets and the interest income included in finance cost, past service costs, gains and losses on settlements and curtailments, and changes in any valuation allowance.
+    ref: Part II, Section 3462
+  - id: p2u2-npo-presentation
+    title: Where NPOs present remeasurements
+    summary: Unlike a private enterprise, which includes them in net income, an NPO recognizes remeasurements and other items directly in net assets. They appear as a separately identified line in the statement of changes in net assets and are never recycled into the statement of operations.
+    ref: Part III, Section 3463
+  - id: p2u2-asset-ceiling
+    title: The asset ceiling
+    summary: A plan surplus is recognized only to the extent of the future benefit the NPO expects to realize from it, such as reduced future contributions or refunds. The excess is a valuation allowance, and changes in the allowance are remeasurements.
+    ref: Part II, Section 3462
+  - id: p2u2-compensated-absences
+    title: Compensated absences
+    summary: Absences that vest or accumulate, such as carried-forward sick days, banked vacation or sabbaticals, are accrued as employees render the service that earns them. Absences that neither vest nor accumulate, such as a parental leave top-up, are recognized when the event that obligates the NPO occurs.
+    ref: Part II, Section 3462
+  - id: p2u2-event-driven
+    title: Event-driven benefits
+    summary: Post-employment benefits that do not vest or accumulate, such as long-term disability benefits that do not depend on length of service, are recognized when the obligating event happens. The full expected cost is recognized at that point, not spread over service.
+    ref: Part II, Section 3462
+
+lessons:
+  - id: p2u2l1
+    title: Plan types and multi-employer plans
+    intro: The accounting starts with what the NPO has actually promised. This lesson sorts plans by substance and deals with the multi-employer plans common in Alberta's health and social services sector.
+    questions:
+      - id: p2u2l1q01
+        type: mc
+        concept: p2u2-scope
+        prompt: An Edmonton seniors' housing society has a defined benefit pension plan. How do Sections 3462 and 3463 divide the work?
+        options:
+          - Section 3463 replaces Section 3462 entirely for NPOs
+          - Section 3462 applies, except that Section 3463 sets how remeasurements and other items are recognized and presented
+          - Section 3462 applies only to NPOs with revenues over $500,000
+          - Section 3463 applies to pensions and Section 3462 to other benefits
+        answer: 1
+        explain: NPOs measure employee future benefits under Section 3462. Section 3463 changes one thing, sending remeasurements and other items to net assets instead of the statement of operations.
+        ref: Part III, Section 3463
+      - id: p2u2l1q02
+        type: classify
+        concept: p2u2-db-plans
+        prompt: Classify each plan by its substance.
+        buckets:
+          - Defined contribution
+          - Defined benefit
+        items:
+          - text: Employer pays 6% of salary into each employee's account; the pension depends on investment returns
+            bucket: 0
+          - text: Pension of 1.5% of final average salary for each year of service
+            bucket: 1
+          - text: Employer group RRSP matching up to 4% of salary
+            bucket: 0
+          - text: Post-retirement health benefits promised for life to retirees
+            bucket: 1
+          - text: "A plan called a 'money purchase' plan, but the employer guarantees a minimum pension and must top up shortfalls"
+            bucket: 1
+        explain: The test is who bears the risk. If the employer promises a benefit level, or guarantees a minimum, it bears actuarial and investment risk and the plan is defined benefit, whatever its name. Retiree health benefits are a defined benefit promise too.
+        ref: Part II, Section 3462
+      - id: p2u2l1q03
+        type: je
+        concept: p2u2-dc-plans
+        prompt: A Camrose arts society contributes 5% of eligible salaries to a defined contribution plan. Salaries for the year are $800,000. It paid $36,000 to the plan during the year; the rest is due in January. Record the year's pension cost.
+        accounts:
+          - Pension expense
+          - Cash
+          - Pension contributions payable
+          - Net defined benefit liability
+          - Salaries expense
+          - Remeasurements and other items
+        lines:
+          - account: Pension expense
+            side: dr
+            amount: 40000
+          - account: Cash
+            side: cr
+            amount: 36000
+          - account: Pension contributions payable
+            side: cr
+            amount: 4000
+        explain: The cost of a defined contribution plan is the required contribution for the period, $800,000 × 5% = $40,000. The $4,000 unpaid at year end is a liability. No actuarial valuation is needed.
+        ref: Part II, Section 3462
+      - id: p2u2l1q04
+        type: tf
+        concept: p2u2-dc-plans
+        prompt: A Calgary community league's defined contribution plan earns poor investment returns this year. The league must record a liability for the shortfall in employees' account balances.
+        answer: false
+        reasons:
+          - Employees bear the investment risk in a defined contribution plan
+          - The shortfall is a remeasurement shown in net assets
+          - The liability is recognized only when employees retire
+        reason: 0
+        explain: The league's obligation is limited to the contributions it agreed to make. Investment results affect only employees' balances. If the league guaranteed a return, the plan would in substance be defined benefit.
+        ref: Part II, Section 3462
+      - id: p2u2l1q05
+        type: mc
+        concept: p2u2-multi-employer
+        prompt: A Red Deer disability services society participates in a multi-employer defined benefit plan with dozens of unrelated agencies. The plan administrator cannot identify the society's share of the plan's assets and obligation. How does the society account for the plan?
+        options:
+          - As a defined benefit plan using an estimate of its share
+          - As a defined contribution plan, expensing contributions, with disclosure
+          - It records nothing until the plan is wound up
+          - It records the whole plan deficit, as a participating employer
+        answer: 1
+        explain: When there is not enough information to apply defined benefit accounting, a multi-employer plan is accounted for as a defined contribution plan. The society discloses that it does so and gives information about the plan, such as its funded status where available.
+        ref: Part II, Section 3462
+      - id: p2u2l1q06
+        type: je
+        concept: p2u2-multi-employer
+        prompt: The society pays $65,000 of required contributions to the multi-employer plan this year. The plan as a whole has a deficit, and the society's notional share is estimated at about $400,000. Record the year's pension cost.
+        accounts:
+          - Pension expense
+          - Cash
+          - Net defined benefit liability
+          - Remeasurements and other items
+          - Pension contributions payable
+          - Unrestricted net assets
+        lines:
+          - account: Pension expense
+            side: dr
+            amount: 65000
+          - account: Cash
+            side: cr
+            amount: 65000
+        explain: Under defined contribution accounting the cost is the contributions required for the period. The plan deficit is not recognized on the balance sheet, which is why the funded status and the society's exposure are disclosed. Higher future contributions to fund the deficit will be expensed as they become required.
+        ref: Part II, Section 3462
+      - id: p2u2l1q07
+        type: tf
+        concept: p2u2-multi-employer
+        prompt: A Lethbridge health charity's own single-employer defined benefit plan has a small membership. Because actuarial valuations are costly, the charity may account for it as a defined contribution plan, as it could for a multi-employer plan.
+        answer: false
+        reasons:
+          - Defined contribution accounting is a relief for multi-employer plans lacking information, not for a single-employer plan
+          - Plans with fewer than 50 members are always defined contribution
+          - Any NPO may choose either method for any plan
+        reason: 0
+        explain: A single-employer defined benefit plan gets defined benefit accounting. The charity can reduce cost by choosing a funding valuation, if one is required by legislation, and by rolling forward between triennial valuations.
+        ref: Part II, Section 3462
+      - id: p2u2l1q08
+        type: match
+        concept: p2u2-db-plans
+        prompt: Match each plan feature to who bears the risk or how it is accounted for.
+        pairs:
+          - left: Employer guarantees a pension formula
+            right: Employer bears investment and actuarial risk
+          - left: Employer pays a fixed percentage and has no further obligation
+            right: Cost equals the required contribution
+          - left: Unrelated agencies pool assets in one plan and shares cannot be identified
+            right: Multi-employer plan, defined contribution accounting
+          - left: Employer promises lifetime retiree dental coverage
+            right: Defined benefit plan, recognized at funded status
+        explain: Classification depends on what the employer has promised and who absorbs the risk of shortfalls. That decides whether an actuarial obligation is recognized.
+        ref: Part II, Section 3462
+      - id: p2u2l1q09
+        type: mc
+        concept: p2u2-immediate-recognition
+        prompt: A Banff museum society's defined benefit obligation is $2,400,000 and plan assets have a fair value of $2,050,000. No valuation allowance applies. What does the balance sheet show?
+        options:
+          - Nothing, until actuarial losses exceed a 10% corridor
+          - A net defined benefit liability of $350,000
+          - A liability of $2,400,000 and a separate asset of $2,050,000
+          - A liability equal to the contributions due next year
+        answer: 1
+        explain: Under immediate recognition the full funded status is on the balance sheet, $2,400,000 − $2,050,000 = $350,000. There is no corridor or deferral of actuarial gains and losses.
+        ref: Part II, Section 3462
+
+  - id: p2u2l2
+    title: Funding and accounting valuations
+    intro: Section 3462 lets many NPOs use the valuation they already pay for. This lesson covers when that choice exists and what each valuation measures.
+    questions:
+      - id: p2u2l2q01
+        type: tf
+        concept: p2u2-valuation-choice
+        prompt: A Grande Prairie society has an unfunded retiree health benefit plan with no legislative or contractual funding requirement. It may measure the obligation using a funding valuation.
+        answer: false
+        reasons:
+          - With no funding requirement there is no funding valuation to use, so an accounting valuation is required
+          - Funding valuations can be used for any plan
+          - Retiree health plans are outside Section 3462
+        reason: 0
+        explain: The policy choice exists only for plans where law, regulation or contract requires a funding valuation. Amendments effective for fiscal years beginning on or after January 1, 2022 removed the ability to use a funding-type measure for plans with no funding requirement.
+        ref: Part II, Section 3462
+      - id: p2u2l2q02
+        type: mc
+        concept: p2u2-valuation-choice
+        prompt: A Calgary health charity has two registered pension plans, both with funding valuations required under pension legislation. It wants a funding valuation for one plan and an accounting valuation for the other. Is that allowed?
+        options:
+          - Yes, the choice is made plan by plan
+          - No, the policy choice applies to all plans that require a funding valuation
+          - Yes, but only if the plans have different actuaries
+          - No, NPOs must always use accounting valuations
+        answer: 1
+        explain: The choice between an accounting valuation and a funding valuation is an accounting policy applied consistently to all plans that have a funding requirement. Plans without one must use an accounting valuation.
+        ref: Part II, Section 3462
+      - id: p2u2l2q03
+        type: calc
+        concept: p2u2-funding-valuation
+        prompt: "A Fort McMurray Friendship Centre uses the funding valuation policy. Its most recent going-concern funding valuation shows actuarial liabilities of $5,200,000 and a provision for adverse deviations of $520,000 required by legislation. The funding valuation values plan assets at a smoothed $5,350,000; their fair value at year end is $5,500,000. Enter the net defined benefit liability."
+        answer: 220000
+        unit: $
+        explain: The obligation is the amount required to be funded, $5,200,000 + $520,000 = $5,720,000, so the provision for adverse deviations is included. Plan assets are measured at fair value, $5,500,000, not the smoothed value. The liability is $220,000.
+        ref: Part II, Section 3462
+      - id: p2u2l2q04
+        type: classify
+        concept: p2u2-accounting-valuation
+        prompt: Classify each feature as typical of an accounting valuation or a going-concern funding valuation.
+        buckets:
+          - Accounting valuation
+          - Funding valuation
+        items:
+          - text: Discount rate based on high-quality corporate bond yields
+            bucket: 0
+          - text: Discount rate based on expected return on plan assets, with margins
+            bucket: 1
+          - text: Includes a legislated provision for adverse deviations
+            bucket: 1
+          - text: Assumptions are management's best estimates
+            bucket: 0
+          - text: Prepared to set the contributions that pension legislation requires
+            bucket: 1
+        explain: An accounting valuation reflects management's best estimates and a market-based discount rate. A going-concern funding valuation is prepared to determine required contributions under pension legislation and actuarial practice, and often includes prudence margins.
+        ref: Part II, Section 3462
+      - id: p2u2l2q05
+        type: mc
+        concept: p2u2-funding-valuation
+        prompt: An NPO's actuary has prepared a going-concern valuation and a solvency valuation for its registered plan. Under the funding valuation policy, which may be used?
+        options:
+          - Either, whichever shows the smaller obligation
+          - The solvency valuation, because it is more conservative
+          - The going-concern funding valuation, not the solvency or wind-up valuation
+          - Neither; funding valuations are not permitted for registered plans
+        answer: 2
+        explain: The funding valuation used must be prepared for funding on a going-concern basis. Solvency, wind-up and similar valuations measure a different obligation and cannot be used.
+        ref: Part II, Section 3462
+      - id: p2u2l2q06
+        type: calc
+        concept: p2u2-valuation-frequency
+        prompt: "A St. Albert community society's last full valuation, at the start of the year, showed a defined benefit obligation of $1,500,000. The discount rate is 4%. Current service cost is $80,000 and benefits of $50,000 were paid at year end. Roll the obligation forward and enter the year-end obligation."
+        answer: 1590000
+        unit: $
+        explain: $1,500,000 + $80,000 service cost + $60,000 interest (4% × $1,500,000) − $50,000 benefits = $1,590,000. In a roll-forward year no actuarial gain or loss arises unless something significant happens.
+        ref: Part II, Section 3462
+      - id: p2u2l2q07
+        type: classify
+        concept: p2u2-valuation-frequency
+        prompt: A society's last full valuation was 18 months ago. Classify each development.
+        buckets:
+          - Likely needs a new valuation now
+          - Roll forward is usually enough
+        items:
+          - text: The plan is amended to grant past service benefits
+            bucket: 0
+          - text: A closure eliminates a third of the members' future service (a curtailment)
+            bucket: 0
+          - text: Normal service cost and benefit payments for the year
+            bucket: 1
+          - text: The society buys annuities to settle all retiree pensions
+            bucket: 0
+          - text: Discount rates move moderately, with no other change
+            bucket: 1
+        explain: Valuations are needed at least every three years. A significant event such as an amendment, curtailment or settlement may require a new valuation sooner. Ordinary activity is rolled forward, and a change in discount rate alone does not require a full valuation.
+        ref: Part II, Section 3462
+      - id: p2u2l2q08
+        type: tf
+        concept: p2u2-funding-valuation
+        prompt: Under the funding valuation policy, a registered plan's defined benefit obligation includes the provision for adverse deviations that pension legislation requires to be funded.
+        answer: true
+        explain: When a funding valuation is used, the obligation is the amount required to be funded, including every component that must be funded by contributions or a letter of credit, such as a legislated provision for adverse deviations. Leaving the margin out would understate what the NPO must actually fund.
+        ref: Part II, Section 3462
+      - id: p2u2l2q09
+        type: mc
+        concept: p2u2-accounting-valuation
+        prompt: Under an accounting valuation, which discount rate is appropriate for an NPO's defined benefit obligation?
+        options:
+          - The expected long-term return on the plan's equity portfolio
+          - The rate on the NPO's own unsecured bank loan
+          - Market yields on high-quality debt instruments with cash flows matching the benefits, or the settlement rate
+          - The rate set by the board each year
+        answer: 2
+        explain: An accounting valuation discounts using high-quality debt yields matched to the timing of benefits, or the rate inherent in the settlement amount. Expected asset returns are used in funding valuations, not accounting valuations.
+        ref: Part II, Section 3462
+      - id: p2u2l2q10
+        type: mc
+        concept: p2u2-valuation-choice
+        prompt: Which disclosure is especially important when an NPO uses the funding valuation policy?
+        options:
+          - The names of plan members
+          - The basis used to measure the obligation and the effective date of the most recent valuation
+          - A sensitivity analysis for every assumption
+          - A ten-year projection of contributions
+        answer: 1
+        explain: Users need to know which measurement basis was used and how current it is, because a funding valuation can be up to three years old and rolled forward. Choosing the funding valuation policy is itself a significant accounting policy to disclose.
+        ref: Part II, Section 3462
+
+  - id: p2u2l3
+    title: The components of defined benefit cost
+    intro: Defined benefit cost splits into service cost, finance cost, and remeasurements and other items. Work through a full year for a defined benefit plan.
+    questions:
+      - id: p2u2l3q01
+        type: classify
+        concept: p2u2-remeasurements
+        prompt: Classify each item into its component of defined benefit cost.
+        buckets:
+          - Current service cost
+          - Finance cost
+          - Remeasurements and other items
+        items:
+          - text: Value of pensions earned by employees for this year's work
+            bucket: 0
+          - text: Discount rate times the opening net defined benefit liability
+            bucket: 1
+          - text: Actuarial loss because retirees are living longer than assumed
+            bucket: 2
+          - text: Plan assets earned 9% when the discount rate was 5%
+            bucket: 2
+          - text: Cost of a plan amendment granting benefits for past service
+            bucket: 2
+          - text: Gain on settling retiree pensions by buying annuities
+            bucket: 2
+        explain: Service cost reflects benefits earned this period and finance cost the passage of time on the net position. Everything else that changes the net liability other than contributions, including past service cost and settlements, is a remeasurement or other item.
+        ref: Part II, Section 3462
+      - id: p2u2l3q02
+        type: calc
+        concept: p2u2-finance-cost
+        prompt: "A Lethbridge seniors' housing society's plan at January 1: obligation $2,000,000, plan assets $1,700,000. The discount rate is 5%. Contributions and benefit payments happen on December 31. Enter the finance cost for the year."
+        answer: 15000
+        unit: $
+        explain: Finance cost is the discount rate times the opening net liability, 5% × $300,000 = $15,000. That equals interest cost of $100,000 on the obligation less interest income of $85,000 on the assets.
+        ref: Part II, Section 3462
+      - id: p2u2l3q03
+        type: je
+        concept: p2u2-service-cost
+        prompt: The society's current service cost is $120,000 and finance cost is $15,000. Record the cost recognized in the statement of operations.
+        accounts:
+          - Employee benefit expense
+          - Pension finance cost
+          - Net defined benefit liability
+          - Remeasurements and other items
+          - Cash
+          - Pension contributions payable
+        lines:
+          - account: Employee benefit expense
+            side: dr
+            amount: 120000
+          - account: Pension finance cost
+            side: dr
+            amount: 15000
+          - account: Net defined benefit liability
+            side: cr
+            amount: 135000
+        explain: Service cost and finance cost go through the statement of operations and increase the net liability. Contributions are recorded separately, and remeasurements go to net assets for an NPO.
+        ref: Part II, Section 3462
+      - id: p2u2l3q04
+        type: je
+        concept: p2u2-immediate-recognition
+        prompt: On December 31 the society contributes $150,000 to the plan. The plan pays $90,000 of benefits to retirees. Record the society's entry.
+        accounts:
+          - Net defined benefit liability
+          - Cash
+          - Employee benefit expense
+          - Pension finance cost
+          - Remeasurements and other items
+          - Pension expense
+        lines:
+          - account: Net defined benefit liability
+            side: dr
+            amount: 150000
+          - account: Cash
+            side: cr
+            amount: 150000
+        explain: The contribution moves cash into the plan, reducing the net liability. Benefits paid by the plan reduce both the obligation and the plan assets equally, so they do not change the net liability and need no entry.
+        ref: Part II, Section 3462
+      - id: p2u2l3q05
+        type: calc
+        concept: p2u2-remeasurements
+        prompt: "Continue the Lethbridge case. Opening obligation $2,000,000, service cost $120,000, interest at 5%, benefits paid $90,000. The year-end valuation shows an obligation of $2,150,000. Enter the actuarial loss on the obligation."
+        answer: 20000
+        unit: $
+        explain: The expected obligation is $2,000,000 + $120,000 + $100,000 − $90,000 = $2,130,000. The actual obligation is $2,150,000, so there is a $20,000 actuarial loss.
+        ref: Part II, Section 3462
+      - id: p2u2l3q06
+        type: calc
+        concept: p2u2-remeasurements
+        prompt: "Plan assets started at $1,700,000, received $150,000 of contributions and paid $90,000 of benefits on December 31. Their fair value at year end is $1,860,000. The discount rate is 5%. Enter the remeasurement gain on plan assets."
+        answer: 15000
+        unit: $
+        explain: Expected assets are $1,700,000 + $85,000 interest income + $150,000 − $90,000 = $1,845,000. Actual is $1,860,000, so assets beat the discount rate by $15,000. That gain is a remeasurement, not part of finance cost.
+        ref: Part II, Section 3462
+      - id: p2u2l3q07
+        type: je
+        concept: p2u2-npo-presentation
+        prompt: The society's net remeasurement is a $20,000 actuarial loss offset by a $15,000 gain on assets. Record the remeasurement.
+        accounts:
+          - Remeasurements and other items
+          - Net defined benefit liability
+          - Employee benefit expense
+          - Pension finance cost
+          - Cash
+          - Internally restricted net assets
+        lines:
+          - account: Remeasurements and other items
+            side: dr
+            amount: 5000
+          - account: Net defined benefit liability
+            side: cr
+            amount: 5000
+        explain: The net loss is $5,000. For an NPO it is recognized directly in net assets and shown as a separate line in the statement of changes in net assets. It is not an expense in the statement of operations.
+        ref: Part III, Section 3463
+      - id: p2u2l3q08
+        type: calc
+        concept: p2u2-immediate-recognition
+        prompt: Enter the society's net defined benefit liability at December 31, given an obligation of $2,150,000 and plan assets at fair value of $1,860,000.
+        answer: 290000
+        unit: $
+        explain: $2,150,000 − $1,860,000 = $290,000. As a check, $300,000 opening + $135,000 cost + $5,000 remeasurement − $150,000 contributions = $290,000.
+        ref: Part II, Section 3462
+      - id: p2u2l3q09
+        type: tf
+        concept: p2u2-finance-cost
+        prompt: An NPO with a net defined benefit asset (a surplus) records finance income rather than finance cost.
+        answer: true
+        explain: Finance cost is the discount rate applied to the net position. When plan assets exceed the obligation, interest income on assets exceeds interest cost, so the result is finance income, subject to the asset ceiling.
+        ref: Part II, Section 3462
+      - id: p2u2l3q10
+        type: mc
+        concept: p2u2-service-cost
+        prompt: Employees contribute 4% of salary to a contributory defined benefit plan. How do their contributions affect current service cost?
+        options:
+          - They are ignored, because they are not the employer's money
+          - Current service cost is measured net of employee contributions
+          - They are recognized as contribution revenue
+          - They are added to current service cost
+        answer: 1
+        explain: Current service cost is the employer's cost of benefits earned in the period, so it is reduced by contributions employees make. Employee contributions are not contributions under Section 4410.
+        ref: Part II, Section 3462
+
+  - id: p2u2l4
+    title: NPO presentation, past service and the asset ceiling
+    intro: This is where NPOs differ from private enterprises. Remeasurements bypass the statement of operations, and some items that look like operating costs are remeasurements.
+    questions:
+      - id: p2u2l4q01
+        type: classify
+        concept: p2u2-npo-presentation
+        prompt: "An NPO's defined benefit plan produces these amounts. Classify where each one is presented."
+        buckets:
+          - Statement of operations
+          - Separate line in the statement of changes in net assets
+        items:
+          - text: Current service cost
+            bucket: 0
+          - text: Finance cost
+            bucket: 0
+          - text: Actuarial losses
+            bucket: 1
+          - text: Past service cost from a plan amendment
+            bucket: 1
+          - text: Change in the valuation allowance
+            bucket: 1
+          - text: Return on plan assets above interest income
+            bucket: 1
+        explain: Section 3463 sends all remeasurements and other items, including past service cost and valuation allowance changes, directly to net assets as a separately identified line. Service cost and finance cost stay in the statement of operations.
+        ref: Part III, Section 3463
+      - id: p2u2l4q02
+        type: tf
+        concept: p2u2-npo-presentation
+        prompt: An NPO's remeasurement losses recognized in net assets in earlier years are recycled into the statement of operations when the related employees retire.
+        answer: false
+        reasons:
+          - Remeasurements recognized in net assets are never reclassified to the statement of operations
+          - They are recycled over employees' average remaining service
+          - They are recycled when the plan is wound up
+        reason: 0
+        explain: Remeasurements and other items go directly to net assets and stay there. There is no later recycling. This keeps volatile actuarial items out of the excess of revenue over expenses.
+        ref: Part III, Section 3463
+      - id: p2u2l4q03
+        type: mc
+        concept: p2u2-npo-presentation
+        prompt: A private enterprise and an NPO each have a $90,000 actuarial loss this year. How do their reports differ?
+        options:
+          - Both report it in other comprehensive income
+          - The enterprise includes it in net income; the NPO shows it as a separate line in the statement of changes in net assets
+          - The enterprise defers it; the NPO expenses it
+          - Both amortize it over the average remaining service period
+        answer: 1
+        explain: Under Section 3462 a private enterprise recognizes remeasurements in net income, because ASPE has no other comprehensive income. Section 3463 moves them out of an NPO's statement of operations into the statement of changes in net assets.
+        ref: Part III, Section 3463
+      - id: p2u2l4q04
+        type: je
+        concept: p2u2-remeasurements
+        prompt: On December 31 a Medicine Hat health charity amends its plan to grant benefits for past service. The actuary values the past service cost at $80,000. Record the amendment.
+        accounts:
+          - Remeasurements and other items
+          - Net defined benefit liability
+          - Employee benefit expense
+          - Pension finance cost
+          - Deferred past service cost
+          - Cash
+        lines:
+          - account: Remeasurements and other items
+            side: dr
+            amount: 80000
+          - account: Net defined benefit liability
+            side: cr
+            amount: 80000
+        explain: Past service cost is recognized immediately and is part of remeasurements and other items. For an NPO it goes to the statement of changes in net assets, not the statement of operations, which surprises many practitioners. Nothing is deferred.
+        ref: Part III, Section 3463
+      - id: p2u2l4q05
+        type: calc
+        concept: p2u2-asset-ceiling
+        prompt: "A Calgary foundation's plan has an obligation of $900,000 and assets at fair value of $1,100,000. The present value of the contribution reductions the foundation can obtain from the surplus is $120,000, and it has no right to a refund. Enter the valuation allowance."
+        answer: 80000
+        unit: $
+        explain: The surplus is $200,000, but the foundation can only realize $120,000 of future benefit. The valuation allowance is $200,000 − $120,000 = $80,000, and the net defined benefit asset shown is $120,000.
+        ref: Part II, Section 3462
+      - id: p2u2l4q06
+        type: je
+        concept: p2u2-asset-ceiling
+        prompt: The next year the foundation's valuation allowance must rise from $80,000 to $110,000. Record the change.
+        accounts:
+          - Remeasurements and other items
+          - Valuation allowance on defined benefit asset
+          - Net defined benefit asset
+          - Pension finance cost
+          - Employee benefit expense
+          - Unrestricted net assets
+        lines:
+          - account: Remeasurements and other items
+            side: dr
+            amount: 30000
+          - account: Valuation allowance on defined benefit asset
+            side: cr
+            amount: 30000
+        explain: The allowance increases by $30,000. Changes in the valuation allowance are remeasurements, so for an NPO they appear in the statement of changes in net assets.
+        ref: Part II, Section 3462
+      - id: p2u2l4q07
+        type: calc
+        concept: p2u2-npo-presentation
+        prompt: "A Red Deer society's unrestricted net assets were $1,000,000 at January 1. Its excess of revenue over expenses was $85,000, after $170,000 of pension service and finance cost. Remeasurements and other items were a $160,000 loss. There were no other transfers. Enter unrestricted net assets at December 31."
+        answer: 925000
+        unit: $
+        explain: $1,000,000 + $85,000 − $160,000 = $925,000. The $170,000 is already inside the $85,000 excess. The remeasurement loss is a separate line in the statement of changes in net assets.
+        ref: Part III, Section 3463
+      - id: p2u2l4q08
+        type: mc
+        concept: p2u2-asset-ceiling
+        prompt: Why does Section 3462 limit a recognized defined benefit asset?
+        options:
+          - Because surpluses belong to the plan members by law in all cases
+          - So the asset does not exceed the future economic benefit the NPO can actually obtain from the surplus
+          - To smooth pension cost over time
+          - Because NPOs may not recognize assets they do not control
+        answer: 1
+        explain: A surplus is an asset only to the extent the NPO can benefit from it, through refunds or reduced future contributions. The valuation allowance removes the part the NPO cannot use.
+        ref: Part II, Section 3462
+      - id: p2u2l4q09
+        type: tf
+        concept: p2u2-remeasurements
+        prompt: A gain on settling an NPO's retiree pension obligations by buying annuities is recognized in the statement of operations, because the settlement is a real transaction.
+        answer: false
+        reasons:
+          - Settlement and curtailment gains and losses are remeasurements and other items, recognized in net assets by an NPO
+          - Settlements are only disclosed
+          - Settlement gains are deferred until the annuities expire
+        reason: 0
+        explain: Section 3462 includes settlement and curtailment gains and losses in remeasurements and other items. Section 3463 then sends them to the statement of changes in net assets.
+        ref: Part III, Section 3463
+      - id: p2u2l4q10
+        type: mc
+        concept: p2u2-npo-presentation
+        prompt: In which column of the statement of changes in net assets would an NPO usually show its remeasurements and other items?
+        options:
+          - Net assets restricted for endowment
+          - Unrestricted net assets, unless the plan relates to a fund that carries its own restrictions
+          - Net assets invested in capital assets
+          - A new column that must be called pension reserve
+        answer: 1
+        explain: The pension obligation is usually funded from general operations, so remeasurements normally affect unrestricted net assets. What Section 3463 requires is a separately identified line, so readers can see the effect.
+        ref: Part III, Section 3463
+
+  - id: p2u2l5
+    title: Compensated absences and integrated cases
+    intro: Sick leave, vacation and other absences follow the same vest-or-accumulate logic as post-employment benefits. Finish with full-year cases.
+    questions:
+      - id: p2u2l5q01
+        type: classify
+        concept: p2u2-compensated-absences
+        prompt: Classify when each benefit is recognized.
+        buckets:
+          - Accrue as employees render service
+          - Recognize when the obligating event occurs
+        items:
+          - text: Sick days that carry forward up to 60 days but are not paid out on leaving
+            bucket: 0
+          - text: Vacation that can be banked and is paid out on termination
+            bucket: 0
+          - text: Parental leave top-up that does not depend on years of service
+            bucket: 1
+          - text: Paid sabbatical earned after six years of service
+            bucket: 0
+          - text: Long-term disability payments that do not vary with service
+            bucket: 1
+          - text: Retirement allowance of one week's pay per year of service
+            bucket: 0
+        explain: Benefits that vest or accumulate are earned through service and accrued as employees work. Benefits that neither vest nor accumulate are triggered by an event such as a birth or disability, so they are recognized when the event occurs.
+        ref: Part II, Section 3462
+      - id: p2u2l5q02
+        type: calc
+        concept: p2u2-compensated-absences
+        prompt: "A Camrose hospice society lets sick days accumulate but does not pay them out. Staff hold 600 unused days. Experience shows about 40% of accumulated days are eventually used. The average daily wage is $250. Enter the sick leave liability."
+        answer: 60000
+        unit: $
+        explain: Accumulating but non-vesting sick leave is measured on expected use, 600 × 40% × $250 = $60,000. Because it does not vest, days expected to be forfeited are not accrued.
+        ref: Part II, Section 3462
+      - id: p2u2l5q03
+        type: je
+        concept: p2u2-compensated-absences
+        prompt: Record the $60,000 sick leave liability for the first time at year end.
+        accounts:
+          - Salaries and benefits expense
+          - Accrued sick leave liability
+          - Remeasurements and other items
+          - Net defined benefit liability
+          - Cash
+          - Unrestricted net assets
+        lines:
+          - account: Salaries and benefits expense
+            side: dr
+            amount: 60000
+          - account: Accrued sick leave liability
+            side: cr
+            amount: 60000
+        explain: The cost of accumulating absences belongs in the periods when employees earn them, so it goes through the statement of operations. It is not a remeasurement.
+        ref: Part II, Section 3462
+      - id: p2u2l5q04
+        type: calc
+        concept: p2u2-compensated-absences
+        prompt: An Edmonton community health centre's vacation vests and is paid out on termination. At year end 12 employees each have 8 unused days, and the average daily pay is $220. Enter the vacation liability.
+        answer: 21120
+        unit: $
+        explain: Vested vacation is owed whether or not it is used, so the full amount is accrued, 12 × 8 × $220 = $21,120. No usage probability is applied.
+        ref: Part II, Section 3462
+      - id: p2u2l5q05
+        type: tf
+        concept: p2u2-event-driven
+        prompt: A Grande Prairie society self-insures long-term disability. Benefits are the same whatever an employee's length of service. It should accrue the cost over employees' working lives.
+        answer: false
+        reasons:
+          - When benefits do not depend on service, the obligation arises when the disability occurs
+          - Self-insured plans are outside Section 3462
+          - Disability benefits are always defined contribution
+        reason: 0
+        explain: A benefit that does not vest or accumulate with service is event-driven. The full expected cost of benefits for a disabled employee is recognized when the disability occurs.
+        ref: Part II, Section 3462
+      - id: p2u2l5q06
+        type: je
+        concept: p2u2-event-driven
+        prompt: A Lethbridge arts society self-insures long-term disability benefits that do not depend on length of service. In November an employee becomes disabled. The actuarial present value of the benefits expected to be paid is $95,000. Record the obligation.
+        accounts:
+          - Salaries and benefits expense
+          - Accrued long-term disability obligation
+          - Remeasurements and other items
+          - Net defined benefit liability
+          - Cash
+          - Deferred contributions
+        lines:
+          - account: Salaries and benefits expense
+            side: dr
+            amount: 95000
+          - account: Accrued long-term disability obligation
+            side: cr
+            amount: 95000
+        explain: Because the benefit does not vest or accumulate with service, the disability is the obligating event. The full expected cost is recognized when it occurs, through the statement of operations.
+        ref: Part II, Section 3462
+      - id: p2u2l5q07
+        type: calc
+        concept: p2u2-remeasurements
+        prompt: "Medicine Hat case. At January 1: obligation $3,000,000, assets $2,500,000. Discount rate 4%. Service cost $150,000. On December 31: past service cost from an amendment $80,000, contributions $200,000, benefits paid $100,000. The year-end valuation, including the amendment, shows an obligation of $3,330,000; assets are worth $2,700,000. Enter total remeasurements and other items for the year."
+        answer: 160000
+        unit: $
+        explain: The expected obligation is $3,000,000 + $150,000 + $120,000 interest − $100,000 + $80,000 past service = $3,250,000, so the actuarial loss is $80,000. Expected assets are $2,500,000 + $100,000 + $200,000 − $100,000 = $2,700,000, which equals actual. Past service cost of $80,000 plus the $80,000 loss gives $160,000.
+        ref: Part II, Section 3462
+      - id: p2u2l5q08
+        type: calc
+        concept: p2u2-npo-presentation
+        prompt: In the Medicine Hat case (opening net liability $500,000, discount rate 4%, service cost $150,000), enter the total defined benefit cost in the statement of operations.
+        answer: 170000
+        unit: $
+        explain: Service cost $150,000 plus finance cost of 4% × $500,000 = $20,000 gives $170,000. The $160,000 of remeasurements and other items, including past service cost, goes to the statement of changes in net assets.
+        ref: Part III, Section 3463
+      - id: p2u2l5q09
+        type: je
+        concept: p2u2-immediate-recognition
+        prompt: "Record the Medicine Hat charity's full year in one entry: service cost $150,000, finance cost $20,000, remeasurements and other items $160,000, and contributions of $200,000 paid in cash."
+        accounts:
+          - Employee benefit expense
+          - Pension finance cost
+          - Remeasurements and other items
+          - Net defined benefit liability
+          - Cash
+          - Pension contributions payable
+          - Deferred past service cost
+        lines:
+          - account: Employee benefit expense
+            side: dr
+            amount: 150000
+          - account: Pension finance cost
+            side: dr
+            amount: 20000
+          - account: Remeasurements and other items
+            side: dr
+            amount: 160000
+          - account: Cash
+            side: cr
+            amount: 200000
+          - account: Net defined benefit liability
+            side: cr
+            amount: 130000
+        explain: The net liability rises from $500,000 to $630,000, which equals the year-end obligation of $3,330,000 less assets of $2,700,000. Costs of $330,000 less contributions of $200,000 is the $130,000 increase.
+        ref: Part II, Section 3462
+      - id: p2u2l5q10
+        type: match
+        concept: p2u2-event-driven
+        prompt: Match each benefit to the timing of recognition.
+        pairs:
+          - left: Accumulating, non-vesting sick days
+            right: As service is rendered, based on expected use
+          - left: Vested vacation
+            right: As service is rendered, at the full amount
+          - left: Parental leave top-up not tied to service
+            right: When the leave event occurs
+          - left: Sabbatical earned after six years of service
+            right: Accrued over the six years of service
+        explain: The question in every case is whether the benefit is earned through service. Earned benefits are accrued over service. Event-driven benefits are recognized when the event happens.
+        ref: Part II, Section 3462

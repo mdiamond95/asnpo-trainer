@@ -1,0 +1,856 @@
+id: rev2
+course: revenue
+number: 2
+title: The restricted fund method in depth
+summary: What the restricted fund method requires, which fund records each kind of contribution and investment income, how the general fund applies the deferral method when no restricted fund matches, how capital and endowment funds work, how interfund transfers are presented, and how the same facts look under both methods.
+refs:
+  - Part III, Section 4410
+  - Part III, Section 4400
+status: ready
+
+concepts:
+  - id: rev2-structure
+    title: What the method requires
+    summary: The restricted fund method needs a general fund plus one or more restricted funds, and an endowment fund when the NPO holds endowments. The general fund reports unrestricted resources and any restricted contributions that have no matching restricted fund.
+    ref: Part III, Section 4410
+  - id: rev2-restricted-fund-revenue
+    title: Revenue of the matching restricted fund
+    summary: A restricted contribution for which a corresponding restricted fund exists is revenue of that fund in the period received or receivable. It is not deferred, even if it will be spent in later years.
+    ref: Part III, Section 4410
+  - id: rev2-general-fund
+    title: Unrestricted contributions in the general fund
+    summary: Unrestricted contributions are revenue of the general fund in the period received or receivable, provided the amount can be reasonably estimated and collection is reasonably assured.
+    ref: Part III, Section 4410
+  - id: rev2-internal-funds
+    title: Internally restricted funds are not restricted funds
+    summary: A fund the board sets up for its own purposes does not receive contributions as revenue. Unrestricted contributions are revenue of the general fund, and the board moves amounts by interfund transfer.
+    ref: Part III, Section 4400
+  - id: rev2-no-fund-deferral
+    title: No matching fund means deferral in the general fund
+    summary: A restricted contribution with no corresponding restricted fund is recognized in the general fund using the deferral method. It is deferred if it relates to future expenses or amortizable capital assets.
+    ref: Part III, Section 4410
+  - id: rev2-capital-in-general
+    title: Capital assets kept in the general fund
+    summary: When an NPO has no capital fund and reports its capital assets in the general fund, restricted capital contributions are deferred in the general fund and amortized to revenue on the same basis as the assets, and contributions for land go directly to fund balance.
+    ref: Part III, Section 4410
+  - id: rev2-endowment-fund
+    title: Endowment fund revenue
+    summary: Endowment contributions are revenue of the endowment fund in the period received or receivable. This is the opposite of the deferral method, where they bypass revenue.
+    ref: Part III, Section 4410
+  - id: rev2-capital-fund
+    title: Capital funds and amortization
+    summary: When an NPO reports a capital fund, restricted capital contributions are revenue of that fund when received or receivable. The capital assets and their amortization expense are usually recorded in the capital fund too, so its fund balance falls as the assets are amortized.
+    ref: Part III, Section 4410
+  - id: rev2-transfers
+    title: Interfund transfers
+    summary: Moving resources between funds, such as the general fund paying for the unfunded part of an asset or a debt payment, is an interfund transfer. Transfers are shown in the statement of changes in net assets (fund balances), never as revenue or expense, and their amounts and purposes are disclosed.
+    ref: Part III, Section 4400
+  - id: rev2-investment-income
+    title: Investment income by fund
+    summary: Income that must be added to endowment principal is revenue of the endowment fund. Other restricted income is revenue of its matching restricted fund, or is deferred in the general fund if none exists. Unrestricted income, including unrestricted endowment income, is general fund revenue.
+    ref: Part III, Section 4410
+  - id: rev2-statements
+    title: Multi-column statements
+    summary: Under the restricted fund method, the statement of operations shows totals for the general fund, the restricted funds other than endowment and the endowment fund. Most NPOs present this in columns, one per fund or group of funds.
+    ref: Part III, Section 4400
+  - id: rev2-fund-balances
+    title: Fund balances
+    summary: Unspent restricted resources are part of a restricted fund's balance, not a liability. Net assets are presented by fund, so the fund balance shows what is left for each restricted purpose.
+    ref: Part III, Section 4400
+  - id: rev2-disclosure
+    title: Disclosures specific to funds
+    summary: An NPO reporting funds describes the purpose of each fund and discloses its contribution method. Interfund transfers are disclosed with their amounts and purposes.
+    ref: Part III, Section 4400
+  - id: rev2-policy-choice
+    title: The method is a policy choice
+    summary: The deferral method and the restricted fund method are both permitted. The choice is an accounting policy applied consistently, and a later switch is a change in accounting policy under Part II, Section 1506, applied retrospectively.
+    ref: Part III, Section 4410
+  - id: rev2-compare-revenue
+    title: Same facts, different revenue
+    summary: The restricted fund method recognizes restricted and endowment contributions as revenue earlier and in full, so total revenue and fund surpluses are usually higher in the year of receipt than under the deferral method.
+    ref: Part III, Section 4410
+  - id: rev2-compare-net-assets
+    title: Same facts, different balance sheet
+    summary: Amounts the deferral method holds as deferred contributions or deferred capital contributions sit in restricted fund balances under the restricted fund method. Total resources are the same; only their classification between deferred credits and net assets changes.
+    ref: Part III, Section 4400
+
+lessons:
+  - id: rev2l1
+    title: What the method requires
+    intro: The restricted fund method lets the fund structure show the restriction, so revenue no longer needs to wait. Start with which fund records what.
+    questions:
+      - id: rev2l1q01
+        type: mc
+        concept: rev2-structure
+        prompt: A Red Deer food bank wants to adopt the restricted fund method. Which structure does it need at minimum?
+        options:
+          - A general fund and at least one restricted fund, plus an endowment fund if it holds endowments
+          - A capital fund and an endowment fund, with no general fund
+          - One restricted fund for every grant it receives
+          - A general fund only, with restrictions shown in the notes
+        answer: 0
+        explain: The method needs a general fund and restricted funds. An endowment fund is needed if the NPO holds endowments. It does not need a fund for every restriction; restricted contributions without a fund are handled in the general fund using deferral.
+        ref: Part III, Section 4410
+      - id: rev2l1q02
+        type: classify
+        concept: rev2-restricted-fund-revenue
+        prompt: A Calgary arts society uses the restricted fund method with a general fund, an Education fund, a Capital fund and an Endowment fund. Classify how each contribution is first recognized.
+        buckets:
+          - General fund revenue
+          - Deferred in the general fund
+          - Revenue of a restricted fund (Education or Capital)
+          - Endowment fund revenue
+        items:
+          - text: Grant restricted to next year's school workshops
+            bucket: 2
+          - text: Unrestricted gala donations
+            bucket: 0
+          - text: Gift restricted to a touring program, which has no fund
+            bucket: 1
+          - text: Gift restricted to buying lighting equipment
+            bucket: 2
+          - text: Bequest whose capital must be kept permanently
+            bucket: 3
+          - text: Unrestricted bequest the board earmarks for a reserve
+            bucket: 0
+        explain: Restricted gifts with a matching fund are revenue of that fund now. A restricted gift without a fund is deferred in the general fund. Endowments are endowment fund revenue, and unrestricted gifts stay in the general fund whatever the board plans.
+        ref: Part III, Section 4410
+      - id: rev2l1q03
+        type: je
+        concept: rev2-restricted-fund-revenue
+        prompt: A St. Albert hospice (restricted fund method) has a Bereavement Program fund. A long-time donor signs a reasonably assured $75,000 pledge restricted to bereavement programs over the next three years. Record the pledge.
+        accounts:
+          - Contributions receivable (Bereavement fund)
+          - Contribution revenue (Bereavement fund)
+          - Deferred contributions (General fund)
+          - Contribution revenue (General fund)
+          - Contributions receivable (General fund)
+          - Cash (Bereavement fund)
+        lines:
+          - account: Contributions receivable (Bereavement fund)
+            side: dr
+            amount: 75000
+          - account: Contribution revenue (Bereavement fund)
+            side: cr
+            amount: 75000
+        explain: A matching restricted fund exists, so the contribution is revenue of that fund when receivable. The multi-year spending period does not matter under this method.
+        ref: Part III, Section 4410
+      - id: rev2l1q04
+        type: tf
+        concept: rev2-fund-balances
+        prompt: Under the restricted fund method, the unspent balance of a restricted program grant recorded in its matching restricted fund is reported as a liability.
+        answer: false
+        reasons:
+          - It is part of the restricted fund's balance, in net assets
+          - It is always shown as deferred contributions
+          - It is netted against program expenses
+        reason: 0
+        explain: The grant was revenue of the restricted fund, so what is left is fund balance. Only if the grant must be repaid would there be a liability.
+        ref: Part III, Section 4400
+      - id: rev2l1q05
+        type: je
+        concept: rev2-general-fund
+        prompt: An Edmonton community league (restricted fund method) receives $12,000 in unrestricted online donations. Record the receipt.
+        accounts:
+          - Cash (General fund)
+          - Contribution revenue (General fund)
+          - Contribution revenue (Capital fund)
+          - Deferred contributions (General fund)
+          - Cash (Capital fund)
+        lines:
+          - account: Cash (General fund)
+            side: dr
+            amount: 12000
+          - account: Contribution revenue (General fund)
+            side: cr
+            amount: 12000
+        explain: Unrestricted contributions are revenue of the general fund when received or receivable, exactly as under the deferral method.
+        ref: Part III, Section 4410
+      - id: rev2l1q06
+        type: tf
+        concept: rev2-internal-funds
+        prompt: A Banff museum's board creates an internally restricted Building Reserve fund. A donor gives $40,000 with no restrictions, and the board directs it to the reserve. Under the restricted fund method, the $40,000 is revenue of the Building Reserve fund.
+        answer: false
+        reasons:
+          - It is general fund revenue; the board then makes an interfund transfer to the reserve
+          - It is deferred until the board spends it
+          - Board-created funds count as restricted funds once approved
+        reason: 0
+        explain: Recognition depends on external restrictions only. The gift is general fund revenue. Moving it to the reserve is an interfund transfer shown in the statement of changes in fund balances.
+        ref: Part III, Section 4400
+      - id: rev2l1q07
+        type: calc
+        concept: rev2-restricted-fund-revenue
+        prompt: A Lethbridge youth society with a Camps fund (restricted fund method) receives a $96,000 grant restricted to summer camps over the next two years. It spends $40,000 on camps this year. Enter Camps fund contribution revenue for this year.
+        answer: 96000
+        unit: $
+        explain: The full grant is revenue of the Camps fund when received. The $56,000 not spent stays in the Camps fund balance. Under the deferral method, revenue would be only $40,000.
+        ref: Part III, Section 4410
+      - id: rev2l1q08
+        type: match
+        concept: rev2-structure
+        prompt: Match each fund of a Medicine Hat health foundation to what it typically reports.
+        pairs:
+          - left: General fund
+            right: Unrestricted resources and restricted gifts with no matching fund
+          - left: Research fund
+            right: Contributions restricted to research and the research spending
+          - left: Capital fund
+            right: Capital contributions, capital assets and their amortization
+          - left: Endowment fund
+            right: Endowment contributions and income that must be added to principal
+        explain: Each restricted fund holds the resources and activity tied to its restriction. Everything unrestricted, plus any restricted contribution without a matching fund, lives in the general fund.
+        ref: Part III, Section 4410
+      - id: rev2l1q09
+        type: mc
+        concept: rev2-disclosure
+        prompt: Which disclosure is specific to an NPO reporting on a fund basis?
+        options:
+          - The number of volunteers in each fund
+          - The fair value of every capital asset in the capital fund
+          - A brief description of the purpose of each fund reported
+          - The donors who gave to each restricted fund
+        answer: 2
+        explain: Fund reporting is only useful if readers know what each fund is for. The NPO also discloses its contribution method and the amounts and purposes of interfund transfers.
+        ref: Part III, Section 4400
+      - id: rev2l1q10
+        type: je
+        concept: rev2-endowment-fund
+        prompt: A Camrose community foundation (restricted fund method) receives $150,000 cash to be held permanently, with income for local scholarships. Record the gift.
+        accounts:
+          - Cash (Endowment fund)
+          - Contribution revenue (Endowment fund)
+          - Endowment net assets
+          - Contribution revenue (General fund)
+          - Deferred contributions (General fund)
+        lines:
+          - account: Cash (Endowment fund)
+            side: dr
+            amount: 150000
+          - account: Contribution revenue (Endowment fund)
+            side: cr
+            amount: 150000
+        explain: Under the restricted fund method, endowment contributions are revenue of the endowment fund. Crediting endowment net assets directly is the deferral method treatment.
+        ref: Part III, Section 4410
+
+  - id: rev2l2
+    title: The general fund applies deferral
+    intro: Few NPOs create a fund for every restriction. Whatever has no matching fund is handled in the general fund with the deferral method, so a restricted fund method NPO still needs deferral skills.
+    questions:
+      - id: rev2l2q01
+        type: je
+        concept: rev2-no-fund-deferral
+        prompt: A Grande Prairie seniors' society uses the restricted fund method with a general fund and a Capital fund only. It receives $64,000 cash restricted to a falls-prevention program to run next year. Record the receipt.
+        accounts:
+          - Cash (General fund)
+          - Deferred contributions (General fund)
+          - Contribution revenue (General fund)
+          - Contribution revenue (Capital fund)
+          - Cash (Capital fund)
+          - Program expenses (General fund)
+        lines:
+          - account: Cash (General fund)
+            side: dr
+            amount: 64000
+          - account: Deferred contributions (General fund)
+            side: cr
+            amount: 64000
+        explain: The program has no restricted fund, so the general fund recognizes the gift using the deferral method. It relates to next year's expenses, so it is deferred.
+        ref: Part III, Section 4410
+      - id: rev2l2q02
+        type: je
+        concept: rev2-no-fund-deferral
+        prompt: Next year, the society spends $48,000 on the falls-prevention program. Record the revenue recognition.
+        accounts:
+          - Deferred contributions (General fund)
+          - Contribution revenue (General fund)
+          - Program expenses (General fund)
+          - Cash (General fund)
+          - Contribution revenue (Capital fund)
+        lines:
+          - account: Deferred contributions (General fund)
+            side: dr
+            amount: 48000
+          - account: Contribution revenue (General fund)
+            side: cr
+            amount: 48000
+        explain: Revenue follows the expenses incurred, so $48,000 is released and $16,000 stays deferred in the general fund.
+        ref: Part III, Section 4410
+      - id: rev2l2q03
+        type: mc
+        concept: rev2-no-fund-deferral
+        prompt: A Fort McMurray society has a restricted fund only for its Housing program. It receives a grant restricted to its Food Security program. How is the grant recognized?
+        options:
+          - As revenue of the Housing fund, the closest restricted fund
+          - As revenue of the general fund immediately
+          - In the general fund, using the deferral method
+          - As a direct increase in general fund balance
+        answer: 2
+        explain: A restricted contribution goes to a restricted fund only if that fund matches its restriction. Otherwise the general fund applies the deferral method.
+        ref: Part III, Section 4410
+      - id: rev2l2q04
+        type: calc
+        concept: rev2-no-fund-deferral
+        prompt: "A Calgary literacy society (restricted fund method, general fund and Endowment fund only) has these year items: unrestricted donations $140,000; a $90,000 grant restricted to tutoring, of which $55,000 is spent; and $30,000 released from general fund deferred contributions carried from last year as related expenses are incurred. Enter general fund contribution revenue."
+        answer: 225000
+        unit: $
+        explain: $140,000 + $55,000 + $30,000 = $225,000. With no tutoring fund, the grant is handled by deferral in the general fund, so only the spent $55,000 is revenue.
+        ref: Part III, Section 4410
+      - id: rev2l2q05
+        type: je
+        concept: rev2-capital-in-general
+        prompt: A Lethbridge Friendship Centre uses the restricted fund method but has no capital fund; its capital assets are reported in the general fund. It receives a $210,000 grant restricted to buying a minibus. Record the receipt.
+        accounts:
+          - Cash (General fund)
+          - Deferred capital contributions (General fund)
+          - Contribution revenue (General fund)
+          - Contribution revenue (Capital fund)
+          - General fund balance
+          - Vehicles (General fund)
+        lines:
+          - account: Cash (General fund)
+            side: dr
+            amount: 210000
+          - account: Deferred capital contributions (General fund)
+            side: cr
+            amount: 210000
+        explain: With no capital fund, the general fund applies the deferral method. The contribution is deferred and later amortized on the same basis as the minibus.
+        ref: Part III, Section 4410
+      - id: rev2l2q06
+        type: calc
+        concept: rev2-capital-in-general
+        prompt: The centre buys the minibus for $210,000 at the start of the year and amortizes it straight-line over 7 years. Enter the amortization of deferred capital contributions in the general fund for year 1.
+        answer: 30000
+        unit: $
+        explain: $210,000 ÷ 7 = $30,000. It exactly offsets the minibus amortization expense of $30,000 because the grant funded the whole cost.
+        ref: Part III, Section 4410
+      - id: rev2l2q07
+        type: tf
+        concept: rev2-capital-in-general
+        prompt: An NPO using the restricted fund method with no capital fund receives a gift restricted to buying land. In the general fund, it recognizes the gift as a direct increase in fund balance.
+        answer: true
+        reasons:
+          - The general fund applies the deferral method, which takes land contributions directly to net assets
+          - Land gifts are always revenue of the general fund
+          - Land gifts must be deferred indefinitely
+        reason: 0
+        explain: The general fund uses the deferral rules, and under those rules a restricted contribution for a non-amortized asset is a direct increase in net assets, here the general fund balance.
+        ref: Part III, Section 4410
+      - id: rev2l2q08
+        type: classify
+        concept: rev2-no-fund-deferral
+        prompt: A Red Deer hockey association uses the restricted fund method with a general fund and an Endowment fund only. Classify where each item is first recorded.
+        buckets:
+          - General fund revenue
+          - General fund deferred contributions or deferred capital contributions
+          - Endowment fund revenue
+        items:
+          - text: Grant restricted to a new scoreboard
+            bucket: 1
+          - text: Grant restricted to this season's ice rental, already paid
+            bucket: 0
+          - text: Gift to be held permanently for player bursaries
+            bucket: 2
+          - text: Gift restricted to next season's coaching clinics
+            bucket: 1
+          - text: Unrestricted cash donation from a local business
+            bucket: 0
+        explain: With no restricted funds other than the endowment, every restricted gift except the endowment is handled by deferral in the general fund. Current-period restricted gifts are revenue now.
+        ref: Part III, Section 4410
+      - id: rev2l2q09
+        type: calc
+        concept: rev2-no-fund-deferral
+        prompt: "Continue the hockey association. General fund deferred contributions opened at $22,000. During the year it received $50,000 for next season's clinics and $8,000 for this season's ice, and recognized $15,000 from the opening balance. Enter the closing deferred contributions balance (excluding capital)."
+        answer: 57000
+        unit: $
+        explain: $22,000 + $50,000 - $15,000 = $57,000. The $8,000 for current-season ice was revenue on receipt, so it never entered the deferred balance.
+        ref: Part III, Section 4410
+      - id: rev2l2q10
+        type: mc
+        concept: rev2-structure
+        prompt: Why might an NPO using the restricted fund method still report deferred contributions?
+        options:
+          - Because it must defer all government grants
+          - Because restricted contributions with no matching restricted fund are recognized in the general fund using the deferral method
+          - Because endowment income is always deferred
+          - It cannot; deferred contributions only exist under the deferral method
+        answer: 1
+        explain: The restricted fund method is really a hybrid. Restricted gifts without a fund get deferral treatment in the general fund, so deferred balances are common.
+        ref: Part III, Section 4410
+
+  - id: rev2l3
+    title: Capital funds, endowments and transfers
+    intro: A capital fund and an endowment fund change where revenue, amortization and investment income land. Transfers tie the funds together without touching revenue or expense.
+    questions:
+      - id: rev2l3q01
+        type: je
+        concept: rev2-capital-fund
+        prompt: A Medicine Hat arts centre (restricted fund method) has a Capital fund. It receives a $400,000 provincial grant restricted to renovating its gallery. Record the receipt.
+        accounts:
+          - Cash (Capital fund)
+          - Contribution revenue (Capital fund)
+          - Deferred capital contributions (General fund)
+          - Contribution revenue (General fund)
+          - Cash (General fund)
+          - Buildings (Capital fund)
+        lines:
+          - account: Cash (Capital fund)
+            side: dr
+            amount: 400000
+          - account: Contribution revenue (Capital fund)
+            side: cr
+            amount: 400000
+        explain: A matching capital fund exists, so the grant is revenue of that fund when received, even though the renovation has not started.
+        ref: Part III, Section 4410
+      - id: rev2l3q02
+        type: je
+        concept: rev2-transfers
+        prompt: The renovation costs $520,000. The board approves a transfer of $120,000 cash from the general fund to the Capital fund to cover the shortfall. Record the transfer.
+        accounts:
+          - Interfund transfer out (General fund balance)
+          - Cash (General fund)
+          - Cash (Capital fund)
+          - Interfund transfer in (Capital fund balance)
+          - Contribution revenue (Capital fund)
+          - Program expenses (General fund)
+        lines:
+          - account: Interfund transfer out (General fund balance)
+            side: dr
+            amount: 120000
+          - account: Cash (General fund)
+            side: cr
+            amount: 120000
+          - account: Cash (Capital fund)
+            side: dr
+            amount: 120000
+          - account: Interfund transfer in (Capital fund balance)
+            side: cr
+            amount: 120000
+        explain: Each fund stays self-balancing. The transfer reduces general fund balance and increases Capital fund balance. It is shown in the statement of changes in fund balances, not as revenue of the Capital fund or expense of the general fund.
+        ref: Part III, Section 4400
+      - id: rev2l3q03
+        type: je
+        concept: rev2-capital-fund
+        prompt: The $520,000 renovation is complete at the start of the year and is amortized straight-line over 20 years. Record year 1 amortization.
+        accounts:
+          - Amortization expense (Capital fund)
+          - Accumulated amortization (Capital fund)
+          - Amortization of deferred capital contributions (General fund)
+          - Deferred capital contributions (General fund)
+          - Amortization expense (General fund)
+        lines:
+          - account: Amortization expense (Capital fund)
+            side: dr
+            amount: 26000
+          - account: Accumulated amortization (Capital fund)
+            side: cr
+            amount: 26000
+        explain: $520,000 ÷ 20 = $26,000. The assets live in the Capital fund, so amortization is its expense. There is no deferred capital contribution to amortize, because the grant was already revenue of the Capital fund.
+        ref: Part III, Section 4410
+      - id: rev2l3q04
+        type: calc
+        concept: rev2-capital-fund
+        prompt: "Opening Capital fund balance was zero. In year 1 the fund had the $400,000 grant revenue, the $120,000 transfer in and $26,000 of amortization. Enter the closing Capital fund balance."
+        answer: 494000
+        unit: $
+        explain: $400,000 + $120,000 - $26,000 = $494,000, equal to the renovation's carrying amount of $520,000 - $26,000. The fund balance will decline each year as amortization is recorded.
+        ref: Part III, Section 4400
+      - id: rev2l3q05
+        type: tf
+        concept: rev2-transfers
+        prompt: When the general fund pays a $35,000 instalment on a mortgage that is recorded in the Capital fund, the payment is recorded as an expense of the general fund.
+        answer: false
+        reasons:
+          - It is an interfund transfer, shown in the statement of changes in fund balances
+          - It is revenue of the Capital fund
+          - It is a direct charge to the Endowment fund
+        reason: 0
+        explain: Resources moving from the general fund to settle a Capital fund liability are an interfund transfer. Interest on the mortgage is an expense of whichever fund the policy assigns it to, but the principal movement between funds is not.
+        ref: Part III, Section 4400
+      - id: rev2l3q06
+        type: je
+        concept: rev2-investment-income
+        prompt: "An Edmonton health foundation (restricted fund method) earns $50,000 on its endowment. The terms require $8,000 to be added to principal; the remaining $42,000 is unrestricted. Record the income, received in cash in each fund."
+        accounts:
+          - Cash (Endowment fund)
+          - Investment income (Endowment fund)
+          - Cash (General fund)
+          - Investment income (General fund)
+          - Deferred contributions (General fund)
+          - Endowment net assets
+        lines:
+          - account: Cash (Endowment fund)
+            side: dr
+            amount: 8000
+          - account: Investment income (Endowment fund)
+            side: cr
+            amount: 8000
+          - account: Cash (General fund)
+            side: dr
+            amount: 42000
+          - account: Investment income (General fund)
+            side: cr
+            amount: 42000
+        explain: Income that must be added to principal is revenue of the endowment fund. Unrestricted income, even from endowed investments, is general fund revenue.
+        ref: Part III, Section 4410
+      - id: rev2l3q07
+        type: classify
+        concept: rev2-investment-income
+        prompt: A Calgary community foundation (restricted fund method) has a general fund, a Scholarship fund and an Endowment fund. Classify how each piece of investment income is recognized.
+        buckets:
+          - Endowment fund revenue
+          - Scholarship fund revenue
+          - General fund revenue
+          - Deferred in the general fund
+        items:
+          - text: Endowment income the donor requires to be capitalized
+            bucket: 0
+          - text: Endowment income restricted to scholarships
+            bucket: 1
+          - text: Interest on unrestricted operating cash
+            bucket: 2
+          - text: Endowment income restricted to a youth mentoring program, which has no fund, not yet spent
+            bucket: 3
+          - text: Endowment income with no restrictions on use
+            bucket: 2
+        explain: Restricted investment income follows the same logic as restricted contributions. A matching fund records it as revenue; without one, the general fund defers it until the related expenses are incurred.
+        ref: Part III, Section 4410
+      - id: rev2l3q08
+        type: mc
+        concept: rev2-endowment-fund
+        prompt: The same $300,000 endowment gift is received by two Banff foundations, one using the deferral method and one using the restricted fund method. Which statement is correct?
+        options:
+          - Both report $300,000 of revenue in the statement of operations
+          - Neither reports it in the statement of changes in net assets
+          - The deferral method reports it as endowment fund revenue
+          - The restricted fund method reports it as endowment fund revenue; the deferral method reports it as a direct increase in net assets
+        answer: 3
+        explain: This is one of the sharpest differences between the methods. The endowment fund column absorbs the revenue under the restricted fund method, while the deferral method keeps endowments out of revenue entirely.
+        ref: Part III, Section 4410
+      - id: rev2l3q09
+        type: match
+        concept: rev2-transfers
+        prompt: Match each event in a Grande Prairie museum (restricted fund method) to its presentation.
+        pairs:
+          - left: General fund covers the unfunded part of a new HVAC system
+            right: Interfund transfer in the statement of changes in fund balances
+          - left: Capital grant received for the HVAC system
+            right: Revenue of the Capital fund
+          - left: Amortization of the HVAC system
+            right: Expense of the Capital fund
+          - left: Board sets aside $50,000 for future exhibits
+            right: Transfer to an internally restricted fund or reserve
+        explain: Contributions and amortization are revenue and expense of the fund that holds the assets. Movements of resources between funds, whether for capital or board reserves, are transfers within fund balances.
+        ref: Part III, Section 4400
+      - id: rev2l3q10
+        type: je
+        concept: rev2-capital-fund
+        prompt: A Camrose seniors' lodge (restricted fund method, Capital fund) receives a reasonably assured $90,000 pledge restricted to replacing its kitchen. No cash has arrived. Record the pledge.
+        accounts:
+          - Contributions receivable (Capital fund)
+          - Contribution revenue (Capital fund)
+          - Deferred capital contributions (General fund)
+          - Contributions receivable (General fund)
+          - Contribution revenue (General fund)
+        lines:
+          - account: Contributions receivable (Capital fund)
+            side: dr
+            amount: 90000
+          - account: Contribution revenue (Capital fund)
+            side: cr
+            amount: 90000
+        explain: Restricted contributions with a matching fund are revenue of that fund when received or receivable. The receivable meets the recognition criteria, so revenue is recorded now in the Capital fund.
+        ref: Part III, Section 4410
+      - id: rev2l3q11
+        type: calc
+        concept: rev2-investment-income
+        prompt: "A St. Albert library foundation (restricted fund method, general fund and Endowment fund only) earns $36,000 on its endowment: $6,000 must be capitalized, $20,000 is restricted to buying children's books (no fund) and $10,000 is unrestricted. It spends $12,000 on children's books this year. Enter general fund investment income recognized."
+        answer: 22000
+        unit: $
+        explain: Unrestricted income of $10,000 plus the $12,000 of book-restricted income matched to this year's spending = $22,000. The other $8,000 is deferred in the general fund, and the $6,000 is endowment fund revenue.
+        ref: Part III, Section 4410
+
+  - id: rev2l4
+    title: Presentation and fund balances
+    intro: The restricted fund method changes the look of every statement. This lesson covers the columns, the fund balances and the disclosures readers rely on.
+    questions:
+      - id: rev2l4q01
+        type: mc
+        concept: rev2-statements
+        prompt: Under the restricted fund method, what must the statement of operations show?
+        options:
+          - Only total revenue and expenses for the organization as a whole
+          - Totals for the general fund, the restricted funds other than endowment, and the endowment fund
+          - A separate statement for every individual grant
+          - Only the general fund, with restricted funds in the notes
+        answer: 1
+        explain: Section 4400 requires totals for the general fund, restricted funds other than endowment, and the endowment fund. Most NPOs meet this with a multi-column statement.
+        ref: Part III, Section 4400
+      - id: rev2l4q02
+        type: calc
+        concept: rev2-transfers
+        prompt: "A Lethbridge food bank's general fund opened with $180,000. This year it had revenue of $920,000, expenses of $870,000, a $60,000 transfer to the Capital fund and a $25,000 transfer to an internally restricted reserve. Enter the closing general fund balance (excluding the reserve)."
+        answer: 145000
+        unit: $
+        explain: $180,000 + $920,000 - $870,000 - $60,000 - $25,000 = $145,000. Transfers reduce the general fund balance in the statement of changes in fund balances without affecting the excess of revenue over expenses of $50,000.
+        ref: Part III, Section 4400
+      - id: rev2l4q03
+        type: tf
+        concept: rev2-transfers
+        prompt: The general fund's excess of revenue over expenses for the year is reduced by a transfer to the Capital fund.
+        answer: false
+        reasons:
+          - Transfers appear in the statement of changes in fund balances, after the excess of revenue over expenses
+          - Transfers are expenses of the general fund
+          - Transfers are netted against contribution revenue
+        reason: 0
+        explain: Transfers change fund balances but not the operating result. Treating a transfer as an expense would understate the general fund's results.
+        ref: Part III, Section 4400
+      - id: rev2l4q04
+        type: classify
+        concept: rev2-fund-balances
+        prompt: A Red Deer museum uses the restricted fund method. Classify where each balance appears on its statement of financial position.
+        buckets:
+          - Liability
+          - Fund balance (net assets)
+        items:
+          - text: Unspent Exhibit fund grant with no repayment terms
+            bucket: 1
+          - text: General fund deferred contributions for a program with no fund
+            bucket: 0
+          - text: Endowment fund principal
+            bucket: 1
+          - text: Capital fund's investment in its building, net of the mortgage
+            bucket: 1
+          - text: Unspent grant the funder has demanded be returned
+            bucket: 0
+          - text: Mortgage on the building, held in the Capital fund
+            bucket: 0
+        explain: Resources already recognized as revenue of a fund are part of its balance. Deferred contributions in the general fund, debts and amounts to repay are liabilities or deferred credits outside fund balances.
+        ref: Part III, Section 4400
+      - id: rev2l4q05
+        type: mc
+        concept: rev2-disclosure
+        prompt: A Fort McMurray society transfers $200,000 from the general fund to its Capital fund. What should it disclose?
+        options:
+          - Nothing; transfers are internal
+          - Only the board minutes approving it
+          - The amount and purpose of the transfer
+          - The transfer as a related party transaction
+        answer: 2
+        explain: Interfund transfers are presented in the statement of changes in net assets, and their amounts and purposes are disclosed so readers can understand how resources moved between funds.
+        ref: Part III, Section 4400
+      - id: rev2l4q06
+        type: calc
+        concept: rev2-statements
+        prompt: "A Calgary arts society's Education fund (restricted fund method) had: contribution revenue $150,000, investment income $4,000 restricted to education, education program expenses $128,000 and a $10,000 transfer in from the general fund. Enter the Education fund's excess of revenue over expenses."
+        answer: 26000
+        unit: $
+        explain: $150,000 + $4,000 - $128,000 = $26,000. The $10,000 transfer is not revenue, so it affects only the Education fund balance in the statement of changes in fund balances.
+        ref: Part III, Section 4400
+      - id: rev2l4q07
+        type: tf
+        concept: rev2-policy-choice
+        prompt: A Banff society that has used the deferral method for years decides to switch to the restricted fund method. It may apply the new method only to contributions received from the date of the change.
+        answer: false
+        reasons:
+          - A change in method is a change in accounting policy applied retrospectively under Part II, Section 1506
+          - Any change in method needs AcSB approval
+          - The switch is a change in estimate applied prospectively
+        reason: 0
+        explain: The contribution method is an accounting policy. A voluntary change is applied retrospectively, with comparatives restated and disclosures under Section 1506. It must also give reliable and more relevant information.
+        ref: Part II, Section 1506
+      - id: rev2l4q08
+        type: mc
+        concept: rev2-transfers
+        prompt: The general fund of an Edmonton shelter advances $50,000 to its Capital fund to bridge a delayed grant, to be repaid within six months. How is it best presented?
+        options:
+          - As an interfund receivable in the general fund and payable in the Capital fund
+          - As an interfund transfer in the statement of changes in fund balances
+          - As Capital fund revenue
+          - As a general fund expense
+        answer: 0
+        explain: A transfer moves resources permanently. An advance that must be repaid is an interfund loan, so the funds record a receivable and a payable. Section 4400 requires the amounts, terms and conditions of interfund loans outstanding at year end to be disclosed, and in a multi-column format they are eliminated in any total column. Whether it is a loan or a transfer is a judgement based on the board's intent and terms.
+        ref: Part III, Section 4400
+      - id: rev2l4q09
+        type: match
+        concept: rev2-statements
+        prompt: Match each item of a restricted fund method NPO to the statement where it appears.
+        pairs:
+          - left: Endowment contributions received
+            right: Statement of operations, endowment fund column
+          - left: Transfer from the general fund to the Capital fund
+            right: Statement of changes in fund balances
+          - left: Unspent restricted Research fund balance
+            right: Statement of financial position, in fund balances
+          - left: Description of each fund's purpose
+            right: Notes to the financial statements
+        explain: Revenue goes in the operations columns, transfers in the statement of changes in fund balances, unspent restricted resources in fund balances, and fund purposes in the notes.
+        ref: Part III, Section 4400
+      - id: rev2l4q10
+        type: je
+        concept: rev2-internal-funds
+        prompt: The board of a Medicine Hat museum (restricted fund method) moves $30,000 of general fund cash into an internally restricted Exhibit Renewal fund. Record the transfer.
+        accounts:
+          - Interfund transfer out (General fund balance)
+          - Cash (General fund)
+          - Cash (Exhibit Renewal fund)
+          - Interfund transfer in (Exhibit Renewal fund balance)
+          - Contribution revenue (Exhibit Renewal fund)
+          - Program expenses (General fund)
+        lines:
+          - account: Interfund transfer out (General fund balance)
+            side: dr
+            amount: 30000
+          - account: Cash (General fund)
+            side: cr
+            amount: 30000
+          - account: Cash (Exhibit Renewal fund)
+            side: dr
+            amount: 30000
+          - account: Interfund transfer in (Exhibit Renewal fund balance)
+            side: cr
+            amount: 30000
+        explain: Board-imposed funds are funded by transfers, not contributions. The amount is internally restricted, presented separately from externally restricted funds, and the board can reverse it.
+        ref: Part III, Section 4400
+
+  - id: rev2l5
+    title: Same facts, two methods
+    intro: "One set of facts runs through this lesson. A Lethbridge museum's year 1: unrestricted donations $300,000; a $120,000 grant restricted to education, of which $70,000 is spent; a $500,000 grant for a building bought on day 1 for $500,000 and amortized straight-line over 25 years; a $200,000 endowment gift; $10,000 of unrestricted endowment income; and $280,000 of other expenses."
+    questions:
+      - id: rev2l5q01
+        type: calc
+        concept: rev2-compare-revenue
+        prompt: Under the deferral method, enter the museum's total revenue for year 1.
+        answer: 400000
+        unit: $
+        explain: $300,000 donations + $70,000 of the education grant + $500,000 ÷ 25 = $20,000 of the capital grant + $10,000 investment income = $400,000. The endowment gift is a direct increase in net assets.
+        ref: Part III, Section 4410
+      - id: rev2l5q02
+        type: calc
+        concept: rev2-compare-revenue
+        prompt: The museum instead uses the restricted fund method with a general fund, an Education fund, a Capital fund and an Endowment fund. Enter total revenue across all funds for year 1.
+        answer: 1130000
+        unit: $
+        explain: General fund $300,000 + $10,000 = $310,000. Education fund $120,000. Capital fund $500,000. Endowment fund $200,000. Total $1,130,000, all recognized when received.
+        ref: Part III, Section 4410
+      - id: rev2l5q03
+        type: calc
+        concept: rev2-compare-revenue
+        prompt: Under the deferral method, enter the museum's excess of revenue over expenses for year 1.
+        answer: 30000
+        unit: $
+        explain: Revenue $400,000 less expenses of $280,000 + $70,000 education + $20,000 amortization = $370,000 gives $30,000. Matching makes the restricted items net to zero, leaving the unrestricted result.
+        ref: Part III, Section 4410
+      - id: rev2l5q04
+        type: calc
+        concept: rev2-capital-fund
+        prompt: Under the restricted fund method, enter the Capital fund's excess of revenue over expenses for year 1.
+        answer: 480000
+        unit: $
+        explain: $500,000 grant revenue less $20,000 amortization = $480,000. Under the deferral method that $480,000 is instead the unamortized deferred capital contribution.
+        ref: Part III, Section 4410
+      - id: rev2l5q05
+        type: calc
+        concept: rev2-compare-net-assets
+        prompt: Enter the difference between total net assets (fund balances) under the restricted fund method and total net assets under the deferral method at the end of year 1.
+        answer: 530000
+        unit: $
+        explain: Restricted fund method net assets are $30,000 general + $50,000 Education + $480,000 Capital + $200,000 Endowment = $760,000. Deferral method net assets are $30,000 + $200,000 = $230,000. The $530,000 difference is exactly the $50,000 of deferred contributions and $480,000 of deferred capital contributions the deferral method reports outside net assets.
+        ref: Part III, Section 4400
+      - id: rev2l5q06
+        type: mc
+        concept: rev2-compare-net-assets
+        prompt: Which statement about the museum's two sets of statements is correct?
+        options:
+          - Total assets differ because the restricted fund method records more cash
+          - Total assets are the same; the methods differ in revenue timing and in classifying unspent restricted resources as deferred credits or fund balances
+          - The deferral method understates the endowment by $200,000
+          - The restricted fund method reports more expenses
+        answer: 1
+        explain: The cash, building and investments are identical. Only the credit side and the timing of revenue change. Expenses are the same under both methods.
+        ref: Part III, Section 4400
+      - id: rev2l5q07
+        type: calc
+        concept: rev2-no-fund-deferral
+        prompt: "Change one fact: the museum uses the restricted fund method but has only a general fund, a Capital fund and an Endowment fund, with no Education fund. Enter general fund revenue for year 1."
+        answer: 380000
+        unit: $
+        explain: Without an Education fund, the education grant is handled by deferral in the general fund. General fund revenue is $300,000 + $10,000 + $70,000 = $380,000, and $50,000 is deferred.
+        ref: Part III, Section 4410
+      - id: rev2l5q08
+        type: je
+        concept: rev2-compare-revenue
+        prompt: "Year 2, deferral method: the museum spends the remaining $50,000 of the education grant and records the year's amortization of the building grant. Record both revenue recognitions in one entry."
+        accounts:
+          - Deferred contributions
+          - Deferred capital contributions
+          - Contribution revenue
+          - Amortization of deferred capital contributions
+          - Endowment net assets
+          - Contribution revenue (Education fund)
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 50000
+          - account: Contribution revenue
+            side: cr
+            amount: 50000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 20000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 20000
+        explain: Under the deferral method, year 2 revenue includes the $50,000 released as education costs are incurred and $20,000 of amortization of deferred capital contributions. Under the restricted fund method, year 2 would show no revenue from these grants at all, only the Education fund spending and Capital fund amortization.
+        ref: Part III, Section 4410
+      - id: rev2l5q09
+        type: calc
+        concept: rev2-compare-revenue
+        prompt: Year 2, restricted fund method with an Education fund. The Education fund spends its remaining $50,000 and receives no new money. Enter the Education fund's excess (deficiency) of revenue over expenses for year 2, using a minus sign for a deficiency.
+        answer: -50000
+        unit: $
+        explain: The Education fund has no revenue in year 2 and $50,000 of expenses, so it reports a $50,000 deficiency that uses up its opening balance. Readers must look at fund balances, not one year's result, to judge restricted funds.
+        ref: Part III, Section 4400
+      - id: rev2l5q10
+        type: mc
+        concept: rev2-policy-choice
+        prompt: A Calgary foundation's board wants operating results that match restricted revenue to the expenses it funds, and has only a few restricted purposes but large endowments. Which comment is most accurate?
+        options:
+          - Only the restricted fund method is permitted for NPOs with endowments
+          - The deferral method best matches restricted revenue to expenses; the restricted fund method suits NPOs wanting each restricted purpose shown in its own column
+          - Both methods give the same excess of revenue over expenses every year
+          - The method can be chosen grant by grant
+        answer: 1
+        explain: Both methods are permitted for any NPO. The deferral method matches revenue to expenses, while the restricted fund method shows restricted activity by fund. The choice is a policy applied to all contributions, not grant by grant.
+        ref: Part III, Section 4410
+      - id: rev2l5q11
+        type: je
+        concept: rev2-endowment-fund
+        prompt: "Year 2, restricted fund method: a donor adds $60,000 to the museum's endowment, and the endowment earns $12,000, of which $3,000 must be capitalized and $9,000 is unrestricted. All amounts are received in cash. Record the endowment fund's revenue and the general fund's income in one entry."
+        accounts:
+          - Cash (Endowment fund)
+          - Contribution revenue (Endowment fund)
+          - Investment income (Endowment fund)
+          - Cash (General fund)
+          - Investment income (General fund)
+          - Endowment net assets
+          - Deferred contributions (General fund)
+        lines:
+          - account: Cash (Endowment fund)
+            side: dr
+            amount: 63000
+          - account: Contribution revenue (Endowment fund)
+            side: cr
+            amount: 60000
+          - account: Investment income (Endowment fund)
+            side: cr
+            amount: 3000
+          - account: Cash (General fund)
+            side: dr
+            amount: 9000
+          - account: Investment income (General fund)
+            side: cr
+            amount: 9000
+        explain: The new gift and the capitalized income are both endowment fund revenue, $63,000. The unrestricted $9,000 is general fund revenue. Under the deferral method, the $63,000 would instead be a direct increase in endowment net assets.
+        ref: Part III, Section 4410

@@ -76,7 +76,7 @@ export interface Lesson {
   questions: Question[];
 }
 
-export type CourseId = 'basics' | 'capital' | 'consolidation';
+export type CourseId = 'basics' | 'revenue' | 'capital' | 'consolidation' | 'part2';
 
 export interface Unit {
   id: string;

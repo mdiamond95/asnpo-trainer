@@ -1,0 +1,779 @@
+id: cap4
+course: capital
+number: 4
+title: Leases and retirement obligations
+summary: How NPOs apply the Part II lease standard, from classifying a lease as capital or operating with the numerical tests, through present value, interest and amortization for capital leases, straight-line rent, inducements and nominal-rent arrangements, and how they recognize, accrete, revise and settle asset retirement obligations.
+refs:
+  - Part II, Section 3065
+  - Part II, Section 3110
+  - Part III, Section 4410
+  - Part III, Section 4460
+status: ready
+
+concepts:
+  - id: cap4-aspe-status
+    title: Which lease standard NPOs use
+    summary: Part III has no lease or retirement obligation sections, so NPOs apply Part II Sections 3065 and 3110. Section 3065 keeps the capital and operating lease model. The IFRS 16 right-of-use model has not been brought into ASPE.
+    ref: Part II, Section 3065
+  - id: cap4-classification
+    title: Capital or operating
+    summary: A lease that transfers substantially all the benefits and risks of ownership to the lessee is a capital lease. That is normally the case when at least one of three conditions holds; ownership is reasonably assured to pass, the lessee gets substantially all of the asset's economic benefits over the lease term, or the lessor recovers substantially all of its investment. Otherwise it is an operating lease.
+    ref: Part II, Section 3065
+  - id: cap4-term-test
+    title: The 75% lease term test
+    summary: The lessee usually receives substantially all of the asset's economic benefits when the lease term is 75% or more of the asset's economic life. The lease term includes bargain renewal periods and periods the lessee is effectively compelled to renew.
+    ref: Part II, Section 3065
+  - id: cap4-pv-test
+    title: The 90% present value test
+    summary: The lessor usually recovers substantially all of its investment when the present value of the minimum lease payments is 90% or more of the asset's fair value at the start of the lease. Minimum lease payments include rent, a bargain purchase option and any residual value the lessee guarantees, but not executory costs such as insurance, maintenance and property taxes.
+    ref: Part II, Section 3065
+  - id: cap4-discount-rate
+    title: The lessee's discount rate
+    summary: The lessee discounts minimum lease payments at the lower of its incremental borrowing rate and the interest rate implicit in the lease, when it is practicable to determine the implicit rate.
+    ref: Part II, Section 3065
+  - id: cap4-initial-measurement
+    title: Recording a capital lease
+    summary: At the start of a capital lease, the lessee records an asset and an obligation at the present value of the minimum lease payments, but not more than the asset's fair value.
+    ref: Part II, Section 3065
+  - id: cap4-interest-principal
+    title: Splitting the payments
+    summary: Each payment on a capital lease obligation is split between interest, at the discount rate on the opening balance, and a reduction of principal. Executory costs inside a payment are expensed. The principal due within a year is a current liability.
+    ref: Part II, Section 3065
+  - id: cap4-amortization
+    title: Amortizing a leased asset
+    summary: A capital lease asset is amortized over the lease term, unless ownership is expected to pass through a title transfer or bargain purchase option, in which case it is amortized over the asset's economic life.
+    ref: Part II, Section 3065
+  - id: cap4-operating-lease
+    title: Operating leases and straight-line rent
+    summary: Under an operating lease, rent is expensed on a straight-line basis over the lease term, unless another systematic basis better reflects the pattern of benefit. Free rent periods and escalating rents create a deferred rent balance.
+    ref: Part II, Section 3065
+  - id: cap4-inducements
+    title: Lease inducements
+    summary: Incentives a landlord gives to sign a lease, such as cash allowances or free rent, are deferred and amortized on a straight-line basis over the lease term as a reduction of rent expense.
+    ref: Part II, Section 3065
+  - id: cap4-leasehold-improvements
+    title: Leasehold improvements
+    summary: Improvements the tenant pays for are tangible capital assets of the tenant. They are amortized over the shorter of their useful life and the lease term, including renewals that are reasonably assured.
+    ref: Part III, Section 4433
+  - id: cap4-nominal-lease
+    title: Space at nominal rent
+    summary: When an NPO uses premises for nominal rent, the difference from fair rent is a contribution of the use of property. The NPO may choose to recognize it, as both an expense and contribution revenue, only if fair value can be reasonably estimated and it would otherwise have paid for the space.
+    ref: Part III, Section 4410
+  - id: cap4-related-party-lease
+    title: Leases with related parties
+    summary: A lease with a related party is classified by its substance, like any other lease. The NPO discloses the relationship, the nature and amounts of the transactions and their terms, which is essential when the rent is nominal or the terms are not market terms.
+    ref: Part III, Section 4460
+  - id: cap4-aro-recognition
+    title: Recognizing an asset retirement obligation
+    summary: An asset retirement obligation is a legal obligation to retire a tangible long-lived asset that arises from acquiring, building or normally operating it. Legal includes laws, contracts and promissory estoppel. It is recognized when incurred, once a reasonable estimate can be made.
+    ref: Part II, Section 3110
+  - id: cap4-aro-measurement
+    title: Measuring the obligation
+    summary: The obligation is measured at the best estimate of the expenditure needed to settle it at the balance sheet date, usually by discounting expected cash flows. Uncertainty about whether or when retirement will be required affects the measurement, not whether a liability exists.
+    ref: Part II, Section 3110
+  - id: cap4-aro-capitalize
+    title: Asset retirement cost
+    summary: When the obligation is recognized, the same amount is added to the carrying amount of the related asset as an asset retirement cost, and amortized over the asset's useful life on a systematic and rational basis.
+    ref: Part II, Section 3110
+  - id: cap4-aro-accretion
+    title: Accretion and changes in estimate
+    summary: Each period the obligation grows for the passage of time; this accretion is an operating expense, not interest expense. Revisions to the timing or amount of cash flows, or to the discount rate, adjust both the obligation and the asset retirement cost, and amortization changes prospectively.
+    ref: Part II, Section 3110
+  - id: cap4-aro-settlement
+    title: Settling the obligation
+    summary: When the retirement work is done, the obligation is removed. Any difference between the actual cost and the carrying amount of the obligation is a gain or loss in the statement of operations.
+    ref: Part II, Section 3110
+
+lessons:
+  - id: cap4l1
+    title: Classifying leases
+    intro: NPOs still live in the capital and operating lease world of Section 3065. This lesson works the three classification tests with real numbers, including the traps in what counts as a lease payment.
+    questions:
+      - id: cap4l1q01
+        type: tf
+        concept: cap4-aspe-status
+        prompt: A Calgary food bank reporting under ASNPO must now recognize a right-of-use asset for every lease longer than twelve months, as IFRS 16 requires.
+        answer: false
+        reasons:
+          - NPOs apply Part II Section 3065, which keeps the capital and operating lease model
+          - Only leases of buildings need a right-of-use asset
+          - NPOs never record leases on the balance sheet
+        reason: 0
+        explain: Part III has no lease section, so NPOs apply Section 3065. It still classifies leases as capital or operating, and operating leases stay off the statement of financial position.
+        ref: Part II, Section 3065
+      - id: cap4l1q02
+        type: classify
+        concept: cap4-classification
+        prompt: Sort each lease feature by the classification condition it relates to.
+        buckets:
+          - Ownership reasonably assured to pass
+          - Lessee receives substantially all of the benefits
+          - Lessor recovers substantially all of its investment
+        items:
+          - text: Title passes to the NPO at the end of the lease
+            bucket: 0
+          - text: The NPO may buy the asset for $1,000 when it will be worth $30,000
+            bucket: 0
+          - text: Lease runs 7 of the asset's 8 years of economic life
+            bucket: 1
+          - text: Present value of payments is 95% of fair value
+            bucket: 2
+        explain: Meeting any one condition normally makes the lease a capital lease. A bargain purchase option counts like a title transfer because exercising it is reasonably assured.
+        ref: Part II, Section 3065
+      - id: cap4l1q03
+        type: calc
+        concept: cap4-term-test
+        prompt: A Red Deer hockey association leases an ice resurfacer with an economic life of 8 years for a non-cancellable term of 5 years. Enter the lease term as a percentage of economic life, to one decimal place.
+        answer: 62.5
+        tolerance: 0.1
+        unit: '%'
+        explain: 5 ÷ 8 = 62.5%. That is below the 75% benchmark, so the term test alone does not make this a capital lease. The present value test still has to be checked.
+        ref: Part II, Section 3065
+      - id: cap4l1q04
+        type: calc
+        concept: cap4-pv-test
+        prompt: A Calgary food bank leases a refrigerated truck with a fair value of $100,000 and an economic life of 8 years. The 5-year lease requires payments of $24,000 at the end of each year, of which $1,000 covers insurance the lessor buys for the truck. There is no transfer of title or purchase option. The food bank's incremental borrowing rate is 6% and the implicit rate is not known. Enter the present value of the minimum lease payments, rounded to the nearest dollar.
+        answer: 96884
+        tolerance: 2
+        unit: $
+        explain: Insurance is an executory cost and is left out, so the minimum lease payment is $23,000. The present value of $23,000 a year for 5 years at 6% is $23,000 × 4.21236 = $96,884.
+        ref: Part II, Section 3065
+      - id: cap4l1q05
+        type: mc
+        concept: cap4-pv-test
+        prompt: Using the truck lease (term 62.5% of economic life, present value of minimum lease payments $96,884, fair value $100,000), how is the lease classified?
+        options:
+          - Operating, because the term test fails
+          - Capital, because the present value is about 96.9% of fair value, above 90%
+          - Operating, because title does not pass
+          - Capital, but only if the food bank's board approves
+        answer: 1
+        explain: Only one condition has to be met. $96,884 ÷ $100,000 = 96.9%, which is above 90%, so the lessor recovers substantially all of its investment and the food bank has a capital lease.
+        ref: Part II, Section 3065
+      - id: cap4l1q06
+        type: mc
+        concept: cap4-discount-rate
+        prompt: The truck lessor tells the food bank its implicit rate is 7%, and the food bank's incremental borrowing rate is 6%. Which rate does the food bank use?
+        options:
+          - 7%, because the implicit rate always takes priority
+          - 6%, the lower of the two
+          - 6.5%, the average of the two
+          - Whichever rate makes the lease an operating lease
+        answer: 1
+        explain: The lessee uses the lower of its incremental borrowing rate and the implicit rate when the implicit rate is practicable to determine. The lower rate gives a higher present value, which makes capital lease treatment more likely.
+        ref: Part II, Section 3065
+      - id: cap4l1q07
+        type: classify
+        concept: cap4-pv-test
+        prompt: A Lethbridge arts society's equipment lease requires these payments. Classify each one.
+        buckets:
+          - Included in minimum lease payments
+          - Excluded
+        items:
+          - text: Monthly base rent
+            bucket: 0
+          - text: A residual value the society guarantees to the lessor
+            bucket: 0
+          - text: A bargain purchase option payable at the end of the term
+            bucket: 0
+          - text: Maintenance charges billed by the lessor
+            bucket: 1
+          - text: Property taxes on the equipment passed through by the lessor
+            bucket: 1
+        explain: Minimum lease payments include rent, guaranteed residuals and bargain purchase options. Executory costs such as maintenance, insurance and taxes are excluded, even when they are paid to the lessor.
+        ref: Part II, Section 3065
+      - id: cap4l1q08
+        type: tf
+        concept: cap4-term-test
+        prompt: A Grande Prairie seniors' society leases a bus with a 10-year economic life for 6 years, with an option to renew for 2 more years at one-tenth of market rent. The lease term for the 75% test is 6 years, so the test fails.
+        answer: false
+        reasons:
+          - A bargain renewal period is part of the lease term, making it 8 years, or 80% of the economic life
+          - Renewal options are always ignored
+          - The test uses the lessor's estimate of economic life
+        reason: 0
+        explain: Renewal at a bargain rent is reasonably assured, so the lease term is 8 years. 8 ÷ 10 = 80%, which meets the 75% benchmark.
+        ref: Part II, Section 3065
+      - id: cap4l1q09
+        type: mc
+        concept: cap4-classification
+        prompt: An Edmonton community league leases a lot for 40 years to put a rink on it. Title stays with the owner and there is no purchase option. How is the land lease normally classified?
+        options:
+          - Capital, because 40 years is longer than 75% of any useful life
+          - Capital, because the league builds on the land
+          - Operating, because land has an indefinite life and ownership does not pass
+          - It is not a lease because the land has no physical wear
+        answer: 2
+        explain: Land normally has an indefinite economic life, so the 75% test does not apply in the usual way. A land lease is normally a capital lease only if ownership is expected to pass.
+        ref: Part II, Section 3065
+      - id: cap4l1q10
+        type: tf
+        concept: cap4-classification
+        prompt: The 75% and 90% benchmarks are bright lines. A lease whose present value is 89% of fair value must be an operating lease, whatever its other terms.
+        answer: false
+        explain: The benchmarks indicate when substantially all benefits and risks usually pass. Classification still rests on substance, so professional judgement applies to leases near the thresholds.
+        ref: Part II, Section 3065
+
+  - id: cap4l2
+    title: Capital lease accounting
+    intro: Once a lease is capital, the NPO owns the problem. Record the asset and obligation, split each payment, amortize over the right period and present the current portion.
+    questions:
+      - id: cap4l2q01
+        type: je
+        concept: cap4-initial-measurement
+        prompt: Record the start of the food bank's capital lease of the refrigerated truck. The present value of the minimum lease payments is $96,884 and the fair value is $100,000.
+        accounts:
+          - Equipment under capital lease
+          - Obligation under capital lease
+          - Cash
+          - Rent expense
+          - Interest expense
+          - Deferred capital contributions
+        lines:
+          - account: Equipment under capital lease
+            side: dr
+            amount: 96884
+          - account: Obligation under capital lease
+            side: cr
+            amount: 96884
+        explain: The asset and obligation are recorded at the present value of the minimum lease payments, $96,884, because it is below fair value. No cash moves at inception since the first payment is at the end of year 1.
+        ref: Part II, Section 3065
+      - id: cap4l2q02
+        type: je
+        concept: cap4-interest-principal
+        prompt: At the end of year 1 the food bank pays the $24,000 lease payment, which includes $1,000 for insurance. The obligation was $96,884 at 6%. Round to the nearest dollar. Record the payment.
+        accounts:
+          - Interest expense
+          - Obligation under capital lease
+          - Insurance expense
+          - Cash
+          - Rent expense
+          - Equipment under capital lease
+          - Accumulated amortization
+        lines:
+          - account: Interest expense
+            side: dr
+            amount: 5813
+          - account: Obligation under capital lease
+            side: dr
+            amount: 17187
+          - account: Insurance expense
+            side: dr
+            amount: 1000
+          - account: Cash
+            side: cr
+            amount: 24000
+        explain: Interest is 6% × $96,884 = $5,813. The rest of the $23,000 lease payment, $17,187, reduces principal. The $1,000 insurance is an executory cost and is expensed, not part of the obligation.
+        ref: Part II, Section 3065
+      - id: cap4l2q03
+        type: calc
+        concept: cap4-interest-principal
+        prompt: After the year 1 payment, the truck obligation is $79,697. Enter the portion that is presented as a current liability at the end of year 1 (the principal included in the year 2 payment of $23,000 at 6%), rounded to the nearest dollar.
+        answer: 18218
+        tolerance: 2
+        unit: $
+        explain: Year 2 interest is 6% × $79,697 = $4,782, so principal repaid in year 2 is $23,000 − $4,782 = $18,218. That is the current portion. The remaining $61,479 is long-term.
+        ref: Part II, Section 3065
+      - id: cap4l2q04
+        type: calc
+        concept: cap4-amortization
+        prompt: The food bank amortizes the $96,884 truck straight-line with no residual value. Title does not pass and there is no purchase option. The truck's economic life is 8 years and the lease is 5 years. Enter annual amortization, rounded to the nearest dollar.
+        answer: 19377
+        tolerance: 2
+        unit: $
+        explain: Without an expected transfer of ownership, the asset is amortized over the lease term, $96,884 ÷ 5 = $19,377. The food bank will not have the truck for years 6 to 8.
+        ref: Part II, Section 3065
+      - id: cap4l2q05
+        type: calc
+        concept: cap4-amortization
+        prompt: A Camrose food bank leases a forklift for 4 years at $20,000 at the end of each year, with an option to buy it for $5,000 at the end of year 4, when it is expected to be worth $30,000. The discount rate is 5% and the economic life is 8 years. Enter the amount recorded for the leased asset, rounded to the nearest dollar.
+        answer: 75033
+        tolerance: 2
+        unit: $
+        explain: The bargain purchase option is part of the minimum lease payments. $20,000 × 3.54595 = $70,919, plus $5,000 × 0.82270 = $4,114, gives $75,033.
+        ref: Part II, Section 3065
+      - id: cap4l2q06
+        type: calc
+        concept: cap4-amortization
+        prompt: The Camrose forklift was recorded at $75,033. Enter its annual straight-line amortization with no residual value, rounded to the nearest dollar.
+        answer: 9379
+        tolerance: 2
+        unit: $
+        explain: The bargain purchase option makes it reasonably assured the food bank will own the forklift, so it is amortized over the 8-year economic life, $75,033 ÷ 8 = $9,379, not over the 4-year lease term.
+        ref: Part II, Section 3065
+      - id: cap4l2q07
+        type: calc
+        concept: cap4-initial-measurement
+        prompt: Suppose the truck lease called for $23,000 at the start of each year instead (first payment on signing), still at 6% for 5 years. The present value of those payments is $102,697 and the truck's fair value is $100,000. Enter the amount at which the food bank records the leased truck.
+        answer: 100000
+        unit: $
+        explain: The asset cannot be recorded above fair value. When the present value exceeds fair value, the lessee records fair value, $100,000, and the effective interest rate on the obligation is recomputed to be higher than 6%.
+        ref: Part II, Section 3065
+      - id: cap4l2q08
+        type: je
+        concept: cap4-amortization
+        prompt: Record year 1 amortization of $19,377 on the leased truck.
+        accounts:
+          - Amortization expense
+          - Accumulated amortization
+          - Obligation under capital lease
+          - Rent expense
+          - Interest expense
+          - Equipment under capital lease
+        lines:
+          - account: Amortization expense
+            side: dr
+            amount: 19377
+          - account: Accumulated amortization
+            side: cr
+            amount: 19377
+        explain: The leased asset is amortized like an owned asset. Amortization and interest replace the rent expense that an operating lease would show, so expenses are higher early in a capital lease.
+        ref: Part II, Section 3065
+      - id: cap4l2q09
+        type: calc
+        concept: cap4-interest-principal
+        prompt: Compare year 1 expenses for the truck. Under capital lease treatment, interest is $5,813 and amortization is $19,377. Under operating lease treatment, rent of $23,000 would be expensed. Ignoring insurance, enter how much higher year 1 expenses are under capital lease treatment.
+        answer: 2190
+        tolerance: 1
+        unit: $
+        explain: $5,813 + $19,377 = $25,190, compared with $23,000 of rent, a difference of $2,190. Over the full 5 years the totals are the same, but interest is front-loaded.
+        ref: Part II, Section 3065
+      - id: cap4l2q10
+        type: mc
+        concept: cap4-interest-principal
+        prompt: A board member of a Calgary food bank suggests calling the truck lease operating to keep the $96,884 obligation off the balance sheet before a bank covenant test. What is the best response?
+        options:
+          - Agree, because classification is a free accounting policy choice
+          - Agree, if the lessor signs a letter calling it a rental
+          - Decline, because classification depends on whether the conditions in Section 3065 are met, and here the 90% test is clearly met
+          - Decline, but only because the truck is refrigerated
+        answer: 2
+        explain: Classification is not elective. When the present value test is clearly met and substance shows the risks and benefits have passed, the lease is a capital lease regardless of labels or covenant concerns.
+        ref: Part II, Section 3065
+
+  - id: cap4l3
+    title: Operating leases, inducements and nominal rent
+    intro: Most NPO leases are operating leases of premises. The accounting is simple until there is free rent, a landlord allowance or a supporter who charges $1 a year.
+    questions:
+      - id: cap4l3q01
+        type: calc
+        concept: cap4-operating-lease
+        prompt: A Calgary arts society signs a 5-year office lease starting January 1. The first 6 months are rent-free, then rent is $3,000 a month for the remaining 54 months. Enter rent expense for year 1.
+        answer: 32400
+        unit: $
+        explain: Total rent is 54 × $3,000 = $162,000. Spread straight-line over 60 months, that is $2,700 a month, or $32,400 for year 1.
+        ref: Part II, Section 3065
+      - id: cap4l3q02
+        type: je
+        concept: cap4-operating-lease
+        prompt: Record the arts society's rent for year 1 in one summary entry. It paid $18,000 in cash and the straight-line expense is $32,400.
+        accounts:
+          - Rent expense
+          - Cash
+          - Deferred rent liability
+          - Prepaid rent
+          - Obligation under capital lease
+          - Deferred lease inducement
+        lines:
+          - account: Rent expense
+            side: dr
+            amount: 32400
+          - account: Cash
+            side: cr
+            amount: 18000
+          - account: Deferred rent liability
+            side: cr
+            amount: 14400
+        explain: Expense runs ahead of cash during the free rent period, building a $14,400 liability. It reverses over the later years when $3,000 a month is paid but only $2,700 is expensed.
+        ref: Part II, Section 3065
+      - id: cap4l3q03
+        type: je
+        concept: cap4-inducements
+        prompt: A Lethbridge Friendship Centre signs a 10-year lease and the landlord pays it a $60,000 cash allowance as an incentive to sign. Record the receipt.
+        accounts:
+          - Cash
+          - Deferred lease inducement
+          - Contribution revenue
+          - Rent expense
+          - Leasehold improvements
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 60000
+          - account: Deferred lease inducement
+            side: cr
+            amount: 60000
+        explain: A lease inducement is not a donation and not immediate revenue. It is deferred and reduces rent expense over the lease term.
+        ref: Part II, Section 3065
+      - id: cap4l3q04
+        type: je
+        concept: cap4-inducements
+        prompt: Record the Friendship Centre's annual amortization of the $60,000 lease inducement over the 10-year lease.
+        accounts:
+          - Deferred lease inducement
+          - Rent expense
+          - Amortization of deferred capital contributions
+          - Contribution revenue
+          - Cash
+          - Accumulated amortization
+        lines:
+          - account: Deferred lease inducement
+            side: dr
+            amount: 6000
+          - account: Rent expense
+            side: cr
+            amount: 6000
+        explain: $60,000 ÷ 10 = $6,000 a year, credited against rent expense on a straight-line basis. Treating it as contribution revenue would overstate both revenue and expenses.
+        ref: Part II, Section 3065
+      - id: cap4l3q05
+        type: calc
+        concept: cap4-leasehold-improvements
+        prompt: The Friendship Centre spends $90,000 on leasehold improvements with a 15-year useful life. The lease is 10 years with no renewal option. Enter annual amortization of the improvements, straight-line.
+        answer: 9000
+        unit: $
+        explain: Leasehold improvements are amortized over the shorter of the useful life and the lease term, $90,000 ÷ 10 = $9,000. The Centre loses the improvements when the lease ends.
+        ref: Part III, Section 4433
+      - id: cap4l3q06
+        type: calc
+        concept: cap4-inducements
+        prompt: Base rent on the Friendship Centre lease is $36,000 a year, paid evenly with no free periods. Using the inducement and improvements above, enter the total annual expense in the statement of operations for rent plus amortization of the leasehold improvements.
+        answer: 39000
+        unit: $
+        explain: Rent expense is $36,000 − $6,000 inducement = $30,000. Add $9,000 of leasehold improvement amortization for $39,000.
+        ref: Part II, Section 3065
+      - id: cap4l3q07
+        type: mc
+        concept: cap4-nominal-lease
+        prompt: The City of Red Deer lets a seniors' centre use a city building for $1 a year. Fair rent is $48,000 a year and the centre would otherwise rent space. What may the centre do?
+        options:
+          - It must record a capital lease at the building's fair value
+          - It may choose to recognize $48,000 as both rent expense and contribution revenue, and disclose its policy
+          - It must record $48,000 as a gain each year
+          - It must ignore the arrangement entirely and say nothing
+        answer: 1
+        explain: Recognizing contributed materials and services, including the use of property, is a policy choice when fair value can be reasonably estimated and the NPO would otherwise pay for it. Either way, the arrangement and the policy should be disclosed.
+        ref: Part III, Section 4410
+      - id: cap4l3q08
+        type: je
+        concept: cap4-nominal-lease
+        prompt: The seniors' centre has a policy of recognizing contributed use of facilities when the criteria are met. Record the year's contributed rent of $48,000, ignoring the $1 cash rent.
+        accounts:
+          - Rent expense
+          - Contributed facilities revenue
+          - Deferred contributions
+          - Capital assets
+          - Cash
+          - Unrestricted net assets
+        lines:
+          - account: Rent expense
+            side: dr
+            amount: 48000
+          - account: Contributed facilities revenue
+            side: cr
+            amount: 48000
+        explain: The entry grosses up both revenue and expenses, so the excess of revenues over expenses is unchanged. It shows the true cost of running the program and the city's support.
+        ref: Part III, Section 4410
+      - id: cap4l3q09
+        type: mc
+        concept: cap4-related-party-lease
+        prompt: A St. Albert community foundation that shares its board with a youth society leases a building to the society for $1 a year. The society does not consolidate the foundation. What disclosure is required?
+        options:
+          - None, because the rent is immaterial
+          - Only the foundation's name
+          - The relationship, the nature and amount of the transactions, and their terms
+          - The fair value of the building only
+        answer: 2
+        explain: Related party disclosure covers the relationship, a description and the amounts of transactions, and their terms. A $1 lease is exactly the kind of non-market term readers need to know about.
+        ref: Part III, Section 4460
+      - id: cap4l3q10
+        type: tf
+        concept: cap4-related-party-lease
+        prompt: Because the landlord is a related party, the youth society can classify the lease however it wants.
+        answer: false
+        explain: Related party leases are classified using the same conditions as any lease, based on substance. The relationship adds disclosure requirements; it does not create a free choice.
+        ref: Part II, Section 3065
+
+  - id: cap4l4
+    title: Asset retirement obligations
+    intro: If an NPO has a legal duty to remove or reclaim something when it is done with it, Section 3110 puts that cost on the books from day one. Think lodges on leased Crown land, fuel tanks and regulated hazardous materials.
+    questions:
+      - id: cap4l4q01
+        type: classify
+        concept: cap4-aro-recognition
+        prompt: Classify each situation by whether it creates an asset retirement obligation under Section 3110.
+        buckets:
+          - Asset retirement obligation
+          - Not an asset retirement obligation
+        items:
+          - text: A Fort McMurray outdoor education society's land lease requires it to remove its lodge and reclaim the site at lease end
+            bucket: 0
+          - text: Provincial rules require removal of an underground fuel tank at a Banff camp when it is taken out of service
+            bucket: 0
+          - text: The board of a hockey association hopes to demolish its old arena some day, but no law or contract requires it
+            bucket: 1
+          - text: A careless fuel spill at a camp must now be cleaned up
+            bucket: 1
+          - text: The society plans to sell its van next year
+            bucket: 1
+        explain: Section 3110 covers legal obligations arising from acquiring, building or normally operating an asset. Voluntary plans are not legal obligations, a spill from improper operation is outside the section, and selling an asset is not a retirement obligation.
+        ref: Part II, Section 3110
+      - id: cap4l4q02
+        type: tf
+        concept: cap4-aro-measurement
+        prompt: The camp society is not sure the province will enforce tank removal; it estimates a 50% chance. It should not record any obligation until removal is certain.
+        answer: false
+        reasons:
+          - Uncertainty about whether retirement will be required affects measurement, not recognition
+          - It should record the full cost, ignoring the probability
+          - It should only disclose a contingent liability
+        reason: 0
+        explain: When a legal obligation exists, uncertainty about timing or whether the work will be enforced is built into the measurement, for example by weighting outcomes. It does not defer recognition.
+        ref: Part II, Section 3110
+      - id: cap4l4q03
+        type: calc
+        concept: cap4-aro-measurement
+        prompt: On January 1 of year 1, the Fort McMurray society finishes its lodge. It must remove the lodge and reclaim the site in 10 years at an estimated cost of $200,000. The discount rate for the obligation is 5%. Enter the obligation recognized, rounded to the nearest dollar.
+        answer: 122783
+        tolerance: 2
+        unit: $
+        explain: $200,000 ÷ 1.05^10 = $200,000 × 0.61391 = $122,783. The obligation is recognized when it is incurred, which here is when the lodge is built.
+        ref: Part II, Section 3110
+      - id: cap4l4q04
+        type: je
+        concept: cap4-aro-capitalize
+        prompt: Record the initial recognition of the $122,783 asset retirement obligation for the lodge.
+        accounts:
+          - Capital assets
+          - Asset retirement obligation
+          - Accretion expense
+          - Amortization expense
+          - Cash
+          - Deferred capital contributions
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 122783
+          - account: Asset retirement obligation
+            side: cr
+            amount: 122783
+        explain: The asset retirement cost is added to the carrying amount of the lodge, not expensed. It will be amortized over the lodge's useful life along with the rest of its cost.
+        ref: Part II, Section 3110
+      - id: cap4l4q05
+        type: je
+        concept: cap4-aro-accretion
+        prompt: Record year 1 accretion on the $122,783 obligation at 5% and year 1 amortization of the $122,783 asset retirement cost over 10 years, straight-line. Round to the nearest dollar.
+        accounts:
+          - Accretion expense
+          - Asset retirement obligation
+          - Amortization expense
+          - Accumulated amortization
+          - Interest expense
+          - Capital assets
+        lines:
+          - account: Accretion expense
+            side: dr
+            amount: 6139
+          - account: Asset retirement obligation
+            side: cr
+            amount: 6139
+          - account: Amortization expense
+            side: dr
+            amount: 12278
+          - account: Accumulated amortization
+            side: cr
+            amount: 12278
+        explain: Accretion is 5% × $122,783 = $6,139 and is an operating expense, not interest expense. Amortization of the retirement cost is $122,783 ÷ 10 = $12,278.
+        ref: Part II, Section 3110
+      - id: cap4l4q06
+        type: tf
+        concept: cap4-aro-accretion
+        prompt: Accretion on an asset retirement obligation is presented as interest expense with the NPO's other financing costs.
+        answer: false
+        explain: Accretion reflects the passage of time on an operating obligation. It is an operating expense, usually called accretion expense, and is not reported as interest.
+        ref: Part II, Section 3110
+      - id: cap4l4q07
+        type: calc
+        concept: cap4-aro-measurement
+        prompt: A Medicine Hat museum society buys a heritage building that contains asbestos that regulations require it to remove safely when the building is renovated or demolished. It expects to do this in 6 years at a cost of $80,000. The discount rate is 4%. Enter the obligation at acquisition, rounded to the nearest dollar.
+        answer: 63225
+        tolerance: 2
+        unit: $
+        explain: $80,000 ÷ 1.04^6 = $80,000 × 0.79031 = $63,225. When an asset already carries a retirement obligation, it is recognized at the acquisition date as if incurred then.
+        ref: Part II, Section 3110
+      - id: cap4l4q08
+        type: mc
+        concept: cap4-aro-recognition
+        prompt: The museum cannot yet estimate when it will renovate, so no reasonable estimate of the obligation can be made yet. What does it do?
+        options:
+          - Records the undiscounted cost immediately
+          - Recognizes the obligation in the first period a reasonable estimate can be made, and discloses why it is not yet recognized
+          - Never recognizes the obligation
+          - Expenses the expected cost now
+        answer: 1
+        explain: Recognition waits until a reasonable estimate is possible. Until then, the NPO describes the obligation and the reason it cannot be estimated in its notes.
+        ref: Part II, Section 3110
+      - id: cap4l4q09
+        type: mc
+        concept: cap4-aro-accretion
+        prompt: Which order is correct when updating the obligation at year end?
+        options:
+          - Revise the cash flow estimate first, then compute accretion on the new amount for the whole year
+          - Record accretion for the passage of time first, then measure the effect of any revision
+          - Ignore accretion in a year with a revision
+          - Record the revision through net assets and skip accretion
+        answer: 1
+        explain: Changes from the passage of time are measured before revisions to timing, amount or discount rate. That keeps accretion and the revision separate in the statement of operations and the asset.
+        ref: Part II, Section 3110
+
+  - id: cap4l5
+    title: Integrated retirement and lease cases
+    intro: These cases follow the Fort McMurray lodge through a revised estimate and final settlement, and test lease judgements under pressure.
+    questions:
+      - id: cap4l5q01
+        type: calc
+        concept: cap4-aro-accretion
+        prompt: The lodge obligation started at $122,783 at 5%. Enter its carrying amount at the end of year 3, after three years of accretion and before any revision, rounded to the nearest dollar.
+        answer: 142136
+        tolerance: 2
+        unit: $
+        explain: $122,783 × 1.05^3 = $142,136, which is also $200,000 ÷ 1.05^7. Accretion brings the obligation up toward the $200,000 expected at the end of year 10.
+        ref: Part II, Section 3110
+      - id: cap4l5q02
+        type: calc
+        concept: cap4-aro-accretion
+        prompt: At the end of year 3, new reclamation rules raise the expected cost to $260,000, still payable at the end of year 10. The discount rate stays 5%. Enter the increase in the obligation from the revision, rounded to the nearest dollar.
+        answer: 42641
+        tolerance: 3
+        unit: $
+        explain: The revised obligation is $260,000 ÷ 1.05^7 = $184,777. The increase is $184,777 − $142,136 = $42,641.
+        ref: Part II, Section 3110
+      - id: cap4l5q03
+        type: je
+        concept: cap4-aro-accretion
+        prompt: Record the $42,641 increase in the lodge's asset retirement obligation.
+        accounts:
+          - Capital assets
+          - Asset retirement obligation
+          - Accretion expense
+          - Loss on asset retirement obligation
+          - Unrestricted net assets
+          - Accumulated amortization
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 42641
+          - account: Asset retirement obligation
+            side: cr
+            amount: 42641
+        explain: A revision in the amount of the cash flows adjusts both the obligation and the asset retirement cost. It is not expensed immediately and prior years are not restated.
+        ref: Part II, Section 3110
+      - id: cap4l5q04
+        type: calc
+        concept: cap4-aro-capitalize
+        prompt: The original $122,783 retirement cost has been amortized at $12,278 a year for 3 years. Add the $42,641 revision and amortize what remains over the remaining 7 years, straight-line. Enter amortization of the asset retirement cost for year 4, rounded to the nearest dollar.
+        answer: 18370
+        tolerance: 3
+        unit: $
+        explain: Remaining cost is $122,783 − $36,834 = $85,949, plus $42,641 = $128,590. Spread over 7 years that is $18,370 a year. The change is applied prospectively.
+        ref: Part II, Section 3110
+      - id: cap4l5q05
+        type: calc
+        concept: cap4-aro-accretion
+        prompt: The revised obligation is $184,777 at the end of year 3. Enter accretion expense for year 4 at 5%, rounded to the nearest dollar.
+        answer: 9239
+        tolerance: 1
+        unit: $
+        explain: 5% × $184,777 = $9,239. Accretion now runs on the revised balance, so both accretion and amortization rise after the revision.
+        ref: Part II, Section 3110
+      - id: cap4l5q06
+        type: je
+        concept: cap4-aro-settlement
+        prompt: At the end of year 10 the obligation has accreted to $260,000. The society pays a contractor $271,500 cash to remove the lodge and reclaim the site. Record the settlement.
+        accounts:
+          - Asset retirement obligation
+          - Loss on settlement of asset retirement obligation
+          - Cash
+          - Accretion expense
+          - Capital assets
+          - Gain on settlement of asset retirement obligation
+        lines:
+          - account: Asset retirement obligation
+            side: dr
+            amount: 260000
+          - account: Loss on settlement of asset retirement obligation
+            side: dr
+            amount: 11500
+          - account: Cash
+            side: cr
+            amount: 271500
+        explain: The obligation is removed and the $11,500 by which the actual cost exceeded it is a loss in the statement of operations. If the work had cost less, the difference would be a gain.
+        ref: Part II, Section 3110
+      - id: cap4l5q07
+        type: tf
+        concept: cap4-aro-accretion
+        prompt: If the reclamation estimate had instead fallen at the end of year 3, the decrease would be recognized immediately as a gain in the statement of operations.
+        answer: false
+        reasons:
+          - A downward revision reduces both the obligation and the asset retirement cost, like an upward one
+          - Decreases are recorded directly in net assets
+          - Decreases are ignored until settlement
+        reason: 0
+        explain: Revisions in either direction adjust the obligation and the related asset retirement cost, with amortization changing prospectively. A gain or loss arises only on settlement.
+        ref: Part II, Section 3110
+      - id: cap4l5q08
+        type: classify
+        concept: cap4-classification
+        prompt: Classify each lease of an Edmonton seniors' housing society. Each has no title transfer unless stated.
+        buckets:
+          - Capital lease
+          - Operating lease
+        items:
+          - text: Dishwasher, fair value $40,000, present value of payments $38,400
+            bucket: 0
+          - text: Office space for 5 years in a building with a 50-year life, present value of payments 20% of the building's value
+            bucket: 1
+          - text: Van for 3 years with a $1 purchase option at the end
+            bucket: 0
+          - text: Photocopier for 4 years of its 5-year life, present value 70% of fair value
+            bucket: 0
+          - text: Photocopier for 2 years of its 5-year life, present value 45% of fair value
+            bucket: 1
+        explain: The dishwasher meets the 90% test (96%). The van has a bargain purchase option. The first photocopier meets the 75% term test (80%). The office space and second photocopier meet no condition.
+        ref: Part II, Section 3065
+      - id: cap4l5q09
+        type: je
+        concept: cap4-initial-measurement
+        prompt: Integrated case. A Calgary health charity leases diagnostic equipment for 5 years. Present value of minimum lease payments is $96,884, which is less than fair value. On the same day, a restricted capital grant of $96,884 is received in cash to pay the lease obligation, and the charity uses the deferral method. Record both the lease and the grant.
+        accounts:
+          - Equipment under capital lease
+          - Obligation under capital lease
+          - Cash
+          - Deferred capital contributions
+          - Contribution revenue
+          - Rent expense
+          - Deferred contributions
+        lines:
+          - account: Equipment under capital lease
+            side: dr
+            amount: 96884
+          - account: Obligation under capital lease
+            side: cr
+            amount: 96884
+          - account: Cash
+            side: dr
+            amount: 96884
+          - account: Deferred capital contributions
+            side: cr
+            amount: 96884
+        explain: A contribution restricted to repaying debt is treated as restricted for whatever the debt financed. The lease obligation financed equipment that will be amortized, so the grant is a deferred capital contribution, recognized as revenue as the leased equipment is amortized.
+        ref: Part III, Section 4410
+      - id: cap4l5q10
+        type: calc
+        concept: cap4-amortization
+        prompt: Continuing the case, the charity amortizes the equipment over the 5-year lease term. Enter the net effect of the year 1 amortization ($19,377) and the related amortization of deferred capital contributions on the excess of revenues over expenses.
+        answer: 0
+        tolerance: 1
+        unit: $
+        explain: The deferred capital contribution is recognized as revenue at the same rate the equipment is amortized, $19,377, so the two offset. Interest on the obligation is still an expense, so the lease as a whole is not cost-neutral.
+        ref: Part III, Section 4410

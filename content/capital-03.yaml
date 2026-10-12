@@ -1,0 +1,890 @@
+id: cap3
+course: capital
+number: 3
+title: Intangibles and collections
+summary: How Section 4434 brings Part II intangible asset guidance into the NPO world, with its own rules for contributed intangibles, write-downs and small NPO relief, and how Section 4441 requires collections to be recognized at cost or nominal value, never amortized, written down when impaired and tracked through disposal.
+refs:
+  - Part III, Section 4434
+  - Part II, Section 3064
+  - Part III, Section 4441
+  - Part III, Section 4410
+status: ready
+
+concepts:
+  - id: cap3-intangible-definition
+    title: What an intangible asset is
+    summary: An intangible asset is an identifiable non-monetary asset without physical substance, such as software, a licence or a purchased trademark. Identifiable means it can be separated from the organization or arises from contractual or legal rights.
+    ref: Part II, Section 3064
+  - id: cap3-4434-framework
+    title: How Section 4434 works
+    summary: Section 4434 replaced Section 4432 for fiscal years beginning on or after January 1, 2019. An NPO applies Part II Section 3064 to its intangible assets, except that Section 4434 sets its own rules for contributed intangibles, write-downs and small NPO relief, and borrows only the disclosure requirements of Section 3063.
+    ref: Part III, Section 4434
+  - id: cap3-small-npo-relief
+    title: Small NPO relief for intangibles
+    summary: An NPO with average annual revenues under $500,000 in the current and preceding period may limit its application of Section 4434 to disclosure of its policy, the major categories of intangibles not recognized, and amounts expensed on acquisition. Once it is over the threshold and applies the section in full, it keeps doing so even if revenues later fall.
+    ref: Part III, Section 4434
+  - id: cap3-research-development
+    title: Research and development phases
+    summary: Spending on internally generated intangibles is split into a research phase and a development phase. Research costs are always expensed. Development costs are either expensed or capitalized once all the development criteria are met, depending on the policy the NPO chooses and applies consistently.
+    ref: Part II, Section 3064
+  - id: cap3-development-criteria
+    title: The development criteria
+    summary: To capitalize development costs, the NPO must be able to show technical feasibility, its intention to complete and use or sell the asset, its ability to do so, how the asset will generate future benefits or service potential, adequate resources to finish it, and reliable measurement of the costs. Only costs incurred after every criterion is met can be capitalized.
+    ref: Part II, Section 3064
+  - id: cap3-not-recognized
+    title: Internally generated items never capitalized
+    summary: Internally generated brands, mastheads, publishing titles, customer or donor lists and similar items are never recognized as intangible assets, because their cost cannot be told apart from developing the organization as a whole. Start-up, training, advertising and relocation costs are also expensed.
+    ref: Part II, Section 3064
+  - id: cap3-website-software
+    title: Website, software and cloud costs
+    summary: Website and software projects are analyzed in phases. Planning work is expensed, building features that meet the development criteria may be capitalized under a capitalization policy, and operating, training and promotional content costs are expensed. Under AcG-20 an NPO may instead elect to expense cloud computing arrangement costs as services are received.
+    ref: Part II, Section 3064
+  - id: cap3-contributed-intangible
+    title: Contributed intangibles
+    summary: A contributed intangible asset is recognized at fair value at the date of contribution. If fair value cannot be reasonably determined, the asset and the contribution are recorded at nominal value. The contribution itself follows Section 4410.
+    ref: Part III, Section 4434
+  - id: cap3-amortization
+    title: Finite and indefinite lives
+    summary: An intangible asset with a finite life is amortized over that life. An intangible asset with an indefinite life is not amortized, but its life is reviewed each period, and when the life is no longer indefinite it is amortized prospectively from then on.
+    ref: Part II, Section 3064
+  - id: cap3-writedown
+    title: Writing down intangibles
+    summary: An intangible asset is written down when it no longer contributes to the NPO's ability to provide goods and services, or its remaining service potential is less than its net carrying amount. It is written down to fair value or replacement cost, partially or to nil, the write-down is an expense, it is never reversed, and related unamortized deferred contributions are recognized as revenue once restrictions are met.
+    ref: Part III, Section 4434
+  - id: cap3-collection-definition
+    title: What a collection is
+    summary: Collections are works of art, historical treasures or similar assets held for public exhibition, education or research, that are protected, cared for and preserved, and that are subject to a policy requiring sale proceeds to be used to acquire other collection items or for the direct care of the existing collection.
+    ref: Part III, Section 4441
+  - id: cap3-4441-vs-4440
+    title: Section 4441 replaced Section 4440
+    summary: Section 4441 applies for fiscal years beginning on or after January 1, 2019. The former Section 4440 was mostly about disclosure and let NPOs decide whether to record collections at all. Section 4441 requires collections to be recognized as a separate line on the statement of financial position.
+    ref: Part III, Section 4441
+  - id: cap3-collection-measurement
+    title: Cost or nominal value
+    summary: An NPO measures its collections either at cost or at nominal value and applies the same basis to all its collections. Under the cost basis, directly attributable acquisition costs such as freight, duties and legal fees are capitalized. Under the nominal value basis, the excess of the price over nominal value and other acquisition costs are expensed.
+    ref: Part III, Section 4441
+  - id: cap3-collection-contributed
+    title: Contributed and bargain-purchased items
+    summary: Under the cost basis, a contributed item's cost is its fair value at the date of contribution plus directly attributable costs, and an item bought for substantially less than fair value is recorded at fair value with the difference recognized as a contribution. A contributed item whose cost cannot reasonably be determined is recorded at nominal value even by a cost-basis NPO.
+    ref: Part III, Section 4441
+  - id: cap3-collection-no-amortization
+    title: No amortization, care costs expensed
+    summary: Collections are not amortized, because they are meant to be preserved indefinitely. Costs of protecting, caring for and preserving the collection, such as conservation and climate control, are expensed as incurred.
+    ref: Part III, Section 4441
+  - id: cap3-collection-writedown
+    title: Collection write-downs
+    summary: When events or changes in circumstances show that a collection item carried at cost may be worth less than its carrying amount, it is written down to fair value or replacement cost. The write-down is an expense, is not reversed, and a write-down of a group of items is allocated pro rata to their carrying amounts.
+    ref: Part III, Section 4441
+  - id: cap3-collection-disposal
+    title: Disposals and use of proceeds
+    summary: On disposal, the difference between net proceeds (proceeds less directly attributable disposal costs) and the carrying amount goes to the statement of operations. For contributed items subject to external restrictions, any excess over the carrying amount is accounted for under Section 4410.
+    ref: Part III, Section 4441
+  - id: cap3-collection-disclosure
+    title: Collection disclosures
+    summary: An NPO describes its collections and measurement policy, significant changes in the period, amounts spent on collection items, items carried at nominal value under a cost policy, write-downs and their causes, and disposal proceeds with how they were used and how much remains unspent.
+    ref: Part III, Section 4441
+
+lessons:
+  - id: cap3l1
+    title: Intangibles under Section 4434
+    intro: Section 4434 is short because it hands most of the work to Part II Section 3064. This lesson sorts out what is an intangible asset, which rules come from which section, and who can use the small NPO relief.
+    questions:
+      - id: cap3l1q01
+        type: classify
+        concept: cap3-intangible-definition
+        prompt: Classify each item held by a Calgary community health charity.
+        buckets:
+          - Intangible asset
+          - Tangible capital asset
+          - Neither
+        items:
+          - text: Purchased licence for clinical scheduling software installed on its own servers
+            bucket: 0
+          - text: The servers that run the scheduling software
+            bucket: 1
+          - text: A trademark for its annual fun run, bought from another charity
+            bucket: 0
+          - text: Prepaid rent for the next quarter
+            bucket: 2
+          - text: Term deposit maturing in three years
+            bucket: 2
+          - text: Ultrasound machine used in its clinic
+            bucket: 1
+        explain: An intangible asset is identifiable, non-monetary and has no physical substance. Hardware is tangible. Prepaid rent is a prepaid expense and a term deposit is a monetary financial asset, so neither is an intangible asset.
+        ref: Part II, Section 3064
+      - id: cap3l1q02
+        type: mc
+        concept: cap3-intangible-definition
+        prompt: What makes an intangible asset identifiable?
+        options:
+          - It has a cost above the NPO's capitalization threshold
+          - It can be separated from the organization or arises from contractual or legal rights
+          - It was approved by the board in the capital budget
+          - It has a useful life longer than one year
+        answer: 1
+        explain: Identifiability is about separability or contractual and legal rights. A licence agreement or a registered trademark is identifiable even if the NPO never intends to sell it. Thresholds and budgets are internal policies, not part of the definition.
+        ref: Part II, Section 3064
+      - id: cap3l1q03
+        type: mc
+        concept: cap3-4434-framework
+        prompt: A Lethbridge arts society buys box office software. Where does it find most of the recognition and amortization guidance for this intangible asset?
+        options:
+          - Part II, Section 3064, as directed by Section 4434
+          - Part III, Section 4433, applied by analogy
+          - Part III, Section 4441, because software is part of its collection
+          - Nowhere, because NPOs expense all intangibles
+        answer: 0
+        explain: Section 4434 tells NPOs to apply Section 3064 except where it says otherwise. Section 4434 adds its own rules for contributed intangibles, write-downs and small NPO relief.
+        ref: Part III, Section 4434
+      - id: cap3l1q04
+        type: classify
+        concept: cap3-4434-framework
+        prompt: Sort each aspect of accounting for an NPO's intangible assets by the standard that governs it.
+        buckets:
+          - Part II, Section 3064
+          - Part III, Section 4434
+          - Part III, Section 4410
+        items:
+          - text: Research versus development and the capitalization criteria
+            bucket: 0
+          - text: Recording a donated software licence at fair value
+            bucket: 1
+          - text: Writing down an intangible to replacement cost
+            bucket: 1
+          - text: Recognizing the related contribution as revenue
+            bucket: 2
+        explain: Section 4434 overrides Part II for contributions and write-downs. The write-down replaces the Part II impairment test, though the Section 3063 disclosures still apply. Revenue from the related contribution always follows Section 4410.
+        ref: Part III, Section 4434
+      - id: cap3l1q05
+        type: tf
+        concept: cap3-4434-framework
+        prompt: An NPO tests its intangible assets for impairment by comparing their carrying amount with undiscounted future cash flows, as a profit-oriented private enterprise would.
+        answer: false
+        reasons:
+          - Section 4434 replaces that test with a service potential write-down to fair value or replacement cost
+          - NPOs never write down intangible assets
+          - NPOs use discounted cash flows instead of undiscounted ones
+        reason: 0
+        explain: Most NPO assets do not generate cash flows, so a cash flow recoverability test makes little sense. Section 4434 uses service potential instead and borrows only the disclosure requirements of Section 3063.
+        ref: Part III, Section 4434
+      - id: cap3l1q06
+        type: tf
+        concept: cap3-small-npo-relief
+        prompt: A Camrose seniors' society with average annual revenues of $380,000 may expense its software purchases and simply disclose its accounting policy and the amounts expensed.
+        answer: true
+        reasons:
+          - Average annual revenues under $500,000 allow it to limit Section 4434 to disclosure
+          - Any NPO may expense software if it is under $10,000
+          - Seniors' societies are exempt from Section 4434
+        reason: 0
+        explain: The same $500,000 average revenue test as Section 4433 applies. The relief lets a small NPO expense intangibles on acquisition and disclose its policy, the major categories not recognized and the amount expensed.
+        ref: Part III, Section 4434
+      - id: cap3l1q07
+        type: calc
+        concept: cap3-small-npo-relief
+        prompt: A Medicine Hat hockey association's revenues were $455,000 last year and $560,000 this year. Enter its average annual revenue for the small NPO relief test.
+        answer: 507500
+        unit: $
+        explain: ($455,000 + $560,000) ÷ 2 = $507,500. That is over $500,000, so the association cannot use the relief this year and must apply Section 4434 in full.
+        ref: Part III, Section 4434
+      - id: cap3l1q08
+        type: tf
+        concept: cap3-small-npo-relief
+        prompt: An NPO went over the $500,000 average and began applying Section 4434 in full. Two years later its average falls to $470,000. It may now go back to expensing intangibles under the small NPO relief.
+        answer: false
+        explain: Once an NPO exceeds the threshold and applies the section in full, it continues to do so even if its revenues later drop below $500,000. The relief is not a switch to flip each year.
+        ref: Part III, Section 4434
+      - id: cap3l1q09
+        type: mc
+        concept: cap3-not-recognized
+        prompt: Over ten years a Red Deer food bank has built a donor list of 18,000 regular givers. Its fundraising staff estimate the list cost $400,000 to develop. How is the list treated?
+        options:
+          - Capitalized at $400,000 and amortized over ten years
+          - Capitalized at fair value as a contributed intangible
+          - Not recognized as an asset; the costs were expensed as incurred
+          - Capitalized only if a board resolution designates it as an asset
+        answer: 2
+        explain: Internally generated customer and donor lists, brands and similar items are never recognized as intangible assets. Their cost cannot be separated from the cost of running the organization.
+        ref: Part II, Section 3064
+      - id: cap3l1q10
+        type: je
+        concept: cap3-intangible-definition
+        prompt: An Edmonton community league (full application of Section 4434) pays $18,000 cash for a perpetual licence to facility booking software installed on its own computers. It expects to use the software for six years. Record the purchase.
+        accounts:
+          - Intangible assets
+          - Cash
+          - Capital assets
+          - Software expense
+          - Prepaid expenses
+          - Accounts payable
+        lines:
+          - account: Intangible assets
+            side: dr
+            amount: 18000
+          - account: Cash
+            side: cr
+            amount: 18000
+        explain: A purchased software licence the league controls is an identifiable asset without physical substance. It is recorded at cost as an intangible asset, separate from tangible capital assets, and amortized over six years.
+        ref: Part III, Section 4434
+
+  - id: cap3l2
+    title: Development, websites and software
+    intro: Building your own software or website forces two decisions. Which phase is each cost in, and does the NPO's policy capitalize development costs at all?
+    questions:
+      - id: cap3l2q01
+        type: classify
+        concept: cap3-research-development
+        prompt: A Grande Prairie food bank is building an app that matches surplus grocery donations with agencies. Classify each activity.
+        buckets:
+          - Research phase
+          - Development phase
+        items:
+          - text: Surveying agencies to learn what features might be useful
+            bucket: 0
+          - text: Comparing three possible technology platforms before choosing one
+            bucket: 0
+          - text: Coding the matching engine after the design is approved and funded
+            bucket: 1
+          - text: Testing a working prototype with two agencies
+            bucket: 1
+          - text: Exploring whether machine learning could predict donation volumes
+            bucket: 0
+        explain: Research is the search for knowledge and the evaluation of alternatives. Development applies that knowledge to design, build and test a specific asset. If the NPO cannot tell the phases apart, all of the spending is treated as research.
+        ref: Part II, Section 3064
+      - id: cap3l2q02
+        type: mc
+        concept: cap3-research-development
+        prompt: Under Section 3064 as applied by NPOs, how are development costs that meet all the criteria accounted for?
+        options:
+          - They must always be capitalized
+          - They must always be expensed
+          - The NPO chooses a policy of expensing or capitalizing them and applies it consistently
+          - They are capitalized only if a government grant funds them
+        answer: 2
+        explain: Section 3064 lets a private enterprise or NPO choose between expensing development costs and capitalizing those that meet the criteria. The choice is an accounting policy applied consistently. Research costs are expensed under either policy.
+        ref: Part II, Section 3064
+      - id: cap3l2q03
+        type: match
+        concept: cap3-development-criteria
+        prompt: Match each piece of evidence in the food bank's project file to the development criterion it supports.
+        pairs:
+          - left: A working prototype passed load testing
+            right: Technical feasibility
+          - left: Board minutes approving completion and rollout
+            right: Intention to complete and use the asset
+          - left: A signed grant covering the full remaining budget
+            right: Availability of adequate resources
+          - left: Agencies confirm the app will cut food waste and staff time
+            right: How the asset will generate future benefits or service potential
+          - left: Time tracking that codes staff hours to the project
+            right: Reliable measurement of the costs
+        explain: All the criteria must be met before costs can be capitalized. For an asset used internally, the benefit criterion is met by showing the asset is useful, for example through service potential, rather than by cash inflows.
+        ref: Part II, Section 3064
+      - id: cap3l2q04
+        type: calc
+        concept: cap3-development-criteria
+        prompt: The food bank capitalizes qualifying development costs. It spent $25,000 on feasibility work and platform comparisons. All criteria were met on March 1. After that it spent $120,000 on contracted coding and testing, $30,000 of staff time working directly on the app, $8,000 training agency users and $10,000 of allocated general office overhead. Enter the amount to capitalize.
+        answer: 150000
+        unit: $
+        explain: Only directly attributable costs after all criteria are met are capitalized, $120,000 + $30,000 = $150,000. The $25,000 is research. Training and general overhead are expensed even though they occur during development.
+        ref: Part II, Section 3064
+      - id: cap3l2q05
+        type: calc
+        concept: cap3-amortization
+        prompt: The $150,000 app is available for use on September 1. The food bank's year end is December 31 and it amortizes the app straight-line over five years with no residual value, prorated by month. Enter amortization for the first fiscal year.
+        answer: 10000
+        unit: $
+        explain: $150,000 ÷ 5 = $30,000 a year. Four months of use is $30,000 × 4/12 = $10,000. Amortization starts when the asset is available for use, not when costs start being capitalized.
+        ref: Part II, Section 3064
+      - id: cap3l2q06
+        type: tf
+        concept: cap3-development-criteria
+        prompt: The food bank met all the development criteria on March 1. It had spent $40,000 on the app in January and February and expensed it in its monthly statements. Because the costs fall in the same fiscal year, it may now capitalize them as part of the app.
+        answer: false
+        reasons:
+          - Costs incurred before all criteria were met cannot be capitalized, and expensed costs are not reinstated
+          - It can capitalize them because they are in the same fiscal year
+          - It can capitalize them if the auditor agrees
+        reason: 0
+        explain: Capitalization starts only from the date all criteria are met. January and February came before March 1, so those costs never qualified, and costs already recognized as an expense are not later reinstated as part of an intangible asset.
+        ref: Part II, Section 3064
+      - id: cap3l2q07
+        type: classify
+        concept: cap3-website-software
+        prompt: A Banff mountain safety society builds a website with trail reports and online course registration. It capitalizes qualifying development costs. Classify each cost.
+        buckets:
+          - Capitalize
+          - Expense
+        items:
+          - text: Consultant workshop to decide the site's goals and choose a vendor
+            bucket: 1
+          - text: Building the course registration and payment module
+            bucket: 0
+          - text: Designing the layout and graphics of the site
+            bucket: 0
+          - text: Writing a spring fundraising campaign page
+            bucket: 1
+          - text: Monthly hosting and security monitoring after launch
+            bucket: 1
+          - text: Training staff to update trail reports
+            bucket: 1
+        explain: Website stages are analyzed by applying the Section 3064 research and development principles. Planning is like research and is expensed. Building functionality and design that will deliver service potential is development. Promotional content, training and operating costs after launch are expensed.
+        ref: Part II, Section 3064
+      - id: cap3l2q08
+        type: calc
+        concept: cap3-website-software
+        prompt: The society's website costs were planning $6,000, registration module $28,000, graphic design $14,000, fundraising campaign pages $5,000, hosting for the year $2,400 and staff training $1,500. Enter the amount capitalized.
+        answer: 42000
+        unit: $
+        explain: $28,000 + $14,000 = $42,000. Planning, promotional content, hosting and training total $14,900 and are expensed.
+        ref: Part II, Section 3064
+      - id: cap3l2q09
+        type: mc
+        concept: cap3-website-software
+        prompt: A St. Albert youth society subscribes to a hosted donor management platform and pays $12,000 for setup and data migration. It has elected the AcG-20 simplification approach. How is the $12,000 treated?
+        options:
+          - Capitalized as an intangible asset and amortized over the contract
+          - Expensed as the services are received, with any advance payment held as a prepaid
+          - Capitalized as a tangible capital asset
+          - Deferred and recognized only when the contract ends
+        answer: 1
+        explain: Under the AcG-20 simplification approach, expenditures on a cloud computing arrangement are treated as payments for services. The election applies to all such arrangements and is disclosed.
+        ref: Part II, AcG-20
+      - id: cap3l2q10
+        type: je
+        concept: cap3-research-development
+        prompt: A Lethbridge Friendship Centre has a policy of expensing all development costs. This year it spent $35,000 on research and $90,000 on development of a case management tool that met every criterion, all paid in cash. Record the year's spending.
+        accounts:
+          - Research and development expense
+          - Intangible assets
+          - Cash
+          - Deferred development costs
+          - Accounts payable
+          - Amortization expense
+        lines:
+          - account: Research and development expense
+            side: dr
+            amount: 125000
+          - account: Cash
+            side: cr
+            amount: 125000
+        explain: Under an expense policy, development costs are expensed even when every criterion is met. The policy must be applied consistently, so the Centre cannot pick and choose projects to capitalize.
+        ref: Part II, Section 3064
+
+  - id: cap3l3
+    title: Contributed intangibles, amortization and write-downs
+    intro: Donated licences, indefinite lives and service potential write-downs are where Section 4434 departs most from Part II. Expect deferred contributions to follow the asset.
+    questions:
+      - id: cap3l3q01
+        type: je
+        concept: cap3-contributed-intangible
+        prompt: A technology company donates a three-year licence for accounting software to a Red Deer arts society. Its fair value is $36,000. The society uses the deferral method. Record the contribution.
+        accounts:
+          - Intangible assets
+          - Deferred capital contributions
+          - Contribution revenue
+          - Software expense
+          - Cash
+          - Net assets invested in capital assets
+        lines:
+          - account: Intangible assets
+            side: dr
+            amount: 36000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 36000
+        explain: A contributed intangible is recognized at fair value at the date of contribution. Under the deferral method, a contribution of an amortizable asset is deferred and recognized as the asset is amortized.
+        ref: Part III, Section 4434
+      - id: cap3l3q02
+        type: je
+        concept: cap3-contributed-intangible
+        prompt: Record the first full year of amortization of the $36,000 donated licence (three years, straight-line) and the related deferred capital contribution.
+        accounts:
+          - Amortization expense
+          - Accumulated amortization
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Intangible assets
+          - Contribution revenue
+        lines:
+          - account: Amortization expense
+            side: dr
+            amount: 12000
+          - account: Accumulated amortization
+            side: cr
+            amount: 12000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 12000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 12000
+        explain: $36,000 ÷ 3 = $12,000 of amortization. The deferred capital contribution is recognized as revenue on the same basis, so the donated licence has no net effect on the excess of revenues over expenses.
+        ref: Part III, Section 4410
+      - id: cap3l3q03
+        type: mc
+        concept: cap3-contributed-intangible
+        prompt: A private donor gives a Fort McMurray heritage society the rights to a local historian's unpublished manuscripts. No market exists and no appraiser can reasonably estimate fair value. How are the rights recorded under Section 4434?
+        options:
+          - At the donor's estimate of their worth
+          - At nominal value, with a matching nominal contribution
+          - At the cost of insuring them
+          - They are not recorded and nothing is disclosed
+        answer: 1
+        explain: Contributed intangibles are recorded at fair value. In the unusual case where fair value cannot be reasonably determined, the asset and the contribution are both recorded at nominal value.
+        ref: Part III, Section 4434
+      - id: cap3l3q04
+        type: tf
+        concept: cap3-amortization
+        prompt: A Calgary community radio society buys a broadcast licence for $50,000. The licence is renewed routinely at little cost and the society expects to keep broadcasting indefinitely. It should still amortize the licence over its current seven-year term.
+        answer: false
+        reasons:
+          - With no foreseeable limit on its service life, it has an indefinite life and is not amortized
+          - Licences must always be amortized over 40 years
+          - Licences are expensed when purchased
+        reason: 0
+        explain: When renewal is routine, costs little and is expected, there may be no foreseeable limit on the period the asset provides service. An indefinite-life intangible is not amortized, but its life is reviewed every period.
+        ref: Part II, Section 3064
+      - id: cap3l3q05
+        type: calc
+        concept: cap3-amortization
+        prompt: After three years, the regulator announces that the radio society's $50,000 licence will not be renewed after four more years. Ignoring any write-down, enter the annual amortization from now on, straight-line with no residual value.
+        answer: 12500
+        unit: $
+        explain: The life is no longer indefinite, so amortization starts prospectively over the remaining four years, $50,000 ÷ 4 = $12,500. Prior years are not restated. The change is also a signal to consider whether a write-down is needed.
+        ref: Part II, Section 3064
+      - id: cap3l3q06
+        type: classify
+        concept: cap3-writedown
+        prompt: Classify each event at an Edmonton health charity by whether it suggests that an intangible asset may need to be written down.
+        buckets:
+          - Possible write-down
+          - No write-down indicated
+        items:
+          - text: A new provincial system replaces most uses of its client database
+            bucket: 0
+          - text: Its custom scheduling software is found to be technologically obsolete
+            bucket: 0
+          - text: The program the software supports is discontinued
+            bucket: 0
+          - text: Usage of the software rises after a successful outreach campaign
+            bucket: 1
+          - text: The vendor raises its annual support fee by 3%
+            bucket: 1
+        explain: Write-downs are triggered by a loss of service potential, such as obsolescence, reduced use or a change in programs. Higher usage and normal cost increases do not indicate impairment.
+        ref: Part III, Section 4434
+      - id: cap3l3q07
+        type: calc
+        concept: cap3-writedown
+        prompt: A Calgary health charity's donor management system cost $150,000 and has accumulated amortization of $60,000. After a provincial portal takes over much of its work, the replacement cost of its remaining service potential is $36,000. Enter the write-down.
+        answer: 54000
+        unit: $
+        explain: Net carrying amount is $150,000 − $60,000 = $90,000. It is written down to $36,000, a partial write-down of $54,000. Section 4434 allows partial write-downs, not only write-downs to nil.
+        ref: Part III, Section 4434
+      - id: cap3l3q08
+        type: je
+        concept: cap3-writedown
+        prompt: Record the $54,000 write-down of the donor management system. The charity records write-downs in accumulated amortization.
+        accounts:
+          - Write-down of intangible assets
+          - Accumulated amortization
+          - Intangible assets
+          - Amortization expense
+          - Unrestricted net assets
+          - Deferred capital contributions
+        lines:
+          - account: Write-down of intangible assets
+            side: dr
+            amount: 54000
+          - account: Accumulated amortization
+            side: cr
+            amount: 54000
+        explain: The write-down is an expense in the statement of operations. Accumulated amortization includes write-downs, which is how the disclosure of cost and accumulated amortization stays consistent.
+        ref: Part III, Section 4434
+      - id: cap3l3q09
+        type: calc
+        concept: cap3-writedown
+        prompt: After the write-down, the donor management system has a net carrying amount of $36,000 and three years of remaining life. Next year the provincial portal is shut down and the charity relies on its own system fully again. Enter the amortization for next year, straight-line with no residual value.
+        answer: 12000
+        unit: $
+        explain: The write-down is never reversed, even if service potential recovers. The new $36,000 carrying amount is amortized over the remaining three years, $12,000 a year.
+        ref: Part III, Section 4434
+      - id: cap3l3q10
+        type: je
+        concept: cap3-writedown
+        prompt: A Medicine Hat seniors' society discontinues a mobile app that was fully funded by a restricted grant. The app's net carrying amount is $45,000 (cost $75,000) and its unamortized deferred capital contribution is $45,000. It has no remaining service potential and the grant restrictions were met. Record the write-down and its effect on the deferred contribution.
+        accounts:
+          - Write-down of intangible assets
+          - Accumulated amortization
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Intangible assets
+          - Grant refund payable
+          - Cash
+        lines:
+          - account: Write-down of intangible assets
+            side: dr
+            amount: 45000
+          - account: Accumulated amortization
+            side: cr
+            amount: 45000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 45000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 45000
+        explain: The app is written down to nil. Because the restrictions were met, the related unamortized deferred contribution is recognized as revenue, so the two effects offset. If the funder required repayment, a liability would arise instead.
+        ref: Part III, Section 4434
+
+  - id: cap3l4
+    title: Collections and how to measure them
+    intro: Section 4441 took collections from a disclosure-only topic to a balance sheet line. The key choice is cost or nominal value, and it applies to the whole collection.
+    questions:
+      - id: cap3l4q01
+        type: classify
+        concept: cap3-collection-definition
+        prompt: A Calgary museum society holds these items. Classify each one.
+        buckets:
+          - Collection under Section 4441
+          - Not a collection
+        items:
+          - text: First Nations beadwork exhibited in its galleries, preserved under a conservation plan and covered by a policy that sale proceeds buy new acquisitions
+            bucket: 0
+          - text: Ranching-era photographs held in climate-controlled archives for researchers, under the same policy
+            bucket: 0
+          - text: Framed prints decorating the executive office, never exhibited
+            bucket: 1
+          - text: Donated paintings it plans to sell at its annual auction
+            bucket: 1
+          - text: Reproduction artifacts sold in its gift shop
+            bucket: 1
+        explain: A collection is held for public exhibition, education or research, is protected and preserved, and is covered by a policy restricting the use of sale proceeds. Office decor is a tangible capital asset, auction items are held for sale, and gift shop stock is inventory.
+        ref: Part III, Section 4441
+      - id: cap3l4q02
+        type: mc
+        concept: cap3-collection-definition
+        prompt: A Lethbridge art gallery has always exhibited and conserved its works, but its board has no policy on how proceeds from selling a work must be used. What does that mean under Section 4441?
+        options:
+          - Nothing, because exhibition alone makes the works a collection
+          - The works do not meet the definition until a policy limits proceeds to acquisitions or direct care of the collection
+          - The works must be measured at fair value each year
+          - The gallery must sell the works within one year
+        answer: 1
+        explain: All three parts of the definition must be met, including the policy on proceeds. Without it, the works fall under another standard, such as Section 4433 for tangible capital assets or Part II inventory or investment standards, depending on how they are used.
+        ref: Part III, Section 4441
+      - id: cap3l4q03
+        type: mc
+        concept: cap3-4441-vs-4440
+        prompt: What was the main change when Section 4441 replaced Section 4440?
+        options:
+          - Collections must now be measured at fair value with changes in net assets
+          - Collections must now be amortized over 100 years
+          - Collections must now be recognized on the statement of financial position, at cost or nominal value
+          - Collections may now be omitted from the financial statements entirely
+        answer: 2
+        explain: Section 4440 was mainly about disclosure and left recognition to the NPO. Section 4441 requires recognition as a separate line item, measured at cost or nominal value, with no amortization.
+        ref: Part III, Section 4441
+      - id: cap3l4q04
+        type: tf
+        concept: cap3-collection-measurement
+        prompt: A Red Deer museum may carry its paintings at cost and its archival documents at nominal value, choosing whichever basis is easier for each part of its holdings.
+        answer: false
+        reasons:
+          - One basis applies to all collections, except contributed items whose cost cannot reasonably be determined
+          - Each item may be measured on any basis the curator prefers
+          - Paintings must always be carried at nominal value
+        reason: 0
+        explain: The cost or nominal value choice is applied to all of an NPO's collections. The only exception lets a cost-basis NPO carry contributed items at nominal value when their cost cannot reasonably be determined.
+        ref: Part III, Section 4441
+      - id: cap3l4q05
+        type: calc
+        concept: cap3-collection-measurement
+        prompt: A Calgary gallery measures its collection at cost. It buys a landscape painting for $80,000, pays $2,000 for crating and shipping, $1,500 in import duty and $1,000 in legal fees to confirm title. After arrival it spends $3,000 on conservation cleaning. Enter the amount added to the collection.
+        answer: 84500
+        unit: $
+        explain: Cost includes the price and directly attributable acquisition costs, $80,000 + $2,000 + $1,500 + $1,000 = $84,500. Conservation is a care and preservation cost and is expensed.
+        ref: Part III, Section 4441
+      - id: cap3l4q06
+        type: je
+        concept: cap3-collection-measurement
+        prompt: A different gallery measures its collection at nominal value of $1 per item. It buys the same painting, paying $84,500 cash in total for the price, shipping, duty and legal fees. Record the acquisition.
+        accounts:
+          - Collections
+          - Collection acquisition expense
+          - Cash
+          - Capital assets
+          - Conservation expense
+          - Unrestricted net assets
+        lines:
+          - account: Collections
+            side: dr
+            amount: 1
+          - account: Collection acquisition expense
+            side: dr
+            amount: 84499
+          - account: Cash
+            side: cr
+            amount: 84500
+        explain: Under the nominal value basis, the item is recorded at $1 and the excess of the price over nominal value, plus all other acquisition costs, is expensed. The two galleries report very different results for the same purchase, which is why the policy must be disclosed.
+        ref: Part III, Section 4441
+      - id: cap3l4q07
+        type: je
+        concept: cap3-collection-contributed
+        prompt: A collector donates a set of homestead-era quilts to a Camrose museum that measures its collection at cost. Appraised fair value is $12,000 and the museum pays an $800 appraisal and transport cost. The museum uses the restricted fund method and records the gift as revenue of its collections fund. Record the contribution.
+        accounts:
+          - Collections
+          - Contribution revenue
+          - Cash
+          - Deferred contributions
+          - Collection acquisition expense
+          - Conservation expense
+        lines:
+          - account: Collections
+            side: dr
+            amount: 12800
+          - account: Contribution revenue
+            side: cr
+            amount: 12000
+          - account: Cash
+            side: cr
+            amount: 800
+        explain: Under the cost basis, a contributed item's cost is its fair value at the date of contribution plus directly attributable costs. The contribution is $12,000 and the cost paid in cash is part of the item's carrying amount.
+        ref: Part III, Section 4441
+      - id: cap3l4q08
+        type: je
+        concept: cap3-collection-contributed
+        prompt: The Camrose museum (cost basis, restricted fund method) buys a pioneer wagon from a supporter for $20,000 cash. An independent appraisal puts fair value at $50,000. Record the purchase.
+        accounts:
+          - Collections
+          - Cash
+          - Contribution revenue
+          - Gain on purchase of collection items
+          - Collection acquisition expense
+          - Deferred contributions
+        lines:
+          - account: Collections
+            side: dr
+            amount: 50000
+          - account: Cash
+            side: cr
+            amount: 20000
+          - account: Contribution revenue
+            side: cr
+            amount: 30000
+        explain: An item bought for substantially less than fair value is part purchase and part gift. It is recorded at fair value and the $30,000 difference is a contribution under Section 4410, not a gain.
+        ref: Part III, Section 4441
+      - id: cap3l4q09
+        type: mc
+        concept: cap3-collection-contributed
+        prompt: The museum measures its collection at cost. It receives a box of unattributed letters from an early Alberta settlement. Their cost cannot reasonably be determined. How are they recorded?
+        options:
+          - At nominal value, while the rest of the collection stays at cost
+          - At an amount the curator chooses
+          - The whole collection must switch to nominal value
+          - They are not recorded until they can be appraised
+        answer: 0
+        explain: This is the one exception to the single-basis rule. A cost-basis NPO records contributed items at nominal value when cost cannot reasonably be determined, and discloses a description of the items carried at nominal value.
+        ref: Part III, Section 4441
+      - id: cap3l4q10
+        type: tf
+        concept: cap3-collection-no-amortization
+        prompt: A museum carrying a $600,000 collection at cost should amortize the items over their estimated useful lives, as it does for its building.
+        answer: false
+        reasons:
+          - Collections are held to be preserved indefinitely, so they are not amortized
+          - Collections are amortized but only over 100 years
+          - Only purchased items are amortized
+        reason: 0
+        explain: Collections are not amortized. Their condition is maintained through care and preservation spending, which is expensed, and any loss in value is caught by the write-down requirement.
+        ref: Part III, Section 4441
+      - id: cap3l4q11
+        type: classify
+        concept: cap3-collection-no-amortization
+        prompt: A cost-basis Edmonton museum incurs these costs. Classify each.
+        buckets:
+          - Add to collections
+          - Expense
+        items:
+          - text: Purchase price of a fossil specimen
+            bucket: 0
+          - text: Freight to bring the fossil to Edmonton
+            bucket: 0
+          - text: Annual climate control for the storage vault
+            bucket: 1
+          - text: Conservator's fee to stabilize an existing textile
+            bucket: 1
+          - text: Collections insurance for the year
+            bucket: 1
+        explain: Acquisition costs are capitalized under the cost basis. Ongoing protection, care and preservation costs are expensed as incurred, even when they keep the item in exhibitable condition.
+        ref: Part III, Section 4441
+
+  - id: cap3l5
+    title: Collection write-downs, disposals and an integrated case
+    intro: Floods, forgeries and deaccessions test the rules. This lesson ends with cases that combine Section 4434 and Section 4441 judgements.
+    questions:
+      - id: cap3l5q01
+        type: classify
+        concept: cap3-collection-writedown
+        prompt: A cost-basis museum in Medicine Hat considers these events. Classify each.
+        buckets:
+          - Possible write-down
+          - No write-down indicated
+        items:
+          - text: A roof leak causes water damage to a painting
+            bucket: 0
+          - text: Research shows an artifact is a later reproduction, not an original
+            bucket: 0
+          - text: A sculpture is stolen and not recovered
+            bucket: 0
+          - text: Auction prices for similar works rise sharply
+            bucket: 1
+          - text: The museum moves an item from display into storage on rotation
+            bucket: 1
+        explain: Damage, loss of authenticity and loss of the item are events that can leave the carrying amount above fair value. Rising market prices never lead to a write-up, and routine rotation does not reduce an item's value.
+        ref: Part III, Section 4441
+      - id: cap3l5q02
+        type: je
+        concept: cap3-collection-writedown
+        prompt: Water damage reduces the fair value of a painting carried at cost of $50,000 to $18,000. Record the write-down.
+        accounts:
+          - Write-down of collection items
+          - Collections
+          - Accumulated amortization
+          - Unrestricted net assets
+          - Conservation expense
+          - Insurance recoveries receivable
+        lines:
+          - account: Write-down of collection items
+            side: dr
+            amount: 32000
+          - account: Collections
+            side: cr
+            amount: 32000
+        explain: The painting is written down to fair value, $50,000 − $18,000 = $32,000, as an expense. Collections have no accumulated amortization account, so the credit goes to the collection itself. The write-down is not reversed if the painting is later restored.
+        ref: Part III, Section 4441
+      - id: cap3l5q03
+        type: calc
+        concept: cap3-collection-writedown
+        prompt: A fire damages a group of archival maps at a Grande Prairie museum. The group is written down by $25,000 in total. The two items in the group carry costs of $60,000 and $40,000. Enter the write-down allocated to the $60,000 item.
+        answer: 15000
+        unit: $
+        explain: A write-down of a group is allocated pro rata to carrying amounts. $60,000 ÷ $100,000 = 60%, and 60% × $25,000 = $15,000. The other item takes $10,000.
+        ref: Part III, Section 4441
+      - id: cap3l5q04
+        type: tf
+        concept: cap3-collection-writedown
+        prompt: A museum carries its whole collection at nominal value. One item is badly damaged, so it must record a write-down equal to the item's fair value loss.
+        answer: false
+        reasons:
+          - The write-down requirement applies to items carried at cost; a nominal amount has nothing meaningful to write down
+          - The write-down must be recorded directly in net assets
+          - Nominal value items must be written up first
+        reason: 0
+        explain: Write-downs apply to collection items recorded at cost. Under the nominal value basis the item's carrying amount is already only nominal. The damage may still be a significant change worth disclosing.
+        ref: Part III, Section 4441
+      - id: cap3l5q05
+        type: je
+        concept: cap3-collection-disposal
+        prompt: A Calgary gallery deaccessions a sculpture it bought years ago for $12,000 (cost basis, no external restrictions). It sells at auction for $45,000, and the auction house deducts a $4,500 commission and remits the rest in cash. Record the sale.
+        accounts:
+          - Cash
+          - Collections
+          - Gain on disposal of collection items
+          - Commission expense
+          - Deferred contributions
+          - Contribution revenue
+        lines:
+          - account: Cash
+            side: dr
+            amount: 40500
+          - account: Collections
+            side: cr
+            amount: 12000
+          - account: Gain on disposal of collection items
+            side: cr
+            amount: 28500
+        explain: Net proceeds are $45,000 − $4,500 = $40,500. The difference from the $12,000 carrying amount, $28,500, is recognized in the statement of operations. The gallery's policy then governs how the proceeds are used.
+        ref: Part III, Section 4441
+      - id: cap3l5q06
+        type: mc
+        concept: cap3-collection-disposal
+        prompt: A painting was donated to a museum under an agreement that sale proceeds must be used only to buy works by Alberta artists. The museum sells it for more than its carrying amount. How is the excess handled?
+        options:
+          - It is always a gain in the statement of operations
+          - It is credited directly to unrestricted net assets
+          - It follows Section 4410, reflecting the donor's restriction, rather than being treated as an ordinary gain
+          - It is refunded to the donor
+        answer: 2
+        explain: For contributed items subject to external restrictions, the excess of proceeds over carrying amount is accounted for under Section 4410, so the donor's restriction shapes how and when it is recognized. Only items with no external restriction send the whole difference to the statement of operations.
+        ref: Part III, Section 4441
+      - id: cap3l5q07
+        type: calc
+        concept: cap3-collection-disclosure
+        prompt: A Fort McMurray heritage society had $18,000 of unspent deaccession proceeds at the start of the year. During the year it received $40,500 of new proceeds and spent $22,000 on new acquisitions and $9,000 on direct care of the collection. Enter the unspent proceeds it discloses at year end.
+        answer: 27500
+        unit: $
+        explain: $18,000 + $40,500 − $22,000 − $9,000 = $27,500. Section 4441 requires disclosure of proceeds received, how they were used, prior-period proceeds spent this period and the unspent balance, with where it sits on the statement of financial position.
+        ref: Part III, Section 4441
+      - id: cap3l5q08
+        type: mc
+        concept: cap3-collection-disclosure
+        prompt: Which of these is NOT a disclosure Section 4441 asks for?
+        options:
+          - A description of the collections and the measurement policy
+          - Expenditures on collection items during the period
+          - The insured value of each item in the collection
+          - The facts that led to a write-down and its amount
+        answer: 2
+        explain: Section 4441 requires descriptions, policies, significant changes, acquisition spending, nominal value items under a cost policy, write-downs and disposal proceeds. It does not require item-by-item insured values.
+        ref: Part III, Section 4441
+      - id: cap3l5q09
+        type: match
+        concept: cap3-4441-vs-4440
+        prompt: A Banff arts foundation holds these items. Match each to the standard that governs it.
+        pairs:
+          - left: Historical paintings exhibited to the public under a proceeds policy
+            right: Part III, Section 4441
+          - left: Purchased digital rights to reproduce artwork images in its catalogue
+            right: Part III, Section 4434
+          - left: The gallery building's HVAC system
+            right: Part III, Section 4433
+          - left: Donated shares it holds to earn income for programs
+            right: Part II, Section 3856
+        explain: The intended use decides the standard. Items that do not meet the collection definition are accounted for as tangible capital assets, intangible assets, investments or inventory.
+        ref: Part III, Section 4441
+      - id: cap3l5q10
+        type: je
+        concept: cap3-collection-contributed
+        prompt: Integrated case. A cost-basis Edmonton museum using the restricted fund method receives, from one donor, a historic rodeo saddle appraised at $15,000 for its collection, plus a three-year licence for collection cataloguing software worth $9,000. It pays $600 in transport costs for the saddle. Record both items, with the saddle gift as contribution revenue in the collections fund and the licence as contribution revenue in the capital fund.
+        accounts:
+          - Collections
+          - Intangible assets
+          - Contribution revenue
+          - Cash
+          - Deferred capital contributions
+          - Capital assets
+          - Collection acquisition expense
+        lines:
+          - account: Collections
+            side: dr
+            amount: 15600
+          - account: Intangible assets
+            side: dr
+            amount: 9000
+          - account: Contribution revenue
+            side: cr
+            amount: 24000
+          - account: Cash
+            side: cr
+            amount: 600
+        explain: The saddle meets the collection definition and is carried at fair value plus directly attributable cost, $15,600. The software is an intangible under Section 4434 at fair value of $9,000. Under the restricted fund method, restricted contributions are revenue of the relevant restricted fund, so nothing is deferred.
+        ref: Part III, Section 4441
+      - id: cap3l5q11
+        type: calc
+        concept: cap3-amortization
+        prompt: Continuing the case, the museum amortizes the $9,000 cataloguing licence straight-line over its three-year term and applies Section 4441 to the saddle. Enter total amortization for the first full year on these two items.
+        answer: 3000
+        unit: $
+        explain: The licence gives $9,000 ÷ 3 = $3,000. The saddle is a collection item and is not amortized, so the total is $3,000.
+        ref: Part II, Section 3064

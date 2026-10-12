@@ -169,18 +169,22 @@ lessons:
         explain: Control means the power to determine strategic policies without the co-operation of others. Needing the agreement of other parties points to joint control or influence, not control.
         ref: Part III, Section 4450
       - id: con1l1q09
-        type: match
+        type: classify
         concept: con1-not-control
-        prompt: Match each Alberta fact pattern to the best conclusion.
-        pairs:
-          - left: Society appoints 6 of 8 foundation directors
-            right: Indicator of control
-          - left: City can cancel a youth club's operating grant
-            right: Not control on its own
-          - left: Club depends on one casino licence for its revenue
-            right: Economic dependence, not control
-          - left: Society set up a land trust NPO and directs it
-            right: Indicator of control
+        prompt: Sort each Alberta fact pattern by the best conclusion.
+        buckets:
+          - Indicator of control
+          - Not control on its own
+          - Economic dependence, not control
+        items:
+          - text: Society appoints 6 of 8 foundation directors
+            bucket: 0
+          - text: City can cancel a youth club's operating grant
+            bucket: 1
+          - text: Club depends on one casino licence for its revenue
+            bucket: 2
+          - text: Society set up a land trust NPO and directs it
+            bucket: 0
         explain: Control is about the power to set strategic policies. Board appointment and establishing and directing an organization indicate it; grant cancellation and economic dependence do not.
         ref: Part III, Section 4450
 

@@ -1,0 +1,437 @@
+id: u1
+number: 1
+title: NPO reporting foundations
+summary: Where ASNPO fits in the CPA Canada Handbook, what an NPO is, the statements an NPO presents, how net assets are classified, and the basics of fund accounting and presentation.
+refs:
+  - Part III, Section 1401
+  - Part III, Section 4400
+  - Part III, Section 4433
+  - Part III, Section 4470
+status: ready
+
+concepts:
+  - id: u1-asnpo-scope
+    title: ASNPO is Part III
+    summary: Accounting Standards for Not-for-Profit Organizations make up Part III of the CPA Canada Handbook – Accounting and are the standards built for private-sector NPOs.
+    ref: Part III, Section 1401
+  - id: u1-part-ii-fallback
+    title: Part II fills the gaps
+    summary: Part III only covers NPO-specific topics. For anything Part III does not address, an NPO applying ASNPO uses the relevant Part II (ASPE) sections.
+    ref: Part III, Section 1401
+  - id: u1-framework-choice
+    title: Who uses which framework
+    summary: A private-sector NPO can apply ASNPO or choose IFRS in Part I instead. Government NPOs are outside ASNPO and follow public sector accounting standards.
+    ref: Part III, Section 1401
+  - id: u1-npo-definition
+    title: What makes an entity an NPO
+    summary: An NPO normally has no transferable ownership interests, is organized and operated exclusively for social, educational, professional, religious, health, charitable or other not-for-profit purposes, and its members and contributors get no financial return from it in that capacity.
+    ref: Part III, Section 1401
+  - id: u1-part-iii-sections
+    title: The Part III sections
+    summary: Part III includes 1401 (general presentation), 4400 (statement presentation), 4410 (contributions revenue), 4420 (contributions receivable), 4433 and 4434 (tangible and intangible assets), 4441 (collections), 4450 (controlled and related entities), 4460 (related party disclosure) and 4470 (allocated expenses).
+    ref: Part III, Section 1401
+  - id: u1-statement-set
+    title: The NPO statement set
+    summary: An NPO presents a statement of financial position, a statement of operations, a statement of changes in net assets and a statement of cash flows, plus notes. Operations and changes in net assets may be combined into one statement.
+    ref: Part III, Section 4400
+  - id: u1-net-asset-classes
+    title: Net asset classes
+    summary: Net assets are shown by class where applicable, such as invested in capital assets, restricted for endowment, other externally restricted and unrestricted, along with total net assets.
+    ref: Part III, Section 4400
+  - id: u1-internal-restrictions
+    title: Internal restrictions
+    summary: Amounts the board sets aside are internally restricted. They are not restrictions in the contributions sense, are shown separately within net assets, and the board can reverse them.
+    ref: Part III, Section 4400
+  - id: u1-changes-in-net-assets
+    title: Transfers live in changes in net assets
+    summary: Interfund transfers and internally imposed restrictions move amounts between net asset classes. They appear in the statement of changes in net assets, not as revenue or expense.
+    ref: Part III, Section 4400
+  - id: u1-fund-accounting
+    title: Fund accounting
+    summary: A fund is a self-balancing set of accounts kept for a particular purpose. NPOs may report on a fund basis; under the restricted fund method they present a general fund, restricted fund(s) and an endowment fund as applicable.
+    ref: Part III, Section 4400
+  - id: u1-gross-presentation
+    title: Report revenues and expenses gross
+    summary: Revenues and expenses are generally shown gross in the statement of operations rather than netted against each other.
+    ref: Part III, Section 4400
+  - id: u1-expense-classification
+    title: Function or object
+    summary: Expenses in the statement of operations can be classified by function (programs, fundraising, administration) or by object (salaries, rent, amortization).
+    ref: Part III, Section 4400
+  - id: u1-allocated-expenses
+    title: Allocated expense disclosure
+    summary: When an NPO classifies expenses by function and allocates fundraising and general support costs to other functions, it discloses its allocation policies, the nature of the costs allocated, the basis used and the amounts allocated.
+    ref: Part III, Section 4470
+  - id: u1-small-npo-relief
+    title: Small NPO capital asset relief
+    summary: An NPO whose average annual revenues for the current and preceding period are under $500,000 may limit its application of the tangible capital asset standard to disclosure.
+    ref: Part III, Section 4433
+
+lessons:
+  - id: u1l1
+    title: What ASNPO covers
+    intro: Before any journal entries, get the map straight. Which standards apply to an NPO, what counts as an NPO, and where each topic lives in Part III.
+    questions:
+      - id: u1l1q01
+        type: mc
+        concept: u1-asnpo-scope
+        prompt: An Edmonton food bank is a private-sector registered charity that has not elected IFRS. Which part of the CPA Canada Handbook – Accounting does it primarily follow?
+        options:
+          - Part II only, the standards for private enterprises
+          - Part III, Accounting Standards for Not-for-Profit Organizations
+          - Public sector accounting standards
+          - Part I, which every charity must apply
+        answer: 1
+        explain: Part III (ASNPO) is the set of standards written for private-sector NPOs. Part II only comes in for topics Part III does not cover, and Part I is an option, not a requirement.
+        ref: Part III, Section 1401
+      - id: u1l1q02
+        type: tf
+        concept: u1-part-ii-fallback
+        prompt: A sport association applying ASNPO needs to account for a lease. Part III has no lease section, so the association applies the Part II (ASPE) lease standard.
+        answer: true
+        reasons:
+          - Part III covers only NPO-specific topics, so Part II applies where Part III is silent
+          - NPOs can pick any framework they like topic by topic
+          - Leases are always expensed by NPOs, so Part II is just guidance
+        reason: 0
+        explain: ASNPO is Part III plus the Part II sections for matters Part III does not address. Leases, financial instruments and many other topics come from Part II.
+        ref: Part III, Section 1401
+      - id: u1l1q03
+        type: classify
+        concept: u1-framework-choice
+        prompt: Sort each organization by the framework family it falls under.
+        buckets:
+          - Private-sector NPO (ASNPO, or IFRS by choice)
+          - Government NPO (public sector standards)
+        items:
+          - text: A Calgary arts society governed by a volunteer board
+            bucket: 0
+          - text: An NPO controlled by the Government of Alberta
+            bucket: 1
+          - text: A provincial amateur soccer association
+            bucket: 0
+          - text: A community health centre run by an independent society
+            bucket: 0
+          - text: A foundation controlled by a provincial government
+            bucket: 1
+        explain: ASNPO is for private-sector NPOs. Government-controlled NPOs are in the public sector and follow public sector accounting standards instead.
+        ref: Part III, Section 1401
+      - id: u1l1q04
+        type: mc
+        concept: u1-npo-definition
+        prompt: Which of these is NOT part of the definition of a not-for-profit organization?
+        options:
+          - It normally has no transferable ownership interests
+          - It operates exclusively for not-for-profit purposes, such as charitable or health
+          - It is organized for social, educational, religious or similar purposes
+          - Members receive a financial return from it in their capacity as members
+        answer: 3
+        explain: In an NPO, members, contributors and other resource providers get no financial return from the organization in that capacity. The other three are features of the definition.
+        ref: Part III, Section 1401
+      - id: u1l1q05
+        type: tf
+        concept: u1-framework-choice
+        prompt: A private-sector NPO in Alberta may choose to report under IFRS (Part I) instead of ASNPO.
+        answer: true
+        explain: ASNPO is available to private-sector NPOs, but they may elect IFRS instead. In practice most choose ASNPO because it addresses contributions and other NPO issues directly.
+        ref: Part III, Section 1401
+      - id: u1l1q06
+        type: match
+        concept: u1-part-iii-sections
+        prompt: Match each Part III section to its topic.
+        pairs:
+          - left: Section 4410
+            right: Contributions – revenue recognition
+          - left: Section 4420
+            right: Contributions receivable
+          - left: Section 4433
+            right: Tangible capital assets held by NPOs
+          - left: Section 4450
+            right: Reporting controlled and related entities
+          - left: Section 4470
+            right: Disclosure of allocated expenses
+        explain: These are the Part III sections you will use most. 4410 and 4420 drive contribution accounting, and 4450 covers consolidation-type questions for NPOs.
+        ref: Part III, Section 1401
+      - id: u1l1q07
+        type: match
+        concept: u1-part-iii-sections
+        prompt: Match each Part III section to its topic.
+        pairs:
+          - left: Section 1401
+            right: General standards of financial statement presentation
+          - left: Section 4400
+            right: Financial statement presentation by NPOs
+          - left: Section 4434
+            right: Intangible assets held by NPOs
+          - left: Section 4441
+            right: Collections held by NPOs
+          - left: Section 4460
+            right: Disclosure of related party transactions
+        explain: 1401 sets general presentation standards, 4400 covers the NPO statements and net assets, and 4434, 4441 and 4460 cover intangibles, collections and related parties.
+        ref: Part III, Section 1401
+      - id: u1l1q08
+        type: mc
+        concept: u1-part-iii-sections
+        prompt: Section 4433 on tangible capital assets took effect for fiscal years beginning on or after January 1, 2019. Which earlier section did it replace?
+        options:
+          - Section 4400
+          - Section 4441
+          - Section 4431
+          - Section 4450
+        answer: 2
+        explain: Section 4433 replaced Section 4431, and Section 4434 replaced 4432 for intangible assets, both for fiscal years beginning on or after January 1, 2019.
+        ref: Part III, Section 4433
+      - id: u1l1q09
+        type: tf
+        concept: u1-framework-choice
+        prompt: An NPO controlled by the Government of Alberta can adopt ASNPO because it is a not-for-profit organization.
+        answer: false
+        reasons:
+          - Government NPOs follow public sector accounting standards, not Part III
+          - ASNPO is available only to registered charities
+          - Only NPOs with revenue under $500,000 may use ASNPO
+        reason: 0
+        explain: Being an NPO is not enough. Government NPOs fall under public sector accounting standards, while ASNPO is for private-sector NPOs.
+        ref: Part III, Section 1401
+
+  - id: u1l2
+    title: The statement set and net assets
+    intro: NPOs have no equity in the business sense. They report net assets, split into classes that show which resources are free to use and which are tied up.
+    questions:
+      - id: u1l2q01
+        type: mc
+        concept: u1-statement-set
+        prompt: Which of these is NOT one of the financial statements an NPO presents under ASNPO?
+        options:
+          - Statement of operations
+          - Statement of changes in net assets
+          - Statement of retained earnings
+          - Statement of cash flows
+        answer: 2
+        explain: An NPO has no retained earnings. Its set is the statement of financial position, statement of operations, statement of changes in net assets and statement of cash flows, plus notes.
+        ref: Part III, Section 4400
+      - id: u1l2q02
+        type: tf
+        concept: u1-statement-set
+        prompt: An NPO may combine its statement of operations and its statement of changes in net assets into a single statement.
+        answer: true
+        explain: ASNPO allows these two statements to be combined, which many smaller Alberta charities do to keep their statements short.
+        ref: Part III, Section 4400
+      - id: u1l2q03
+        type: classify
+        concept: u1-net-asset-classes
+        prompt: An arts society uses the restricted fund method. Classify each balance within net assets.
+        buckets:
+          - Externally restricted
+          - Internally restricted
+          - Unrestricted
+        items:
+          - text: Endowment principal a donor requires be kept permanently
+            bucket: 0
+          - text: $100,000 the board set aside for a future roof replacement
+            bucket: 1
+          - text: Donor gift that may only be spent on the youth theatre program
+            bucket: 0
+          - text: $50,000 the board reserved for a new touring van
+            bucket: 1
+          - text: Accumulated operating surplus with no stipulations
+            bucket: 2
+        explain: External restrictions come from donors or grantors. Board set-asides are internal restrictions, reported separately but still part of the organization's discretionary resources.
+        ref: Part III, Section 4400
+      - id: u1l2q04
+        type: mc
+        concept: u1-internal-restrictions
+        prompt: The board of a community health centre restricted $75,000 for a future IT upgrade. Who can remove that restriction?
+        options:
+          - Only the original donors of the funds
+          - Nobody; it is permanent once approved
+          - The board of directors
+          - The Canada Revenue Agency
+        answer: 2
+        explain: An internal restriction is a board decision, so the board can reverse it. That is exactly why it is not a restriction in the contributions sense.
+        ref: Part III, Section 4400
+      - id: u1l2q05
+        type: tf
+        concept: u1-internal-restrictions
+        prompt: A food bank's board designates $100,000 for a future roof replacement. Under the deferral method, it records the $100,000 as deferred contributions.
+        answer: false
+        reasons:
+          - A board designation is not an external restriction, so it stays in net assets and is not a liability
+          - Deferred contributions only arise from government grants
+          - Board designations are recorded as an expense when approved
+        reason: 0
+        explain: Deferral applies only to externally restricted contributions. A board designation simply moves $100,000 from unrestricted to internally restricted net assets.
+        ref: Part III, Section 4400
+      - id: u1l2q06
+        type: je
+        concept: u1-internal-restrictions
+        prompt: The food bank's board approves setting aside $100,000 of unrestricted net assets for a future roof replacement. Record the designation.
+        accounts:
+          - Unrestricted net assets
+          - Internally restricted net assets
+          - Deferred contributions
+          - Program expenses
+          - Cash
+          - Contribution revenue
+        lines:
+          - account: Unrestricted net assets
+            side: dr
+            amount: 100000
+          - account: Internally restricted net assets
+            side: cr
+            amount: 100000
+        explain: The designation reclassifies net assets. No revenue, expense or liability arises, and the transfer appears in the statement of changes in net assets.
+        ref: Part III, Section 4400
+      - id: u1l2q07
+        type: mc
+        concept: u1-changes-in-net-assets
+        prompt: A sport association transfers $40,000 from its general fund to its capital fund. Where is this transfer presented?
+        options:
+          - In the statement of operations as an expense of the general fund
+          - In the statement of changes in net assets
+          - Only in the notes to the financial statements
+          - In the statement of operations as revenue of the capital fund
+        answer: 1
+        explain: Interfund transfers move net assets between funds; they are not revenue or expense. They are shown in the statement of changes in net assets.
+        ref: Part III, Section 4400
+      - id: u1l2q08
+        type: mc
+        concept: u1-net-asset-classes
+        prompt: Which of these is NOT a component of net assets on an NPO's statement of financial position?
+        options:
+          - Net assets invested in capital assets
+          - Net assets restricted for endowment purposes
+          - Unrestricted net assets
+          - Deferred capital contributions
+        answer: 3
+        explain: Deferred capital contributions are a deferred credit outside net assets. The other three are net asset classes presented where applicable.
+        ref: Part III, Section 4400
+      - id: u1l2q09
+        type: tf
+        concept: u1-net-asset-classes
+        prompt: Net assets restricted for endowment purposes are resources that an external donor requires the NPO to maintain permanently.
+        answer: true
+        reasons:
+          - The restriction is external and requires the principal to be kept rather than used up
+          - The board decided to hold them as a long-term reserve
+          - They are restricted only until the next fiscal year
+        reason: 0
+        explain: Endowment net assets carry an external restriction to maintain the resources permanently. Income earned on them may be usable, depending on the donor's terms.
+        ref: Part III, Section 4400
+
+  - id: u1l3
+    title: Funds and presentation
+    intro: Many NPOs keep their books in funds. This lesson covers fund accounting, gross presentation, expense classification and two presentation-related reliefs and disclosures.
+    questions:
+      - id: u1l3q01
+        type: mc
+        concept: u1-fund-accounting
+        prompt: In NPO reporting, what is a fund?
+        options:
+          - A self-balancing set of accounts kept for a particular purpose
+          - A bank account holding restricted cash
+          - The total of all unrestricted net assets
+          - An investment portfolio held for endowment purposes
+        answer: 0
+        explain: A fund has its own assets, liabilities and net assets, so it balances on its own. It may hold cash, but it is a set of accounts, not a bank account.
+        ref: Part III, Section 4400
+      - id: u1l3q02
+        type: tf
+        concept: u1-fund-accounting
+        prompt: An NPO using the restricted fund method presents a general fund, a restricted fund for each restricted purpose (or group of them), and an endowment fund, as applicable.
+        answer: true
+        explain: The restricted fund method depends on fund reporting. The general fund holds unrestricted activity, restricted funds hold restricted activity, and the endowment fund holds endowment contributions.
+        ref: Part III, Section 4400
+      - id: u1l3q03
+        type: tf
+        concept: u1-fund-accounting
+        prompt: Every NPO applying ASNPO must present its financial statements on a fund accounting basis.
+        answer: false
+        reasons:
+          - Fund reporting is optional, though the restricted fund method requires it
+          - Only NPOs with endowments may use fund accounting
+          - Fund accounting is prohibited under ASNPO
+        reason: 0
+        explain: NPOs may report on a fund basis. Fund reporting becomes necessary when an NPO chooses the restricted fund method for contributions.
+        ref: Part III, Section 4400
+      - id: u1l3q04
+        type: mc
+        concept: u1-gross-presentation
+        prompt: A Red Deer arts society's gala brought in $80,000 of ticket and sponsorship revenue and cost $30,000 to run. How should the statement of operations show it?
+        options:
+          - Net gala revenue of $50,000 on one line
+          - Revenue of $80,000 and expenses of $30,000, shown gross
+          - Net $50,000, with the $30,000 disclosed only in the notes
+          - Net $50,000 credited directly to unrestricted net assets
+        answer: 1
+        explain: Revenues and expenses are generally reported gross. Netting would hide the true cost of fundraising from readers.
+        ref: Part III, Section 4400
+      - id: u1l3q05
+        type: calc
+        concept: u1-small-npo-relief
+        prompt: A Lethbridge community society had statement-of-operations revenues of $520,000 this year and $460,000 last year. Enter its average annual revenue for the two periods.
+        answer: 490000
+        unit: $
+        explain: The small-NPO test averages the current and preceding period revenues, so ($520,000 + $460,000) ÷ 2 = $490,000.
+        ref: Part III, Section 4433
+      - id: u1l3q06
+        type: tf
+        concept: u1-small-npo-relief
+        prompt: That society (average revenue $490,000) may limit its application of Section 4433 to disclosure, for example by expensing capital assets and disclosing its policy.
+        answer: true
+        reasons:
+          - Its average revenues for the current and preceding periods are under $500,000
+          - Any registered charity may expense its capital assets
+          - Only the preceding year's revenue of $460,000 is tested
+        reason: 0
+        explain: The relief is based on the two-period average, which is below $500,000, even though this year's revenue alone is above it.
+        ref: Part III, Section 4433
+      - id: u1l3q07
+        type: classify
+        concept: u1-expense-classification
+        prompt: Sort these expense captions by the classification approach they reflect.
+        buckets:
+          - By function
+          - By object
+        items:
+          - text: Food distribution program
+            bucket: 0
+          - text: Salaries and benefits
+            bucket: 1
+          - text: Fundraising
+            bucket: 0
+          - text: Rent
+            bucket: 1
+          - text: Amortization
+            bucket: 1
+          - text: Youth sport programs
+            bucket: 0
+        explain: Function groups costs by what the money was used for. Object groups costs by type of expense, whichever program incurred them.
+        ref: Part III, Section 4400
+      - id: u1l3q08
+        type: mc
+        concept: u1-allocated-expenses
+        prompt: A foundation reports expenses by function and allocates fundraising and general support costs to its programs. What does Section 4470 require?
+        options:
+          - Nothing, as long as total expenses are unchanged
+          - Disclosure of total fundraising costs only
+          - Restating all expenses by object instead
+          - Disclosure of its allocation policies, the nature of costs allocated, the basis and the amounts
+        answer: 3
+        explain: Allocation affects how program-heavy an NPO looks, so 4470 requires disclosure of the policy, what was allocated, how and how much.
+        ref: Part III, Section 4470
+      - id: u1l3q09
+        type: match
+        concept: u1-fund-accounting
+        prompt: Match each term to its meaning.
+        pairs:
+          - left: Fund
+            right: Self-balancing set of accounts for a purpose
+          - left: General fund
+            right: Holds unrestricted resources and activity
+          - left: Endowment fund
+            right: Holds resources to be maintained permanently
+          - left: Interfund transfer
+            right: Shown in the statement of changes in net assets
+        explain: These terms show up throughout fund-based NPO statements. Transfers between funds never pass through revenue or expense.
+        ref: Part III, Section 4400

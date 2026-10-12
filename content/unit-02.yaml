@@ -1,0 +1,830 @@
+id: u2
+number: 2
+title: Contributions and the two methods
+summary: What a contribution is, the three types of contribution, and how to record them under the deferral method and the restricted fund method, including capital grants, endowments, pledges, in-kind gifts and investment income.
+refs:
+  - Part III, Section 4410
+  - Part III, Section 4420
+  - Part III, Section 4400
+status: ready
+
+concepts:
+  - id: u2-contribution-definition
+    title: What a contribution is
+    summary: A contribution is a non-reciprocal transfer of cash or other assets to an NPO, or a non-reciprocal settlement or cancellation of its liabilities. Government funding to an NPO is a contribution.
+    ref: Part III, Section 4410
+  - id: u2-contribution-types
+    title: Three types of contribution
+    summary: Contributions are restricted (external stipulations on use), endowment (a restricted contribution that must be maintained permanently) or unrestricted.
+    ref: Part III, Section 4410
+  - id: u2-internal-designations
+    title: Restrictions are external
+    summary: Only stipulations imposed from outside the NPO are restrictions, and they can be explicit or implied by the circumstances. A board designation is not a restriction.
+    ref: Part III, Section 4410
+  - id: u2-method-choice
+    title: Choosing a method
+    summary: An NPO picks either the deferral method or the restricted fund method as an accounting policy and applies it consistently. It discloses the method used and related information such as deferred contribution balances and changes.
+    ref: Part III, Section 4410
+  - id: u2-deferral-operating
+    title: Deferral method for operating contributions
+    summary: Unrestricted contributions and restricted contributions for current-period expenses are revenue now. Restricted contributions for future-period expenses are deferred and recognized as revenue when the related expenses are incurred.
+    ref: Part III, Section 4410
+  - id: u2-endowment-contributions
+    title: Endowment contributions
+    summary: Under the deferral method, endowment contributions go directly to net assets in the statement of changes in net assets, never to revenue. Under the restricted fund method, they are revenue of the endowment fund.
+    ref: Part III, Section 4410
+  - id: u2-deferred-capital-contributions
+    title: Deferred capital contributions
+    summary: Under the deferral method, contributions restricted for amortizable capital assets are deferred and recognized as revenue on the same basis as the related asset is amortized.
+    ref: Part III, Section 4410
+  - id: u2-non-amortizable-capital
+    title: Land and other non-amortized assets
+    summary: Under the deferral method, contributions restricted for capital assets that are not amortized, such as land, are recognized as a direct increase in net assets.
+    ref: Part III, Section 4410
+  - id: u2-contributed-capital-assets
+    title: Contributed capital assets
+    summary: A donated capital asset is recorded at fair value at the date of contribution, or at nominal value if fair value cannot be reasonably determined. Under the deferral method, a donated amortizable asset creates a deferred capital contribution.
+    ref: Part III, Section 4410
+  - id: u2-restricted-fund-method
+    title: Restricted fund method
+    summary: Restricted contributions with a matching restricted fund are revenue of that fund when received or receivable. Endowment contributions are endowment fund revenue, and unrestricted contributions are general fund revenue.
+    ref: Part III, Section 4410
+  - id: u2-no-matching-fund
+    title: No matching restricted fund
+    summary: Under the restricted fund method, a restricted contribution with no corresponding restricted fund is recognized in the general fund using the deferral method.
+    ref: Part III, Section 4410
+  - id: u2-pledges
+    title: Pledges and contributions receivable
+    summary: A contribution receivable, such as a pledge, is recognized as an asset only if the amount can be reasonably estimated and collection is reasonably assured.
+    ref: Part III, Section 4420
+  - id: u2-contributed-materials-services
+    title: Contributed materials and services
+    summary: An NPO may choose to recognize contributed materials and services, but only when fair value can be reasonably estimated and they are used in normal operations and would otherwise have been purchased.
+    ref: Part III, Section 4410
+  - id: u2-investment-income
+    title: Investment income
+    summary: Under the deferral method, restricted investment income follows the restricted contribution rules, endowment income that must be added to principal goes directly to endowment net assets, and unrestricted investment income is revenue.
+    ref: Part III, Section 4410
+
+lessons:
+  - id: u2l1
+    title: What counts as a contribution
+    intro: Contribution accounting starts with two questions. Is it a contribution at all, and if so, is it unrestricted, restricted or an endowment?
+    questions:
+      - id: u2l1q01
+        type: mc
+        concept: u2-contribution-definition
+        prompt: Which of these is a contribution to an Edmonton community health centre?
+        options:
+          - Fees from clients for a paid fitness class
+          - Facility rental income from a local business
+          - A $20,000 Government of Alberta grant for a seniors' program
+          - Proceeds from selling surplus office furniture
+        answer: 2
+        explain: A contribution is non-reciprocal; the giver gets nothing of equal value back. Government funding to an NPO is a contribution, while fees, rent and asset sales are exchanges.
+        ref: Part III, Section 4410
+      - id: u2l1q02
+        type: tf
+        concept: u2-contribution-definition
+        prompt: An operating grant from the Government of Alberta to a private-sector NPO is a contribution.
+        answer: true
+        reasons:
+          - Government funding to an NPO is a non-reciprocal transfer, so it is a contribution
+          - Only gifts from individuals can be contributions
+          - It is a contribution only if it has no restrictions attached
+        reason: 0
+        explain: ASNPO treats government funding to an NPO as a contribution. It may be restricted or unrestricted, but either way Section 4410 applies.
+        ref: Part III, Section 4410
+      - id: u2l1q03
+        type: tf
+        concept: u2-contribution-definition
+        prompt: A supporter forgives a $10,000 loan owed by an arts society and expects nothing in return. This is a contribution.
+        answer: true
+        explain: A contribution includes a non-reciprocal settlement or cancellation of an NPO's liabilities, not only gifts of cash or other assets.
+        ref: Part III, Section 4410
+      - id: u2l1q04
+        type: classify
+        concept: u2-contribution-types
+        prompt: Classify each contribution received by a Calgary food bank.
+        buckets:
+          - Unrestricted
+          - Restricted
+          - Endowment
+        items:
+          - text: $5,000 gala donation with no conditions
+            bucket: 0
+          - text: $500,000 provincial grant for next year's school lunch program
+            bucket: 1
+          - text: $250,000 gift to be held permanently, with income funding scholarships
+            bucket: 2
+          - text: $30,000 donor gift for a new walk-in freezer
+            bucket: 1
+          - text: $1,000 online donation for general operations
+            bucket: 0
+          - text: Bequest the estate requires be maintained in perpetuity
+            bucket: 2
+        explain: Restricted means an external stipulation on use. An endowment is a restricted contribution that must be maintained permanently. Anything without external stipulations is unrestricted.
+        ref: Part III, Section 4410
+      - id: u2l1q05
+        type: mc
+        concept: u2-internal-designations
+        prompt: An arts society receives a $100,000 unrestricted bequest. The board then designates it for a future gallery expansion. What type of contribution is it?
+        options:
+          - Unrestricted, because the designation came from the board
+          - Restricted, because it now has a specific purpose
+          - Endowment, because it is held for the long term
+          - Restricted until the board formally votes to release it
+        answer: 0
+        explain: Only externally imposed stipulations create restrictions. The board's designation is an internal restriction shown within net assets, so the bequest is unrestricted revenue.
+        ref: Part III, Section 4410
+      - id: u2l1q06
+        type: tf
+        concept: u2-internal-designations
+        prompt: A contribution is restricted only if the restriction is written into a signed agreement.
+        answer: false
+        reasons:
+          - Restrictions can be explicit or implied by the circumstances of the gift
+          - Verbal restrictions are always treated as endowments
+          - Only government grants can carry restrictions
+        reason: 0
+        explain: A restriction can be implied, for example by donations raised through an appeal for a specific project. Judgment is needed when nothing is in writing.
+        ref: Part III, Section 4410
+      - id: u2l1q07
+        type: mc
+        concept: u2-contribution-types
+        prompt: What sets an endowment contribution apart from other restricted contributions?
+        options:
+          - It must be spent within the next fiscal year
+          - Its use is decided by the board each year
+          - It can only come from a foundation
+          - The resources must be maintained permanently, not used up
+        answer: 3
+        explain: An endowment is a restricted contribution where the principal must be kept permanently. The investment income may be usable, restricted or unrestricted per the donor's terms.
+        ref: Part III, Section 4410
+      - id: u2l1q08
+        type: mc
+        concept: u2-method-choice
+        prompt: How does an NPO decide between the deferral method and the restricted fund method?
+        options:
+          - It must use the restricted fund method once revenue exceeds $500,000
+          - It chooses one as an accounting policy and applies it consistently
+          - It picks the method for each contribution separately
+          - It must use the deferral method unless the province approves otherwise
+        answer: 1
+        explain: The method is an accounting policy choice for the organization, applied consistently and disclosed. It is not chosen grant by grant.
+        ref: Part III, Section 4410
+      - id: u2l1q09
+        type: match
+        concept: u2-contribution-types
+        prompt: Match each term to its meaning.
+        pairs:
+          - left: Contribution
+            right: Non-reciprocal transfer of assets to an NPO
+          - left: Restricted contribution
+            right: Externally imposed stipulation on how it is used
+          - left: Endowment contribution
+            right: Must be maintained permanently
+          - left: Internal restriction
+            right: Set by the board and reversible by it
+        explain: The source of a stipulation matters. External stipulations shape revenue recognition; internal ones only affect how net assets are classified.
+        ref: Part III, Section 4410
+
+  - id: u2l2
+    title: The deferral method
+    intro: The deferral method matches restricted contributions with the expenses they pay for. Unrestricted money is revenue now; restricted money waits for its expenses.
+    questions:
+      - id: u2l2q01
+        type: je
+        concept: u2-deferral-operating
+        prompt: A food bank uses the deferral method. It receives a $20,000 cash donation at its annual gala with no conditions attached. Record the receipt.
+        accounts:
+          - Cash
+          - Donation revenue
+          - Deferred contributions
+          - Unrestricted net assets
+          - Contributions receivable
+          - Endowment net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 20000
+          - account: Donation revenue
+            side: cr
+            amount: 20000
+        explain: Unrestricted contributions are revenue when received or receivable. Nothing is deferred because there is no restricted expense to match.
+        ref: Part III, Section 4410
+      - id: u2l2q02
+        type: je
+        concept: u2-deferral-operating
+        prompt: The food bank (deferral method, March 31 year end) receives a $500,000 Government of Alberta grant in March 2026, restricted to next year's school lunch program. Record the receipt.
+        accounts:
+          - Cash
+          - Contribution revenue
+          - Deferred contributions
+          - Contributions receivable
+          - Program expenses
+          - Unrestricted net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 500000
+          - account: Deferred contributions
+            side: cr
+            amount: 500000
+        explain: The grant pays for future-period expenses, so it is deferred as a liability and recognized as revenue when the program costs are incurred.
+        ref: Part III, Section 4410
+      - id: u2l2q03
+        type: je
+        concept: u2-deferral-operating
+        prompt: In the next fiscal year, the food bank incurs $300,000 of school lunch program expenses funded by that grant. Record only the revenue recognition entry.
+        accounts:
+          - Deferred contributions
+          - Contribution revenue
+          - Program expenses
+          - Cash
+          - Unrestricted net assets
+          - Deferred capital contributions
+        lines:
+          - account: Deferred contributions
+            side: dr
+            amount: 300000
+          - account: Contribution revenue
+            side: cr
+            amount: 300000
+        explain: Revenue is drawn down from deferred contributions as the related expenses are incurred, so $300,000 of revenue matches $300,000 of program costs.
+        ref: Part III, Section 4410
+      - id: u2l2q04
+        type: calc
+        concept: u2-deferral-operating
+        prompt: The deferred contributions balance opened at $500,000. During the year $300,000 was recognized as revenue, and a new $120,000 grant was received for next year's program. Enter the closing deferred contributions balance.
+        answer: 320000
+        unit: $
+        explain: $500,000 − $300,000 recognized + $120,000 new deferral = $320,000. This continuity is the same one the notes disclose.
+        ref: Part III, Section 4410
+      - id: u2l2q05
+        type: mc
+        concept: u2-deferral-operating
+        prompt: A sport association receives a $40,000 provincial grant restricted to this year's coaching clinics and runs the clinics before year end. Under the deferral method, when is the grant revenue?
+        options:
+          - Next year, when the grant report is filed
+          - In the current year, matching this year's clinic costs
+          - Never; it goes directly to restricted net assets
+          - Over five years, on a straight-line basis
+        answer: 1
+        explain: A restricted contribution for current-period expenses is recognized as revenue in the current period, because the related expenses are incurred in that period.
+        ref: Part III, Section 4410
+      - id: u2l2q06
+        type: je
+        concept: u2-endowment-contributions
+        prompt: A foundation using the deferral method receives a $250,000 cash gift. The donor requires the principal be maintained permanently, with income funding scholarships. Record the gift.
+        accounts:
+          - Cash
+          - Endowment net assets
+          - Contribution revenue
+          - Deferred contributions
+          - Unrestricted net assets
+          - Contributions receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 250000
+          - account: Endowment net assets
+            side: cr
+            amount: 250000
+        explain: Under the deferral method an endowment contribution is a direct increase in net assets, shown in the statement of changes in net assets, never as revenue.
+        ref: Part III, Section 4410
+      - id: u2l2q07
+        type: tf
+        concept: u2-endowment-contributions
+        prompt: Under the deferral method, a $250,000 endowment gift appears as revenue in the statement of operations.
+        answer: false
+        reasons:
+          - Endowment contributions are a direct increase in net assets, not revenue
+          - Endowments are deferred and amortized over 30 years
+          - Endowments are recorded only in the notes
+        reason: 0
+        explain: The principal will never be spent on operations, so it bypasses the statement of operations and goes to endowment net assets.
+        ref: Part III, Section 4410
+      - id: u2l2q08
+        type: classify
+        concept: u2-deferral-operating
+        prompt: An arts society uses the deferral method. Where does each contribution go when received?
+        buckets:
+          - Revenue now
+          - Deferred contributions
+          - Direct increase in net assets
+        items:
+          - text: $15,000 unrestricted bequest
+            bucket: 0
+          - text: Grant for this year's festival, held before year end
+            bucket: 0
+          - text: Grant restricted to next season's touring program
+            bucket: 1
+          - text: $250,000 gift to be held permanently
+            bucket: 2
+          - text: Donor gift for a conference in the next fiscal year
+            bucket: 1
+        explain: The deferral method looks at timing. Unrestricted or current-period restricted money is revenue now, future-period restricted money is deferred, and endowments go straight to net assets.
+        ref: Part III, Section 4410
+      - id: u2l2q09
+        type: mc
+        concept: u2-deferral-operating
+        prompt: What is the main idea behind deferring restricted contributions?
+        options:
+          - To reduce reported revenue for tax purposes
+          - To keep restricted cash in a separate bank account
+          - To match contribution revenue with the expenses it funds
+          - To show restricted grants as part of net assets
+        answer: 2
+        explain: Deferral matches revenue with the related expenses, so a program's revenue and costs land in the same period.
+        ref: Part III, Section 4410
+      - id: u2l2q10
+        type: calc
+        concept: u2-deferral-operating
+        prompt: A community kitchen (deferral method) receives a $60,000 provincial grant in April, restricted to the kitchen program. By year end it has spent $45,000 on the program; the rest will be spent next year. Enter this year's contribution revenue from the grant.
+        answer: 45000
+        unit: $
+        explain: Revenue matches the $45,000 of expenses incurred. The remaining $15,000 stays in deferred contributions until it is spent next year.
+        ref: Part III, Section 4410
+
+  - id: u2l3
+    title: Capital contributions under the deferral method
+    intro: Capital grants are where the deferral method feels most like project accounting. Revenue follows amortization, except for land and other assets that are not amortized.
+    questions:
+      - id: u2l3q01
+        type: je
+        concept: u2-deferred-capital-contributions
+        prompt: A community health centre (deferral method) receives a $1,200,000 Government of Alberta grant restricted to buying a clinic building. Record the receipt of the cash.
+        accounts:
+          - Cash
+          - Deferred capital contributions
+          - Deferred contributions
+          - Contribution revenue
+          - Net assets invested in capital assets
+          - Capital assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 1200000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 1200000
+        explain: A contribution restricted for an amortizable capital asset is deferred as a deferred capital contribution and later recognized as the building is amortized.
+        ref: Part III, Section 4410
+      - id: u2l3q02
+        type: calc
+        concept: u2-deferred-capital-contributions
+        prompt: The centre buys the building for $1,200,000 and amortizes it straight-line over 30 years with no residual value. Enter the annual amortization expense.
+        answer: 40000
+        unit: $
+        explain: $1,200,000 ÷ 30 = $40,000 a year. The deferred capital contribution will be recognized at the same rate.
+        ref: Part III, Section 4410
+      - id: u2l3q03
+        type: je
+        concept: u2-deferred-capital-contributions
+        prompt: At the end of year 1, record the building's $40,000 amortization and the matching recognition of the deferred capital contribution in one entry.
+        accounts:
+          - Amortization expense
+          - Accumulated amortization
+          - Deferred capital contributions
+          - Amortization of deferred capital contributions
+          - Contribution revenue
+          - Net assets invested in capital assets
+          - Cash
+        lines:
+          - account: Amortization expense
+            side: dr
+            amount: 40000
+          - account: Accumulated amortization
+            side: cr
+            amount: 40000
+          - account: Deferred capital contributions
+            side: dr
+            amount: 40000
+          - account: Amortization of deferred capital contributions
+            side: cr
+            amount: 40000
+        explain: Revenue from the capital grant is recognized on the same basis as the building's amortization, so $40,000 of revenue offsets $40,000 of amortization each year.
+        ref: Part III, Section 4410
+      - id: u2l3q04
+        type: calc
+        concept: u2-deferred-capital-contributions
+        prompt: Using the same $1,200,000 grant and $40,000 annual recognition, enter the deferred capital contributions balance at the end of year 3.
+        answer: 1080000
+        unit: $
+        explain: Three years of recognition total $120,000, so $1,200,000 − $120,000 = $1,080,000 remains deferred.
+        ref: Part III, Section 4410
+      - id: u2l3q05
+        type: tf
+        concept: u2-non-amortizable-capital
+        prompt: Under the deferral method, a contribution restricted to buying land is deferred and recognized as revenue over the land's useful life.
+        answer: false
+        reasons:
+          - Land is not amortized, so the contribution is a direct increase in net assets
+          - Land contributions are always recognized as revenue immediately
+          - Land contributions are recorded only when the land is sold
+        reason: 0
+        explain: With no amortization to match against, a contribution for a non-amortized capital asset such as land goes directly to net assets.
+        ref: Part III, Section 4410
+      - id: u2l3q06
+        type: je
+        concept: u2-non-amortizable-capital
+        prompt: A long-time supporter donates land with a fair value of $300,000 to a sport association (deferral method) for a future field. Record the contribution.
+        accounts:
+          - Capital assets
+          - Net assets invested in capital assets
+          - Deferred capital contributions
+          - Contribution revenue
+          - Unrestricted net assets
+          - Cash
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 300000
+          - account: Net assets invested in capital assets
+            side: cr
+            amount: 300000
+        explain: Donated land is recorded at fair value, and because land is not amortized the contribution is a direct increase in net assets rather than a deferral or revenue.
+        ref: Part III, Section 4410
+      - id: u2l3q07
+        type: je
+        concept: u2-contributed-capital-assets
+        prompt: A local dealership donates a delivery van with a fair value of $50,000 to the food bank (deferral method). The van will be amortized. Record the contribution.
+        accounts:
+          - Capital assets
+          - Deferred capital contributions
+          - Contribution revenue
+          - Net assets invested in capital assets
+          - Cash
+          - Amortization expense
+        lines:
+          - account: Capital assets
+            side: dr
+            amount: 50000
+          - account: Deferred capital contributions
+            side: cr
+            amount: 50000
+        explain: A contributed capital asset is recorded at fair value. Because the van is amortized, the deferral method sets up a deferred capital contribution recognized as the van is amortized.
+        ref: Part III, Section 4410
+      - id: u2l3q08
+        type: mc
+        concept: u2-contributed-capital-assets
+        prompt: A heritage society receives a donated antique display cabinet it will use in operations, but its fair value cannot be reasonably determined. At what amount is it recorded?
+        options:
+          - At the donor's original cost
+          - At a nominal value
+          - At an appraisal the board estimates later
+          - It is not recorded at all
+        answer: 1
+        explain: Contributed capital assets are recorded at fair value at the contribution date, or at nominal value when fair value cannot be reasonably determined.
+        ref: Part III, Section 4410
+      - id: u2l3q09
+        type: mc
+        concept: u2-deferred-capital-contributions
+        prompt: Where do unamortized deferred capital contributions appear on the statement of financial position?
+        options:
+          - As a deduction from the cost of the related capital assets
+          - Within net assets invested in capital assets
+          - As a deferred credit outside net assets
+          - Within endowment net assets
+        answer: 2
+        explain: Deferred capital contributions are a deferred credit, presented apart from net assets. They are not netted against the asset and are not net assets until recognized.
+        ref: Part III, Section 4410
+      - id: u2l3q10
+        type: classify
+        concept: u2-non-amortizable-capital
+        prompt: Under the deferral method, how is each capital contribution recognized?
+        buckets:
+          - Deferred capital contributions
+          - Direct increase in net assets
+        items:
+          - text: Grant to buy a building that will be amortized
+            bucket: 0
+          - text: Donated land for a community garden
+            bucket: 1
+          - text: Grant restricted to buying two delivery vans
+            bucket: 0
+          - text: Donor gift restricted to buying land for a new arena
+            bucket: 1
+          - text: Donated computer equipment that will be amortized
+            bucket: 0
+        explain: The split depends on amortization. Amortized assets create deferred capital contributions; land and other non-amortized assets go directly to net assets.
+        ref: Part III, Section 4410
+
+  - id: u2l4
+    title: The restricted fund method
+    intro: Under the restricted fund method, the fund structure does the work. Restricted money is revenue of its own fund immediately, so there is nothing to defer.
+    questions:
+      - id: u2l4q01
+        type: je
+        concept: u2-restricted-fund-method
+        prompt: A food bank uses the restricted fund method and has a School Lunch restricted fund. It receives a $500,000 Government of Alberta grant restricted to next year's school lunch program. Record the receipt.
+        accounts:
+          - Cash
+          - Contribution revenue (Restricted fund)
+          - Contribution revenue (General fund)
+          - Deferred contributions
+          - Contribution revenue (Endowment fund)
+          - Endowment net assets
+        lines:
+          - account: Cash
+            side: dr
+            amount: 500000
+          - account: Contribution revenue (Restricted fund)
+            side: cr
+            amount: 500000
+        explain: With a matching restricted fund, the contribution is revenue of that fund when received or receivable, even though it will be spent next year. No deferral is needed.
+        ref: Part III, Section 4410
+      - id: u2l4q02
+        type: je
+        concept: u2-endowment-contributions
+        prompt: A foundation uses the restricted fund method. It receives a $250,000 cash gift whose principal must be kept permanently. Record the gift.
+        accounts:
+          - Cash
+          - Contribution revenue (Endowment fund)
+          - Contribution revenue (General fund)
+          - Contribution revenue (Restricted fund)
+          - Endowment net assets
+          - Deferred contributions
+        lines:
+          - account: Cash
+            side: dr
+            amount: 250000
+          - account: Contribution revenue (Endowment fund)
+            side: cr
+            amount: 250000
+        explain: Under the restricted fund method, endowment contributions are revenue of the endowment fund. Compare the deferral method, where they go directly to net assets.
+        ref: Part III, Section 4410
+      - id: u2l4q03
+        type: je
+        concept: u2-restricted-fund-method
+        prompt: An arts society (restricted fund method) receives a $20,000 cash donation at its gala with no conditions. Record the receipt.
+        accounts:
+          - Cash
+          - Contribution revenue (General fund)
+          - Contribution revenue (Restricted fund)
+          - Deferred contributions
+          - Unrestricted net assets
+          - Contributions receivable
+        lines:
+          - account: Cash
+            side: dr
+            amount: 20000
+          - account: Contribution revenue (General fund)
+            side: cr
+            amount: 20000
+        explain: Unrestricted contributions are revenue of the general fund in the period received or receivable.
+        ref: Part III, Section 4410
+      - id: u2l4q04
+        type: je
+        concept: u2-no-matching-fund
+        prompt: A community society uses the restricted fund method but only has a capital fund and an endowment fund. It receives $80,000 restricted to next year's literacy program. Record the receipt.
+        accounts:
+          - Cash
+          - Contribution revenue (General fund)
+          - Contribution revenue (Restricted fund)
+          - Deferred contributions
+          - Program expenses
+          - Contribution revenue (Endowment fund)
+        lines:
+          - account: Cash
+            side: dr
+            amount: 80000
+          - account: Deferred contributions
+            side: cr
+            amount: 80000
+        explain: There is no restricted fund for the literacy program, so the contribution is recognized in the general fund using the deferral method and deferred until next year's expenses are incurred.
+        ref: Part III, Section 4410
+      - id: u2l4q05
+        type: tf
+        concept: u2-restricted-fund-method
+        prompt: Under the restricted fund method, a restricted contribution with a matching restricted fund is deferred until the related expenses are incurred.
+        answer: false
+        reasons:
+          - It is revenue of the restricted fund when received or receivable
+          - It is a direct increase in unrestricted net assets
+          - It is recognized only when the grantor approves the final report
+        reason: 0
+        explain: The restricted fund itself shows that the money is restricted, so immediate recognition in that fund replaces deferral.
+        ref: Part III, Section 4410
+      - id: u2l4q06
+        type: calc
+        concept: u2-method-choice
+        prompt: A foundation receives a $200,000 restricted grant in year 1 and spends $120,000 of it on the program that year. Under the deferral method, enter year 1 contribution revenue from this grant.
+        answer: 120000
+        unit: $
+        explain: The deferral method recognizes revenue as the related expenses are incurred, so revenue is $120,000 and $80,000 stays deferred.
+        ref: Part III, Section 4410
+      - id: u2l4q07
+        type: calc
+        concept: u2-method-choice
+        prompt: Same $200,000 grant, $120,000 spent in year 1. Now the foundation uses the restricted fund method with a matching restricted fund. Enter year 1 contribution revenue of the restricted fund.
+        answer: 200000
+        unit: $
+        explain: Under the restricted fund method the full $200,000 is revenue of the restricted fund when received. The unspent $80,000 sits in restricted fund balance, not a liability.
+        ref: Part III, Section 4410
+      - id: u2l4q08
+        type: classify
+        concept: u2-restricted-fund-method
+        prompt: A sport association uses the restricted fund method with a general fund, a capital fund and an endowment fund. Which fund records each contribution as revenue?
+        buckets:
+          - General fund
+          - Capital fund (restricted)
+          - Endowment fund
+        items:
+          - text: $3,000 unrestricted donation
+            bucket: 0
+          - text: Capital campaign gift for new bleachers
+            bucket: 1
+          - text: $100,000 gift to be held permanently
+            bucket: 2
+          - text: Grant restricted to buying a new scoreboard
+            bucket: 1
+          - text: Unrestricted bequest the board designated for travel costs
+            bucket: 0
+        explain: Each contribution goes to the fund matching its external restriction. A board designation does not move revenue out of the general fund.
+        ref: Part III, Section 4410
+      - id: u2l4q09
+        type: mc
+        concept: u2-no-matching-fund
+        prompt: Under the restricted fund method, how is a restricted contribution recognized when the NPO has no corresponding restricted fund?
+        options:
+          - As revenue of the endowment fund
+          - In the general fund, using the deferral method
+          - As revenue of the general fund immediately
+          - As a direct increase in unrestricted net assets
+        answer: 1
+        explain: Without a matching fund, the general fund applies deferral rules, so the restriction is still respected through matching.
+        ref: Part III, Section 4410
+      - id: u2l4q10
+        type: mc
+        concept: u2-method-choice
+        prompt: Two Alberta food banks receive identical grants but report very different revenue for the year. What most likely explains it, and how does a reader find out?
+        options:
+          - One misapplied ASNPO; the auditor's report will say so
+          - Different year ends; the reader compares cash flows
+          - One is a government NPO; the reader checks the board list
+          - Different contribution methods; each discloses the method it uses
+        answer: 3
+        explain: The deferral and restricted fund methods time contribution revenue differently. NPOs disclose which method they use so readers can compare.
+        ref: Part III, Section 4410
+
+  - id: u2l5
+    title: Pledges, in-kind and investment income
+    intro: The last pieces of the contribution puzzle are promises not yet paid, gifts of goods and services, and what to do with investment income.
+    questions:
+      - id: u2l5q01
+        type: tf
+        concept: u2-pledges
+        prompt: An NPO recognizes a pledge as a contribution receivable only if the amount can be reasonably estimated and ultimate collection is reasonably assured.
+        answer: true
+        reasons:
+          - Both conditions are needed before a contribution receivable is recognized
+          - Pledges are always recognized when signed, regardless of collectibility
+          - Pledges are never recognized under ASNPO
+        reason: 0
+        explain: Section 4420 sets these two conditions. Many NPOs record pledges only when received because collection is not reasonably assured.
+        ref: Part III, Section 4420
+      - id: u2l5q02
+        type: mc
+        concept: u2-pledges
+        prompt: At a gala, a first-time donor pledges $50,000 over five years. The food bank has no history with the donor and collection is uncertain. What should it do now?
+        options:
+          - Record a $50,000 receivable and revenue now
+          - Record $10,000 a year as a receivable
+          - Not recognize the pledge; record contributions as cash is received
+          - Record the full pledge in deferred contributions
+        answer: 2
+        explain: Collection is not reasonably assured, so no contribution receivable is recognized. Revenue is recorded as payments arrive.
+        ref: Part III, Section 4420
+      - id: u2l5q03
+        type: je
+        concept: u2-pledges
+        prompt: A long-standing corporate sponsor pledges an unrestricted $30,000, payable next month. The amount is fixed and collection is reasonably assured. Using the deferral method, record the pledge.
+        accounts:
+          - Contributions receivable
+          - Donation revenue
+          - Cash
+          - Deferred contributions
+          - Unrestricted net assets
+          - Endowment net assets
+        lines:
+          - account: Contributions receivable
+            side: dr
+            amount: 30000
+          - account: Donation revenue
+            side: cr
+            amount: 30000
+        explain: Both recognition conditions are met, so the pledge is a receivable. Being unrestricted, it is revenue when receivable.
+        ref: Part III, Section 4420
+      - id: u2l5q04
+        type: classify
+        concept: u2-contributed-materials-services
+        prompt: A community health centre's policy is to recognize contributed materials and services where permitted. Which items may it recognize?
+        buckets:
+          - May be recognized
+          - Not recognized
+        items:
+          - text: Donated office supplies used daily that it would otherwise buy; fair value $2,000
+            bucket: 0
+          - text: Volunteers greeting guests at the gala, a role it would never pay for
+            bucket: 1
+          - text: Pro bono legal work it would otherwise pay for; fair value reasonably estimable
+            bucket: 0
+          - text: Donated artwork of unknown value, kept in storage
+            bucket: 1
+          - text: Donated printing of the annual report, otherwise purchased; fair value $3,000
+            bucket: 0
+        explain: Recognition needs a reasonably estimable fair value, use in normal operations and an item the NPO would otherwise have purchased. Failing any test means no recognition.
+        ref: Part III, Section 4410
+      - id: u2l5q05
+        type: je
+        concept: u2-contributed-materials-services
+        prompt: A registered dietitian volunteers to run the health centre's nutrition clinic. The centre would otherwise hire one for $6,000, fair value is reasonably estimable, and its policy is to recognize contributed services. Record the contribution.
+        accounts:
+          - Program expenses
+          - Contribution revenue
+          - Cash
+          - Deferred contributions
+          - Unrestricted net assets
+          - Contributions receivable
+        lines:
+          - account: Program expenses
+            side: dr
+            amount: 6000
+          - account: Contribution revenue
+            side: cr
+            amount: 6000
+        explain: Recognizing contributed services grosses up both revenue and the expense the centre would otherwise have paid, so readers see the program's full cost.
+        ref: Part III, Section 4410
+      - id: u2l5q06
+        type: tf
+        concept: u2-contributed-materials-services
+        prompt: An NPO must recognize all volunteer time at fair value in its statement of operations.
+        answer: false
+        reasons:
+          - Recognition is a policy choice, and only allowed when all the criteria are met
+          - Volunteer time is always recognized at minimum wage
+          - Volunteer time can only be disclosed by government NPOs
+        reason: 0
+        explain: NPOs may choose to recognize contributed services, and only when the criteria are met. Most volunteer time is not recognized, often because fair value cannot be reasonably estimated.
+        ref: Part III, Section 4410
+      - id: u2l5q07
+        type: je
+        concept: u2-investment-income
+        prompt: A foundation (deferral method) earns $10,000 of cash investment income on an endowment. The donor requires all income be added to the endowment principal. Record the income.
+        accounts:
+          - Cash
+          - Endowment net assets
+          - Investment income
+          - Deferred contributions
+          - Unrestricted net assets
+          - Contribution revenue
+        lines:
+          - account: Cash
+            side: dr
+            amount: 10000
+          - account: Endowment net assets
+            side: cr
+            amount: 10000
+        explain: Endowment income that must be added to principal is treated like an endowment contribution under the deferral method, a direct increase in endowment net assets.
+        ref: Part III, Section 4410
+      - id: u2l5q08
+        type: classify
+        concept: u2-investment-income
+        prompt: A foundation uses the deferral method. How is each piece of investment income recognized?
+        buckets:
+          - Revenue
+          - Deferred contributions
+          - Direct increase in endowment net assets
+        items:
+          - text: Interest on the unrestricted operating account
+            bucket: 0
+          - text: Endowment income restricted to scholarships awarded next year
+            bucket: 1
+          - text: Endowment income the donor requires be added to principal
+            bucket: 2
+          - text: Restricted income spent on this year's scholarships
+            bucket: 0
+        explain: Restricted investment income follows the restricted contribution rules, endowment income added to principal goes to endowment net assets, and unrestricted income is revenue.
+        ref: Part III, Section 4410
+      - id: u2l5q09
+        type: mc
+        concept: u2-method-choice
+        prompt: Which of these is a required contribution-related disclosure for an NPO?
+        options:
+          - The names and gift amounts of every donor who gave over $1,000
+          - The method used (deferral or restricted fund) and the policy for contributed materials and services
+          - The fair value of all volunteer hours, whether or not recognized
+          - A forecast of next year's contributions by type and source
+        answer: 1
+        explain: NPOs disclose the method used to account for contributions and their policy for contributed materials and services, along with deferred contribution balances and changes.
+        ref: Part III, Section 4410
+      - id: u2l5q10
+        type: calc
+        concept: u2-investment-income
+        prompt: A foundation (deferral method) earns $40,000 of investment income. $25,000 is unrestricted; $15,000 is restricted to scholarships awarded next year. Enter the investment income recognized as revenue this year.
+        answer: 25000
+        unit: $
+        explain: The unrestricted $25,000 is revenue now. The $15,000 restricted to next year's expenses is deferred, following the restricted contribution rules.
+        ref: Part III, Section 4410

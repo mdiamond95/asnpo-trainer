@@ -16,6 +16,8 @@ import {
 } from '../engine/store';
 import { CorrectAnswer, QuestionBody, typeLabel } from './Questions';
 import { Icon } from './Art';
+import { Mascot } from './Mascot';
+import { sfx } from '../engine/sound';
 
 export interface SessionResult {
   plan: SessionPlan;
@@ -57,6 +59,8 @@ export function Player({ plan, onExit, onDone }: Props) {
     setResult(ok);
     if (ok) setSolved((s) => new Set(s).add(q.id));
     const nextCombo = ok ? combo + 1 : 0;
+    if (ok) sfx.correct(nextCombo);
+    else sfx.wrong();
     setCombo(nextCombo);
     setBestCombo((b) => Math.max(b, nextCombo));
     recordAttempt(q.id, q.concept, ok);
@@ -95,6 +99,7 @@ export function Player({ plan, onExit, onDone }: Props) {
         finishLesson(`${plan.unitId}-checkpoint`, Math.round((firstCount / total) * 100));
     }
     addXp(bonus);
+    sfx.complete();
     onDone({ plan, firstTry: firstCount, total, xp: xp + bonus, bestCombo });
   }
 
@@ -112,6 +117,7 @@ export function Player({ plan, onExit, onDone }: Props) {
         </button>
         <div
           className="bar"
+          data-hot={combo >= 3}
           role="progressbar"
           aria-valuemin={0}
           aria-valuemax={total}
@@ -151,7 +157,10 @@ export function Player({ plan, onExit, onDone }: Props) {
       ) : (
         <footer className="feedback" data-ok={result} role="status">
           <div className="feedback-head">
-            <span className="fb-icon">{result ? Icon.check : Icon.cross}</span>
+            <span className="fb-mascot">
+              <Mascot mood={result ? (combo >= 3 ? 'cheer' : 'happy') : 'oops'} size={64} />
+              <span className="fb-icon">{result ? Icon.check : Icon.cross}</span>
+            </span>
             <strong>{result ? (combo >= 3 ? `${combo} in a row!` : praise) : 'Not quite'}</strong>
             <button
               type="button"

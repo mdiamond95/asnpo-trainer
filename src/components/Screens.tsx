@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { CourseId, Lesson, Unit } from '../content/types';
 import {
   conceptIndex,
@@ -36,6 +36,8 @@ import {
   type Progress,
 } from '../engine/store';
 import { Emblem, Icon } from './Art';
+import { Mascot, SCENES, Scenery } from './Mascot';
+import { setSoundOn, soundOn } from '../engine/sound';
 import { Confetti } from './Confetti';
 import type { SessionResult } from './Player';
 
@@ -173,16 +175,20 @@ export function LearnScreen({
   return (
     <div className="screen learn">
       <section className="course-hero">
-        <Emblem course={course.id} size={64} />
-        <div>
+        <Scenery kind={SCENES[courses.findIndex((c) => c.id === course.id) % SCENES.length]} className="hero-scene" />
+        <div className="course-hero-text">
           <p className="eyebrow">Course</p>
           <h1>{course.name}</h1>
+          <div className="hero-progress" aria-hidden="true">
+            <span style={{ width: `${(s.done / Math.max(1, s.total)) * 100}%` }} />
+          </div>
           <p className="course-hero-meta num">
             {s.done}/{s.total} lessons complete
           </p>
         </div>
+        <Mascot mood={s.done === s.total && s.total > 0 ? 'cheer' : 'wave'} size={104} className="hero-mascot" />
       </section>
-      {list.map((unit) => {
+      {list.map((unit, ui) => {
         const doneCount = unit.lessons.filter((l) => p.lessons[l.id]).length;
         const allDone = unit.lessons.length > 0 && doneCount === unit.lessons.length;
         const checkpoint = p.lessons[`${unit.id}-checkpoint`];
@@ -222,6 +228,11 @@ export function LearnScreen({
                 return (
                   <li key={l.id} style={{ ['--sway' as string]: `${SWAY[i % SWAY.length]}px` }}>
                     {isNext && <span className="start-bubble">Start</span>}
+                    {isNext && (
+                      <span className="trail-mascot" data-side={SWAY[i % SWAY.length] > 0 ? 'left' : 'right'}>
+                        <Mascot mood={i === 0 && unit.number === 1 ? 'wave' : 'happy'} size={78} />
+                      </span>
+                    )}
                     <button
                       type="button"
                       className="node"
@@ -256,6 +267,12 @@ export function LearnScreen({
                 </span>
               </li>
             </ol>
+            {ui < list.length - 1 && (
+              <div className="unit-divider">
+                <Scenery kind={SCENES[(ui + 1) % SCENES.length]} />
+                <span className="unit-divider-label">Unit {unit.number + 1}</span>
+              </div>
+            )}
           </section>
         );
       })}
@@ -296,12 +313,14 @@ export function LessonIntro({
         ‹ Back
       </button>
       <section className="intro-hero">
-        <Emblem course={u.course} size={72} />
         <p className="eyebrow">
           Unit {u.number} · Lesson {u.lessons.indexOf(l) + 1} of {u.lessons.length}
         </p>
         <h1>{l.title}</h1>
-        <p className="lede">{l.intro}</p>
+        <div className="speech">
+          <Mascot mood="think" size={84} />
+          <p className="lede bubble">{l.intro}</p>
+        </div>
         <SectionTags sections={lessonSections(l)} />
         <p className="intro-meta">
           {l.questions.length} questions{types.has('je') ? ' · includes journal entries' : ''}
@@ -343,6 +362,8 @@ export function SummaryScreen({ result, onContinue }: { result: SessionResult; o
   const p = useProgress();
   const pct = Math.round((result.firstTry / Math.max(1, result.total)) * 100);
   const cheer = useMemo(() => CHEERS[Math.floor(Math.random() * CHEERS.length)], []);
+  const xpShown = useCountUp(result.xp, 500);
+  const pctShown = useCountUp(pct, 700);
   const heading =
     result.plan.kind === 'lesson'
       ? 'Lesson complete'
@@ -355,8 +376,11 @@ export function SummaryScreen({ result, onContinue }: { result: SessionResult; o
     <div className="screen summary">
       <Confetti />
       <div className="summary-art" aria-hidden="true">
-        <Emblem course={p.course} size={120} />
-        <span className="summary-badge">{pct === 100 ? Icon.star : Icon.check}</span>
+        <span className="summary-glow" />
+        <Mascot mood="cheer" size={168} />
+        <span className="summary-badge">
+          <Emblem course={p.course} size={52} />
+        </span>
       </div>
       <p className="cheer">{pct === 100 ? 'Perfect run!' : cheer}</p>
       <h1>{heading}</h1>
@@ -366,14 +390,14 @@ export function SummaryScreen({ result, onContinue }: { result: SessionResult; o
           <dt>Total XP</dt>
           <dd>
             {Icon.bolt}
-            <span className="num">{result.xp}</span>
+            <span className="num">{xpShown}</span>
           </dd>
         </div>
         <div className="tile good">
           <dt>{pct >= 90 ? 'Amazing' : pct >= 70 ? 'Good' : 'Accuracy'}</dt>
           <dd>
             {Icon.check}
-            <span className="num">{pct}%</span>
+            <span className="num">{pctShown}%</span>
           </dd>
         </div>
         <div className="tile flame">
@@ -390,6 +414,52 @@ export function SummaryScreen({ result, onContinue }: { result: SessionResult; o
       </button>
     </div>
   );
+}
+
+function SoundToggle() {
+  const [on, setOn] = useState(soundOn);
+  return (
+    <section className="panel toggle-row">
+      <div>
+        <h3 className="section-label">Sound effects</h3>
+        <p className="muted">Chimes for right answers and finished lessons.</p>
+      </div>
+      <button
+        type="button"
+        role="switch"
+        aria-checked={on}
+        aria-label="Sound effects"
+        className="switch"
+        onClick={() => {
+          setSoundOn(!on);
+          setOn(!on);
+        }}
+      >
+        <span />
+      </button>
+    </section>
+  );
+}
+
+/** Counts up from 0 to `to` over about a second, starting after `delay` ms. */
+function useCountUp(to: number, delay = 0) {
+  const [v, setV] = useState(0);
+  useEffect(() => {
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setV(to);
+      return;
+    }
+    let raf = 0;
+    const start = performance.now() + delay;
+    const tick = (t: number) => {
+      const k = Math.min(1, Math.max(0, (t - start) / 900));
+      setV(Math.round(to * (1 - Math.pow(1 - k, 3))));
+      if (k < 1) raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [to, delay]);
+  return v;
 }
 
 // ---------- Review ----------
@@ -726,6 +796,8 @@ export function ProfileScreen() {
           ))}
         </div>
       </section>
+
+      <SoundToggle />
 
       <section className="panel">
         <h3 className="section-label">Flagged questions</h3>
